@@ -1,6 +1,272 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HVAC 供应链情报</title></head>
-<body style="font-family:sans-serif;display:flex;align-items:center;justify-content:center;min-height:90vh;background:#0b2a4a;color:#fff">
-<div style="text-align:center"><h1>HVAC 供应链情报</h1><p style="color:#bcd3ea">站点搭建中，首版内容即将上线…</p></div>
-</body></html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>HVAC 供应链情报</title>
+<meta name="description" content="HVAC / 液冷 CDU 供应链每日情报：热点事件、预警决策、企业排查">
+<style>
+:root{
+  --blue:#0a58a6; --navy:#0b2a4a; --bg:#f2f5f9; --card:#fff;
+  --ink:#1c2733; --mut:#64748b; --line:#e3eaf3; --tint:#e9f2fb;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7}
+header.top{background:linear-gradient(135deg,#0e63b6 0%,var(--navy) 78%);color:#fff;
+  padding:20px 16px 16px}
+header.top h1{font-size:20px;letter-spacing:.5px}
+header.top h1 .live{display:inline-block;font-size:11px;background:#1faa53;color:#fff;
+  border-radius:10px;padding:2px 9px;margin-left:8px;vertical-align:middle;font-weight:600}
+header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
+.dpills{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:2px}
+.dpill{flex:none;font-size:12.5px;color:#dce9f8;border:1px solid rgba(255,255,255,.35);
+  background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px}
+.dpill.on{background:#fff;color:var(--navy);font-weight:700;border-color:#fff}
+nav.tabs{display:flex;gap:8px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:19;overflow-x:auto;box-shadow:0 1px 6px rgba(11,42,74,.06)}
+nav.tabs button{flex:1 0 auto;white-space:nowrap;border:1px solid var(--blue);background:#fff;
+  color:var(--blue);border-radius:16px;padding:7px 13px;font-size:13.5px;font-weight:600}
+nav.tabs button.on{background:var(--blue);color:#fff}
+main{padding:12px 12px 24px;max-width:780px;margin:0 auto}
+.tabpane{display:none}.tabpane.on{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1}}
+.card{background:var(--card);border-radius:14px;padding:15px 14px;margin-bottom:12px;
+  box-shadow:0 1px 5px rgba(11,42,74,.07);border:1px solid #eef2f7}
+.card h3{font-size:16.5px;color:var(--navy);margin:8px 0 4px;line-height:1.5}
+.heatrow{display:flex;align-items:center;gap:10px}
+.hscore{font-size:30px;font-weight:800;min-width:52px;line-height:1}
+.hbar{flex:1;height:9px;background:#edf1f6;border-radius:5px;overflow:hidden}
+.hfill{height:100%;border-radius:5px}
+.hcap{font-size:11px;color:var(--mut);white-space:nowrap}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:9px 0 2px}
+.tag{font-size:11.5px;background:var(--tint);color:var(--blue);padding:3px 9px;border-radius:11px;font-weight:600}
+.tag-burst{font-size:11.5px;background:#d63c2f;color:#fff;padding:3px 9px;border-radius:11px;font-weight:800}
+.edate{font-size:11.5px;color:var(--mut);margin-left:auto}
+.reason{font-size:13.5px;color:#2c4a68;background:var(--tint);border-left:3px solid var(--blue);
+  border-radius:0 8px 8px 0;padding:9px 11px;margin:10px 0}
+.nums{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}
+.num{font-size:12.5px;background:#fff7ec;color:#a3540f;border:1px solid #f0d9ac;
+  padding:4px 9px;border-radius:9px;font-weight:700}
+.sum{font-size:14px;color:#33475c}
+.src{font-size:12px;color:var(--mut);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px}
+.rel{margin-top:9px;font-size:12.5px;color:#4b6076}
+.chip{font-size:12.5px;border:1px solid var(--blue);color:var(--blue);background:#fff;
+  border-radius:13px;padding:4px 11px;margin:3px 5px 3px 0;font-weight:600}
+.chip:active{background:var(--tint)}
+.whead{display:flex;gap:9px;align-items:flex-start;margin-bottom:6px}
+.whead h3{margin:0;flex:1}
+.urg{flex:none;font-size:12px;font-weight:800;padding:4px 11px;border-radius:11px;white-space:nowrap}
+.u-高{background:#fdeceb;color:#c23325}.u-中{background:#fff6e5;color:#a86e0e}.u-低{background:#eef4fa;color:#3f74b5}
+.kv{font-size:14px;margin:5px 0}.kv b{color:var(--navy)}
+.action{background:#f0f7ff;border:1px solid #cfe3f8;border-left:4px solid var(--blue);
+  border-radius:0 10px 10px 0;padding:10px 12px;margin:9px 0;font-size:14px}
+.action b{color:var(--blue)}
+.trig{font-size:13px;color:#5b6b7d}
+.dl{font-size:13px;color:#a3540f;font-weight:700;margin-top:7px}
+details.sec{background:var(--card);border-radius:14px;margin-bottom:12px;border:1px solid #eef2f7;
+  box-shadow:0 1px 5px rgba(11,42,74,.07)}
+details.sec summary{cursor:pointer;list-style:none;padding:14px;font-weight:700;color:var(--navy);font-size:15.5px;
+  display:flex;justify-content:space-between;align-items:center}
+details.sec summary::-webkit-details-marker{display:none}
+details.sec summary .cnt{font-size:12px;color:var(--mut);font-weight:600}
+details.sec summary::after{content:"›";color:var(--mut);font-size:18px;transform:rotate(90deg)}
+details.sec[open] summary::after{transform:rotate(-90deg)}
+details.sec .body{padding:0 14px 14px}
+details.sec ul{margin-left:18px;font-size:14px}
+details.sec li{margin-bottom:7px}
+.vtag{font-size:11px;background:#eef4fa;color:#3f74b5;padding:2px 7px;border-radius:8px;font-weight:700}
+.stype{display:inline-block;font-size:11.5px;background:var(--tint);color:var(--blue);
+  padding:2px 9px;border-radius:9px;margin-right:7px;font-weight:700}
+.note{font-size:12.5px;color:var(--mut)}
+.rephead{background:linear-gradient(135deg,#0e63b6,var(--navy));color:#fff;border-radius:14px;
+  padding:17px 15px;margin-bottom:12px}
+.rephead h2{font-size:17.5px;line-height:1.5}
+.rephead p{font-size:13px;color:#d3e4f7;margin-top:7px}
+.rephead .meta{display:flex;gap:14px;margin-top:9px;font-size:12.5px;color:#bcd3ea}
+.coli{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #f0f4f8;font-size:14px}
+.coli:last-child{border-bottom:none}
+.coli .st{font-size:16px;flex:none;width:24px;text-align:center}
+.coli b{color:var(--navy)}
+.rubric{background:var(--card);border-radius:14px;padding:15px 14px;margin-bottom:12px;
+  border:1px solid #eef2f7;font-size:13.5px}
+.rubric h4{color:var(--navy);margin-bottom:8px;font-size:15px}
+.rubric li{margin:0 0 6px 18px}
+footer.site{font-size:12px;color:var(--mut);text-align:center;padding:18px 16px 30px;line-height:1.9}
+footer.site b{color:#3c546e}
+.loading,.errmsg{text-align:center;color:var(--mut);padding:40px 16px;font-size:14px}
+.secttl{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:1px;margin:16px 2px 8px}
+.secttl:first-child{margin-top:2px}
+@media(min-width:700px){body{font-size:15.5px}.card h3{font-size:17.5px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>HVAC 供应链情报<span class="live">每日更新</span></h1>
+  <div class="sub">暖通空调 / 液冷 CDU · 成本 · 产能 · 交期 · 涨价 · 替代料 —— 每天 08:30（CST）更新</div>
+  <div class="dpills" id="dpills"></div>
+</header>
+<nav class="tabs" id="tabs">
+  <button class="on" data-t="hot">热点事件</button><button data-t="daily">每日情报</button><button data-t="warn">预警决策</button><button data-t="co">企业排查</button><button data-t="supply">供应链</button><button data-t="method">方法说明</button>
+</nav>
+<main id="main"><div class="loading">正在加载今日情报…</div></main>
+<footer class="site">
+  <b>HVAC 供应链情报</b> · 数据来自每日公开信息核实汇总，仅作供应链研究参考<br>
+  不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别<br>
+  <span id="footmeta"></span>
+</footer>
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+let DATA=null, WMAP={}, EMAP={};
+
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const heatColor=h=>h>=90?"#d63c2f":h>=80?"#e07b1a":h>=70?"#b98a1d":"#0a58a6";
+
+function tags(t){return (t||[]).map(x=>x==="突发"
+  ?'<span class="tag-burst">⚡突发</span>':`<span class="tag">${esc(x)}</span>`).join("");}
+
+function evCard(e){
+  const nums=(e.numbers||[]).map(n=>`<span class="num">${esc(n)}</span>`).join("");
+  const srcs=(e.sources||[]).map(s=>`${esc(s.outlet)}（${esc(s.date)}）`).join("；");
+  const wchips=(e.related_warnings||[]).filter(w=>WMAP[w])
+    .map(w=>`<button class="chip" onclick="goWarn('${w}')">${esc(WMAP[w].title.slice(0,13))}…</button>`).join("");
+  return `<article class="card" id="${e.id}">
+    <div class="heatrow"><div class="hscore" style="color:${heatColor(e.heat)}">${e.heat}</div>
+    <div class="hbar"><div class="hfill" style="width:${e.heat}%;background:${heatColor(e.heat)}"></div></div>
+    <div class="hcap">热度</div></div>
+    <div class="tagrow">${tags(e.tags)}<span class="edate">${esc(e.date)}</span></div>
+    <h3>${esc(e.title)}</h3>
+    <div class="reason">推荐理由：${esc(e.heat_reason)}</div>
+    ${nums?`<div class="nums">${nums}</div>`:""}
+    <p class="sum">${esc(e.summary)}</p>
+    ${srcs?`<p class="src">来源：${srcs}</p>`:""}
+    ${wchips?`<div class="rel">关联预警：${wchips}</div>`:""}
+  </article>`;
+}
+
+function warnCard(w){
+  const echips=(w.related_events||[]).filter(id=>EMAP[id])
+    .map(id=>`<button class="chip" onclick="goEvent('${id}')">${esc(EMAP[id].title.slice(0,13))}…</button>`).join("");
+  return `<article class="card" id="${w.id}">
+    <div class="whead"><span class="urg u-${esc(w.urgency)}">紧迫度 ${esc(w.urgency)}</span><h3>${esc(w.title)}</h3></div>
+    <p class="kv"><b>影响：</b>${esc(w.impact)}</p>
+    <div class="action"><b>建议动作：</b>${esc(w.action)}</div>
+    <p class="trig"><b>触发条件：</b>${esc(w.trigger)}</p>
+    ${w.deadline?`<p class="dl">⏰ 时间锚点：${esc(w.deadline)}</p>`:""}
+    ${echips?`<div class="rel">关联事件：${echips}</div>`:""}
+  </article>`;
+}
+
+function renderHot(d){
+  return [...d.hotspot_events].sort((a,b)=>b.heat-a.heat).map(evCard).join("");
+}
+
+function renderDaily(d){
+  const r=d.daily_report;
+  const ind=(d.industry_updates||[]).map(i=>
+    `<li>${i.vendor_claim?'<span class="vtag">厂商口径</span> ':""}${esc(i.title)}${i.note?` <span class="note">（${esc(i.note)}）</span>`:""}</li>`).join("");
+  const hot3=[...d.hotspot_events].sort((a,b)=>b.heat-a.heat).slice(0,3)
+    .map(e=>`<li>${esc(e.title)} <span class="note">（热度 ${e.heat}）</span></li>`).join("");
+  const sip=(d.siphon_effects||[]).map(s=>`<li><b>${esc(s.material)}</b>：${esc(s.change)}</li>`).join("");
+  const cro=(d.cross_industry||[]).map(c=>`<li><b>${esc(c.industry)}</b>：${esc(c.link)}</li>`).join("");
+  const sup=(d.supplier_updates||[]).map(s=>
+    `<li><span class="stype">${esc(s.type)}</span><b>${esc(s.category)}</b>：${esc(s.detail)}</li>`).join("");
+  const wr=(d.warnings||[]).map(w=>`<li>${esc(w.title)} <span class="note">（紧迫度${esc(w.urgency)}）</span></li>`).join("");
+  const anc=(d.time_anchors||[]).map(a=>`<li><b>${esc(a.date)}</b> ${esc(a.event)}</li>`).join("");
+  return `<div class="rephead"><h2>${esc(r.title)}（${esc(r.date)}）</h2><p>${esc(r.headline)}</p>
+    <div class="meta"><span>热点 ${r.hotspot_count}</span><span>预警 ${r.warning_count}</span><span>板块 ${r.sections}</span></div></div>
+  <details class="sec" open><summary>一、行业动态 / 技术与合作 <span class="cnt">${d.industry_updates.length} 条</span></summary><div class="body"><ul>${ind}</ul></div></details>
+  <details class="sec"><summary>二、头条事件 <span class="cnt">见热点 Top3</span></summary><div class="body"><ul>${hot3}</ul></div></details>
+  <details class="sec"><summary>三、数据中心 / AI 虹吸效应 <span class="cnt">${d.siphon_effects.length} 类物料</span></summary><div class="body"><ul>${sip}</ul></div></details>
+  <details class="sec"><summary>四、跨行业传导 <span class="cnt">${d.cross_industry.length} 条</span></summary><div class="body"><ul>${cro}</ul></div></details>
+  <details class="sec"><summary>五、供应商动态 <span class="cnt">${d.supplier_updates.length} 条</span></summary><div class="body"><ul>${sup}</ul></div></details>
+  <details class="sec"><summary>六、供应链预警与建议 <span class="cnt">见预警页签</span></summary><div class="body"><ul>${wr}</ul></div></details>
+  ${anc?`<details class="sec"><summary>📌 时间锚点</summary><div class="body"><ul>${anc}</ul></div></details>`:""}`;
+}
+
+function renderWarn(d){ return d.warnings.map(warnCard).join(""); }
+
+function renderCo(d){
+  const st=s=>s==="有实质动态"?"🔥":s==="无实质动态"?"✅":"↩️";
+  return `<div class="card"><h3 style="margin-top:0">今日点名排查（${d.company_checklist.length} 家）</h3>`+
+    d.company_checklist.map(c=>`<div class="coli"><span class="st">${st(c.status)}</span>
+    <div><b>${esc(c.company)}</b> <span class="note">${esc(c.status)}</span><br><span class="note">${esc(c.note||"")}</span></div></div>`).join("")+`</div>
+  <div class="rubric"><h4>排查说明</h4>每天逐一检索头部企业近 3 天动态，有实质新闻才上榜；无动态、旧闻会明确标注，避免"遗漏感"。</div>`;
+}
+
+function renderSupply(d){
+  const sup=(d.supplier_updates||[]).map(s=>
+    `<div class="coli"><div><span class="stype">${esc(s.type)}</span><b>${esc(s.category)}</b><br>${esc(s.detail)}</div></div>`).join("");
+  const sip=(d.siphon_effects||[]).map(s=>
+    `<div class="coli"><div><b>${esc(s.material)}</b><br><span class="note">${esc(s.change)}</span></div></div>`).join("");
+  const cro=(d.cross_industry||[]).map(c=>
+    `<div class="coli"><div><b>${esc(c.industry)}</b><br><span class="note">${esc(c.link)}</span></div></div>`).join("");
+  return `<div class="secttl">供应商动态</div><div class="card">${sup}</div>
+  <div class="secttl">数据中心 / AI 虹吸效应</div><div class="card">${sip}</div>
+  <div class="secttl">跨行业传导</div><div class="card">${cro}</div>`;
+}
+
+function renderMethod(d){
+  return `<div class="rubric"><h4>热度评分规则（透明化）</h4><ul>
+  <li><b>90~95</b>：多源交叉证实 + 已传导至整机端或价格实质落地 + 影响 HVAC 核心 BOM</li>
+  <li><b>85~89</b>：涨价链 / 交期延长等多线叠加，有明确行动时间窗口（≤7 天）</li>
+  <li><b>75~84</b>：单一实质事件（投产 / 并购 / 涨价函），影响中长期格局</li>
+  <li><b>60~74</b>：技术路线 / 战略合作 / 法规信号</li>
+  <li><b>&lt;60</b>：不进入热点流，只进日报归档</li>
+  <li>⚡<b>突发</b> tag 来自当日即时快讯，自动打标</li></ul></div>
+  <div class="rubric"><h4>数据与更新</h4><ul>
+  <li>每天 08:30（CST）基于公开信息核实汇总后更新；所有数字注明来源与日期，无法核实的舍去</li>
+  <li>覆盖：HVAC 头部整机厂、液冷 CDU 厂商、压缩机 / 阀件 / 制冷剂 / 铜铝、VSD 电气件（IGBT·SiC·接触器·断路器）、跨行业通用电子料（DRAM·MLCC·PCB·CCL）</li>
+  <li>内容仅作供应链研究参考，不涉及证券买卖建议</li>
+  <li>Schema ${esc(d.meta.schema_version)} · 数据日期 ${esc(d.meta.date)}</li></ul></div>
+  <div class="rubric"><h4>路线图</h4><ul>
+  <li><b>v1</b>：静态平台（已上线）→ <b>v2</b>：每日情报自动接入（本站点）→ <b>v3</b>：实时热点流</li></ul></div>`;
+}
+
+function renderAll(d){
+  DATA=d; WMAP={}; EMAP={};
+  d.warnings.forEach(w=>WMAP[w.id]=w);
+  d.hotspot_events.forEach(e=>EMAP[e.id]=e);
+  $("#main").innerHTML =
+    `<section class="tabpane on" id="p-hot">${renderHot(d)}</section>`+
+    `<section class="tabpane" id="p-daily">${renderDaily(d)}</section>`+
+    `<section class="tabpane" id="p-warn">${renderWarn(d)}</section>`+
+    `<section class="tabpane" id="p-co">${renderCo(d)}</section>`+
+    `<section class="tabpane" id="p-supply">${renderSupply(d)}</section>`+
+    `<section class="tabpane" id="p-method">${renderMethod(d)}</section>`;
+  $("#footmeta").textContent=`数据日期 ${d.meta.date} · schema ${d.meta.schema_version}`;
+}
+
+function switchTab(t){
+  document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("on",b.dataset.t===t));
+  document.querySelectorAll(".tabpane").forEach(p=>p.classList.toggle("on",p.id==="p-"+t));
+  window.scrollTo({top:0});
+}
+function goWarn(id){switchTab("warn");setTimeout(()=>{const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});},80);}
+function goEvent(id){switchTab("hot");setTimeout(()=>{const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});},80);}
+document.querySelectorAll("#tabs button").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.t)));
+
+async function loadDay(date){
+  const r=await fetch("data/"+date+".json");
+  if(!r.ok) throw new Error("data "+r.status);
+  renderAll(await r.json());
+  document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===date));
+}
+
+async function boot(){
+  try{
+    const idx=await (await fetch("data/index.json")).json();
+    const days=idx.days||[];
+    $("#dpills").innerHTML=days.slice().reverse().map(dt=>
+      `<button class="dpill" data-d="${esc(dt)}" onclick="loadDay('${esc(dt)}')">${esc(dt.slice(5))}</button>`).join("");
+    await loadDay(idx.latest||days[days.length-1]);
+  }catch(e){
+    $("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';
+  }
+}
+boot();
+</script>
+</body>
+</html>
