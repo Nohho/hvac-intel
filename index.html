@@ -63,6 +63,13 @@ section.blk{scroll-margin-top:60px}
 .sum{font-size:14px;color:#33475c}
 .src{font-size:12px;color:var(--mut);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px}
 .src a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.sev{font-size:11px;font-weight:700;border-radius:9px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.sev-high{background:#fdeceb;color:#c0392b}
+.sev-mid{background:#fef6e0;color:#9a6b0f}
+.sev-low{background:#e8f5e9;color:#2e7d32}
+.bases{margin-top:8px;font-size:12px;color:var(--mut)}
+.bchip{display:inline-block;background:#eaf1fa;color:var(--blue);border-radius:8px;padding:1px 8px;margin:1px 3px 1px 0;font-size:11.5px;font-weight:600}
+.pptlink{display:inline-block;margin-top:8px;font-size:12.5px;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:14px;padding:4px 12px;text-decoration:none;background:rgba(255,255,255,.1)}
 /* skeleton 占位 */
 .skel-sec{background:#fff;border-radius:14px;padding:16px 14px;margin:14px 0;border:1px solid #eef2f7}
 .skel{height:13px;border-radius:7px;margin:9px 0;background:linear-gradient(90deg,#e9eff6 25%,#f5f9fd 50%,#e9eff6 75%);background-size:200% 100%;animation:sk 1.2s linear infinite}
@@ -159,6 +166,7 @@ details.sec .body{padding:0 14px 12px}
   <div class="sub">暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新</div>
   <div class="headline" id="headline" style="display:none"></div>
   <div class="dpills" id="dpills"></div>
+  <a class="pptlink" id="pptlink" href="#" style="display:none" target="_blank">📊 一页纸汇报（PPTX）</a>
 </header>
 <div class="alertbar" id="alertbar"></div>
 <nav class="secnav" id="secnav">
@@ -184,8 +192,10 @@ let WMAP={},EMAP={},CUR=null,FILTER="all";
 
 function tags(t){return (t||[]).map(x=>x==="突发"?'<span class="tag-burst">⚡突发</span>':x==="影响BOM"?'<span class="tag-bom">影响BOM</span>':`<span class="tag">${esc(x)}</span>`).join("");}
 
+const SEV={"高":["sev-high","🔴 严重"],"中":["sev-mid","🟡 预警"],"低":["sev-low","🟢 关注"]};
 function evCard(e,compact){
   const nums=(e.numbers||[]).map(n=>`<span class="num">${esc(n)}</span>`).join("");
+  const sv=SEV[e.severity||"中"];
   const srcs=(e.sources||[]).map(s=>s.url
     ?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}（${esc(s.date)}）</a>`
     :`${esc(s.outlet)}（${esc(s.date)}）`).join("；");
@@ -194,7 +204,7 @@ function evCard(e,compact){
   return `<article class="card" id="${e.id}">
     <div class="heatrow"><div class="hscore" style="color:${heatColor(e.heat)}">${e.heat}</div>
     <div class="hbar"><div class="hfill" style="width:${e.heat}%;background:${heatColor(e.heat)}"></div></div></div>
-    <div class="tagrow">${tags(e.tags)}<span class="edate">${esc(e.date)}</span></div>
+    <div class="tagrow">${tags(e.tags)}<span class="sev ${sv[0]}">${sv[1]}</span><span class="edate">${esc(e.date)}</span></div>
     <h3>${esc(e.title)}</h3>
     ${compact?"":`<div class="reason">推荐理由：${esc(e.heat_reason||"")}</div>`}
     ${nums?`<div class="nums">${nums}</div>`:""}
@@ -203,15 +213,31 @@ function evCard(e,compact){
     ${wc?`<div class="rel">关联预警：${wc}</div>`:""}</article>`;
 }
 
+function affectedBases(w){
+  // 预警 → related_events → supplier_updates(event_id) → subcategories → 基地归属（确定性关联，无需 LLM）
+  const ids=new Set(w.related_events||[]);
+  const subs=new Set();
+  (DAY.supplier_updates||[]).forEach(u=>{if(ids.has(u.event_id))(u.subcategories||[]).forEach(s=>subs.add(s));});
+  if(!subs.size)return [];
+  const ee=new Set((TAX.ee_subcategories||[]).map(x=>x.name));
+  const out=[];
+  ["JCAC","WXAC","GZAC","亚太其他"].forEach(b=>{
+    const bset=new Set((((TAX.bases||{})[b]||{}).subcategories||[]).map(x=>x.name));
+    for(const s of subs){if(bset.has(s)||(ee.has(s)&&b==="JCAC")){out.push(b);break;}}
+  });
+  return out;
+}
 function warnCard(w){
   const ec=(w.related_events||[]).filter(id=>EMAP[id])
     .map(id=>`<button class="chip" onclick="goId('${id}')">📄 ${esc(EMAP[id].title.slice(0,13))}…</button>`).join("");
   const cls=w.urgency==="高"?"":w.urgency==="中"?" mid":" low";
+  const bases=affectedBases(w);
   return `<article class="act${cls}" id="${w.id}">
     <h4>${w.urgency==="高"?"🔴":w.urgency==="中"?"🟠":"🔵"} ${esc(w.title)}
     <span class="pill ${w.urgency==="高"?"p-red":w.urgency==="中"?"p-org":"p-blu"}">${esc(w.urgency)}紧迫</span></h4>
     <div class="do"><b>建议动作：</b>${esc(w.action)}</div>
     <div class="meta">影响范围：${esc(w.impact)}<br>触发条件：${esc(w.trigger)}${w.deadline?`<br>⏰ 行动时间：${esc(w.deadline)}`:""}</div>
+    ${bases.length?`<div class="bases">涉及基地：${bases.map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}</div>`:""}
     ${ec?`<div class="rel">关联事件：${ec}</div>`:""}</article>`;
 }
 
@@ -420,6 +446,8 @@ async function boot(){
         `</details>`;
     }
     $("#dpills").innerHTML=html;
+    const pl=$("#pptlink");
+    if(idx.ppt){pl.href=idx.ppt;pl.style.display="inline-block";}else{pl.style.display="none";}
     await loadDay(idx.latest||days[days.length-1]);
   }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
 }
