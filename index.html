@@ -84,6 +84,21 @@ section.blk{scroll-margin-top:60px}
 /* 点名排查 */
 .checkchips{display:flex;flex-wrap:wrap;gap:7px}
 .cchip{font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:5px 10px}
+/* 子品类 chips（第⑤段） */
+.subchips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.subchip{font-size:11px;background:#f2f6fb;color:#3f74b5;border:1px solid #dbe7f3;border-radius:9px;padding:2px 8px}
+.supp{border-bottom:1px solid #f0f4f8;padding:9px 0}
+.supp:last-child{border-bottom:none}
+/* 基地 tabs（第⑦段） */
+.tabs{display:flex;gap:7px;margin:4px 2px 10px;overflow-x:auto}
+.tab{flex:none;font-size:13px;border:1px solid var(--line);background:#fff;color:var(--mut);border-radius:14px;padding:6px 13px;font-weight:700}
+.tab.on{border-color:var(--blue);color:#fff;background:var(--blue)}
+.tab small{font-weight:400;opacity:.85}
+.searchbox{width:100%;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:0 0 8px;background:#fff;color:var(--ink)}
+.subitem{display:flex;align-items:center;gap:8px;padding:7px 2px;border-bottom:1px solid #f4f7fb;font-size:13px}
+.subitem:last-child{border-bottom:none}
+.subitem .nm{flex:1;color:var(--navy)}
+.subitem .ct{font-size:11.5px;color:var(--mut);white-space:nowrap}
 /* 预警行动卡 */
 .act{border-left:4px solid #c23325;background:#fff;border-radius:0 12px 12px 0;padding:13px;margin-bottom:11px;box-shadow:0 1px 4px rgba(11,42,74,.07)}
 .act.mid{border-left-color:#e07b1a}
@@ -237,7 +252,10 @@ function renderMain(d){
 
   /* ---- 五、供应商动态 ---- */
   const tcol=t=>t==="涨价"?"p-red":t==="排查无异常"?"p-gry":t==="经营风险"?"p-org":"p-blu";
-  const sup=(d.supplier_updates||[]).map(s=>`<div class="srow"><span class="pill ${tcol(s.type)}">${esc(s.type)}</span><span class="cat">${esc(s.category)}</span><span class="dt">${esc(s.detail).slice(0,30)}</span></div>`).join("");
+  const subChips=s=>{const sc=(s.subcategories||[]).map(x=>`<span class="subchip">${esc(x)}</span>`).join("");
+    const co=s.company?`<span class="subchip" style="background:#fff6e5;color:#a86e0e;border-color:#f0d9ac">🏢 ${esc(s.company)}</span>`:"";
+    return (sc||co)?`<div class="subchips">${sc}${co}</div>`:"";};
+  const sup=(d.supplier_updates||[]).map(s=>`<div class="supp"><div class="srow" style="border-bottom:none;padding-bottom:0"><span class="pill ${tcol(s.type)}">${esc(s.type)}</span><span class="cat">${esc(s.category)}</span><span class="dt">${esc(s.detail).slice(0,30)}</span></div>${subChips(s)}</div>`).join("");
   const s5ev=bySec("供应商动态");
   const chk=d.company_checklist||[];
   const hot5=chk.filter(c=>c.status==="有实质动态");
@@ -260,7 +278,7 @@ function renderMain(d){
 
   /* ---- 七、我的供应链 ---- */
   const s7=secttl("七","我的供应链","清单快照聚合")
-    +guide("609 家供应商品类分布 · 8 大 EE 品类 · PCBA maker 分布。仅聚合口径，不含供应商名称。")
+    +guide("EE 元器件品类（JCAC · PCBA 口径）· 基地供应商品类（JCAC / WXAC / GZAC / 亚太其他，183 子品类全量）· PCBA maker 分布。仅聚合口径，不含供应商名称。")
     +`<div id="supplybase"><div class="card"><div class="loading">正在加载供应链画像…</div></div></div>`;
 
   $("#main").innerHTML=
@@ -286,15 +304,25 @@ async function loadSupply(){
     const r=await fetch("data/supply-base.json");
     if(!r.ok)throw 0;
     const s=await r.json();
-    const maxSub=Math.max.apply(null,s.supplier_base.top_sub_categories.map(x=>x.count));
-    const subBars=s.supplier_base.top_sub_categories.slice(0,12).map(x=>
-      `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count} 家</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxSub*100)}%"></div></div></div>`).join("");
+    let tax=null;
+    try{const tr=await fetch("data/taxonomy.json");if(tr.ok)tax=await tr.json();}catch(e){}
     const maxMk=Math.max.apply(null,s.pcba.top_makers.map(x=>x.count));
     const mkBars=s.pcba.top_makers.map(x=>
       `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#3f74b5"></div></div></div>`).join("");
     const ee=s.ee_categories.map(c=>
       `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} 小类</span></summary><div class="body"><div style="font-size:13px;color:#3c546e">${c.subs.map(esc).join(" · ")}</div></div></details>`).join("");
     const p=s.pcba;
+    /* 基地供应商品类 tabs */
+    let baseHtml='<div class="card"><div class="errmsg">基地品类数据暂未发布</div></div>';
+    if(tax&&tax.bases){
+      const order=["JCAC","WXAC","GZAC","亚太其他"];
+      const tabs=order.map((b,i)=>`<button class="tab${i===0?" on":""}" data-b="${b}" onclick="setBase('${b}')">${b} <small>${tax.bases[b].supplier_count}家</small></button>`).join("");
+      baseHtml=`<div class="tabs">${tabs}</div>
+        <input class="searchbox" id="basesearch" placeholder="🔍 搜索子品类，如 compressor / 阀 / 电容…" oninput="filterBase(this.value)">
+        <div class="card" id="baselist" style="max-height:520px;overflow-y:auto"></div>
+        <div style="font-size:11.5px;color:#8a99ab;margin:2px 2px 0">183 个子品类全量 · 家数为该基地此品类供应商数 · 仅品类口径，不含供应商名称</div>`;
+      window._TAX=tax;window._BASE=order[0];window._Q="";
+    }
     box.innerHTML=
      `<div class="card"><h3 style="margin-top:0">供应链画像 <span class="pill p-blu">快照 ${esc(s.snapshot_date)}</span></h3>
       <div style="font-size:13.5px;color:#3c546e">${s.supplier_base.supplier_count} 家供应商 · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} 个元器件</div>
@@ -305,10 +333,25 @@ async function loadSupply(){
         <div class="card" style="text-align:center"><b style="font-size:20px;color:#c23325">${p.risk.High}</b><div style="font-size:11px;color:#64748b">高风险</div></div>
         <div class="card" style="text-align:center"><b style="font-size:20px;color:#e07b1a">${p.eol}</b><div style="font-size:11px;color:#64748b">EOL</div></div>
         <div class="card" style="text-align:center"><b style="font-size:20px;color:#e07b1a">${p.lead_time_days.ge_180}</b><div style="font-size:11px;color:#64748b">交期≥180天</div></div></div>
-      <div class="secsub">8 大 EE 品类</div>${ee}
-      <div class="secsub">供应商品类 Top12（家数）</div><div class="card">${subBars}</div>
+      <div class="secsub">EE 元器件品类 <span style="font-weight:400;color:#8a99ab">（JCAC · PCBA 口径）</span></div>${ee}
+      <div class="secsub">基地供应商品类 <span style="font-weight:400;color:#8a99ab">（183 子品类全量）</span></div>${baseHtml}
       <div class="secsub">PCBA Maker 分布 Top12（料号数）</div><div class="card">${mkBars}</div>`;
+    if(window._TAX)renderBase();
   }catch(e){box.innerHTML='<div class="card"><div class="errmsg">画像数据暂未发布</div></div>';}
+}
+function setBase(b){window._BASE=b;window._Q="";const si=$("#basesearch");if(si)si.value="";
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.b===b));renderBase();}
+function filterBase(q){window._Q=(q||"").toLowerCase();renderBase();}
+function renderBase(){
+  const tax=window._TAX,b=window._BASE,q=window._Q||"";
+  const box=$("#baselist");if(!box||!tax)return;
+  const list=tax.bases[b].subcategories.filter(x=>!q||x.name.toLowerCase().includes(q));
+  const max=Math.max.apply(null,tax.bases[b].subcategories.map(x=>x.count).concat([1]));
+  box.innerHTML=list.length?list.map(x=>
+    `<div class="subitem"><span class="nm">${esc(x.name)}</span>
+     <span class="bt" style="flex:none;width:90px;height:7px;background:#edf1f6;border-radius:4px;overflow:hidden"><span class="bf" style="display:block;height:100%;width:${Math.round(x.count/max*100)}%;background:var(--blue);border-radius:4px"></span></span>
+     <span class="ct">${x.count} 家</span></div>`).join("")
+    :'<div class="errmsg">无匹配子品类</div>';
 }
 
 async function loadDay(date){
