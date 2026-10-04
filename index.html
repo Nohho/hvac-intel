@@ -215,14 +215,16 @@ function evCard(e,compact){
 
 function affectedBases(w){
   // 预警 → related_events → supplier_updates(event_id) → subcategories → 基地归属（确定性关联，无需 LLM）
+  // taxonomy 由 loadDay 预加载到 window._TAX（renderMain 之前），缺失时降级为空
+  const TX=window._TAX||{};
   const ids=new Set(w.related_events||[]);
   const subs=new Set();
   (CUR.supplier_updates||[]).forEach(u=>{if(ids.has(u.event_id))(u.subcategories||[]).forEach(s=>subs.add(s));});
   if(!subs.size)return [];
-  const ee=new Set((TAX.ee_subcategories||[]).map(x=>x.name));
+  const ee=new Set(((TX.ee_subcategories)||[]).map(x=>x.name));
   const out=[];
   ["JCAC","WXAC","GZAC","亚太其他"].forEach(b=>{
-    const bset=new Set((((TAX.bases||{})[b]||{}).subcategories||[]).map(x=>x.name));
+    const bset=new Set((((TX.bases||{})[b]||{}).subcategories||[]).map(x=>x.name));
     for(const s of subs){if(bset.has(s)||(ee.has(s)&&b==="JCAC")){out.push(b);break;}}
   });
   return out;
@@ -418,6 +420,9 @@ async function loadDay(date){
   try{
     const r=await fetch("data/"+date+".json");
     if(!r.ok)throw new Error("HTTP "+r.status);
+    if(!window._TAX){
+      try{const tr=await fetch("data/taxonomy.json");if(tr.ok)window._TAX=await tr.json();}catch(e){}
+    }
     FILTER="all";
     renderMain(await r.json());
     document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===date));
