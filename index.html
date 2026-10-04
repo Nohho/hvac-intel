@@ -186,7 +186,7 @@ function renderMain(d){
   if(highs.length){
     const dl=d.warnings.filter(w=>w.deadline).map(w=>w.deadline).sort()[0];
     ab.classList.add("show");
-    ab.innerHTML=`🔴 今日 <b>${highs.length}</b> 条高紧迫预警${dl?` · 最近行动日 ${mmdd(dl)}`:""} <a href="#s6">直达第⑥段 →</a>`;
+    ab.innerHTML=`🔴 今日 <b>${highs.length}</b> 条高紧迫预警${dl?` · 最近行动日 ${mmdd(dl)}`:""} <a href="#s6">查看预警与建议 →</a>`;
   }else{ab.classList.remove("show");ab.innerHTML="";}
 
   /* ---- 顶部导读 ---- */
