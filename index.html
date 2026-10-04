@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>HVAC 供应链情报</title>
 <meta name="description" content="HVAC / 液冷 CDU 供应链每日情报：六段式早报结构">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HVAC 供应链情报">
+<meta property="og:description" content="暖通空调 / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a58a6'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
 <style>
 :root{--blue:#0a58a6;--navy:#0b2a4a;--bg:#f2f5f9;--card:#fff;--ink:#1c2733;--mut:#64748b;--line:#e3eaf3;--tint:#e9f2fb}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
@@ -58,6 +62,26 @@ section.blk{scroll-margin-top:60px}
 .num{font-size:12.5px;background:#fff7ec;color:#a3540f;border:1px solid #f0d9ac;padding:4px 9px;border-radius:9px;font-weight:700}
 .sum{font-size:14px;color:#33475c}
 .src{font-size:12px;color:var(--mut);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px}
+.src a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+/* skeleton 占位 */
+.skel-sec{background:#fff;border-radius:14px;padding:16px 14px;margin:14px 0;border:1px solid #eef2f7}
+.skel{height:13px;border-radius:7px;margin:9px 0;background:linear-gradient(90deg,#e9eff6 25%,#f5f9fd 50%,#e9eff6 75%);background-size:200% 100%;animation:sk 1.2s linear infinite}
+.skel.ttl{height:17px;width:42%}
+@keyframes sk{to{background-position:-200% 0}}
+/* 错误条 */
+.errbar{background:#fdeceb;border:1px solid #f3c1b8;color:#a3271c;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:13px}
+.errbar a{color:#a3271c;font-weight:700}
+/* 归档折叠 */
+.arch{margin-top:2px}
+.arch summary{font-size:12.5px;color:#dce9f8;cursor:pointer;list-style:none;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px;display:inline-block}
+.arch .mrow{margin-top:8px}
+.arch .mlab{font-size:11.5px;color:#9db8d6;margin:6px 0 4px}
+@media print{
+  nav.secnav,.alertbar,.dpills,.frow,.tabs,.searchbox,.arch,footer.site,#headline{display:none}
+  body{background:#fff;font-size:12px}
+  .card,.act,.skel-sec{box-shadow:none}
+  header.top{background:#0b2a4a}
+}
 .rel{margin-top:9px;font-size:12.5px;color:#4b6076}
 .chip{font-size:12.5px;border:1px solid var(--blue);color:var(--blue);background:#fff;border-radius:13px;padding:4px 11px;margin:3px 5px 3px 0;font-weight:600}
 /* 筛选 chips */
@@ -140,7 +164,12 @@ details.sec .body{padding:0 14px 12px}
 <nav class="secnav" id="secnav">
   <a href="#s1">行业动态</a><a href="#s2">头条事件</a><a href="#s3">AI虹吸</a><a href="#s4">跨行业传导</a><a href="#s5">供应商动态</a><a href="#s6">预警与建议</a><a href="#s7">我的供应链</a>
 </nav>
-<main id="main"><div class="loading">正在加载今日情报…</div></main>
+<main id="main">
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:85%"></div></div>
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel"></div><div class="skel" style="width:70%"></div></div>
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:90%"></div></div>
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:75%"></div></div>
+</main>
 <footer class="site">
   <b>HVAC 供应链情报</b> · 数据来自每日公开信息核实汇总，仅作供应链研究参考<br>
   不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别<br><span id="footmeta"></span>
@@ -157,7 +186,9 @@ function tags(t){return (t||[]).map(x=>x==="突发"?'<span class="tag-burst">⚡
 
 function evCard(e,compact){
   const nums=(e.numbers||[]).map(n=>`<span class="num">${esc(n)}</span>`).join("");
-  const srcs=(e.sources||[]).map(s=>`${esc(s.outlet)}（${esc(s.date)}）`).join("；");
+  const srcs=(e.sources||[]).map(s=>s.url
+    ?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}（${esc(s.date)}）</a>`
+    :`${esc(s.outlet)}（${esc(s.date)}）`).join("；");
   const wc=(e.related_warnings||[]).filter(w=>WMAP[w])
     .map(w=>`<button class="chip" onclick="goId('${w}')">⚠️ ${esc(WMAP[w].title.slice(0,13))}…</button>`).join("");
   return `<article class="card" id="${e.id}">
@@ -354,21 +385,41 @@ function renderBase(){
     :'<div class="errmsg">无匹配子品类</div>';
 }
 
+let CURDATE=null;
 async function loadDay(date){
-  const r=await fetch("data/"+date+".json");
-  if(!r.ok)throw new Error("data "+r.status);
-  FILTER="all";
-  renderMain(await r.json());
-  document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===date));
-  window.scrollTo({top:0});
+  CURDATE=date;
+  document.querySelectorAll(".errbar").forEach(b=>b.remove());
+  try{
+    const r=await fetch("data/"+date+".json");
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    FILTER="all";
+    renderMain(await r.json());
+    document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===date));
+    window.scrollTo({top:0});
+  }catch(e){
+    const m=$("#main");
+    if(m)m.insertAdjacentHTML("afterbegin",
+      `<div class="errbar">⚠️ ${esc(date)} 的数据加载失败（${esc(e.message)}）。当前显示的可能是旧日期内容。<a href="javascript:loadDay(CURDATE)">点此重试</a></div>`);
+  }
 }
 
 async function boot(){
   try{
     const idx=await (await fetch("data/index.json")).json();
     const days=idx.days||[];
-    $("#dpills").innerHTML=days.slice().reverse().map(dt=>
-      `<button class="dpill" data-d="${esc(dt)}" onclick="loadDay('${esc(dt)}')">${esc(dt.slice(5))}</button>`).join("");
+    const recent=days.slice(-14).reverse();
+    const older=days.slice(0,-14).reverse();
+    const pill=dt=>`<button class="dpill" data-d="${esc(dt)}" onclick="loadDay('${esc(dt)}')">${esc(dt.slice(5))}</button>`;
+    let html=recent.map(pill).join("");
+    if(older.length){
+      const byM={};
+      older.forEach(dt=>{const m=dt.slice(0,7);(byM[m]=byM[m]||[]).push(dt);});
+      html+=`<details class="arch"><summary>更早归档（${older.length}）</summary>`+
+        Object.keys(byM).sort().reverse().map(m=>
+          `<div class="mrow"><div class="mlab">${m}</div><div class="dpills" style="margin-top:0">${byM[m].map(pill).join("")}</div></div>`).join("")+
+        `</details>`;
+    }
+    $("#dpills").innerHTML=html;
     await loadDay(idx.latest||days[days.length-1]);
   }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
 }
