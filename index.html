@@ -93,6 +93,15 @@ main{padding:4px 12px 24px;max-width:780px;margin:0 auto}
 .rubric li{margin:0 0 6px 18px}
 footer.site{font-size:12px;color:var(--mut);text-align:center;padding:18px 16px 34px;line-height:1.9}
 .loading,.errmsg{text-align:center;color:var(--mut);padding:40px 16px;font-size:14px}
+.bar{margin:8px 0;font-size:12.5px}
+.bar .bl{display:flex;justify-content:space-between;margin-bottom:3px}
+.bar .bl b{color:var(--navy)}
+.bar .bt{height:8px;background:#edf1f6;border-radius:4px;overflow:hidden}
+.bar .bf{height:100%;background:var(--blue);border-radius:4px}
+details.sec{background:#fff;border-radius:12px;margin-bottom:10px;border:1px solid #eef2f7}
+details.sec summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:700;color:var(--navy);display:flex;justify-content:space-between;align-items:center}
+details.sec summary::-webkit-details-marker{display:none}
+details.sec .body{padding:0 14px 12px}
 @media(min-width:700px){.mgrid{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
@@ -105,7 +114,7 @@ footer.site{font-size:12px;color:var(--mut);text-align:center;padding:18px 16px 
 <div id="statezone"></div>
 <div id="mustdozone"></div>
 <nav class="secnav" id="secnav">
-  <a href="#s1">① 行业动态</a><a href="#s2">② 头条事件</a><a href="#s3">③ 虹吸效应</a><a href="#s4">跨行业传导</a><a href="#s5">⑤ 供应商</a><a href="#s6">⑥ 预警建议</a>
+  <a href="#s1">① 行业动态</a><a href="#s2">② 头条事件</a><a href="#s3">③ 虹吸效应</a><a href="#s4">跨行业传导</a><a href="#s5">⑤ 供应商</a><a href="#s6">⑥ 预警建议</a><a href="#s7">⑦ 我的供应链</a>
 </nav>
 <main id="main"><div class="loading">正在加载今日情报…</div></main>
 <footer class="site">
@@ -195,6 +204,7 @@ function renderMain(d){
   +`<section id="s5" style="scroll-margin-top:56px">${secLabel("五","供应商动态",d.supplier_updates.length+" 条")}<div class="card">${sup}</div>
      <div class="card"><h3 style="margin-top:0;font-size:14.5px">今日点名排查（${d.company_checklist.length} 家）</h3><div class="checkchips">${chk}</div></div></section>`
   +`<section id="s6" style="scroll-margin-top:56px">${secLabel("六","供应链预警与建议",d.warnings.length+" 条")}${warns.map(warnCard).join("")}</section>`
+  +`<section id="s7" style="scroll-margin-top:56px"><div class="seclabel">⑦ · 我的供应链 <span class="cnt">清单快照聚合</span></div><div id="supplybase"><div class="card"><div class="loading">正在加载供应链画像…</div></div></div></section>`
   +`<section id="s7" style="scroll-margin-top:56px"><div class="seclabel">方法说明</div>
      <div class="rubric"><h4>热度评分规则</h4>
      <div style="font-size:13px">90~95 多源证实+整机传导落地；85~89 多线叠加、有行动窗口；75~84 单一实质事件；60~74 技术/合作/法规信号；&lt;60 不进热点流。⚡突发 tag 来自当日快讯。</div></div>
@@ -210,6 +220,38 @@ function renderAll(d){
   renderState(d);renderMustdo(d);renderMain(d);
 }
 function goId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});}
+async function loadSupply(){
+  const box=$("#supplybase");
+  try{
+    const r=await fetch("data/supply-base.json");
+    if(!r.ok)throw 0;
+    const s=await r.json();
+    const maxSub=Math.max.apply(null,s.supplier_base.top_sub_categories.map(x=>x.count));
+    const subBars=s.supplier_base.top_sub_categories.slice(0,12).map(x=>
+      `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count} 家</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxSub*100)}%"></div></div></div>`).join("");
+    const maxMk=Math.max.apply(null,s.pcba.top_makers.map(x=>x.count));
+    const mkBars=s.pcba.top_makers.map(x=>
+      `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#3f74b5"></div></div></div>`).join("");
+    const ee=s.ee_categories.map(c=>
+      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} 小类</span></summary><div class="body"><div style="font-size:13px;color:#3c546e">${c.subs.map(esc).join(" · ")}</div></div></details>`).join("");
+    const p=s.pcba;
+    if(box)box.innerHTML=
+     `<div class="card"><h3 style="margin-top:0">供应链画像 <span class="pill p-blu">快照 ${esc(s.snapshot_date)}</span></h3>
+      <div style="font-size:13.5px;color:#3c546e">${s.supplier_base.supplier_count} 家供应商 · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} 个元器件</div>
+      <div class="note" style="margin-top:6px;font-size:12px;color:#8a99ab">仅品类 / maker 口径聚合，不含供应商名称</div></div>
+      <div class="seclabel" style="font-size:12px">PCBA 风险</div>
+      <div class="state" style="padding:0">
+        <div class="tile"><b style="color:#0a58a6">${p.total}</b><span>元器件总数</span></div>
+        <div class="tile"><b style="color:#c23325">${p.risk.High}</b><span>高风险</span></div>
+        <div class="tile"><b style="color:#e07b1a">${p.eol}</b><span>EOL</span></div>
+        <div class="tile"><b style="color:#e07b1a">${p.lead_time_days.ge_180}</b><span>交期≥180天</span></div></div>
+      <div class="seclabel" style="font-size:12px">8 大 EE 品类</div>${ee}
+      <div class="seclabel" style="font-size:12px">供应商品类 Top12（家数）</div><div class="card">${subBars}</div>
+      <div class="seclabel" style="font-size:12px">PCBA Maker 分布 Top12（料号数）</div><div class="card">${mkBars}</div>`;
+  }catch(e){
+    if(box)box.innerHTML='<div class="card"><div class="errmsg">画像数据暂未发布</div></div>';
+  }
+}
 async function loadDay(date){
   const r=await fetch("data/"+date+".json");
   if(!r.ok)throw new Error("data "+r.status);
@@ -224,6 +266,7 @@ async function boot(){
     $("#dpills").innerHTML=days.slice().reverse().map(dt=>
       `<button class="dpill" data-d="${esc(dt)}" onclick="loadDay('${esc(dt)}')">${esc(dt.slice(5))}</button>`).join("");
     await loadDay(idx.latest||days[days.length-1]);
+    loadSupply();
   }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
 }
 boot();
