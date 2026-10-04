@@ -217,7 +217,7 @@ function affectedBases(w){
   // 预警 → related_events → supplier_updates(event_id) → subcategories → 基地归属（确定性关联，无需 LLM）
   const ids=new Set(w.related_events||[]);
   const subs=new Set();
-  (DAY.supplier_updates||[]).forEach(u=>{if(ids.has(u.event_id))(u.subcategories||[]).forEach(s=>subs.add(s));});
+  (CUR.supplier_updates||[]).forEach(u=>{if(ids.has(u.event_id))(u.subcategories||[]).forEach(s=>subs.add(s));});
   if(!subs.size)return [];
   const ee=new Set((TAX.ee_subcategories||[]).map(x=>x.name));
   const out=[];
