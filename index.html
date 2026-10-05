@@ -141,7 +141,9 @@ section.blk{scroll-margin-top:60px}
 .p-red{background:#fdeceb;color:#e0654f}.p-org{background:#fff6e5;color:#b3851f}.p-gry{background:#eef2f7;color:#5b6b7d}.p-blu{background:var(--tint);color:var(--blue)}
 /* 传导链 */
 .chain{display:flex;align-items:stretch;gap:6px;font-size:13px}
-.chain .nd{background:#f7fafd;border:1px solid var(--line);border-radius:10px;padding:8px 10px;flex:1}
+.chain .nd{background:#f7fafd;border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.chain .nd:first-child{flex:0 0 29%;display:flex;align-items:center}
+.chain .nd:last-child{flex:1}
 .chain .nd b{color:var(--navy)}
 .chain .arw{align-self:center;color:var(--blue);font-weight:800;flex:none}
 /* 供应商状态行 */
