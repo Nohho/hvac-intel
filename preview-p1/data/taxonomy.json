@@ -1,0 +1,1578 @@
+{
+ "updated": "2026-10-04",
+ "note": "183 供应商子品类 + 24 EE 元器件小类（JCAC·PCBA 口径）共同构成受控词表。PCBA 芯片/被动件类新闻用 EE 小类归类；结构件/大宗用 183 归类。",
+ "entity_map": {
+  "JCI (WuXi) Aircon&Refrig": "JCAC",
+  "Wuxi Air Conditioning": "WXAC",
+  "York Guangzhou Air Cond.": "GZAC"
+ },
+ "all_subcategories": [
+  "Access Control Panels",
+  "Accumulators",
+  "Air Moving Equipment",
+  "Aluminum Fin Stock",
+  "Angle Valves",
+  "Axial Fans",
+  "Badging",
+  "Ball Bearings",
+  "Ball Valves",
+  "Belts & Chains",
+  "Bolts - Screws - Studs",
+  "Burners",
+  "Butterfly Valves Manual",
+  "Cables",
+  "Cameras - Video",
+  "Capacitors",
+  "Capacitors (Large)",
+  "Cell Battery",
+  "Centrifugal Compressors",
+  "Centrifugal Fans",
+  "Check Valves",
+  "Chill Plates",
+  "Circuit Breakers",
+  "Clips",
+  "Closed Cell Foam",
+  "Communication Modules",
+  "Compression Molding Plastics",
+  "Condensing Units",
+  "Connector - Electronic",
+  "Connectors - Electrical",
+  "Contactors",
+  "Control Valves",
+  "Controllers",
+  "Coolants",
+  "Copper & Silver",
+  "Current Transformers",
+  "Deluge Valves",
+  "Die Castings",
+  "Digital Logic",
+  "Diode",
+  "Diodes (Large)",
+  "Direct Material Labels",
+  "Displays",
+  "E-Coat (Electrocoating)",
+  "Extrusions - Aluminum",
+  "Fabricated Bus Bars",
+  "Fabrications & Assemblies - Copper",
+  "Fabrications - Electrical Enclosures",
+  "Fabrications - Steel Plate",
+  "Fabrications - Steel Sheet",
+  "Fiberglass",
+  "Filter Drier Valves",
+  "Filters, Air",
+  "Filters, Oil",
+  "Fire Detectors",
+  "Fire Mass Notification",
+  "Fire Suppression Foams, Gases And Agents",
+  "Fittings - Copper",
+  "Fittings - Steel",
+  "Forgings - Steel",
+  "Frame & Plate",
+  "Fuses",
+  "Gaskets - Grommets - Seals",
+  "Gate Valves",
+  "Gauges",
+  "Gears: Actuators",
+  "Gears: Chillers & Industrial Refrigeration",
+  "Globe Valves",
+  "Heaters",
+  "Hoses",
+  "Hot Roll Steel, Coil & Sheet",
+  "Humidifiers",
+  "IGBT Modules",
+  "Inductors (Large)",
+  "Injection Molding Plastics",
+  "Integrated Motor Fans",
+  "Intrusion Sensors",
+  "Iron Castings - Large - >100 Lbs",
+  "Iron Castings - Small <100 Lbs",
+  "Isolators",
+  "Laminated Bus Plates",
+  "Large Motors (100 HP And Above 75KW) - Hermetic",
+  "Large Motors (100 HP And Above 75KW) - Non-Hermetic",
+  "Lighting",
+  "Linear Actuators",
+  "Liquid Paint, Pre-Paint & Primers",
+  "Low Torque Couplings",
+  "Lubricants",
+  "Machining, Non-Casting",
+  "Magnetic Bearings",
+  "Magnets",
+  "Medium Motors (10-100 HP) - Ihp Motors",
+  "Memory",
+  "Microchannel",
+  "Nylon Resin",
+  "Oil Pumps",
+  "PCB Boards",
+  "PCBA",
+  "Packaging: Corrugated & Paperboard",
+  "Packaging: Lumber",
+  "Packaging: Plastics & Distribution Supp",
+  "Packaging: Returnables",
+  "Panels",
+  "Panels & Doors",
+  "Pin Or Rivet",
+  "Plate - Steel",
+  "Power Supplies - Electrical",
+  "Power Supplies - Electronic",
+  "Precision Stampings",
+  "Pulley & Sheaves",
+  "Readers & Keypads",
+  "Reciprocating Compressors",
+  "Refrigerant",
+  "Refrigerant Oil",
+  "Relay",
+  "Relief - Safety Valves",
+  "Resistors (Large)",
+  "Reversing Valves",
+  "Rotary",
+  "Rotary Compressors",
+  "Rubber Fittings - Tubes - Pipes - Sheets",
+  "Rubber Rings & O-Rings",
+  "Screw Compressors",
+  "Scroll Compressors",
+  "Sealants - Caulks",
+  "Sealed Lead Acid (SLA) Battery",
+  "Seals",
+  "Sensor",
+  "Sensors - Flow",
+  "Sensors - Pressure",
+  "Sensors - Temperature",
+  "Shell & Plate",
+  "Shell & Tube",
+  "Small Motors: Fan Motors",
+  "Small Motors: Fractional HP - ECM Motors",
+  "Small Motors: Fractional HP - Non-ECM Mtrs",
+  "Solenoid Valves",
+  "Sound Insulation",
+  "Specialty Castings",
+  "Springs",
+  "Stampings",
+  "Starters",
+  "Steel - Expanded, Perforated & Wire Mesh",
+  "Structural, Bar And Profile",
+  "Switch - Electrical",
+  "Switches - Electronic",
+  "TVS",
+  "Tanks, Cylinders",
+  "Test And Drain Valves",
+  "Thermostats",
+  "Transformers (Large)",
+  "Transformers (Small)",
+  "Tube & Fin Coils",
+  "Tube & Pipe",
+  "Tube, Lw Coil Igt Or Smooth - Copper",
+  "Tube, Technical - Copper",
+  "Uncategorized Access Control",
+  "Uncategorized Bearings",
+  "Uncategorized Branded HVAC & IR Equip",
+  "Uncategorized Chemicals",
+  "Uncategorized Controls",
+  "Uncategorized Drive Components",
+  "Uncategorized Electrical",
+  "Uncategorized Electrn Components-Assbly",
+  "Uncategorized Fans & Blowers",
+  "Uncategorized Fire Detection",
+  "Uncategorized Insulation",
+  "Uncategorized Pumps",
+  "Uncategorized Rubber Products",
+  "Uncategorized Security - Intrusion",
+  "Uncategorized Valves",
+  "Vacuum Pumps",
+  "Valve Actuators",
+  "Valve Trim Kit",
+  "Variable Speed Drives Low Voltage",
+  "Variable Speed Drives Medium Voltage",
+  "Vessels",
+  "Washer",
+  "Water Pumps",
+  "Wire Form & Guards",
+  "Wire Harness",
+  "Wire Management - Wire Connectors",
+  "Zone Valves"
+ ],
+ "bases": {
+  "JCAC": {
+   "supplier_count": 158,
+   "subcategories": [
+    {
+     "name": "Uncategorized Electrical",
+     "count": 7
+    },
+    {
+     "name": "Inductors (Large)",
+     "count": 6
+    },
+    {
+     "name": "Machining, Non-Casting",
+     "count": 6
+    },
+    {
+     "name": "Injection Molding Plastics",
+     "count": 5
+    },
+    {
+     "name": "Seals",
+     "count": 5
+    },
+    {
+     "name": "Springs",
+     "count": 5
+    },
+    {
+     "name": "Capacitors (Large)",
+     "count": 5
+    },
+    {
+     "name": "Iron Castings - Large - >100 Lbs",
+     "count": 4
+    },
+    {
+     "name": "Contactors",
+     "count": 4
+    },
+    {
+     "name": "Fabrications - Steel Sheet",
+     "count": 3
+    },
+    {
+     "name": "Fiberglass",
+     "count": 3
+    },
+    {
+     "name": "Specialty Castings",
+     "count": 3
+    },
+    {
+     "name": "Circuit Breakers",
+     "count": 3
+    },
+    {
+     "name": "PCBA",
+     "count": 3
+    },
+    {
+     "name": "Ball Bearings",
+     "count": 3
+    },
+    {
+     "name": "Laminated Bus Plates",
+     "count": 3
+    },
+    {
+     "name": "Rubber Rings & O-Rings",
+     "count": 3
+    },
+    {
+     "name": "Integrated Motor Fans",
+     "count": 3
+    },
+    {
+     "name": "Pin Or Rivet",
+     "count": 3
+    },
+    {
+     "name": "Switch - Electrical",
+     "count": 3
+    },
+    {
+     "name": "Washer",
+     "count": 3
+    },
+    {
+     "name": "Uncategorized Bearings",
+     "count": 2
+    },
+    {
+     "name": "Gears: Actuators",
+     "count": 2
+    },
+    {
+     "name": "Small Motors: Fractional HP - Non-ECM Mtrs",
+     "count": 2
+    },
+    {
+     "name": "Large Motors (100 HP And Above 75KW) - Hermetic",
+     "count": 2
+    },
+    {
+     "name": "Cables",
+     "count": 2
+    },
+    {
+     "name": "Gears: Chillers & Industrial Refrigeration",
+     "count": 2
+    },
+    {
+     "name": "Sensors - Pressure",
+     "count": 2
+    },
+    {
+     "name": "Connectors - Electrical",
+     "count": 2
+    },
+    {
+     "name": "Sensor",
+     "count": 2
+    },
+    {
+     "name": "Packaging: Corrugated & Paperboard",
+     "count": 2
+    },
+    {
+     "name": "Linear Actuators",
+     "count": 2
+    },
+    {
+     "name": "Fuses",
+     "count": 2
+    },
+    {
+     "name": "E-Coat (Electrocoating)",
+     "count": 2
+    },
+    {
+     "name": "Current Transformers",
+     "count": 2
+    },
+    {
+     "name": "Filters, Air",
+     "count": 2
+    },
+    {
+     "name": "Relief - Safety Valves",
+     "count": 2
+    },
+    {
+     "name": "Transformers (Large)",
+     "count": 2
+    },
+    {
+     "name": "Small Motors: Fan Motors",
+     "count": 1
+    },
+    {
+     "name": "Extrusions - Aluminum",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Insulation",
+     "count": 1
+    },
+    {
+     "name": "Iron Castings - Small <100 Lbs",
+     "count": 1
+    },
+    {
+     "name": "Magnetic Bearings",
+     "count": 1
+    },
+    {
+     "name": "Forgings - Steel",
+     "count": 1
+    },
+    {
+     "name": "Fabrications - Electrical Enclosures",
+     "count": 1
+    },
+    {
+     "name": "Fabricated Bus Bars",
+     "count": 1
+    },
+    {
+     "name": "IGBT Modules",
+     "count": 1
+    },
+    {
+     "name": "Fittings - Steel",
+     "count": 1
+    },
+    {
+     "name": "Chill Plates",
+     "count": 1
+    },
+    {
+     "name": "Valve Actuators",
+     "count": 1
+    },
+    {
+     "name": "Wire Harness",
+     "count": 1
+    },
+    {
+     "name": "Small Motors: Fractional HP - ECM Motors",
+     "count": 1
+    },
+    {
+     "name": "Wire Management - Wire Connectors",
+     "count": 1
+    },
+    {
+     "name": "Resistors (Large)",
+     "count": 1
+    },
+    {
+     "name": "Diodes (Large)",
+     "count": 1
+    },
+    {
+     "name": "Shell & Tube",
+     "count": 1
+    },
+    {
+     "name": "Direct Material Labels",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Rubber Products",
+     "count": 1
+    },
+    {
+     "name": "Starters",
+     "count": 1
+    },
+    {
+     "name": "Connector - Electronic",
+     "count": 1
+    },
+    {
+     "name": "Accumulators",
+     "count": 1
+    },
+    {
+     "name": "Gaskets - Grommets - Seals",
+     "count": 1
+    },
+    {
+     "name": "Die Castings",
+     "count": 1
+    },
+    {
+     "name": "Stampings",
+     "count": 1
+    },
+    {
+     "name": "Readers & Keypads",
+     "count": 1
+    },
+    {
+     "name": "Closed Cell Foam",
+     "count": 1
+    },
+    {
+     "name": "Globe Valves",
+     "count": 1
+    },
+    {
+     "name": "Power Supplies - Electrical",
+     "count": 1
+    },
+    {
+     "name": "Capacitors",
+     "count": 1
+    },
+    {
+     "name": "Sealants - Caulks",
+     "count": 1
+    },
+    {
+     "name": "Magnets",
+     "count": 1
+    },
+    {
+     "name": "Memory",
+     "count": 1
+    },
+    {
+     "name": "Tube & Pipe",
+     "count": 1
+    },
+    {
+     "name": "Relay",
+     "count": 1
+    },
+    {
+     "name": "Heaters",
+     "count": 1
+    },
+    {
+     "name": "Coolants",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Electrn Components-Assbly",
+     "count": 1
+    },
+    {
+     "name": "Water Pumps",
+     "count": 1
+    },
+    {
+     "name": "Nylon Resin",
+     "count": 1
+    }
+   ]
+  },
+  "WXAC": {
+   "supplier_count": 118,
+   "subcategories": [
+    {
+     "name": "Fabrications - Steel Plate",
+     "count": 10
+    },
+    {
+     "name": "Large Motors (100 HP And Above 75KW) - Non-Hermetic",
+     "count": 9
+    },
+    {
+     "name": "Fittings - Steel",
+     "count": 7
+    },
+    {
+     "name": "Tube & Pipe",
+     "count": 4
+    },
+    {
+     "name": "Switch - Electrical",
+     "count": 4
+    },
+    {
+     "name": "Tube, Technical - Copper",
+     "count": 4
+    },
+    {
+     "name": "Refrigerant",
+     "count": 4
+    },
+    {
+     "name": "Gaskets - Grommets - Seals",
+     "count": 4
+    },
+    {
+     "name": "Solenoid Valves",
+     "count": 4
+    },
+    {
+     "name": "Sensor",
+     "count": 3
+    },
+    {
+     "name": "Liquid Paint, Pre-Paint & Primers",
+     "count": 3
+    },
+    {
+     "name": "Gauges",
+     "count": 3
+    },
+    {
+     "name": "Relief - Safety Valves",
+     "count": 2
+    },
+    {
+     "name": "Uncategorized Electrical",
+     "count": 2
+    },
+    {
+     "name": "Variable Speed Drives Medium Voltage",
+     "count": 2
+    },
+    {
+     "name": "Bolts - Screws - Studs",
+     "count": 2
+    },
+    {
+     "name": "Angle Valves",
+     "count": 2
+    },
+    {
+     "name": "Filters, Oil",
+     "count": 2
+    },
+    {
+     "name": "Butterfly Valves Manual",
+     "count": 2
+    },
+    {
+     "name": "Frame & Plate",
+     "count": 2
+    },
+    {
+     "name": "Panels",
+     "count": 2
+    },
+    {
+     "name": "Sensors - Pressure",
+     "count": 2
+    },
+    {
+     "name": "Packaging: Plastics & Distribution Supp",
+     "count": 2
+    },
+    {
+     "name": "Machining, Non-Casting",
+     "count": 2
+    },
+    {
+     "name": "Vacuum Pumps",
+     "count": 2
+    },
+    {
+     "name": "Hot Roll Steel, Coil & Sheet",
+     "count": 1
+    },
+    {
+     "name": "Steel - Expanded, Perforated & Wire Mesh",
+     "count": 1
+    },
+    {
+     "name": "Plate - Steel",
+     "count": 1
+    },
+    {
+     "name": "Control Valves",
+     "count": 1
+    },
+    {
+     "name": "Wire Harness",
+     "count": 1
+    },
+    {
+     "name": "Closed Cell Foam",
+     "count": 1
+    },
+    {
+     "name": "Centrifugal Compressors",
+     "count": 1
+    },
+    {
+     "name": "Starters",
+     "count": 1
+    },
+    {
+     "name": "Low Torque Couplings",
+     "count": 1
+    },
+    {
+     "name": "Packaging: Lumber",
+     "count": 1
+    },
+    {
+     "name": "Small Motors: Fractional HP - ECM Motors",
+     "count": 1
+    },
+    {
+     "name": "Oil Pumps",
+     "count": 1
+    },
+    {
+     "name": "Sensors - Flow",
+     "count": 1
+    },
+    {
+     "name": "Rubber Fittings - Tubes - Pipes - Sheets",
+     "count": 1
+    },
+    {
+     "name": "Circuit Breakers",
+     "count": 1
+    },
+    {
+     "name": "Hoses",
+     "count": 1
+    },
+    {
+     "name": "Sound Insulation",
+     "count": 1
+    },
+    {
+     "name": "Isolators",
+     "count": 1
+    },
+    {
+     "name": "Fire Suppression Foams, Gases And Agents",
+     "count": 1
+    },
+    {
+     "name": "Clips",
+     "count": 1
+    },
+    {
+     "name": "Badging",
+     "count": 1
+    },
+    {
+     "name": "Shell & Plate",
+     "count": 1
+    },
+    {
+     "name": "Shell & Tube",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Chemicals",
+     "count": 1
+    },
+    {
+     "name": "Ball Valves",
+     "count": 1
+    },
+    {
+     "name": "Water Pumps",
+     "count": 1
+    },
+    {
+     "name": "Thermostats",
+     "count": 1
+    },
+    {
+     "name": "Burners",
+     "count": 1
+    },
+    {
+     "name": "Heaters",
+     "count": 1
+    },
+    {
+     "name": "Sealants - Caulks",
+     "count": 1
+    },
+    {
+     "name": "Diode",
+     "count": 1
+    },
+    {
+     "name": "TVS",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Drive Components",
+     "count": 1
+    }
+   ]
+  },
+  "GZAC": {
+   "supplier_count": 156,
+   "subcategories": [
+    {
+     "name": "Medium Motors (10-100 HP) - Ihp Motors",
+     "count": 7
+    },
+    {
+     "name": "Filters, Air",
+     "count": 7
+    },
+    {
+     "name": "Fabrications - Steel Sheet",
+     "count": 7
+    },
+    {
+     "name": "Fabrications & Assemblies - Copper",
+     "count": 6
+    },
+    {
+     "name": "Integrated Motor Fans",
+     "count": 5
+    },
+    {
+     "name": "Switch - Electrical",
+     "count": 5
+    },
+    {
+     "name": "Uncategorized Electrical",
+     "count": 4
+    },
+    {
+     "name": "Water Pumps",
+     "count": 4
+    },
+    {
+     "name": "Inductors (Large)",
+     "count": 3
+    },
+    {
+     "name": "Humidifiers",
+     "count": 3
+    },
+    {
+     "name": "Frame & Plate",
+     "count": 3
+    },
+    {
+     "name": "Scroll Compressors",
+     "count": 3
+    },
+    {
+     "name": "Panels & Doors",
+     "count": 3
+    },
+    {
+     "name": "Aluminum Fin Stock",
+     "count": 3
+    },
+    {
+     "name": "Heaters",
+     "count": 3
+    },
+    {
+     "name": "Rotary",
+     "count": 3
+    },
+    {
+     "name": "Gauges",
+     "count": 3
+    },
+    {
+     "name": "Uncategorized Valves",
+     "count": 2
+    },
+    {
+     "name": "Uncategorized Pumps",
+     "count": 2
+    },
+    {
+     "name": "Sensors - Temperature",
+     "count": 2
+    },
+    {
+     "name": "Sensors - Flow",
+     "count": 2
+    },
+    {
+     "name": "Coolants",
+     "count": 2
+    },
+    {
+     "name": "Rubber Fittings - Tubes - Pipes - Sheets",
+     "count": 2
+    },
+    {
+     "name": "Panels",
+     "count": 2
+    },
+    {
+     "name": "Tube, Lw Coil Igt Or Smooth - Copper",
+     "count": 2
+    },
+    {
+     "name": "Fittings - Copper",
+     "count": 2
+    },
+    {
+     "name": "Thermostats",
+     "count": 2
+    },
+    {
+     "name": "Extrusions - Aluminum",
+     "count": 2
+    },
+    {
+     "name": "Uncategorized Branded HVAC & IR Equip",
+     "count": 2
+    },
+    {
+     "name": "Rotary Compressors",
+     "count": 2
+    },
+    {
+     "name": "Copper & Silver",
+     "count": 2
+    },
+    {
+     "name": "Reversing Valves",
+     "count": 2
+    },
+    {
+     "name": "Closed Cell Foam",
+     "count": 2
+    },
+    {
+     "name": "Low Torque Couplings",
+     "count": 2
+    },
+    {
+     "name": "Pulley & Sheaves",
+     "count": 2
+    },
+    {
+     "name": "Butterfly Valves Manual",
+     "count": 2
+    },
+    {
+     "name": "Relief - Safety Valves",
+     "count": 2
+    },
+    {
+     "name": "Bolts - Screws - Studs",
+     "count": 1
+    },
+    {
+     "name": "Ball Valves",
+     "count": 1
+    },
+    {
+     "name": "Tube & Fin Coils",
+     "count": 1
+    },
+    {
+     "name": "Sealants - Caulks",
+     "count": 1
+    },
+    {
+     "name": "Oil Pumps",
+     "count": 1
+    },
+    {
+     "name": "Sensors - Pressure",
+     "count": 1
+    },
+    {
+     "name": "Sensor",
+     "count": 1
+    },
+    {
+     "name": "Small Motors: Fractional HP - Non-ECM Mtrs",
+     "count": 1
+    },
+    {
+     "name": "Microchannel",
+     "count": 1
+    },
+    {
+     "name": "Control Valves",
+     "count": 1
+    },
+    {
+     "name": "Packaging: Returnables",
+     "count": 1
+    },
+    {
+     "name": "Screw Compressors",
+     "count": 1
+    },
+    {
+     "name": "Packaging: Corrugated & Paperboard",
+     "count": 1
+    },
+    {
+     "name": "Injection Molding Plastics",
+     "count": 1
+    },
+    {
+     "name": "Sound Insulation",
+     "count": 1
+    },
+    {
+     "name": "Tube & Pipe",
+     "count": 1
+    },
+    {
+     "name": "Springs",
+     "count": 1
+    },
+    {
+     "name": "PCBA",
+     "count": 1
+    },
+    {
+     "name": "Gaskets - Grommets - Seals",
+     "count": 1
+    },
+    {
+     "name": "Vessels",
+     "count": 1
+    },
+    {
+     "name": "Condensing Units",
+     "count": 1
+    },
+    {
+     "name": "Check Valves",
+     "count": 1
+    },
+    {
+     "name": "Direct Material Labels",
+     "count": 1
+    },
+    {
+     "name": "Solenoid Valves",
+     "count": 1
+    },
+    {
+     "name": "Isolators",
+     "count": 1
+    },
+    {
+     "name": "Power Supplies - Electrical",
+     "count": 1
+    },
+    {
+     "name": "Shell & Tube",
+     "count": 1
+    },
+    {
+     "name": "Axial Fans",
+     "count": 1
+    },
+    {
+     "name": "Wire Form & Guards",
+     "count": 1
+    },
+    {
+     "name": "Tanks, Cylinders",
+     "count": 1
+    },
+    {
+     "name": "Switches - Electronic",
+     "count": 1
+    },
+    {
+     "name": "E-Coat (Electrocoating)",
+     "count": 1
+    },
+    {
+     "name": "Packaging: Plastics & Distribution Supp",
+     "count": 1
+    },
+    {
+     "name": "Transformers (Large)",
+     "count": 1
+    },
+    {
+     "name": "Packaging: Lumber",
+     "count": 1
+    },
+    {
+     "name": "Small Motors: Fan Motors",
+     "count": 1
+    },
+    {
+     "name": "Belts & Chains",
+     "count": 1
+    },
+    {
+     "name": "Variable Speed Drives Low Voltage",
+     "count": 1
+    },
+    {
+     "name": "Centrifugal Fans",
+     "count": 1
+    },
+    {
+     "name": "Lighting",
+     "count": 1
+    },
+    {
+     "name": "Fiberglass",
+     "count": 1
+    },
+    {
+     "name": "Air Moving Equipment",
+     "count": 1
+    },
+    {
+     "name": "Fittings - Steel",
+     "count": 1
+    },
+    {
+     "name": "Connector - Electronic",
+     "count": 1
+    }
+   ]
+  },
+  "亚太其他": {
+   "supplier_count": 173,
+   "subcategories": [
+    {
+     "name": "Tanks, Cylinders",
+     "count": 5
+    },
+    {
+     "name": "Fire Detectors",
+     "count": 5
+    },
+    {
+     "name": "Cameras - Video",
+     "count": 4
+    },
+    {
+     "name": "Switch - Electrical",
+     "count": 4
+    },
+    {
+     "name": "Uncategorized Fire Detection",
+     "count": 4
+    },
+    {
+     "name": "Injection Molding Plastics",
+     "count": 4
+    },
+    {
+     "name": "Switches - Electronic",
+     "count": 4
+    },
+    {
+     "name": "Wire Harness",
+     "count": 4
+    },
+    {
+     "name": "Fittings - Steel",
+     "count": 4
+    },
+    {
+     "name": "Sensors - Pressure",
+     "count": 3
+    },
+    {
+     "name": "Centrifugal Fans",
+     "count": 3
+    },
+    {
+     "name": "PCBA",
+     "count": 3
+    },
+    {
+     "name": "Uncategorized Valves",
+     "count": 3
+    },
+    {
+     "name": "Valve Actuators",
+     "count": 3
+    },
+    {
+     "name": "Iron Castings - Small <100 Lbs",
+     "count": 3
+    },
+    {
+     "name": "Connector - Electronic",
+     "count": 3
+    },
+    {
+     "name": "Controllers",
+     "count": 3
+    },
+    {
+     "name": "Filters, Air",
+     "count": 3
+    },
+    {
+     "name": "Fire Suppression Foams, Gases And Agents",
+     "count": 3
+    },
+    {
+     "name": "Packaging: Plastics & Distribution Supp",
+     "count": 3
+    },
+    {
+     "name": "Direct Material Labels",
+     "count": 3
+    },
+    {
+     "name": "Fabrications - Steel Sheet",
+     "count": 3
+    },
+    {
+     "name": "Uncategorized Chemicals",
+     "count": 3
+    },
+    {
+     "name": "PCB Boards",
+     "count": 2
+    },
+    {
+     "name": "Access Control Panels",
+     "count": 2
+    },
+    {
+     "name": "Butterfly Valves Manual",
+     "count": 2
+    },
+    {
+     "name": "Refrigerant Oil",
+     "count": 2
+    },
+    {
+     "name": "Hoses",
+     "count": 2
+    },
+    {
+     "name": "Sensors - Flow",
+     "count": 2
+    },
+    {
+     "name": "Fabrications - Electrical Enclosures",
+     "count": 2
+    },
+    {
+     "name": "Sensors - Temperature",
+     "count": 2
+    },
+    {
+     "name": "Filters, Oil",
+     "count": 2
+    },
+    {
+     "name": "Displays",
+     "count": 2
+    },
+    {
+     "name": "Uncategorized Electrn Components-Assbly",
+     "count": 2
+    },
+    {
+     "name": "Uncategorized Controls",
+     "count": 2
+    },
+    {
+     "name": "Fabrications - Steel Plate",
+     "count": 2
+    },
+    {
+     "name": "Readers & Keypads",
+     "count": 2
+    },
+    {
+     "name": "Cables",
+     "count": 2
+    },
+    {
+     "name": "Reciprocating Compressors",
+     "count": 2
+    },
+    {
+     "name": "Bolts - Screws - Studs",
+     "count": 2
+    },
+    {
+     "name": "Uncategorized Security - Intrusion",
+     "count": 2
+    },
+    {
+     "name": "Screw Compressors",
+     "count": 1
+    },
+    {
+     "name": "Lubricants",
+     "count": 1
+    },
+    {
+     "name": "Current Transformers",
+     "count": 1
+    },
+    {
+     "name": "Refrigerant",
+     "count": 1
+    },
+    {
+     "name": "Zone Valves",
+     "count": 1
+    },
+    {
+     "name": "Capacitors",
+     "count": 1
+    },
+    {
+     "name": "Structural, Bar And Profile",
+     "count": 1
+    },
+    {
+     "name": "Precision Stampings",
+     "count": 1
+    },
+    {
+     "name": "Digital Logic",
+     "count": 1
+    },
+    {
+     "name": "Panels & Doors",
+     "count": 1
+    },
+    {
+     "name": "Tube & Fin Coils",
+     "count": 1
+    },
+    {
+     "name": "Stampings",
+     "count": 1
+    },
+    {
+     "name": "Fabrications & Assemblies - Copper",
+     "count": 1
+    },
+    {
+     "name": "Sealed Lead Acid (SLA) Battery",
+     "count": 1
+    },
+    {
+     "name": "Deluge Valves",
+     "count": 1
+    },
+    {
+     "name": "Sensor",
+     "count": 1
+    },
+    {
+     "name": "Connectors - Electrical",
+     "count": 1
+    },
+    {
+     "name": "Power Supplies - Electronic",
+     "count": 1
+    },
+    {
+     "name": "Centrifugal Compressors",
+     "count": 1
+    },
+    {
+     "name": "Cell Battery",
+     "count": 1
+    },
+    {
+     "name": "Integrated Motor Fans",
+     "count": 1
+    },
+    {
+     "name": "Springs",
+     "count": 1
+    },
+    {
+     "name": "Packaging: Corrugated & Paperboard",
+     "count": 1
+    },
+    {
+     "name": "Intrusion Sensors",
+     "count": 1
+    },
+    {
+     "name": "Sealants - Caulks",
+     "count": 1
+    },
+    {
+     "name": "Fire Mass Notification",
+     "count": 1
+    },
+    {
+     "name": "Gate Valves",
+     "count": 1
+    },
+    {
+     "name": "Extrusions - Aluminum",
+     "count": 1
+    },
+    {
+     "name": "Communication Modules",
+     "count": 1
+    },
+    {
+     "name": "Rubber Fittings - Tubes - Pipes - Sheets",
+     "count": 1
+    },
+    {
+     "name": "Test And Drain Valves",
+     "count": 1
+    },
+    {
+     "name": "Pulley & Sheaves",
+     "count": 1
+    },
+    {
+     "name": "Thermostats",
+     "count": 1
+    },
+    {
+     "name": "Solenoid Valves",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Fans & Blowers",
+     "count": 1
+    },
+    {
+     "name": "Power Supplies - Electrical",
+     "count": 1
+    },
+    {
+     "name": "Machining, Non-Casting",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Access Control",
+     "count": 1
+    },
+    {
+     "name": "Fittings - Copper",
+     "count": 1
+    },
+    {
+     "name": "Transformers (Small)",
+     "count": 1
+    },
+    {
+     "name": "Closed Cell Foam",
+     "count": 1
+    },
+    {
+     "name": "Fiberglass",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Bearings",
+     "count": 1
+    },
+    {
+     "name": "Filter Drier Valves",
+     "count": 1
+    },
+    {
+     "name": "Coolants",
+     "count": 1
+    },
+    {
+     "name": "Rubber Rings & O-Rings",
+     "count": 1
+    },
+    {
+     "name": "Relief - Safety Valves",
+     "count": 1
+    },
+    {
+     "name": "Valve Trim Kit",
+     "count": 1
+    },
+    {
+     "name": "Uncategorized Electrical",
+     "count": 1
+    },
+    {
+     "name": "Packaging: Lumber",
+     "count": 1
+    },
+    {
+     "name": "Tube & Pipe",
+     "count": 1
+    },
+    {
+     "name": "Washer",
+     "count": 1
+    },
+    {
+     "name": "Compression Molding Plastics",
+     "count": 1
+    },
+    {
+     "name": "Contactors",
+     "count": 1
+    },
+    {
+     "name": "Gauges",
+     "count": 1
+    },
+    {
+     "name": "Scroll Compressors",
+     "count": 1
+    },
+    {
+     "name": "Tube, Lw Coil Igt Or Smooth - Copper",
+     "count": 1
+    }
+   ]
+  }
+ },
+ "ee_subcategories": [
+  {
+   "category": "HVAC 专有液冷与热管理",
+   "name": "密封与制冷剂"
+  },
+  {
+   "category": "HVAC 专有液冷与热管理",
+   "name": "换热器与冷板"
+  },
+  {
+   "category": "HVAC 专有液冷与热管理",
+   "name": "水泵与过滤"
+  },
+  {
+   "category": "HVAC 专有液冷与热管理",
+   "name": "阀门与管件"
+  },
+  {
+   "category": "PCBA & 电子代工",
+   "name": "PCBA板卡"
+  },
+  {
+   "category": "低压电气与配电",
+   "name": "变压器与互感器"
+  },
+  {
+   "category": "低压电气与配电",
+   "name": "断路器与接触器"
+  },
+  {
+   "category": "低压电气与配电",
+   "name": "熔断器"
+  },
+  {
+   "category": "低压电气与配电",
+   "name": "继电器与电源"
+  },
+  {
+   "category": "机械结构与辅材",
+   "name": "塑料件与包装"
+  },
+  {
+   "category": "机械结构与辅材",
+   "name": "轴承与弹簧"
+  },
+  {
+   "category": "机械结构与辅材",
+   "name": "钣金与结构件"
+  },
+  {
+   "category": "机械结构与辅材",
+   "name": "铸锻件与机加工"
+  },
+  {
+   "category": "电机、风机与传感控制",
+   "name": "传感器与仪表"
+  },
+  {
+   "category": "电机、风机与传感控制",
+   "name": "电机"
+  },
+  {
+   "category": "电机、风机与传感控制",
+   "name": "风机"
+  },
+  {
+   "category": "芯片与半导体",
+   "name": "功率器件"
+  },
+  {
+   "category": "芯片与半导体",
+   "name": "存储器"
+  },
+  {
+   "category": "芯片与半导体",
+   "name": "时钟/晶振/FPGA"
+  },
+  {
+   "category": "芯片与半导体",
+   "name": "模拟与电源 IC / MCU"
+  },
+  {
+   "category": "被动元件与连接件",
+   "name": "电容"
+  },
+  {
+   "category": "被动元件与连接件",
+   "name": "电阻与电感"
+  },
+  {
+   "category": "被动元件与连接件",
+   "name": "连接器与线束"
+  },
+  {
+   "category": "其他辅材与未分类",
+   "name": "其他辅料"
+  }
+ ]
+}
