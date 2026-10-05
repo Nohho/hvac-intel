@@ -31,12 +31,14 @@
     {
      "outlet": "证券时报",
      "date": "2026-09-22",
-     "url": "https://finance.eastmoney.com/a/202609223880383582.html"
+     "url": "https://finance.eastmoney.com/a/202609223880383582.html",
+     "first_party": false
     },
     {
      "outlet": "TechNews",
      "date": "2026-09-21",
-     "url": "https://technews.tw/2026/09/21/power-semiconductor-giant-raises-prices-onsemi-adjusts-upwards-taiwanese-manufacturers-to-follow-q4/"
+     "url": "https://technews.tw/2026/09/21/power-semiconductor-giant-raises-prices-onsemi-adjusts-upwards-taiwanese-manufacturers-to-follow-q4/",
+     "first_party": false
     }
    ],
    "summary": "安森美第二轮涨价 10-10 生效（涨幅依产品而定）；瑞萨新价格体系 2027 年 1 月生效；强茂、台半等台系厂商 10 月对现货产品再提价 10%~15%。华泰证券：AI 需求持续挤占 8 英寸成熟制程产能，原厂交期持续延长。",
@@ -68,12 +70,14 @@
     {
      "outlet": "证券日报",
      "date": "2026-09-21",
-     "url": "https://www.21jingji.com/article/20260921/herald/da180005227e553f107a3cc8f29cbfcf.html"
+     "url": "https://www.21jingji.com/article/20260921/herald/da180005227e553f107a3cc8f29cbfcf.html",
+     "first_party": false
     },
     {
      "outlet": "TVBS",
      "date": "2026-10-04",
-     "url": "https://www.wailaike.net/article/3552097"
+     "url": "https://www.wailaike.net/article/3552097",
+     "first_party": false
     }
    ],
    "summary": "三环集团 MLCC +30%~80% 已于 10-1 生效；三星电机 8 月 +30% 基础上 Q4 再 +10%~30%；太阳诱电 9-1 调涨；村田停产部分消费级 MLCC、高端订单锁单至 2027 年，交期 20-26 周。",
@@ -103,12 +107,14 @@
     {
      "outlet": "TrendForce 经新浪科技",
      "date": "2026-10-03",
-     "url": "https://news.futunn.com/post/1000481620/storage-price-hikes-are-far-from-over-goldman-sachs-q4"
+     "url": "https://news.futunn.com/post/1000481620/storage-price-hikes-are-far-from-over-goldman-sachs-q4",
+     "first_party": false
     },
     {
      "outlet": "wccftech 引韩国 Maeil Business",
      "date": "2026-10-02",
-     "url": "https://wccftech.com/samsung-hbm4-pricing-3x-hbm3e-dram-market/amp/"
+     "url": "https://wccftech.com/samsung-hbm4-pricing-3x-hbm3e-dram-market/amp/",
+     "first_party": false
     }
    ],
    "summary": "TrendForce 预计 Q4 传统 DRAM 合约价环比 +10%~15%、NAND +15%~20%（企业级 SSD +23%~28%）；三星在 2027 年 HBM 长约谈判中对 HBM4 开出约 $4+/Gb（约为 HBM3E ~$1.5/Gb 的 3 倍）；HBM 占 DRAM 晶圆产能 23%（2025 年 19%）。",
@@ -142,12 +148,14 @@
     {
      "outlet": "上海证券报",
      "date": "2026-09-23",
-     "url": "https://www.stcn.com/article/detail/4197375.html"
+     "url": "https://www.stcn.com/article/detail/4197375.html",
+     "first_party": false
     },
     {
      "outlet": "金融界",
      "date": "2026-09-30",
-     "url": "https://finance.jrj.com.cn/2026/09/30074358586887.shtml"
+     "url": "https://finance.jrj.com.cn/2026/09/30074358586887.shtml",
+     "first_party": false
     }
    ],
    "summary": "宏瑞兴 CCL +10%/PP +15%（上游玻璃布、铜箔紧缺）；建滔 8-28 起全产品 +10%~20%；松下 9-1 起新订单调价（部分高端最高 +30%）；南亚 9-1 起 +20%~25%；中国巨石电子布厚布 +15%、薄布 +20%。",
@@ -180,7 +188,8 @@
     {
      "outlet": "上海证券报",
      "date": "2026-09-03",
-     "url": "https://finance.eastmoney.com/a/202609033864147681.html"
+     "url": "https://finance.eastmoney.com/a/202609033864147681.html",
+     "first_party": false
     }
    ],
    "summary": "德州仪器 9-1 流出第三轮调价预告函（此前 3 月/5 月两轮）；ST 8 月中旬第三轮调价（MCU、功率器件、传感器，8-23 起）；ADI 9-13 起第二轮（部分涨幅达 30%）；国民技术 8-11 宣布 10-1 起部分产品（含 MCU）涨价 10%~20%。",
@@ -211,7 +220,8 @@
     {
      "outlet": "电子工程专辑",
      "date": "2026-09-15",
-     "url": "https://www.eet-china.com/mp/a524923.html"
+     "url": "https://www.eet-china.com/mp/a524923.html",
+     "first_party": false
     }
    ],
    "summary": "泰科 1-5 生效全线涨价 5%~12%；安费诺 1-1 首轮 + 7-1 第二轮 5%~15%；莫仕 7-1 生效 5%~30%；铜占连接器物料成本 40%~60%。三巨头高端产能满载，部分产品交期 16-20 周、个别超 30 周。",
@@ -239,17 +249,20 @@
     {
      "outlet": "新浪财经大宗商品综述",
      "date": "2026-10-03",
-     "url": "https://finance.sina.cn/usstock/mggd/2026-10-03/detail-initwvkt6742886.d.html"
+     "url": "https://finance.sina.cn/usstock/mggd/2026-10-03/detail-initwvkt6742886.d.html",
+     "first_party": false
     },
     {
      "outlet": "工商时报",
      "date": "2026-10-05",
-     "url": "https://www.ctee.com.tw/news/20261005700088-439901"
+     "url": "https://www.ctee.com.tw/news/20261005700088-439901",
+     "first_party": false
     },
     {
      "outlet": "金投网",
      "date": "2026-10-03",
-     "url": "https://finance.sina.cn/futuremarket/qsyw/2026-10-03/detail-inityptx6025954.d.html"
+     "url": "https://finance.sina.cn/futuremarket/qsyw/2026-10-03/detail-inityptx6025954.d.html",
+     "first_party": false
     }
    ],
    "summary": "LME 期铜 10-03 报 14,258.5 美元/吨（历史高位区间）；长江现货 9-29 1#铜 111,230 元/吨；大陆钢厂吨钢亏损扩大至 200 元；沪铜 9-21 重回 11 万（110,180 元/吨）；2026 年矿产铜或现 2017 年以来首次年度下降。",
@@ -280,7 +293,8 @@
     {
      "outlet": "新浪",
      "date": "2026-10-04",
-     "url": "https://k.sina.cn/article_7857201856_1d45362c001908prme.html"
+     "url": "https://k.sina.cn/article_7857201856_1d45362c001908prme.html",
+     "first_party": false
     }
    ],
    "summary": "2026 年 4 月宣布的合作落地：美的收购墨西哥华雷斯制冷工厂 65% 股权、美国南卡洗护工厂 45% 股权，双方各持北美销售合资公司 50% 股权；目标翻倍提升北美冰洗产量。",
@@ -306,7 +320,8 @@
     {
      "outlet": "Storyboard18 转 PTI",
      "date": "2026-10-04",
-     "url": "https://www.storyboard18.com/brand-marketing/appliance-prices-could-rise-another-15-by-january-as-copper-costs-surge-111937.htm"
+     "url": "https://www.storyboard18.com/brand-marketing/appliance-prices-could-rise-another-15-by-january-as-copper-costs-surge-111937.htm",
+     "first_party": false
     }
    ],
    "summary": "印度家电节前第三轮涨价：空调等家电已涨价 5~8%（铜、铝、钢、石化衍生品成本上涨及运费、汇率驱动）；海尔自 10-01 起房间空调上调约 5%，LED 电视和洗衣机涨 2~3%；海尔印度 CEO 预计节日季行业增长 10~15%。",
@@ -334,12 +349,14 @@
     {
      "outlet": "中信建投 经界面新闻",
      "date": "2026-09-27",
-     "url": "https://www.jiemian.com/article/14981102.html"
+     "url": "https://www.jiemian.com/article/14981102.html",
+     "first_party": false
     },
     {
      "outlet": "BT财经",
      "date": "2026-09-09",
-     "url": "https://businesstimescn.com/articles/625808.html"
+     "url": "https://businesstimescn.com/articles/625808.html",
+     "first_party": false
     }
    ],
    "summary": "全球高压电力设备供需紧张加剧；美国 2026 年 7 月变压器价格指数环比 +4%；大型电力变压器交货周期普遍 2~3 年、配电变压器 8~12 个月、发电升压变压器 >160 周；金盘科技上半年数据中心订单同比 +336.25%。",
@@ -369,7 +386,8 @@
     {
      "outlet": "证券时报 经新浪财经",
      "date": "2026-09-08",
-     "url": "https://finance.sina.cn/2026-09-08/detail-iniqzsvk9453738.d.html"
+     "url": "https://finance.sina.cn/2026-09-08/detail-iniqzsvk9453738.d.html",
+     "first_party": false
     }
    ],
    "summary": "电池消费税 9-1 起按 2% 开征（2027-9-1 升至 4%）；亿纬锂能、力神电池等发调价函；储能行业平均产能利用率 90% 以上，主流 314Ah 储能电芯一芯难求。",
@@ -395,7 +413,8 @@
     {
      "outlet": "The Online Kenyan",
      "date": "2026-10-02",
-     "url": "https://www.theonlinekenyan.com/read/story/675664"
+     "url": "https://www.theonlinekenyan.com/read/story/675664",
+     "first_party": false
     }
    ],
    "summary": "Vertiv 宣布收购爱尔兰 King Environmental Services（液冷数据中心流体管理、系统调试与负载测试服务商，覆盖 EMEA），延续 2025 年收购 PurgeRite 后在北美建立的能力；预计 2026 Q4 交割，财务条款未披露。",
@@ -420,7 +439,8 @@
     {
      "outlet": "HPCwire 转特灵官方稿",
      "date": "2026-10-01",
-     "url": "https://www.hpcwire.com/off-the-wire/trane-technologies-demonstrates-800-volt-direct-current-chiller-for-next-gen-ai-data-centers/"
+     "url": "https://www.hpcwire.com/off-the-wire/trane-technologies-demonstrates-800-volt-direct-current-chiller-for-next-gen-ai-data-centers/",
+     "first_party": false
     }
    ],
    "summary": "特灵与 Eaton、Danfoss 合作改造现有高效冷水机，完成业界首个 800 VDC 架构实验室验证；制冷量超 1000 冷吨（3.5MW），系统效率较传统 AC 系统最高提升约 2%。",
@@ -446,12 +466,14 @@
     {
      "outlet": "PRNewswire",
      "date": "2026-10-01",
-     "url": "https://www.chemengonline.com/claros-and-daikin-to-deploy-full-scale-pfas-destruction-technology-at-alabama-plant/"
+     "url": "https://www.chemengonline.com/claros-and-daikin-to-deploy-full-scale-pfas-destruction-technology-at-alabama-plant/",
+     "first_party": true
     },
     {
      "outlet": "Chemical Engineering",
      "date": "2026-10-02",
-     "url": "https://www.chemengonline.com/claros-and-daikin-to-deploy-full-scale-pfas-destruction-technology-at-alabama-plant/"
+     "url": "https://www.chemengonline.com/claros-and-daikin-to-deploy-full-scale-pfas-destruction-technology-at-alabama-plant/",
+     "first_party": false
     }
    ],
    "summary": "大金 America 与 Claros Technologies 达成商业协议，在阿拉巴马州迪凯特工厂全面部署 ClarosTechUV PFAS 永久破坏系统，为试点合作的最终商业落地。",
@@ -473,7 +495,8 @@
     {
      "outlet": "上海证券报",
      "date": "2026-09-17",
-     "url": "https://finance.eastmoney.com/a/202609173877223963.html"
+     "url": "https://finance.eastmoney.com/a/202609173877223963.html",
+     "first_party": false
     }
    ],
    "summary": "申菱 9-17 公告与海外甲客户签 4.15 亿美元空调制冷设备供应协议（约 27.82 亿元，占 2025 营收约 66%，生效后 120 天交付；数据服务板块；H1 液冷新增订单约 18 亿元）。",
@@ -498,7 +521,8 @@
     {
      "outlet": "亚洲日报",
      "date": "2026-09-21",
-     "url": "https://china.kyungjeilbo.com/view/20260921100470194"
+     "url": "https://china.kyungjeilbo.com/view/20260921100470194",
+     "first_party": false
     }
    ],
    "summary": "三星电子在光州投资 2400 亿韩元建设 AI 数据中心冷却设备生产基地（2028 年初投运，产品含 CDU、FWU、CRAH、AHU），建筑面积 21,800㎡。",
@@ -525,7 +549,8 @@
     {
      "outlet": "新浪财经（应急管理部消防产品合格评定中心公示）",
      "date": "2026-09-15",
-     "url": "https://finance.sina.cn/2026-09-15/detail-inirxatw3745818.d.html"
+     "url": "https://finance.sina.cn/2026-09-15/detail-inirxatw3745818.d.html",
+     "first_party": false
     }
    ],
    "summary": "应急管理部消防产品合格评定中心 9 月公示：浙江九派安全科技 3 款、大连欣洋电子 4 款、深圳驰通达电子 1 款消防产品认证证书被注销，丧失市场准入资格。",
@@ -550,7 +575,8 @@
     {
      "outlet": "蓝鲸新闻 经东方财富",
      "date": "2026-09-21",
-     "url": "https://finance.eastmoney.com/a/202609213880080778.html"
+     "url": "https://finance.eastmoney.com/a/202609213880080778.html",
+     "first_party": false
     }
    ],
    "summary": "光伏逆变器厂商古瑞瓦特（已向港交所递交上市申请）经销商确认 10-08 上调组串式逆变器、储能系统价格 5%~10%。",
@@ -575,7 +601,8 @@
     {
      "outlet": "tech-insider.org",
      "date": "2026-10-04",
-     "url": "https://tech-insider.org/us-utility-1-4-trillion-ai-data-center-energy-2026/"
+     "url": "https://tech-insider.org/us-utility-1-4-trillion-ai-data-center-energy-2026/",
+     "first_party": false
     }
    ],
    "summary": "美国公用事业计划投入 1.4 万亿美元升级电网以支撑 AI 数据中心，资本开支激增 27%；四大超大规模云厂商 2026 年数据中心基建年支出合计超 3000 亿美元。",
@@ -604,7 +631,8 @@
     {
      "outlet": "中信建投 经新浪财经",
      "date": "2026-09-20",
-     "url": "https://finance.sina.cn/7x24/2026-09-20/detail-inisnhay9340366.d.html"
+     "url": "https://finance.sina.cn/7x24/2026-09-20/detail-inisnhay9340366.d.html",
+     "first_party": false
     }
    ],
    "summary": "十五五两大电网合计规划投资约 5 万亿元（较十四五 +80% 以上）；国内变压器在手订单充裕、订单周期延续至 2027 年，数据中心用变压器、特高压设备结构性紧缺。",
@@ -632,7 +660,8 @@
     {
      "outlet": "中国基金报 经新浪财经",
      "date": "2026-10-01",
-     "url": "https://finance.sina.cn/stock/jdts/2026-10-01/detail-inittvfv5108421.d.html"
+     "url": "https://finance.sina.cn/stock/jdts/2026-10-01/detail-inittvfv5108421.d.html",
+     "first_party": false
     }
    ],
    "summary": "比亚迪 9 月销量 46.36 万辆（+16.98%）；零跑交付 10.57 万辆（+59%）连续三月超 10 万；小鹏 4.13 万辆、小米超 4 万辆、蔚来 3.74 万辆（+7.7%）、理想 3.18 万辆。",
@@ -659,7 +688,8 @@
     {
      "outlet": "证券日报 经 STCN",
      "date": "2026-09-24",
-     "url": "https://stcn.com/article/detail/4197472.html"
+     "url": "https://stcn.com/article/detail/4197472.html",
+     "first_party": false
     }
    ],
    "summary": "9 月中旬以来镨钕系领涨，现货紧张、上游报价坚挺，需求端新能源车/风电/机器人结构性支撑；9-22 氧化镨钕单日上涨 5000 元/吨，镨钕金属单日上涨 7500 元/吨，9-23 小幅回调但仍处近期高位。",
@@ -685,7 +715,8 @@
     {
      "outlet": "每日经济新闻 引 Wood Mackenzie",
      "date": "2026-01-28",
-     "url": "https://www.nbd.com.cn/articles/2026-01-28/4237947.html"
+     "url": "https://www.nbd.com.cn/articles/2026-01-28/4237947.html",
+     "first_party": false
     }
    ],
    "summary": "Wood Mackenzie 预计 2026 年全球光伏逆变器出货量降至 523GWac（-9%）；2026 年 1-2 月我国逆变器出口额 16.6 亿美元（+56.9%）；组件反内卷下价格站稳 0.85 元/W 以上。",
@@ -711,7 +742,8 @@
     {
      "outlet": "财联社 经新浪",
      "date": "2026-09-21",
-     "url": "https://k.sina.cn/article_5952915705_162d248f906703oxmu.html?from=digit"
+     "url": "https://k.sina.cn/article_5952915705_162d248f906703oxmu.html?from=digit",
+     "first_party": false
     }
    ],
    "summary": "苹果将 iPhone 18 系列拆分两波发布（9 月仅 Pro 系列 + 折叠屏 iPhone Duo，标准版延至 2027 春季）；产业链分析指诱因之一是台积电 2nm 产能爬坡叠加 AI 产业对 DRAM 产能的挤占致高端元器件供应紧张；首销日国内 Pro 系列出货约 32.28 万台（约为上代 130%）。",
