@@ -102,19 +102,23 @@
    "sources": [
     {
      "date": "2026-10-03",
-     "outlet": "17173 引树莓派官方博客"
+     "outlet": "17173 引树莓派官方博客",
+     "first_party": false
     },
     {
      "date": "2026-10-02",
-     "outlet": "NVIDIA 官方声明，经 Wccftech / Gizmodo / 9to5Google"
+     "outlet": "NVIDIA 官方声明，经 Wccftech / Gizmodo / 9to5Google",
+     "first_party": false
     },
     {
      "date": "2026-09-30",
-     "outlet": "快科技引 TrendForce"
+     "outlet": "快科技引 TrendForce",
+     "first_party": false
     },
     {
      "date": "2026-10-03",
-     "outlet": "PCM 引 J.P. Morgan"
+     "outlet": "PCM 引 J.P. Morgan",
+     "first_party": false
     }
    ],
    "summary": "树莓派 10-03 宣布年内第三次涨价，CEO 称过去一年 LPDDR4 价格暴涨约 7 倍。英伟达 Shield TV Pro 自 10-02 起涨价 $100 至 $299.99（+50%）并停产标准版，官方声明归因于 DRAM 等组件成本全行业大幅上涨。TrendForce 预计 Q4 传统 DRAM 合约价环比 +10%~15%。",
@@ -143,7 +147,8 @@
    "sources": [
     {
      "date": "2026-09-22",
-     "outlet": "证券时报引财通证券 / 东方财富网"
+     "outlet": "证券时报引财通证券 / 东方财富网",
+     "first_party": false
     }
    ],
    "summary": "瑞萨 9-9 宣布新价格体系 2027 年 1 月生效（年内已完成两轮上调）；强茂、台半等台系功率厂商计划 10 月对现货产品再提价 10%~15%；安森美第二轮涨价 10-10 生效。华泰证券：AI 需求持续挤占 8 英寸成熟制程产能，原厂交期持续延长。",
@@ -172,11 +177,13 @@
    "sources": [
     {
      "date": "2026-09-20",
-     "outlet": "证券时报引央视财经 / TrendForce"
+     "outlet": "证券时报引央视财经 / TrendForce",
+     "first_party": false
     },
     {
      "date": "2026-09-11",
-     "outlet": "DoNews"
+     "outlet": "DoNews",
+     "first_party": false
     }
    ],
    "summary": "三环集团 30%-80% 涨价已于 10-1 生效；三星/村田/太阳诱电涨价函显示 AI 服务器用高容量 MLCC 原厂涨幅普遍 15%-35%；村田 2026 财年逐步停产九大系列部分消费/车用料、腾产能给 AI 服务器；AI 服务器用 MLCC 交期由 8-10 周延至 20-26 周。",
@@ -203,7 +210,8 @@
    "sources": [
     {
      "date": "2026-09-23",
-     "outlet": "财联社经东方财富网（已打开原文核实）"
+     "outlet": "财联社经东方财富网（已打开原文核实）",
+     "first_party": false
     }
    ],
    "summary": "江西宏瑞兴 9-23 发布调价通知：全系列覆铜板 +10%、PP +15%，原因为上游玻璃布、铜箔紧缺、产能超负荷。",
@@ -232,11 +240,13 @@
    "sources": [
     {
      "date": "2026-10-01",
-     "outlet": "IT之家 / TechNews 引路透社"
+     "outlet": "IT之家 / TechNews 引路透社",
+     "first_party": false
     },
     {
      "date": "2026-10-02",
-     "outlet": "新浪科技"
+     "outlet": "新浪科技",
+     "first_party": false
     }
    ],
    "summary": "英飞凌泰国功率工厂 10-01 正式投产，专注后端工艺与功率半导体模块，100% 绿色电力，为继德国、中国之后第三大功率模块生产基地。BOI 促进条件含本地原料比提高到 60%、至少培育 14 家泰国供应商。口径说明：BOI 480 亿泰铢（约 14.4 亿美元）与公司简报初期投资超 1 亿欧元范围未说明是否重叠，不可相加。",
@@ -261,7 +271,8 @@
    "sources": [
     {
      "date": "2026-10-01",
-     "outlet": "GlobeNewswire"
+     "outlet": "GlobeNewswire",
+     "first_party": true
     }
    ],
    "summary": "Hagens Berman 律所 10-01 宣布调查 Vertiv 潜在证券法违规；Vertiv Q2 净销售额 32.7 亿美元，低于华尔街预期的约 33.8-33.9 亿美元。",
@@ -287,7 +298,8 @@
    "sources": [
     {
      "date": "2026-10-01",
-     "outlet": "HPCwire 转特灵官方稿（厂商口径）"
+     "outlet": "HPCwire 转特灵官方稿（厂商口径）",
+     "first_party": false
     }
    ],
    "summary": "特灵与 Eaton、Danfoss 合作改造现有高效冷水机，完成业界首个 800 VDC 架构实验室验证；制冷量超 1000 冷吨（3.5MW），系统效率较传统 AC 系统最高提升约 2%（200MW 数据中心可释放约 1.8MW 算力容量）。",
@@ -311,7 +323,8 @@
    "sources": [
     {
      "date": "2026-10-01",
-     "outlet": "东方财富 / 南方财经网引 8-K"
+     "outlet": "东方财富 / 南方财经网引 8-K",
+     "first_party": false
     }
    ],
    "summary": "Vertiv 收购爱尔兰 King Environmental Services（协议 9-24 签署并提交 8-K，10-01 外媒密集跟进）：液冷数据中心流体管理、系统调试与负载测试服务商，覆盖 EMEA，预计 2026 Q4 交割，财务条款未披露。",
@@ -339,7 +352,8 @@
    "sources": [
     {
      "date": "2026-10-01",
-     "outlet": "美通社（厂商口径，10-01 官方通稿，与 10-03 单源转述交叉确认为同一发布）"
+     "outlet": "美通社（厂商口径，10-01 官方通稿，与 10-03 单源转述交叉确认为同一发布）",
+     "first_party": true
     }
    ],
    "summary": "美的楼宇科技发布电冷超融合架构：磁悬浮 CDU 占地最高减少 70%、适宜工况 PUE<1.2；风冷磁悬浮离心机 COP 最高 5.4；3K 温差下工业级 CDU 2.6MW；与吉宝战略合作，贵安美的云数据中心年自然冷却最高 7654 小时。",
@@ -361,11 +375,13 @@
    "sources": [
     {
      "date": "2026-10-01",
-     "outlet": "PRNewswire"
+     "outlet": "PRNewswire",
+     "first_party": true
     },
     {
      "date": "2026-10-02",
-     "outlet": "Chemical Engineering"
+     "outlet": "Chemical Engineering",
+     "first_party": false
     }
    ],
    "summary": "大金 America 与 Claros Technologies 达成商业协议，在阿拉巴马州迪凯特工厂全面部署 ClarosTechUV PFAS 永久破坏系统，为试点合作的最终商业落地。",
@@ -395,15 +411,18 @@
    "sources": [
     {
      "date": "2026-10-02",
-     "outlet": "Dow Jones / Morningstar"
+     "outlet": "Dow Jones / Morningstar",
+     "first_party": false
     },
     {
      "date": "2026-10-02",
-     "outlet": "工商时报"
+     "outlet": "工商时报",
+     "first_party": false
     },
     {
      "date": "2026-09-30",
-     "outlet": "华泰期货"
+     "outlet": "华泰期货",
+     "first_party": false
     }
    ],
    "summary": "LME 期铜 10-01 收 14,243.5 美元/吨（-166.5，2 周低点）；COMEX 近月铜本周 -3.10% 至 6.4920 美元/磅，6 月底以来最大周跌幅；LME 铝 10-01 收 3,119 美元/吨（-46.5，12 周低点），自 6 月四年高点跌约 18%；国内华东现货升水维持 1,100 元/吨。",
@@ -427,7 +446,8 @@
    "sources": [
     {
      "date": "2026-10-01",
-     "outlet": "财联社 / 中国网"
+     "outlet": "财联社 / 中国网",
+     "first_party": false
     }
    ],
    "summary": "9 月新能源车交付：零跑 105,656（+58.51%，连续 3 个月超 10 万）、小鹏 41,256、蔚来 37,408、理想 31,817、小米超 4 万辆（年内首次）、鸿蒙智行 3.75 万辆。车用 IGBT/SiC、MCU、MLCC、电机需求维持高位。",
