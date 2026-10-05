@@ -46,8 +46,15 @@ nav.secnav a.on{background:var(--blue);color:#fff}
   section.blk{scroll-margin-top:14px}
   main{max-width:800px}
   header.top{border-bottom-left-radius:0}
+  /* 左侧搜索框（桌面端） */
+  .railsearch{display:block;padding:0 6px 14px}
+  .railsearch input{width:100%;box-sizing:border-box;border:1px solid #dfe5ee;border-radius:10px;padding:9px 12px;font-size:13px;color:#1c2b4a;background:#f7f9fc;outline:none}
+  .railsearch input:focus{border-color:#0a58a6;background:#fff;box-shadow:0 0 0 3px rgba(10,88,166,.12)}
+  .rs-meta{font-size:11.5px;color:#93a3b8;padding:6px 4px 0;min-height:16px}
+  mark.rhl{background:#fff3b0;border-radius:3px;padding:0 1px}
+  mark.rhl.cur{background:#ffb703;box-shadow:0 0 0 2px #ffb703}
 }
-@media(max-width:1023px){nav.secnav .rn{display:none}}
+@media(max-width:1023px){nav.secnav .rn{display:none}.railsearch{display:none}}
 /* 期号 / 阅读统计条 / 一手徽标 */
 .issuepill{display:inline-block;font-size:11.5px;font-weight:700;color:#ffe9a8;border:1px solid rgba(255,233,168,.55);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:2px}
 .issuestrip{display:flex;gap:20px;align-items:baseline;justify-content:center;flex-wrap:wrap;padding:13px 8px 11px;color:var(--mut);font-size:13px;border-bottom:1px solid var(--line);margin:2px 0 4px}
@@ -202,8 +209,8 @@ details.sec .body{padding:0 14px 12px}
 <div class="alertbar" id="alertbar"></div>
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
 <nav class="secnav" id="secnav">
-  <div class="railhead">🧭 分段导航</div>
-  <a href="#s1"><span class="rn">一</span>行业动态</a><a href="#s2"><span class="rn">二</span>头条事件</a><a href="#s3"><span class="rn">三</span>AI虹吸</a><a href="#s4"><span class="rn">四</span>跨行业传导</a><a href="#s5"><span class="rn">五</span>供应商动态</a><a href="#s6"><span class="rn">六</span>预警与建议</a><a href="#s7"><span class="rn">七</span>我的供应链</a>
+  <div class="railsearch"><input id="railq" placeholder="🔍 搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta"></div></div>
+  <a href="#s1"><span class="rn">📰</span>行业动态</a><a href="#s2"><span class="rn">🔥</span>头条事件</a><a href="#s3"><span class="rn">🧲</span>AI虹吸</a><a href="#s4"><span class="rn">🔗</span>跨行业传导</a><a href="#s5"><span class="rn">📦</span>供应商动态</a><a href="#s6"><span class="rn">⚠️</span>预警与建议</a><a href="#s7"><span class="rn">🗂️</span>我的供应链</a>
 </nav>
 <main id="main">
   <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:85%"></div></div>
@@ -302,6 +309,54 @@ function renderIssuestrip(){
     `<span>约 ${mins} 分钟读完</span>`;
 }
 let _SPY=null;
+/* 左侧 rail 页内搜索（桌面端） */
+function escRe(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");}
+let _MARKS=[],_MIDX=-1,_RQT=null;
+function clearMarks(){
+  document.querySelectorAll("main mark.rhl").forEach(m=>{
+    m.parentNode.replaceChild(document.createTextNode(m.textContent),m);
+  });
+  _MARKS=[];_MIDX=-1;
+  const meta=document.getElementById("rsmeta"); if(meta)meta.textContent="";
+}
+function railSearch(){
+  const inp=document.getElementById("railq"); if(!inp)return;
+  const q=inp.value.trim();
+  clearMarks();
+  if(!q)return;
+  const ql=q.toLowerCase(), re=new RegExp("("+escRe(q)+")","gi");
+  document.querySelectorAll("main section.blk").forEach(sec=>{
+    const walker=document.createTreeWalker(sec,NodeFilter.SHOW_TEXT);
+    const nodes=[]; let n;
+    while(n=walker.nextNode()){ if(n.nodeValue.toLowerCase().indexOf(ql)>=0)nodes.push(n); }
+    nodes.forEach(tn=>{
+      const frag=document.createDocumentFragment();
+      tn.nodeValue.split(re).forEach((p,i)=>{
+        if(i%2===1){const mk=document.createElement("mark");mk.className="rhl";mk.textContent=p;frag.appendChild(mk);}
+        else if(p)frag.appendChild(document.createTextNode(p));
+      });
+      tn.parentNode.replaceChild(frag,tn);
+    });
+  });
+  _MARKS=Array.prototype.slice.call(document.querySelectorAll("main mark.rhl"));
+  const meta=document.getElementById("rsmeta");
+  if(meta)meta.textContent=_MARKS.length?_MARKS.length+" 处匹配 · 回车跳转":"无匹配";
+}
+function railJump(dir){
+  if(!_MARKS.length)return;
+  _MIDX=(_MIDX+dir+_MARKS.length)%_MARKS.length;
+  _MARKS.forEach((m,i)=>m.classList.toggle("cur",i===_MIDX));
+  _MARKS[_MIDX].scrollIntoView({behavior:"smooth",block:"center"});
+}
+function initRailSearch(){
+  const inp=document.getElementById("railq"); if(!inp||inp._wired)return;
+  inp._wired=true;
+  inp.addEventListener("input",()=>{clearTimeout(_RQT);_RQT=setTimeout(railSearch,220);});
+  inp.addEventListener("keydown",e=>{
+    if(e.key==="Enter"){e.preventDefault();railJump(e.shiftKey?-1:1);}
+    else if(e.key==="Escape"){inp.value="";clearMarks();inp.blur();}
+  });
+}
 function initSpy(){
   if(!("IntersectionObserver" in window))return;
   if(_SPY)_SPY.disconnect();
@@ -423,6 +478,8 @@ function renderMain(d){
   $("#footmeta").textContent=`数据日期 ${d.meta.date} · schema ${d.meta.schema_version}`;
   renderIssuestrip();
   initSpy();
+  const rq=document.getElementById("railq");
+  if(rq&&rq.value.trim())railSearch();
   loadSupply();
 }
 
@@ -526,6 +583,7 @@ async function boot(){
     const no=days.indexOf(idx.latest||days[days.length-1])+1;
     if(no>0){ip.textContent=`第 ${no} 期`;ip.style.display="inline-block";}
     window._ISSUE_DAYS=days;
+    initRailSearch();
     await loadDay(idx.latest||days[days.length-1]);
   }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
 }
