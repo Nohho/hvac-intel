@@ -31,16 +31,23 @@ nav.secnav{display:flex;gap:7px;padding:10px 12px;background:#fff;border-bottom:
 nav.secnav a{flex:none;font-size:13px;color:var(--blue);border:1px solid var(--blue);border-radius:15px;padding:6px 12px;text-decoration:none;font-weight:600;background:#fff}
 nav.secnav a.on{background:var(--blue);color:#fff}
 .railhead{display:none}
-/* 桌面端：左侧竖向导航 rail + 滚动高亮 */
+/* 桌面端：左侧竖向导航 rail + 滚动高亮（白色轻量风） */
 @media(min-width:1024px){
-  body{padding-left:196px}
-  nav.secnav{position:fixed;left:0;top:0;bottom:0;width:196px;flex-direction:column;align-items:stretch;gap:2px;padding:20px 12px;overflow-y:auto;overflow-x:hidden;background:#0b2a4a;border-bottom:none;box-shadow:2px 0 10px rgba(11,42,74,.18);z-index:30}
-  .railhead{display:block;color:#8fb0d4;font-size:12px;font-weight:700;letter-spacing:2px;padding:0 12px 10px}
-  nav.secnav a{border:1px solid transparent;background:transparent;color:#cfe0f2;border-radius:10px;padding:10px 12px;font-size:13.5px;margin-bottom:2px}
-  nav.secnav a:not(.on):hover{background:rgba(255,255,255,.09)}
-  nav.secnav a.on{background:#fff;color:var(--navy);border-color:#fff;font-weight:700;box-shadow:0 1px 5px rgba(0,0,0,.2)}
+  body{padding-left:228px;background:#f2f4f8}
+  nav.secnav{position:fixed;left:0;top:0;bottom:0;width:228px;flex-direction:column;align-items:stretch;gap:2px;padding:28px 14px;overflow-y:auto;overflow-x:hidden;background:#ffffff;border-bottom:none;border-right:1px solid #e4e9f1;box-shadow:none;z-index:30}
+  .railhead{display:block;color:#9aa9bd;font-size:11.5px;font-weight:700;letter-spacing:3px;padding:0 14px 14px}
+  nav.secnav a{position:relative;border:none;background:transparent;color:#46586e;border-radius:10px;padding:10px 14px 10px 16px;font-size:13.5px;font-weight:500;margin-bottom:2px;display:flex;align-items:center;gap:10px}
+  nav.secnav a .rn{font-size:11px;font-weight:800;color:#9aa9bd;background:#f0f3f7;border-radius:6px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+  nav.secnav a:not(.on):hover{background:#f3f6fa;color:#1c2b4a}
+  nav.secnav a:not(.on):hover .rn{background:#e2e9f2;color:#5b6b82}
+  nav.secnav a.on{background:#e9f1fd;color:#0a58a6;font-weight:700}
+  nav.secnav a.on .rn{background:#0a58a6;color:#fff}
+  nav.secnav a.on::before{content:"";position:absolute;left:2px;top:10px;bottom:10px;width:3px;border-radius:2px;background:#0a58a6}
   section.blk{scroll-margin-top:14px}
+  main{max-width:800px}
+  header.top{border-bottom-left-radius:0}
 }
+@media(max-width:1023px){nav.secnav .rn{display:none}}
 /* 期号 / 阅读统计条 / 一手徽标 */
 .issuepill{display:inline-block;font-size:11.5px;font-weight:700;color:#ffe9a8;border:1px solid rgba(255,233,168,.55);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:2px}
 .issuestrip{display:flex;gap:20px;align-items:baseline;justify-content:center;flex-wrap:wrap;padding:13px 8px 11px;color:var(--mut);font-size:13px;border-bottom:1px solid var(--line);margin:2px 0 4px}
@@ -196,7 +203,7 @@ details.sec .body{padding:0 14px 12px}
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
 <nav class="secnav" id="secnav">
   <div class="railhead">🧭 分段导航</div>
-  <a href="#s1">行业动态</a><a href="#s2">头条事件</a><a href="#s3">AI虹吸</a><a href="#s4">跨行业传导</a><a href="#s5">供应商动态</a><a href="#s6">预警与建议</a><a href="#s7">我的供应链</a>
+  <a href="#s1"><span class="rn">一</span>行业动态</a><a href="#s2"><span class="rn">二</span>头条事件</a><a href="#s3"><span class="rn">三</span>AI虹吸</a><a href="#s4"><span class="rn">四</span>跨行业传导</a><a href="#s5"><span class="rn">五</span>供应商动态</a><a href="#s6"><span class="rn">六</span>预警与建议</a><a href="#s7"><span class="rn">七</span>我的供应链</a>
 </nav>
 <main id="main">
   <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:85%"></div></div>
