@@ -280,7 +280,7 @@ function affectedBases(w){
 }
 /* 预警 → 采购行动指引（静态模板，按预警关键词匹配；T-code 为标准 SAP 命名） */
 const PLAYBOOKS=[
- {k:["涨价","调价","提价","加价"],items:["<b>ME23N</b> 核查在途 PO 的已确认价格与交期","<b>ME33K</b> 检查框架协议剩余量与价格有效期","谈判要点：年度锁价 / 涨价豁免 / 成本传导条款","测算对 BOM 成本的影响，更新 Should-Cost"]},
+ {k:["涨价","调价","提价","加价","高位","锁价","成本"],items:["<b>ME23N</b> 核查在途 PO 的已确认价格与交期","<b>ME33K</b> 检查框架协议剩余量与价格有效期","谈判要点：年度锁价 / 涨价豁免 / 成本传导条款","测算对 BOM 成本的影响，更新 Should-Cost"]},
  {k:["缺料","断供","短缺","分配","allocation","产能紧张","挤占"],items:["<b>MD04</b> 查库存/需求缺口与预计缺料日期","<b>ME2M</b> 按物料查现有 PO 交期","启动替代料询样与验证","评估 NCNR 锁产能（权衡违约风险）"]},
  {k:["EOL","停产","退市","最后采购","LTB","淘汰"],items:["确认 LTB（最后下单）窗口与 MOQ","现货市场扫货比价（注意假货风险）","启动替代料验证或改版评估","<b>MM03</b> 更新物料主数据生命周期状态"]},
  {k:["交期延长","交期恶化","交期","lead time","排产"],items:["<b>MD04</b> 重算缺料时点","与计划确认：提前下单 / 调整安全库存","<b>ME23N</b> 跟进在途 PO 是否被推迟","评估第二供应商分流"]},
@@ -292,7 +292,7 @@ const PB_DEFAULT=["<b>MD04</b> 查库存与需求缺口","<b>ME2M</b> 按物料�
 function playbook(w){
   const txt=((w.title||"")+" "+(w.action||"")+" "+(w.trigger||"")).toLowerCase();
   for(const p of PLAYBOOKS){if(p.k.some(k=>txt.indexOf(k.toLowerCase())>=0))return p.items;}
-  return w.urgency==="高"?PB_DEFAULT:null;
+  return (w.urgency==="高"||w.urgency==="中")?PB_DEFAULT:null;
 }
 function warnCard(w){
   const ec=(w.related_events||[]).filter(id=>EMAP[id])
