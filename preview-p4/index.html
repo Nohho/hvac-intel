@@ -656,6 +656,10 @@ async function boot(){
     initRailSearch();
     const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
     const start=(hm&&days.indexOf(hm[1])>=0)?hm[1]:(idx.latest||days[days.length-1]);
+    window.addEventListener("hashchange",()=>{
+      const m2=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
+      if(m2&&m2[1]!==CURDATE&&days.indexOf(m2[1])>=0)loadDay(m2[1]);
+    });
     await loadDay(start);
   }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
 }
