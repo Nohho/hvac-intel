@@ -576,6 +576,9 @@ async function loadDay(date){
     FILTER="all";
     renderMain(await r.json());
     document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===date));
+    const ip2=$("#issuepill");
+    const no2=(window._ISSUE_DAYS||[]).indexOf(date)+1;
+    if(ip2&&no2>0){ip2.textContent=`第 ${no2} 期`;}
     window.scrollTo({top:0});
   }catch(e){
     const m=$("#main");
