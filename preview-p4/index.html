@@ -69,9 +69,9 @@ nav.secnav a.on{background:var(--blue);color:#fff}
 /* 期号 / 阅读统计条 / 一手徽标 */
 .issuepill{display:inline-block;font-size:11.5px;font-weight:700;color:#ffe9a8;border:1px solid rgba(255,233,168,.55);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:2px}
 .issuestrip{display:flex;gap:20px;align-items:baseline;justify-content:center;flex-wrap:wrap;padding:13px 8px 11px;color:var(--mut);font-size:13px;border-bottom:1px solid var(--line);margin:2px 0 4px}
-/* 近期风险品类榜 */
-.riskrank{background:#fff;border-bottom:1px solid var(--line);padding:12px 16px 14px;margin-bottom:6px}
-.riskrank h3{font-size:13.5px;color:var(--navy);margin-bottom:8px}
+/* 近期风险品类榜（位于"我的供应链"节底部） */
+.riskrank{margin-top:4px}
+.riskrank h3{font-size:14.5px;color:var(--navy);margin-bottom:8px}
 .riskrank h3 .rrsub{font-weight:400;color:var(--mut);font-size:11.5px;margin-left:6px}
 .rrrow{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:12.5px}
 .rrname{flex:none;width:118px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -235,7 +235,6 @@ details.sec .body{padding:0 14px 12px}
 </header>
 <div class="alertbar" id="alertbar"></div>
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
-<div class="riskrank" id="riskrank" style="display:none"></div>
 <nav class="secnav" id="secnav">
   <div class="railsearch"><input id="railq" placeholder="🔍 搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta"></div></div>
   <a href="#s1"><span class="rn">📰</span>行业动态</a><a href="#s2"><span class="rn">🔥</span>头条事件</a><a href="#s3"><span class="rn">🧲</span>AI虹吸</a><a href="#s4"><span class="rn">🔗</span>跨行业传导</a><a href="#s5"><span class="rn">📦</span>供应商动态</a><a href="#s6"><span class="rn">⚠️</span>预警与建议</a><a href="#s7"><span class="rn">🗂️</span>我的供应链</a>
@@ -506,7 +505,8 @@ function renderMain(d){
   /* ---- 七、我的供应链 ---- */
   const s7=secttl("七","我的供应链","清单快照聚合")
     +guide("EE 元器件品类（JCAC · PCBA 口径）· 基地供应商品类（JCAC / WXAC / GZAC / 亚太其他，183 子品类全量）· PCBA maker 分布。仅聚合口径，不含供应商名称。")
-    +`<div id="supplybase"><div class="card"><div class="loading">正在加载供应链画像…</div></div></div>`;
+    +`<div id="supplybase"><div class="card"><div class="loading">正在加载供应链画像…</div></div></div>`
+    +`<div class="riskrank card" id="riskrank" style="display:none"></div>`;
 
   $("#main").innerHTML=
     `<section class="blk" id="s1">${s1}</section>`
@@ -635,7 +635,6 @@ async function boot(){
   try{
     const idx=await (await fetch("data/index.json")).json();
     const days=idx.days||[];
-    renderRiskRank();
     const recent=days.slice(-14).reverse();
     const older=days.slice(0,-14).reverse();
     const pill=dt=>`<button class="dpill" data-d="${esc(dt)}" onclick="loadDay('${esc(dt)}')">${esc(dt.slice(5))}</button>`;
@@ -661,6 +660,7 @@ async function boot(){
       if(m2&&m2[1]!==CURDATE&&days.indexOf(m2[1])>=0)loadDay(m2[1]);
     });
     await loadDay(start);
+    renderRiskRank();
   }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
 }
 boot();
