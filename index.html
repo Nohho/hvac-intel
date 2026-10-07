@@ -4,10 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>HVAC 供应链情报</title>
-<meta name="description" content="HVAC / 液冷 CDU 供应链每日情报：六段式早报结构">
+<meta name="description" content="HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 算力虹吸、跨行业传导、供应商动态、预警与建议。每天 08:30 更新。">
+<meta name="keywords" content="HVAC,液冷,CDU,供应链情报,数据中心,涨价,缺料,EOL,采购">
+<link rel="canonical" href="https://nohho.github.io/hvac-intel/">
+<link rel="alternate" type="application/rss+xml" title="HVAC 供应链情报" href="feed.xml">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="HVAC 供应链情报">
+<meta property="og:url" content="https://nohho.github.io/hvac-intel/">
 <meta property="og:title" content="HVAC 供应链情报">
 <meta property="og:description" content="暖通空调 / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HVAC 供应链情报">
+<meta name="twitter:description" content="HVAC / 液冷 CDU 供应链每日情报，面向采购经理与管理层">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a58a6'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
 <style>
 :root{--blue:#1e86d6;--navy:#2c4a66;--bg:#f2f5f9;--card:#fff;--ink:#1c2733;--mut:#64748b;--line:#e3eaf3;--tint:#e9f2fb}
@@ -22,6 +30,9 @@ header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
 .dpills{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:2px}
 .dpill{flex:none;font-size:12.5px;color:#dce9f8;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px}
 .dpill.on{background:#fff;color:var(--navy);font-weight:700;border-color:#fff}
+.hdlinks{display:flex;gap:14px;margin-top:9px;font-size:12px}
+.hdlinks button,.hdlinks a{background:none;border:none;color:#c4d9ef;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0;font-family:inherit}
+.hdlinks button:hover,.hdlinks a:hover{color:#fff}
 /* 预警色条：仅有高紧迫预警时显示 */
 .alertbar{display:none;margin:0;padding:10px 14px;background:#e0654f;color:#fff;font-size:13.5px;font-weight:700;text-align:center}
 .alertbar.show{display:block}
@@ -58,6 +69,15 @@ nav.secnav a.on{background:var(--blue);color:#fff}
 /* 期号 / 阅读统计条 / 一手徽标 */
 .issuepill{display:inline-block;font-size:11.5px;font-weight:700;color:#ffe9a8;border:1px solid rgba(255,233,168,.55);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:2px}
 .issuestrip{display:flex;gap:20px;align-items:baseline;justify-content:center;flex-wrap:wrap;padding:13px 8px 11px;color:var(--mut);font-size:13px;border-bottom:1px solid var(--line);margin:2px 0 4px}
+/* 近期风险品类榜（位于"我的供应链"节底部） */
+.riskrank{margin-top:4px}
+.riskrank h3{font-size:14.5px;color:var(--navy);margin-bottom:8px}
+.riskrank h3 .rrsub{font-weight:400;color:var(--mut);font-size:11.5px;margin-left:6px}
+.rrrow{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:12.5px}
+.rrname{flex:none;width:118px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rrbar{flex:1;height:8px;background:#edf1f6;border-radius:4px;overflow:hidden}
+.rrbar i{display:block;height:100%;background:linear-gradient(90deg,#f5a623,#e0654f);border-radius:4px}
+.rrscore{flex:none;width:64px;text-align:right;color:var(--mut);font-size:11.5px}
 .issuestrip b{font-size:20px;color:var(--navy);margin-right:3px;font-weight:800}
 .fh{display:inline-block;font-size:10.5px;font-weight:700;color:#0a6b3a;background:#e6f4ec;border:1px solid #bfe3cd;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
 /* 小屏：统计条收紧，导航保持顶部横滑 */
@@ -211,6 +231,7 @@ details.sec .body{padding:0 14px 12px}
   <div class="sub">暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新</div>
   <div class="headline" id="headline" style="display:none"></div>
   <div class="dpills" id="dpills"></div>
+  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()">🔗 复制本期链接</button><a href="feed.xml" title="RSS 订阅">📡 RSS 订阅</a></div>
 </header>
 <div class="alertbar" id="alertbar"></div>
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
@@ -484,7 +505,8 @@ function renderMain(d){
   /* ---- 七、我的供应链 ---- */
   const s7=secttl("七","我的供应链","清单快照聚合")
     +guide("EE 元器件品类（JCAC · PCBA 口径）· 基地供应商品类（JCAC / WXAC / GZAC / 亚太其他，183 子品类全量）· PCBA maker 分布。仅聚合口径，不含供应商名称。")
-    +`<div id="supplybase"><div class="card"><div class="loading">正在加载供应链画像…</div></div></div>`;
+    +`<div id="supplybase"><div class="card"><div class="loading">正在加载供应链画像…</div></div></div>`
+    +`<div class="riskrank card" id="riskrank" style="display:none"></div>`;
 
   $("#main").innerHTML=
     `<section class="blk" id="s1">${s1}</section>`
@@ -564,6 +586,12 @@ function renderBase(){
 }
 
 let CURDATE=null;
+function copyIssueLink(){
+  const u=location.origin+location.pathname+"#date="+(CURDATE||"");
+  const done=()=>{const b=$("#copylink");if(!b)return;const t=b.textContent;b.textContent="✅ 已复制";setTimeout(()=>{b.textContent=t;},1500);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done).catch(()=>prompt("复制本期链接：",u));}
+  else prompt("复制本期链接：",u);
+}
 async function loadDay(date){
   CURDATE=date;
   document.querySelectorAll(".errbar").forEach(b=>b.remove());
@@ -579,12 +607,28 @@ async function loadDay(date){
     const ip2=$("#issuepill");
     const no2=(window._ISSUE_DAYS||[]).indexOf(date)+1;
     if(ip2&&no2>0){ip2.textContent=`第 ${no2} 期`;}
+    try{history.replaceState(null,"","#date="+date);}catch(e){}
     window.scrollTo({top:0});
   }catch(e){
     const m=$("#main");
     if(m)m.insertAdjacentHTML("afterbegin",
       `<div class="errbar">⚠️ ${esc(date)} 的数据加载失败（${esc(e.message)}）。当前显示的可能是旧日期内容。<a href="javascript:loadDay(CURDATE)">点此重试</a></div>`);
   }
+}
+
+async function renderRiskRank(){
+  try{
+    const r=await fetch("data/risk-rank.json");
+    if(!r.ok)return;
+    const d=await r.json();
+    const items=(d.items||[]).slice(0,10);
+    if(!items.length)return;
+    const max=Math.max(...items.map(i=>i.score),1);
+    const el=$("#riskrank");
+    el.innerHTML=`<h3>📊 近${d.window_days||30}天风险品类榜<span class="rrsub">按涨价/缺料/交期动态加权 · 数据攒够30天后看趋势更有意义</span></h3>`+
+      items.map((i,ix)=>`<div class="rrrow" title="${esc(i.sample||"")}"><span class="rrname">${ix+1}. ${esc(i.name)}</span><span class="rrbar"><i style="width:${Math.round(i.score/max*100)}%"></i></span><span class="rrscore">${i.score}分 · ${i.hits}次</span></div>`).join("");
+    el.style.display="block";
+  }catch(e){}
 }
 
 async function boot(){
@@ -609,7 +653,14 @@ async function boot(){
     if(no>0){ip.textContent=`第 ${no} 期`;ip.style.display="inline-block";}
     window._ISSUE_DAYS=days;
     initRailSearch();
-    await loadDay(idx.latest||days[days.length-1]);
+    const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
+    const start=(hm&&days.indexOf(hm[1])>=0)?hm[1]:(idx.latest||days[days.length-1]);
+    window.addEventListener("hashchange",()=>{
+      const m2=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
+      if(m2&&m2[1]!==CURDATE&&days.indexOf(m2[1])>=0)loadDay(m2[1]);
+    });
+    await loadDay(start);
+    renderRiskRank();
   }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
 }
 boot();
