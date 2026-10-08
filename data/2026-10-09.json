@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "date": "2026-10-09",
+    "schema_version": "v0.6",
+    "source_briefing": "briefs/2026-10-09-hvac-cdu-morning-briefing.md",
+    "note": "国庆节后第二个工作日。安森美涨价前最后一个工作日；三星Q3实际落地；ACHR北美10月涨价清单密集；SHFE今日恢复交易、开盘价尚未见公开报道。Tier B第5批轮查：实质hit 4/11，0-hit轮次计数清零，降级规则不触发。数字全部取自早报已核实条目，未新增、未改写。"
+  },
+  "daily_report": {
+    "date": "2026-10-09",
+    "title": "HVAC / 液冷 CDU 行业情报早报",
+    "headline": "安森美涨价前最后一个工作日；三星Q3营业利润107.4万亿韩元（+782.5%）落地；北美10月HVAC涨价潮（压缩机/电机10-1已生效、Robertshaw最高15%下周一生效）",
+    "sections": 6,
+    "hotspot_count": 8,
+    "warning_count": 6
+  },
+  "hotspot_events": [
+    {
+      "id": "evt-20261009-01",
+      "title": "安森美第二轮涨价明日（10-10）生效，今日是最后一个工作日",
+      "heat": 90,
+      "heat_reason": "10-10生效、今日为最后一个工作日，行动窗口≤1天；交期32周、多源交叉，命中PCBA核心BOM",
+      "tags": ["涨价", "功率器件", "影响BOM"],
+      "date": "2026-09-22",
+      "sources": [
+        {"outlet": "财联社（东财转载）", "date": "2026-09-22", "url": "https://finance.eastmoney.com/a/202609223880383582.html", "first_party": false},
+        {"outlet": "工商時報", "date": "2026-09-22", "url": "https://www.ctee.com.tw/news/20260922700058-439901", "first_party": false}
+      ],
+      "summary": "安森美第二轮涨价明日10-10生效，今日为最后一个工作日；窗口内未见提前/延后或交期新消息；Trefis指交期约27周→32周；台系强茂/台半/德微10月现货再提价10%~15%（已生效）；瑞萨9-9宣布调价、新体系2027-1-1生效。",
+      "numbers": ["10-10 生效", "今日最后一个工作日", "交期约 32 周", "台系现货 10 月 +10%~15%"],
+      "related_warnings": ["warn-20261009-01"],
+      "section": "头条事件",
+      "severity": "高",
+      "event_id": "evt-onsemi-price-hike-2"
+    },
+    {
+      "id": "evt-20261009-02",
+      "title": "存储涨价链加速：南亚科10-07起上调DRAM合约价最高20%",
+      "heat": 86,
+      "heat_reason": "南亚科10-07起合约价最高+20%、美光桃园厂工会取得罢工权新增供给风险，多线涨价叠加、Q4预算行动窗口明确",
+      "tags": ["涨价", "存储", "影响BOM"],
+      "date": "2026-10-07",
+      "sources": [
+        {"outlet": "台湾经济日报（新浪财经转述）", "date": "2026-10-08", "url": "https://finance.sina.cn/usstock/mggd/2026-10-08/detail-iniunezp4440467.d.html", "first_party": false},
+        {"outlet": "Bloomberg（TechTimes转述）", "date": "2026-10-08", "url": "https://www.techtimes.com/articles/328764/20261008/ddr5-prices-tripled-ai-ate-dram-supply-kingston-still-leads-62-23rd-year.htm", "first_party": false},
+        {"outlet": "dram.com.cn", "date": "2026-10-07", "url": "http://www.dram.com.cn/page/views.asp?menuid=34&id=86672", "first_party": false}
+      ],
+      "summary": "南亚科10-07起上调DRAM合约价最高20%；三星Q3营业利润107.4万亿韩元（+782.5%）落地佐证涨价链；DRAM合约价自2025-09以来近+400%；美光桃园厂工会10-07取得罢工权，一旦罢工或致良率下降影响DRAM产出。",
+      "numbers": ["南亚科合约价最高 +20%", "DRAM合约价自2025-09近 +400%", "三星Q3营业利润 +782.5%"],
+      "related_warnings": ["warn-20261009-03"],
+      "section": "头条事件",
+      "severity": "中",
+      "event_id": "evt-dram-hbm-shortage"
+    },
+    {
+      "id": "evt-20261009-03",
+      "title": "北美HVAC 10月涨价潮：Nidec压缩机/Regal Rexnord电机/铜linesets已生效，Robertshaw最高15%下周一生效",
+      "heat": 82,
+      "heat_reason": "北美10月涨价函密集落地：压缩机/电机/铜管10-1~10-5已生效，多批次10-12~10-31陆续生效，整机端涨价实质落地",
+      "tags": ["涨价", "整机", "压缩机", "电机"],
+      "date": "2026-10-08",
+      "sources": [
+        {"outlet": "ACHR News", "date": "2026-10-08", "url": "https://www.achrnews.com/articles/166764-hvac-price-increase-list-october-2026", "first_party": false}
+      ],
+      "summary": "ACHR 10月涨价清单（10-08更新）：Nidec（Embraco制冷压缩机及冷凝机组）、Regal Rexnord（部分品牌电机+2.5%）、Aeris Metals（铜连接管linesets平均+12.9%）10-1~10-5已生效；Robertshaw最高15%（10-12生效）、Panasonic 3.7%~4.0%（10-19）、Nailor 5%（10-19）、tekmar平均约6%（10-16）、Resideo（10-31）。",
+      "numbers": ["Regal Rexnord +2.5%", "Aeris Metals linesets 平均 +12.9%", "Robertshaw 最高 15%", "Panasonic 3.7%~4.0%"],
+      "related_warnings": ["warn-20261009-02"],
+      "section": "头条事件",
+      "severity": "中",
+      "event_id": "evt-na-hvac-october-price-hikes"
+    },
+    {
+      "id": "evt-20261009-04",
+      "title": "三星Q3实际业绩落地：营业利润107.4万亿韩元（+782.5%）创纪录",
+      "heat": 70,
+      "heat_reason": "营业利润107.4万亿韩元（+782.5%）实际落地，存储涨价链的硬数据佐证",
+      "tags": ["存储", "数据中心"],
+      "date": "2026-10-08",
+      "sources": [
+        {"outlet": "新浪财经（路透/AFP）", "date": "2026-10-08", "url": "https://finance.sina.cn/usstock/mggd/2026-10-08/detail-iniunezm7683447.d.html", "first_party": false},
+        {"outlet": "财联社", "date": "2026-10-08", "url": "https://k.sina.cn/article_5952915705_162d248f906703q2ze.html?from=finance", "first_party": false}
+      ],
+      "summary": "三星Q3营收195万亿韩元（+126.6%）、营业利润107.4万亿韩元（+782.5%），史上首家单季营业利润破100万亿韩元的韩企，连续四季创纪录；分析师估计Q3 HBM出货环比增长近50%；12层HBM4E通过NVIDIA及主要hyperscaler客户验证。",
+      "numbers": ["营收 195 万亿韩元（+126.6%）", "营业利润 107.4 万亿韩元（+782.5%）", "HBM出货环比 +50%"],
+      "related_warnings": ["warn-20261009-03"],
+      "section": "行业动态",
+      "severity": "中",
+      "event_id": "evt-dram-hbm-shortage"
+    },
+    {
+      "id": "evt-20261009-05",
+      "title": "LG获北美5GW AI数据中心冷水机组多年期供货协议",
+      "heat": 66,
+      "heat_reason": "LG获北美5GW AI数据中心冷水机组多年期供货协议，AIDC冷却订单实质落地",
+      "tags": ["战略合作", "数据中心"],
+      "date": "2026-10-05",
+      "sources": [
+        {"outlet": "LG官网Newsroom", "date": "2026-10-05", "url": "https://www.lg.com/global/newsroom/news/eco-solution/lg-electronics-secures-supply-agreement-to-advance-ai-data-center-cooling-business-in-north-america/", "first_party": true}
+      ],
+      "summary": "LG与AIR Control Concepts签多年期协议，为美加超5GW规模AI数据中心项目供应高效冷水机组（含风冷离心机组+制冷剂自然冷却），并探讨扩展至CDU；LG称AIDC冷却订单上半年已超6000亿韩元。",
+      "numbers": ["超 5GW 规模", "上半年AIDC冷却订单超 6000 亿韩元"],
+      "related_warnings": [],
+      "section": "行业动态",
+      "severity": "低"
+    },
+    {
+      "id": "evt-20261009-06",
+      "title": "Vertiv 2.3MW CoolChip CDU首获NVIDIA DSX Ready认证",
+      "heat": 62,
+      "heat_reason": "首个获NVIDIA DSX Ready认证的CDU，液冷技术路线信号",
+      "tags": ["液冷", "数据中心", "技术路线"],
+      "date": "2026-10-06",
+      "sources": [
+        {"outlet": "Datacenter Technology", "date": "2026-10-06", "url": "http://www.datacenter-technology.com/news/115658-vertiv-secures-nvidia-dsx-ready-certification", "first_party": false}
+      ],
+      "summary": "Vertiv 2.3MW CoolChip CDU成为首个获得NVIDIA DSX Ready认证的液冷分配单元，支持直接芯片冷却与后门换热器，可安装机列末端或房间周边。",
+      "numbers": ["2.3MW"],
+      "related_warnings": [],
+      "section": "行业动态",
+      "severity": "低"
+    },
+    {
+      "id": "evt-20261009-07",
+      "title": "英飞凌AI相关收入翻倍，与Eaton的MVSST 2.0平台进入800VDC数据中心配电链",
+      "heat": 62,
+      "heat_reason": "AI相关收入翻倍；MVSST 2.0平台SiC器件进入800VDC数据中心配电链，功率半导体技术路线信号",
+      "tags": ["功率器件", "数据中心", "影响BOM"],
+      "date": "2026-10-06",
+      "sources": [
+        {"outlet": "ad-hoc-news", "date": "2026-10-07", "url": "https://www.ad-hoc-news.de/boerse/unternehmensnachrichten/infineon-sharpens-data-center-focus-as-ai-revenue-doubles-and-portfolio/70242965", "first_party": false},
+        {"outlet": "DCD", "date": "2026-10-07", "url": "https://www.datacenterdynamics.com/en/news/infineon-and-eaton-partner-on-silicon-carbide-based-solid-state-transformers-to-support-800vdc-power-architectures/", "first_party": false}
+      ],
+      "summary": "英飞凌10-01投资者会议披露本财年AI相关收入翻倍；与Eaton的MVSST 2.0平台采用Infineon SiC器件、目标800VDC数据中心配电，首批部署亚太；双方正评估2.3kV/3.3kV SiC模块平台。",
+      "numbers": ["AI相关收入翻倍", "800VDC"],
+      "related_warnings": [],
+      "section": "行业动态",
+      "severity": "低"
+    },
+    {
+      "id": "evt-20261009-08",
+      "title": "苹果官宣10-13 'Welcome Home'发布会，LG联合开发7款智能家居配件",
+      "heat": 60,
+      "heat_reason": "10-13发布会官宣，LG联合开发7款智能家居配件（智能恒温器/温度传感器等）进入发售倒计时",
+      "tags": ["智能家居", "消费电子"],
+      "date": "2026-10-08",
+      "sources": [
+        {"outlet": "osxdaily", "date": "2026-10-08", "url": "https://osxdaily.com/2026/10/08/apple-welcome-home-event-set-for-october-13/", "first_party": false}
+      ],
+      "summary": "苹果官宣10-13 'Welcome Home'发布会，预计发布智能家居中枢（HomePad）、HomePod mini 2、Apple TV 4K；LG联合开发的7款配件（智能恒温器/温度传感器/UWB门锁等）打LG品牌、由LG生产售后，已向FCC/UL提交认证。",
+      "numbers": ["7 款配件", "10-13 发布会"],
+      "related_warnings": [],
+      "section": "行业动态",
+      "severity": "低"
+    }
+  ],
+  "industry_updates": [
+    {
+      "title": "特灵发布LiquidStack CDU 2.X液冷分配单元平台",
+      "summary": "Yotta 2026展会发布，流量可达3750 lpm @ 3.5 bar，兼容多代AI GPU平台，支持机架密度提升",
+      "date": "2026-10-07",
+      "source": "StorageNewsletter",
+      "vendor_claim": false,
+      "event_id": null
+    },
+    {
+      "title": "Vertiv 2.3MW CoolChip CDU首获NVIDIA DSX Ready认证",
+      "summary": "首个获该认证的CDU，支持直接芯片冷却与后门换热器",
+      "date": "2026-10-06",
+      "source": "Datacenter Technology",
+      "vendor_claim": false,
+      "event_id": "evt-20261009-06"
+    },
+    {
+      "title": "LG获北美5GW AI数据中心冷水机组供货协议",
+      "summary": "与AIR Control Concepts签多年期协议，供高效冷水机组（含风冷离心机组+制冷剂自然冷却），探讨扩展至CDU；上半年AIDC冷却订单超6000亿韩元",
+      "date": "2026-10-05",
+      "source": "LG官网Newsroom",
+      "vendor_claim": true,
+      "event_id": "evt-20261009-05"
+    },
+    {
+      "title": "三星Q3实际业绩落地",
+      "summary": "营收195万亿韩元（+126.6%）、营业利润107.4万亿韩元（+782.5%），连续四季创纪录；12层HBM4E通过NVIDIA及主要hyperscaler客户验证",
+      "date": "2026-10-08",
+      "source": "财联社/新浪财经",
+      "vendor_claim": false,
+      "event_id": "evt-20261009-04"
+    },
+    {
+      "title": "大金印度10-1起上调空调价格6%~10%",
+      "summary": "与LG、三星同步涨价，主因铜、铝、钢、树脂等原材料过去三个月持续上涨，向排灯节旺季C端传导",
+      "date": "2026-10-04",
+      "source": "潮起网",
+      "vendor_claim": false,
+      "event_id": null
+    },
+    {
+      "title": "苹果官宣10-13 'Welcome Home'发布会",
+      "summary": "预计发布智能家居中枢（HomePad）、HomePod mini 2、Apple TV 4K；LG联合开发7款配件已向FCC/UL提交认证",
+      "date": "2026-10-08",
+      "source": "osxdaily/Gurman",
+      "vendor_claim": false,
+      "event_id": "evt-20261009-08"
+    }
+  ],
+  "siphon_effects": [
+    {
+      "material": "存储（DRAM/NAND/HBM）",
+      "change": "南亚科10-07起上调DRAM合约价最高20%；三星Q3营业利润107.4万亿韩元（+782.5%）落地；DRAM合约价自2025-09近+400%；TrendForce预计Q4常规DRAM +10%~15%、NAND +15%~20%",
+      "date": "2026-10-08",
+      "source": "台湾经济日报/Bloomberg/TrendForce",
+      "event_id": "evt-20261009-02"
+    },
+    {
+      "material": "存储供给锁定",
+      "change": "美光FY26营收创纪录$133B，CEO称2027年产能75%已售罄（客户预付款320亿美元）；美光桃园厂工会10-07取得罢工权；SK海力士预计HBM供需平衡要到2030年",
+      "date": "2026-10-08",
+      "source": "Micron财报/dram.com.cn",
+      "event_id": "evt-dram-hbm-shortage"
+    },
+    {
+      "material": "云厂商资本开支",
+      "change": "Moody's：美国hyperscaler 2026年capex约$785B（2022年6倍）、2027年约$870B；高盛预计2027年支出或再增50%+、超市场一致预期的$1.1T；电力供应不足将限制2027年AI产能释放",
+      "date": "2026-10-08",
+      "source": "Moody's/DCD/高盛",
+      "event_id": null
+    },
+    {
+      "material": "功率半导体（AI数据中心供电链）",
+      "change": "英飞凌本财年AI相关收入翻倍；与Eaton的MVSST 2.0平台采用Infineon SiC器件、目标800VDC数据中心配电，首批部署亚太",
+      "date": "2026-10-07",
+      "source": "ad-hoc-news/DCD",
+      "event_id": "evt-20261009-07"
+    },
+    {
+      "material": "MLCC",
+      "change": "单NVL72整机柜约44.1万颗高端MLCC；村田+三星电机合计占AI服务器级MLCC产能84%；传村田全面涨价15%~35%（单源转述，待官方确认）",
+      "date": "2026-10-08",
+      "source": "trendytechtribe",
+      "event_id": "evt-mlcc-price-hike"
+    },
+    {
+      "material": "高多层PCB/高速CCL/铜箔",
+      "change": "建滔无新涨价函（8-31年内第7函为已知）；背景延续：高端玻纤布2026缺口40%、HVLP4铜箔2027缺口31%；FR-4覆铜板70→260元/张（+270%），涨价周期保守延续至2027H1",
+      "date": "2026-10-08",
+      "source": "Morgan Stanley/招商证券",
+      "event_id": null
+    }
+  ],
+  "cross_industry": [
+    {
+      "industry": "新能源车",
+      "date": "2026-10-08",
+      "key_data": "比亚迪9月销量46.36万辆（+16.98%）；小米YU7锁单后等待35-38周；可再生能源逆变器约占IGBT市场25%，SiC MOSFET在高功率光伏逆变器中加速替代IGBT，到2028年多数新商用设计将默认SiC",
+      "link": "EV/光伏与AI HVDC共用SiC/IGBT产能 → 产能争夺延续；150mm SiC衬底交期52周，新产能2027年前难见",
+      "source": "新浪财经/IndexBox/GlobeNewswire",
+      "event_id": null
+    },
+    {
+      "industry": "电网",
+      "date": "2026-10-08",
+      "key_data": "全球四大寡头大型电力变压器交期48-60个月；GSU变压器超160周；断路器价格较2021年涨47%；中压开关设备交期52-104周；2026年美国电力变压器缺口约15%",
+      "link": "变压器/开关设备与HVAC共争铜、电工钢、磁钢产能 → 推高低压电气件与变频器成本",
+      "source": "manufacturingmag/Wood Mackenzie",
+      "event_id": null
+    },
+    {
+      "industry": "消费电子",
+      "date": "2026-10-08",
+      "key_data": "苹果10-13发布会官宣；台积电Q3营收创纪录T$1.49万亿（$46.71B）；iPhone Duo供应链良品率未达目标",
+      "link": "AI服务器HBM吸走产能，消费电子与HVAC控制板共用DRAM/MLCC供应持续承压",
+      "source": "osxdaily/macdailynews",
+      "event_id": null
+    },
+    {
+      "industry": "工业自动化",
+      "date": null,
+      "key_data": "窗口内无新涨价函（7月施耐德/LS调价为旧闻）；北美480V数据中心项目电子断路器交期26-34周",
+      "link": "共用接触器/断路器/PLC供应链 → 供应相对平稳但交期偏长",
+      "source": null,
+      "event_id": null
+    }
+  ],
+  "supplier_updates": [
+    {
+      "category": "功率器件",
+      "company": null,
+      "detail": "安森美第二轮涨价10-10生效（今日最后一个工作日）；Trefis指交期约27周→32周；台系10月现货提价10%~15%（已生效）；瑞萨9-9宣布调价、新体系2027-1-1生效",
+      "event_id": "evt-20261009-01",
+      "subcategories": ["IGBT Modules"],
+      "type": "涨价/交期延长"
+    },
+    {
+      "category": "存储器",
+      "company": null,
+      "detail": "南亚科10-07起上调DRAM合约价最高20%；美光桃园厂工会10-07取得罢工权；三星Q3营业利润107.4万亿韩元（+782.5%）；DRAM合约价自2025-09近+400%",
+      "event_id": "evt-20261009-02",
+      "subcategories": ["存储器", "Memory"],
+      "type": "涨价"
+    },
+    {
+      "category": "压缩机",
+      "company": null,
+      "detail": "Nidec（Embraco制冷压缩机及冷凝机组）10-1起调价（ACHR 10月涨价清单）——年内首次压缩机整机涨价公开记录",
+      "event_id": "evt-20261009-03",
+      "subcategories": ["Reciprocating Compressors"],
+      "type": "涨价"
+    },
+    {
+      "category": "电机",
+      "company": null,
+      "detail": "Regal Rexnord部分品牌电机+2.5%，10-1生效（ACHR 10月涨价清单）",
+      "event_id": "evt-20261009-03",
+      "subcategories": ["Small Motors: Fan Motors", "Small Motors: Fractional HP - ECM Motors", "Small Motors: Fractional HP - Non-ECM Mtrs", "Medium Motors (10-100 HP) - Ihp Motors", "Integrated Motor Fans"],
+      "type": "涨价"
+    },
+    {
+      "category": "铜加工材",
+      "company": null,
+      "detail": "Aeris Metals铜连接管linesets平均+12.9%，10-5生效（ACHR 10月涨价清单）",
+      "event_id": "evt-20261009-03",
+      "subcategories": ["Fabrications & Assemblies - Copper", "Tube, Technical - Copper", "Tube, Lw Coil Igt Or Smooth - Copper"],
+      "type": "涨价"
+    },
+    {
+      "category": "控制器件",
+      "company": null,
+      "detail": "Robertshaw最高15%，10-12生效；tekmar平均约6%，10-16生效（ACHR 10月涨价清单）",
+      "event_id": "evt-20261009-03",
+      "subcategories": ["Uncategorized Controls"],
+      "type": "涨价"
+    },
+    {
+      "category": "整机（北美）",
+      "company": "Panasonic",
+      "detail": "Panasonic 3.7%~4.0%，10-19生效（ACHR 10月涨价清单）",
+      "event_id": "evt-20261009-03",
+      "subcategories": [],
+      "type": "涨价"
+    },
+    {
+      "category": "整机（北美）",
+      "company": "Nailor Industries",
+      "detail": "Nailor 5%，10-19生效（ACHR 10月涨价清单）",
+      "event_id": "evt-20261009-03",
+      "subcategories": [],
+      "type": "涨价"
+    },
+    {
+      "category": "整机（北美）",
+      "company": "Resideo",
+      "detail": "Resideo（Honeywell Home空调分区产品）10-31调价（ACHR 10月涨价清单）",
+      "event_id": "evt-20261009-03",
+      "subcategories": [],
+      "type": "涨价"
+    },
+    {
+      "category": "MLCC",
+      "company": null,
+      "detail": "传村田启动全面涨价15%~35%（10-07 AI简报单源转述，待官方确认）；三环高容MLCC价格修复、扩产累计投入约18.6亿元（进度近半）；涨价潮已生效延续",
+      "event_id": "evt-mlcc-price-hike",
+      "subcategories": ["电容"],
+      "type": "涨价（传闻待确认）"
+    },
+    {
+      "category": "塑料/包装",
+      "company": null,
+      "detail": "Epsilyte将EPS涨价从$0.06/lb上调至$0.11/lb，10-1生效（BusinessWire，9-25；Tier B第5批轮查hit）",
+      "event_id": null,
+      "subcategories": ["塑料件与包装"],
+      "type": "涨价"
+    },
+    {
+      "category": "启动器",
+      "company": null,
+      "detail": "施耐德ATS490软启动器+8%（6-26生效）、LS Electric电机启动器+15%（7-1生效）为7月旧闻；今日无新进展（Tier B第5批轮查hit）",
+      "event_id": null,
+      "subcategories": ["Starters"],
+      "type": "涨价（7月旧闻，无新增）"
+    },
+    {
+      "category": "制冷剂",
+      "company": null,
+      "detail": "R32市场均价约6.25万元/吨（同比+34%）；2026年HFCs全国总生产配额79.78万吨，格局不变；无新涨价函",
+      "event_id": null,
+      "subcategories": ["Refrigerant"],
+      "type": "排查无异常"
+    },
+    {
+      "category": "磁钢/稀土",
+      "company": null,
+      "detail": "未检索到节后现货新报价；延续9-22/9-24轻稀土上涨（氧化镨钕+5000元/吨、镨钕金属+7500元/吨）",
+      "event_id": null,
+      "subcategories": ["Magnets"],
+      "type": "排查无异常"
+    },
+    {
+      "category": "铜/铝/钢",
+      "company": null,
+      "detail": "SHFE 10-09恢复交易，开盘价截至发稿未见公开报道；节前9-30沪铜现货111,390元/吨为参照",
+      "event_id": null,
+      "subcategories": ["Copper & Silver", "Fittings - Copper", "Hot Roll Steel, Coil & Sheet", "Plate - Steel", "Aluminum Fin Stock", "Extrusions - Aluminum"],
+      "type": "排查无异常"
+    },
+    {
+      "category": "MCU/模拟与电源IC",
+      "company": null,
+      "detail": "国民技术10-1涨价10%~20%已生效（8-11公告）；今日无新进展；TI/ADI交期40~50周、ST/NXP 40~52+周背景延续",
+      "event_id": "evt-guomin-mcu-price-hike",
+      "subcategories": ["模拟与电源 IC / MCU"],
+      "type": "排查无异常"
+    },
+    {
+      "category": "Tier A其余",
+      "company": null,
+      "detail": "窗口内无新涨价函或交期变化",
+      "event_id": null,
+      "subcategories": ["Centrifugal Compressors", "Rotary Compressors", "Screw Compressors", "Scroll Compressors", "Refrigerant Oil", "Power Supplies - Electronic", "Variable Speed Drives Low Voltage", "Variable Speed Drives Medium Voltage", "Circuit Breakers", "Contactors", "Relay", "Transformers (Large)", "Transformers (Small)", "Current Transformers", "Axial Fans", "Centrifugal Fans", "Water Pumps", "Ball Bearings", "Magnetic Bearings", "Control Valves", "Solenoid Valves", "Reversing Valves", "Microchannel", "Tube & Fin Coils", "Shell & Tube", "Sensor", "Sensors - Flow", "Sensors - Pressure", "Sensors - Temperature", "PCB Boards", "时钟/晶振/FPGA", "电阻与电感", "连接器与线束", "PCBA板卡"],
+      "type": "排查无异常"
+    },
+    {
+      "category": "Tier B轮查",
+      "company": null,
+      "detail": "第5批轮查：实质hit 4/11（Integrated Motor Fans、Memory、Starters、塑料件与包装，详见各品类行）；2个弱关联观察（Forgings - Steel：Nucor-Yamato/Gerdau结构钢+$50/短吨10-1生效；Uncategorized Controls：Robertshaw最高15% 10-12生效已收录）；5个无异常（Badging、Closed Cell Foam、Displays、Readers & Keypads、Vessels）",
+      "event_id": null,
+      "subcategories": ["Badging", "Closed Cell Foam", "Displays", "Forgings - Steel", "Integrated Motor Fans", "Memory", "Readers & Keypads", "Starters", "Uncategorized Controls", "Vessels", "塑料件与包装"],
+      "type": "轮查结论"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "warn-20261009-01",
+      "title": "安森美涨价今日最后窗口",
+      "urgency": "高",
+      "impact": "驱动板/变频器/电源模块（IGBT/电源IC）",
+      "action": "今日内复核ON报价单并锁价，32周交期料号按1.3倍安全库存加单",
+      "trigger": "BOM含ON/英飞凌/台系功率器件",
+      "deadline": "2026-10-09",
+      "related_events": ["evt-20261009-01"]
+    },
+    {
+      "id": "warn-20261009-02",
+      "title": "北美HVAC涨价潮传导",
+      "urgency": "中",
+      "impact": "压缩机/电机/铜连接管/控制器件",
+      "action": "评估Embraco压缩机/Regal Rexnord电机/铜linesets北美涨价对国内供应商谈判的参照效应；BOM含Robertshaw温控器/燃气阀的，10-12生效前下单",
+      "trigger": "BOM含相关品牌",
+      "deadline": "2026-10-12",
+      "related_events": ["evt-20261009-03"]
+    },
+    {
+      "id": "warn-20261009-03",
+      "title": "DRAM涨价链加速",
+      "urgency": "中",
+      "impact": "控制板/HMI嵌入式板卡",
+      "action": "Q4预算按+15%~20%计提；关注美光桃园厂罢工进展",
+      "trigger": "BOM含DRAM",
+      "deadline": "2026-10-31",
+      "related_events": ["evt-20261009-02", "evt-20261009-04"]
+    },
+    {
+      "id": "warn-20261009-04",
+      "title": "MLCC涨价潮维持",
+      "urgency": "中",
+      "impact": "控制板/HMI板卡",
+      "action": "传村田15%~35%待官方确认，通用料按30周交期备料，Q4盘点LTB清单",
+      "trigger": "BOM含国巨/华新科/三星电机/村田/三环通用料号",
+      "deadline": "2026-12-31",
+      "related_events": []
+    },
+    {
+      "id": "warn-20261009-05",
+      "title": "电力设备交期4-5年",
+      "urgency": "中",
+      "impact": "数据中心/新产线配套电力设备",
+      "action": "2027年投产项目电力设备提前24个月下单；断路器价格较2021年+47%纳入预算",
+      "trigger": "有2027年投产项目",
+      "deadline": null,
+      "related_events": []
+    },
+    {
+      "id": "warn-20261009-06",
+      "title": "沪铜节后首日",
+      "urgency": "中",
+      "impact": "电机/压缩机/换热器/连接器/电阻",
+      "action": "紧盯SHFE今日开盘，大宗长协谈判加入铜价联动条款",
+      "trigger": "SHFE恢复交易",
+      "deadline": "2026-10-09",
+      "related_events": []
+    }
+  ],
+  "company_checklist": [
+    {"company": "江森自控", "status": "无实质动态", "note": "10-27 Q4财报电话会为10-01已公告事项；窗口内无其他业务动态"},
+    {"company": "开利", "status": "无实质动态", "note": "英文检索均为经销商返利导购通稿，无业务实质"},
+    {"company": "特灵", "status": "无实质动态", "note": "10-06 Kroenke协议、10-07 LiquidStack CDU 2.X发布已报道，今日无新增"},
+    {"company": "大金", "status": "无实质动态", "note": "10-22伦敦峰会为预告；印度10-1涨价6%~10%为10-04报道"},
+    {"company": "美的", "status": "无实质动态", "note": "窗口外实质（10-02 MBT超融合架构）已超窗口"},
+    {"company": "格力", "status": "无实质动态", "note": "窗口内无业务实质"},
+    {"company": "海尔", "status": "无实质动态", "note": "Wolseley战略合作核实为2025-10旧闻"},
+    {"company": "日立", "status": "无实质动态", "note": "窗口内仅压缩空气业务社区奖项，与HVAC整机无关"},
+    {"company": "松下", "status": "有实质动态", "note": "美国市场产品涨价3.7%~4.0%，10-19生效（ACHR 10月涨价清单）；Chillventa展出HVAC风机电机新品"},
+    {"company": "LG", "status": "有实质动态", "note": "与AIR Control Concepts签多年期协议，为北美超5GW AI数据中心供应冷水机组；Q3营收+8.9%、营业利润+13.5%（低于预期）"},
+    {"company": "三星", "status": "有实质动态", "note": "Q3实际：营收195万亿韩元（+126.6%）、营业利润107.4万亿韩元（+782.5%）创纪录；12层HBM4E通过NVIDIA验证"},
+    {"company": "Vertiv", "status": "有实质动态", "note": "2.3MW CoolChip CDU首获NVIDIA DSX Ready认证"},
+    {"company": "英维克", "status": "无实质动态", "note": "检索均为旧闻"},
+    {"company": "申菱环境", "status": "无实质动态", "note": "窗口外背景：9-16海外4.15亿美元供应协议"},
+    {"company": "高澜股份", "status": "无实质动态", "note": "均为旧闻"},
+    {"company": "同飞股份", "status": "无实质动态", "note": "窗口外背景：9-29液冷温控项目地块"},
+    {"company": "浪潮信息", "status": "无实质动态", "note": "窗口外背景：9-11拟定增加码AI与液冷"},
+    {"company": "联想", "status": "无实质动态", "note": "窗口内无液冷实质动态"}
+  ],
+  "time_anchors": [
+    {"date": "2026-10-09", "event": "安森美涨价前最后一个工作日；SHFE国庆后首个交易日"},
+    {"date": "2026-10-10", "event": "安森美第二轮涨价生效"},
+    {"date": "2026-10-12", "event": "Robertshaw最高15%生效"},
+    {"date": "2026-10-13", "event": "苹果'Welcome Home'发布会（LG 7款配件协同）"},
+    {"date": "2026-10-16", "event": "tekmar平均约6%生效"},
+    {"date": "2026-10-19", "event": "松下3.7%~4.0%/Nailor 5%生效"},
+    {"date": "2026-10-22", "event": "Daikin UK伦敦HVAC峰会"},
+    {"date": "2026-10-27", "event": "JCI FY2026 Q4财报电话会"},
+    {"date": "2026-10-31", "event": "Resideo调价生效"},
+    {"date": "2026-12-04", "event": "美国多晶硅232关税生效"},
+    {"date": "2027-01-01", "event": "瑞萨第二轮调价生效"}
+  ]
+}
