@@ -231,7 +231,7 @@ details.sec .body{padding:0 14px 12px}
   <div class="sub">暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新</div>
   <div class="headline" id="headline" style="display:none"></div>
   <div class="dpills" id="dpills"></div>
-  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()">🔗 复制本期链接</button><a href="feed.xml" title="RSS 订阅">📡 RSS 订阅</a><a href="webcal://nohho.github.io/hvac-intel/anchors.ics" title="订阅时间锚点日历（iPhone/Outlook）">📅 日历订阅</a></div>
+  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()">🔗 复制本期链接</button><a href="feed.xml" title="RSS 订阅">📡 RSS 订阅</a><button onclick="showCalSub()" title="订阅时间锚点日历（iPhone/Outlook）">📅 日历订阅</button></div>
 </header>
 <div class="alertbar" id="alertbar"></div>
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
@@ -592,6 +592,14 @@ function copyIssueLink(){
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done).catch(()=>prompt("复制本期链接：",u));}
   else prompt("复制本期链接：",u);
 }
+const CALURL="https://nohho.github.io/hvac-intel/anchors.ics";
+function showCalSub(){document.getElementById("calsub").style.display="flex";}
+function hideCalSub(){document.getElementById("calsub").style.display="none";}
+function copyCalUrl(){
+  const done=()=>{const b=document.getElementById("calurl");b.value="✅ 已复制，去日历 App 粘贴订阅";setTimeout(()=>{b.value=CALURL;},1600);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(CALURL).then(done).catch(()=>{document.getElementById("calurl").select();});}
+  else document.getElementById("calurl").select();
+}
 async function loadDay(date){
   CURDATE=date;
   document.querySelectorAll(".errbar").forEach(b=>b.remove());
@@ -665,5 +673,21 @@ async function boot(){
 }
 boot();
 </script>
+<div id="calsub" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:99;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)hideCalSub()">
+  <div style="background:#fff;color:#222;max-width:430px;width:100%;border-radius:12px;padding:20px;font-size:14px;line-height:1.7">
+    <div style="font-weight:700;font-size:16px;margin-bottom:6px">📅 订阅时间锚点日历</div>
+    <div style="color:#666;font-size:13px;margin-bottom:10px">每天早报发布后自动更新，订阅一次即可。</div>
+    <input id="calurl" readonly value="https://nohho.github.io/hvac-intel/anchors.ics" onclick="this.select()" style="width:100%;box-sizing:border-box;padding:8px;border:1px solid #ddd;border-radius:8px;font-size:12px;color:#444;background:#f7f9fb">
+    <div style="display:flex;gap:10px;margin:12px 0">
+      <button onclick="copyCalUrl()" style="flex:1;padding:10px;border:none;border-radius:8px;background:#0b5cab;color:#fff;font-size:14px;cursor:pointer">复制订阅链接</button>
+      <a href="webcal://nohho.github.io/hvac-intel/anchors.ics" style="flex:1;text-align:center;padding:10px;border-radius:8px;background:#e8f1fb;color:#0b5cab;font-size:14px;text-decoration:none">用日历 App 打开</a>
+    </div>
+    <div style="font-size:13px;color:#555">
+      <b>iPhone</b>：在 Safari 里点"用日历 App 打开"最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
+      <b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接
+    </div>
+    <button onclick="hideCalSub()" style="margin-top:12px;width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;background:#fff;font-size:14px;cursor:pointer">关闭</button>
+  </div>
+</div>
 </body>
 </html>
