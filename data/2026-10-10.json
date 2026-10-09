@@ -1,0 +1,597 @@
+{
+ "meta": {
+  "date": "2026-10-10",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-10-hvac-cdu-morning-briefing.md",
+  "note": "周六早报。安森美第二轮涨价今日生效（事件库状态已通知→已生效）；存储危机向终端传导（新建事件 evt-samsung-q4-mobile-production-cut）；南亚科10-07起DRAM合约价最高+20%追加至DRAM事件时间线。Tier B第6批轮查：实质hit 1/11（Displays），0-hit轮次计数清零，维持两周一轮。数字全部取自早报已核实条目，未新增、未改写。"
+ },
+ "daily_report": {
+  "date": "2026-10-10",
+  "title": "HVAC / 液冷 CDU 行业情报早报",
+  "headline": "安森美第二轮涨价今日生效；存储危机烧到终端：三星Q4手机最高减产30%、IDC Q3全球PC出货-20.1%、英伟达Shield TV标准版停产；南亚科10-07起DRAM合约价最高+20%",
+  "sections": 6,
+  "hotspot_count": 5,
+  "warning_count": 4
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261010-01",
+   "title": "安森美第二轮涨价今日（10-10）正式生效",
+   "heat": 92,
+   "heat_reason": "今日生效、价格实质落地；交期约32周、台系现货已+10%~15%，命中PCBA核心BOM",
+   "tags": [
+    "涨价",
+    "功率器件",
+    "影响BOM"
+   ],
+   "date": "2026-09-18",
+   "sources": [
+    {
+     "outlet": "证券时报·人民财讯",
+     "date": "2026-09-18",
+     "url": "https://www.stcn.com/article/detail/4191313.html",
+     "first_party": false
+    },
+    {
+     "outlet": "财联社（东方财富转载）",
+     "date": "2026-09-22",
+     "url": "https://finance.eastmoney.com/a/202609223880383582.html",
+     "first_party": false
+    }
+   ],
+   "summary": "安森美第二轮涨价今日10-10生效，广泛产品系列调价，原厂交期约32周（Trefis）；今年上半年已调过一轮；台系强茂/台半/德微10月现货已提价10%~15%；瑞萨9-9宣布调价、新体系2027-1-1生效。",
+   "numbers": [
+    "10-10 生效",
+    "交期约 32 周",
+    "台系现货 10 月 +10%~15%",
+    "瑞萨新体系 2027-1-1 生效"
+   ],
+   "related_warnings": [
+    "warn-20261010-01"
+   ],
+   "section": "头条事件",
+   "severity": "高",
+   "event_id": "evt-onsemi-price-hike-2"
+  },
+  {
+   "id": "evt-20261010-02",
+   "title": "存储危机烧到终端：三星Q4手机最高减产30%、Q3全球PC出货-20.1%、英伟达Shield TV标准版停产",
+   "heat": 86,
+   "heat_reason": "DRAM成本迫使三星/PC/消费电子三线收缩，多源交叉、行动窗口明确",
+   "tags": [
+    "影响BOM",
+    "存储",
+    "数据中心"
+   ],
+   "date": "2026-10-08",
+   "sources": [
+    {
+     "outlet": "韩媒Money Today（环球网转述）",
+     "date": "2026-10-08",
+     "url": "https://k.sina.cn/article_5952915705_162d248f906703q7ms.html?from=digit",
+     "first_party": false
+    },
+    {
+     "outlet": "IDC（IT之家转述）",
+     "date": "2026-10-08",
+     "url": "https://news.17173.com/content/10092026/100342243.shtml",
+     "first_party": false
+    },
+    {
+     "outlet": "英伟达官方声明（IT之家转述）",
+     "date": "2026-10-02",
+     "url": "https://finance.sina.cn/tech/2026-10-03/detail-initwzsm0897895.d.html?vt=4",
+     "first_party": true
+    }
+   ],
+   "summary": "三星MX部门要求Q4手机供应量削减20%~30%（韩媒10-08，三星未表态）；IDC 10-08：Q3全球PC出货6270万台（-20.1%），内存涨价致提前备货透支需求；英伟达10-02因DRAM成本停产Shield TV标准版、Pro版涨价50%至$299.99。",
+   "numbers": [
+    "三星Q4供应削减 20%~30%",
+    "Q3 PC出货 6270万台 -20.1%",
+    "12GB LPDDR5X Q2 $145~146（同比+175%）",
+    "Shield TV Pro +50%至$299.99"
+   ],
+   "related_warnings": [
+    "warn-20261010-02"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-samsung-q4-mobile-production-cut"
+  },
+  {
+   "id": "evt-20261010-03",
+   "title": "南亚科10-07起上调DRAM合约价最高20%，AMD示警内存紧张",
+   "heat": 84,
+   "heat_reason": "原厂合约价新一轮上调开启，Q4涨价链加速，行动窗口≤7天",
+   "tags": [
+    "涨价",
+    "存储",
+    "影响BOM"
+   ],
+   "date": "2026-10-07",
+   "sources": [
+    {
+     "outlet": "工商時報",
+     "date": "2026-10-07",
+     "url": "https://www.ctee.com.tw/news/20261007700649-430201",
+     "first_party": false
+    }
+   ],
+   "summary": "南亚科10-07起上调DRAM合约价最高20%（公司不予置评）；AMD苏姿丰10-06访台示警内存供应紧张；三星HBM4 2027年合约价格预计调高至2倍以上；摩根士丹利：DRAM短缺将贯穿本轮AI产业周期；TrendForce：Q4常规DRAM +10%~15%、NAND +15%~20%。",
+   "numbers": [
+    "南亚科 +20%",
+    "Q4常规DRAM +10%~15%",
+    "NAND +15%~20%",
+    "HBM4 2027合约价预计至2倍以上"
+   ],
+   "related_warnings": [
+    "warn-20261010-02"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-dram-hbm-shortage"
+  },
+  {
+   "id": "evt-20261010-04",
+   "title": "MLCC：村田涨价传闻未证实，三环/国巨/华新科涨价已落地",
+   "heat": 76,
+   "heat_reason": "单一实质事件叠加传闻待确认，影响被动元件中长期格局",
+   "tags": [
+    "涨价",
+    "被动元件",
+    "影响BOM"
+   ],
+   "date": "2026-10-07",
+   "sources": [
+    {
+     "outlet": "工商時報",
+     "date": "2026-08-28",
+     "url": "https://www.ctee.com.tw/news/20260828700192-439901",
+     "first_party": false
+    }
+   ],
+   "summary": "村田“全面涨价15%~35%”仍为单源传闻未获官方证实；三环10-1起涨价30%~80%已生效；国巨/华新科产能售罄、新一季价格生效；华强北高端料缺货、现货波动剧烈。",
+   "numbers": [
+    "三环 +30%~80%（10-1生效）",
+    "村田传闻 +15%~35%（待确认）",
+    "三星电机Q4消费规X5R +25%~30%"
+   ],
+   "related_warnings": [
+    "warn-20261010-04"
+   ],
+   "section": "供应商动态",
+   "severity": "中",
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "id": "evt-20261010-05",
+   "title": "铜价节后小幅回落：SMM广东1#铜现货111,200元/吨",
+   "heat": 64,
+   "heat_reason": "价格更新类数据点，无实质恶化，维持常态跟踪",
+   "tags": [
+    "原材料"
+   ],
+   "date": "2026-10-09",
+   "sources": [
+    {
+     "outlet": "SMM上海有色网",
+     "date": "2026-10-09",
+     "url": "https://news.metal.com/newscontent/104148344-dollar-crude-oil-weakens-base-metals-overseas-market-outperforms-domestic-market-shfe-tin-plunges-lme-copper-aluminum-tin-and-gold-futures-lead-gains-smm-midday-review",
+     "first_party": true
+    }
+   ],
+   "summary": "SMM 10-09（国庆后首个交易日）：广东1#铜现货均价111,200元/吨（较上交易日-690），节后小幅回落；LME铝10-08收$3,050.5/吨（光大期货10-09日报）。",
+   "numbers": [
+    "广东1#铜 111,200元/吨（-690）",
+    "LME铝 $3,050.5/吨"
+   ],
+   "related_warnings": [
+    "warn-20261010-03"
+   ],
+   "section": "跨行业传导",
+   "severity": "低",
+   "event_id": "evt-copper-high"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "三星MX部门Q4手机供应最高削减30%（内存成本所致）",
+   "summary": "韩媒Money Today 10-08报道，三星未正式表态；TrendForce：Q2 12GB LPDDR5X $145~146（同比+175%），Q3预计再+20%至最高$180",
+   "source": "韩媒Money Today（环球网转述），2026-10-08",
+   "vendor_voice": false
+  },
+  {
+   "title": "IDC：2026Q3全球PC出货6270万台，同比-20.1%",
+   "summary": "联想1490万台（-22.6%，23.8%份额居首），惠普-30.9%、戴尔-25.0%；内存涨价致提前备货透支需求+供应受限",
+   "source": "IDC（IT之家转述），2026-10-08",
+   "vendor_voice": false
+  },
+  {
+   "title": "浪潮海若大模型三赛道落地加速",
+   "summary": "政务12345热线一次转派准确率99.65%、石化智能体开发周期缩短70%、AI工厂1399P算力；2026人工智能产业大会10-14~16济南举办",
+   "source": "齐鲁网·闪电新闻，2026-10-08",
+   "vendor_voice": false
+  },
+  {
+   "title": "英伟达Shield TV标准版停产、Pro版涨价50%",
+   "summary": "因DRAM等组件成本暴涨，10-02起停产标准版，Pro版涨价50%至$299.99（英伟达官方声明）",
+   "source": "英伟达官方声明（IT之家转述），2026-10-02",
+   "vendor_voice": true
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "存储器（DRAM/NAND/HBM）",
+   "change": "南亚科10-07起最高+20%；TrendForce：Q4常规DRAM +10%~15%、NAND +15%~20%；三星HBM4 2027合约价预计至2倍以上；美光FY27 75%产能已锁定（320亿美元预付款）；大和：DDR4偏紧延至2027；短缺延续至2028",
+   "source": "工商時報/dram.com.cn/TrendForce，2026-10-07~10-08"
+  },
+  {
+   "material": "MLCC",
+   "change": "村田全面涨价15%~35%传闻未证实；三环10-1起+30%~80%已生效；国巨/华新科产能售罄；华强北高端料缺货",
+   "source": "工商時報/证券时报，2026-08-28~10-07"
+  },
+  {
+   "material": "变压器（电力设备）",
+   "change": "AI資料中心擴張致交期从约1年延长至数年；Wood Mackenzie预计未来一年价格+4%~10%",
+   "source": "工商時報，2026-10-02"
+  },
+  {
+   "material": "显示（Tier B本批hit）",
+   "change": "IDC：2026H1中国PC显示器商用+5.7%、消费-10.1%；显卡/存储/显示驱动芯片涨价推高整机成本",
+   "source": "IDC，2026Q2报告"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "PC",
+   "key_data": "Q3全球出货6270万台（-20.1%）；联想/惠普/戴尔合计失去4.2个百分点份额",
+   "chain": "内存涨价→年初集中囤货透支下半年需求→渠道去库存+供应受限→Q4季节性反弹缺席",
+   "source": "IDC（IT之家转述），2026-10-08"
+  },
+  {
+   "industry": "消费电子",
+   "key_data": "英伟达Shield TV标准版停产、Pro版+50%（10-02，官方声明）；华为/小米/荣耀9-1起旗舰涨价200~1000元",
+   "chain": "DRAM成本暴涨→终端收缩产品线/上调售价→存储涨价全链条传导至终端定价",
+   "source": "英伟达官方声明/9月综合报道"
+  },
+  {
+   "industry": "有色金属",
+   "key_data": "SMM 10-09广东1#铜现货111,200元/吨（-690）；LME铝10-08 $3,050.5/吨",
+   "chain": "国庆后首个交易日，铜价小幅回落，维持常态备库节奏",
+   "source": "SMM/光大期货，2026-10-09"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "功率器件",
+   "type": "涨价/交期延长",
+   "detail": "安森美第二轮涨价10-10生效；Trefis指交期约32周；台系10月现货提价10%~15%（已生效）；瑞萨9-9宣布调价、新体系2027-1-1生效",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": null,
+   "event_id": "evt-20261010-01"
+  },
+  {
+   "category": "存储器",
+   "type": "涨价",
+   "detail": "南亚科10-07起上调DRAM合约价最高20%（不予置评）；AMD 10-06示警内存紧张；三星HBM4 2027合约价预计至2倍以上",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "event_id": "evt-20261010-03"
+  },
+  {
+   "category": "电容",
+   "type": "涨价",
+   "detail": "村田全面涨价15%~35%传闻待官方确认；三环10-1起+30%~80%已生效；国巨/华新科产能售罄、新一季价格生效",
+   "subcategories": [
+    "电容"
+   ],
+   "company": null,
+   "event_id": "evt-20261010-04"
+  },
+  {
+   "category": "铜/铝",
+   "type": "价格更新",
+   "detail": "SMM 10-09广东1#铜现货111,200元/吨（-690）；LME铝10-08收$3,050.5/吨",
+   "subcategories": [
+    "Copper & Silver",
+    "Aluminum Fin Stock"
+   ],
+   "company": null,
+   "event_id": "evt-20261010-05"
+  },
+  {
+   "category": "压缩机",
+   "type": "排查无异常",
+   "detail": "涡旋/转子/螺杆/离心/往复5类近3天无涨价函/缺料/交期异动",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "制冷剂",
+   "type": "排查无异常",
+   "detail": "巨化/东岳/三美/永和近3天无新价格异动（配额制下量减价增格局延续）",
+   "subcategories": [
+    "Refrigerant",
+    "Refrigerant Oil"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "低压电气",
+   "type": "排查无异常",
+   "detail": "施耐德/ABB/西门子/正泰/德力西近3天无新调价函",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "变频器/变压器",
+   "type": "排查无异常",
+   "detail": "VSD无新动态；变压器交期紧张持续（AI数据中心挤占），本窗口无新恶化",
+   "subcategories": [
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage",
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "电机风机水泵",
+   "type": "排查无异常",
+   "detail": "电机/风机/水泵/轴承近3天无涨价/交期异动",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "阀件/换热",
+   "type": "排查无异常",
+   "detail": "三花/盾安/银轮等阀件、换热器近3天无异动",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "传感器/磁钢/PCB",
+   "type": "排查无异常",
+   "detail": "传感器/钕铁硼磁钢/PCB近3天无异动",
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature",
+    "Magnets",
+    "PCB Boards"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "MCU/模拟与电源IC",
+   "type": "排查无异常",
+   "detail": "国民技术10-1起部分产品涨价10%~20%已生效，本窗口无新动态",
+   "subcategories": [
+    "模拟与电源 IC / MCU",
+    "时钟/晶振/FPGA",
+    "电阻与电感",
+    "连接器与线束",
+    "PCBA板卡"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Tier B轮查",
+   "type": "排查无异常",
+   "detail": "本批11品类（Badging/Closed Cell Foam/Displays/Forgings-Steel/Integrated Motor Fans/Memory/Readers & Keypads/Starters/Uncategorized Controls/Vessels/塑料件与包装）：仅Displays有实质数据（见虹吸效应），其余10品类无异常；连续0-hit计数清零，维持两周一轮",
+   "subcategories": [
+    "Badging",
+    "Closed Cell Foam",
+    "Displays",
+    "Forgings - Steel",
+    "Integrated Motor Fans",
+    "Memory",
+    "Readers & Keypads",
+    "Starters",
+    "Uncategorized Controls",
+    "Vessels",
+    "塑料件与包装"
+   ],
+   "company": null,
+   "event_id": null
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261010-01",
+   "title": "安森美涨价今日生效，功率器件涨价链进入“生效季”",
+   "urgency": "高",
+   "impact": "驱动板/变频器/电源模块（IGBT/电源IC）",
+   "action": "Q4未确认订单立即与供应商复核价格条款；交期延长预期下提前4~8周锁产能；现货刚需分批建仓、非刚需等原厂价格传导企稳",
+   "trigger": "供应商10月新报价单/交期>24周",
+   "deadline": "2026-10-10",
+   "related_events": [
+    "evt-20261010-01"
+   ]
+  },
+  {
+   "id": "warn-20261010-02",
+   "title": "存储危机烧到终端：三星减产30%/PC出货-20.1%/英伟达停产",
+   "urgency": "中",
+   "impact": "存储器（DRAM/NAND）及共用电子料",
+   "action": "内存备料按实际排产覆盖，不追高囤货；消费类MLCC或现结构性分化，通用料可等Q4价格企稳再出手",
+   "trigger": "供应商Q4合约报价、交期>12周",
+   "deadline": null,
+   "related_events": [
+    "evt-20261010-02",
+    "evt-20261010-03"
+   ]
+  },
+  {
+   "id": "warn-20261010-03",
+   "title": "铜价节后小幅回落，维持常态备库",
+   "urgency": "低",
+   "impact": "铜/铝等大宗原材料",
+   "action": "维持常态备库节奏，无需追高；铝价跟随偏弱",
+   "trigger": "SMM现货价连续3日同向波动超2%",
+   "deadline": null,
+   "related_events": [
+    "evt-20261010-05"
+   ]
+  },
+  {
+   "id": "warn-20261010-04",
+   "title": "MLCC结构性分化：高端缺货、消费级待观察",
+   "urgency": "中",
+   "impact": "MLCC/被动元件",
+   "action": "高端AI/车规料号提前锁单；消费级通用料暂缓大单，等村田涨价传闻确认与Q4价格企稳",
+   "trigger": "村田官方涨价确认/交期>10个月",
+   "deadline": null,
+   "related_events": [
+    "evt-20261010-04"
+   ]
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "开利",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "“回购超20亿”为2025年10月旧闻，本窗口无新动作"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "MX部门Q4手机供应最高削减30%（韩媒10-08，官方未表态）"
+  },
+  {
+   "company": "Vertiv",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "有实质动态",
+   "note": "海若大模型三赛道落地（齐鲁网10-08）；2026人工智能产业大会10-14~16济南"
+  },
+  {
+   "company": "联想",
+   "status": "有实质动态",
+   "note": "IDC 10-08：Q3全球PC出货6270万台（-20.1%），联想-22.6%仍居首"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-10",
+   "event": "安森美第二轮涨价生效"
+  },
+  {
+   "date": "2026-10-12",
+   "event": "Robertshaw最高15%涨价生效（ACHR北美10月清单，待跟进）"
+  },
+  {
+   "date": "2026-10-16",
+   "event": "tekmar均约6%涨价生效（ACHR北美10月清单，待跟进）"
+  }
+ ]
+}
