@@ -4,42 +4,55 @@ PRODID:-//hvac-intel//anchors//ZH
 X-WR-CALNAME:HVAC 供应链情报·时间锚点
 X-WR-TIMEZONE:Asia/Shanghai
 BEGIN:VEVENT
-UID:ea2195644ac35e345df3c0662ac34742@hvac-intel
-DTSTAMP:20261009T235122Z
-DTSTART:20261010T080000
-DTEND:20261010T083000
-SUMMARY:安森美第二轮涨价生效
-DESCRIPTION:安森美第二轮涨价生效\n详情 https://nohho.github.io/hvac-intel/
-BEGIN:VALARM
-TRIGGER:-PT23H
-ACTION:DISPLAY
-DESCRIPTION:⏰ 明天：安森美第二轮涨价生效
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:534bd73da5728db25a3b54bad44bf468@hvac-intel
-DTSTAMP:20261009T235122Z
+UID:7d2e41740a09279338305039d4f3deda@hvac-intel
+DTSTAMP:20261010T234352Z
 DTSTART:20261012T080000
 DTEND:20261012T083000
-SUMMARY:Robertshaw最高15%涨价生效（ACHR北美10月清单，待跟进）
-DESCRIPTION:Robertshaw最高15%涨价生效（ACHR北美10月清单，待跟进）\n详情 https://nohho.github.io/hvac-intel/
+SUMMARY:Robertshaw 最高 15% 涨价生效（ACHR 北美 10 月清单）
+DESCRIPTION:Robertshaw 最高 15% 涨价生效（ACHR 北美 10 月清单）\n详情 https://nohho.github.io/hvac-intel/
 BEGIN:VALARM
 TRIGGER:-PT23H
 ACTION:DISPLAY
-DESCRIPTION:⏰ 明天：Robertshaw最高15%涨价生效（ACHR北美10月清单，待跟进）
+DESCRIPTION:⏰ 明天：Robertshaw 最高 15% 涨价生效（ACHR 北美 10 月清单）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:176bea6650fde9da30be012dfbaf480b@hvac-intel
-DTSTAMP:20261009T235122Z
+UID:ee766e9d30da67f6703d89dd540925d5@hvac-intel
+DTSTAMP:20261010T234352Z
 DTSTART:20261016T080000
 DTEND:20261016T083000
-SUMMARY:tekmar均约6%涨价生效（ACHR北美10月清单，待跟进）
-DESCRIPTION:tekmar均约6%涨价生效（ACHR北美10月清单，待跟进）\n详情 https://nohho.github.io/hvac-intel/
+SUMMARY:tekmar 均约 6% 涨价生效（ACHR 北美 10 月清单）
+DESCRIPTION:tekmar 均约 6% 涨价生效（ACHR 北美 10 月清单）\n详情 https://nohho.github.io/hvac-intel/
 BEGIN:VALARM
 TRIGGER:-PT23H
 ACTION:DISPLAY
-DESCRIPTION:⏰ 明天：tekmar均约6%涨价生效（ACHR北美10月清单，待跟进）
+DESCRIPTION:⏰ 明天：tekmar 均约 6% 涨价生效（ACHR 北美 10 月清单）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:796e0c5f65648488403fd2b3cba8bd30@hvac-intel
+DTSTAMP:20261010T234352Z
+DTSTART:20261019T080000
+DTEND:20261019T083000
+SUMMARY:Celanese 尼龙涨价（PA6 +$0.44/kg、PA66 +$0.33/kg）生效
+DESCRIPTION:Celanese 尼龙涨价（PA6 +$0.44/kg、PA66 +$0.33/kg）生效\n详情 https://nohho.github.io/hvac-intel/
+BEGIN:VALARM
+TRIGGER:-PT23H
+ACTION:DISPLAY
+DESCRIPTION:⏰ 明天：Celanese 尼龙涨价（PA6 +$0.44/kg、PA66 +$0.33/kg）生效
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e2bfd8153ee59d906a1ff3d88d41755a@hvac-intel
+DTSTAMP:20261010T234352Z
+DTSTART:20261019T080000
+DTEND:20261019T083000
+SUMMARY:Panasonic 3.7%~4.0% 涨价生效（ACHR 清单）
+DESCRIPTION:Panasonic 3.7%~4.0% 涨价生效（ACHR 清单）\n详情 https://nohho.github.io/hvac-intel/
+BEGIN:VALARM
+TRIGGER:-PT23H
+ACTION:DISPLAY
+DESCRIPTION:⏰ 明天：Panasonic 3.7%~4.0% 涨价生效（ACHR 清单）
 END:VALARM
 END:VEVENT
 END:VCALENDAR
