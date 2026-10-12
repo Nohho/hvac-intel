@@ -1,0 +1,649 @@
+{
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "note": "Launched the YORK YMAE-P R290 propane reversible high-temperature heat pump (90~360kW), debuting at Chillventa Nuremberg 10-13~15",
+   "status": "有实质动态"
+  },
+  {
+   "company": "开利",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "特灵",
+   "note": "No material new developments in the past 3 days (LiquidStack CDU 2.X and the KSE agreement were covered on 10-06/07)",
+   "status": "无实质动态"
+  },
+  {
+   "company": "大金",
+   "note": "Signed an agreement with Claros to deploy a full-scale on-site PFAS destruction system at its Decatur, Alabama plant",
+   "status": "有实质动态"
+  },
+  {
+   "company": "美的",
+   "note": "Expanded its North American RAC R&D center in Louisville to 157,000 sq ft, adding a 16,000 sq ft HVAC test lab",
+   "status": "有实质动态"
+  },
+  {
+   "company": "格力",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "海尔",
+   "note": "Announced its 2026 interim results briefing (to be held 10-16; H1 revenue RMB 152.115 billion, -2.8% YoY)",
+   "status": "有实质动态"
+  },
+  {
+   "company": "日立",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "松下",
+   "note": "The 10-19 price increase of 3.7%~4.0% was covered in the 10-08 ACHR list; no new developments in this window",
+   "status": "无实质动态"
+  },
+  {
+   "company": "LG",
+   "note": "Opened an HVAC academy + business innovation center in the Philippines on 10-09, targeting the local AI data-center cooling market",
+   "status": "有实质动态"
+  },
+  {
+   "company": "三星",
+   "note": "EHS All-in-One heat pump rollout in Korea: domestic supply base in 2027, nationwide rollout from 2028",
+   "status": "有实质动态"
+  },
+  {
+   "company": "Vertiv",
+   "note": "No material new developments in the past 3 days (the DSX Ready certification was covered on 10-06)",
+   "status": "无实质动态"
+  },
+  {
+   "company": "英维克",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "申菱",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "高澜股份",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "同飞股份",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "浪潮信息",
+   "note": "No material new developments in the past 3 days",
+   "status": "无实质动态"
+  },
+  {
+   "company": "联想",
+   "note": "No material new developments in the past 3 days (the RTX Spark AI PC presale was covered on 10-08)",
+   "status": "无实质动态"
+  }
+ ],
+ "cross_industry": [
+  {
+   "chain": "Memory costs are materially squeezing consumer-electronics shipments: Samsung Q4 supply cut 20%~30% (Korean media report, unconfirmed by Samsung); Apple cut October component orders for iPhone 18 Pro by ≥15% (soaring DRAM costs, not a demand issue)",
+   "industry": "Consumer electronics",
+   "key_data": "Samsung Q4 supply cut 20%~30%; Apple iPhone 18 Pro October component orders -15%+; 1TB-version memory component cost up nearly $300 YoY; IDC forecasts Q4 global smartphone output of 52 million units, ~-12% QoQ",
+   "source": "Money Today / Yicai / Nikkei / BT Finance, 2026-10-08~10-11"
+  },
+  {
+   "chain": "AI demand occupying mature 8-inch process capacity → the power-semiconductor price-increase chain enters its effective season: onsemi effective 10-10 + Aetrix execution details (broad full-line adjustments, no uniform rate, open-backlog customers confirmed order by order); TI's third October price round lands",
+   "industry": "Power devices",
+   "key_data": "onsemi's second round effective 10-10; TI select part numbers +15%~85%, lead times 20~48 weeks",
+   "source": "Aetrix 10-11 / LinkedIn supply-chain analysis ~9-23"
+  },
+  {
+   "chain": "US long products +$50/short ton effective 10-1; Chinese mills' October ex-factory prices +RMB 200/ton → passing through to sheet-metal and structural-part costs",
+   "industry": "Steel",
+   "key_data": "Nucor-Yamato/Gerdau beams/sections/piling +$50/short ton (effective 10-1); Angang/Shougang/Linggang hot/cold-rolled, galvanized, silicon steel +RMB 200/ton, color-coated/heavy plate +RMB 100/ton",
+   "source": "Kallanish via IndexBox 10-02; Sina 9-11 (effective October)"
+  },
+  {
+   "chain": "Rigid supply under the quota system → NEVs competing for R134a widens the gap → refrigerant price center moves up",
+   "industry": "Refrigerants",
+   "key_data": "R32 ~RMB 62,500/ton, +34%+ YoY; 2026 national HFC quota only 797,800 tons",
+   "source": "Sina, early October 2026"
+  }
+ ],
+ "daily_report": {
+  "date": "2026-10-12",
+  "headline": "TI analog devices' third October price round lands (select part numbers +15%~85%, lead times 20~48 weeks); rare-earth concentrate Q4 price set (+47.94% YoY); copper nears record high, smelting side tightens",
+  "hotspot_count": 5,
+  "sections": 6,
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Briefing",
+  "warning_count": 4
+ },
+ "hotspot_events": [
+  {
+   "date": "2026-10-12",
+   "event_id": "evt-ti-analog-price-hike",
+   "heat": 86,
+   "heat_reason": "Multiple overlapping power price-increase lines (TI + ADI + onsemi); TI is a key PCBA maker, with clear action windows on both pricing and lead times",
+   "id": "evt-20261012-01",
+   "numbers": [
+    "Select part numbers +15%~85%",
+    "Lead times 20~48 weeks",
+    "ADI precision op-amps: lead times over 400 days",
+    "Third round this year (first two: March, May)"
+   ],
+   "related_warnings": [
+    "warn-20261012-01"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "sources": [
+    {
+     "date": "2026-09-23",
+     "first_party": false,
+     "outlet": "LinkedIn supply-chain analysis",
+     "url": "https://www.linkedin.com/pulse/analog-semiconductor-market-rising-prices-longer-lead-owen-chow-e1vse"
+    },
+    {
+     "date": "2026-09-03",
+     "first_party": false,
+     "outlet": "Shanghai Securities News (9-1 advance notice)",
+     "url": null
+    }
+   ],
+   "summary": "TI's third 2026 price increase lands in October (first two rounds in March and May); select AI-server power-management part numbers (TPS/UCC) and high-speed signal-chain part numbers raised 15%~85% in October, some lead times stretched to 20~48 weeks; ADI raised prices twice this year (effective 2-1 and 9-13), some precision op-amps on lead times over 400 days.",
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "title": "TI analog devices' third 2026 price increase lands in October (select part numbers +15%~85%, lead times 20~48 weeks)"
+  },
+  {
+   "date": "2026-10-09",
+   "event_id": "evt-rare-earth-q4-price",
+   "heat": 78,
+   "heat_reason": "Dual-source confirmation via official announcements; +47.94% YoY directly pushes up magnet-steel costs for permanent-magnet motors/fans",
+   "id": "evt-20261012-02",
+   "numbers": [
+    "RMB 38,769/ton (excl. tax, REO=50%)",
+    "+0.53% QoQ",
+    "+47.94% YoY"
+   ],
+   "related_warnings": [
+    "warn-20261012-04"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "sources": [
+    {
+     "date": "2026-10-10",
+     "first_party": false,
+     "outlet": "Securities Times via Sina",
+     "url": "https://news.sina.cn/gn/2026-10-10/detail-iniusaka0964192.d.html"
+    }
+   ],
+   "summary": "Baotou Steel and Northern Rare Earth both announced on 10-09 that the Q4 2026 rare-earth concentrate transaction price is adjusted to RMB 38,769/ton excluding tax (dry volume, REO=50%), +0.53% QoQ, +47.94% YoY; Q3 had pulled back to RMB 38,565/ton, ending seven straight quarters of increases; Q4 stabilizes at a high level; directly pressures NdFeB magnet-steel costs.",
+   "tags": [
+    "涨价"
+   ],
+   "title": "Rare-earth concentrate Q4 price set: RMB 38,769/ton, +47.94% YoY, stabilizing at a high level"
+  },
+  {
+   "date": "2026-10-09",
+   "event_id": "evt-copper-high",
+   "heat": 80,
+   "heat_reason": "Price nearing record high combined with real smelter-side tightening (record-low operating rates, historic-low TCs) — a dual supply-demand signal",
+   "id": "evt-20261012-03",
+   "numbers": [
+    "LME copper $14,474.5/ton (+1.2%)",
+    "~+1.5% weekly",
+    "TC -$224.73/ton (historic low)"
+   ],
+   "related_warnings": [
+    "warn-20261012-03"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "sources": [
+    {
+     "date": "2026-10-09",
+     "first_party": false,
+     "outlet": "Bloomberg via Moneyweb",
+     "url": "https://www.moneyweb.co.za/news-fast-news/copper-set-for-weekly-gain-on-chinas-return-and-supply-concerns/"
+    },
+    {
+     "date": "2026-10-08",
+     "first_party": false,
+     "outlet": "Zhengxin Futures",
+     "url": "https://market.cnal.com/analysis/2026/10-08/1791425587670396.shtml"
+    }
+   ],
+   "summary": "LME copper +1.2% to $14,474.5/ton on 10-9 (~+1.5% weekly), nearing its record high; strike risk at Chile's Antofagasta Centinela mine (could affect output within 2 weeks) + unresolved US Section 232 copper tariffs; China's September electrolytic-copper smelter operating rate hit its lowest for the same period since 2014, TC processing fees at a historic low of -$224.73/ton, with some smelters signaling output-cut intentions.",
+   "tags": [
+    "原材料"
+   ],
+   "title": "Copper nears record high: LME $14,474.5/ton on 10-9, smelting side tightens"
+  },
+  {
+   "date": "2026-10-09",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "heat": 78,
+   "heat_reason": "Fresh evidence of the PCB price-hike wave spreading to upstream electronic cloth/yarn; two leading companies' Q3 earnings previews cross-confirm rising volumes and prices",
+   "id": "evt-20261012-04",
+   "numbers": [
+    "China Jushi H1–Q3 net profit +100%~110% YoY (Q3 alone ~RMB 2.203–2.46B, +32%~47% QoQ)",
+    "Kinwong Electronic Q3 net profit +205%~265%",
+    "Aletheia: multiple CCL price rounds 2026H2–2027H1, 10%~15% each"
+   ],
+   "related_warnings": [
+    "warn-20261012-02"
+   ],
+   "section": "供应商动态",
+   "severity": "中",
+   "sources": [
+    {
+     "date": "2026-10-09",
+     "first_party": false,
+     "outlet": "Kechuangban Daily via Sina Finance",
+     "url": "https://finance.sina.cn/2026-10-09/detail-iniurruh1028551.d.html"
+    },
+    {
+     "date": "2026-10-06",
+     "first_party": false,
+     "outlet": "Commercial Times (Aletheia)",
+     "url": "https://www.ctee.com.tw/news/20261006700082-439901"
+    }
+   ],
+   "summary": "Electronic cloth/yarn prices rotating upward (Kechuangban Daily 10-09); China Jushi expects H1–Q3 net profit +100%~110% YoY (Q3 alone ~RMB 2.203–2.46 billion, +32%~47% QoQ) on rising electronic-cloth volumes and prices; Kinwong Electronic +205%~265%; Aletheia expects multiple more CCL price rounds from 2026H2–2027H1, 10%~15% each.",
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "title": "PCB price hikes spread upstream: electronic cloth/yarn prices rotating upward"
+  },
+  {
+   "date": "2026-10-11",
+   "event_id": "evt-apple-iphone18-orders-cut",
+   "heat": 68,
+   "heat_reason": "A benchmark case of memory costs materially cutting flagship-phone orders for the first time; a neutral-to-soft demand-side signal for HVAC",
+   "id": "evt-20261012-05",
+   "numbers": [
+    "iPhone 18 Pro/Pro Max October component orders -15%+",
+    "1TB-version memory component cost up nearly $300 YoY",
+    "DGX Spark 128GB $3,999→$6,950 (+74%)"
+   ],
+   "related_warnings": [],
+   "section": "跨行业传导",
+   "severity": "低",
+   "sources": [
+    {
+     "date": "2026-10-11",
+     "first_party": false,
+     "outlet": "Yicai / Nikkei via BT Finance",
+     "url": "https://businesstimescn.com/articles/628826.html"
+    },
+    {
+     "date": "2026-10-06",
+     "first_party": false,
+     "outlet": "ValueAddVC",
+     "url": "https://valueaddvc.com/blog/nvidia-dgx-spark-64gb-4999-memory-crunch-2026"
+    }
+   ],
+   "summary": "Yicai/Nikkei reported on 10-11: Apple asked to cut at least 15% of October component orders for iPhone 18 Pro/Pro Max because of soaring DRAM costs (1TB-version memory component cost up nearly $300 YoY), with memory now over half the flagship's BOM; Nvidia's DGX Spark 128GB edition rose from $3,999 to $6,950 (+74%) on 2026 global memory supply constraints.",
+   "tags": [
+    "存储",
+    "影响BOM"
+   ],
+   "title": "Apple cuts iPhone 18 Pro component orders ≥15% (DRAM costs behind it)"
+  }
+ ],
+ "industry_updates": [
+  {
+   "source": "NaturalRefrigerants, 2026-10-10",
+   "summary": "Propane reversible high-temperature heat pump, debuting at the Chillventa show",
+   "title": "YORK YMAE-P R290 propane reversible high-temperature heat pump launched (90~360kW)",
+   "vendor_voice": true
+  },
+  {
+   "source": "Innovation News Network, ~2026-10-10",
+   "summary": "Deploying a full-scale on-site PFAS destruction system at the Decatur, Alabama plant — an environmental-compliance partnership",
+   "title": "Daikin signs on-site PFAS destruction system deployment agreement with Claros",
+   "vendor_voice": false
+  },
+  {
+   "source": "ACHR News, 2026-10-09",
+   "summary": "R&D center expanded to 157,000 sq ft, adding a 16,000 sq ft HVAC test lab",
+   "title": "Midea expands Louisville RAC R&D center in North America (new HVAC test lab)",
+   "vendor_voice": true
+  },
+  {
+   "source": "PhilSTAR Tech, 2026-10-09",
+   "summary": "Targeting the local Philippine AI data-center cooling market",
+   "title": "LG opens HVAC academy + business innovation center in the Philippines",
+   "vendor_voice": true
+  },
+  {
+   "source": "Aju Press, 2026-10-07",
+   "summary": "Domestic Korean supply base in 2027, nationwide rollout from 2028",
+   "title": "Samsung promotes EHS All-in-One heat pump in Korea",
+   "vendor_voice": true
+  },
+  {
+   "source": "TradingView / EQS, 2026-10-08",
+   "summary": "Briefing to be held 10-16; H1 revenue RMB 152.115 billion, -2.8% YoY",
+   "title": "Haier announces 2026 interim results briefing",
+   "vendor_voice": true
+  }
+ ],
+ "meta": {
+  "date": "2026-10-12",
+  "note": "Monday briefing. TI analog devices' third October price round lands (new event evt-ti-analog-price-hike); rare-earth concentrate Q4 price set (new event evt-rare-earth-q4-price); Apple cuts iPhone 18 Pro orders (new event evt-apple-iphone18-orders-cut); copper/onsemi/DRAM/MLCC/PCB/North-America-October-price-list events updated with 10-12 timeline entries. Tier B batch-7 rotation: 2/11 material hits (structural steel, sheet-metal structural parts), zero-hit count stays 0, biweekly rotation maintained. All figures taken from verified briefing items; nothing added or rewritten.",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-12-hvac-cdu-morning-briefing.md"
+ },
+ "siphon_effects": [
+  {
+   "change": "TrendForce: HBM share of the big three's DRAM wafer input 18% (end-2025) → 22% (end-2026) → 30% (end-2027); DDR5 64GB RDIMM prices doubled, DDR4 up 60~80% (DatacenterDisk, 10-11); Samsung HBM4 price talks with Nvidia/Broadcom in the final stage, seeking over 2× HBM3E pricing; Samsung/SK Hynix/Micron sued over alleged DRAM price-fixing (plaintiff allegations, not court-determined — watch only)",
+   "material": "Memory (DRAM/HBM)",
+   "source": "DatacenterDisk / TrendForce / TradingKey, 2026-10-06~10-11"
+  },
+  {
+   "change": "Electronic cloth/yarn prices rotating upward (Kechuangban Daily 10-09); China Jushi expects H1–Q3 net profit +100%~110% YoY (Q3 alone ~RMB 2.203–2.46 billion, +32%~47% QoQ); Kinwong Electronic +205%~265%; Aletheia expects multiple more CCL price rounds from 2026H2–2027H1, 10%~15% each; Vera Rubin: 54,000 MLCCs per rack, next price round expected end-October~November",
+   "material": "PCB / CCL",
+   "source": "Kechuangban Daily / Commercial Times / cnyes, 2026-10-06~10-09"
+  },
+  {
+   "change": "Yageo/Walsin MLCC capacity sold out (Commercial Times 10-08); Murata 9-10 EOL general-purpose MLCC replacement orders overflowing",
+   "material": "MLCC",
+   "source": "Commercial Times, 2026-10-08"
+  },
+  {
+   "change": "CITIC Construction Securities: the US transformer price index rose ~4% MoM in July 2026, with global high-voltage power-equipment supply-demand tightness intensifying",
+   "material": "Power equipment / transformers",
+   "source": "Jiemian News, 2026-10-12"
+  },
+  {
+   "change": "Apple cut October component orders for iPhone 18 Pro by ≥15% (soaring DRAM costs, not a demand issue); Nvidia DGX Spark 128GB $3,999→$6,950 (+74%) on memory constraints — memory costs passing through to end-device shipments and pricing for the first time",
+   "material": "End-device memory cost pass-through",
+   "source": "Yicai / Nikkei / BT Finance, 2026-10-11"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "IGBT / power devices",
+   "company": null,
+   "detail": "onsemi's second price increase effective 10-10; Aetrix's 10-11 analysis confirms this round expanded from April's limited adjustments to broad full-line adjustments with no uniform rate — open-backlog customers need per-order confirmation; Taiwan spot +10%~15% in October still a September rumor, not landed; Renesas/Infineon/ST no new changes",
+   "event_id": "evt-onsemi-price-hike-2",
+   "subcategories": [
+    "IGBT Modules",
+    "功率器件"
+   ],
+   "type": "涨价（已生效）"
+  },
+  {
+   "category": "MCU / analog & power ICs",
+   "company": null,
+   "detail": "TI's third October price round lands: select TPS/UCC and high-speed signal-chain part numbers +15%~85%, lead times 20~48 weeks; ADI raised twice this year, some precision op-amps on lead times over 400 days; Nationz +10%~20% effective 10-1",
+   "event_id": "evt-ti-analog-price-hike",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "type": "涨价（已生效）"
+  },
+  {
+   "category": "Memory",
+   "company": null,
+   "detail": "HBM wafer share rising (18%→22%→30%); DDR5 64GB RDIMM prices doubled, DDR4 up 60~80%; Samsung HBM4 talks in the final stage seeking over 2× pricing",
+   "event_id": "evt-dram-hbm-shortage",
+   "subcategories": [
+    "存储器"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Capacitors / MLCC",
+   "company": null,
+   "detail": "Yageo/Walsin MLCC capacity sold out; Murata 9-10 EOL general-purpose MLCC replacement orders overflowing; no new official price announcements in the October window",
+   "event_id": "evt-mlcc-price-hike",
+   "subcategories": [
+    "电容",
+    "电阻与电感"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "PCB / PCBA",
+   "company": null,
+   "detail": "Electronic cloth/yarn prices rotating upward (Kechuangban Daily 10-09); China Jushi H1–Q3 +100%~110% (Q3 alone ~RMB 2.203–2.46 billion, +32%~47% QoQ); Kinwong Electronic +205%~265%; Aletheia expects multiple CCL price rounds 2026H2–2027H1, 10%~15% each",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "subcategories": [
+    "PCB Boards",
+    "PCBA板卡"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Copper / aluminum",
+   "company": null,
+   "detail": "LME copper 10-9 $14,474.5/ton (+1.2%, +1.5% weekly); LME aluminum 3M $3,042/ton (-2.66%); SHFE copper 10-08 RMB 108,910/ton (-1.22%); SHFE aluminum RMB 23,220/ton",
+   "event_id": "evt-copper-high",
+   "subcategories": [
+    "Copper & Silver",
+    "Aluminum Fin Stock"
+   ],
+   "type": "价格更新"
+  },
+  {
+   "category": "Refrigerants / freezer oil",
+   "company": null,
+   "detail": "R32 ~RMB 62,500/ton, +34%+ YoY; Juhua/Dongyue/Sanmei/Yonghe — no new price announcements in the past 3 days",
+   "event_id": null,
+   "subcategories": [
+    "Refrigerant",
+    "Refrigerant Oil"
+   ],
+   "type": "价格更新"
+  },
+  {
+   "category": "Transformers",
+   "company": null,
+   "detail": "North American transformer price index +4% MoM in July (CITIC Construction Securities/Jiemian, 10-12); large-transformer 120~128-week lead-time backdrop continues",
+   "event_id": null,
+   "subcategories": [
+    "变压器与互感器",
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Low-voltage electricals / drives",
+   "company": null,
+   "detail": "Schneider/ABB/Siemens/Chint/Delixi, Inovance/Veichi — no new price letters in the past 3 days",
+   "event_id": null,
+   "subcategories": [
+    "断路器与接触器",
+    "继电器与电源",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Compressors",
+   "company": null,
+   "detail": "Nidec-Embraco 10-1 increase effective (already in the ACHR October list); Highly/Lingda/GMCC/Danfoss — no new developments",
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "type": "涨价（已生效）"
+  },
+  {
+   "category": "Motors / fans / pumps / bearings / magnet steel",
+   "company": null,
+   "detail": "Regal Rexnord +2.5% effective 10-1 (already recorded); rare-earth concentrate Q4 price set (RMB 38,769/ton, +47.94% YoY) pushes up NdFeB magnet-steel costs; bearings unchanged",
+   "event_id": "evt-rare-earth-q4-price",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings",
+    "Magnets"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Valves / heat exchange",
+   "company": null,
+   "detail": "Sanhua/DunAn/Yinlun valves and heat exchangers — no changes in the past 3 days",
+   "event_id": null,
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Sensors",
+   "company": null,
+   "detail": "Pressure/temperature/flow sensors — no price hikes, shortages, or EOL",
+   "event_id": null,
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature"
+   ],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Crystals / FPGA / connectors",
+   "company": null,
+   "detail": "Imported FPGA lead times ~52 weeks (known); TE/Amphenol/Molex 10~20 weeks; no new news",
+   "event_id": null,
+   "subcategories": [
+    "时钟/晶振/FPGA",
+    "连接器与线束"
+   ],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Structural steel / sheet metal (Tier B batch-7 hit)",
+   "company": null,
+   "detail": "US Nucor-Yamato/Gerdau long products (beams/sections/piling) +$50/short ton, effective 10-1; Angang/Shougang (Bengang)/Linggang October ex-factory prices: hot/cold-rolled, galvanized, silicon steel +RMB 200/ton, color-coated/heavy plate +RMB 100/ton",
+   "event_id": null,
+   "subcategories": [
+    "Structural, Bar And Profile",
+    "钣金与结构件"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Tier B rotation",
+   "company": null,
+   "detail": "Batch 7, 11 categories (Belts & Chains / Compression Molding Plastics / Fabricated Bus Bars / Fuses / Iron Castings – Large >100 lbs / Oil Pumps / Resistors (Large) / Structural, Bar And Profile / Uncategorized Electrical / Wire Form & Guards / sheet metal & structural parts): 2/11 material hits (structural steel, sheet-metal structural parts), 9 remaining categories normal; consecutive zero-hit count stays 0, biweekly rotation maintained",
+   "event_id": null,
+   "subcategories": [
+    "Belts & Chains",
+    "Compression Molding Plastics",
+    "Fabricated Bus Bars",
+    "Fuses",
+    "Iron Castings - Large - >100 Lbs",
+    "Oil Pumps",
+    "Resistors (Large)",
+    "Uncategorized Electrical",
+    "Wire Form & Guards"
+   ],
+   "type": "排查无异常"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-12",
+   "event": "Robertshaw increases up to 15% effective (ACHR North America October list)"
+  },
+  {
+   "date": "2026-10-13",
+   "event": "Chillventa Nuremberg opens (10-13~15; JCI YMAE-P R290 heat pump debut)"
+  },
+  {
+   "date": "2026-10-16",
+   "event": "tekmar ~6% increase effective (ACHR North America October list)"
+  },
+  {
+   "date": "2026-10-19",
+   "event": "Panasonic 3.7%~4.0% increase effective (ACHR list); Celanese nylon increase (PA6 +$0.44/kg, PA66 +$0.33/kg) effective"
+  }
+ ],
+ "warnings": [
+  {
+   "action": "Confirm new-quote effective timing and price-protection terms with the factory/distribution; roll-stock TPS/UCC and high-speed signal-chain part numbers on 20~48-week lead times; ADI raised in parallel with longer lead times — run alternative evaluations with parallel quoting",
+   "deadline": null,
+   "id": "warn-20261012-01",
+   "impact": "PCBA analog/power ICs (TI is a key maker)",
+   "related_events": [
+    "evt-ti-analog-price-hike"
+   ],
+   "title": "TI analog devices' third price round lands (October)",
+   "trigger": "New quote letters, lead times >20 weeks",
+   "urgency": "高"
+  },
+  {
+   "action": "Confirm cloth-price pass-through pace and new-quote validity with board shops; lock prices and capacity early for high-layer-count boards and low-CTE substrates",
+   "deadline": null,
+   "id": "warn-20261012-02",
+   "impact": "PCB boards / PCBA",
+   "related_events": [
+    "evt-pcb-ccl-price-hike-2"
+   ],
+   "title": "PCB price hikes spread upstream (electronic cloth/yarn)",
+   "trigger": "New board-shop quote letters, lead times >16 weeks",
+   "urgency": "高"
+  },
+  {
+   "action": "Keep a normal stocking rhythm, don't chase highs; watch Antofagasta strike and US Section 232 copper-tariff developments; re-confirm October ex-factory price pass-through with sheet-metal suppliers",
+   "deadline": "2026-10-19",
+   "id": "warn-20261012-03",
+   "impact": "Copper tube / wiring / busbars, sheet-metal structural parts",
+   "related_events": [
+    "evt-copper-high"
+   ],
+   "title": "Copper nears record high + steel mills raise ex-factory prices",
+   "trigger": "LME copper breaks its record high; 10-12 / 10-16 / 10-19 increases land",
+   "urgency": "中"
+  },
+  {
+   "action": "Lock Q4 price terms with magnet-steel suppliers; assess volumes and ferrite-substitution feasibility",
+   "deadline": null,
+   "id": "warn-20261012-04",
+   "impact": "NdFeB magnet steel for permanent-magnet motors/fans",
+   "related_events": [
+    "evt-rare-earth-q4-price"
+   ],
+   "title": "Rare-earth concentrate Q4 stabilizes at a high level",
+   "trigger": "Magnet-steel quote increases",
+   "urgency": "中"
+  }
+ ]
+}
