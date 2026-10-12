@@ -4,55 +4,55 @@ PRODID:-//hvac-intel//anchors//ZH
 X-WR-CALNAME:HVAC 供应链情报·时间锚点
 X-WR-TIMEZONE:Asia/Shanghai
 BEGIN:VEVENT
-UID:7d2e41740a09279338305039d4f3deda@hvac-intel
-DTSTAMP:20261011T235520Z
-DTSTART:20261012T080000
-DTEND:20261012T083000
-SUMMARY:Robertshaw 最高 15% 涨价生效（ACHR 北美 10 月清单）
-DESCRIPTION:Robertshaw 最高 15% 涨价生效（ACHR 北美 10 月清单）\n详情 https://nohho.github.io/hvac-intel/
-BEGIN:VALARM
-TRIGGER:-PT23H
-ACTION:DISPLAY
-DESCRIPTION:⏰ 明天：Robertshaw 最高 15% 涨价生效（ACHR 北美 10 月清单）
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:d47913c34fd502081c93457b15b5c605@hvac-intel
-DTSTAMP:20261011T235520Z
+UID:3cbb71cc2415b8f675772bca1a9ec6a2@hvac-intel
+DTSTAMP:20261012T234705Z
 DTSTART:20261013T080000
 DTEND:20261013T083000
-SUMMARY:纽伦堡 Chillventa 展开幕（10-13~15，JCI YMAE-P R290 热泵首发）
-DESCRIPTION:纽伦堡 Chillventa 展开幕（10-13~15，JCI YMAE-P R290 热泵首发）\n详情 https://nohho.github.io/hvac-intel/
+SUMMARY:Chillventa 2026 开幕（纽伦堡，10-13~15）
+DESCRIPTION:Chillventa 2026 开幕（纽伦堡，10-13~15）\n详情 https://nohho.github.io/hvac-intel/
 BEGIN:VALARM
 TRIGGER:-PT23H
 ACTION:DISPLAY
-DESCRIPTION:⏰ 明天：纽伦堡 Chillventa 展开幕（10-13~15，JCI YMAE-P R290 热泵首发）
+DESCRIPTION:⏰ 明天：Chillventa 2026 开幕（纽伦堡，10-13~15）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:ee766e9d30da67f6703d89dd540925d5@hvac-intel
-DTSTAMP:20261011T235520Z
+UID:816a308580f301b760728f2c5ade979c@hvac-intel
+DTSTAMP:20261012T234705Z
 DTSTART:20261016T080000
 DTEND:20261016T083000
-SUMMARY:tekmar 均约 6% 涨价生效（ACHR 北美 10 月清单）
-DESCRIPTION:tekmar 均约 6% 涨价生效（ACHR 北美 10 月清单）\n详情 https://nohho.github.io/hvac-intel/
+SUMMARY:tekmar均约6%涨价生效（ACHR北美10月清单）
+DESCRIPTION:tekmar均约6%涨价生效（ACHR北美10月清单）\n详情 https://nohho.github.io/hvac-intel/
 BEGIN:VALARM
 TRIGGER:-PT23H
 ACTION:DISPLAY
-DESCRIPTION:⏰ 明天：tekmar 均约 6% 涨价生效（ACHR 北美 10 月清单）
+DESCRIPTION:⏰ 明天：tekmar均约6%涨价生效（ACHR北美10月清单）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:a397e0f4cbccc7193f1db4285e85a968@hvac-intel
-DTSTAMP:20261011T235520Z
+UID:475d3bc70232e302d68d93a6e0726f6f@hvac-intel
+DTSTAMP:20261012T234705Z
 DTSTART:20261019T080000
 DTEND:20261019T083000
-SUMMARY:Panasonic 3.7%~4.0% 涨价生效（ACHR 清单）；Celanese 尼龙涨价（PA6 +$0.4…
-DESCRIPTION:Panasonic 3.7%~4.0% 涨价生效（ACHR 清单）；Celanese 尼龙涨价（PA6 +$0.44/kg、PA66 +$0.33/kg）生效\n详情 https://nohho.github.io/hvac-intel/
+SUMMARY:Panasonic 3.7%~4.0%涨价生效（ACHR清单）；Celanese美洲PA6/PA66提价（PA66…
+DESCRIPTION:Panasonic 3.7%~4.0%涨价生效（ACHR清单）；Celanese美洲PA6/PA66提价（PA66 +$0.33/kg）生效\n详情 https://nohho.github.io/hvac-intel/
 BEGIN:VALARM
 TRIGGER:-PT23H
 ACTION:DISPLAY
-DESCRIPTION:⏰ 明天：Panasonic 3.7%~4.0% 涨价生效（ACHR 清单）；Celanese 尼龙涨价（PA6 +$0.4…
+DESCRIPTION:⏰ 明天：Panasonic 3.7%~4.0%涨价生效（ACHR清单）；Celanese美洲PA6/PA66提价（PA66…
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4f6480f60792a7eac564d226c1d0299e@hvac-intel
+DTSTAMP:20261012T234705Z
+DTSTART:20271231T080000
+DTEND:20271231T083000
+SUMMARY:村田EOL料号客户确认截止
+DESCRIPTION:村田EOL料号客户确认截止\n详情 https://nohho.github.io/hvac-intel/
+BEGIN:VALARM
+TRIGGER:-PT23H
+ACTION:DISPLAY
+DESCRIPTION:⏰ 明天：村田EOL料号客户确认截止
 END:VALARM
 END:VEVENT
 END:VCALENDAR
