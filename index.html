@@ -646,7 +646,7 @@ function renderMain(d){
     +(s3ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s3ev.map(e=>evCard(e,true)).join(""):"");
 
   /* ---- 四、跨行业传导 ---- */
-  const cro=(d.cross_industry||[]).map(c=>`<div class="card"><div class="chain"><div class="nd"><b>${esc(c.industry)}</b></div><div class="arw">→</div><div class="nd">${esc(c.link)}</div></div></div>`).join("");
+  const cro=(d.cross_industry||[]).map(c=>`<div class="card"><div class="chain"><div class="nd"><b>${esc(c.industry)}</b></div><div class="arw">→</div><div class="nd">${esc(c.chain||c.link)}</div></div></div>`).join("");
   const s4ev=bySec("跨行业传导");
   const s4=secttl("四",t("sec")[3],(d.cross_industry||[]).length+" "+t("u_links"))
     +guide(fmt(t("s4_guide"),{m:`<b>${(d.cross_industry||[]).map(c=>esc(c.industry)).join("、")}</b>`}))
