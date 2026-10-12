@@ -30,7 +30,7 @@ header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
 .dpills{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:2px}
 .dpill{flex:none;font-size:12.5px;color:#dce9f8;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px}
 .dpill.on{background:#fff;color:var(--navy);font-weight:700;border-color:#fff}
-.hdlinks{display:flex;gap:14px;margin-top:9px;font-size:12px}
+.hdlinks{display:flex;gap:14px;margin-top:9px;font-size:12px;flex-wrap:wrap}
 .hdlinks button,.hdlinks a{background:none;border:none;color:#c4d9ef;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0;font-family:inherit}
 .hdlinks button:hover,.hdlinks a:hover{color:#fff}
 /* 预警色条：仅有高紧迫预警时显示 */
@@ -227,17 +227,17 @@ details.sec .body{padding:0 14px 12px}
 </head>
 <body>
 <header class="top">
-  <h1>HVAC 供应链情报<span class="live">每日更新</span><span class="issuepill" id="issuepill" style="display:none"></span></h1>
-  <div class="sub">暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新</div>
+  <h1><span id="t_h1">HVAC 供应链情报</span><span class="live" id="t_live">每日更新</span><span class="issuepill" id="issuepill" style="display:none"></span></h1>
+  <div class="sub" id="t_sub">暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新</div>
   <div class="headline" id="headline" style="display:none"></div>
   <div class="dpills" id="dpills"></div>
-  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()">🔗 复制本期链接</button><a href="feed.xml" title="RSS 订阅">📡 RSS 订阅</a><button onclick="showCalSub()" title="订阅时间锚点日历（iPhone/Outlook）">📅 日历订阅</button></div>
+  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()">🔗 复制本期链接</button><a href="feed.xml" id="t_rss">📡 RSS 订阅</a><button onclick="showCalSub()" id="t_calsub">📅 日历订阅</button><button id="langbtn" onclick="toggleLang()" title="Switch language / 切换语言">EN</button></div>
 </header>
 <div class="alertbar" id="alertbar"></div>
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
 <nav class="secnav" id="secnav">
   <div class="railsearch"><input id="railq" placeholder="🔍 搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta"></div></div>
-  <a href="#s1"><span class="rn">📰</span>行业动态</a><a href="#s2"><span class="rn">🔥</span>头条事件</a><a href="#s3"><span class="rn">🧲</span>AI虹吸</a><a href="#s4"><span class="rn">🔗</span>跨行业传导</a><a href="#s5"><span class="rn">📦</span>供应商动态</a><a href="#s6"><span class="rn">⚠️</span>预警与建议</a><a href="#s7"><span class="rn">🗂️</span>我的供应链</a>
+  <a href="#s1"><span class="rn">📰</span><span class="nl">行业动态</span></a><a href="#s2"><span class="rn">🔥</span><span class="nl">头条事件</span></a><a href="#s3"><span class="rn">🧲</span><span class="nl">AI虹吸</span></a><a href="#s4"><span class="rn">🔗</span><span class="nl">跨行业传导</span></a><a href="#s5"><span class="rn">📦</span><span class="nl">供应商动态</span></a><a href="#s6"><span class="rn">⚠️</span><span class="nl">预警与建议</span></a><a href="#s7"><span class="rn">🗂️</span><span class="nl">我的供应链</span></a>
 </nav>
 <main id="main">
   <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:85%"></div></div>
@@ -246,25 +246,183 @@ details.sec .body{padding:0 14px 12px}
   <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:75%"></div></div>
 </main>
 <footer class="site">
-  <b>HVAC 供应链情报</b> · 数据来自每日公开信息核实汇总，仅作供应链研究参考<br>
-  不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别<br><span id="footmeta"></span>
+  <b id="t_foot1">HVAC 供应链情报</b> · <span id="t_foot2">数据来自每日公开信息核实汇总，仅作供应链研究参考</span><br>
+  <span id="t_foot3">不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别</span><br><span id="footmeta"></span>
 </footer>
 <script>
 "use strict";
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+/* ---- 双语层：?lang=en / #...&lang=en 切换英文数据与界面 ---- */
+let LANG="zh";
+const I18N={
+zh:{
+ doc_title:"HVAC 供应链情报",h1:"HVAC 供应链情报",live:"每日更新",
+ sub:"暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新",
+ copylink:"🔗 复制本期链接",rss:"📡 RSS 订阅",calsub:"📅 日历订阅",langbtn:"EN",
+ nav:["行业动态","头条事件","AI虹吸","跨行业传导","供应商动态","预警与建议","我的供应链"],
+ railq_ph:"🔍 搜索本页内容…",
+ foot1:"HVAC 供应链情报",foot2:"数据来自每日公开信息核实汇总，仅作供应链研究参考",
+ foot3:"不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别",
+ cal_title:"📅 订阅时间锚点日历",cal_desc:"每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。",
+ cal_copy:"复制订阅链接",cal_open:"用日历 App 打开",
+ cal_ios:"<b>iPhone</b>：在 Safari 里点“用日历 App 打开”最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br><b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接",
+ cal_close:"关闭",cal_copied:"✅ 已复制，去日历 App 粘贴订阅",
+ digest:"今日导读：",
+ sev_high:"🔴 严重",sev_mid:"🟡 预警",sev_low:"🟢 关注",
+ tag_burst:"⚡突发",tag_bom:"影响BOM",
+ reason:"推荐理由：",src_label:"来源：",primary:"一手",rel_warn:"关联预警：",rel_ev:"关联事件：",
+ u_high:"高",u_mid:"中",u_low:"低",urgency_suffix:"紧迫",
+ act_do:"建议动作：",act_impact:"影响范围：",act_trigger:"触发条件：",
+ act_dl:"⏰ 行动时间：{d}",act_bases:"涉及基地：",
+ playbook:"💼 采购行动指引",
+ sec:["行业动态 / 技术与合作","头条事件","数据中心 / AI 虹吸效应","跨行业传导","供应商动态","供应链预警与建议","我的供应链","方法说明"],
+ u_oneliner:"条一句话",u_relev:"个相关事件",u_events:"个",u_materials:"类物料",u_links:"条",u_warnings:"条",u_items:"条",u_subcats:"小类",
+ s1_guide:"今日 <b>{n}</b> 条{c}。",
+ s1_guide_c:"，其中 <b>{vc}</b> 条为厂商口径（已标注，请甄别）",
+ vendor_tag:"厂商口径",
+ s2_guide:"热度最高：<b>{title}</b>（{heat} 分）",s2_empty:"本段暂无事件。",
+ f_all:"全部",f_burst:"⚡ 突发",f_bom:"影响BOM",f_empty:"该筛选下暂无事件",
+ s3_guide:"承压物料：<b>{m}</b>。",
+ s4_guide:"传导路径：<b>{m}</b>。",
+ s5_guide:"有实质动态 <b>{a}</b> 类：{b}；今日点名排查 <b>{c}</b> 家，<b>{d}</b> 家有实质动态。",
+ s5_none:"无",s5_check_t:"今日点名排查（{n} 家）",
+ chk_yes:"有实质动态",chk_no:"无实质动态",chk_other:"已收录",
+ s6_guide:"<b>{a}</b> 条高紧迫，首条：<b>{b}</b>{c}",s6_dl:"（⏰ {d}）",s6_none:"今日无高紧迫预警。",
+ anchors_title:"⏰ 时间锚点",
+ s7_cnt:"清单快照聚合",
+ s7_guide:"EE 元器件品类（JCAC · PCBA 口径）· 基地供应商品类（JCAC / WXAC / GZAC / 亚太其他，183 子品类全量）· PCBA maker 分布。仅聚合口径，不含供应商名称。",
+ alert_t:"🔴 今日 <b>{a}</b> 条高紧迫预警{b} <a href=\"#s6\">查看预警与建议 →</a>",
+ alert_b:" · 最近行动日 {d}",
+ issue:"第 <b>{n}</b> 期",issue_plain:"第 {n} 期",
+ strip_ev:"<b>{n}</b> 件大事",strip_wn:"<b>{n}</b> 条预警",strip_fp:"<b>{n}</b> 个一手来源",
+ strip_min:"约 {n} 分钟读完",
+ older:"更早归档（{n}）",
+ boot_err:"情报数据加载失败，请稍后刷新重试。",
+ load_err_t:"的数据加载失败（",load_err_b:"）。当前显示的可能是旧日期内容。",retry:"点此重试",
+ copied:"✅ 已复制",copy_prompt:"复制本期链接：",
+ rail_match:"{n} 处匹配 · 回车跳转",rail_nomatch:"无匹配",
+ siphon_eased:"缓解",siphon_pressure:"承压",siphon_watch:"关注",
+ st_hiked:"涨价（已生效）",st_hike:"涨价",st_price:"价格更新",st_ok:"排查无异常",st_risk:"经营风险",
+ sb_title:"供应链画像",sb_snapshot:"快照",sb_u1:"家供应商",sb_u2:"个元器件",
+ sb_note:"仅品类 / maker 口径聚合，不含供应商名称",
+ sb_risk:"PCBA 风险",sb_total:"元器件总数",sb_high:"高风险",sb_eol:"EOL",sb_lt:"交期≥180天",
+ sb_ee:"EE 元器件品类",sb_ee_sub:"（JCAC · PCBA 口径）",
+ sb_base:"基地供应商品类",sb_base_sub:"（183 子品类全量）",
+ sb_maker:"PCBA Maker 分布 Top12（料号数）",
+ sb_loading:"正在加载供应链画像…",sb_err:"画像数据暂未发布",
+ base_err:"基地品类数据暂未发布",
+ base_note:"183 个子品类全量 · 家数为该基地此品类供应商数 · 仅品类口径，不含供应商名称",
+ base_nomatch:"无匹配子品类",base_search_ph:"🔍 搜索子品类，如 compressor / 阀 / 电容…",
+ u_suppliers:"家",
+ rr_title:"📊 近{days}天风险品类榜",
+ rr_sub:"按涨价/缺料/交期动态加权 · 数据攒够30天后看趋势更有意义",
+ rr_score:"{s}分 · {h}次",
+ m_heat:"热度评分规则",
+ m_heat_b:"90~95 多源证实+整机传导落地；85~89 多线叠加、有行动窗口；75~84 单一实质事件；60~74 技术/合作/法规信号；&lt;60 不进热点流。⚡突发 tag 来自当日快讯，<span class=\"tag-bom\">影响BOM</span> 表示命中用户 PCBA maker 或 8 大 EE 品类。",
+ m_cov:"覆盖与更新",
+ m_cov_b:"每天 08:30（CST）基于公开信息核实汇总更新；数字注明来源日期，无法核实舍去。覆盖 HVAC 整机厂、液冷 CDU、压缩机/阀件/制冷剂/铜铝、VSD 电气件、跨行业通用电子料。仅作供应链研究参考，不涉及证券买卖建议。"
+},
+en:{
+ doc_title:"HVAC Supply Chain Intelligence",h1:"HVAC Supply Chain Intelligence",live:"Daily",
+ sub:"HVAC / liquid-cooling CDU · updated daily at 08:30 (CST) in six sections",
+ copylink:"🔗 Copy issue link",rss:"📡 RSS",calsub:"📅 Calendar",langbtn:"中文",
+ nav:["Industry","Top Stories","AI Siphon","Cross-Industry","Suppliers","Warnings","My Supply Chain"],
+ railq_ph:"🔍 Search this page…",
+ foot1:"HVAC Supply Chain Intelligence",foot2:"Compiled from daily verified public sources; for supply-chain research only",
+ foot3:"No securities advice · vendor-claim data is labeled — verify independently",
+ cal_title:"📅 Subscribe to the time-anchor calendar",cal_desc:"Auto-updates after each daily briefing; subscribe once. Each event reminds one day ahead at 9:00.",
+ cal_copy:"Copy subscription link",cal_open:"Open in calendar app",
+ cal_ios:"<b>iPhone</b>: tap “Open in calendar app” in Safari; or Settings → Calendar → Add Calendar → Add Subscription Calendar → paste the link<br><b>Outlook</b>: Add calendar → Subscribe from URL → paste the link",
+ cal_close:"Close",cal_copied:"✅ Copied — paste it in your calendar app",
+ digest:"Today's briefing: ",
+ sev_high:"🔴 Critical",sev_mid:"🟡 Watch",sev_low:"🟢 Monitor",
+ tag_burst:"⚡Breaking",tag_bom:"BOM Impact",
+ reason:"Why it matters: ",src_label:"Sources: ",primary:"Primary",rel_warn:"Related warnings: ",rel_ev:"Related events: ",
+ u_high:"High",u_mid:"Medium",u_low:"Low",urgency_suffix:" urgency",
+ act_do:"Recommended actions: ",act_impact:"Impact: ",act_trigger:"Trigger: ",
+ act_dl:"⏰ Action by: {d}",act_bases:"Bases affected: ",
+ playbook:"💼 Procurement playbook",
+ sec:["Industry / Technology & Partnerships","Top Stories","Data-Center / AI Siphon Effects","Cross-Industry Transmission","Supplier Dynamics","Supply-Chain Warnings & Recommendations","My Supply Chain","Methodology"],
+ u_oneliner:"one-liners",u_relev:"related events",u_events:"events",u_materials:"material categories",u_links:"links",u_warnings:"warnings",u_items:"items",u_subcats:"subcategories",
+ s1_guide:"Today: <b>{n}</b> one-liners{c}.",
+ s1_guide_c:", including <b>{vc}</b> vendor-claim items (labeled — verify independently)",
+ vendor_tag:"Vendor claim",
+ s2_guide:"Hottest: <b>{title}</b> ({heat} pts)",s2_empty:"No events in this section.",
+ f_all:"All",f_burst:"⚡ Breaking",f_bom:"BOM Impact",f_empty:"No events under this filter",
+ s3_guide:"Materials under pressure: <b>{m}</b>.",
+ s4_guide:"Transmission paths: <b>{m}</b>.",
+ s5_guide:"<b>{a}</b> categories with material updates: {b}. <b>{c}</b> companies checked today, <b>{d}</b> with material updates.",
+ s5_none:"none",s5_check_t:"Company roll-call ({n} companies)",
+ chk_yes:"Material updates",chk_no:"No material updates",chk_other:"Covered earlier",
+ s6_guide:"<b>{a}</b> high-urgency warnings, top one: <b>{b}</b>{c}",s6_dl:" (⏰ {d})",s6_none:"No high-urgency warnings today.",
+ anchors_title:"⏰ Time anchors",
+ s7_cnt:"list snapshot",
+ s7_guide:"EE component categories (JCAC · PCBA) · site supplier categories (JCAC / WXAC / GZAC / rest of APAC — all 183 subcategories) · PCBA maker distribution. Aggregated only; no supplier names.",
+ alert_t:"🔴 <b>{a}</b> high-urgency warnings today{b} <a href=\"#s6\">View warnings →</a>",
+ alert_b:" · earliest action date {d}",
+ issue:"Issue <b>{n}</b>",issue_plain:"Issue {n}",
+ strip_ev:"<b>{n}</b> top stories",strip_wn:"<b>{n}</b> warnings",strip_fp:"<b>{n}</b> primary sources",
+ strip_min:"~{n} min read",
+ older:"Older issues ({n})",
+ boot_err:"Failed to load briefing data. Please refresh and retry.",
+ load_err_t:"Failed to load data for ",load_err_b:". What you see may be stale. ",retry:"Retry",
+ copied:"✅ Copied",copy_prompt:"Copy this issue's link: ",
+ rail_match:"{n} matches · Enter to jump",rail_nomatch:"No matches",
+ siphon_eased:"Eased",siphon_pressure:"Under pressure",siphon_watch:"Watch",
+ st_hiked:"Price hike (effective)",st_hike:"Price hike",st_price:"Price update",st_ok:"No anomalies",st_risk:"Business risk",
+ sb_title:"Supply-chain profile",sb_snapshot:"snapshot",sb_u1:"suppliers",sb_u2:"components",
+ sb_note:"Aggregated by category / maker only; no supplier names",
+ sb_risk:"PCBA risk",sb_total:"Total components",sb_high:"High risk",sb_eol:"EOL",sb_lt:"Lead time ≥180 days",
+ sb_ee:"EE component categories",sb_ee_sub:"(JCAC · PCBA)",
+ sb_base:"Site supplier categories",sb_base_sub:"(all 183 subcategories)",
+ sb_maker:"PCBA maker distribution — Top 12 (part counts)",
+ sb_loading:"Loading supply-chain profile…",sb_err:"Profile data not yet published",
+ base_err:"Site category data not yet published",
+ base_note:"All 183 subcategories · counts are supplier counts per site · categories only, no supplier names",
+ base_nomatch:"No matching subcategories",base_search_ph:"🔍 Search subcategories…",
+ u_suppliers:"suppliers",
+ rr_title:"📊 {days}-day risk category ranking",
+ rr_sub:"Weighted by price-hike / shortage / lead-time signals · trends get meaningful after 30 days of data",
+ rr_score:"{s} pts · {h} hits",
+ m_heat:"Heat-score rubric",
+ m_heat_b:"90–95: multi-source confirmed + OEM-level transmission; 85–89: overlapping signals with an action window; 75–84: single material event; 60–74: technology / partnership / regulatory signals; &lt;60: not in the hotspot stream. The ⚡Breaking tag comes from same-day flashes; the <span class=\"tag-bom\">BOM Impact</span> tag means it hits the user's PCBA makers or one of the 8 EE categories.",
+ m_cov:"Coverage & updates",
+ m_cov_b:"Updated daily at 08:30 (CST) from verified public sources; figures carry source dates, unverifiable items are dropped. Covers HVAC OEMs, liquid-cooling CDU, compressors / valves / refrigerants / copper &amp; aluminum, VSD electrical parts, and cross-industry common electronic components. For supply-chain research only; no securities advice."
+}};
+function t(k){const d=I18N[LANG];return (d&&d[k]!==undefined)?d[k]:I18N.zh[k];}
+function fmt(s,m){return String(s).replace(/\{(\w+)\}/g,(_,k)=>(m&&m[k]!==undefined)?m[k]:"");}
+function initLang(){const m=(location.hash||"").match(/lang=(en|zh)/);LANG=m?m[1]:"zh";}
+function applyLang(){
+  document.documentElement.lang=LANG==="en"?"en":"zh-CN";
+  document.title=t("doc_title");
+  const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  set("t_h1",t("h1"));set("t_live",t("live"));set("t_sub",t("sub"));
+  set("copylink",t("copylink"));set("t_rss",t("rss"));set("t_calsub",t("calsub"));set("langbtn",t("langbtn"));
+  document.querySelectorAll("nav.secnav a .nl").forEach((s,i)=>{const nv=t("nav");if(nv[i])s.textContent=nv[i];});
+  const rq=document.getElementById("railq");if(rq)rq.placeholder=t("railq_ph");
+  set("t_foot1",t("foot1"));set("t_foot2",t("foot2"));set("t_foot3",t("foot3"));
+  set("c_title",t("cal_title"));set("c_desc",t("cal_desc"));set("c_copy",t("cal_copy"));set("c_open",t("cal_open"));
+  const ci=document.getElementById("c_ios");if(ci)ci.innerHTML=t("cal_ios");
+  set("c_close",t("cal_close"));
+}
+function toggleLang(){
+  const nl=LANG==="en"?"zh":"en";
+  location.hash="#date="+(CURDATE||"")+(nl==="en"?"&lang=en":"");
+  location.reload();
+}
 const heatColor=h=>h>=90?"#e0654f":h>=80?"#eda445":h>=70?"#c79a2e":"#1e86d6";
 const mmdd=d=>String(d||"").slice(5);
 let WMAP={},EMAP={},CUR=null,FILTER="all";
 
-function tags(t){return (t||[]).map(x=>x==="突发"?'<span class="tag-burst">⚡突发</span>':x==="影响BOM"?'<span class="tag-bom">影响BOM</span>':`<span class="tag">${esc(x)}</span>`).join("");}
+function tags(tt){return (tt||[]).map(x=>x==="突发"?`<span class="tag-burst">${esc(t("tag_burst"))}</span>`:x==="影响BOM"?`<span class="tag-bom">${esc(t("tag_bom"))}</span>`:`<span class="tag">${esc(x)}</span>`).join("");}
 
-const SEV={"高":["sev-high","🔴 严重"],"中":["sev-mid","🟡 预警"],"低":["sev-low","🟢 关注"]};
+function sevLabel(s){return {"高":["sev-high",t("sev_high")],"中":["sev-mid",t("sev_mid")],"低":["sev-low",t("sev_low")]}[s||"中"];}
 function evCard(e,compact){
   const nums=(e.numbers||[]).map(n=>`<span class="num">${esc(n)}</span>`).join("");
-  const sv=SEV[e.severity||"中"];
+  const sv=sevLabel(e.severity||"中");
   const srcs=(e.sources||[]).map(s=>{
-    const fh=s.first_party?`<span class="fh">一手</span>`:"";
+    const fh=s.first_party?`<span class="fh">${esc(t("primary"))}</span>`:"";
     const body=s.url
       ?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}（${esc(s.date)}）</a>`
       :`${esc(s.outlet)}（${esc(s.date)}）`;
@@ -276,11 +434,11 @@ function evCard(e,compact){
     <div class="hbar"><div class="hfill" style="width:${e.heat}%;background:${heatColor(e.heat)}"></div></div></div>
     <div class="tagrow">${tags(e.tags)}<span class="sev ${sv[0]}">${sv[1]}</span><span class="edate">${esc(e.date)}</span></div>
     <h3>${esc(e.title)}</h3>
-    ${compact?"":`<div class="reason">推荐理由：${esc(e.heat_reason||"")}</div>`}
+    ${compact?"":`<div class="reason">${t("reason")}${esc(e.heat_reason||"")}</div>`}
     ${nums?`<div class="nums">${nums}</div>`:""}
     <p class="sum">${esc(e.summary)}</p>
-    ${srcs?`<p class="src">来源：${srcs}</p>`:""}
-    ${wc?`<div class="rel">关联预警：${wc}</div>`:""}</article>`;
+    ${srcs?`<p class="src">${t("src_label")}${srcs}</p>`:""}
+    ${wc?`<div class="rel">${t("rel_warn")}${wc}</div>`:""}</article>`;
 }
 
 function affectedBases(w){
@@ -301,19 +459,35 @@ function affectedBases(w){
 }
 /* 预警 → 采购行动指引（静态模板，按预警关键词匹配；纯行动清单，无系统操作指引） */
 const PLAYBOOKS=[
- {k:["涨价","调价","提价","加价","高位","锁价","成本"],items:["测算涨价对 BOM 成本的影响，更新 Should-Cost","谈判要点：年度锁价 / 涨价豁免 / 成本传导条款","检查框架协议剩余量与价格有效期，考虑提前锁量","评估替代料或第二货源的成本对冲空间"]},
- {k:["缺料","断供","短缺","分配","allocation","产能紧张","挤占"],items:["测算现有库存+在途可覆盖周数，明确预计缺料日期","启动替代料询样与验证","评估 NCNR 锁产能（权衡违约风险）","向多家现货商询价比价，警惕假货"]},
- {k:["EOL","停产","退市","最后采购","LTB","淘汰"],items:["确认 LTB（最后下单）窗口、MOQ 与 NCNR 条款","测算停产前需求总量，决策一次性备库量","现货市场扫货比价（注意假货风险）","启动替代料验证或改版评估"]},
- {k:["交期延长","交期恶化","交期","lead time","排产"],items:["重算缺料时点，更新安全库存水位","与计划确认：提前下单 / 调整排产顺序","跟进在途订单是否被推迟，必要时催交","评估第二供应商分流"]},
- {k:["地震","洪水","火灾","爆炸","限电","停工","罢工","疫情","自然灾害"],items:["确认供应商受影响工厂与复产时间表","评估在手库存可支撑周数","启动第二货源 / 跨基地调拨","跟进在途货物物流状态"]},
- {k:["并购","收购","合并"],items:["索取供货连续性承诺与客户通知函","评估产品线整合后的 EOL 风险","关键料考虑 LTB 备货"]},
- {k:["诉讼","质押","财务","破产","资金链"],items:["控制预付款敞口，缩短账期","清点在途订单金额与交付风险","准备替代供应商切换预案"]},
+ {k:["涨价","调价","提价","加价","高位","锁价","成本","price hike","price increase","price round","pricing","high level","cost"],
+  zh:["测算涨价对 BOM 成本的影响，更新 Should-Cost","谈判要点：年度锁价 / 涨价豁免 / 成本传导条款","检查框架协议剩余量与价格有效期，考虑提前锁量","评估替代料或第二货源的成本对冲空间"],
+  en:["Assess the BOM cost impact of the increase; update should-cost","Negotiation points: annual price lock / increase exemption / cost pass-through clauses","Check remaining volumes and price validity under framework agreements; consider locking volume early","Evaluate cost offsets via alternative materials or second sources"]},
+ {k:["缺料","断供","短缺","分配","allocation","产能紧张","挤占","shortage","stock-out","capacity"],
+  zh:["测算现有库存+在途可覆盖周数，明确预计缺料日期","启动替代料询样与验证","评估 NCNR 锁产能（权衡违约风险）","向多家现货商询价比价，警惕假货"],
+  en:["Work out how many weeks current stock + in-transit covers; pin down the expected stock-out date","Start alternative-material sampling and qualification","Evaluate NCNR capacity locks (weighing cancellation risk)","Get quotes from multiple spot suppliers; watch out for counterfeits"]},
+ {k:["EOL","停产","退市","最后采购","LTB","淘汰","discontinu"],
+  zh:["确认 LTB（最后下单）窗口、MOQ 与 NCNR 条款","测算停产前需求总量，决策一次性备库量","现货市场扫货比价（注意假货风险）","启动替代料验证或改版评估"],
+  en:["Confirm the LTB window, MOQ and NCNR terms","Size total demand before discontinuation; decide one-time stock-up quantity","Sweep the spot market for stock (beware counterfeits)","Kick off alternative qualification or redesign evaluation"]},
+ {k:["交期延长","交期恶化","交期","lead time","排产","lead-time"],
+  zh:["重算缺料时点，更新安全库存水位","与计划确认：提前下单 / 调整排产顺序","跟进在途订单是否被推迟，必要时催交","评估第二供应商分流"],
+  en:["Recalculate the stock-out point; update safety-stock levels","Align with planning: place orders early / resequence production","Follow up on in-transit orders for push-outs; expedite where needed","Evaluate splitting volume to a second supplier"]},
+ {k:["地震","洪水","火灾","爆炸","限电","停工","罢工","疫情","自然灾害","earthquake","flood","fire","strike","shutdown"],
+  zh:["确认供应商受影响工厂与复产时间表","评估在手库存可支撑周数","启动第二货源 / 跨基地调拨","跟进在途货物物流状态"],
+  en:["Confirm affected supplier plants and recovery timelines","Assess how many weeks on-hand stock can support","Activate second sources / cross-site transfers","Track in-transit shipment logistics"]},
+ {k:["并购","收购","合并","merger","acquisition"],
+  zh:["索取供货连续性承诺与客户通知函","评估产品线整合后的 EOL 风险","关键料考虑 LTB 备货"],
+  en:["Request supply-continuity commitments and customer notices","Assess EOL risk from product-line consolidation","Consider LTB stocking for critical parts"]},
+ {k:["诉讼","质押","财务","破产","资金链","lawsuit","bankrupt"],
+  zh:["控制预付款敞口，缩短账期","清点在途订单金额与交付风险","准备替代供应商切换预案"],
+  en:["Limit prepayment exposure; shorten payment terms","Tally in-transit order value and delivery risk","Prepare an alternative-supplier switch plan"]},
 ];
-const PB_DEFAULT=["测算库存与需求缺口，明确影响时点","列出可选动作与责任人","设日历提醒复查，明确触发升级的条件"];
+const PB_DEFAULT={
+ zh:["测算库存与需求缺口，明确影响时点","列出可选动作与责任人","设日历提醒复查，明确触发升级的条件"],
+ en:["Size the inventory-vs-demand gap; pin down the impact date","List options and owners","Set a calendar reminder to re-check; define escalation triggers"]};
 function playbook(w){
   const txt=((w.title||"")+" "+(w.action||"")+" "+(w.trigger||"")).toLowerCase();
-  for(const p of PLAYBOOKS){if(p.k.some(k=>txt.indexOf(k.toLowerCase())>=0))return p.items;}
-  return (w.urgency==="高"||w.urgency==="中")?PB_DEFAULT:null;
+  for(const p of PLAYBOOKS){if(p.k.some(k=>txt.indexOf(k.toLowerCase())>=0))return LANG==="en"?p.en:p.zh;}
+  return (w.urgency==="高"||w.urgency==="中")?PB_DEFAULT[LANG]:null;
 }
 function warnCard(w){
   const ec=(w.related_events||[]).filter(id=>EMAP[id])
@@ -321,17 +495,18 @@ function warnCard(w){
   const cls=w.urgency==="高"?"":w.urgency==="中"?" mid":" low";
   const bases=affectedBases(w);
   const pb=playbook(w);
+  const ul=w.urgency==="高"?t("u_high"):w.urgency==="中"?t("u_mid"):t("u_low");
   return `<article class="act${cls}" id="${w.id}">
     <h4>${w.urgency==="高"?"🔴":w.urgency==="中"?"🟠":"🔵"} ${esc(w.title)}
-    <span class="pill ${w.urgency==="高"?"p-red":w.urgency==="中"?"p-org":"p-blu"}">${esc(w.urgency)}紧迫</span></h4>
-    <div class="do"><b>建议动作：</b>${esc(w.action)}</div>
-    <div class="meta">影响范围：${esc(w.impact)}<br>触发条件：${esc(w.trigger)}${w.deadline?`<br>⏰ 行动时间：${esc(w.deadline)}`:""}</div>
-    ${bases.length?`<div class="bases">涉及基地：${bases.map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}</div>`:""}
-    ${ec?`<div class="rel">关联事件：${ec}</div>`:""}
-    ${pb?`<div class="pb"><b>💼 采购行动指引</b><ol>${pb.map(i=>`<li>${i}</li>`).join("")}</ol></div>`:""}</article>`;
+    <span class="pill ${w.urgency==="高"?"p-red":w.urgency==="中"?"p-org":"p-blu"}">${esc(ul)}${t("urgency_suffix")}</span></h4>
+    <div class="do"><b>${t("act_do")}</b>${esc(w.action)}</div>
+    <div class="meta">${t("act_impact")}${esc(w.impact)}<br>${t("act_trigger")}${esc(w.trigger)}${w.deadline?`<br>${fmt(t("act_dl"),{d:esc(w.deadline)})}`:""}</div>
+    ${bases.length?`<div class="bases">${t("act_bases")}${bases.map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}</div>`:""}
+    ${ec?`<div class="rel">${t("rel_ev")}${ec}</div>`:""}
+    ${pb?`<div class="pb"><b>${t("playbook")}</b><ol>${pb.map(i=>`<li>${i}</li>`).join("")}</ol></div>`:""}</article>`;
 }
 
-function secttl(no,title,cnt){return `<div class="secttl"><span class="no">${no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
+function secttl(no,title,cnt){const NOM={"一":"1","二":"2","三":"3","四":"4","五":"5","六":"6","七":"7","附":"App."};return `<div class="secttl"><span class="no">${LANG==="en"?(NOM[no]||no):no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
 function guide(html){return `<div class="guide">💡 ${html}</div>`;}
 function goId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});}
 function setFilter(f){FILTER=f;renderMain(CUR);const y=$("#s2").offsetTop-70;window.scrollTo({top:y,behavior:"smooth"});}
@@ -347,11 +522,11 @@ function renderIssuestrip(){
   const el=$("#issuestrip");
   el.style.display="flex";
   el.innerHTML=
-    (no>0?`<span>第 <b>${no}</b> 期</span>`:"")+
-    `<span><b>${evs.length}</b> 件大事</span>`+
-    `<span><b>${warns.length}</b> 条预警</span>`+
-    (fh?`<span><b>${fh}</b> 个一手来源</span>`:"")+
-    `<span>约 ${mins} 分钟读完</span>`;
+    (no>0?`<span>${fmt(t("issue"),{n:no})}</span>`:"")+
+    `<span>${fmt(t("strip_ev"),{n:evs.length})}</span>`+
+    `<span>${fmt(t("strip_wn"),{n:warns.length})}</span>`+
+    (fh?`<span>${fmt(t("strip_fp"),{n:fh})}</span>`:"")+
+    `<span>${fmt(t("strip_min"),{n:mins})}</span>`;
 }
 let _SPY=null;
 /* 左侧 rail 页内搜索（桌面端） */
@@ -385,7 +560,7 @@ function railSearch(){
   });
   _MARKS=Array.prototype.slice.call(document.querySelectorAll("main mark.rhl"));
   const meta=document.getElementById("rsmeta");
-  if(meta)meta.textContent=_MARKS.length?_MARKS.length+" 处匹配 · 回车跳转":"无匹配";
+  if(meta)meta.textContent=_MARKS.length?fmt(t("rail_match"),{n:_MARKS.length}):t("rail_nomatch");
 }
 function railJump(dir){
   if(!_MARKS.length)return;
@@ -415,6 +590,8 @@ function initSpy(){
     const s=document.getElementById(id); if(s)_SPY.observe(s);
   });
 }
+function supType(s){return {"涨价（已生效）":t("st_hiked"),"涨价":t("st_hike"),"价格更新":t("st_price"),"排查无异常":t("st_ok"),"经营风险":t("st_risk")}[s]||s;}
+function chkLabel(s){return s==="有实质动态"?t("chk_yes"):s==="无实质动态"?t("chk_no"):t("chk_other");}
 function renderMain(d){
   CUR=d;WMAP={};EMAP={};
   d.warnings.forEach(w=>WMAP[w.id]=w);
@@ -427,85 +604,85 @@ function renderMain(d){
   if(highs.length){
     const dl=d.warnings.filter(w=>w.deadline).map(w=>w.deadline).sort()[0];
     ab.classList.add("show");
-    ab.innerHTML=`🔴 今日 <b>${highs.length}</b> 条高紧迫预警${dl?` · 最近行动日 ${mmdd(dl)}`:""} <a href="#s6">查看预警与建议 →</a>`;
+    ab.innerHTML=fmt(t("alert_t"),{a:highs.length,b:dl?fmt(t("alert_b"),{d:mmdd(dl)}):""});
   }else{ab.classList.remove("show");ab.innerHTML="";}
 
   /* ---- 顶部导读 ---- */
   const hl=$("#headline");
-  if(d.daily_report&&d.daily_report.headline){hl.style.display="block";hl.innerHTML=`<b>今日导读：</b>${esc(d.daily_report.headline)}`;}
+  if(d.daily_report&&d.daily_report.headline){hl.style.display="block";hl.innerHTML=`<b>${t("digest")}</b>${esc(d.daily_report.headline)}`;}
   else{hl.style.display="none";}
 
   /* ---- 一、行业动态 ---- */
   const iu=d.industry_updates||[];
   const vc=iu.filter(i=>i.vendor_claim).length;
-  const iuList=iu.map((i,n)=>`<li><span class="n">${n+1}</span><div>${i.vendor_claim?'<span class="vtag">厂商口径</span>':""}${esc(i.title)}</div></li>`).join("");
+  const iuList=iu.map((i,n)=>`<li><span class="n">${n+1}</span><div>${i.vendor_claim?`<span class="vtag">${esc(t("vendor_tag"))}</span>`:""}${esc(i.title)}</div></li>`).join("");
   const s1ev=bySec("行业动态");
-  const s1=secttl("一","行业动态 / 技术与合作",iu.length+" 条一句话"+(s1ev.length?` · ${s1ev.length} 个相关事件`:""))
-    +guide(`今日 <b>${iu.length}</b> 条${vc?`，其中 <b>${vc}</b> 条为厂商口径（已标注，请甄别）`:""}。`)
+  const s1=secttl("一",t("sec")[0],iu.length+" "+t("u_oneliner")+(s1ev.length?` · ${s1ev.length} `+t("u_relev"):""))
+    +guide(fmt(t("s1_guide"),{n:iu.length,c:vc?fmt(t("s1_guide_c"),{vc:vc}):""}))
     +`<div class="card"><ul class="inews">${iuList}</ul></div>`
-    +(s1ev.length?`<div class="secsub">相关事件</div>`+s1ev.map(e=>evCard(e,true)).join(""):"");
+    +(s1ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s1ev.map(e=>evCard(e,true)).join(""):"");
 
   /* ---- 二、头条事件 ---- */
   let s2ev=d.hotspot_events.filter(e=>e.section==="头条事件"||(e.tags||[]).includes("突发")).sort((a,b)=>b.heat-a.heat);
   const frows=`<div class="frow">
-      <button class="fchip${FILTER==="all"?" on":""}" onclick="setFilter('all')">全部</button>
-      <button class="fchip${FILTER==="burst"?" on":""}" onclick="setFilter('burst')">⚡ 突发</button>
-      <button class="fchip${FILTER==="bom"?" on":""}" onclick="setFilter('bom')">影响BOM</button></div>`;
+      <button class="fchip${FILTER==="all"?" on":""}" onclick="setFilter('all')">${t("f_all")}</button>
+      <button class="fchip${FILTER==="burst"?" on":""}" onclick="setFilter('burst')">${t("f_burst")}</button>
+      <button class="fchip${FILTER==="bom"?" on":""}" onclick="setFilter('bom')">${t("f_bom")}</button></div>`;
   if(FILTER==="burst")s2ev=s2ev.filter(e=>(e.tags||[]).includes("突发"));
   if(FILTER==="bom")s2ev=s2ev.filter(e=>(e.tags||[]).includes("影响BOM"));
   const top2=s2ev[0];
-  const s2=secttl("二","头条事件",s2ev.length+" 个")
-    +guide(top2?`热度最高：<b>${esc(top2.title)}</b>（${top2.heat} 分）`:"本段暂无事件。")
+  const s2=secttl("二",t("sec")[1],s2ev.length+" "+t("u_events"))
+    +guide(top2?fmt(t("s2_guide"),{title:esc(top2.title),heat:top2.heat}):t("s2_empty"))
     +frows
-    +(s2ev.length?s2ev.map(e=>evCard(e)).join(""):'<div class="card"><div class="errmsg">该筛选下暂无事件</div></div>');
+    +(s2ev.length?s2ev.map(e=>evCard(e)).join(""):`<div class="card"><div class="errmsg">${t("f_empty")}</div></div>`);
 
   /* ---- 三、AI 虹吸 ---- */
-  const sev=s=>/回落|缓解/.test(s.change)?'<span class="pill p-blu">缓解</span>':/涨|紧张|延长|紧缺|吃紧/.test(s.change)?'<span class="pill p-red">承压</span>':'<span class="pill p-org">关注</span>';
+  const sev=s=>/回落|缓解|\b(eas\w*|relief|reliev\w*|cool\w*)\b/i.test(s.change)?`<span class="pill p-blu">${esc(t("siphon_eased"))}</span>`:/涨|紧张|延长|紧缺|吃紧|\b(doubl\w*|surg\w*|soar\w*|jump\w*|ris\w+|tight\w*|shortage|extend\w*|rais\w*|increas\w*|upward|price (hik\w*|round\w*|increas\w*))\b/i.test(s.change)?`<span class="pill p-red">${esc(t("siphon_pressure"))}</span>`:`<span class="pill p-org">${esc(t("siphon_watch"))}</span>`;
   const sip=(d.siphon_effects||[]).map(s=>`<div class="card">${sev(s)}<h4>${esc(s.material)}</h4><p>${esc(s.change)}</p></div>`).join("");
   const s3ev=bySec("数据中心/AI 虹吸效应");
-  const s3=secttl("三","数据中心 / AI 虹吸效应",(d.siphon_effects||[]).length+" 类物料")
-    +guide(`承压物料：<b>${(d.siphon_effects||[]).map(s=>esc(s.material)).join("、")}</b>。`)
+  const s3=secttl("三",t("sec")[2],(d.siphon_effects||[]).length+" "+t("u_materials"))
+    +guide(fmt(t("s3_guide"),{m:`<b>${(d.siphon_effects||[]).map(s=>esc(s.material)).join("、")}</b>`}))
     +`<div class="mgrid">${sip}</div>`
-    +(s3ev.length?`<div class="secsub">相关事件</div>`+s3ev.map(e=>evCard(e,true)).join(""):"");
+    +(s3ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s3ev.map(e=>evCard(e,true)).join(""):"");
 
   /* ---- 四、跨行业传导 ---- */
   const cro=(d.cross_industry||[]).map(c=>`<div class="card"><div class="chain"><div class="nd"><b>${esc(c.industry)}</b></div><div class="arw">→</div><div class="nd">${esc(c.link)}</div></div></div>`).join("");
   const s4ev=bySec("跨行业传导");
-  const s4=secttl("四","跨行业传导",(d.cross_industry||[]).length+" 条")
-    +guide(`传导路径：<b>${(d.cross_industry||[]).map(c=>esc(c.industry)).join("、")}</b>。`)
+  const s4=secttl("四",t("sec")[3],(d.cross_industry||[]).length+" "+t("u_links"))
+    +guide(fmt(t("s4_guide"),{m:`<b>${(d.cross_industry||[]).map(c=>esc(c.industry)).join("、")}</b>`}))
     +cro
-    +(s4ev.length?`<div class="secsub">相关事件</div>`+s4ev.map(e=>evCard(e,true)).join(""):"");
+    +(s4ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s4ev.map(e=>evCard(e,true)).join(""):"");
 
   /* ---- 五、供应商动态 ---- */
-  const tcol=t=>t==="涨价"?"p-red":t==="排查无异常"?"p-gry":t==="经营风险"?"p-org":"p-blu";
+  const tcol=s=>s==="涨价"?"p-red":s==="排查无异常"?"p-gry":s==="经营风险"?"p-org":"p-blu";
   const subChips=s=>{const sc=(s.subcategories||[]).map(x=>`<span class="subchip">${esc(x)}</span>`).join("");
     const co=s.company?`<span class="subchip" style="background:#fff6e5;color:#b3851f;border-color:#f0d9ac">🏢 ${esc(s.company)}</span>`:"";
     return (sc||co)?`<div class="subchips">${sc}${co}</div>`:"";};
-  const sup=(d.supplier_updates||[]).map(s=>`<div class="supp"><div class="srow" style="border-bottom:none;padding-bottom:0"><span class="pill ${tcol(s.type)}">${esc(s.type)}</span><span class="cat">${esc(s.category)}</span><span class="dt">${esc(s.detail).slice(0,30)}</span></div>${subChips(s)}</div>`).join("");
+  const sup=(d.supplier_updates||[]).map(s=>`<div class="supp"><div class="srow" style="border-bottom:none;padding-bottom:0"><span class="pill ${tcol(s.type)}">${esc(supType(s.type))}</span><span class="cat">${esc(s.category)}</span><span class="dt">${esc(s.detail).slice(0,30)}</span></div>${subChips(s)}</div>`).join("");
   const s5ev=bySec("供应商动态");
   const chk=d.company_checklist||[];
   const hot5=chk.filter(c=>c.status==="有实质动态");
-  const chkHtml=chk.map(c=>`<span class="cchip" title="${esc(c.note||c.status)}">${c.status==="有实质动态"?"🔥":c.status==="无实质动态"?"✅":"↩️"} ${esc(c.company)}</span>`).join("");
+  const chkHtml=chk.map(c=>`<span class="cchip" title="${esc(c.note||chkLabel(c.status))}">${c.status==="有实质动态"?"🔥":c.status==="无实质动态"?"✅":"↩️"} ${esc(c.company)}</span>`).join("");
   const dynCats=[...new Set((d.supplier_updates||[]).filter(s=>s.type!=="排查无异常").map(s=>s.category))];
-  const s5=secttl("五","供应商动态",(d.supplier_updates||[]).length+" 条")
-    +guide(`有实质动态 <b>${dynCats.length}</b> 类：${dynCats.map(esc).join("、")||"无"}；今日点名排查 <b>${chk.length}</b> 家，<b>${hot5.length}</b> 家有实质动态。`)
+  const s5=secttl("五",t("sec")[4],(d.supplier_updates||[]).length+" "+t("u_items"))
+    +guide(fmt(t("s5_guide"),{a:dynCats.length,b:dynCats.map(esc).join("、")||t("s5_none"),c:chk.length,d:hot5.length}))
     +`<div class="card">${sup}</div>`
-    +(s5ev.length?`<div class="secsub">相关事件</div>`+s5ev.map(e=>evCard(e,true)).join(""):"")
-    +`<div class="card"><h3 style="margin-top:0;font-size:14.5px">今日点名排查（${chk.length} 家）</h3><div class="checkchips">${chkHtml}</div></div>`;
+    +(s5ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s5ev.map(e=>evCard(e,true)).join(""):"")
+    +`<div class="card"><h3 style="margin-top:0;font-size:14.5px">${fmt(t("s5_check_t"),{n:chk.length})}</h3><div class="checkchips">${chkHtml}</div></div>`;
 
   /* ---- 六、预警与建议 ---- */
   const warns=[...d.warnings].sort((a,b)=>({高:0,中:1,低:2}[a.urgency]-{高:0,中:1,低:2}[b.urgency]));
-  const anchors=(d.time_anchors||[]).map(t=>`<div class="anchor">⏰ <b>${mmdd(t.date)}</b> ${esc(t.event)}</div>`).join("");
+  const anchors=(d.time_anchors||[]).map(x=>`<div class="anchor">⏰ <b>${mmdd(x.date)}</b> ${esc(x.event)}</div>`).join("");
   const firstHigh=highs[0];
-  const s6=secttl("六","供应链预警与建议",d.warnings.length+" 条")
-    +guide(firstHigh?`<b>${highs.length}</b> 条高紧迫，首条：<b>${esc(firstHigh.title)}</b>${firstHigh.deadline?`（⏰ ${esc(firstHigh.deadline)}）`:""}`:"今日无高紧迫预警。")
-    +(anchors?`<div class="secsub">⏰ 时间锚点</div><div class="anchors">${anchors}</div>`:"")
+  const s6=secttl("六",t("sec")[5],d.warnings.length+" "+t("u_warnings"))
+    +guide(firstHigh?fmt(t("s6_guide"),{a:highs.length,b:esc(firstHigh.title),c:firstHigh.deadline?fmt(t("s6_dl"),{d:esc(firstHigh.deadline)}):""}):t("s6_none"))
+    +(anchors?`<div class="secsub">${t("anchors_title")}</div><div class="anchors">${anchors}</div>`:"")
     +warns.map(warnCard).join("");
 
   /* ---- 七、我的供应链 ---- */
-  const s7=secttl("七","我的供应链","清单快照聚合")
-    +guide("EE 元器件品类（JCAC · PCBA 口径）· 基地供应商品类（JCAC / WXAC / GZAC / 亚太其他，183 子品类全量）· PCBA maker 分布。仅聚合口径，不含供应商名称。")
-    +`<div id="supplybase"><div class="card"><div class="loading">正在加载供应链画像…</div></div></div>`
+  const s7=secttl("七",t("sec")[6],t("s7_cnt"))
+    +guide(t("s7_guide"))
+    +`<div id="supplybase"><div class="card"><div class="loading">${t("sb_loading")}</div></div></div>`
     +`<div class="riskrank card" id="riskrank" style="display:none"></div>`;
 
   $("#main").innerHTML=
@@ -516,12 +693,12 @@ function renderMain(d){
    +`<section class="blk" id="s5">${s5}</section>`
    +`<section class="blk" id="s6">${s6}</section>`
    +`<section class="blk" id="s7">${s7}</section>`
-   +`<section class="blk"><div class="secttl"><span class="no">附</span><h2>方法说明</h2></div>
-     <div class="rubric"><h4>热度评分规则</h4>
-     <div style="font-size:13px">90~95 多源证实+整机传导落地；85~89 多线叠加、有行动窗口；75~84 单一实质事件；60~74 技术/合作/法规信号；&lt;60 不进热点流。⚡突发 tag 来自当日快讯，<span class="tag-bom">影响BOM</span> 表示命中用户 PCBA maker 或 8 大 EE 品类。</div></div>
-     <div class="rubric"><h4>覆盖与更新</h4>
-     <div style="font-size:13px">每天 08:30（CST）基于公开信息核实汇总更新；数字注明来源日期，无法核实舍去。覆盖 HVAC 整机厂、液冷 CDU、压缩机/阀件/制冷剂/铜铝、VSD 电气件、跨行业通用电子料。仅作供应链研究参考，不涉及证券买卖建议。</div></div></section>`;
-  $("#footmeta").textContent=`数据日期 ${d.meta.date} · schema ${d.meta.schema_version}`;
+   +`<section class="blk"><div class="secttl"><span class="no">${LANG==="en"?"App.":"附"}</span><h2>${t("sec")[7]}</h2></div>
+     <div class="rubric"><h4>${t("m_heat")}</h4>
+     <div style="font-size:13px">${t("m_heat_b")}</div></div>
+     <div class="rubric"><h4>${t("m_cov")}</h4>
+     <div style="font-size:13px">${t("m_cov_b")}</div></div></section>`;
+  $("#footmeta").textContent=`${d.meta.date} · schema ${d.meta.schema_version}`;
   renderIssuestrip();
   initSpy();
   const rq=document.getElementById("railq");
@@ -541,37 +718,37 @@ async function loadSupply(){
     const mkBars=s.pcba.top_makers.map(x=>
       `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#5ea3dd"></div></div></div>`).join("");
     const ee=s.ee_categories.map(c=>
-      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} 小类</span></summary><div class="body"><div style="font-size:13px;color:#3c546e">${c.subs.map(esc).join(" · ")}</div></div></details>`).join("");
+      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:13px;color:#3c546e">${c.subs.map(esc).join(" · ")}</div></div></details>`).join("");
     const p=s.pcba;
     /* 基地供应商品类 tabs */
-    let baseHtml='<div class="card"><div class="errmsg">基地品类数据暂未发布</div></div>';
+    let baseHtml=`<div class="card"><div class="errmsg">${t("base_err")}</div></div>`;
     if(tax&&tax.bases){
       const order=["JCAC","WXAC","GZAC","亚太其他"];
-      const tabs=order.map((b,i)=>`<button class="tab${i===0?" on":""}" data-b="${b}" onclick="setBase('${b}')">${b} <small>${tax.bases[b].supplier_count}家</small></button>`).join("");
+      const tabs=order.map((b,i)=>`<button class="tab${i===0?" on":""}" data-b="${b}" onclick="setBase('${b}')">${b} <small>${tax.bases[b].supplier_count} ${t("u_suppliers")}</small></button>`).join("");
       baseHtml=`<div class="tabs">${tabs}</div>
-        <input class="searchbox" id="basesearch" placeholder="🔍 搜索子品类，如 compressor / 阀 / 电容…" oninput="filterBase(this.value)">
+        <input class="searchbox" id="basesearch" placeholder="${esc(t("base_search_ph"))}" oninput="filterBase(this.value)">
         <div class="card" id="baselist" style="max-height:520px;overflow-y:auto"></div>
-        <div style="font-size:11.5px;color:#8a99ab;margin:2px 2px 0">183 个子品类全量 · 家数为该基地此品类供应商数 · 仅品类口径，不含供应商名称</div>`;
+        <div style="font-size:11.5px;color:#8a99ab;margin:2px 2px 0">${t("base_note")}</div>`;
       window._TAX=tax;window._BASE=order[0];window._Q="";
     }
     box.innerHTML=
-     `<div class="card"><h3 style="margin-top:0">供应链画像 <span class="pill p-blu">快照 ${esc(s.snapshot_date)}</span></h3>
-      <div style="font-size:13.5px;color:#3c546e">${s.supplier_base.supplier_count} 家供应商 · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} 个元器件</div>
-      <div style="margin-top:6px;font-size:12px;color:#8a99ab">仅品类 / maker 口径聚合，不含供应商名称</div></div>
-      <div class="secsub">PCBA 风险</div>
+     `<div class="card"><h3 style="margin-top:0">${t("sb_title")} <span class="pill p-blu">${t("sb_snapshot")} ${esc(s.snapshot_date)}</span></h3>
+      <div style="font-size:13.5px;color:#3c546e">${s.supplier_base.supplier_count} ${t("sb_u1")} · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} ${t("sb_u2")}</div>
+      <div style="margin-top:6px;font-size:12px;color:#8a99ab">${t("sb_note")}</div></div>
+      <div class="secsub">${t("sb_risk")}</div>
       <div class="mgrid" style="grid-template-columns:1fr 1fr">
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#1e86d6">${p.total}</b><div style="font-size:11px;color:#64748b">元器件总数</div></div>
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#e0654f">${p.risk.High}</b><div style="font-size:11px;color:#64748b">高风险</div></div>
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.eol}</b><div style="font-size:11px;color:#64748b">EOL</div></div>
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.lead_time_days.ge_180}</b><div style="font-size:11px;color:#64748b">交期≥180天</div></div></div>
-      <div class="secsub">EE 元器件品类 <span style="font-weight:400;color:#8a99ab">（JCAC · PCBA 口径）</span></div>${ee}
-      <div class="secsub">基地供应商品类 <span style="font-weight:400;color:#8a99ab">（183 子品类全量）</span></div>${baseHtml}
-      <div class="secsub">PCBA Maker 分布 Top12（料号数）</div><div class="card">${mkBars}</div>`;
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#1e86d6">${p.total}</b><div style="font-size:11px;color:#64748b">${t("sb_total")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#e0654f">${p.risk.High}</b><div style="font-size:11px;color:#64748b">${t("sb_high")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.eol}</b><div style="font-size:11px;color:#64748b">${t("sb_eol")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.lead_time_days.ge_180}</b><div style="font-size:11px;color:#64748b">${t("sb_lt")}</div></div></div>
+      <div class="secsub">${t("sb_ee")} <span style="font-weight:400;color:#8a99ab">${t("sb_ee_sub")}</span></div>${ee}
+      <div class="secsub">${t("sb_base")} <span style="font-weight:400;color:#8a99ab">${t("sb_base_sub")}</span></div>${baseHtml}
+      <div class="secsub">${t("sb_maker")}</div><div class="card">${mkBars}</div>`;
     if(window._TAX)renderBase();
-  }catch(e){box.innerHTML='<div class="card"><div class="errmsg">画像数据暂未发布</div></div>';}
+  }catch(e){box.innerHTML=`<div class="card"><div class="errmsg">${t("sb_err")}</div></div>`;}
 }
 function setBase(b){window._BASE=b;window._Q="";const si=$("#basesearch");if(si)si.value="";
-  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.b===b));renderBase();}
+  document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x.dataset.b===b));renderBase();}
 function filterBase(q){window._Q=(q||"").toLowerCase();renderBase();}
 function renderBase(){
   const tax=window._TAX,b=window._BASE,q=window._Q||"";
@@ -581,22 +758,22 @@ function renderBase(){
   box.innerHTML=list.length?list.map(x=>
     `<div class="subitem"><span class="nm">${esc(x.name)}</span>
      <span class="bt" style="flex:none;width:90px;height:7px;background:#edf1f6;border-radius:4px;overflow:hidden"><span class="bf" style="display:block;height:100%;width:${Math.round(x.count/max*100)}%;background:var(--blue);border-radius:4px"></span></span>
-     <span class="ct">${x.count} 家</span></div>`).join("")
-    :'<div class="errmsg">无匹配子品类</div>';
+     <span class="ct">${x.count} ${t("u_suppliers")}</span></div>`).join("")
+    :`<div class="errmsg">${t("base_nomatch")}</div>`;
 }
 
 let CURDATE=null;
 function copyIssueLink(){
-  const u=location.origin+location.pathname+"#date="+(CURDATE||"");
-  const done=()=>{const b=$("#copylink");if(!b)return;const t=b.textContent;b.textContent="✅ 已复制";setTimeout(()=>{b.textContent=t;},1500);};
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done).catch(()=>prompt("复制本期链接：",u));}
-  else prompt("复制本期链接：",u);
+  const u=location.origin+location.pathname+"#date="+(CURDATE||"")+(LANG==="en"?"&lang=en":"");
+  const done=()=>{const b=$("#copylink");if(!b)return;const t0=b.textContent;b.textContent=t("copied");setTimeout(()=>{b.textContent=t0;},1500);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done).catch(()=>prompt(t("copy_prompt"),u));}
+  else prompt(t("copy_prompt"),u);
 }
 const CALURL="https://nohho.github.io/hvac-intel/anchors.ics";
 function showCalSub(){document.getElementById("calsub").style.display="flex";}
 function hideCalSub(){document.getElementById("calsub").style.display="none";}
 function copyCalUrl(){
-  const done=()=>{const b=document.getElementById("calurl");b.value="✅ 已复制，去日历 App 粘贴订阅";setTimeout(()=>{b.value=CALURL;},1600);};
+  const done=()=>{const b=document.getElementById("calurl");b.value=t("cal_copied");setTimeout(()=>{b.value=CALURL;},1600);};
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(CALURL).then(done).catch(()=>{document.getElementById("calurl").select();});}
   else document.getElementById("calurl").select();
 }
@@ -604,7 +781,7 @@ async function loadDay(date){
   CURDATE=date;
   document.querySelectorAll(".errbar").forEach(b=>b.remove());
   try{
-    const r=await fetch("data/"+date+".json");
+    const r=await fetch("data/"+date+(LANG==="en"?"-en":"")+".json");
     if(!r.ok)throw new Error("HTTP "+r.status);
     if(!window._TAX){
       try{const tr=await fetch("data/taxonomy.json");if(tr.ok)window._TAX=await tr.json();}catch(e){}
@@ -614,13 +791,13 @@ async function loadDay(date){
     document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===date));
     const ip2=$("#issuepill");
     const no2=(window._ISSUE_DAYS||[]).indexOf(date)+1;
-    if(ip2&&no2>0){ip2.textContent=`第 ${no2} 期`;}
-    try{history.replaceState(null,"","#date="+date);}catch(e){}
+    if(ip2&&no2>0){ip2.textContent=fmt(t("issue_plain"),{n:no2});}
+    try{history.replaceState(null,"","#date="+date+(LANG==="en"?"&lang=en":""));}catch(e){}
     window.scrollTo({top:0});
   }catch(e){
     const m=$("#main");
     if(m)m.insertAdjacentHTML("afterbegin",
-      `<div class="errbar">⚠️ ${esc(date)} 的数据加载失败（${esc(e.message)}）。当前显示的可能是旧日期内容。<a href="javascript:loadDay(CURDATE)">点此重试</a></div>`);
+      `<div class="errbar">⚠️ ${esc(date)}${t("load_err_t")}${esc(e.message)}${t("load_err_b")}<a href="javascript:loadDay(CURDATE)">${t("retry")}</a></div>`);
   }
 }
 
@@ -633,13 +810,15 @@ async function renderRiskRank(){
     if(!items.length)return;
     const max=Math.max(...items.map(i=>i.score),1);
     const el=$("#riskrank");
-    el.innerHTML=`<h3>📊 近${d.window_days||30}天风险品类榜<span class="rrsub">按涨价/缺料/交期动态加权 · 数据攒够30天后看趋势更有意义</span></h3>`+
-      items.map((i,ix)=>`<div class="rrrow" title="${esc(i.sample||"")}"><span class="rrname">${ix+1}. ${esc(i.name)}</span><span class="rrbar"><i style="width:${Math.round(i.score/max*100)}%"></i></span><span class="rrscore">${i.score}分 · ${i.hits}次</span></div>`).join("");
+    el.innerHTML=`<h3>${fmt(t("rr_title"),{days:d.window_days||30})}<span class="rrsub">${t("rr_sub")}</span></h3>`+
+      items.map((i,ix)=>`<div class="rrrow" title="${esc(i.sample||"")}"><span class="rrname">${ix+1}. ${esc(i.name)}</span><span class="rrbar"><i style="width:${Math.round(i.score/max*100)}%"></i></span><span class="rrscore">${fmt(t("rr_score"),{s:i.score,h:i.hits})}</span></div>`).join("");
     el.style.display="block";
   }catch(e){}
 }
 
 async function boot(){
+  initLang();
+  applyLang();
   try{
     const idx=await (await fetch("data/index.json")).json();
     const days=idx.days||[];
@@ -650,7 +829,7 @@ async function boot(){
     if(older.length){
       const byM={};
       older.forEach(dt=>{const m=dt.slice(0,7);(byM[m]=byM[m]||[]).push(dt);});
-      html+=`<details class="arch"><summary>更早归档（${older.length}）</summary>`+
+      html+=`<details class="arch"><summary>${fmt(t("older"),{n:older.length})}</summary>`+
         Object.keys(byM).sort().reverse().map(m=>
           `<div class="mrow"><div class="mlab">${m}</div><div class="dpills" style="margin-top:0">${byM[m].map(pill).join("")}</div></div>`).join("")+
         `</details>`;
@@ -658,7 +837,7 @@ async function boot(){
     $("#dpills").innerHTML=html;
     const ip=$("#issuepill");
     const no=days.indexOf(idx.latest||days[days.length-1])+1;
-    if(no>0){ip.textContent=`第 ${no} 期`;ip.style.display="inline-block";}
+    if(no>0){ip.textContent=fmt(t("issue_plain"),{n:no});ip.style.display="inline-block";}
     window._ISSUE_DAYS=days;
     initRailSearch();
     const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
@@ -669,24 +848,24 @@ async function boot(){
     });
     await loadDay(start);
     renderRiskRank();
-  }catch(e){$("#main").innerHTML='<div class="errmsg">情报数据加载失败，请稍后刷新重试。</div>';}
+  }catch(e){$("#main").innerHTML=`<div class="errmsg">${t("boot_err")}</div>`;}
 }
 boot();
 </script>
 <div id="calsub" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:99;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)hideCalSub()">
   <div style="background:#fff;color:#222;max-width:430px;width:100%;border-radius:12px;padding:20px;font-size:14px;line-height:1.7">
-    <div style="font-weight:700;font-size:16px;margin-bottom:6px">📅 订阅时间锚点日历</div>
-    <div style="color:#666;font-size:13px;margin-bottom:10px">每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。</div>
+    <div style="font-weight:700;font-size:16px;margin-bottom:6px" id="c_title">📅 订阅时间锚点日历</div>
+    <div style="color:#666;font-size:13px;margin-bottom:10px" id="c_desc">每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。</div>
     <input id="calurl" readonly value="https://nohho.github.io/hvac-intel/anchors.ics" onclick="this.select()" style="width:100%;box-sizing:border-box;padding:8px;border:1px solid #ddd;border-radius:8px;font-size:12px;color:#444;background:#f7f9fb">
     <div style="display:flex;gap:10px;margin:12px 0">
-      <button onclick="copyCalUrl()" style="flex:1;padding:10px;border:none;border-radius:8px;background:#0b5cab;color:#fff;font-size:14px;cursor:pointer">复制订阅链接</button>
-      <a href="webcal://nohho.github.io/hvac-intel/anchors.ics" style="flex:1;text-align:center;padding:10px;border-radius:8px;background:#e8f1fb;color:#0b5cab;font-size:14px;text-decoration:none">用日历 App 打开</a>
+      <button onclick="copyCalUrl()" id="c_copy" style="flex:1;padding:10px;border:none;border-radius:8px;background:#0b5cab;color:#fff;font-size:14px;cursor:pointer">复制订阅链接</button>
+      <a href="webcal://nohho.github.io/hvac-intel/anchors.ics" id="c_open" style="flex:1;text-align:center;padding:10px;border-radius:8px;background:#e8f1fb;color:#0b5cab;font-size:14px;text-decoration:none">用日历 App 打开</a>
     </div>
-    <div style="font-size:13px;color:#555">
-      <b>iPhone</b>：在 Safari 里点"用日历 App 打开"最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
+    <div style="font-size:13px;color:#555" id="c_ios">
+      <b>iPhone</b>：在 Safari 里点“用日历 App 打开”最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
       <b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接
     </div>
-    <button onclick="hideCalSub()" style="margin-top:12px;width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;background:#fff;font-size:14px;cursor:pointer">关闭</button>
+    <button onclick="hideCalSub()" id="c_close" style="margin-top:12px;width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;background:#fff;font-size:14px;cursor:pointer">关闭</button>
   </div>
 </div>
 </body>
