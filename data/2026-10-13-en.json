@@ -1,0 +1,627 @@
+{
+ "meta": {
+  "date": "2026-10-13",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-13-hvac-cdu-morning-briefing.md",
+  "note": "Tuesday briefing. Chillventa 2026 opens today in Nuremberg (10-13~15); MLCC price-hike chain escalates (Samsung Electro-Mechanics signs another $212M long-term agreement, plans 25%~30% price increase on consumer X5R in Q4, Murata EOL timeline confirmed — event evt-mlcc-price-hike timeline updated for 10-13); semiconductor OSAT price-hike wave (new event evt-osat-price-hike); copper hits new highs + TC at 32-week historic lows (event evt-copper-high updated); DRAM/HBM rally continues (event evt-dram-hbm-shortage updated); Tier B batch 8 rotation: 1/11 substantive hit (gaskets/seals), zero-hit streak stays 0, biweekly cadence maintained. onsemi / rare-earth concentrate / Apple order events unchanged, no timeline appended. All figures taken from verified briefing items, nothing added or altered."
+ },
+ "daily_report": {
+  "date": "2026-10-13",
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Briefing",
+  "sections": 6,
+  "hotspot_count": 4,
+  "warning_count": 5,
+  "headline": "Chillventa 2026 opens today; MLCC price-hike chain escalates (Samsung Electro-Mechanics signs another $212M long-term deal, plans 25%~30% hike on consumer X5R in Q4); semiconductor OSAT prices up 10%~30%; copper hits new highs, smelter side tightens"
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261013-01",
+   "event_id": "evt-mlcc-price-hike",
+   "section": "头条事件",
+   "severity": "中",
+   "heat": 84,
+   "heat_reason": "Triple escalation (long-term capacity lock + Q4 hike plan + EOL timeline); Samsung Electro-Mechanics and Murata are key PCBA makers with a clear action window",
+   "title": "MLCC price-hike chain escalates: Samsung Electro-Mechanics signs another $212M long-term deal, plans 25%~30% hike on consumer X5R in Q4",
+   "summary": "Samsung Electro-Mechanics signed another MLCC/inductor supply long-term agreement worth over $212M on 10-9; 4 long-term deals signed this year (total KRW 2.11 trillion) locking capacity through end-2027; plans to raise average prices for consumer X5R customers by 25%~30% in 2026 Q4 (per TrendForce / Kaiyuan Securities research, secondhand); Murata EOL timeline confirmed: customer confirmation through end-2027, LTB through March 2028, final shipments through 2029.",
+   "numbers": [
+    "New long-term deal worth over $212M",
+    "4 long-term deals this year, total KRW 2.11 trillion",
+    "Locked through end-2027",
+    "Q4 consumer X5R price hike planned at 25%~30%",
+    "Murata EOL: confirmation through end-2027, LTB through 2028-3, final shipments through 2029"
+   ],
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "date": "2026-10-09",
+   "related_warnings": [
+    "warn-20261013-01"
+   ],
+   "sources": [
+    {
+     "outlet": "Sina Finance (Samsung Electro-Mechanics long-term deal)",
+     "date": "2026-10-09",
+     "url": null,
+     "first_party": false
+    },
+    {
+     "outlet": "Kaiyuan Securities research, secondhand (Q4 hike plan)",
+     "date": "2026-10-09",
+     "url": null,
+     "first_party": false
+    }
+   ]
+  },
+  {
+   "id": "evt-20261013-02",
+   "event_id": "evt-osat-price-hike",
+   "section": "头条事件",
+   "severity": "中",
+   "heat": 72,
+   "heat_reason": "Substantive new price-hike event reported 10-12; AI OSAT demand crowding out conventional chip capacity, rush orders doubling — affects actual chip lead times",
+   "title": "Semiconductor OSAT price-hike wave: quotes up 10%~30%, AI OSAT crowding out conventional chip capacity",
+   "summary": "OSAT (assembly & test) quotes raised 10%~30%; rush orders from small/mid customers even doubling; AI chip OSAT demand crowding out conventional chip OSAT capacity.",
+   "numbers": [
+    "OSAT quotes +10%~30%",
+    "Rush orders from small/mid customers doubling"
+   ],
+   "tags": [
+    "涨价"
+   ],
+   "date": "2026-10-12",
+   "related_warnings": [
+    "warn-20261013-02"
+   ],
+   "sources": [
+    {
+     "outlet": "icviews / Semiconductor Industry Watch",
+     "date": "2026-10-12",
+     "url": null,
+     "first_party": false
+    }
+   ]
+  },
+  {
+   "id": "evt-20261013-03",
+   "event_id": "evt-copper-high",
+   "section": "头条事件",
+   "severity": "中",
+   "heat": 78,
+   "heat_reason": "Prices near highs plus substantive smelter-side tightening (TC at 32-week historic lows, some smelters cutting output) — dual supply/demand signal",
+   "title": "Copper hits new highs: LME copper closes at $14,550/ton on 10-9, TC at 32-week historic lows",
+   "summary": "LME copper closed at $14,550/ton on 10-9; SHFE copper Nov-26 contract closed at RMB 110,630/ton on 10-12 (+0.93%); spot treatment charges (TC) for imported copper concentrate fell for the 32nd straight week to historic lows, with some smelters cutting refined copper output.",
+   "numbers": [
+    "LME copper closed 10-9 at $14,550/ton",
+    "SHFE copper Nov-26 closed 10-12 at RMB 110,630/ton (+0.93%)",
+    "Yangtze spot #1 copper at RMB 112,160/ton (+400)",
+    "TC falling 32 straight weeks, at historic lows"
+   ],
+   "tags": [
+    "原材料"
+   ],
+   "date": "2026-10-12",
+   "related_warnings": [
+    "warn-20261013-03"
+   ],
+   "sources": [
+    {
+     "outlet": "Hongye Futures (LME close)",
+     "date": "2026-10-12",
+     "url": null,
+     "first_party": false
+    },
+    {
+     "outlet": "Hualian Futures via Sina Finance (TC and output cuts)",
+     "date": "2026-10-12",
+     "url": null,
+     "first_party": false
+    }
+   ]
+  },
+  {
+   "id": "evt-20261013-04",
+   "event_id": "evt-dram-hbm-shortage",
+   "section": "虹吸效应",
+   "severity": "中",
+   "heat": 75,
+   "heat_reason": "Substantive new datapoint — HBM4 quoted at ~3x HBM3E — plus Micron warning; Micron/Samsung are key PCBA makers, shortage extending into 2028",
+   "title": "DRAM/HBM rally continues: Samsung HBM4 quoted at ~3x HBM3E, mobile storage spot +300% in 3 months",
+   "summary": "Samsung HBM4 quoted at ~$4-5/Gb, roughly 3x HBM3E; HBM to consume nearly 30% of global DRAM wafer capacity; Micron warns 2027/2028 supply-demand will be tighter than 2026; mobile storage spot prices up over 300% cumulatively in ~3 months.",
+   "numbers": [
+    "Samsung HBM4 ~$4-5/Gb, roughly 3x HBM3E",
+    "HBM to consume nearly 30% of global DRAM wafer capacity",
+    "Mobile storage spot up over 300% cumulatively in ~3 months"
+   ],
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "date": "2026-10-12",
+   "related_warnings": [],
+   "sources": [
+    {
+     "outlet": "China.com",
+     "date": "2026-10-10",
+     "url": null,
+     "first_party": false
+    },
+    {
+     "outlet": "Caipai News",
+     "date": "2026-10-12",
+     "url": null,
+     "first_party": false
+    }
+   ]
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Chillventa 2026 opens today in Nuremberg (10-13~15): 1,100+ exhibitors, data-center cooling and AI-driven refrigeration control headline the agenda",
+   "summary": "Tracking new launches across the three-day show; data-center cooling is the core theme",
+   "source": "Refindustry, early Oct 2026",
+   "vendor_voice": false
+  },
+  {
+   "title": "YORK YMAE-P R290 reversible high-temperature heat pump (90~360 kW) debuts on Chillventa opening day",
+   "summary": "Delivers 80°C water at -25°C ambient; targets commercial building retrofits and electrification",
+   "source": "NaturalRefrigerants.com, 2026-10-10",
+   "vendor_voice": true
+  },
+  {
+   "title": "SKF launches new MBx magnetic bearings",
+   "summary": "Modular design shortens lead times; aimed squarely at data-center chiller market growth",
+   "source": "PRNewswire, 2026-10-08",
+   "vendor_voice": true
+  },
+  {
+   "title": "Panasonic Industry at Chillventa: new-generation R290/CO2 compressors and fan motors",
+   "summary": "New R290/CO2 rotary and scroll compressors, PY-125 water pumps, AR-T/AR-9HS fan motors",
+   "source": "Smart Building Magazine, 2026-09-11",
+   "vendor_voice": true
+  },
+  {
+   "title": "Copeland showcases oil-free centrifugal compressors and industrial high-temperature heat pumps",
+   "summary": "Oil-free centrifugal compressors (R-513A/R-515B/R-1234ze low-GWP refrigerants) and industrial high-temperature heat pumps",
+   "source": "data-center-technology, 2026-09-30",
+   "vendor_voice": true
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "Memory (DRAM/HBM)",
+   "change": "Samsung HBM4 quoted at ~$4-5/Gb, roughly 3x HBM3E; HBM to consume nearly 30% of global DRAM wafer capacity; Micron warns 2027/2028 supply-demand tighter than 2026; mobile storage spot up over 300% cumulatively in ~3 months",
+   "source": "China.com / Caipai News, 2026-10-10~10-12"
+  },
+  {
+   "material": "MLCC",
+   "change": "Samsung Electro-Mechanics' 4 long-term deals (KRW 2.11 trillion) lock high-end capacity through end-2027; TrendForce expects Q4 mid/high-capacitance consumer MLCC quotes still up 10%~20%; Samsung Electro-Mechanics plans 25%~30% hike on consumer X5R in Q4",
+   "source": "Sina Finance, 2026-10-09"
+  },
+  {
+   "material": "PCB / CCL",
+   "change": "7628 e-glass cloth averaged RMB 5.11/m in Feb → RMB 10.2/m in Aug (+121%), peak quotes RMB 13.25/m; Kingboard FR-4 CCL up over 270% this year; cloth shortage stretching substrate lead times to half a year",
+   "source": "Xueqiu supply-chain review / Eastmoney, 2026-09-14; EE Times China, early Oct"
+  },
+  {
+   "material": "Copper",
+   "change": "AI data centers the 'super demand engine' for copper; refined-copper tariff expectations triggering a copper rush; LME copper closed 10-9 at $14,550/ton; TC at 32-week historic lows",
+   "source": "JiaDianWang, 2026-09-15; Hongye/Hualian Futures, 2026-10-12"
+  },
+  {
+   "material": "Semiconductor OSAT",
+   "change": "AI chip OSAT demand crowding out conventional chip OSAT capacity; OSAT quotes up 10%~30%, rush orders from small/mid customers doubling",
+   "source": "icviews / Semiconductor Industry Watch, 2026-10-12"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "Consumer electronics",
+   "key_data": "Q3 global smartphone shipments -20% YoY (lowest Q3 since 2012); global phone retail prices up ~20% cumulatively since start-2026",
+   "chain": "Counterpoint 10-12: memory costs materially squeezing device shipments, transmitting into commodity-material demand mix",
+   "source": "Cailian Press, 2026-10-12"
+  },
+  {
+   "industry": "Chemicals",
+   "key_data": "Kingfa/Dawn 10-8 effective: modified PA6 +RMB 2,500/ton, PA66/PBT +RMB 2,000/ton; Celanese raising Americas PA6/PA66 from 10-19 (PA66 +$0.33/kg)",
+   "chain": "Cost pressure rising on nylon plastic parts such as junction boxes, cable ties and fan blades",
+   "source": "Sina Finance / Shanghai Securities News, 2026-10-10; Business Wire, 2026-10-09"
+  },
+  {
+   "industry": "Memory → devices",
+   "key_data": "Mobile storage spot +300%+ cumulatively in ~3 months; Apple/Samsung had already cut orders on DRAM costs",
+   "chain": "Events recorded 10-11/10-12, status continuing",
+   "source": "China.com / Caipai News, 2026-10-10~10-12"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "MLCC / Capacitors",
+   "subcategories": [
+    "电容",
+    "电阻与电感"
+   ],
+   "company": null,
+   "type": "涨价（加码）",
+   "event_id": "evt-mlcc-price-hike",
+   "detail": "Samsung Electro-Mechanics signs another $212M+ long-term deal on 10-9 (4 deals total, KRW 2.11 trillion, extended through end-2027); plans 25%~30% hike on consumer X5R in Q4 (research secondhand); Murata EOL timeline confirmed (confirmation through end-2027, LTB through March 2028, final shipments 2029) [BOM Impact: Murata / Samsung Electro-Mechanics / Yageo / Walsin / Fenghua are key PCBA makers]"
+  },
+  {
+   "category": "Semiconductor OSAT",
+   "subcategories": [
+    "PCBA板卡"
+   ],
+   "company": null,
+   "type": "涨价",
+   "event_id": "evt-osat-price-hike",
+   "detail": "OSAT quotes up 10%~30%, rush orders from small/mid customers even doubling; AI chip OSAT demand crowding out conventional chip OSAT capacity (icviews / Semiconductor Industry Watch, 10-12)"
+  },
+  {
+   "category": "Copper / Aluminum",
+   "subcategories": [
+    "Copper & Silver",
+    "Aluminum Fin Stock"
+   ],
+   "company": null,
+   "type": "价格更新",
+   "event_id": "evt-copper-high",
+   "detail": "SHFE copper Nov-26 closed 10-12 at RMB 110,630/ton (+0.93%); Yangtze spot #1 copper RMB 112,160/ton (+400, premium 360); LME copper closed 10-9 at $14,550/ton; SHFE aluminum Nov-26 at RMB 23,590/ton, Yangtze A00 aluminum RMB 23,810/ton, LME aluminum ~$3,057/ton; TC falling 32 straight weeks to historic lows, some smelters cutting output (Sina Finance / Yangtze Nonferrous / Hongye Futures, 10-12). 10-13 closes and US Section 232 copper tariff / Centinela strike developments unverifiable — excluded per policy"
+  },
+  {
+   "category": "Memory",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "type": "涨价",
+   "event_id": "evt-dram-hbm-shortage",
+   "detail": "Samsung HBM4 quoted at ~$4-5/Gb, roughly 3x HBM3E; HBM to consume nearly 30% of global DRAM wafer capacity; Micron warns 2027/2028 supply-demand tighter; mobile storage spot up 300%+ cumulatively in ~3 months (China.com 10-10; Caipai News 10-12) [BOM Impact: memory sits in the chips & semiconductors EE category]"
+  },
+  {
+   "category": "MCU / Analog & Power ICs",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "company": null,
+   "type": "涨价（已生效）",
+   "event_id": "evt-onsemi-price-hike-2",
+   "detail": "onsemi new prices effective 10-10, no follow-up moves; Nations Technologies +10%~20% from 10-1 continuing to land [BOM Impact: ON/onsemi and TI are key PCBA makers]"
+  },
+  {
+   "category": "PCB / CCL",
+   "subcategories": [
+    "PCB Boards",
+    "PCBA板卡"
+   ],
+   "company": null,
+   "type": "涨价",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "detail": "BofA Securities 10-10 research reiterates 'Buy' on Kingboard Laminates and Doosan, bullish on CCL spec upgrades + strong demand for 2026H2–2027H1 (Gelonghui, 10-10); 7628 e-glass cloth averaged RMB 5.11/m in Feb → RMB 10.2/m in Aug (+121%); Kingboard FR-4 up over 270% this year (Xueqiu supply-chain review, 9-14)"
+  },
+  {
+   "category": "Compressors",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "company": null,
+   "type": "排查无异常",
+   "event_id": null,
+   "detail": "Highly / Lingda / GMCC / Danfoss / Nidec-Embraco: no price letters, lead-time anomalies or discontinuations/EOL in the last 3 days"
+  },
+  {
+   "category": "Refrigerant / Refrigeration Oil",
+   "subcategories": [
+    "Refrigerant",
+    "Refrigerant Oil"
+   ],
+   "company": null,
+   "type": "价格更新",
+   "event_id": null,
+   "detail": "Juhua / Dongyue / Sanmei / Yonghe: no new price letters or quota policies in 3 days; R32 ~RMB 62,500/ton, +34% YoY (continuing basis); 2026 HFC quota 797,800 tons"
+  },
+  {
+   "category": "Transformers",
+   "subcategories": [
+    "变压器与互感器",
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers"
+   ],
+   "company": null,
+   "type": "排查无异常",
+   "event_id": null,
+   "detail": "No new price or lead-time news on transformers in 3 days"
+  },
+  {
+   "category": "Low-Voltage Electrical / VSD",
+   "subcategories": [
+    "断路器与接触器",
+    "继电器与电源",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "company": null,
+   "type": "排查无异常",
+   "event_id": null,
+   "detail": "Inovance / INVT / ABB / Siemens, Schneider / Chint / Delixi: no new price-adjustment letters in 3 days (older letters found were from Apr–May and Aug)"
+  },
+  {
+   "category": "Motors / Fans / Pumps / Bearings / Magnets",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings",
+    "Magnets"
+   ],
+   "company": null,
+   "type": "价格更新",
+   "event_id": "evt-rare-earth-q4-price",
+   "detail": "Rare-earth concentrate Q4 price settled 10-09 (RMB 38,769/ton, +47.94% YoY), already recorded, no change today; no new developments on motors/pumps/bearings"
+  },
+  {
+   "category": "Valves / Heat Exchange",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "company": null,
+   "type": "排查无异常",
+   "event_id": null,
+   "detail": "Sanhua / DunAn / Yinlun / Kingair: no anomalies in 3 days"
+  },
+  {
+   "category": "Sensors",
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature"
+   ],
+   "company": null,
+   "type": "排查无异常",
+   "event_id": null,
+   "detail": "No price hikes, shortages or EOL on pressure/temperature/flow sensors"
+  },
+  {
+   "category": "Resistors & Inductors",
+   "subcategories": [
+    "电阻与电感"
+   ],
+   "company": null,
+   "type": "涨价（延续性）",
+   "event_id": null,
+   "detail": "Fujie Electronics led with +8%~20% ('first shot'), Fenghua followed, Jiangxi Changlong 10%~20% (EE Times China early-Oct roundup; original letters mostly Dec–Jan, continuing development) [BOM Impact: Fenghua is a key PCBA maker]"
+  },
+  {
+   "category": "Connectors & Wiring Harness",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "company": null,
+   "type": "涨价（延续性）",
+   "event_id": null,
+   "detail": "TE / Amphenol / Molex cumulative hikes of 5%~30% (AI high-speed connectors ~+14%~28%); high-end lead times stretched to 16~20 weeks, some over 30 weeks (9-15 special report, continuing status) [BOM Impact: TE is a key PCBA maker]"
+  },
+  {
+   "category": "Crystal Oscillators / FPGA",
+   "subcategories": [
+    "时钟/晶振/FPGA"
+   ],
+   "company": null,
+   "type": "排查无异常",
+   "event_id": null,
+   "detail": "No new news on crystal oscillators/FPGA; adjacent semiconductor OSAT quotes up 10%~30% (see top stories)"
+  },
+  {
+   "category": "Gaskets / Seals (Tier B batch-8 hit)",
+   "subcategories": [
+    "Gaskets - Grommets - Seals"
+   ],
+   "company": null,
+   "type": "涨价（上游成本）",
+   "event_id": null,
+   "detail": "SHFE natural rubber front-month closed 10-8 at RMB 20,145/ton, +28% YTD, at 9-year highs; 60+ tire makers issued 70+ price-hike letters of 2%~5% since September (Hualong Net 10-08; Ningbo China Net 10-09)"
+  },
+  {
+   "category": "Tier B rotation check",
+   "subcategories": [
+    "Bolts - Screws - Studs",
+    "Condensing Units",
+    "Fabrications - Electrical Enclosures",
+    "Iron Castings - Small <100 Lbs",
+    "PCBA",
+    "Rotary",
+    "Switch - Electrical",
+    "Uncategorized Electrn Components-Assbly",
+    "Wire Harness",
+    "铸锻件与机加工"
+   ],
+   "company": null,
+   "type": "排查无异常",
+   "event_id": null,
+   "detail": "Batch 8: 10 categories (bolts/screws, condensing units, electrical enclosure sheet metal, small iron castings, PCBA, rotary, electrical switches, uncategorized electronic assemblies, wire harness, cast/forged & machined parts) quick-checked with no substantive developments; consecutive zero-hit count stays 0, biweekly cadence maintained"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261013-01",
+   "title": "MLCC price-hike chain escalates (Samsung Electro-Mechanics long-term capacity lock + Q4 hike plan of 25%~30%)",
+   "urgency": "高",
+   "impact": "MLCC/capacitors (Murata / Samsung Electro-Mechanics / Yageo / Walsin / Fenghua are key PCBA makers)",
+   "action": "Rolling safety-stock builds on high-capacitance part numbers from Samsung Electro-Mechanics / Murata / Yageo / Walsin; lock Q4 price terms with suppliers; complete alternative-part validation and LTB quantities for Murata EOL part numbers before the end-2027 customer-confirmation cutoff",
+   "trigger": "Price-hike letters, lead times >16 weeks",
+   "deadline": "2027-12-31",
+   "related_events": [
+    "evt-mlcc-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261013-02",
+   "title": "OSAT price hikes crowding out conventional chip capacity (rush orders doubling)",
+   "urgency": "中",
+   "impact": "Chip / PCBA OSAT capacity",
+   "action": "Recheck lead times on critical ICs (including power/signal chain); raise safety stock appropriately to avoid rush-order surcharges near delivery",
+   "trigger": "OSAT price-increase notices, chip lead times >20 weeks",
+   "deadline": null,
+   "related_events": [
+    "evt-osat-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261013-03",
+   "title": "Copper at highs + smelter side tightening (TC at 32-week historic lows)",
+   "urgency": "中",
+   "impact": "Copper tube / wiring harness / busbar",
+   "action": "Maintain normal safety stock, do not chase highs; recheck October price terms with copper-tube / harness suppliers",
+   "trigger": "LME copper record highs",
+   "deadline": null,
+   "related_events": [
+    "evt-copper-high"
+   ]
+  },
+  {
+   "id": "warn-20261013-04",
+   "title": "Nylon PA66 price hikes (Kingfa/Dawn effective 10-8, Celanese effective 10-19)",
+   "urgency": "中",
+   "impact": "Plastic parts (junction boxes / cable ties / fan blades)",
+   "action": "Confirm price validity periods and spot inventory with nylon plastic-part suppliers for junction boxes / cable ties / fan blades",
+   "trigger": "Plastic-part quote increases",
+   "deadline": "2026-10-19",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261013-05",
+   "title": "Rubber gasket costs rising (natural rubber at 9-year highs)",
+   "urgency": "低",
+   "impact": "Gaskets / seals",
+   "action": "Lock Q4 price terms with gasket/seal suppliers",
+   "trigger": "Follow-on supplier price letters",
+   "deadline": null,
+   "related_events": []
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "有实质动态",
+   "note": "YORK YMAE-P R290 reversible high-temperature heat pump (90~360 kW) debuts on Chillventa opening day"
+  },
+  {
+   "company": "开利",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "Claros PFAS agreement was recorded 10-12; nothing new in this window"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "Esaote medical-imaging acquisition closing (10-09) is medical business, outside HVAC scope"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days (H1 results briefing on 10-16)"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "Exhibiting at Chillventa opening today: new-generation R290/CO2 rotary and scroll compressors, PY-125 water pumps and AR-T/AR-9HS fan motors"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "No new developments on the appliance side; Samsung Electro-Mechanics MLCC long-term deal covered in Section 5"
+  },
+  {
+   "company": "Vertiv",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "No substantive new developments in 3 days"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-13",
+   "event": "Chillventa 2026 opens (Nuremberg, 10-13~15)"
+  },
+  {
+   "date": "2026-10-16",
+   "event": "tekmar ~6% price increase effective (ACHR North America October list)"
+  },
+  {
+   "date": "2026-10-19",
+   "event": "Panasonic 3.7%~4.0% increase effective (ACHR list); Celanese Americas PA6/PA66 increase (PA66 +$0.33/kg) effective"
+  },
+  {
+   "date": "2027-12-31",
+   "event": "Murata EOL part-number customer-confirmation cutoff"
+  }
+ ]
+}
