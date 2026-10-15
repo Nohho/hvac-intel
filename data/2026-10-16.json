@@ -1,0 +1,599 @@
+{
+ "meta": {
+  "date": "2026-10-16",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-16-hvac-cdu-morning-briefing.md",
+  "note": "周五早报。PCB/CCL涨价链再加码（建滔年内第八度调价+15%、松下部分CCL 2027-1起涨3倍、电子布10月再涨超10%）；铜价回落至约14,436美元/吨、LME铝跌破3,000美元创年内低点；美的加入英伟达MGX AI Factory生态（OCP峰会名单）；封测\"史上最强涨价潮\"细节（10-12）与MLCC下半年价格预期追加事件库；Tier B第11批轮查3个实质涨价动态（均为ACHR 10月清单已收录+包装EPS/Mondi纸涨价），batch 12误派先行查完（0 hit）结果banked供10-17引用。"
+ },
+ "daily_report": {
+  "date": "2026-10-16",
+  "title": "HVAC / 液冷 CDU 行业情报早报",
+  "headline": "PCB/CCL涨价链再加码（建滔第八度调价、松下CCL 2027年涨3倍）、铜价回落、铝创年内低点；美的加入英伟达MGX生态；Tier B第11批3个涨价动态。",
+  "sections": [
+   "行业动态/技术与合作",
+   "头条事件",
+   "数据中心/AI虹吸效应",
+   "跨行业传导",
+   "供应商动态",
+   "供应链预警与建议"
+  ],
+  "hotspot_count": 2,
+  "warning_count": 6
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261016-01",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "title": "PCB/CCL涨价链再加码：建滔第八度调价+15%，松下部分CCL 2027年涨3倍",
+   "heat": 86,
+   "heat_reason": "建滔年内第八度调价、电子布月内再涨超10%、松下2027年涨3倍三线叠加，Q4订单窗口明确",
+   "tags": [
+    "涨价",
+    "PCB",
+    "影响BOM"
+   ],
+   "severity": "中",
+   "date": "2026-10-14",
+   "section": "头条事件",
+   "summary": "建滔积层板2116及以下薄型玻纤布制CCL及半固化片即日起新接订单涨价15%，为今年第八度调价；松下通知客户部分一般多层板用CCL（R-1705/R-1766/R-1566/R-1755系列）自2027-1-1出货起涨价200%（3倍），涵盖郡山/广州/苏州/台湾/泰国五大生产据点；电子布10月再涨超10%（7628 +1.5元/米、G75电子纱 +3,000元/吨、薄布 +2.5元/米）；花旗预计建滔11/12月再涨约10%、年底现货均价或升至每张420元。",
+   "numbers": [
+    "建滔CCL即日起新接订单 +15%（今年第8度）",
+    "松下部分CCL 2027-1-1出货起 +200%（3倍）",
+    "7628电子布 +1.5元/米",
+    "G75电子纱 +3,000元/吨",
+    "薄布 +2.5元/米",
+    "花旗：建滔11/12月或再涨约10%，年底现货均价或至420元/张"
+   ],
+   "sources": [
+    {
+     "outlet": "工商时报",
+     "date": "2026-10-14",
+     "url": "",
+     "first_party": false
+    },
+    {
+     "outlet": "数位时代",
+     "date": "2026-10-14",
+     "url": "",
+     "first_party": false
+    },
+    {
+     "outlet": "中国证券报",
+     "date": "2026-10-13",
+     "url": "",
+     "first_party": false
+    },
+    {
+     "outlet": "格隆汇（转花旗研报）",
+     "date": "2026-10-14",
+     "url": "",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261016-01"
+   ]
+  },
+  {
+   "id": "evt-20261016-02",
+   "event_id": "evt-copper-high",
+   "title": "铜价回落：LME 10-14收约14,436美元/吨，铝跌破3,000美元创年内低点",
+   "heat": 78,
+   "heat_reason": "BHP罢工风险解除后铜价回落、ICSG给出2026年过剩预期，Q4锁价窗口信号",
+   "tags": [
+    "原材料"
+   ],
+   "severity": "低",
+   "date": "2026-10-15",
+   "section": "头条事件",
+   "summary": "LME期铜10-14收盘约14,436美元/吨（-0.97%，盘中一度14,700美元创9-23以来新高，必和必拓Escondida铜矿罢工风险解除后回落）；ICSG预计2026年全球精炼铜供应过剩约10.4万吨；LME期铝跌1.7%报2,987.5美元/吨，跌破3,000关口创年内低点；沪铝AL2611收23,120元/吨，佛山A00现货23,690元/吨。",
+   "numbers": [
+    "LME铜10-14收 ~14,436美元/吨（-0.97%）",
+    "盘中一度 14,700美元/吨（9-23以来新高）",
+    "ICSG：2026年精炼铜供应过剩约10.4万吨",
+    "LME铝 2,987.5美元/吨（-1.7%，年内低点）",
+    "沪铝AL2611 23,120元/吨",
+    "佛山A00现货 23,690元/吨"
+   ],
+   "sources": [
+    {
+     "outlet": "新浪财经/金十",
+     "date": "2026-10-15",
+     "url": "",
+     "first_party": false
+    },
+    {
+     "outlet": "光大期货日报",
+     "date": "2026-10-15",
+     "url": "",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261016-03"
+   ]
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "存储器",
+   "change": "韩国专家10-15称当前存储市场供给缺口约30%~40%；南亚科通知客户DRAM合约价再度上调最高20%（10-7）；巴克莱/摩根大通口径不变（DRAM缺口2027Q4见顶、缺口率13.9%）",
+   "source": "中国IC交易网10-15/10-07；事件库 evt-dram-hbm-shortage"
+  },
+  {
+   "material": "封测",
+   "change": "半导体产业纵横10-12披露\"史上最强涨价潮\"：封测报价10%~30%且随时在涨，中小客户加急订单价格翻倍；日月光全年资本开支105亿美元、LEAP先进封测营收目标35亿+（2027年翻番）；京元电子资本开支500亿新台币、产能扩30%~50%",
+   "source": "半导体产业纵横10-12；事件库 evt-osat-price-hike"
+  },
+  {
+   "material": "MLCC",
+   "change": "AI Morning Briefing（10-13）预计2026H2高容MLCC仍有20%~30%上涨空间、中低端+10%~20%，供需紧张延续至2027；村田接单出货比1.47创纪录、拟追加投资（10-30财报公布金额）格局不变",
+   "source": "AI Morning Briefing 10-13；事件库 evt-mlcc-price-hike"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "半导体设备/包装",
+   "key_data": "ASML对韩国市场EUV/DUV光刻机全部零部件统一涨价10%（2027-1起执行，三星/SK海力士已接受；10-10报道）格局延续；Mondi纸包装Q3再次上调多个纸种价格对冲能源成本（Reuters 10-15）",
+   "chain": "设备端涨价→晶圆厂产能投资成本上升→或间接抬升芯片供给成本；包装成本通胀向设备端传导",
+   "source": "财闻/网易科技10-10（转The Elec）；Reuters 10-15"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "美的确认加入英伟达MGX AI Factory生态",
+   "summary": "2026 OCP全球峰会公布名单；MGX围绕Vera Rubin平台覆盖液冷/电源/配电，45°C高温液冷成新标准，美的热管理获下一代AI基础设施规格对接先发优势。",
+   "source": "每日经济新闻，10-15",
+   "vendor_voice": false
+  },
+  {
+   "title": "日立涡旋压缩机以独立展商亮相Chillventa 2026",
+   "summary": "发布R-290低环境温热泵用DC变频压缩机及R-290/R-454C兼容压缩机方案，正式加强欧洲市场独立品牌投入。",
+   "source": "PRNewswire官稿，10-14",
+   "vendor_voice": true
+  },
+  {
+   "title": "Panasonic Industry联合SIT亮相Chillventa 2026",
+   "summary": "SIT新款商用通风轴流风机+Panasonic AR-9HS/AR-T/AR-BS高效风机电机。",
+   "source": "Electronics Media，10-7",
+   "vendor_voice": true
+  },
+  {
+   "title": "三星河内\"The Brief\"发布会聚焦HVAC B2B",
+   "summary": "发布Bespoke AI WindFree Pro空调与SmartThings Pro商用平台；东南亚/大洋洲B2B收入同比增20%以上、HVAC业务B2B占比超50%，拟借FläktGroup加码数据中心冷却。",
+   "source": "lowyat/pokde/brg，10-14",
+   "vendor_voice": true
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "无实质动态",
+   "note": "近3天仅分析师评级与产品安全公告"
+  },
+  {
+   "company": "开利",
+   "status": "无实质动态",
+   "note": "仅季度分红与Q3财报预告（10-29）"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "仅分析师评级；10-1冷气候热泵与10-6 KSE合作在窗口外"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "10-8马来西亚制冷剂回收生态在窗口外"
+  },
+  {
+   "company": "美的",
+   "status": "有实质动态",
+   "note": "10-15确认加入英伟达MGX AI Factory生态（OCP峰会名单）"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "近3天仅专利公告与促销噪音"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "近3天仅回购与财报噪音"
+  },
+  {
+   "company": "日立",
+   "status": "有实质动态",
+   "note": "涡旋压缩机以独立展商亮相Chillventa 2026（R-290新品）"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "Chillventa联合SIT发布新轴流风机/风机电机；ACHR 10月清单：HVAC 10-19起涨价3.7%~4.0%"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "菲律宾HVAC Academy（10-9）与印度涨价（10-5消息）均在窗口外"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "河内\"The Brief\"发布会（10-14），HVAC B2B占比超50%，拟借FläktGroup拓展数据中心冷却"
+  },
+  {
+   "company": "Vertiv",
+   "status": "无实质动态",
+   "note": "印度30MW direct-to-chip项目为已收录项目的交付落地进展，非新项目"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "近3天仅公司治理事项"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "9-16海外27.82亿元大单在前期早报覆盖范围；近3天仅股价噪音"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "近3天仅股价噪音（Q3财报预告10-29）"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "9-29液冷项目用地竞得在前期覆盖范围；近3天仅股价噪音"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "近3天仅宏观行情噪音"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "星展上调目标价为分析师口径；YOGA AI PC开售属消费电子"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "压缩机（离心/往复/转子/涡旋/螺杆）",
+   "type": "排查无异常",
+   "detail": "海立/凌达/美芝/丹佛斯近3天无涨价、交期或产能新消息。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Scroll Compressors",
+    "Screw Compressors"
+   ]
+  },
+  {
+   "category": "制冷剂/冷冻机油",
+   "type": "排查无异常",
+   "detail": "巨化/东岳/三美/永和近3天无新涨价函或配额消息。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Refrigerant",
+    "Refrigerant Oil"
+   ]
+  },
+  {
+   "category": "铜及铜制品/铜管件",
+   "type": "价格更新",
+   "detail": "LME铜10-14收约14,436美元/吨（-0.97%，盘中一度14,700美元创9-23以来新高，BHP Escondida罢工风险解除后回落）；ICSG预计2026年全球精炼铜供应过剩约10.4万吨（新浪财经/金十 10-15）。",
+   "event_id": "evt-copper-high",
+   "company": null,
+   "subcategories": [
+    "Copper & Silver",
+    "Fabrications & Assemblies - Copper",
+    "Fittings - Copper",
+    "Tube, Lw Coil Igt Or Smooth - Copper",
+    "Tube, Technical - Copper"
+   ]
+  },
+  {
+   "category": "钢/铝（热轧钢/钢板/铝翅片/铝挤压）",
+   "type": "价格更新",
+   "detail": "LME铝10-14跌1.7%报2,987.5美元/吨，跌破3,000关口创年内低点；沪铝AL2611收23,120元/吨、佛山A00现货23,690元/吨（新浪财经/光大期货日报 10-15）；热轧/板材无新报价，排查无异常。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel",
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ]
+  },
+  {
+   "category": "IGBT模块/电子电源/高低压变频器",
+   "type": "排查无异常",
+   "detail": "安森美第二轮涨价10-10已生效，生效后无新增动作【影响BOM：ON为PCBA主力maker】；瑞萨2027-1-1新价格体系不变；ST第三轮8-23已落地；英飞凌泰国功率模块工厂10-1已投产（已收录）。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "IGBT Modules",
+    "Power Supplies - Electronic",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ]
+  },
+  {
+   "category": "断路器/接触器/继电器/变压器/互感器",
+   "type": "排查无异常",
+   "detail": "施耐德/ABB/西门子/正泰/德力西近3天无调价函；变压器/互感器无新动态。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay",
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers"
+   ]
+  },
+  {
+   "category": "电机/风机/水泵/轴承/磁钢",
+   "type": "价格更新",
+   "detail": "氧化镨钕10-10报74万元/吨（已收录）；新增：湘财证券预计\"镨钕坚挺、镝铽偏弱\"，10月供应边际宽松压制价格上方空间（新浪财经/数据宝10-12、证券时报10-13）；包钢Q4精矿价38,769元/吨高位企稳（已收录）；电机/风机/水泵/轴承本身排查无异常。",
+   "event_id": "evt-rare-earth-q4-price",
+   "company": null,
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings",
+    "Magnets"
+   ]
+  },
+  {
+   "category": "阀件（控制阀/电磁阀/四通阀）/换热（微通道/管翅/壳管）",
+   "type": "排查无异常",
+   "detail": "三花智控/盾安/银轮近3天无涨价、交期或产能新消息。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ]
+  },
+  {
+   "category": "传感器（通用/流量/压力/温度）",
+   "type": "排查无异常",
+   "detail": "传感器快速排查均无实质动态。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature"
+   ]
+  },
+  {
+   "category": "PCB板",
+   "type": "涨价",
+   "detail": "建滔积层板2116及以下薄型玻纤布制CCL及PP即日起新接订单+15%（今年第八度调价；工商时报10-14）；松下部分一般多层板用CCL（R-1705/R-1766/R-1566/R-1755）自2027-1-1出货起涨200%（3倍），涵盖郡山/广州/苏州/台湾/泰国生产据点（工商时报/数位时代10-14）；电子布10月再涨超10%（7628 +1.5元/米、G75电子纱+3,000元/吨、薄布+2.5元/米；中国证券报10-13）；花旗：建滔11/12月或再涨约10%、年底现货均价或至420元/张（格隆汇10-14）。【影响BOM：EE品类 PCBA/电子代工】",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "company": null,
+   "subcategories": [
+    "PCB Boards"
+   ]
+  },
+  {
+   "category": "EE 存储器",
+   "type": "涨价",
+   "detail": "巴克莱/摩根大通口径不变；新增：南亚科通知客户DRAM合约价再度上调最高20%（中国IC交易网10-7）；韩国专家10-15称当前存储供给缺口约30%~40%（中国IC交易网10-15）。【影响BOM：存储为PCBA主力料】",
+   "event_id": "evt-dram-hbm-shortage",
+   "company": null,
+   "subcategories": [
+    "存储器"
+   ]
+  },
+  {
+   "category": "EE 电容",
+   "type": "涨价",
+   "detail": "村田拟追加MLCC产能投资（10-30财报公布金额）、接单出货比1.47创纪录（已收录）；新增：AI Morning Briefing（10-13）预计2026H2高容MLCC仍有20%~30%上涨空间、中低端+10%~20%，供需紧张延续至2027。【影响BOM：村田/国巨/华新科/三星电机/风华高科/太阳诱电均为PCBA主力maker】",
+   "event_id": "evt-mlcc-price-hike",
+   "company": null,
+   "subcategories": [
+    "电容"
+   ]
+  },
+  {
+   "category": "EE 模拟与电源IC/MCU",
+   "type": "排查无异常",
+   "detail": "TI第三轮调价10月已落地、国民技术10-1涨价已生效、瑞萨2027-1新体系；均无新增。【影响BOM：TI为PCBA主力maker】",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ]
+  },
+  {
+   "category": "EE 时钟/晶振/FPGA",
+   "type": "排查无异常",
+   "detail": "快速排查无实质动态。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "时钟/晶振/FPGA"
+   ]
+  },
+  {
+   "category": "EE 电阻与电感",
+   "type": "排查无异常",
+   "detail": "快速排查无实质动态。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "电阻与电感"
+   ]
+  },
+  {
+   "category": "EE 连接器与线束",
+   "type": "排查无异常",
+   "detail": "快速排查无实质动态。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "连接器与线束"
+   ]
+  },
+  {
+   "category": "EE PCBA板卡/封测",
+   "type": "涨价",
+   "detail": "半导体产业纵横10-12：\"史上最强涨价潮\"，封测报价10%~30%且随时在涨，中小客户加急订单价格翻倍；日月光全年资本开支105亿美元、LEAP先进封测营收目标35亿+（2027年翻番）；京元电子资本开支500亿新台币、产能扩30%~50%。【影响BOM：EE品类 PCBA/电子代工】",
+   "event_id": "evt-osat-price-hike",
+   "company": null,
+   "subcategories": [
+    "PCBA板卡"
+   ]
+  },
+  {
+   "category": "北美HVAC 10月涨价清单执行进展（Tier B轮查）",
+   "type": "涨价",
+   "detail": "tekmar（Watts旗下HVAC控制器）均约6%今日（10-16）生效、Robertshaw部分产品最高15%已于10-12生效、Regal Rexnord精选品牌电机及配件+2.5%已于10-1生效（ACHR News 10月涨价清单 10-08；均为事件库evt-na-hvac-october-price-hikes已收录，今日为生效确认，无状态变化）。",
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "company": null,
+   "subcategories": [
+    "Controllers",
+    "Large Motors (100 HP And Above 75KW) - Hermetic"
+   ]
+  },
+  {
+   "category": "包装（Tier B轮查）",
+   "type": "涨价",
+   "detail": "Epsilyte发泡聚苯乙烯（EPS，用于设备包装）涨价至0.11美元/磅（10-1生效，原料成本驱动；Business Wire 9-25）；Mondi纸包装Q3再次上调多个纸种价格对冲能源成本（Reuters 10-15）。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Packaging: Plastics & Distribution Supp"
+   ]
+  },
+  {
+   "category": "Tier B轮查",
+   "type": "排查无异常",
+   "detail": "第11批其余8品类快速排查均无实质动态。",
+   "event_id": null,
+   "company": null,
+   "subcategories": [
+    "Cables",
+    "Fiberglass",
+    "Gears: Actuators",
+    "Sealants - Caulks",
+    "Tanks, Cylinders",
+    "Uncategorized Insulation",
+    "密封与制冷剂",
+    "风机"
+   ]
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261016-01",
+   "title": "PCB/CCL涨价链再加码",
+   "urgency": "中",
+   "impact": "PCB板/覆铜板成本与交期",
+   "action": "Q4 PCB订单提前6~8周下达，与板厂确认涨价传导条款；松下CCL长协覆盖评估",
+   "trigger": "7628电子布月内再涨价或CCL发新涨价函",
+   "deadline": null,
+   "related_events": [
+    "evt-20261016-01"
+   ]
+  },
+  {
+   "id": "warn-20261016-02",
+   "title": "存储缺口认知扩大至30%~40%、南亚科合约价再上调20%",
+   "urgency": "中",
+   "impact": "驱动板/控制器用存储料成本与交期",
+   "action": "驱动板/控制器用存储料（DDR/NOR/eMMC）备3~6个月安全库存，与PCBA厂确认涨价传导条款",
+   "trigger": "Q4合约价涨幅落地（TrendForce +10%~20%预测兑现）",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261016-03",
+   "title": "铜价回落窗口",
+   "urgency": "低",
+   "impact": "铜管/连接管/线缆成本",
+   "action": "Q4未覆盖铜材订单可分批锁价",
+   "trigger": "LME 3个月铜站上14,800美元/吨 → 启动追加锁价",
+   "deadline": null,
+   "related_events": [
+    "evt-20261016-02"
+   ]
+  },
+  {
+   "id": "warn-20261016-04",
+   "title": "北美HVAC 10月涨价清单进入生效期",
+   "urgency": "低",
+   "impact": "对美配套/出口HVAC部件成本传导",
+   "action": "对美配套/出口业务评估成本传导；已收录事件生效确认，无新动作",
+   "trigger": "ACHR清单出现11月新涨价函",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261016-05",
+   "title": "封测产能紧张延续、加急订单价格翻倍",
+   "urgency": "中",
+   "impact": "PCBA交期与封测成本",
+   "action": "PCBA厂确认交期条款，避免临单加急",
+   "trigger": "原厂发布新涨价函或交期突破当前水平",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261016-06",
+   "title": "MLCC供需紧平衡延续",
+   "urgency": "中",
+   "impact": "高容/车规MLCC供应与交期",
+   "action": "高容/车规MLCC第二货源（风华/三环）认证加速",
+   "trigger": "交期突破10个月或原厂发新涨价函",
+   "deadline": null,
+   "related_events": []
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-16",
+   "event": "tekmar均约6%涨价生效（ACHR北美10月清单）；建滔CCL第八度调价+15%起效（10-13起）"
+  },
+  {
+   "date": "2026-10-19",
+   "event": "Panasonic HVAC 3.7%~4.0%涨价生效（ACHR清单）；Celanese美洲PA6/PA66提价生效"
+  },
+  {
+   "date": "2026-10-29",
+   "event": "开利Q3财报发布；高澜股份Q3财报预告"
+  },
+  {
+   "date": "2026-10-30",
+   "event": "村田财报（公布MLCC追加投资金额）"
+  },
+  {
+   "date": "2027-01-01",
+   "event": "瑞萨新价格体系生效；ASML对韩光刻机零部件涨价10%生效；松下部分CCL涨200%出货生效"
+  },
+  {
+   "date": "2027-12-31",
+   "event": "村田EOL料号客户确认截止"
+  }
+ ]
+}
