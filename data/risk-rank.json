@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-18",
-  "window_days": 15,
+  "generated": "2026-10-19",
+  "window_days": 16,
   "items": [
     {
       "name": "电容",
@@ -10,21 +10,21 @@
     },
     {
       "name": "存储器",
-      "score": 32,
-      "hits": 12,
-      "sample": "南亚科10-7通知客户DRAM合约价再上调最高+20%（厂商端实际动作，公司不予置评）；大摩上调Q4口径（DRAM+10~15%/NAND+15~20%/企业级SSD+23~28%"
+      "score": 33,
+      "hits": 13,
+      "sample": "见第3节：苹果CEO称内存供应'严重危机'（鉅亨網10-19）、长鑫前三季预告营收2650~2700亿/净利1310~1325亿扭亏（10-16公告）、DRAM合约价环比涨幅逐季收"
     },
     {
       "name": "PCB Boards",
-      "score": 30,
-      "hits": 10,
-      "sample": "建滔积层板2116及以下薄型玻纤布制CCL及PP即日起新接订单+15%（今年第八度调价；工商时报10-14）；松下部分一般多层板用CCL（R-1705/R-1766/R-1566/"
+      "score": 31,
+      "hits": 11,
+      "sample": "窗口内无建滔第9函或其他CCL新涨价通知；工商時報10-18综述复述第8函与松下CCL涨200%（法人观点，无新增价格事实）。"
     },
     {
       "name": "IGBT Modules",
-      "score": 29,
-      "hits": 11,
-      "sample": "安森美第二轮涨价10-10已生效，10-15~17排查无新交期/allocation消息；英飞凌泰国厂10-1投产（已收录）；瑞萨新价格体系2027-1生效（已收录）；ST近3天无"
+      "score": 30,
+      "hits": 12,
+      "sample": "英飞凌与Wolfspeed签署200mm SiC晶圆多年供应协议（10-15宣布，EE News Europe 10-16），支撑SiC量产与AI数据中心需求；安森美/ST/瑞萨窗"
     },
     {
       "name": "PCBA板卡",
@@ -57,16 +57,16 @@
       "sample": "三星电机10-6再签2856亿韩元（约2.12亿美元）2027全年AI服务器MLCC/电感长协（财联社/上海证券报经新浪财经10-9）；片式电阻结构性紧张（辰芯伟业10-6）：风华"
     },
     {
+      "name": "Small Motors: Fan Motors",
+      "score": 11,
+      "hits": 7,
+      "sample": "银轮股份液冷业务小批量订单交付中（10-14互动易再确认）；松下与SIT在Chillventa 2026联合展示HVAC风机电机方案（10-13~15）；三花/盾安无业务动态；其余"
+    },
+    {
       "name": "Copper & Silver",
       "score": 10,
       "hits": 10,
       "sample": "周日休市无新价：LME铜10-16收14,496.93美元/吨（+1.21%）为最新价；沪铜10-16收109,860元/吨；LME铝10-16报3,014美元/吨（+0.50%）"
-    },
-    {
-      "name": "Small Motors: Fan Motors",
-      "score": 10,
-      "hits": 6,
-      "sample": "ACHR 10月清单新增：ZSI-Foster/Wesanco涨价10-26生效（Supply House Times 10月清单10-16更新版）、Resideo-Honeywe"
     },
     {
       "name": "Small Motors: Fractional HP - ECM Motors",
@@ -87,10 +87,10 @@
       "sample": "ACHR 10月清单新增：ZSI-Foster/Wesanco涨价10-26生效（Supply House Times 10月清单10-16更新版）、Resideo-Honeywe"
     },
     {
-      "name": "Fabrications & Assemblies - Copper",
-      "score": 8,
-      "hits": 6,
-      "sample": "周日休市无新价：LME铜10-16收14,496.93美元/吨（+1.21%）为最新价；沪铜10-16收109,860元/吨；LME铝10-16报3,014美元/吨（+0.50%）"
+      "name": "Reciprocating Compressors",
+      "score": 9,
+      "hits": 5,
+      "sample": "海立、凌达、美芝、丹佛斯、艾默生近3~5天无涨价函/交期新闻；补充：时硕工业磁浮压缩机关键零组件已设2条专线、2027年规划第3条，TPU服务器散热水冷零件出货排至2027H1（M"
     }
   ]
 }
