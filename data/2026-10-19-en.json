@@ -1,0 +1,615 @@
+{
+ "meta": {
+  "date": "2026-10-19",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-19-hvac-cdu-morning-briefing.md",
+  "note": "Monday briefing. Hitachi Energy CEO warns of 115–130-week transformer lead times (unlocked orders could wait 4 years); intensive October price increases on pipes/fittings (Stephens +12%, Nippon Steel +¥10,000/ton, Panasonic effective today); Daikin acquires liquid-cooling firm Chilldyne; Carrier launches QuantumLeap CDU (1.3–5 MW); JCI invests S$60M to expand Singapore innovation hub; Midea Clivet magnetic-levitation centrifugal compressor; Apple CEO calls memory supply a 'severe crisis'; Infineon–Wolfspeed 200mm SiC multi-year deal; AMD embedded price adjustment effective 12-27 partially confirmed (rumor → notified); LME 3-month copper closed at $14,359.50/ton on 10-16; Tier B batch 14 with 2 hits; event library 22→29 (7 new), 6 timeline additions."
+ },
+ "daily_report": {
+  "date": "2026-10-19",
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Briefing",
+  "headline": "Hitachi Energy CEO warns of 115–130-week transformer lead times; intensive October price hikes on pipes/fittings take effect; Daikin acquires liquid-cooling firm Chilldyne; Carrier launches QuantumLeap CDU; Apple CEO calls memory supply a 'severe crisis'; Infineon–Wolfspeed 200mm SiC deal; copper closes at $14,359.50/ton.",
+  "sections": [
+   "Industry / Technology & Partnerships",
+   "Top Stories",
+   "Data-Center / AI Siphon Effects",
+   "Cross-Industry Transmission",
+   "Supplier Dynamics",
+   "Supply-Chain Warnings & Recommendations"
+  ],
+  "hotspot_count": 3,
+  "warning_count": 7
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261019-01",
+   "title": "Hitachi Energy CEO Warns Transformer Supply 'Overwhelmed'",
+   "heat": 87,
+   "heat_reason": "Average transformer lead times of 115–130 weeks — unlocked orders could wait 4 years — hit data-center and grid projects directly, with a clear window to lock in orders",
+   "tags": [
+    "数据中心",
+    "预警"
+   ],
+   "date": "2026-10-16",
+   "sources": [
+    {
+     "outlet": "Data Center Dynamics（引 FT 采访 Hitachi Energy CEO）",
+     "date": "2026-10-16",
+     "url": "https://www.datacenterdynamics.com/en/news/hitachi-energy-ceo-warns-of-transformer-supply-shortage/",
+     "first_party": false
+    }
+   ],
+   "summary": "Hitachi Energy CEO Andreas Schierenbeck told the FT that data-center demand has outstripped transformer capacity, with average lead times of 115–130 weeks and unlocked orders potentially waiting 4 years; Rystad estimates the market at $48 billion in 2026 → $67 billion by 2030; Wood Mackenzie warns ~25% of global renewable projects could face delays from transformer lead times; Hitachi will invest $6 billion and hire 15,000 people over 3 years to expand capacity.",
+   "numbers": [
+    "Average lead time 115–130 weeks",
+    "Unlocked orders could wait 4 years",
+    "$6 billion investment over 3 years",
+    "15,000 new hires"
+   ],
+   "related_warnings": [
+    "warn-20261019-01"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-hitachi-energy-transformer-warning"
+  },
+  {
+   "id": "evt-20261019-02",
+   "title": "Intensive October Price Increases on Pipes/Fittings Take Effect",
+   "heat": 86,
+   "heat_reason": "Steel pipes, fittings and valves see multiple price hikes landing in the same month; Panasonic effective today, ZSI-Foster effective 10-26, giving a clear Q4 quoting/price-lock window",
+   "tags": [
+    "涨价"
+   ],
+   "date": "2026-10-16",
+   "sources": [
+    {
+     "outlet": "Supply House Times（PHCP-PVF 10月调价汇总）",
+     "date": "2026-10-16",
+     "url": "https://www.supplyht.com/articles/107503-phcp-pvf-price-increases-october-2026",
+     "first_party": false
+    },
+    {
+     "outlet": "BigMint",
+     "date": "2026-10-19",
+     "url": "https://www.bigmint.co/insights/detail/nippon-steel-raises-sept-carbon-steel-pipe-prices-by-90-231698",
+     "first_party": false
+    },
+    {
+     "outlet": "SMM上海有色网英文",
+     "date": "2026-10-15",
+     "url": "https://news.metal.com/newscontent/104154945-us-octg-pipe-prices-surge-17-year-on-year-in-september",
+     "first_party": false
+    }
+   ],
+   "summary": "Stephens frame pipe +12% / chain-link fabric +5% effective 10-16, with a customer letter forecasting another +30% in 2027Q1 (supplier forecast); Nippon Steel carbon steel pipe +¥10,000/ton; US OCTG up 17% YoY in September to $3,031/ton; North America PHCP-PVF list update: Spirax Sarco +4%, Heat Controller +5%, Robertshaw +15%, tekmar +6% already effective; Panasonic +3.75% effective 10-19; ZSI-Foster/Wesanco effective 10-26.",
+   "numbers": [
+    "Stephens frame pipe +12% (effective 10-16)",
+    "Another +30% forecast for 2027Q1 (supplier forecast)",
+    "Nippon Steel +¥10,000/ton",
+    "US OCTG +17% YoY in September to $3,031/ton",
+    "Panasonic +3.75% (effective 10-19)",
+    "ZSI-Foster/Wesanco effective 10-26"
+   ],
+   "related_warnings": [
+    "warn-20261019-02"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-steel-pipe-price-hike-oct"
+  },
+  {
+   "id": "evt-20261019-03",
+   "title": "Daikin Acquires Liquid-Cooling Firm Chilldyne",
+   "heat": 76,
+   "heat_reason": "Daikin doubles down on liquid cooling with patented negative-pressure CDU technology; another giant joins the supply side, giving buyers leverage to compare quotes and push prices down",
+   "tags": [
+    "并购",
+    "数据中心",
+    "技术路线"
+   ],
+   "date": "2026-10-16",
+   "sources": [
+    {
+     "outlet": "Data Center Dynamics",
+     "date": "2026-10-16",
+     "url": "https://www.datacenterdynamics.com/en/news/daikin-acquires-liquid-cooling-firm-chilldyne/",
+     "first_party": false
+    }
+   ],
+   "summary": "Daikin has acquired liquid-cooling company Chilldyne, gaining its patented negative-pressure CDU (up to 300 kW) plus cold-plate/rack-manifold technology; Daikin calls it a 'key step' toward a complete hyperscale data-center ecosystem. Carrier launched QuantumLeap CDU and Midea Clivet launched a magnetic-levitation centrifugal compressor in the same week, intensifying competition on the liquid-cooling supply side.",
+   "numbers": [
+    "Negative-pressure CDU up to 300 kW"
+   ],
+   "related_warnings": [
+    "warn-20261019-06"
+   ],
+   "section": "头条事件",
+   "severity": "低",
+   "event_id": "evt-daikin-chilldyne-acquisition"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "Memory",
+   "change": "Apple's new CEO Ternus said in a 10-15 Time interview that memory supply is 'a severe crisis' and all options must be considered; interpreted as possibly adopting Chinese-made memory (reportedly testing CXMT DRAM, unconfirmed; 7 US senators wrote to oppose); industry sources say low-power DRAM prices for iPhone from Samsung and SK Hynix rose 80% and 100% QoQ respectively in Q1 this year; DRAM contract-price QoQ gains converging by quarter (Q1 +90–95% → Q3 +13–18%); CXMT raises 2027 monthly capacity target to 380–420K wafers (+~30%) and 600K wafers in 2028; shortages still run through 2028",
+   "source": "MoneyDJ 10-19; China.com 10-18; event library evt-dram-hbm-shortage / evt-apple-iphone18-orders-cut"
+  },
+  {
+   "material": "Liquid-cooling CDU / compressors",
+   "change": "Supply side added capacity in the same week: Carrier QuantumLeap (1.3–5 MW, approach temperature down to 2°C); Daikin acquires Chilldyne (negative-pressure CDU up to 300 kW); Midea Clivet magnetic-levitation centrifugal compressor + full-chain liquid-cooling solution; MEB 1.85 MW air-cooled magnetic-levitation chiller AeroLev (45°C water outlet); Shisuo Industrial's maglev-compressor key components on 2 dedicated lines with a 3rd planned for 2027 — intensifying supply-side competition gives buyers leverage to compare and push prices down",
+   "source": "DCD 10-16; PRNewswire 10-16; 10jqka 10-16; MoneyDJ 10-16; event library evt-carrier-quantumleap-cdu / evt-daikin-chilldyne-acquisition"
+  },
+  {
+   "material": "Transformers",
+   "change": "Hitachi Energy CEO warns supply is 'overwhelmed': average lead times 115–130 weeks, unlocked orders could wait 4 years; $6 billion investment and 15,000 new hires over 3 years to expand capacity; Rystad estimates market at $48 billion in 2026 → $67 billion by 2030",
+   "source": "Data Center Dynamics (via FT interview) ~10-16; event library evt-hitachi-energy-transformer-warning"
+  },
+  {
+   "material": "Copper",
+   "change": "LME 3-month copper closed at $14,359.50/ton on 10-16 (+0.35%); SHFE copper futures at RMB 109,860/ton; #1 refined copper spot at RMB 110,460/ton (-60 WoW); mild weekly pullback (#1 refined copper weekly average RMB 111,210/ton, -850)",
+   "source": "Xinhua Finance 10-17; Changjiang Nonferrous 10-16; event library evt-copper-high"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "NEV / lithium batteries",
+   "key_data": "The EU and China reached a deal limiting Chinese hybrid-vehicle exports to the EU (350,000 units/year cap); China lithium futures fell 14% this week; battery-grade lithium carbonate spot fell RMB 3,400/ton in a single day on 10-14 to RMB 108,250/ton (a ~10-month low)",
+   "chain": "Hybrid export curbs → lower lithium demand expectations → lithium carbonate price plunge → lower lithium-battery/ESS costs, watch for pass-through to cell quotes",
+   "source": "TradingView News / IndexBox 10-15~17"
+  },
+  {
+   "industry": "Crude oil / chemicals",
+   "key_data": "Brent touched $110/bbl intraday on 10-16 (first time since May), WTI closed at $101.41; crude up over 75% this year",
+   "chain": "High crude → rising chemical/plastic/logistics costs → pressure on HVAC packaging, foam materials and freight",
+   "source": "FAN Transport Insights 10-16/17"
+  },
+  {
+   "industry": "Macro / import costs",
+   "key_data": "US September import prices +8.1% YoY (BLS, released 10-16): fuels and lubricants +34.5%, natural gas +96.5%; non-fuel import prices +6.0% YoY",
+   "chain": "Cost pressure spreading from energy to broader procurement categories → ongoing cost support for the North America HVAC channel price-hike wave (PHCP-PVF list)",
+   "source": "Alpha Trader News 10-18 (compiling BLS data)"
+  },
+  {
+   "industry": "Power / manufacturing",
+   "key_data": "Guangdong October mid/long-term composite price RMB 456.78/MWh; Jiangsu October centralized auction RMB 395.32/MWh (+14.75% MoM); Qinhuangdao 5,500 kcal thermal coal RMB 1,003/ton (+40% YoY)",
+   "chain": "Off-season power prices rising instead of falling → manufacturing electricity costs may have bottomed → Q4 production-cost negotiations under pressure",
+   "source": "Sina Finance 10-17 (via Shanghai Securities News / Guangdong & Jiangsu power exchanges)"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Carrier launches QuantumLeap liquid-cooling CDU series (1.3–5 MW)",
+   "summary": "Approach temperature down to 2°C (industry norm 4°C), integrated with chillers, controls and Nlyte DCIM.",
+   "source": "Data Center Dynamics, 10-16",
+   "vendor_voice": false
+  },
+  {
+   "title": "Daikin acquires liquid-cooling firm Chilldyne",
+   "summary": "Patented negative-pressure CDU up to 300 kW plus cold plates/rack manifolds; Daikin calls it a 'key step' toward a complete hyperscale data-center ecosystem.",
+   "source": "Data Center Dynamics, 10-16",
+   "vendor_voice": false
+  },
+  {
+   "title": "JCI invests S$60M to expand Singapore innovation hub",
+   "summary": "Five-year expansion focused on next-generation cooling and thermal management for AI data centers; team growing to 90–100 people.",
+   "source": "Data Center Dynamics, 10-16",
+   "vendor_voice": false
+  },
+  {
+   "title": "Midea Clivet unveils new magnetic-levitation centrifugal compressor + full-chain liquid-cooling solution at OCP",
+   "summary": "For GW-scale AIDC: high efficiency across wide operating conditions, smooth two-way switching between free cooling and mechanical refrigeration, compact integration.",
+   "source": "PRNewswire, 10-16",
+   "vendor_voice": false
+  },
+  {
+   "title": "Panasonic launches R454C residential heat pump; Aquarea M adds R290 models",
+   "summary": "R454C air-source heat pump rated A+++ (35°C water outlet), launching in Europe April 2027; Aquarea M adds compact 3/5/7/9 kW R290 heat pumps supporting -28°C operation and 75°C water outlet.",
+   "source": "pv-magazine / Cooling Post, 10-14~16",
+   "vendor_voice": false
+  },
+  {
+   "title": "Shenling Environmental to issue RMB 1 billion convertible bonds",
+   "summary": "Announced 10-16: issuance up to RMB 1 billion, initial conversion price RMB 95.49/share; online subscription starts 10-20.",
+   "source": "10jqka, 10-16",
+   "vendor_voice": false
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控/约克",
+   "status": "有实质动态",
+   "note": "YORK YDAM named to TIME's 2026 Best Inventions (AI category, JCI website) on 10-15; YDAM mass production announced ~10-16 with YK-HT two-stage economizer centrifugal chiller previewed; S$60M investment to expand Singapore innovation hub (DCD)"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Launched QuantumLeap liquid-cooling CDU series (1.3–5 MW, approach temperature down to 2°C; DCD ~10-16)"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "No substantive news in 3 days (outside window: 9-30 800VDC chiller lab validation; 10-07 LiquidStack CDU 2.X launch)"
+  },
+  {
+   "company": "大金",
+   "status": "有实质动态",
+   "note": "Acquired liquid-cooling firm Chilldyne (negative-pressure CDU up to 300 kW; DCD ~10-16); joint AI cooling-optimization PoC with NTT (2026-07~2027-03); Phoenix modular plant expansion in production (10-14, recorded)"
+  },
+  {
+   "company": "美的",
+   "status": "有实质动态",
+   "note": "Clivet unveiled new magnetic-levitation centrifugal compressor + full-chain liquid-cooling solution at OCP (PRNewswire 10-16); joined NVIDIA MGX ecosystem (10-15, recorded, no new developments)"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "No substantive news in 3 days in Chinese or English searches"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "Only India appliance launches and capital-market news in 3 days; no HVAC/data-center developments"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "Search results are all years-old; no substantive developments in 3 days"
+  },
+  {
+   "company": "Vertiv",
+   "status": "无实质动态",
+   "note": "No new developments in window (10-4 2.3MW CoolChip CDU NVIDIA DSX Ready certification is outside window)"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "Only stock-price/capital-flow news in window; no new product, order or capacity announcements"
+  },
+  {
+   "company": "申菱环境",
+   "status": "有实质动态",
+   "note": "RMB 1 billion convertible-bond issuance announced (10-16); online subscription starts 10-20"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "Only stock-price movement news in window; no substantive announcements"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "No substantive developments 10-17~19"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "Q3 earnings preview (10-13) and RMB 9 billion private placement plan (September) both outside window; 10-16 broker 'overweight' rating is a research opinion"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "No new developments on the NVL72 first-delivery milestone in window"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "North America 5GW+ chiller long-term agreement (10-05) already in event library; only follow-up reposts this issue, no status change"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "Southeast Asia AI Home + HVAC strategy unveiled at 10-14 Hanoi tech seminar: Bespoke AI WindFree AC, SmartThings Pro commercial refrigeration monitoring; 2026 Southeast Asia/Oceania B2B revenue target up >20% YoY; plans to extend HVAC from residential/commercial into factories and data centers"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "Launched R454C residential air-source heat pump (pv-magazine 10-14); Aquarea M adds compact R290 heat pumps (Cooling Post ~10-16); joint HVAC fan-motor showcase with SIT at Chillventa 2026 (10-13~15)"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Compressors (centrifugal / reciprocating / rotary / scroll / screw)",
+   "type": "有实质动态",
+   "detail": "Highly, Lingda, GMCC, Danfoss and Emerson show no price-increase letters or lead-time news in the last 3–5 days; add-on: Shisuo Industrial's maglev-compressor key components now on 2 dedicated lines with a 3rd planned for 2027, TPU-server liquid-cooling parts booked through 2027H1 (MoneyDJ 10-16).",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Scroll Compressors",
+    "Screw Compressors"
+   ],
+   "company": null,
+   "event_id": "evt-shisuo-maglev-expansion"
+  },
+  {
+   "category": "Refrigerants",
+   "type": "有实质动态",
+   "detail": "Mainstream prices held at highs in mid-October (Lonzhong 10-14 market via Securities Star 10-15): R32 at RMB 63,500–64,500/ton, R410A at RMB 57,000–59,500/ton; R32/R410A Q4 long-term contracts raised RMB 500/ton; Juhua's 2026 quotas: R32 128,452 tons (45.63% domestic), R125 64,185 tons (38.29%), R134a 76,525 tons (36.18%) (First Capital Securities research via JRJ.com 10-10, research-quoted figures).",
+   "subcategories": [
+    "Refrigerant",
+    "Refrigerant Oil"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Copper / aluminum / steel",
+   "type": "排查无异常",
+   "detail": "Normal fluctuations: LME 3-month copper closed at $14,359.50/ton on 10-16 (+0.35%); SHFE copper futures RMB 109,860/ton; #1 refined copper spot RMB 110,460/ton (-60); LME aluminum $3,008/ton (+0.69%); A00 aluminum ingot spot RMB 23,460/ton (Xinhua Finance / Changjiang Nonferrous 10-16~17); mild weekly pullback, no abnormal moves.",
+   "subcategories": [
+    "Copper & Silver",
+    "Fabrications & Assemblies - Copper",
+    "Aluminum Fin Stock",
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "company": null,
+   "event_id": "evt-copper-high"
+  },
+  {
+   "category": "IGBT / power devices",
+   "type": "有实质动态",
+   "detail": "Infineon signed a multi-year 200mm SiC wafer supply agreement with Wolfspeed (announced 10-15, EE News Europe 10-16), supporting SiC volume production and AI data-center demand; no new letters from onsemi/ST/Renesas in window; AMD's second price-adjustment letter partially confirmed: embedded product line (ex-Xilinx FPGA/SOM/accelerator cards) adjustment effective 12-27, undelivered backlog may be repriced (FPGA Developer Circle / EE Times China 10-10, trade-media quotes, no AMD official statement); the 'server CPU +10–20%' version remains unconfirmed.",
+   "subcategories": [
+    "IGBT Modules",
+    "Power Supplies - Electronic"
+   ],
+   "company": null,
+   "event_id": "evt-amd-price-hike-2",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "category": "Variable-frequency drives / low-voltage electricals",
+   "type": "排查无异常",
+   "detail": "No breaker/contactor/relay price-adjustment letters from Schneider/ABB/Siemens/Chint/Delixi in window; Inovance/INVT/Delta drives unchanged; note: upstream IGBT/MOSFET cost pass-through pressure is building for drives — watch next cycle for follow-on adjustments.",
+   "subcategories": [
+    "Variable Speed Drives Low Voltage",
+    "Circuit Breakers",
+    "Contactors",
+    "Relay"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Motors, fans, pumps / bearings / valves / heat exchange / sensors",
+   "type": "有实质动态",
+   "detail": "Yinlun's liquid-cooling business delivering small-batch orders (reconfirmed on Hudongyi 10-14); Panasonic and SIT jointly showcased HVAC fan-motor solutions at Chillventa 2026 (10-13~15); Sanhua/DunAn quiet; otherwise no anomalies.",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Sensor"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Magnet steel (rare earth)",
+   "type": "排查无异常",
+   "detail": "PrNd oxide quoted RMB 740,000–745,000/ton on 10-16, averaging RMB 741,000/ton on 10-17/18 — high-level sideways trend continues (Mysteel); rare-earth concentrate Q4 at RMB 38,769/ton, no new figures.",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": null,
+   "event_id": "evt-rare-earth-q4-price"
+  },
+  {
+   "category": "PCB boards",
+   "type": "排查基本无异常",
+   "detail": "No 9th Kingboard letter or other new CCL price-increase notices in window; Commercial Times 10-18 roundup restates the 8th letter and Panasonic's 200% CCL hike (analyst views, no new price facts).",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "company": null,
+   "event_id": "evt-pcb-ccl-price-hike-2"
+  },
+  {
+   "category": "EE – Memory",
+   "type": "有实质动态",
+   "detail": "See Section 3: Apple CEO calls memory supply a 'severe crisis' (MoneyDJ 10-19); CXMT Q1–Q3 preview: revenue RMB 265–270 billion, net profit RMB 131–132.5 billion turning profitable (announced 10-16); DRAM contract-price QoQ gains converging by quarter (China.com 10-18); no new contract-price moves from Samsung/Micron/SK/Nanya in window.",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "event_id": "evt-dram-hbm-shortage",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "category": "EE – Analog & power ICs / MCUs",
+   "type": "排查无异常",
+   "detail": "TI's third price adjustment, Nationz's 10-1 increase and Allegro's full-line increase recorded with no new developments; Taiwan IC designers' second price-hike wave still unconfirmed by any vendor.",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "EE – Capacitors / resistors & inductors / connectors & harnesses / crystal oscillators & FPGAs",
+   "type": "排查无异常",
+   "detail": "Murata's additional investment figure still pending the 10-30 earnings; resistor lead times (Fenghua 16–20 weeks, Token 14–18 weeks) unchanged; TE/Molex and other connector makers show no price adjustments or EOLs.",
+   "subcategories": [
+    "电容",
+    "电阻与电感",
+    "连接器与线束",
+    "时钟/晶振/FPGA"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "EE – PCBA / OSAT",
+   "type": "排查无异常",
+   "detail": "OSAT price-hike wave (+10–30%) and Japanese photoresist +15% recorded; no new developments in window.",
+   "subcategories": [
+    "PCBA板卡"
+   ],
+   "company": null,
+   "event_id": "evt-osat-price-hike"
+  },
+  {
+   "category": "Tier B rotation (batch 14)",
+   "type": "有实质动态",
+   "detail": "2 anomalies: ① Tube & Pipe steel-pipe price wave: Stephens frame pipe +12% / chain-link fabric +5% (effective 10-16), customer letter forecasts another +30% in 2027Q1 (supplier forecast, not fact); Nippon Steel carbon steel pipe +¥10,000/ton (BigMint 10-19); US OCTG +17% YoY in September to $3,031/ton (SMM 10-13/15); domestic copper pipe rose then fell on 10-12 (Mysteel 10-18). ② Valves & fittings / Shell & Plate: North America PHCP-PVF October price-update roundup (Supply House Times 10-16): Spirax Sarco +4% (10-1), Heat Controller +5% (10-1), Robertshaw +15% (10-12), tekmar +6% (10-16) already effective; Panasonic +3.75% effective today (10-19); ZSI-Foster/Wesanco effective 10-26. The other 8 categories (large capacitors/aluminum electrolytic, die castings, oil filters, heaters, linear actuators, cabinet doors/panels, security-intrusion) show no anomalies.",
+   "subcategories": [
+    "Capacitors (Large)",
+    "Die Castings",
+    "Filters, Oil",
+    "Heaters",
+    "Linear Actuators",
+    "Panels & Doors",
+    "Shell & Plate",
+    "Tube & Pipe",
+    "Uncategorized Security - Intrusion",
+    "阀门与管件"
+   ],
+   "company": null,
+   "event_id": "evt-steel-pipe-price-hike-oct"
+  },
+  {
+   "category": "Shenling Environmental (company)",
+   "type": "有实质动态",
+   "detail": "RMB 1 billion convertible-bond issuance announced (10-16), initial conversion price RMB 95.49/share; online subscription starts 10-20 (10jqka 10-16).",
+   "subcategories": [],
+   "company": "申菱",
+   "event_id": "evt-shenling-convertible-bond"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261019-01",
+   "title": "Transformer lead times of 115–130 weeks warning",
+   "urgency": "高",
+   "impact": "Transformers (data-center and large projects)",
+   "action": "Immediately confirm long-term agreements and production slots for data-center and large-project transformers; evaluate alternative suppliers",
+   "trigger": "New project transformer procurement kicks off",
+   "deadline": null,
+   "related_events": [
+    "evt-20261019-01",
+    "evt-hitachi-energy-transformer-warning"
+   ]
+  },
+  {
+   "id": "warn-20261019-02",
+   "title": "Intensive October price increases on steel pipes/fittings take effect",
+   "urgency": "中",
+   "impact": "Steel pipes / fittings / valves",
+   "action": "Lock Q4 pipe/fitting/valve quotes and prices; track whether the 2027Q1 forecast materializes",
+   "trigger": "Price-increase letters take effect",
+   "deadline": "2026-10-26",
+   "related_events": [
+    "evt-20261019-02",
+    "evt-steel-pipe-price-hike-oct",
+    "evt-na-hvac-october-price-hikes"
+   ]
+  },
+  {
+   "id": "warn-20261019-03",
+   "title": "AMD embedded price adjustment effective 12-27",
+   "urgency": "中",
+   "impact": "FPGA/SOM/accelerator cards (ex-Xilinx)",
+   "action": "Confirm orders and price-protection terms for affected part numbers before 12-27",
+   "trigger": "Price-adjustment notice takes effect",
+   "deadline": "2026-12-27",
+   "related_events": [
+    "evt-amd-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261019-04",
+   "title": "Rising cost base: crude at $110 / import prices +8.1% / power prices rebounding",
+   "urgency": "中",
+   "impact": "Chemicals / plastics / logistics / manufacturing electricity",
+   "action": "Build flexibility into Q4 logistics and packaging negotiations; track power and oil prices",
+   "trigger": "Costs keep rising",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261019-05",
+   "title": "Refrigerant Q4 long-term contracts up RMB 500/ton",
+   "urgency": "中",
+   "impact": "R32 / R410A",
+   "action": "Lock Q4 refrigerant volumes and prices early",
+   "trigger": "Contract price increase lands",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261019-06",
+   "title": "Data-center funding-tightening signals vs. build-out expansion",
+   "urgency": "低",
+   "impact": "Liquid-cooling CDU stocking cadence",
+   "action": "Calibrate liquid-cooling CDU stocking to the delayed window; use this week's supply-side additions (Carrier/Daikin/Midea/MEB) to negotiate prices down",
+   "trigger": "Bond/financing signals deteriorate",
+   "deadline": null,
+   "related_events": [
+    "evt-20261019-03",
+    "evt-daikin-chilldyne-acquisition"
+   ]
+  },
+  {
+   "id": "warn-20261019-07",
+   "title": "Copper at high-level consolidation",
+   "urgency": "低",
+   "impact": "Copper / aluminum",
+   "action": "Rolling 60–90-day volume locks; don't chase highs",
+   "trigger": "Copper rebounds toward record highs",
+   "deadline": null,
+   "related_events": [
+    "evt-copper-high"
+   ]
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-20",
+   "event": "Shenling RMB 1 billion convertible-bond online subscription starts"
+  },
+  {
+   "date": "2026-10-26",
+   "event": "ZSI-Foster/Wesanco price increase takes effect (added in ACHR October list update)"
+  },
+  {
+   "date": "2026-10-27",
+   "event": "22nd China Household Appliance Technology Conference opens (Ningbo, 10-27~29; R290 substitution and efficiency topics)"
+  },
+  {
+   "date": "2026-10-29",
+   "event": "Carrier Q3 earnings release; Trane Q3 earnings call"
+  },
+  {
+   "date": "2026-10-30",
+   "event": "Murata earnings (MLCC additional investment figure disclosed)"
+  },
+  {
+   "date": "2026-10-31",
+   "event": "Resideo–Honeywell Home air-zoning product price adjustment takes effect (ACHR list)"
+  },
+  {
+   "date": "2026-12-27",
+   "event": "AMD embedded product-line price-adjustment notice takes effect (ex-Xilinx FPGA/SOM/accelerator cards; trade-media quotes, Grade-B evidence)"
+  },
+  {
+   "date": "2026-12-31",
+   "event": "Memory Q4 contract-price negotiation window"
+  },
+  {
+   "date": "2027-01-01",
+   "event": "Renesas new pricing takes effect; Panasonic's 200% CCL hike shipments take effect"
+  }
+ ]
+}
