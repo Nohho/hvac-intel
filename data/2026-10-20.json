@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "schema_version": "v0.6",
   "source_briefing": "briefs/2026-10-20-hvac-cdu-morning-briefing.md",
-  "note": "周二早报。变压器缺口新数据（交期128~144周、对美出口+182%）；MLCC涨价潮加码（三星电机Q4直供+25%~30%、村田2028-03最后下单）；建滔积层板年内第八轮涨价+15%；申菱4.15亿美元海外制冷设备协议；英飞凌-Wolfspeed 200mm SiC协议；AI服务器连接器交期36周；LME铜约14,342美元/吨；Tier B batch 1（新一轮）1个hit；事件库29→34个（新增5），timeline追加6条。"
+  "note": "周二早报。变压器缺口新数据（交期128~144周、对美出口+182%）；MLCC涨价潮加码（三星电机Q4直供+25%~30%、村田2028-03最后下单）；建滔积层板年内第八轮涨价+15%；申菱4.15亿美元海外制冷设备协议；英飞凌-Wolfspeed 200mm SiC协议；AI服务器连接器交期36周；LME铜约14,342美元/吨；Tier B batch 1（新一轮）1个hit；事件库29→34个（新增5），timeline追加6条。【08:35订正】整机厂组完整回传晚到：补松下涨价3.7%~4.0%于10-19生效确认、LG弗吉尼亚工厂细节（约6400万美元、2027H1投产）、三星AI-HVAC业务更新；事件库2条timeline追加。"
  },
  "daily_report": {
   "date": "2026-10-20",
@@ -354,6 +354,12 @@
    "summary": "持股87.73%；医疗事业部并购，与HVAC主业无直接关联。",
    "source": "21经济网，10-19",
    "vendor_voice": false
+  },
+  {
+   "title": "LG弗吉尼亚HVAC组装工厂细节落地",
+   "summary": "投资约6400万美元，352,000平方英尺，164个岗位，2027H1投产，生产AI数据中心用大型风冷离心冷水机组。",
+   "source": "Tidewater News/VEDP官方公告，10-17",
+   "vendor_voice": false
   }
  ],
  "company_checklist": [
@@ -399,18 +405,18 @@
   },
   {
    "company": "松下",
-   "status": "无实质动态",
-   "note": "窗口内无实质公司新闻"
+   "status": "有实质动态",
+   "note": "HVAC产品涨价3.7%~4.0%于10-19按期生效（ACHR News 10月清单；未受关税影响的产品价格不变）"
   },
   {
    "company": "LG",
-   "status": "无实质动态",
-   "note": "北美冷水机5GW+协议事件库已收录（10-05），状态无变化"
+   "status": "有实质动态",
+   "note": "弗吉尼亚Isle of Wight工厂细节落地：约6400万美元、352,000平方英尺、164个岗位、2027H1投产，生产AI数据中心用大型风冷离心冷水机组（Tidewater News/VEDP，10-17）"
   },
   {
    "company": "三星",
-   "status": "无实质动态",
-   "note": "Q4手机供应削减事件库已收录（10-10），状态无变化"
+   "status": "有实质动态",
+   "note": "发布AI融入HVAC楼宇能效业务更新（Thermal Control Magazine，10-17，战略类）"
   },
   {
    "company": "三菱电机",
@@ -690,6 +696,22 @@
    ],
    "company": null,
    "event_id": "evt-hitachi-energy-transformer-warning"
+  },
+  {
+   "category": "松下HVAC涨价生效",
+   "type": "有实质动态",
+   "detail": "Panasonic HVAC产品涨价3.7%~4.0%于10-19按期生效（ACHR News 10月清单；未受关税影响的产品价格不变）。",
+   "subcategories": [],
+   "company": "松下",
+   "event_id": "evt-na-hvac-october-price-hikes"
+  },
+  {
+   "category": "LG弗吉尼亚HVAC工厂",
+   "type": "有实质动态",
+   "detail": "Isle of Wight County（Windsor）工厂细节落地：投资约6400万美元（VEDP口径超6390万美元），352,000平方英尺，164个新岗位，2027年上半年投产，生产AI数据中心用大型风冷离心冷水机组，属LG \"Chip to Chiller\"战略。",
+   "subcategories": [],
+   "company": "LG",
+   "event_id": "evt-lg-us-chiller-5gw-deal"
   }
  ],
  "warnings": [
