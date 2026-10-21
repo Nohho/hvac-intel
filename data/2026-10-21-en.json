@@ -1,0 +1,959 @@
+{
+ "meta": {
+  "date": "2026-10-21",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-21-hvac-cdu-morning-briefing.md",
+  "note": "Wednesday briefing. Headlines: Yageo plans a new MLCC price-hike round for late Oct–Nov (high-cap parts possibly +50%+); broad industrial-component price adjustments (sensors up to +50%); ABB and Mitsubishi Electric form a low-voltage distribution JV ($495 million); LME copper closed at $14,391/ton on 10-20 and Goldman Sachs raised its forecast; Kingboard's 8th price hike confirmed; Q4 memory price guidance (DRAM +20% / NAND +30%); Tier B batch 2 (new round) produced 3 hits; event library grew 34→36 (2 new), with 15 timeline additions."
+ },
+ "daily_report": {
+  "date": "2026-10-21",
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Briefing",
+  "headline": "Yageo plans a new MLCC price-hike round for late Oct–Nov (high-cap parts possibly +50%+); broad industrial-component price adjustments (sensors up to +50%); ABB and Mitsubishi Electric form a low-voltage distribution JV ($495 million); LME copper closed at $14,391/ton on 10-20; Tier B batch 2 (new round) produced 3 hits; event library grew 34→36 (2 new), with 15 timeline additions.",
+  "sections": [
+   "Industry / Technology & Partnerships",
+   "Top Stories",
+   "Data-Center / AI Siphon Effects",
+   "Cross-Industry Transmission",
+   "Supplier Dynamics",
+   "Supply-Chain Warnings & Recommendations"
+  ],
+  "hotspot_count": 7,
+  "warning_count": 8
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261021-01",
+   "title": "Yageo plans a new MLCC price-hike round for late Oct–Nov; high-cap parts may rise 50%+",
+   "heat": 86,
+   "heat_reason": "Yageo's new hike window is only 1–2 weeks away; high-cap parts may rise 50%+ and the round runs through 2027Q1; Murata automotive lead times have stretched to 40+ weeks",
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "date": "2026-10-17",
+   "sources": [
+    {
+     "outlet": "Brokerage industry tracking (compiled by Chenxin Weiye)",
+     "date": "2026-10-16/17",
+     "url": "https://www.szcxwykj.com/news/n1792141366024.html",
+     "first_party": false
+    },
+    {
+     "outlet": "TrendForce",
+     "date": "2026-10-17",
+     "url": "https://www.szcxwykj.com/news/n1791256227391.html",
+     "first_party": false
+    }
+   ],
+   "summary": "Brokerage tracking says Yageo plans a new price-hike round starting late Oct–Nov: high-capacitance parts may rise 50% or more, mid/low-capacitance parts 10%–30%, with the round running through 2027Q1; Samsung Electro-Mechanics raised Q4 direct-supply prices for consumer X5R parts to OEMs/ODMs by 25%–30% (already effective) and high-end X6S parts for AI servers by another 10%–20%; Three-Circle (CCTC) raised distributor prices 10%–30% from October; Murata automotive lead times have stretched beyond 40 weeks, with high-end lines running at 95% utilization.",
+   "numbers": [
+    "High-cap parts possibly +50%+",
+    "Mid/low-cap +10%–30%",
+    "Samsung Electro-Mechanics Q4 direct supply +25%–30%",
+    "Murata automotive lead times 40+ weeks",
+    "Murata high-end line utilization 95%"
+   ],
+   "related_warnings": [
+    "warn-20261021-01"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "id": "evt-20261021-02",
+   "title": "Broad industrial-component price adjustments: sensors up as much as 50%, relays +10%–25%",
+   "heat": 85,
+   "heat_reason": "Sensors, relays and connectors are being repriced simultaneously across categories; lead times for some overseas chips exceed 52 weeks, pressuring HVAC control-BOM costs",
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "date": "2026-10-16",
+   "sources": [
+    {
+     "outlet": "Chenxin Weiye (citing public industry data)",
+     "date": "2026-10-16",
+     "url": "https://www.szcxwykj.com/news/n1792126921469.html",
+     "first_party": false
+    }
+   ],
+   "summary": "Since 2026Q1, STMicroelectronics, Allegro, NOVOSENSE and SmartSens have raised sensor prices 10%–50%; Omron and Schneider relays +10%–25%; Turck and Pepperl+Fuchs sensors +15%–35%; Phoenix Contact and Weidmüller connectors +12%–30%; CR Micro and Silan raised prices across the board by 15%+ from Jul 1; lead times for some overseas chips now exceed 52 weeks. (Grade B: relayed by industry media)",
+   "numbers": [
+    "Sensors +10%–50%",
+    "Relays +10%–25%",
+    "Connectors +12%–30%",
+    "CR Micro / Silan +15%+ from Jul 1",
+    "Some overseas chip lead times >52 weeks"
+   ],
+   "related_warnings": [
+    "warn-20261021-03"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-industrial-components-price-hike"
+  },
+  {
+   "id": "evt-20261021-03",
+   "title": "ABB and Mitsubishi Electric form low-voltage distribution JV ($495 million, closing 2027H2)",
+   "heat": 78,
+   "heat_reason": "Low-voltage distribution giants consolidate: ABB takes a 51% stake and acquires Mitsubishi's overseas LV distribution sales business; combined with ABB's record Q3 orders, data-center distribution demand is strong",
+   "tags": [
+    "并购",
+    "产能投资",
+    "影响BOM"
+   ],
+   "date": "2026-10-20",
+   "sources": [
+    {
+     "outlet": "Commercial Times",
+     "date": "2026-10-20",
+     "url": "https://ctee.com.tw/news/20261020701770-430701",
+     "first_party": false
+    },
+    {
+     "outlet": "CNYES",
+     "date": "2026-10-20",
+     "url": "https://news.cnyes.com/news/id/6634205",
+     "first_party": false
+    }
+   ],
+   "summary": "ABB announced a low-voltage distribution joint venture with Mitsubishi Electric: an investment of about $495 million for a 51% stake, plus acquisition of Mitsubishi's overseas low-voltage distribution sales business, with closing expected in 2H 2027; in the same period ABB's Q3 orders rose 40% YoY to a record $12 billion, with electrification orders up 70% (driven by data-center distribution/cooling), and full-year guidance was raised.",
+   "numbers": [
+    "Investment of about $495 million",
+    "51% stake",
+    "Closing expected 2027H2",
+    "Q3 orders +40% to $12 billion",
+    "Electrification orders +70%"
+   ],
+   "related_warnings": [],
+   "section": "头条事件",
+   "severity": "低",
+   "event_id": "evt-abb-mitsubishi-lv-jv"
+  },
+  {
+   "id": "evt-20261021-04",
+   "title": "Copper: LME closed at $14,391/ton on 10-20; Goldman raises year-end forecast to 14,700",
+   "heat": 80,
+   "heat_reason": "Copper is oscillating at historic highs and Goldman raised its forecast; copper-concentrate TC has fallen to a near-decade low of -$237.8/ton, with smelter-margin pressure passing through",
+   "tags": [
+    "原材料"
+   ],
+   "date": "2026-10-20",
+   "sources": [
+    {
+     "outlet": "Reuters (via The Hindu BusinessLine)",
+     "date": "2026-10-20",
+     "url": "https://www.thehindubusinessline.com/markets/commodities/copper-rises-as-us-inventories-bullish-outlook-builds/article71603770.ece",
+     "first_party": false
+    },
+    {
+     "outlet": "Key Minerals Daily (via Mysteel)",
+     "date": "2026-10-15",
+     "url": "https://list1.mysteel.com/zhishi/t2026njg.html",
+     "first_party": false
+    },
+    {
+     "outlet": "Reuters (via TradingView)",
+     "date": "2026-10-16",
+     "url": "https://tw.tradingview.com/news/reuters.com,2026:newsml_L6T4650HY:0/",
+     "first_party": false
+    }
+   ],
+   "summary": "LME 3-month copper closed at $14,391/ton on 10-20 (+0.36%); SHFE main contract at RMB 109,550/ton (-0.27%); Goldman Sachs raised its end-2026 copper forecast to $14,700/ton and its 2027 average to 15,400; copper-concentrate TC fell to -$237.8/ton (Oct 9, lowest in nearly a decade); Antofagasta's Centinela spot TC at -310 and Los Pelambres at -330 $/ton.",
+   "numbers": [
+    "LME closed $14,391/ton on 10-20 (+0.36%)",
+    "SHFE copper RMB 109,550/ton",
+    "Goldman end-2026 forecast $14,700/ton",
+    "TC -$237.8/ton (near-decade low)",
+    "Spot TC -310 / -330 $/ton"
+   ],
+   "related_warnings": [
+    "warn-20261021-04"
+   ],
+   "section": "供应商动态",
+   "severity": "中",
+   "event_id": "evt-copper-high"
+  },
+  {
+   "id": "evt-20261021-05",
+   "title": "Kingboard's 8th price hike confirmed: 7628 e-cloth up 200%+ in a year",
+   "heat": 82,
+   "heat_reason": "China Securities Journal confirmed Kingboard's 8th hike on 10-19; e-cloth is up 200%+ in a year and Toyota Industries' loom lead times run 12–18 months, keeping PCB cost pressure on",
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "date": "2026-10-19",
+   "sources": [
+    {
+     "outlet": "China Securities Journal",
+     "date": "2026-10-19",
+     "url": "https://www.cs.com.cn/ssgs/01/2026/10/19/detail_2026101910045401.html",
+     "first_party": false
+    },
+    {
+     "outlet": "Mysteel",
+     "date": "2026-10-19",
+     "url": "https://list1.mysteel.com/zhishi/2026ntbzs47662.html",
+     "first_party": false
+    }
+   ],
+   "summary": "China Securities Journal confirmed on 10-19: Kingboard Laminates issued its 8th price-hike letter of the year on Oct 13 (new orders for thin-cloth laminates of 2116 and below and PP +15%); 7628 e-cloth has risen from RMB 3.8/meter in 2025Q3 to RMB 13.5–14/meter (up 200%+); e-cloth rose another RMB 1.5/meter in October and G75 e-yarn by RMB 3,000/ton; Toyota Industries' loom lead times have stretched to 12–18 months; electronic copper-foil processing fees rose RMB 500–1,000/ton across grades on Oct 12 vs late September.",
+   "numbers": [
+    "Kingboard 8th round +15%",
+    "7628 e-cloth +200%+ in a year",
+    "E-cloth +RMB 1.5/meter in October",
+    "Toyota Industries loom lead times 12–18 months",
+    "Copper-foil processing fees +RMB 500–1,000/ton"
+   ],
+   "related_warnings": [
+    "warn-20261021-07"
+   ],
+   "section": "供应商动态",
+   "severity": "中",
+   "event_id": "evt-jiantao-ccl-8th-hike"
+  },
+  {
+   "id": "evt-20261021-06",
+   "title": "Q4 memory price guidance: DRAM contracts up ~20% QoQ, NAND +30%",
+   "heat": 84,
+   "heat_reason": "TrendForce issued Q4 price guidance on 10-20 — gains are narrowing but absolute levels remain high; Nvidia's evaluation of an 8-Hi HBM4e option could ease supply",
+   "tags": [
+    "存储",
+    "影响BOM"
+   ],
+   "date": "2026-10-20",
+   "sources": [
+    {
+     "outlet": "TrendForce",
+     "date": "2026-10-20",
+     "url": "https://www.trendforce.com/news/2026/10/20/news-dram-prices-seen-rising-20-qoq-in-4q26-despite-slower-gains-ai-demand-tight-supply-support-outlook/",
+     "first_party": true
+    },
+    {
+     "outlet": "Commercial Times",
+     "date": "2026-10-20",
+     "url": "https://www.ctee.com.tw/news/20261020700183-439901",
+     "first_party": false
+    }
+   ],
+   "summary": "TrendForce, 10-20: 2026Q4 DRAM contract prices will rise about 20% QoQ (narrowing from +80% in Q2 and +40% in Q3) and NAND prices 30% QoQ; Samsung plans to more than double its 2027 HBM4 supply prices; Nvidia is evaluating switching Rubin Ultra from 12-Hi HBM4e to 8-Hi (theoretically ~50% more GPU shipments on the same die supply, at 10%–20% higher cost per Gb); CXMT's 4F² progress triggered a 10-20 selloff in memory stocks (Goldman Sachs says the impact is overstated).",
+   "numbers": [
+    "Q4 DRAM contracts +~20% QoQ",
+    "NAND +30% QoQ",
+    "Samsung 2027 HBM4 supply prices planned at 2x+",
+    "8-Hi option: theoretical GPU shipments +~50%"
+   ],
+   "related_warnings": [
+    "warn-20261021-08"
+   ],
+   "section": "数据中心/AI虹吸效应",
+   "severity": "中",
+   "event_id": "evt-dram-hbm-shortage"
+  },
+  {
+   "id": "evt-20261021-07",
+   "title": "Shenling's RMB 1 billion convertible bond: online subscription opened 10-20",
+   "heat": 65,
+   "heat_reason": "Proceeds fund liquid-cooling temperature-control products: 19,000 additional liquid-cooling units at full ramp, ~RMB 1.044 billion average annual revenue at full production — a CDU capacity-expansion signal",
+   "tags": [
+    "产能投资"
+   ],
+   "date": "2026-10-20",
+   "sources": [
+    {
+     "outlet": "CFi.cn",
+     "date": "2026-10-15",
+     "url": "https://stock.cfi.cn/p20261015001942.html",
+     "first_party": false
+    }
+   ],
+   "summary": "Shenling Environment's convertible bond issue to unspecified investors (up to RMB 1 billion) opened online subscription on Oct 20, with the allotment rate announced on T+1 (10-21) and results on T+2 (10-22); proceeds fund liquid-cooling temperature-control products: 19,000 additional liquid-cooling units, 2,200 air-cooling units and 700 liquid-cooling-system contract capacity at full ramp, with average annual revenue of RMB 1.044 billion and an after-tax IRR of 15.75% at full production.",
+   "numbers": [
+    "Up to RMB 1 billion",
+    "19,000 additional liquid-cooling units",
+    "~RMB 1.044 billion average annual revenue at full ramp",
+    "After-tax IRR 15.75%"
+   ],
+   "related_warnings": [],
+   "section": "供应商动态",
+   "severity": "低",
+   "event_id": "evt-shenling-convertible-bond"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "Memory (DRAM / NAND / HBM)",
+   "change": "TrendForce, 10-20: Q4 DRAM contract prices up ~20% QoQ (gains narrowing from +80% in Q2 to +40% in Q3), NAND +30% QoQ; Samsung plans to more than double 2027 HBM4 supply prices; Nvidia is evaluating switching Rubin Ultra from 12-Hi HBM4e to 8-Hi (theoretically ~50% more GPU shipments on the same die supply); CXMT 4F² progress triggered a 10-20 selloff in memory stocks (Goldman Sachs says the impact is overstated) [BOM Impact: Memory]",
+   "source": "TrendForce 10-20; event library evt-dram-hbm-shortage"
+  },
+  {
+   "material": "MLCC",
+   "change": "Yageo plans a new price-hike round for late Oct–Nov (high-cap possibly +50%+, mid/low-cap +10%–30%, running through 2027Q1); Samsung Electro-Mechanics' Q4 direct supply +25%–30% (already effective); Murata automotive lead times at 40+ weeks, high-end line utilization 95%, and AI-server high-end MLCC inquiry volumes at roughly twice Murata's current capacity; Fenghua said on 10-12 that its main product prices are rising steadily; Walsin is running close to full capacity and will add another 10% by year-end [BOM Impact: Yageo / Walsin / Fenghua]",
+   "source": "Brokerage tracking / CNYES / TrendForce, 10-16–17 (relayed figures); event library evt-mlcc-price-hike"
+  },
+  {
+   "material": "PCB / CCL / copper foil",
+   "change": "Kingboard's 8th hike of the year, +15%, on 10-13 (confirmed by China Securities Journal on 10-19); 7628 e-cloth rose from RMB 3.8/meter in 2025Q3 to RMB 13.5–14/meter (+200%+); e-cloth rose another RMB 1.5/meter in October and G75 e-yarn by RMB 3,000/ton; Toyota Industries loom lead times 12–18 months; electronic copper-foil processing fees rose RMB 500–1,000/ton on Oct 12 vs late September [BOM Impact: PCB Boards]",
+   "source": "China Securities Journal / Mysteel 10-19; event library evt-jiantao-ccl-8th-hike / evt-pcb-ccl-price-hike-2"
+  },
+  {
+   "material": "Connectors",
+   "change": "AI-server high-speed connectors: PCIe 6.0 / CXL unit prices rose from under $10 in 2025 to over $30 (+200%+), with lead times stretching from 8 to 36 weeks; liquid-cooling stainless quick disconnects up 150%+, some with lead times over a year; Phoenix Contact / Weidmüller connectors +12%–30% (10-16) [BOM Impact: TE]",
+   "source": "Chenxin Weiye 10-17 / 10-16 (relayed figures); event library evt-ai-server-connector-squeeze"
+  },
+  {
+   "material": "OSAT",
+   "change": "Aijian Securities research, 10-16: memory OSAT providers such as ChipMOS and Powertech are expected to raise prices 10%–30%, and some ASE advanced-packaging prices are up 20%+; JCET and Huatian ran Q1 utilization above 80%, and 伟测科技's September test utilization exceeded 90%; Taiwan media report rush-order prices for small customers have doubled [BOM Impact: PCBA boards]",
+   "source": "Aijian Securities / Sina Finance 10-16; event library evt-osat-price-hike"
+  },
+  {
+   "material": "Analog / power ICs",
+   "change": "UBS research, 10-16: analog-chip distributor inventories down 7%–10% MoM, True Analog average prices +12% MoM, Power Analog +9%, discrete devices +34%; TI's third price-hike round of 2026 landed in October (some part numbers +15%–85%, lead times 20–48 weeks); onsemi MOSFET / IGBT / SiC +5%–15% from 10-10, with hot part numbers' lead times stretching from 8–10 weeks to 16+ weeks [BOM Impact: TI / ON / ST]",
+   "source": "UBS (via MarsBit, 10-19); event library evt-ti-analog-price-hike / evt-onsemi-price-hike-2"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "Transformers",
+   "key_data": "CCTV Finance, 10-20: domestic transformer plants are at full production, with data-center orders booked into 2027; US delivery cycles have lengthened from 50 to 127 weeks; China Securities (CSC), 10-19: the US transformer price index rose 4% MoM in July; US large units at 128 weeks and GSU at 144 weeks, with Chinese exports to the US +182%",
+   "chain": "Data-center long-term orders are locking up transformer capacity → lead times and costs for large-chiller / project distribution equipment keep deteriorating; US delivery cycles 50 weeks → 127 weeks",
+   "source": "CCTV Finance / China Securities (CSC) / PEDaily, 10-19–20; event library evt-hitachi-energy-transformer-warning"
+  },
+  {
+   "industry": "Power semiconductors",
+   "key_data": "Western Securities, 10-15: growth in 8-inch mature-process capacity is slowing in 2026 and inventories are gradually being digested, while demand from AI servers, NEVs, energy storage and industrial electrification surges; NEV voltage platforms are upgrading from 400V to 800V, steadily raising per-vehicle power-semiconductor value",
+   "chain": "NEV 800V platforms compete with HVAC drives (VSD / IGBT) for the same 8-inch power capacity → IGBT lead-time and price pressure passes directly into HVAC drive procurement [BOM Impact: Infineon / ON makers; chips & semiconductors]",
+   "source": "Western Securities (via Zhitong Finance), 10-15"
+  },
+  {
+   "industry": "Solar PV",
+   "key_data": "Mysteel, 10-19: N-type dense polysilicon flat at RMB 38–43/kg, wafers and cells flat, module quote midpoint at RMB 0.74–0.75/W but actual transactions weak, with October module capacity utilization around 44.3%",
+   "chain": "Solar PV overall shows 'prices quoted but no takers' and a weak recovery → no sign of capacity-grabbing pass-through to HVAC/CDU common materials (no material anomaly)",
+   "source": "Mysteel 10-19"
+  },
+  {
+   "industry": "Consumer electronics (smartphones)",
+   "key_data": "Apple asked to cut October component orders for iPhone 18 Pro / Pro Max by at least 15% (due to DRAM costs); Samsung is cutting Q4 handset supply by 20%–30% (Korean media); supply-chain responses say Pro orders are shifting to Pro Max, with total volumes little changed",
+   "chain": "Handset order cuts release some mobile DRAM orders, but makers prioritize HBM / server DDR capacity → supply of consumer 0201 passives eases at the margin (marginal positive); Apple is evaluating Chinese memory suppliers, but no scaled alternative can form in the short term [BOM Impact: Memory]",
+   "source": "Yicai / Xueqiu / Commercial Times, 10-9–20; event library evt-apple-iphone18-orders-cut"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "YORK YDAM data-center chiller named to TIME's 2026 Best Inventions",
+   "summary": "AI category; up to 3.5 MW per unit, oil-free magnetic-levitation bearings, zero on-site water use; first installations expected by end-2026.",
+   "source": "Johnson Controls website, 10-15",
+   "vendor_voice": true
+  },
+  {
+   "title": "Johnson Controls and Legrand co-invest in liquid-cooling company Accelsius",
+   "summary": "Two-phase direct-to-chip liquid-cooling technology; investment amount and equity stakes not disclosed.",
+   "source": "DCD, October",
+   "vendor_voice": false
+  },
+  {
+   "title": "Carrier Ventures invests in Strategic Thermal Labs",
+   "summary": "Co-developing direct-to-chip liquid-cooling solutions; Carrier gains a board seat and exclusivity rights; terms not disclosed.",
+   "source": "DCD, ~10-16",
+   "vendor_voice": false
+  },
+  {
+   "title": "Midea showcases data-center liquid-cooling solutions at the Canton Fair",
+   "summary": "CDU cooling capacity of 2.6 MW per unit, scalable to 4 MW, with maintenance without shutdown and dual power feeds; annual-average PUE as low as 1.2.",
+   "source": "Refrigeration portal, 10-17",
+   "vendor_voice": false
+  },
+  {
+   "title": "Daikin (China) launches 'Air Customization Upgrade Service' for existing residential central-AC users",
+   "summary": "Targets 5M+ existing households; dual smart gateways connect to DAIKIN CARE; a Hangzhou air-source heat-pump case achieved COP 4.37 at 7°C/40°C.",
+   "source": "新报业网, 10-16",
+   "vendor_voice": false
+  },
+  {
+   "title": "Panasonic Aquarea residential heat pumps add R290 M series / R454C N series",
+   "summary": "M series 3/5/7/9 kW (R290), N series (R454C, GWP<150); M series delivers 75°C water at -10°C and still runs at -28°C.",
+   "source": "Refindustry, 10-20",
+   "vendor_voice": false
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控/约克",
+   "status": "有实质动态",
+   "note": "YORK YDAM named to TIME's 2026 Best Inventions on 10-15 (AI category; first-party from the Johnson Controls website); co-invested with Legrand in liquid-cooling company Accelsius (DCD, October)"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Carrier Ventures invested in Austin-based Strategic Thermal Labs (direct-to-chip liquid cooling; board seat + exclusivity; DCD, ~10-16)"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "Only analyst target-price changes in the last 3 days (Bernstein $575; Goldman raised to Buy / $565 target); no material business developments"
+  },
+  {
+   "company": "大金",
+   "status": "有实质动态",
+   "note": "Daikin (China) launched its 'Air Customization Upgrade Service' for 5M+ existing households (10-16); post-Chilldyne integration: Phoenix plant expanded from 5,390 m² to 17,750 m², capacity +~150% (Cooling Post, 10-14, catch-up)"
+  },
+  {
+   "company": "美的",
+   "status": "有实质动态",
+   "note": "Showcased data-center liquid-cooling solutions at the 140th Canton Fair: CDU 2.6 MW per unit, scalable to 4 MW, annual-average PUE as low as 1.2 (Refrigeration portal, 10-17)"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "Only a technical-school 'first lesson of the term' event (Dong Mingzhu appearance) and market commentary in the last 3 days; no material business developments"
+  },
+  {
+   "company": "海尔",
+   "status": "有实质动态",
+   "note": "Going deeper into Brazil: phased expansion of local industrial production in Brazil over the next 12 months is a priority, with plant-site talks under way with several states (潮起网, 10-19)"
+  },
+  {
+   "company": "日立",
+   "status": "有实质动态",
+   "note": "Hitachi announced physical-AI solutions for process manufacturing on 10-20 (BD-CUBE linked with HMAX Industry; first-party official press release)"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "Aquarea residential heat pumps added R290 M series / R454C N series (Refindustry, 10-20); no public source for a price-hike letter in the last 3 days"
+  },
+  {
+   "company": "LG",
+   "status": "有实质动态",
+   "note": "Virginia Isle of Wight plant update (10-19): 350,000 sq ft, 43 acres, 2027H1 start-up unchanged; two Korean plants being expanded in parallel"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "No material developments in the last 3 days; most recent material news was the Sep 21 groundbreaking of the FläktGroup Gwangju plant"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "Announced a partnership with the Deloitte Center for Integrated Research to help enterprises scale AI from pilots to deployment (IT Voice, 10-19); Q3 earnings scheduled for 10-28"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "Only routine share-price / fund-flow coverage in the last 3 days; no new products, partnerships, capacity or order developments"
+  },
+  {
+   "company": "申菱",
+   "status": "有实质动态",
+   "note": "RMB 1 billion convertible bond opened online subscription on 10-20; proceeds fund liquid-cooling temperature-control products adding 19,000 liquid-cooling units at full ramp (CFi.cn, 10-15)"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "An Oct 13 investor-platform reply (liquid-cooling control system linking primary-side cooling sources with compute loads) was a routine Q&A; no material new event"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "An Oct 15 investor-platform reply (southern HQ & industrial cooling equipment project and Sanhe Tongfei liquid-cooling temperature-control project progressing in an orderly manner); no material new event"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "有实质动态",
+   "note": "First-three-quarters results forecast: net profit attributable to shareholders of RMB 3.8–4.1 billion, +156%–177% YoY; Q3 alone down 51%–63% vs Q2 (Economic Information Daily, 10-13, catch-up)"
+  },
+  {
+   "company": "联想",
+   "status": "有实质动态",
+   "note": "Announced on 10-12 the start of global deliveries of Nvidia Vera Rubin NVL72 rack-scale AI systems; North Carolina smart-manufacturing campus expansion adds 35% capacity (including direct liquid-cooling system manufacturing capability) (China.com, 10-20)"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Compressors (centrifugal / reciprocating / rotary / scroll / screw)",
+   "type": "排查无异常",
+   "detail": "Highly, Lingda and GMCC show no price-increase letters or lead-time news in the last 3 days; Danfoss's second Haiyan campus opening is a capacity event (see company entry); the Shisuo maglev-compressor expansion is already recorded in the event library with no status change.",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Scroll Compressors",
+    "Screw Compressors"
+   ],
+   "company": null,
+   "event_id": "evt-shisuo-maglev-expansion"
+  },
+  {
+   "category": "Danfoss opens second Haiyan campus",
+   "type": "有实质动态",
+   "detail": "Danfoss has opened its largest production base in China — the second Haiyan campus (126,000 m²) — covering the group's three business segments and two application development centers, producing drives, compressors, hydraulic pumps, motors, valves, heat exchangers and more. (Capacity item, not pricing)",
+   "subcategories": [],
+   "company": "丹佛斯",
+   "event_id": null
+  },
+  {
+   "category": "Refrigerants",
+   "type": "有实质动态",
+   "detail": "East China mainstream R32 at RMB 63,500–64,500/ton; Dongyue Green Refrigeration and Juhua both quoted R32 at RMB 65,500/ton; Q4 long-term contract prices for R32 / R410A were each raised by RMB 500/ton; R22 quotes from 100ppi.com on 10-20: Dongyue premium grade RMB 24,000/ton, Quzhou domestic RMB 21,000/ton; overseas, Middle East R32 is around RMB 120,000/ton and UK R32 has risen 30% since May.",
+   "subcategories": [
+    "Refrigerant",
+    "Refrigerant Oil"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Yonghe",
+   "type": "有实质动态",
+   "detail": "Disclosed its convertible-bond inquiry response on 10-16: the Baotou new-energy materials industrial park totals RMB 6.058 billion of investment, with RMB 2.05 billion to be raised (RMB 1.435 billion for Baotou + RMB 615 million of working capital).",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": "永和股份",
+   "event_id": null
+  },
+  {
+   "category": "Copper",
+   "type": "有实质动态",
+   "detail": "LME 3-month copper closed at $14,391/ton on 10-20 (+0.36%), pulling back from intraday highs but still at historic highs; SHFE main contract RMB 109,550/ton (-0.27%); Goldman Sachs raised its end-2026 forecast to $14,700/ton and 2027 average to 15,400; copper-concentrate spot TC at -$237.8 per dry metric ton (lowest in nearly a decade); Antofagasta's Centinela spot TC -310 and Los Pelambres -330 $/ton. [BOM Impact: mechanical structures & auxiliary materials]",
+   "subcategories": [
+    "Copper & Silver",
+    "Fabrications & Assemblies - Copper",
+    "Fittings - Copper",
+    "Tube, Lw Coil Igt Or Smooth - Copper",
+    "Tube, Technical - Copper"
+   ],
+   "company": null,
+   "event_id": "evt-copper-high"
+  },
+  {
+   "category": "Copper tube",
+   "type": "有实质动态",
+   "detail": "On 10-19, TP2 coil / straight tube rose RMB 400/ton nationwide (Zhejiang 113,100; Guangdong 113,300; Shandong 112,900); H62 brass tube rose RMB 300/ton (84,000–84,400); Qingdao 登辉 / 宏奥 / 宏泰 and Henan 宇星 also raised prices by RMB 230/ton in step; all were market-following adjustments with no standalone price-hike letters; prices had fallen RMB 900/ton on 10-16. [BOM Impact: mechanical structures & auxiliary materials]",
+   "subcategories": [
+    "Tube, Lw Coil Igt Or Smooth - Copper",
+    "Tube, Technical - Copper",
+    "Fabrications & Assemblies - Copper"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Steel",
+   "type": "排查无异常",
+   "detail": "Baosteel announced on 10-10 that November domestic base prices for seamless and welded pipe are unchanged; 君诚管道 raised hot-dip galvanized round pipe / welded pipe by RMB 20/ton on 10-10 (after a cut of the same size on 10-8); spring steel has held steady after a RMB 50/ton rise on 10-8 — normal fluctuation; no new price-hike letters in the last 3 days. [BOM Impact: mechanical structures & auxiliary materials]",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Aluminum",
+   "type": "排查无异常",
+   "detail": "LME aluminum cash settlement around $3,019/ton (10-20), official close $3,023.22/ton; no material aluminum price or lead-time anomalies in the last 3 days.",
+   "subcategories": [
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "IGBT / power devices",
+   "type": "有实质动态",
+   "detail": "onsemi price-hike execution details (Grade B, distributor-relayed): MOSFET / IGBT / SiC up 5%–15% (effective from 10-10); lead times for hot part numbers stretched from 8–10 weeks to 16+ weeks; Taiwan makers PANJIT and Taiwan Semiconductor (TSC) raised spot prices another 10%–15% in October (TSC MOSFET shortages are more pronounced); Silan and CR Micro raised prices 15%+ across the board from July; Renesas announced a price adjustment on Sep 9, with the new price system effective 2027-01-01. [BOM Impact: ON is a key PCBA maker; chips & semiconductors]",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": null,
+   "event_id": "evt-onsemi-price-hike-2"
+  },
+  {
+   "category": "Variable-frequency drives / power supplies",
+   "type": "排查无异常",
+   "detail": "No drive / power-supply price-hike letters or lead-time news in the last 3 days; the Siemens DI China price adjustment takes effect 11-01, with no new developments.",
+   "subcategories": [
+    "Power Supplies - Electronic",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Low-voltage electricals (circuit breakers / contactors)",
+   "type": "有实质动态",
+   "detail": "On 10-20 ABB announced a low-voltage distribution JV with Mitsubishi Electric: about $495 million for a 51% stake, plus acquisition of Mitsubishi's overseas LV distribution sales business, closing expected 2027H2; ABB's Q3 orders rose 40% YoY to a record $12 billion, with electrification orders +70% (data-center distribution / cooling drives). [BOM Impact: low-voltage electricals & distribution]",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors"
+   ],
+   "company": null,
+   "event_id": "evt-abb-mitsubishi-lv-jv"
+  },
+  {
+   "category": "Transformers",
+   "type": "排查无异常",
+   "detail": "Already recorded in the event library with no status change: CCTV Finance said on 10-20 that domestic transformer plants are at full production with data-center orders booked into 2027; US delivery cycles lengthened from 50 to 127 weeks; China Securities (CSC) said on 10-19 that the US transformer price index rose 4% MoM in July.",
+   "subcategories": [
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers"
+   ],
+   "company": null,
+   "event_id": "evt-hitachi-energy-transformer-warning"
+  },
+  {
+   "category": "Motors / fans / pumps / bearings",
+   "type": "排查无异常",
+   "detail": "No motor / fan / pump / bearing price-hike, shortage or EOL news in the last 3 days; Tier B batch 2 quick checks on vacuum pumps and miscellaneous bearings found no anomalies.",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Valves",
+   "type": "排查无异常",
+   "detail": "DunAn valves show no price-hike / shortage / EOL news in the last 3 days; Sanhua's Oct 17 'integrated module' patent application (compressor directly connected to dual heat exchangers; automotive thermal-management technology route) is a technology item.",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Heat exchange",
+   "type": "排查无异常",
+   "detail": "No heat-exchanger / microchannel / shell-and-tube price-hike or shortage news in the last 3 days.",
+   "subcategories": [
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Magnet steel",
+   "type": "排查无异常",
+   "detail": "PrNd oxide was around RMB 741,000/ton on 10-19 (-3,000), moving sideways; Q4 concentrate held firm at a high RMB 38,769/ton; expectations of tighter rare-earth export controls persist. No change in event-library status. [BOM Impact: motors, fans & sensing/control]",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": null,
+   "event_id": "evt-rare-earth-q4-price"
+  },
+  {
+   "category": "Shenling",
+   "type": "有实质动态",
+   "detail": "The RMB 1 billion convertible bond opened online subscription on 10-20 (T day), with the allotment rate announced on T+1 (10-21) and results on T+2 (10-22); proceeds fund liquid-cooling temperature-control products adding 19,000 liquid-cooling units at full ramp, among others.",
+   "subcategories": [],
+   "company": "申菱",
+   "event_id": "evt-shenling-convertible-bond"
+  },
+  {
+   "category": "LG",
+   "type": "有实质动态",
+   "detail": "Virginia Isle of Wight plant update (10-19): 350,000 sq ft, 43 acres, 2027H1 start-up unchanged; two existing Korean plants are being expanded at the same time.",
+   "subcategories": [],
+   "company": "LG",
+   "event_id": "evt-lg-us-chiller-5gw-deal"
+  },
+  {
+   "category": "Daikin",
+   "type": "有实质动态",
+   "detail": "Post-Chilldyne integration lands: Daikin Applied's Phoenix Modular Solutions plant in the US expanded from 5,390 m² to 17,750 m², lifting custom hydraulic / power system capacity by about 150% and becoming an integration hub for data-center solutions (Cooling Post, 10-14, catch-up).",
+   "subcategories": [],
+   "company": "大金",
+   "event_id": "evt-daikin-chilldyne-acquisition"
+  },
+  {
+   "category": "Sanhua",
+   "type": "有实质动态",
+   "detail": "Filed an 'integrated module' patent on 10-17 (compressor directly connected to dual heat exchangers, reducing refrigerant charge; automotive thermal-management technology route); announced on 10-14 that Q3 results will be reviewed on Oct 28.",
+   "subcategories": [],
+   "company": "三花智控",
+   "event_id": null
+  },
+  {
+   "category": "Memory",
+   "type": "有实质动态",
+   "detail": "TrendForce, 10-20: Q4 DRAM contract prices up ~20% QoQ, NAND +30% QoQ; Samsung plans to more than double 2027 HBM4 supply prices; Nvidia is evaluating switching Rubin Ultra from 12-Hi HBM4e to 8-Hi; CXMT 4F² progress triggered a 10-20 selloff in memory stocks. [BOM Impact: Memory]",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "event_id": "evt-dram-hbm-shortage"
+  },
+  {
+   "category": "Clock / crystal oscillators / FPGAs",
+   "type": "排查无异常",
+   "detail": "No new developments on AMD's second price-adjustment letter (effective 12-27); no clock / crystal / FPGA price-hike or lead-time news in the last 3 days.",
+   "subcategories": [
+    "时钟/晶振/FPGA"
+   ],
+   "company": null,
+   "event_id": null
+  },
+  {
+   "category": "Analog & power ICs / MCUs",
+   "type": "有实质动态",
+   "detail": "TI's third price-hike round of 2026 landed in October (some part numbers +15%–85%, lead times 20–48 weeks); UBS, 10-16: True Analog +12% MoM, Power Analog +9%, discrete devices +34%; Nations Technologies raised some MCU prices 10%–20% from Oct 1 (already effective); ADI has made 2 rounds of adjustments this year. [BOM Impact: TI / ON / ST are key PCBA makers]",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "company": null,
+   "event_id": "evt-ti-analog-price-hike"
+  },
+  {
+   "category": "Capacitors",
+   "type": "有实质动态",
+   "detail": "Yageo plans a new hike round for late Oct–Nov (high-cap possibly +50%+, mid/low-cap +10%–30%, running through 2027Q1; brokerage-tracking relay); Samsung Electro-Mechanics' Q4 direct supply +25%–30% (already effective); Murata automotive lead times 40+ weeks, high-end line utilization 95%; Fenghua said on 10-12 that its main product prices are rising steadily; Walsin is running close to full capacity and will add another 10% by year-end. [BOM Impact: Yageo / Walsin / Fenghua are key PCBA makers]",
+   "subcategories": [
+    "电容"
+   ],
+   "company": null,
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "category": "Resistors & inductors",
+   "type": "有实质动态",
+   "detail": "Fenghua said on its investor platform on 10-12 that its main product prices are rising steadily, with ample orders and high capacity utilization; the pattern of general thick-film resistors +15%–20% and alloy resistors +20%–30% continues (10-06). [BOM Impact: Fenghua / Yageo / Walsin are BOM makers]",
+   "subcategories": [
+    "电阻与电感"
+   ],
+   "company": null,
+   "event_id": "evt-resistor-price-hike"
+  },
+  {
+   "category": "Connectors & harnesses",
+   "type": "有实质动态",
+   "detail": "AI-server high-speed connector lead times at 36 weeks, unit prices up 200%+ (PCIe 6.0 / CXL); liquid-cooling stainless quick disconnects up 150%+, some lead times over a year; Molex raised prices 5%–30% across the board from Jul 1; TE will adjust prices 5%–12% across all series from 2026-01-05. [BOM Impact: TE is a BOM maker]",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "company": null,
+   "event_id": "evt-ai-server-connector-squeeze"
+  },
+  {
+   "category": "PCBA boards",
+   "type": "有实质动态",
+   "detail": "Aijian Securities research, 10-16: memory OSAT providers such as ChipMOS and Powertech are expected to raise prices 10%–30%, and some ASE advanced-packaging prices are up 20%+; JCET and Huatian ran Q1 utilization above 80%, and 伟测科技's September test utilization exceeded 90%; rush-order prices for small customers have doubled. [BOM Impact: PCBA boards]",
+   "subcategories": [
+    "PCBA板卡"
+   ],
+   "company": null,
+   "event_id": "evt-osat-price-hike"
+  },
+  {
+   "category": "Sensors / relays (industrial-component repricing)",
+   "type": "有实质动态",
+   "detail": "Chenxin Weiye roundup, 10-16 (relayed public industry data, Grade B): since 2026Q1, STMicroelectronics / Allegro / NOVOSENSE / SmartSens sensors +10%–50%, Omron / Schneider relays +10%–25%, Turck / Pepperl+Fuchs sensors +15%–35%, Phoenix Contact / Weidmüller connectors +12%–30%; CR Micro / Silan raised prices 15%+ across the board from Jul 1; lead times for some overseas chips exceed 52 weeks. [BOM Impact: ST / TE / Schneider / Omron]",
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature",
+    "Relay",
+    "连接器与线束"
+   ],
+   "company": null,
+   "event_id": "evt-industrial-components-price-hike"
+  },
+  {
+   "category": "PCB Boards",
+   "type": "有实质动态",
+   "detail": "Kingboard's 8th hike of the year, +15%, on 10-13 (confirmed by China Securities Journal on 10-19); 7628 e-cloth rose from RMB 3.8/meter in 2025Q3 to RMB 13.5–14/meter (+200%+); e-cloth rose another RMB 1.5/meter in October and G75 e-yarn by RMB 3,000/ton; Toyota Industries loom lead times 12–18 months; copper-foil processing fees rose RMB 500–1,000/ton on Oct 12 vs late September. [BOM Impact: PCB Boards]",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "company": null,
+   "event_id": "evt-jiantao-ccl-8th-hike"
+  },
+  {
+   "category": "Tier B rotation",
+   "type": "排查无异常",
+   "detail": "Batch 2 (new round), 11 categories: 1 hit in circuit breakers & contactors (the ABB × Mitsubishi Electric LV distribution JV; see new event evt-abb-mitsubishi-lv-jv); an indirect diode signal (power-device price hikes, merged into the power-devices entry); 1 hit in Fire Mass Notification (Honeywell fire-alarm products raised an average 4.5% from 2026-05-10, reported in late September and already in effect); the other 8 categories (accumulators / check valves / humidifiers / low-torque couplings / electrical power supplies / specialty castings / miscellaneous bearings / vacuum pumps) showed no anomalies. The downgrade rule is not triggered.",
+   "subcategories": [
+    "Accumulators",
+    "Check Valves",
+    "Diode",
+    "Fire Mass Notification",
+    "Humidifiers",
+    "Low Torque Couplings",
+    "Power Supplies - Electrical",
+    "Specialty Castings",
+    "Uncategorized Bearings",
+    "Vacuum Pumps",
+    "断路器与接触器"
+   ],
+   "company": null,
+   "event_id": "evt-abb-mitsubishi-lv-jv"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261021-01",
+   "title": "New MLCC price-hike round imminent (late Oct–Nov; high-cap possibly +50%+)",
+   "urgency": "高",
+   "impact": "MLCC (high-capacitance part numbers)",
+   "action": "Lock prices / add orders for high-cap MLCC immediately; advance the Murata EOL last-time-buy window (final orders by 2028-03-31) in parallel; evaluate long-term agreements with Samsung Electro-Mechanics / Yageo",
+   "trigger": "Yageo issues the formal letter",
+   "deadline": "2026-10-31",
+   "related_events": [
+    "evt-20261021-01",
+    "evt-mlcc-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261021-02",
+   "title": "ZSI-Foster / Wesanco price increases take effect 10-26 — approaching",
+   "urgency": "高",
+   "impact": "North America HVAC accessories",
+   "action": "Complete orders within this week to lock pre-hike prices",
+   "trigger": "2026-10-26",
+   "deadline": "2026-10-26",
+   "related_events": [
+    "evt-na-hvac-october-price-hikes"
+   ]
+  },
+  {
+   "id": "warn-20261021-03",
+   "title": "Broad industrial-component repricing spreads (sensors up to +50%)",
+   "urgency": "中",
+   "impact": "Sensors / relays / connectors (control BOM)",
+   "action": "Take stock of on-hand inventory and lead times for ST / Allegro sensors, Omron / Schneider relays and Phoenix Contact / Weidmüller connectors; order early for part numbers with lead times over 20 weeks",
+   "trigger": "OEM price-adjustment letters land",
+   "deadline": null,
+   "related_events": [
+    "evt-20261021-02",
+    "evt-industrial-components-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261021-04",
+   "title": "Copper at historic highs + concentrate TC at a decade low",
+   "urgency": "中",
+   "impact": "Copper tube / copper foil / enameled wire / motors",
+   "action": "Lock copper tube / foil / enameled wire prices quarterly; watch smelters' willingness to cut production",
+   "trigger": "LME breaks $14,500/ton or TC falls further",
+   "deadline": null,
+   "related_events": [
+    "evt-20261021-04",
+    "evt-copper-high"
+   ]
+  },
+  {
+   "id": "warn-20261021-05",
+   "title": "onsemi hikes already effective + hot part-number lead times stretched to 16 weeks",
+   "urgency": "中",
+   "impact": "IGBT / MOSFET / SiC (drives / VSD)",
+   "action": "Stock hot part numbers through 2027Q1; evaluate ST / Infineon alternatives; Taiwan spot (+10%–15%) can serve as a short-term supplement",
+   "trigger": "Lead times exceed 20 weeks",
+   "deadline": null,
+   "related_events": [
+    "evt-onsemi-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261021-06",
+   "title": "Transformer lead times deteriorate (US 50 → 127 weeks; domestic orders booked into 2027)",
+   "urgency": "中",
+   "impact": "Transformers (data-center and large-project distribution)",
+   "action": "Order transformers 24 weeks early for large-chiller projects; evaluate Chinese vendors as second source (exports to the US +182%)",
+   "trigger": "New project launch",
+   "deadline": null,
+   "related_events": [
+    "evt-hitachi-energy-transformer-warning"
+   ]
+  },
+  {
+   "id": "warn-20261021-07",
+   "title": "Kingboard CCL 8th hike + e-cloth up 200%+ in a year",
+   "urgency": "中",
+   "impact": "PCB / CCL",
+   "action": "Renegotiate PCB orders at the new prices; pre-build Q4 volumes; watch for another Kingboard hike in Nov/Dec (Citi warns +10%)",
+   "trigger": "Kingboard's next price-hike letter",
+   "deadline": null,
+   "related_events": [
+    "evt-20261021-05",
+    "evt-jiantao-ccl-8th-hike"
+   ]
+  },
+  {
+   "id": "warn-20261021-08",
+   "title": "DRAM / NAND rise again in Q4 (~20% / 30%)",
+   "urgency": "中",
+   "impact": "PCBA memory parts",
+   "action": "Lock Q4 memory demand in a single order; watch CXMT 4F² progress for supply-expectation disturbances",
+   "trigger": "Q4 contract prices land",
+   "deadline": null,
+   "related_events": [
+    "evt-20261021-06",
+    "evt-dram-hbm-shortage"
+   ]
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-21",
+   "event": "Shenling convertible bond: T+1 allotment-rate announcement"
+  },
+  {
+   "date": "2026-10-22",
+   "event": "Shenling convertible bond: T+2 results announced"
+  },
+  {
+   "date": "2026-10-26",
+   "event": "ZSI-Foster / Wesanco price increases take effect (ACHR October list)"
+  },
+  {
+   "date": "2026-10-28",
+   "event": "Vertiv Q3 earnings (pre-market, US)"
+  },
+  {
+   "date": "2026-10-31",
+   "event": "Resideo–Honeywell Home air-zoning product price adjustment (ACHR October list)"
+  },
+  {
+   "date": "2026-11-01",
+   "event": "Siemens DI China price adjustment takes effect"
+  },
+  {
+   "date": "2026-10-31",
+   "event": "Yageo new MLCC price-hike window (late Oct–Nov)"
+  },
+  {
+   "date": "2027-01-01",
+   "event": "Renesas new price system takes effect; some Panasonic CCL up 200% (3x) takes effect"
+  },
+  {
+   "date": "2027-06-30",
+   "event": "LG Virginia chiller plant starts production (2027H1)"
+  },
+  {
+   "date": "2027-12-31",
+   "event": "ABB × Mitsubishi Electric LV distribution JV expected to close (2027H2)"
+  },
+  {
+   "date": "2028-03-31",
+   "event": "Murata consumer general-purpose MLCC final order date"
+  }
+ ]
+}
