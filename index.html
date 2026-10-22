@@ -288,6 +288,21 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
 .sparkwrap{flex:1;min-width:0;line-height:0}
 .sparklv{flex:none;text-align:right;font-size:12px;color:var(--mut)}
 .sparklv b{display:block;font-size:14px;color:var(--ink)}
+/* 六期草稿：管理态势卡 / 预警影响面行 */
+.sitcard{margin-top:10px}
+.sitcard h3{font-size:15px;margin-top:0}
+.sitcard h3 .ic{color:var(--navy)}
+.sit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;margin-top:10px}
+@media(min-width:700px){.sit-grid{grid-template-columns:repeat(4,1fr)}}
+.sit-lab{font-size:12px;color:var(--mut);font-weight:700}
+.sit-big{font-size:21px;font-weight:800;color:var(--navy);line-height:1.35;margin-top:1px}
+.sit-big small{font-size:12px;font-weight:600;color:var(--mut);margin-left:3px}
+.sit-sub{font-size:12px;color:var(--mut);margin-top:2px;line-height:1.55}
+.sit-trend.up{color:#d4695c;font-weight:700}
+.sit-trend.down{color:#4a9457;font-weight:700}
+.sit-node{font-size:12.5px;color:#33475c;line-height:1.65}
+.warn-scope{font-size:12px;color:var(--mut);margin-top:6px;line-height:1.55}
+.warn-scope:empty{display:none;margin:0}
 </style>
 </head>
 <body>
@@ -411,6 +426,13 @@ zh:{
  cd_future:"距生效 {n} 天",cd_today:"今日生效",cd_past:"已生效",
  sp_title:"关键指标走势",sp_sub:"日度数据 · 窗口内全部数据点",
  sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨",sp_ag:"白银",sp_ag_u:"美元/盎司",sp_fx:"美元/人民币",sp_fx_u:"元",
+ sit_title:"管理态势 · 近 7 天",
+ sit_warn:"近 7 天预警",sit_warn_unit:" 条 · 高紧迫 {h}",
+ sit_trend:"较前 7 天 {d} 条（{p}）· {w}",sit_up:"升温",sit_down:"降温",sit_flat:"持平",
+ sit_eff:"已生效涨价",sit_eff_unit:" 起",sit_eff_sub:"覆盖 {m} 个子品类",
+ sit_nodes:"近期生效节点",sit_in_days:"{n} 天后",sit_today:"今日",sit_nodes_none:"近期无到期节点",
+ sit_closed:"事件收尾",sit_closed_unit:" 件",sit_closed_sub:"已落地 {a} · 已失效 {b}",
+ warn_scope:"涉及子品类（{n}）：{list}",
  sit_eol:"停产应对",sit_shortage:"供应中断应对",sit_price:"涨价应对",sit_lead:"交期应对",sit_opp:"机会窗口",
  pb_more:"还有 {n} 条",
  pb_eol:["先盯最后下单日，倒排一次性采购计划","按生命周期用量备足：装机量加年维修率测算","替代料认证与切换排期同步推进","多备部分预先谈好同行调剂渠道，防呆滞"],
@@ -492,6 +514,13 @@ en:{
  cd_future:"Takes effect in {n} days",cd_today:"Takes effect today",cd_past:"In effect",
  sp_title:"Key indicator trends",sp_sub:"Daily data · all points in window",
  sp_lme:"LME Copper 3M",sp_lme_u:"USD/t",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t",sp_ag:"Silver",sp_ag_u:"USD/ozt",sp_fx:"USD/CNY",sp_fx_u:"CNY",
+ sit_title:"Management Snapshot · Last 7 Days",
+ sit_warn:"Warnings — last 7 days",sit_warn_unit:" warnings · {h} high-urgency",
+ sit_trend:"vs prior 7 days: {d} ({p}) · {w}",sit_up:"Heating up",sit_down:"Cooling down",sit_flat:"Steady",
+ sit_eff:"Price hikes in effect",sit_eff_unit:" hikes",sit_eff_sub:"Covering {m} subcategories",
+ sit_nodes:"Upcoming effective dates",sit_in_days:"in {n} days",sit_today:"today",sit_nodes_none:"No upcoming deadlines",
+ sit_closed:"Events closed",sit_closed_unit:" closed",sit_closed_sub:"Implemented {a} · Expired {b}",
+ warn_scope:"Subcategories ({n}): {list}",
  sit_eol:"Discontinuation (EOL)",sit_shortage:"Supply Disruption",sit_price:"Price Hikes",sit_lead:"Lead-Time Pressure",sit_opp:"Opportunity Window",
  pb_more:"{n} more",
  pb_eol:["Work backwards from the last-time-buy date","Stock for lifecycle demand: installed base + annual repair rate","Run alternate qualification and switch-over schedule in parallel","Pre-arrange peer swap channels for any overstock"],
@@ -648,6 +677,7 @@ function warnCard(w){
     <span class="pill ${w.urgency==="高"?"p-red":w.urgency==="中"?"p-org":"p-blu"}">${esc(ul)}${t("urgency_suffix")}</span></h4>
     <div class="do"><b>${t("act_do")}</b>${esc(w.action)}</div>
     <div class="meta">${t("act_impact")}${esc(w.impact)}<br>${t("act_trigger")}${esc(w.trigger)}${w.deadline?`<br>${ICO.clock}${fmt(t("act_dl"),{d:esc(w.deadline)})}${cdBadge(w.deadline)}`:""}</div>
+    <div class="warn-scope" data-wid="${w.id}"></div>
     ${bases.length?`<div class="bases">${t("act_bases")}${bases.map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}</div>`:""}
     ${ec?`<div class="rel">${t("rel_ev")}${ec}</div>`:""}</article>`;
 }
@@ -832,7 +862,8 @@ function renderMain(d){
     +`<div id="supplybase"><div class="card"><div class="loading">${t("sb_loading")}</div></div></div>`;
 
   $("#main").innerHTML=
-    `<section class="blk" id="s1">${s1}</section>`
+    `<div class="card sitcard" id="sitcard" style="display:none"><h3>${ICO.chart}${t("sit_title")}</h3><div class="sit-grid"><div class="sit-cell" id="sit-warn"></div><div class="sit-cell" id="sit-eff" style="display:none"></div><div class="sit-cell" id="sit-nodes"></div><div class="sit-cell" id="sit-closed" style="display:none"></div></div></div>`
+   +`<section class="blk" id="s1">${s1}</section>`
    +`<section class="blk" id="s2">${s2}</section>`
    +`<section class="blk" id="s3">${s3}</section>`
    +`<section class="blk" id="s4">${s4}</section>`
@@ -854,6 +885,7 @@ function renderMain(d){
   loadSupply();
   paintTimeline();
   paintSpark();
+  paintSituation(CURDATE,d);
 }
 
 async function loadSupply(){
@@ -1013,6 +1045,92 @@ async function loadEvents(){
     EVDATA=Array.isArray(d)?d:(d.events||[]);
   }catch(e){EVFAIL=true;}
   paintTimeline();
+  sitEventCells();
+  paintWarnScope();
+}
+
+/* ---- 六期草稿：管理态势卡（近 7 天预警懒加载统计 + 事件库聚合）/ 预警影响面 ----
+   数据来源：第 1 格懒加载 data/<date>.json（SIT_CACHE 跨切换复用）；第 2、4 格与影响面行复用 EVDATA（loadEvents 同一份，不重复 fetch） */
+let SIT_CACHE={},SIT_SEQ=0;
+function sitDayDiff(a,b){
+  const p=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(s||""));return m?Date.UTC(+m[1],+m[2]-1,+m[3]):null;};
+  const x=p(a),y=p(b);return (x==null||y==null)?null:Math.round((y-x)/86400000);
+}
+function sitEventCells(){
+  if(!EVDATA)return;
+  const eff=document.getElementById("sit-eff"),cls=document.getElementById("sit-closed");
+  if(eff){
+    const hits=EVDATA.filter(e=>e.status==="已生效"&&/涨价|调价|提价/.test(String(e.title||"")));
+    if(hits.length){
+      const subs=new Set();hits.forEach(e=>(e.subcategories||[]).forEach(s=>subs.add(s)));
+      eff.style.display="";
+      eff.innerHTML=`<div class="sit-lab">${t("sit_eff")}</div><div class="sit-big">${hits.length}<small>${t("sit_eff_unit")}</small></div><div class="sit-sub">${fmt(t("sit_eff_sub"),{m:subs.size})}</div>`;
+    }else eff.style.display="none";
+  }
+  if(cls){
+    const a=EVDATA.filter(e=>e.status==="已落地").length,b=EVDATA.filter(e=>e.status==="已失效").length;
+    cls.style.display="";
+    cls.innerHTML=`<div class="sit-lab">${t("sit_closed")}</div><div class="sit-big">${a+b}<small>${t("sit_closed_unit")}</small></div><div class="sit-sub">${fmt(t("sit_closed_sub"),{a:a,b:b})}</div>`;
+  }
+}
+function paintWarnScope(){
+  if(!EVDATA||!CUR)return;
+  const byId={};EVDATA.forEach(e=>byId[e.id]=e);
+  document.querySelectorAll(".warn-scope").forEach(el=>{
+    const w=WMAP[el.getAttribute("data-wid")];if(!w)return;
+    const subs=new Set();
+    (w.related_events||[]).forEach(id=>{const e=byId[id];if(e)(e.subcategories||[]).forEach(s=>subs.add(s));});
+    if(!subs.size){el.textContent="";return;}
+    const names=Array.from(subs),sep=LANG==="en"?", ":"、";
+    let list=names.slice(0,4).join(sep);
+    if(names.length>4)list+=(LANG==="en"?", etc.":"等");
+    el.textContent=fmt(t("warn_scope"),{n:names.length,list:list});
+  });
+}
+async function paintSituation(date,dayData){
+  const card=document.getElementById("sitcard");if(!card||!date||!dayData)return;
+  const seq=++SIT_SEQ;
+  const nodes=(dayData.warnings||[]).filter(w=>w.deadline&&String(w.deadline)>=date)
+    .sort((a,b)=>String(a.deadline)<String(b.deadline)?-1:1).slice(0,3);
+  const nbox=document.getElementById("sit-nodes");
+  if(nbox)nbox.innerHTML=`<div class="sit-lab">${t("sit_nodes")}</div><div style="margin-top:3px">`
+    +(nodes.length?nodes.map(w=>{const x=sitDayDiff(date,w.deadline);
+      const xs=x===0?t("sit_today"):fmt(t("sit_in_days"),{n:x});
+      const tt=String(w.title||"");const cut=tt.length>20?tt.slice(0,20)+"…":tt;
+      return `<div class="sit-node">${esc(w.deadline)} ${esc(cut)}（${xs}）</div>`;}).join("")
+    :`<div class="sit-node">${t("sit_nodes_none")}</div>`)+`</div>`;
+  sitEventCells();
+  paintWarnScope();
+  card.style.display="block";
+  const days=(window._ISSUE_DAYS||[]).filter(d=>d<=date);
+  const recent=days.slice(-7),prior=days.length>=8?days.slice(-14,-7):[];
+  SIT_CACHE[date]=dayData;
+  const load=async ds=>{
+    let tot=0,hi=0,ok=0;
+    const rs=await Promise.all(ds.map(async d=>{
+      if(SIT_CACHE[d])return SIT_CACHE[d];
+      try{const r=await fetch("data/"+d+".json");if(!r.ok)return null;const j=await r.json();SIT_CACHE[d]=j;return j;}catch(e){return null;}
+    }));
+    rs.forEach(j=>{if(j){ok++;const ws=j.warnings||[];tot+=ws.length;hi+=ws.filter(w=>w.urgency==="高").length;}});
+    return {tot:tot,hi:hi,ok:ok};
+  };
+  const R=await load(recent);
+  if(seq!==SIT_SEQ||CURDATE!==date)return;
+  if(!R.ok){card.style.display="none";return;}
+  let trend="";
+  if(prior.length){
+    const P=await load(prior);
+    if(seq!==SIT_SEQ||CURDATE!==date)return;
+    if(P.ok&&P.tot>0){
+      const diff=R.tot-P.tot,pct=Math.round(diff/P.tot*100);
+      const cls=pct>=10?"up":pct<=-10?"down":"flat";
+      const arrow=cls==="up"?"↑":cls==="down"?"↓":"→";
+      const wtxt=cls==="up"?t("sit_up"):cls==="down"?t("sit_down"):t("sit_flat");
+      trend=`<div class="sit-sub sit-trend ${cls}">${arrow} ${fmt(t("sit_trend"),{d:(diff>0?"+":"")+diff,p:(pct>0?"+":"")+pct+"%",w:wtxt})}</div>`;
+    }
+  }
+  const cell=document.getElementById("sit-warn");
+  if(cell)cell.innerHTML=`<div class="sit-lab">${t("sit_warn")}</div><div class="sit-big">${R.tot}<small>${fmt(t("sit_warn_unit"),{h:R.hi})}</small></div>${trend}`;
 }
 
 /* ---- 关键指标走势（data/series.json；缺失或点数不足时静默隐藏） ---- */
