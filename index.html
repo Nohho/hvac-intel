@@ -780,6 +780,11 @@ function initSpy(){
   });
 }
 function supType(s){if(LANG!=="en")return s;if(s.includes("已生效"))return t("st_hiked");if(s.includes("涨价"))return t("st_hike");if(s.includes("价格"))return t("st_price");if(s.includes("交期"))return t("st_lead");if(s.includes("缺货")||s.includes("产能紧张"))return t("st_tight");if(s.includes("无异常"))return t("st_ok");if(s.includes("风险")||s.includes("贸易壁垒"))return t("st_risk");if(s.includes("实质动态")||s.includes("轮查结论"))return t("st_active");if(s.includes("并购"))return t("st_ma");if(s.includes("投产")||s.includes("产能投资"))return t("st_capex");return s;}
+/* ---- EN 渲染层译名字典（2026-10-22 四处漏译修复）：仅 EN 模式显示层查表，数据字段/键一律不动；查不到回退原名，ZH 模式零变化 ---- */
+const COMPANY_EN={"江森自控/约克":"Johnson Controls / York","江森自控":"Johnson Controls","开利":"Carrier","特灵":"Trane","大金":"Daikin","美的":"Midea","格力":"Gree","海尔":"Haier","日立/约克":"Hitachi / York","日立":"Hitachi","英维克":"Envicool","申菱环境":"Shenling","申菱":"Shenling","高澜股份":"Goaland","同飞股份":"Tongfei","浪潮信息":"Inspur","联想":"Lenovo","松下":"Panasonic","三星":"Samsung","三菱电机":"Mitsubishi Electric","LG":"LG","Vertiv":"Vertiv"};
+function coName(s){return LANG==="en"?(COMPANY_EN[s]||s):s;}
+const TAXNAME_EN={"HVAC 专有液冷与热管理":"HVAC Liquid Cooling & Thermal Management","PCBA & 电子代工":"PCBA & Electronics Manufacturing","低压电气与配电":"Low-Voltage Electrical & Distribution","机械结构与辅材":"Mechanical Structures & Auxiliaries","电机、风机与传感控制":"Motors, Fans & Sensing/Controls","芯片与半导体":"Chips & Semiconductors","被动元件与连接件":"Passives & Connectors","其他辅材与未分类":"Other Auxiliaries & Uncategorized","密封与制冷剂":"Sealing & Refrigerants","换热器与冷板":"Heat Exchangers & Cold Plates","水泵与过滤":"Pumps & Filtration","阀门与管件":"Valves & Fittings","PCBA板卡":"PCBA Boards","变压器与互感器":"Transformers & Instrument Transformers","断路器与接触器":"Circuit Breakers & Contactors","熔断器":"Fuses","继电器与电源":"Relays & Power Supplies","塑料件与包装":"Plastic Parts & Packaging","轴承与弹簧":"Bearings & Springs","钣金与结构件":"Sheet Metal & Structural Parts","铸锻件与机加工":"Castings, Forgings & Machining","传感器与仪表":"Sensors & Instruments","电机":"Motors","风机":"Fans","功率器件":"Power Devices","存储器":"Memory","时钟/晶振/FPGA":"Clock / crystal oscillators / FPGAs","模拟与电源 IC / MCU":"Analog & Power ICs / MCU","电容":"Capacitors","电阻与电感":"Resistors & inductors","连接器与线束":"Connectors & harnesses","其他辅料":"Other auxiliaries","183 供应商子品类 + 24 EE 元器件小类（JCAC·PCBA 口径）共同构成受控词表。PCBA 芯片/被动件类新闻用 EE 小类归类；结构件/大宗用 183 归类。":"The 183 supplier subcategories + 24 EE component subcategories (JCAC · PCBA scope) form the controlled vocabulary. PCBA chip/passive news uses EE subcategories; structural/bulk items use the 183."};
+function taxName(s){return LANG==="en"?(TAXNAME_EN[s]||s):s;}
 function chkLabel(s){return s==="有实质动态"?t("chk_yes"):s==="无实质动态"?t("chk_no"):t("chk_other");}
 /* 导读瘦身：headline 按 ；/; 切分；≥3 条取前 2 条以；连接、缺句号补。，并标记提示行；≤2 条（含单条长句）原文照渲 */
 function slimDigest(h){
@@ -859,14 +864,14 @@ function renderMain(d){
 
   /* ---- 五、供应商动态 ---- */
   const tcol=s=>s==="涨价"?"p-red":s==="排查无异常"?"p-gry":s==="经营风险"?"p-org":"p-blu";
-  const subChips=s=>{const sc=(s.subcategories||[]).map(x=>`<span class="subchip">${esc(x)}</span>`).join("");
-    const co=s.company?`<span class="subchip" style="background:#fff6e5;color:#b3851f;border-color:#f0d9ac">${ICO.bldg}${esc(s.company)}</span>`:"";
+  const subChips=s=>{const sc=(s.subcategories||[]).map(x=>`<span class="subchip">${esc(taxName(x))}</span>`).join("");
+    const co=s.company?`<span class="subchip" style="background:#fff6e5;color:#b3851f;border-color:#f0d9ac">${ICO.bldg}${esc(coName(s.company))}</span>`:"";
     return (sc||co)?`<div class="subchips">${sc}${co}</div>`:"";};
   const sup=(d.supplier_updates||[]).map(s=>`<div class="supp"><div class="srow" style="border-bottom:none;padding-bottom:0"><span class="pill ${tcol(s.type)}">${esc(supType(s.type))}</span><span class="cat">${esc(s.category)}</span><span class="dt">${esc(s.detail).slice(0,30)}</span></div>${subChips(s)}</div>`).join("");
   const s5ev=bySec("供应商动态");
   const chk=d.company_checklist||[];
   const hot5=chk.filter(c=>c.status==="有实质动态");
-  const chkHtml=chk.map(c=>`<span class="cchip" title="${esc(c.note||chkLabel(c.status))}"><span class="cic ${c.status==="有实质动态"?"hot":c.status==="无实质动态"?"ok":"bk"}">${c.status==="有实质动态"?ICO.flame:c.status==="无实质动态"?ICO.check:ICO.undo}</span>${esc(c.company)}</span>`).join("");
+  const chkHtml=chk.map(c=>`<span class="cchip" title="${esc(c.note||chkLabel(c.status))}"><span class="cic ${c.status==="有实质动态"?"hot":c.status==="无实质动态"?"ok":"bk"}">${c.status==="有实质动态"?ICO.flame:c.status==="无实质动态"?ICO.check:ICO.undo}</span>${esc(coName(c.company))}</span>`).join("");
   const dynCats=[...new Set((d.supplier_updates||[]).filter(s=>s.type!=="排查无异常").map(s=>s.category))];
   const s5=secttl("五",t("sec")[4],(d.supplier_updates||[]).length+" "+t("u_items"))
     +guide(fmt(t("s5_guide"),{a:dynCats.length,b:dynCats.map(esc).join("、")||t("s5_none"),c:chk.length,d:hot5.length}))
@@ -930,7 +935,7 @@ async function loadSupply(){
     const mkBars=s.pcba.top_makers.map(x=>
       `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#5ea3dd"></div></div></div>`).join("");
     const ee=s.ee_categories.map(c=>
-      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(n=>esc(n)+catBadge(n)+soleBadge(n)).join(" · ")}</div></div></details>`).join("");
+      `<details class="sec"><summary style="font-size:14px">${esc(taxName(c.name))}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(n=>esc(taxName(n))+catBadge(n)+soleBadge(n)).join(" · ")}</div></div></details>`).join("");
     const p=s.pcba;
     /* 基地供应商品类 tabs */
     let baseHtml=`<div class="card"><div class="errmsg">${t("base_err")}</div></div>`;
@@ -1083,7 +1088,7 @@ async function sitThinCell(){
   const rr=await riskRankJson();if(!rr)return;
   const el=document.getElementById("sit-thin");if(!el)return;
   const risk=new Set((rr.items||[]).map(i=>i.name));
-  const cross=(ss.items||[]).filter(i=>risk.has(i.name)).map(i=>i.name);
+  const cross=(ss.items||[]).filter(i=>risk.has(i.name)).map(i=>taxName(i.name));
   const sep=LANG==="en"?", ":"、";
   let list=cross.slice(0,5).join(sep);
   if(cross.length>5)list+=(LANG==="en"?", etc.":"等");
@@ -1100,7 +1105,7 @@ async function renderRiskRank(){
     const max=Math.max(...items.map(i=>i.score),1);
     const el=$("#riskrank");
     el.innerHTML=`<h3>${ICO.chart}${fmt(t("rr_title"),{days:d.window_days||30})}<span class="rrsub">${t("rr_sub")}</span></h3>`+
-      items.map((i,ix)=>`<div class="rrrow" title="${esc(i.sample||"")}"><span class="rrname">${ix+1}. ${esc(i.name)}</span><span class="rrbar"><i style="width:${Math.round(i.score/max*100)}%"></i></span><span class="rrscore">${fmt(t("rr_score"),{s:i.score,h:i.hits})}</span></div>`).join("");
+      items.map((i,ix)=>`<div class="rrrow" title="${esc(i.sample||"")}"><span class="rrname">${ix+1}. ${esc(taxName(i.name))}</span><span class="rrbar"><i style="width:${Math.round(i.score/max*100)}%"></i></span><span class="rrscore">${fmt(t("rr_score"),{s:i.score,h:i.hits})}</span></div>`).join("");
     el.style.display="block";
   }catch(e){}
 }
@@ -1128,7 +1133,7 @@ function paintTimeline(){
     return {e,tl,latest:tl.length?String(tl[0].date||""):""};
   }).sort((a,b)=>rank(a.e.status)-rank(b.e.status)||b.latest.localeCompare(a.latest));
   const active=items.filter(x=>rank(x.e.status)===0).length;
-  const li=(n,hid)=>`<li${hid?' class="evhid" style="display:none"':""}><span class="ed">${esc(n.date)}</span><span class="ec">${esc(n.change)}</span></li>`;
+  const li=(n,hid)=>`<li${hid?' class="evhid" style="display:none"':""}><span class="ed">${esc(n.date)}</span><span class="ec">${esc(LANG==="en"?(n.text_en||n.change):n.change)}</span></li>`;
   const cards=items.map(({e,tl})=>{
     const st=evStatus(e.status);
     let body="";
@@ -1140,7 +1145,7 @@ function paintTimeline(){
     }else{
       body=tl.map(n=>li(n,false)).join("");
     }
-    return `<article class="card evcard"><div class="evhead"><h3>${esc(e.title)}</h3><span class="evst ${st[0]}">${st[1]}</span></div><ul class="evt">${body}</ul></article>`;
+    return `<article class="card evcard"><div class="evhead"><h3>${esc(LANG==="en"?(e.title_en||e.title):e.title)}</h3><span class="evst ${st[0]}">${st[1]}</span></div><ul class="evt">${body}</ul></article>`;
   }).join("");
   box.innerHTML=head(fmt(t("tl_cnt"),{n:items.length}))+guide(fmt(t("tl_guide"),{n:items.length,a:active}))+cards;
 }
@@ -1189,7 +1194,7 @@ function paintWarnScope(){
     const subs=new Set();
     (w.related_events||[]).forEach(id=>{const e=byId[id];if(e)(e.subcategories||[]).forEach(s=>subs.add(s));});
     if(!subs.size){el.textContent="";return;}
-    const names=Array.from(subs),sep=LANG==="en"?", ":"、";
+    const names=Array.from(subs).map(taxName),sep=LANG==="en"?", ":"、";
     let list=names.slice(0,4).join(sep);
     if(names.length>4)list+=(LANG==="en"?", etc.":"等");
     el.textContent=fmt(t("warn_scope"),{n:names.length,list:list});
