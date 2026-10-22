@@ -16,12 +16,12 @@
    "section": "头条事件",
    "summary": "Kingboard Laminates announced a 15% price increase on new orders for 2116 and thinner glass-fiber cloth CCLs and prepregs starting today, marking the eighth price adjustment this year; Panasonic notified customers that certain general multi-layer board CCLs (R-1705/R-1766/R-1566/R-1755 series) will increase in price by 200% (3 times) starting with shipments on 2027-1-1, covering five major production bases in Koriyama, Guangzhou, Suzhou, Taiwan, and Thailand; electronic cloth prices rose over 10% further in October (7628 +1.5 RMB/meter, G75 electronic yarn +3,000 RMB/ton, thin cloth +2.5 RMB/meter); Citi expects Kingboard to raise prices by another ~10% in November/December, with the average spot price potentially rising to 420 RMB/sheet by year-end.",
    "numbers": [
-    "建滔CCL即日起新接订单 +15%（今年第8度）",
-    "松下部分CCL 2027-1-1出货起 +200%（3倍）",
-    "7628电子布 +1.5元/米",
-    "G75电子纱 +3,000元/吨",
-    "薄布 +2.5元/米",
-    "花旗：建滔11/12月或再涨约10%，年底现货均价或至420元/张"
+    "Kingboard CCL: new orders +15% effective immediately (8th increase this year)",
+    "Panasonic: select CCL +200% (3x) for shipments from Jan 1, 2027",
+    "7628 e-glass fabric +RMB 1.5/m",
+    "G75 e-glass yarn +RMB 3,000/t",
+    "Thin fabric +RMB 2.5/m",
+    "Citi: Kingboard may add ~10% in Nov/Dec; year-end spot average could reach RMB 420/sheet"
    ],
    "sources": [
     {
@@ -67,12 +67,12 @@
    "section": "头条事件",
    "summary": "LME 3-month copper closed on Oct 14 at approximately 14,436 $/ton (-0.97%, pulling back after touching a high of 14,700 $ during the session, the highest since Sep 23, following the resolution of strike risks at BHP's Escondida copper mine); ICSG projects a global refined copper supply surplus of about 104,000 tons in 2026; LME 3-month aluminum fell 1.7% to 2,987.5 $/ton, breaking the 3,000 threshold to reach an annual low; Shanghai aluminum AL2611 closed at 23,120 RMB/ton, with Foshan A00 spot at 23,690 RMB/ton.",
    "numbers": [
-    "LME铜10-14收 ~14,436美元/吨（-0.97%）",
-    "盘中一度 14,700美元/吨（9-23以来新高）",
-    "ICSG：2026年精炼铜供应过剩约10.4万吨",
-    "LME铝 2,987.5美元/吨（-1.7%，年内低点）",
-    "沪铝AL2611 23,120元/吨",
-    "佛山A00现货 23,690元/吨"
+    "LME copper closed Oct 14 at ~$14,436/t (-0.97%)",
+    "Intraday high $14,700/t (highest since Sep 23)",
+    "ICSG: 2026 refined copper supply surplus ~104 kt",
+    "LME aluminum $2,987.5/t (-1.7%, year low)",
+    "SHFE aluminum AL2611 RMB 23,120/t",
+    "Foshan A00 spot RMB 23,690/t"
    ],
    "sources": [
     {
@@ -95,7 +95,7 @@
  ],
  "supplier_updates": [
   {
-   "category": "压缩机（离心/往复/转子/涡旋/螺杆）",
+   "category": "Compressors (centrifugal / reciprocating / rotary / scroll / screw)",
    "type": "排查无异常",
    "detail": "Highly/Lingda/GMCC/Danfoss have no new news on price increases, lead times, or capacity in the past 3 days.",
    "event_id": null,
@@ -109,7 +109,7 @@
    ]
   },
   {
-   "category": "制冷剂/冷冻机油",
+   "category": "Refrigerants / refrigeration oil",
    "type": "排查无异常",
    "detail": "Juhua/Dongyue/Sanmei/Yonghe have no new price increase letters or quota news in the past 3 days.",
    "event_id": null,
@@ -120,7 +120,7 @@
    ]
   },
   {
-   "category": "铜及铜制品/铜管件",
+   "category": "Copper & copper products / copper tube fittings",
    "type": "价格更新",
    "detail": "LME copper closed on Oct 14 at about $14,436/ton (-0.97%, dropping after hitting $14,700 intraday, a high since Sep 23, following the resolution of the BHP Escondida strike risk); ICSG forecasts a global refined copper oversupply of about 104,000 tons in 2026 (Sina Finance / Cailian Press, Oct 15).",
    "event_id": "evt-copper-high",
@@ -134,7 +134,7 @@
    ]
   },
   {
-   "category": "钢/铝（热轧钢/钢板/铝翅片/铝挤压）",
+   "category": "Steel / aluminum (hot-rolled / plate / fin stock / extrusions)",
    "type": "价格更新",
    "detail": "LME aluminum fell 1.7% on Oct 14 to $2,987.5/ton, breaking below the 3,000 mark to hit a yearly low; SHFE aluminum AL2611 closed at 23,120 RMB/ton, Foshan A00 spot at 23,690 RMB/ton (Sina Finance / Everbright Futures Daily, Oct 15); hot-rolled steel/plates have no new quotes, no anomalies found.",
    "event_id": null,
@@ -147,7 +147,7 @@
    ]
   },
   {
-   "category": "IGBT模块/电子电源/高低压变频器",
+   "category": "IGBT Modules / Electronic Power Supplies / LV+MV VSD",
    "type": "排查无异常",
    "detail": "onsemi's second round of price increases took effect on Oct 10, with no new actions taken afterwards [BOM Impact: onsemi is a major PCBA maker]; Renesas's new pricing system effective Jan 1, 2027 remains unchanged; ST's third round took effect on Aug 23; Infineon's Thailand power module plant started production on Oct 1 (already recorded).",
    "event_id": null,
@@ -160,7 +160,7 @@
    ]
   },
   {
-   "category": "断路器/接触器/继电器/变压器/互感器",
+   "category": "Breakers / contactors / relays / transformers / instrument transformers",
    "type": "排查无异常",
    "detail": "Schneider Electric/ABB/Siemens/Chint/Delixi have issued no price adjustment letters in the past 3 days; transformers/instrument transformers show no new developments.",
    "event_id": null,
@@ -175,7 +175,7 @@
    ]
   },
   {
-   "category": "电机/风机/水泵/轴承/磁钢",
+   "category": "Motors / fans / pumps / bearings / magnet steel",
    "type": "价格更新",
    "detail": "Praseodymium-neodymium oxide quoted at 740,000 RMB/ton on Oct 10 (already recorded); addition: Xiangcai Securities expects \"Praseodymium-neodymium to remain firm, while dysprosium-terbium will be relatively weak,\" with October's marginally loose supply suppressing upside price room (Sina Finance / Data宝 Oct 12, Securities Times Oct 13); Baogou Q4 concentrate price stabilized at a high level of 38,769 RMB/ton (already recorded); motors/fans/pumps/bearings themselves show no anomalies upon check.",
    "event_id": "evt-rare-earth-q4-price",
@@ -194,7 +194,7 @@
    ]
   },
   {
-   "category": "阀件（控制阀/电磁阀/四通阀）/换热（微通道/管翅/壳管）",
+   "category": "Valves (control / solenoid / reversing) / heat exchange (microchannel / finned tube / shell-and-tube)",
    "type": "排查无异常",
    "detail": "Sanhua/DunAn/Yinlun have no new news on price increases, lead times, or capacity in the past 3 days.",
    "event_id": null,
@@ -209,7 +209,7 @@
    ]
   },
   {
-   "category": "传感器（通用/流量/压力/温度）",
+   "category": "Sensors (general / flow / pressure / temperature)",
    "type": "排查无异常",
    "detail": "Rapid check on sensors shows no substantial developments.",
    "event_id": null,
@@ -222,7 +222,7 @@
    ]
   },
   {
-   "category": "PCB板",
+   "category": "PCB boards",
    "type": "涨价",
    "detail": "Kingboard Laminates increased prices by +15% for new orders of 2116 and lower thin glass-fiber cloth CCL and PP starting today (eighth price adjustment this year; Commercial Times Oct 14); Panasonic to increase prices by 200% (3x) for certain multi-layer board CCLs (R-1705/R-1766/R-1566/R-1755) starting from shipments on Jan 1, 2027, covering production bases in Koriyama, Guangzhou, Suzhou, Taiwan, and Thailand (Commercial Times / Digital Times Oct 14); electronic cloth prices to rise over 10% in October (7628 +1.5 RMB/meter, G75 electronic yarn +3,000 RMB/ton, thin cloth +2.5 RMB/meter; China Securities Journal Oct 13); Citi: Kingboard may raise prices by another ~10% in Nov/Dec, with year-end spot average prices potentially reaching 420 RMB/sheet (Gelonghui Oct 14). [BOM Impact: EE category PCBA / electronic manufacturing]",
    "event_id": "evt-pcb-ccl-price-hike-2",
@@ -232,7 +232,7 @@
    ]
   },
   {
-   "category": "EE 存储器",
+   "category": "EE Memory",
    "type": "涨价",
    "detail": "Barclays/JPMorgan stance unchanged; addition: Nanya Technology notified customers that DRAM contract prices have been raised again by up to 20% (China IC Exchange Net Oct 7); Korean experts stated on Oct 15 that the current memory supply gap is about 30% to 40% (China IC Exchange Net Oct 15). [BOM Impact: Memory is a major PCBA component]",
    "event_id": "evt-dram-hbm-shortage",
@@ -242,7 +242,7 @@
    ]
   },
   {
-   "category": "EE 电容",
+   "category": "EE Capacitors",
    "type": "涨价",
    "detail": "Murata plans additional MLCC capacity investment (amount to be announced in Oct 30 financial report), book-to-bill ratio hit a record 1.47 (already recorded); addition: AI Morning Briefing (Oct 13) expects high-capacitance MLCCs to still have 20% to 30% upside room in 2026H2, and low-to-mid end +10% to 20%, with tight supply and demand extending into 2027. [BOM Impact: Murata / Yageo / Walsin / Samsung Electro-Mechanics / Fenghua / Taiyo Yuden are all major PCBA makers]",
    "event_id": "evt-mlcc-price-hike",
@@ -252,7 +252,7 @@
    ]
   },
   {
-   "category": "EE 模拟与电源IC/MCU",
+   "category": "EE Analog & power ICs / MCUs",
    "type": "排查无异常",
    "detail": "TI's third round of price adjustments took effect in October, Nationz Technologies' price increase took effect on Oct 1, Renesas's new system takes effect Jan 1, 2027; all show no additions. [BOM Impact: TI is a major PCBA maker]",
    "event_id": null,
@@ -262,7 +262,7 @@
    ]
   },
   {
-   "category": "EE 时钟/晶振/FPGA",
+   "category": "EE Clock / crystal oscillators / FPGAs",
    "type": "排查无异常",
    "detail": "Rapid check shows no substantial developments.",
    "event_id": null,
@@ -272,7 +272,7 @@
    ]
   },
   {
-   "category": "EE 电阻与电感",
+   "category": "EE Resistors & inductors",
    "type": "排查无异常",
    "detail": "Rapid check shows no substantial developments.",
    "event_id": null,
@@ -282,7 +282,7 @@
    ]
   },
   {
-   "category": "EE 连接器与线束",
+   "category": "EE Connectors & harnesses",
    "type": "排查无异常",
    "detail": "Rapid check shows no substantial developments.",
    "event_id": null,
@@ -292,7 +292,7 @@
    ]
   },
   {
-   "category": "EE PCBA板卡/封测",
+   "category": "EE PCBA boards / OSAT",
    "type": "涨价",
    "detail": "Semiconductor Industry Chinainfo Oct 12: \"Most intense price hike wave in history\", OSAT quotes up 10% to 30% and rising constantly, urgent orders from small and medium customers doubled in price; ASE Technology Holding full-year capital expenditure $10.5 billion, LEAP advanced packaging and testing revenue target $3.5B+ (doubling by 2027); King Yuan Electronics capital expenditure NT$50 billion, expanding capacity by 30% to 50%. [BOM Impact: EE category PCBA / electronic manufacturing]",
    "event_id": "evt-osat-price-hike",
@@ -302,7 +302,7 @@
    ]
   },
   {
-   "category": "北美HVAC 10月涨价清单执行进展（Tier B轮查）",
+   "category": "North America HVAC October price-hike list execution progress (Tier B rotation)",
    "type": "涨价",
    "detail": "tekmar (Watts HVAC controllers) price increases of ~6% take effect today (Oct 16), Robertshaw select products up to 15% took effect on Oct 12, Regal Rexnord select brand motors and accessories +2.5% took effect on Oct 1 (ACHR News October price list Oct 08; all recorded in event library evt-na-hvac-october-price-hikes, today is effective confirmation, no status change).",
    "event_id": "evt-na-hvac-october-price-hikes",
@@ -313,7 +313,7 @@
    ]
   },
   {
-   "category": "包装（Tier B轮查）",
+   "category": "Packaging (Tier B rotation)",
    "type": "涨价",
    "detail": "Epsilyte expanded polystyrene (EPS, used for equipment packaging) price increased to $0.11/lb (effective Oct 1, driven by raw material costs; Business Wire Sep 25); Mondi paper packaging raised prices across multiple paper grades again in Q3 to offset energy costs (Reuters Oct 15).",
    "event_id": null,
@@ -323,7 +323,7 @@
    ]
   },
   {
-   "category": "Tier B轮查",
+   "category": "Tier B rotation",
    "type": "排查无异常",
    "detail": "Rapid check on the remaining 8 categories of the 11th batch shows no substantial developments.",
    "event_id": null,
