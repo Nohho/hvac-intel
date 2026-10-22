@@ -1,0 +1,258 @@
+{
+  "note": "口径：LME 铜/铝均为 3 月期收盘价（美元/吨，Westmetall 历史表 \"3 months\" 列）；美元/人民币为中国外汇交易中心人民币汇率中间价（USD/CNY，4 位小数）。早报明写值（src=brief）优先；公开源（src=westmetall / chinamoney / conv）补缺失日期，且重叠日期相对偏差 >0.5% 时改用公开源值（早报原值保留在该点的 brief_value 字段）。白银：Westmetall Fine Silver 定盘（欧元/公斤）经欧洲央行 EUR/USD 参考汇率换算为美元/盎司（×31.1035/1000），src=conv。重叠日期已交叉核对，偏差明细见 gen-series.py 运行输出。",
+  "copper_lme_usd_t": [
+    {
+      "date": "2026-10-05",
+      "value": 14366,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-06",
+      "value": 14434,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-07",
+      "value": 14422,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-08",
+      "value": 14417,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-09",
+      "value": 14550,
+      "src": "brief"
+    },
+    {
+      "date": "2026-10-12",
+      "value": 14657.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-13",
+      "value": 14621.5,
+      "src": "brief"
+    },
+    {
+      "date": "2026-10-14",
+      "value": 14635,
+      "src": "westmetall",
+      "brief_value": 14436
+    },
+    {
+      "date": "2026-10-15",
+      "value": 14362,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-16",
+      "value": 14485,
+      "src": "westmetall",
+      "brief_value": 14359.5
+    },
+    {
+      "date": "2026-10-19",
+      "value": 14342,
+      "src": "brief"
+    },
+    {
+      "date": "2026-10-20",
+      "value": 14391,
+      "src": "brief"
+    },
+    {
+      "date": "2026-10-21",
+      "value": 14315,
+      "src": "westmetall"
+    }
+  ],
+  "aluminium_lme_usd_t": [
+    {
+      "date": "2026-10-05",
+      "value": 3118,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-06",
+      "value": 3148.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-07",
+      "value": 3114,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-08",
+      "value": 3069,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-09",
+      "value": 3070,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-12",
+      "value": 3060,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-13",
+      "value": 3037,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-14",
+      "value": 3013.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-15",
+      "value": 2994.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-16",
+      "value": 3012,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-19",
+      "value": 3012,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-20",
+      "value": 2997,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-21",
+      "value": 3024.5,
+      "src": "westmetall"
+    }
+  ],
+  "usdcny": [
+    {
+      "date": "2026-10-08",
+      "value": 6.7367,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-09",
+      "value": 6.733,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-12",
+      "value": 6.7313,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-13",
+      "value": 6.7298,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-14",
+      "value": 6.7249,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-15",
+      "value": 6.7253,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-16",
+      "value": 6.722,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-19",
+      "value": 6.7208,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-20",
+      "value": 6.72,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-10-21",
+      "value": 6.7192,
+      "src": "chinamoney"
+    }
+  ],
+  "silver_usd_oz": [
+    {
+      "date": "2026-10-05",
+      "value": 60.88,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-06",
+      "value": 60.09,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-07",
+      "value": 59.14,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-08",
+      "value": 58.0,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-09",
+      "value": 59.27,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-12",
+      "value": 59.74,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-13",
+      "value": 59.3,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-14",
+      "value": 57.61,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-15",
+      "value": 55.86,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-16",
+      "value": 56.81,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-19",
+      "value": 56.75,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-20",
+      "value": 56.26,
+      "src": "conv"
+    },
+    {
+      "date": "2026-10-21",
+      "value": 56.7,
+      "src": "conv"
+    }
+  ]
+}
