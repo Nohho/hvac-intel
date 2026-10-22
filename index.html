@@ -82,6 +82,9 @@ nav.secnav a.on{background:var(--blue);color:#fff}
 .issuestrip b{font-size:20px;color:var(--navy);margin-right:3px;font-weight:800}
 .fh{display:inline-block;font-size:12px;font-weight:700;color:#0a6b3a;background:#e6f4ec;border:1px solid #bfe3cd;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
 .fr{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
+.catbdg{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.suphit{font-size:14px;color:#3c546e}
+.suphit b{color:var(--blue)}
 .sdate{white-space:nowrap}
 /* 小屏：统计条收紧，导航保持顶部横滑 */
 @media(max-width:480px){
@@ -405,6 +408,7 @@ zh:{
  siphon_eased:"缓解",siphon_pressure:"承压",siphon_watch:"关注",
  st_hiked:"涨价（已生效）",st_hike:"涨价",st_price:"价格更新",st_ok:"排查无异常",st_risk:"经营风险",
  sb_title:"供应链画像",sb_snapshot:"快照",sb_u1:"家供应商",sb_u2:"个元器件",
+ sup_hit:"近 7 天情报命中你的供应链：<b>{x}</b> 条动态 · 涉及 <b>{m}</b> 个品类",sup_hit_none:"近 7 天无命中动态",cat_badge:"{d}天动态 {h} 条 · 风险 {s}",
  sb_note:"仅品类 / maker 口径聚合，不含供应商名称",
  sb_risk:"PCBA 风险",sb_total:"元器件总数",sb_high:"高风险",sb_eol:"EOL",sb_lt:"交期≥180天",
  sb_ee:"EE 元器件品类",sb_ee_sub:"（JCAC · PCBA 口径）",
@@ -493,6 +497,7 @@ en:{
  siphon_eased:"Eased",siphon_pressure:"Under pressure",siphon_watch:"Watch",
  st_hiked:"Price hike (effective)",st_hike:"Price hike",st_price:"Price update",st_ok:"No anomalies",st_risk:"Business risk",
  sb_title:"Supply-chain profile",sb_snapshot:"snapshot",sb_u1:"suppliers",sb_u2:"components",
+ sup_hit:"Intel hits on your supply chain (last 7d): <b>{x}</b> items · <b>{m}</b> categories",sup_hit_none:"No hits in the last 7 days",cat_badge:"{h} hits in {d}d · risk {s}",
  sb_note:"Aggregated by category / maker only; no supplier names",
  sb_risk:"PCBA risk",sb_total:"Total components",sb_high:"High risk",sb_eol:"EOL",sb_lt:"Lead time ≥180 days",
  sb_ee:"EE component categories",sb_ee_sub:"(JCAC · PCBA)",
@@ -913,13 +918,14 @@ async function loadSupply(){
     const r=await fetch("data/supply-base.json");
     if(!r.ok)throw 0;
     const s=await r.json();
+    buildRRMap(await riskRankJson());
     let tax=null;
     try{const tr=await fetch("data/taxonomy.json");if(tr.ok)tax=await tr.json();}catch(e){}
     const maxMk=Math.max.apply(null,s.pcba.top_makers.map(x=>x.count));
     const mkBars=s.pcba.top_makers.map(x=>
       `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#5ea3dd"></div></div></div>`).join("");
     const ee=s.ee_categories.map(c=>
-      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(esc).join(" · ")}</div></div></details>`).join("");
+      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(n=>esc(n)+catBadge(n)).join(" · ")}</div></div></details>`).join("");
     const p=s.pcba;
     /* 基地供应商品类 tabs */
     let baseHtml=`<div class="card"><div class="errmsg">${t("base_err")}</div></div>`;
@@ -933,7 +939,8 @@ async function loadSupply(){
       window._TAX=tax;window._BASE=order[0];window._Q="";
     }
     box.innerHTML=
-     `<div class="card"><h3 style="margin-top:0">${t("sb_title")} <span class="pill p-blu">${t("sb_snapshot")} ${esc(s.snapshot_date)}</span></h3>
+     `<div class="card suphit" id="suphit" style="display:none"></div>
+      <div class="card"><h3 style="margin-top:0">${t("sb_title")} <span class="pill p-blu">${t("sb_snapshot")} ${esc(s.snapshot_date)}</span></h3>
       <div style="font-size:14px;color:#3c546e">${s.supplier_base.supplier_count} ${t("sb_u1")} · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} ${t("sb_u2")}</div>
       <div style="margin-top:6px;font-size:12px;color:#8a99ab">${t("sb_note")}</div></div>
       <div class="secsub">${t("sb_risk")}</div>
@@ -946,7 +953,37 @@ async function loadSupply(){
       <div class="secsub">${t("sb_base")} <span style="font-weight:400;color:#8a99ab">${t("sb_base_sub")}</span></div>${baseHtml}
       <div class="secsub">${t("sb_maker")}</div><div class="card">${mkBars}</div>`;
     if(window._TAX)renderBase();
+    paintSupplyHits(s);
   }catch(e){box.innerHTML=`<div class="card"><div class="errmsg">${t("sb_err")}</div></div>`;}
+}
+
+/* 命中汇总行：近 7 期每日 JSON（与态势卡共用 SIT_CACHE）× supply-base 品类名集合 */
+async function paintSupplyHits(s){
+  const el0=document.getElementById("suphit");if(!el0||!CURDATE)return;
+  const date=CURDATE;
+  const set=new Set();
+  ((s.supplier_base||{}).top_sub_categories||[]).forEach(x=>set.add(x.name));
+  (s.ee_categories||[]).forEach(c=>{set.add(c.name);(c.subs||[]).forEach(n=>set.add(n));});
+  const days=(window._ISSUE_DAYS||[]).filter(d=>d<=date).slice(-7);
+  if(!days.length)return;
+  const load=async d=>{
+    if(SIT_CACHE[d])return SIT_CACHE[d];
+    try{const r=await fetch("data/"+d+".json");if(!r.ok)return null;const j=await r.json();SIT_CACHE[d]=j;return j;}catch(e){return null;}
+  };
+  const rs=await Promise.all(days.map(load));
+  const el=document.getElementById("suphit");
+  if(!el||CURDATE!==date)return;
+  let ok=0,x=0;const cats=new Set();
+  rs.forEach(j=>{
+    if(!j)return;ok++;
+    ((j.supplier_updates||[]).concat(j.hotspot_events||[])).forEach(e=>{
+      const hit=(e.subcategories||[]).filter(n=>set.has(n));
+      if(hit.length){x++;hit.forEach(n=>cats.add(n));}
+    });
+  });
+  if(!ok)return;
+  el.innerHTML=x?fmt(t("sup_hit"),{x:x,m:cats.size}):t("sup_hit_none");
+  el.style.display="";
 }
 function setBase(b){window._BASE=b;window._Q="";const si=$("#basesearch");if(si)si.value="";
   document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x.dataset.b===b));renderBase();}
@@ -959,7 +996,7 @@ function renderBase(){
   box.innerHTML=list.length?list.map(x=>
     `<div class="subitem"><span class="nm">${esc(x.name)}</span>
      <span class="bt" style="flex:none;width:90px;height:7px;background:#edf1f6;border-radius:4px;overflow:hidden"><span class="bf" style="display:block;height:100%;width:${Math.round(x.count/max*100)}%;background:var(--blue);border-radius:4px"></span></span>
-     <span class="ct">${x.count} ${t("u_suppliers")}</span></div>`).join("")
+     <span class="ct">${x.count} ${t("u_suppliers")}</span>${catBadge(x.name)}</div>`).join("")
     :`<div class="errmsg">${t("base_nomatch")}</div>`;
 }
 
@@ -1002,11 +1039,27 @@ async function loadDay(date){
   }
 }
 
+/* ---- 供应链轻联动：risk-rank.json 单次缓存（风险榜与品类徽章共用） ---- */
+let RRD=null,RRMAP=null,RRDAYS=30;
+function riskRankJson(){
+  if(!RRD)RRD=fetch("data/risk-rank.json").then(r=>r.ok?r.json():null).catch(()=>null);
+  return RRD;
+}
+function buildRRMap(d){
+  if(!d||RRMAP)return;
+  RRMAP={};(d.items||[]).forEach(i=>{RRMAP[i.name]=i;});
+  RRDAYS=d.window_days||30;
+}
+function catBadge(name){
+  if(!RRMAP)return "";
+  const i=RRMAP[name];if(!i)return "";
+  return `<span class="catbdg">${fmt(t("cat_badge"),{d:RRDAYS,h:i.hits,s:i.score})}</span>`;
+}
+
 async function renderRiskRank(){
   try{
-    const r=await fetch("data/risk-rank.json");
-    if(!r.ok)return;
-    const d=await r.json();
+    const d=await riskRankJson();
+    if(!d)return;
     const items=(d.items||[]).slice(0,10);
     if(!items.length)return;
     const max=Math.max(...items.map(i=>i.score),1);
