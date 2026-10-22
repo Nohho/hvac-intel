@@ -77,7 +77,7 @@
       "date": "2026-10-08",
       "sources": [
         {"outlet": "新浪财经（路透/AFP）", "date": "2026-10-08", "url": "https://finance.sina.cn/usstock/mggd/2026-10-08/detail-iniunezm7683447.d.html", "first_party": false},
-        {"outlet": "财联社", "date": "2026-10-08", "url": "https://k.sina.cn/article_5952915705_162d248f906703q2ze.html?from=finance", "first_party": false}
+        {"outlet": "新浪（转财联社）", "date": "2026-10-08", "url": "https://k.sina.cn/article_5952915705_162d248f906703q2ze.html?from=finance", "first_party": false}
       ],
       "summary": "三星Q3营收195万亿韩元（+126.6%）、营业利润107.4万亿韩元（+782.5%），史上首家单季营业利润破100万亿韩元的韩企，连续四季创纪录；分析师估计Q3 HBM出货环比增长近50%；12层HBM4E通过NVIDIA及主要hyperscaler客户验证。",
       "numbers": ["营收 195 万亿韩元（+126.6%）", "营业利润 107.4 万亿韩元（+782.5%）", "HBM出货环比 +50%"],
