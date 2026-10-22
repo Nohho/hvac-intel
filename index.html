@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>HVAC 供应链情报</title>
 <meta name="description" content="HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 算力虹吸、跨行业传导、供应商动态、预警与建议。每天 08:30 更新。">
-<meta name="keywords" content="HVAC,液冷,CDU,供应链情报,数据中心,涨价,缺料,EOL,采购">
 <link rel="canonical" href="https://nohho.github.io/hvac-intel/">
 <link rel="alternate" type="application/rss+xml" title="HVAC 供应链情报" href="feed.xml">
 <meta property="og:type" content="website">
@@ -13,9 +12,13 @@
 <meta property="og:url" content="https://nohho.github.io/hvac-intel/">
 <meta property="og:title" content="HVAC 供应链情报">
 <meta property="og:description" content="暖通空调 / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://nohho.github.io/hvac-intel/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="HVAC 供应链情报">
 <meta name="twitter:description" content="HVAC / 液冷 CDU 供应链每日情报，面向采购经理与管理层">
+<meta name="twitter:image" content="https://nohho.github.io/hvac-intel/og-cover.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a58a6'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
 <style>
 :root{--blue:#1e86d6;--navy:#2c4a66;--bg:#f2f5f9;--card:#fff;--ink:#1c2733;--mut:#64748b;--line:#e3eaf3;--tint:#e9f2fb}
@@ -38,6 +41,9 @@ header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
 .alertbar{display:none;margin:0;padding:10px 14px;background:#e0654f;color:#fff;font-size:14px;font-weight:700;text-align:center}
 .alertbar.show{display:block}
 .alertbar a{color:#fff}
+/* 时效提示条：看的是最新一期且该期早于读者本地今天时显示（信息提示、非告警，故用琥珀档不用预警红） */
+.freshbar{display:none;margin:0;padding:9px 14px;background:#fef6e0;color:#b3851f;font-size:13.5px;font-weight:600;text-align:center;border-bottom:1px solid #f0e2b6}
+.freshbar.show{display:block}
 /* 六段导航 */
 nav.secnav{display:flex;gap:7px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:19;overflow-x:auto;box-shadow:0 1px 6px rgba(11,42,74,.06)}
 nav.secnav a{flex:none;font-size:13px;color:var(--blue);border:1px solid var(--blue);border-radius:15px;padding:6px 12px;text-decoration:none;font-weight:600;background:#fff}
@@ -149,7 +155,7 @@ section.blk{scroll-margin-top:60px}
 .arch .mrow{margin-top:8px}
 .arch .mlab{font-size:12px;color:#9db8d6;margin:6px 0 4px}
 @media print{
-  nav.secnav,.alertbar,.dpills,.frow,.tabs,.searchbox,.arch,footer.site,#headline{display:none}
+  nav.secnav,.alertbar,.freshbar,.dpills,.frow,.tabs,.searchbox,.arch,footer.site,#headline{display:none}
   body{background:#fff;font-size:12px}
   .card,.act,.skel-sec{box-shadow:none}
   header.top{background:#2c4a66}
@@ -322,6 +328,7 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
   <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>复制本期链接</button><a href="feed.xml" id="t_rss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><line x1="4" y1="20" x2="4.01" y2="20"/></svg>RSS 订阅</a><button onclick="showCalSub()" id="t_calsub"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>日历订阅</button><button id="langbtn" onclick="toggleLang()" title="Switch language / 切换语言">EN</button></div>
 </header>
 <div class="alertbar" id="alertbar"></div>
+<div class="freshbar" id="freshbar"></div>
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
 <nav class="secnav" id="secnav">
   <div class="railsearch"><input id="railq" placeholder="搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta"></div></div>
@@ -374,6 +381,7 @@ zh:{
  cal_ios:"<b>iPhone</b>：在 Safari 里点“用日历 App 打开”最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br><b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接",
  cal_close:"关闭",cal_copied:"已复制，去日历 App 粘贴订阅",
  digest:"今日导读：",digest_more:"余下要点见下方各段",
+ fresh_t:"今日早报尚未发布 · 当前为 {m} 月 {d} 日一期",
  sev_high:"严重",sev_mid:"预警",sev_low:"关注",
  tag_burst:"突发",tag_bom:"影响BOM",
  reason:"推荐理由：",src_label:"来源：",primary:"一手",repost:"转载",rel_warn:"关联预警：",rel_ev:"关联事件：",
@@ -464,6 +472,7 @@ en:{
  cal_ios:"<b>iPhone</b>: tap “Open in calendar app” in Safari; or Settings → Calendar → Add Calendar → Add Subscription Calendar → paste the link<br><b>Outlook</b>: Add calendar → Subscribe from URL → paste the link",
  cal_close:"Close",cal_copied:"Copied — paste it in your calendar app",
  digest:"Today's briefing: ",digest_more:"More highlights in the sections below",
+ fresh_t:"Today's briefing isn't out yet — showing the {mon} {d} issue",
  sev_high:"Critical",sev_mid:"Watch",sev_low:"Monitor",
  tag_burst:"Breaking",tag_bom:"BOM Impact",
  reason:"Why it matters: ",src_label:"Sources: ",primary:"Primary",repost:"Repost",rel_warn:"Related warnings: ",rel_ev:"Related events: ",
@@ -1025,8 +1034,22 @@ function copyCalUrl(){
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(CALURL).then(done).catch(()=>{document.getElementById("calurl").select();});}
   else document.getElementById("calurl").select();
 }
+/* ---- 时效提示条：仅当「正在看最新一期」且「该期日期早于读者本地今天」时显示；
+   归档浏览（看的不是最新一期）不显示；跨时区按读者本地日期算 ---- */
+const MON_EN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function localToday(){const n=new Date();const p=v=>String(v).padStart(2,"0");return n.getFullYear()+"-"+p(n.getMonth()+1)+"-"+p(n.getDate());}
+function paintFresh(){
+  const fb=$("#freshbar");if(!fb)return;
+  const L=window._LATEST;
+  if(L&&CURDATE===L&&L<localToday()){
+    const mo=+L.slice(5,7),da=+L.slice(8,10);
+    fb.textContent=fmt(t("fresh_t"),{m:mo,d:da,mon:MON_EN[mo-1]});
+    fb.classList.add("show");
+  }else{fb.classList.remove("show");fb.textContent="";}
+}
 async function loadDay(date){
   CURDATE=date;
+  paintFresh();
   document.querySelectorAll(".errbar").forEach(b=>b.remove());
   try{
     const r=await fetch("data/"+date+(LANG==="en"?"-en":"")+".json");
@@ -1310,6 +1333,7 @@ async function boot(){
     const no=days.indexOf(idx.latest||days[days.length-1])+1;
     if(no>0){ip.textContent=fmt(t("issue_plain"),{n:no});ip.style.display="inline-block";}
     window._ISSUE_DAYS=days;
+    window._LATEST=idx.latest||days[days.length-1];
     initRailSearch();
     const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
     const start=(hm&&days.indexOf(hm[1])>=0)?hm[1]:(idx.latest||days[days.length-1]);
