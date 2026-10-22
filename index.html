@@ -83,6 +83,8 @@ nav.secnav a.on{background:var(--blue);color:#fff}
 .fh{display:inline-block;font-size:12px;font-weight:700;color:#0a6b3a;background:#e6f4ec;border:1px solid #bfe3cd;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
 .fr{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
 .catbdg{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.ssbdg1{display:inline-block;font-size:12px;font-weight:700;color:#d4695c;background:#fdeceb;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.ssbdg2{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:1px}
 .suphit{font-size:14px;color:#3c546e}
 .suphit b{color:var(--blue)}
 .sdate{white-space:nowrap}
@@ -408,7 +410,7 @@ zh:{
  siphon_eased:"缓解",siphon_pressure:"承压",siphon_watch:"关注",
  st_hiked:"涨价（已生效）",st_hike:"涨价",st_price:"价格更新",st_ok:"排查无异常",st_risk:"经营风险",
  sb_title:"供应链画像",sb_snapshot:"快照",sb_u1:"家供应商",sb_u2:"个元器件",
- sup_hit:"近 7 天情报命中供应链：<b>{x}</b> 条动态 · 涉及 <b>{m}</b> 个品类",sup_hit_none:"近 7 天无命中动态",cat_badge:"{d}天动态 {h} 条 · 风险 {s}",
+ sup_hit:"近 7 天情报命中供应链：<b>{x}</b> 条动态 · 涉及 <b>{m}</b> 个品类",sup_hit_none:"近 7 天无命中动态",cat_badge:"{d}天动态 {h} 条 · 风险 {s}",ss_single:"单一来源",ss_dual:"双来源",
  sb_note:"仅品类 / maker 口径聚合，不含供应商名称",
  sb_risk:"PCBA 风险",sb_total:"元器件总数",sb_high:"高风险",sb_eol:"EOL",sb_lt:"交期≥180天",
  sb_ee:"EE 元器件品类",sb_ee_sub:"（JCAC · PCBA 口径）",
@@ -439,6 +441,7 @@ zh:{
  sit_eff:"已生效涨价",sit_eff_unit:" 起",sit_eff_sub:"覆盖 {m} 个子品类",
  sit_nodes:"近期生效节点",sit_in_days:"{n} 天后",sit_today:"今日",sit_nodes_none:"近期无到期节点",
  sit_closed:"事件收尾",sit_closed_unit:" 件",sit_closed_sub:"已落地 {a} · 已失效 {b}",
+ sit_thin:"单薄来源 × 近期风险",sit_thin_unit:" 个品类",sit_thin_none:"近期无交叉",
  warn_scope:"涉及子品类（{n}）：{list}",
  sit_eol:"停产应对",sit_shortage:"供应中断应对",sit_price:"涨价应对",sit_lead:"交期应对",sit_opp:"机会窗口",
  pb_more:"还有 {n} 条",
@@ -497,7 +500,7 @@ en:{
  siphon_eased:"Eased",siphon_pressure:"Under pressure",siphon_watch:"Watch",
  st_hiked:"Price hike (effective)",st_hike:"Price hike",st_price:"Price update",st_ok:"No anomalies",st_risk:"Business risk",
  sb_title:"Supply-chain profile",sb_snapshot:"snapshot",sb_u1:"suppliers",sb_u2:"components",
- sup_hit:"Intel hits on your supply chain (last 7d): <b>{x}</b> items · <b>{m}</b> categories",sup_hit_none:"No hits in the last 7 days",cat_badge:"{h} hits in {d}d · risk {s}",
+ sup_hit:"Intel hits on your supply chain (last 7d): <b>{x}</b> items · <b>{m}</b> categories",sup_hit_none:"No hits in the last 7 days",cat_badge:"{h} hits in {d}d · risk {s}",ss_single:"Single source",ss_dual:"Dual source",
  sb_note:"Aggregated by category / maker only; no supplier names",
  sb_risk:"PCBA risk",sb_total:"Total components",sb_high:"High risk",sb_eol:"EOL",sb_lt:"Lead time ≥180 days",
  sb_ee:"EE component categories",sb_ee_sub:"(JCAC · PCBA)",
@@ -528,6 +531,7 @@ en:{
  sit_eff:"Price hikes in effect",sit_eff_unit:" hikes",sit_eff_sub:"Covering {m} subcategories",
  sit_nodes:"Upcoming effective dates",sit_in_days:"in {n} days",sit_today:"today",sit_nodes_none:"No upcoming deadlines",
  sit_closed:"Events closed",sit_closed_unit:" closed",sit_closed_sub:"Implemented {a} · Expired {b}",
+ sit_thin:"Thin sourcing × live risk",sit_thin_unit:" categories",sit_thin_none:"No overlap recently",
  warn_scope:"Subcategories ({n}): {list}",
  sit_eol:"Discontinuation (EOL)",sit_shortage:"Supply Disruption",sit_price:"Price Hikes",sit_lead:"Lead-Time Pressure",sit_opp:"Opportunity Window",
  pb_more:"{n} more",
@@ -886,7 +890,7 @@ function renderMain(d){
     +`<div id="supplybase"><div class="card"><div class="loading">${t("sb_loading")}</div></div></div>`;
 
   $("#main").innerHTML=
-    `<div class="card sitcard" id="sitcard" style="display:none"><h3>${ICO.chart}${t("sit_title")}</h3><div class="sit-grid"><div class="sit-cell" id="sit-warn"></div><div class="sit-cell" id="sit-eff" style="display:none"></div><div class="sit-cell" id="sit-nodes"></div><div class="sit-cell" id="sit-closed" style="display:none"></div></div></div>`
+    `<div class="card sitcard" id="sitcard" style="display:none"><h3>${ICO.chart}${t("sit_title")}</h3><div class="sit-grid"><div class="sit-cell" id="sit-warn"></div><div class="sit-cell" id="sit-eff" style="display:none"></div><div class="sit-cell" id="sit-nodes"></div><div class="sit-cell" id="sit-closed" style="display:none"></div><div class="sit-cell" id="sit-thin" style="display:none"></div></div></div>`
    +`<section class="blk" id="s1">${s1}</section>`
    +`<section class="blk" id="s2">${s2}</section>`
    +`<section class="blk" id="s3">${s3}</section>`
@@ -919,13 +923,14 @@ async function loadSupply(){
     if(!r.ok)throw 0;
     const s=await r.json();
     buildRRMap(await riskRankJson());
+    buildSSMap(await soleSourceJson());
     let tax=null;
     try{const tr=await fetch("data/taxonomy.json");if(tr.ok)tax=await tr.json();}catch(e){}
     const maxMk=Math.max.apply(null,s.pcba.top_makers.map(x=>x.count));
     const mkBars=s.pcba.top_makers.map(x=>
       `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#5ea3dd"></div></div></div>`).join("");
     const ee=s.ee_categories.map(c=>
-      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(n=>esc(n)+catBadge(n)).join(" · ")}</div></div></details>`).join("");
+      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(n=>esc(n)+catBadge(n)+soleBadge(n)).join(" · ")}</div></div></details>`).join("");
     const p=s.pcba;
     /* 基地供应商品类 tabs */
     let baseHtml=`<div class="card"><div class="errmsg">${t("base_err")}</div></div>`;
@@ -996,7 +1001,7 @@ function renderBase(){
   box.innerHTML=list.length?list.map(x=>
     `<div class="subitem"><span class="nm">${esc(x.name)}</span>
      <span class="bt" style="flex:none;width:90px;height:7px;background:#edf1f6;border-radius:4px;overflow:hidden"><span class="bf" style="display:block;height:100%;width:${Math.round(x.count/max*100)}%;background:var(--blue);border-radius:4px"></span></span>
-     <span class="ct">${x.count} ${t("u_suppliers")}</span>${catBadge(x.name)}</div>`).join("")
+     <span class="ct">${x.count} ${t("u_suppliers")}</span>${catBadge(x.name)}${soleBadge(x.name)}</div>`).join("")
     :`<div class="errmsg">${t("base_nomatch")}</div>`;
 }
 
@@ -1054,6 +1059,36 @@ function catBadge(name){
   if(!RRMAP)return "";
   const i=RRMAP[name];if(!i)return "";
   return `<span class="catbdg">${fmt(t("cat_badge"),{d:RRDAYS,h:i.hits,s:i.score})}</span>`;
+}
+
+/* ---- 单一来源底册：data/sole-source.json 单次缓存（失败静默，全部相关 UI 不出现） ---- */
+let SSD=null,SSMAP=null;
+function soleSourceJson(){
+  if(!SSD)SSD=fetch("data/sole-source.json").then(r=>r.ok?r.json():null).catch(()=>null);
+  return SSD;
+}
+function buildSSMap(d){
+  if(!d||SSMAP)return;
+  SSMAP={};(d.items||[]).forEach(i=>{SSMAP[i.name]=i.supplier_count;});
+}
+function soleBadge(name){
+  if(!SSMAP)return "";
+  const c=SSMAP[name];if(!c)return "";
+  return c===1?`<span class="ssbdg1">${t("ss_single")}</span>`:`<span class="ssbdg2">${t("ss_dual")}</span>`;
+}
+/* 态势卡第五格：单一/双来源品类 ∩ 近期风险榜；任一数据未就绪则保持隐藏 */
+async function sitThinCell(){
+  const el0=document.getElementById("sit-thin");if(!el0)return;
+  const ss=await soleSourceJson();if(!ss)return;
+  const rr=await riskRankJson();if(!rr)return;
+  const el=document.getElementById("sit-thin");if(!el)return;
+  const risk=new Set((rr.items||[]).map(i=>i.name));
+  const cross=(ss.items||[]).filter(i=>risk.has(i.name)).map(i=>i.name);
+  const sep=LANG==="en"?", ":"、";
+  let list=cross.slice(0,5).join(sep);
+  if(cross.length>5)list+=(LANG==="en"?", etc.":"等");
+  el.innerHTML=`<div class="sit-lab">${t("sit_thin")}</div><div class="sit-big">${cross.length}<small>${t("sit_thin_unit")}</small></div><div class="sit-sub">${cross.length?esc(list):t("sit_thin_none")}</div>`;
+  el.style.display="";
 }
 
 async function renderRiskRank(){
@@ -1144,6 +1179,7 @@ function sitEventCells(){
     cls.style.display="";
     cls.innerHTML=`<div class="sit-lab">${t("sit_closed")}</div><div class="sit-big">${a+b}<small>${t("sit_closed_unit")}</small></div><div class="sit-sub">${fmt(t("sit_closed_sub"),{a:a,b:b})}</div>`;
   }
+  sitThinCell();
 }
 function paintWarnScope(){
   if(!EVDATA||!CUR)return;
