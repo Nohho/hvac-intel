@@ -20,12 +20,12 @@
 <style>
 :root{--blue:#1e86d6;--navy:#2c4a66;--bg:#f2f5f9;--card:#fff;--ink:#1c2733;--mut:#64748b;--line:#e3eaf3;--tint:#e9f2fb}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7;text-wrap:pretty}
 header.top{background:linear-gradient(120deg,#3aa7f5 0%,#1e86d6 55%,#1773b4 100%);color:#fff;padding:20px 16px 14px}
 header.top h1{font-size:20px;letter-spacing:.5px}
-.live{display:inline-block;font-size:11px;background:#1faa53;color:#fff;border-radius:10px;padding:2px 9px;margin-left:8px;vertical-align:middle;font-weight:700}
+.live{display:inline-block;font-size:12px;background:#1faa53;color:#fff;border-radius:10px;padding:2px 9px;margin-left:8px;vertical-align:middle;font-weight:700}
 header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
-.headline{margin-top:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:9px 12px;font-size:13px;line-height:1.6}
+.headline{margin-top:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:9px 12px;font-size:14px;line-height:1.6}
 .headline b{color:#ffe9a8}
 .dpills{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:2px}
 .dpill{flex:none;font-size:12.5px;color:#dce9f8;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px}
@@ -34,7 +34,7 @@ header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
 .hdlinks button,.hdlinks a{background:none;border:none;color:#c4d9ef;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0;font-family:inherit}
 .hdlinks button:hover,.hdlinks a:hover{color:#fff}
 /* 预警色条：仅有高紧迫预警时显示 */
-.alertbar{display:none;margin:0;padding:10px 14px;background:#e0654f;color:#fff;font-size:13.5px;font-weight:700;text-align:center}
+.alertbar{display:none;margin:0;padding:10px 14px;background:#e0654f;color:#fff;font-size:14px;font-weight:700;text-align:center}
 .alertbar.show{display:block}
 .alertbar a{color:#fff}
 /* 六段导航 */
@@ -46,9 +46,9 @@ nav.secnav a.on{background:var(--blue);color:#fff}
 @media(min-width:1024px){
   body{padding-left:228px;background:#f2f4f8}
   nav.secnav{position:fixed;left:0;top:0;bottom:0;width:228px;flex-direction:column;align-items:stretch;gap:2px;padding:28px 14px;overflow-y:auto;overflow-x:hidden;background:#ffffff;border-bottom:none;border-right:1px solid #e4e9f1;box-shadow:none;z-index:30}
-  .railhead{display:block;color:#9aa9bd;font-size:11.5px;font-weight:700;letter-spacing:3px;padding:0 14px 14px}
+  .railhead{display:block;color:#9aa9bd;font-size:12px;font-weight:700;letter-spacing:3px;padding:0 14px 14px}
   nav.secnav a{position:relative;border:none;background:transparent;color:#46586e;border-radius:10px;padding:10px 14px 10px 16px;font-size:13.5px;font-weight:500;margin-bottom:2px;display:flex;align-items:center;gap:10px}
-  nav.secnav a .rn{font-size:11px;font-weight:800;color:#9aa9bd;background:#f0f3f7;border-radius:6px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+  nav.secnav a .rn{font-size:12px;font-weight:800;color:#9aa9bd;background:#f0f3f7;border-radius:6px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;flex:none}
   nav.secnav a:not(.on):hover{background:#f3f6fa;color:#1c2b4a}
   nav.secnav a:not(.on):hover .rn{background:#e2e9f2;color:#5b6b82}
   nav.secnav a.on{background:#e9f1fd;color:#1e86d6;font-weight:700}
@@ -59,32 +59,32 @@ nav.secnav a.on{background:var(--blue);color:#fff}
   header.top{border-bottom-left-radius:0}
   /* 左侧搜索框（桌面端） */
   .railsearch{display:block;padding:0 6px 14px}
-  .railsearch input{width:100%;box-sizing:border-box;border:1px solid #dfe5ee;border-radius:10px;padding:9px 12px;font-size:13px;color:#1c2b4a;background:#f7f9fc;outline:none}
-  .railsearch input:focus{border-color:#1e86d6;background:#fff;box-shadow:0 0 0 3px rgba(30,134,214,.12)}
-  .rs-meta{font-size:11.5px;color:#93a3b8;padding:6px 4px 0;min-height:16px}
+  .railsearch input{width:100%;box-sizing:border-box;border:1px solid #dfe5ee;border-radius:10px;padding:9px 12px 9px 32px;font-size:13px;color:#1c2b4a;background:#f7f9fc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2393a3b8' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='21' y1='21' x2='16.5' y2='16.5'/%3E%3C/svg%3E") no-repeat 10px center/15px 15px;outline:none}
+  .railsearch input:focus{border-color:#1e86d6;background-color:#fff;box-shadow:0 0 0 3px rgba(30,134,214,.12)}
+  .rs-meta{font-size:12px;color:#93a3b8;padding:6px 4px 0;min-height:16px}
   mark.rhl{background:#fff3b0;border-radius:3px;padding:0 1px}
   mark.rhl.cur{background:#ffb703;box-shadow:0 0 0 2px #ffb703}
 }
 @media(max-width:1023px){nav.secnav .rn{display:none}.railsearch{display:none}}
 /* 期号 / 阅读统计条 / 一手徽标 */
-.issuepill{display:inline-block;font-size:11.5px;font-weight:700;color:#ffe9a8;border:1px solid rgba(255,233,168,.55);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:2px}
+.issuepill{display:inline-block;font-size:12px;font-weight:700;color:#ffe9a8;border:1px solid rgba(255,233,168,.55);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:2px}
 .issuestrip{display:flex;gap:20px;align-items:baseline;justify-content:center;flex-wrap:wrap;padding:13px 8px 11px;color:var(--mut);font-size:13px;border-bottom:1px solid var(--line);margin:2px 0 4px}
 /* 近期风险品类榜（位于"我的供应链"节底部） */
 .riskrank{margin-top:4px}
 .riskrank h3{font-size:14.5px;color:var(--navy);margin-bottom:8px}
-.riskrank h3 .rrsub{font-weight:400;color:var(--mut);font-size:11.5px;margin-left:6px}
+.riskrank h3 .rrsub{font-weight:400;color:var(--mut);font-size:12px;margin-left:6px}
 .rrrow{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:12.5px}
 .rrname{flex:none;width:118px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .rrbar{flex:1;height:8px;background:#edf1f6;border-radius:4px;overflow:hidden}
-.rrbar i{display:block;height:100%;background:linear-gradient(90deg,#f5a623,#e0654f);border-radius:4px}
-.rrscore{flex:none;width:64px;text-align:right;color:var(--mut);font-size:11.5px}
+.rrbar i{display:block;height:100%;background:#e0654f;border-radius:4px}
+.rrscore{flex:none;width:64px;text-align:right;color:var(--mut);font-size:12px}
 .issuestrip b{font-size:20px;color:var(--navy);margin-right:3px;font-weight:800}
-.fh{display:inline-block;font-size:10.5px;font-weight:700;color:#0a6b3a;background:#e6f4ec;border:1px solid #bfe3cd;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
+.fh{display:inline-block;font-size:12px;font-weight:700;color:#0a6b3a;background:#e6f4ec;border:1px solid #bfe3cd;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
 /* 小屏：统计条收紧，导航保持顶部横滑 */
 @media(max-width:480px){
   .issuestrip{gap:12px;font-size:12px;padding:10px 4px 8px}
   .issuestrip b{font-size:17px}
-  .issuepill{margin-left:6px;font-size:10.5px}
+  .issuepill{margin-left:6px;font-size:12px}
   nav.secnav{top:0}
 }
 main{padding:4px 12px 24px;max-width:780px;margin:0 auto}
@@ -95,7 +95,7 @@ section.blk{scroll-margin-top:60px}
 .secttl h2{font-size:18px;color:var(--navy);letter-spacing:.5px}
 .secttl .cnt{font-size:12px;color:var(--mut);font-weight:600}
 /* 一句话导读 */
-.guide{font-size:13.5px;color:#2c4a68;background:var(--tint);border-left:3px solid var(--blue);border-radius:0 8px 8px 0;padding:9px 12px;margin:8px 0 12px;line-height:1.65}
+.guide{font-size:14px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:8px 0 12px;line-height:1.65}
 .guide b{color:var(--navy)}
 .card{background:var(--card);border-radius:14px;padding:14px;margin-bottom:11px;box-shadow:0 1px 5px rgba(11,42,74,.07);border:1px solid #eef2f7}
 .card h3{font-size:16px;color:var(--navy);margin:7px 0 4px;line-height:1.5}
@@ -104,42 +104,42 @@ section.blk{scroll-margin-top:60px}
 .inews li{display:flex;gap:10px;padding:10px 2px;border-bottom:1px solid #f0f4f8;font-size:14px;align-items:flex-start}
 .inews li:last-child{border-bottom:none}
 .inews .n{flex:none;width:22px;height:22px;border-radius:50%;background:var(--tint);color:var(--blue);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:3px}
-.vtag{font-size:11px;background:#eef4fa;color:#5ea3dd;padding:2px 7px;border-radius:8px;font-weight:700;margin-right:6px;white-space:nowrap}
+.vtag{font-size:12px;background:#eef4fa;color:#5ea3dd;padding:2px 7px;border-radius:8px;font-weight:700;margin-right:6px;white-space:nowrap}
 /* 头条事件卡 */
 .heatrow{display:flex;align-items:center;gap:10px}
 .hscore{font-size:30px;font-weight:800;min-width:50px;line-height:1}
 .hbar{flex:1;height:9px;background:#edf1f6;border-radius:5px;overflow:hidden}
 .hfill{height:100%;border-radius:5px}
 .tagrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:9px 0 2px}
-.tag{font-size:11.5px;background:var(--tint);color:var(--blue);padding:3px 9px;border-radius:11px;font-weight:600}
-.tag-burst{font-size:11.5px;background:#e0654f;color:#fff;padding:3px 9px;border-radius:11px;font-weight:800}
-.tag-bom{font-size:11.5px;background:#6a1b9a;color:#fff;padding:3px 9px;border-radius:11px;font-weight:800}
-.edate{font-size:11.5px;color:var(--mut);margin-left:auto}
-.reason{font-size:13.5px;color:#2c4a68;background:var(--tint);border-left:3px solid var(--blue);border-radius:0 8px 8px 0;padding:9px 11px;margin:10px 0}
+.tag{font-size:12px;background:var(--tint);color:var(--blue);padding:3px 9px;border-radius:11px;font-weight:600}
+.tag-burst{font-size:12px;background:#e0654f;color:#fff;padding:3px 9px;border-radius:11px;font-weight:800}
+.tag-bom{font-size:12px;background:#6a1b9a;color:#fff;padding:3px 9px;border-radius:11px;font-weight:800}
+.edate{font-size:12px;color:var(--mut);margin-left:auto}
+.reason{font-size:14px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin:10px 0}
 .nums{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}
 .num{font-size:12.5px;background:#fff7ec;color:#a3540f;border:1px solid #f0d9ac;padding:4px 9px;border-radius:9px;font-weight:700}
 .sum{font-size:14px;color:#33475c}
 .src{font-size:12px;color:var(--mut);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px}
 .src a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
-.sev{font-size:11px;font-weight:700;border-radius:9px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.sev{font-size:12px;font-weight:700;border-radius:9px;padding:2px 8px;margin-left:6px;white-space:nowrap}
 .sev-high{background:#fdeceb;color:#d4695c}
 .sev-mid{background:#fef6e0;color:#b3851f}
 .sev-low{background:#e8f5e9;color:#4a9457}
 .bases{margin-top:8px;font-size:12px;color:var(--mut)}
-.bchip{display:inline-block;background:#eaf1fa;color:var(--blue);border-radius:8px;padding:1px 8px;margin:1px 3px 1px 0;font-size:11.5px;font-weight:600}
+.bchip{display:inline-block;background:#eaf1fa;color:var(--blue);border-radius:8px;padding:1px 8px;margin:1px 3px 1px 0;font-size:12px;font-weight:600}
 /* skeleton 占位 */
 .skel-sec{background:#fff;border-radius:14px;padding:16px 14px;margin:14px 0;border:1px solid #eef2f7}
-.skel{height:13px;border-radius:7px;margin:9px 0;background:linear-gradient(90deg,#e9eff6 25%,#f5f9fd 50%,#e9eff6 75%);background-size:200% 100%;animation:sk 1.2s linear infinite}
+.skel{height:13px;border-radius:7px;margin:9px 0;background:#e9eff6;animation:sk 1.2s ease-in-out infinite}
 .skel.ttl{height:17px;width:42%}
-@keyframes sk{to{background-position:-200% 0}}
+@keyframes sk{0%,100%{opacity:1}50%{opacity:.45}}
 /* 错误条 */
-.errbar{background:#fdeceb;border:1px solid #f3c1b8;color:#a3271c;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:13px}
+.errbar{background:#fdeceb;border:1px solid #f3c1b8;color:#a3271c;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:14px}
 .errbar a{color:#a3271c;font-weight:700}
 /* 归档折叠 */
 .arch{margin-top:2px}
 .arch summary{font-size:12.5px;color:#dce9f8;cursor:pointer;list-style:none;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px;display:inline-block}
 .arch .mrow{margin-top:8px}
-.arch .mlab{font-size:11.5px;color:#9db8d6;margin:6px 0 4px}
+.arch .mlab{font-size:12px;color:#9db8d6;margin:6px 0 4px}
 @media print{
   nav.secnav,.alertbar,.dpills,.frow,.tabs,.searchbox,.arch,footer.site,#headline{display:none}
   body{background:#fff;font-size:12px}
@@ -156,18 +156,18 @@ section.blk{scroll-margin-top:60px}
 .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .mgrid .card{margin-bottom:0}
 .mgrid h4{font-size:14.5px;color:var(--navy);margin:6px 0 4px}
-.mgrid p{font-size:12.5px;color:#3c546e}
-.pill{font-size:11px;padding:2px 9px;border-radius:10px;font-weight:700;white-space:nowrap}
+.mgrid p{font-size:14px;color:#3c546e}
+.pill{font-size:12px;padding:2px 9px;border-radius:10px;font-weight:700;white-space:nowrap}
 .p-red{background:#fdeceb;color:#e0654f}.p-org{background:#fff6e5;color:#b3851f}.p-gry{background:#eef2f7;color:#5b6b7d}.p-blu{background:var(--tint);color:var(--blue)}
 /* 传导链 */
-.chain{display:flex;align-items:stretch;gap:6px;font-size:13px}
+.chain{display:flex;align-items:stretch;gap:6px;font-size:14px}
 .chain .nd{background:#f7fafd;border:1px solid var(--line);border-radius:10px;padding:8px 10px}
 .chain .nd:first-child{flex:0 0 29%;display:flex;align-items:center}
 .chain .nd:last-child{flex:1}
 .chain .nd b{color:var(--navy)}
 .chain .arw{align-self:center;color:var(--blue);font-weight:800;flex:none}
 /* 供应商状态行 */
-.srow{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid #f0f4f8;font-size:13.5px}
+.srow{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid #f0f4f8;font-size:14px}
 .srow:last-child{border-bottom:none}
 .srow .cat{font-weight:700;color:var(--navy)}
 .srow .dt{font-size:12px;color:var(--mut);margin-left:auto;text-align:right;max-width:55%}
@@ -176,7 +176,7 @@ section.blk{scroll-margin-top:60px}
 .cchip{font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:5px 10px}
 /* 子品类 chips（第⑤段） */
 .subchips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
-.subchip{font-size:11px;background:#f2f6fb;color:#5ea3dd;border:1px solid #dbe7f3;border-radius:9px;padding:2px 8px}
+.subchip{font-size:12px;background:#f2f6fb;color:#5ea3dd;border:1px solid #dbe7f3;border-radius:9px;padding:2px 8px}
 .supp{border-bottom:1px solid #f0f4f8;padding:9px 0}
 .supp:last-child{border-bottom:none}
 /* 基地 tabs（第⑦段） */
@@ -185,22 +185,31 @@ section.blk{scroll-margin-top:60px}
 .tab.on{border-color:var(--blue);color:#fff;background:var(--blue)}
 .tab small{font-weight:400;opacity:.85}
 .searchbox{width:100%;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:0 0 8px;background:#fff;color:var(--ink)}
-.subitem{display:flex;align-items:center;gap:8px;padding:7px 2px;border-bottom:1px solid #f4f7fb;font-size:13px}
+.subitem{display:flex;align-items:center;gap:8px;padding:7px 2px;border-bottom:1px solid #f4f7fb;font-size:14px}
 .subitem:last-child{border-bottom:none}
 .subitem .nm{flex:1;color:var(--navy)}
-.subitem .ct{font-size:11.5px;color:var(--mut);white-space:nowrap}
+.subitem .ct{font-size:12px;color:var(--mut);white-space:nowrap}
 /* 预警行动卡 */
-.act{border-left:4px solid #e0654f;background:#fff;border-radius:0 12px 12px 0;padding:13px;margin-bottom:11px;box-shadow:0 1px 4px rgba(11,42,74,.07)}
-.act.mid{border-left-color:#eda445}
-.act.low{border-left-color:#1e86d6}
-/* 采购行动指引卡（静态 playbook，不涉及系统集成） */
-.pb{margin-top:10px;background:#f4f8fd;border:1px dashed #bcd6ef;border-radius:10px;padding:8px 11px;font-size:12.5px;color:#3c546e}
+.act{border:1px solid var(--line);border-top:3px solid #e0654f;background:#fff;border-radius:12px;padding:13px;margin-bottom:11px;box-shadow:0 1px 4px rgba(11,42,74,.07)}
+.act.mid{border-top-color:#eda445}
+.act.low{border-top-color:#1e86d6}
+/* 今日情景指引卡（数据驱动：按当日预警归类渲染，不涉及系统集成） */
+.pb{margin-top:10px;background:#f4f8fd;border:1px dashed #bcd6ef;border-radius:10px;padding:8px 11px;font-size:13.5px;color:#3c546e}
 .pb>b{color:#1e86d6}
 .pb ol{margin:5px 0 2px 18px;padding:0}
 .pb li{margin:2px 0;line-height:1.65}
-.pb .pbn{font-size:11px;color:#8a99ab;margin-top:4px}
+.pb .pbn{font-size:12px;color:#8a99ab;margin-top:4px}
+.pb .sit{margin-top:9px}
+.pb .sit-h{font-weight:700;color:var(--navy);font-size:13.5px;margin:2px 0 1px}
+.pb .sit-h .n{font-weight:400;color:#8a99ab;font-size:12px;margin-left:4px}
+.pb .pbws{margin-top:5px;border-top:1px solid #dbe7f4;padding-top:2px}
+.pbw{display:flex;align-items:center;gap:7px;width:100%;background:none;border:none;padding:5px 2px;font-size:13px;color:#3c546e;cursor:pointer;font-family:inherit;text-align:left}
+.pbw:hover{background:#eaf3fc}
+.pbw .tt{flex:1;line-height:1.45;text-wrap:pretty}
+.pbw .udot{flex:none}
+.pbmore{font-size:12.5px;border:1px solid var(--line);background:#fff;color:var(--blue);border-radius:12px;padding:4px 12px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:4px}
 .act h4{font-size:15px;color:var(--navy);line-height:1.5}
-.act .do{background:#f0f7ff;border-radius:8px;padding:9px 11px;margin-top:9px;font-size:13.5px}
+.act .do{background:#f0f7ff;border-radius:8px;padding:9px 11px;margin-top:9px;font-size:14px}
 .act .do b{color:var(--blue)}
 .act .meta{font-size:12px;color:var(--mut);margin-top:7px}
 /* 时间锚点 */
@@ -208,7 +217,7 @@ section.blk{scroll-margin-top:60px}
 .anchor{flex:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12.5px}
 .anchor b{color:#a3540f}
 /* 方法 */
-.rubric{background:#fff;border-radius:14px;padding:14px;margin-bottom:12px;border:1px solid #eef2f7;font-size:13.5px}
+.rubric{background:#fff;border-radius:14px;padding:14px;margin-bottom:12px;border:1px solid #eef2f7;font-size:14px}
 .rubric h4{color:var(--navy);margin-bottom:8px;font-size:15px}
 footer.site{font-size:12px;color:var(--mut);text-align:center;padding:18px 16px 34px;line-height:1.9}
 .loading,.errmsg{text-align:center;color:var(--mut);padding:40px 16px;font-size:14px}
@@ -223,6 +232,62 @@ details.sec summary::-webkit-details-marker{display:none}
 details.sec .body{padding:0 14px 12px}
 .secsub{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:1px;margin:14px 2px 8px}
 @media(min-width:700px){.mgrid{grid-template-columns:repeat(4,1fr)}}
+
+/* 线性图标（内联 SVG）/ 严重度圆点 / 正文 pretty */
+.ic{width:15px;height:15px;flex:none;vertical-align:-2.5px;margin-right:5px}
+.hdlinks .ic{width:13px;height:13px;margin-right:4px;vertical-align:-2px}
+nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
+.guide .ic{color:var(--blue)}
+.tag-burst .ic{width:11px;height:11px;margin-right:3px;vertical-align:-1px}
+.fchip .ic{width:12px;height:12px;margin-right:3px;vertical-align:-1.5px}
+.chip .ic{width:12px;height:12px;margin-right:3px;vertical-align:-1.5px}
+.cchip .ic{width:13px;height:13px;vertical-align:-2px}
+.cic .ic{margin-right:4px}
+.cic.hot{color:#e0654f}.cic.ok{color:#1faa53}.cic.bk{color:#64748b}
+.subchip .ic{width:11px;height:11px;margin-right:3px;vertical-align:-1.5px}
+.anchor .ic{width:13px;height:13px;margin-right:4px;vertical-align:-2px;color:#a3540f}
+.secsub .ic{width:14px;height:14px;color:var(--blue);vertical-align:-2px}
+.act .meta .ic{width:12px;height:12px;margin-right:3px;vertical-align:-1.5px}
+.pb>b .ic{width:14px;height:14px;color:var(--blue);vertical-align:-2px;margin-right:4px}
+.riskrank h3 .ic{color:var(--navy)}
+.errbar .ic{width:14px;height:14px}
+.alertbar .ic{width:16px;height:16px;vertical-align:-3px;margin-right:6px}
+#calsub .ic{width:16px;height:16px;vertical-align:-3px}
+.sev::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.sev-high::before{background:#e0654f}
+.sev-mid::before{background:#eda445}
+.sev-low::before{background:#1faa53}
+.udot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.udot.uh{background:#e0654f}.udot.um{background:#eda445}.udot.ul{background:#1e86d6}
+.guide,.reason,.sum,.mgrid p,.rubric,.act .do,.inews li,.chain .nd,.pb li,.headline,.srow{text-wrap:pretty}
+/* 二期：事件时间线 / 预警倒计时徽章 / 关键指标走势 */
+.evst{font-size:12px;font-weight:700;border-radius:9px;padding:2px 8px;white-space:nowrap}
+.evst::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;background:currentColor}
+.evst-eff{background:#fdeceb;color:#d4695c}
+.evst-not{background:#fef6e0;color:#b3851f}
+.evst-rum{background:#eef2f7;color:#5b6b7d}
+.evst-done{background:#e8f5e9;color:#4a9457}
+.evst-dead{background:#eef2f7;color:#5b6b7d}
+.evhead{display:flex;align-items:flex-start;gap:8px}
+.evhead h3{flex:1;margin-top:0}
+.evt{list-style:none;position:relative;margin:8px 0 0;padding-left:22px}
+.evt::before{content:"";position:absolute;left:5px;top:10px;bottom:10px;width:2px;border-radius:1px;background:var(--line)}
+.evt li{position:relative;padding:4px 0;text-wrap:pretty}
+.evt li::before{content:"";position:absolute;left:-20px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.evt li.evbtn::before{display:none}
+.evt .ed{font-size:12px;color:var(--mut);font-weight:700;margin-right:8px;white-space:nowrap}
+.evt .ec{font-size:14px;color:#33475c}
+.evmorebtn{font-size:12.5px;border:1px solid var(--line);background:#fff;color:var(--blue);border-radius:12px;padding:4px 12px;font-weight:600;cursor:pointer;font-family:inherit}
+.cd{font-size:12px;font-weight:700;border-radius:9px;padding:1px 7px;margin-left:6px;white-space:nowrap}
+.cd-f{background:#fdeceb;color:#d4695c}
+.cd-t{background:#fef6e0;color:#b3851f}
+.cd-p{background:#eef2f7;color:#8a99ab}
+.sparkrow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid #f0f4f8}
+.sparkrow:last-child{border-bottom:none}
+.sparkname{flex:none;width:84px;font-size:13px;font-weight:700;color:var(--navy)}
+.sparkwrap{flex:1;min-width:0;line-height:0}
+.sparklv{flex:none;text-align:right;font-size:12px;color:var(--mut)}
+.sparklv b{display:block;font-size:14px;color:var(--ink)}
 </style>
 </head>
 <body>
@@ -231,13 +296,13 @@ details.sec .body{padding:0 14px 12px}
   <div class="sub" id="t_sub">暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新</div>
   <div class="headline" id="headline" style="display:none"></div>
   <div class="dpills" id="dpills"></div>
-  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()">🔗 复制本期链接</button><a href="feed.xml" id="t_rss">📡 RSS 订阅</a><button onclick="showCalSub()" id="t_calsub">📅 日历订阅</button><button id="langbtn" onclick="toggleLang()" title="Switch language / 切换语言">EN</button></div>
+  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>复制本期链接</button><a href="feed.xml" id="t_rss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><line x1="4" y1="20" x2="4.01" y2="20"/></svg>RSS 订阅</a><button onclick="showCalSub()" id="t_calsub"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>日历订阅</button><button id="langbtn" onclick="toggleLang()" title="Switch language / 切换语言">EN</button></div>
 </header>
 <div class="alertbar" id="alertbar"></div>
 <div class="issuestrip" id="issuestrip" style="display:none"></div>
 <nav class="secnav" id="secnav">
-  <div class="railsearch"><input id="railq" placeholder="🔍 搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta"></div></div>
-  <a href="#s1"><span class="rn">📰</span><span class="nl">行业动态</span></a><a href="#s2"><span class="rn">🔥</span><span class="nl">头条事件</span></a><a href="#s3"><span class="rn">🧲</span><span class="nl">AI虹吸</span></a><a href="#s4"><span class="rn">🔗</span><span class="nl">跨行业传导</span></a><a href="#s5"><span class="rn">📦</span><span class="nl">供应商动态</span></a><a href="#s6"><span class="rn">⚠️</span><span class="nl">预警与建议</span></a><a href="#s7"><span class="rn">🗂️</span><span class="nl">我的供应链</span></a>
+  <div class="railsearch"><input id="railq" placeholder="搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta"></div></div>
+  <a href="#s1"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="14" height="16" rx="2"/><path d="M17 9h2.5A1.5 1.5 0 0 1 21 10.5V18a2 2 0 0 1-2 2"/><path d="M6.5 8h7M6.5 12h7M6.5 16h4"/></svg></span><span class="nl">行业动态</span></a><a href="#s2"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span><span class="nl">头条事件</span></a><a href="#s3"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4v6a3 3 0 0 0 6 0V4h4v6a7 7 0 0 1-14 0V4z"/><path d="M5 8h4"/><path d="M15 8h4"/></svg></span><span class="nl">AI虹吸</span></a><a href="#s4"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><span class="nl">跨行业传导</span></a><a href="#s5"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 9.4 7.55 4.24"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg></span><span class="nl">供应商动态</span></a><a href="#s6"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span class="nl">预警与建议</span></a><a href="#s7"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="21"/><circle cx="6" cy="7" r="2.2"/><circle cx="6" cy="16" r="2.2"/></svg></span><span class="nl">事件时间线</span></a><a href="#s8"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><span class="nl">我的供应链</span></a>
 </nav>
 <main id="main">
   <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:85%"></div></div>
@@ -253,46 +318,63 @@ details.sec .body{padding:0 14px 12px}
 "use strict";
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const _ic=p=>`<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+const ICO={
+ link:_ic('<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'),
+ rss:_ic('<path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><line x1="4" y1="20" x2="4.01" y2="20"/>'),
+ cal:_ic('<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>'),
+ clock:_ic('<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/>'),
+ warn:_ic('<path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>'),
+ file:_ic('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/>'),
+ check:_ic('<polyline points="4 12.5 9.5 18 20 6.5"/>'),
+ bolt:_ic('<path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z"/>'),
+ bulb:_ic('<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.2 2.2h4.8c.1-.9.5-1.7 1.2-2.2A6 6 0 0 0 12 3z"/>'),
+ brief:_ic('<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>'),
+ chart:_ic('<line x1="5" y1="20" x2="5" y2="12"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="19" y1="20" x2="19" y2="9"/>'),
+ flame:_ic('<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>'),
+ undo:_ic('<polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/>'),
+ bldg:_ic('<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2m2 0h2M9 11h2m2 0h2M9 15h2m2 0h2"/>')
+};
 /* ---- 双语层：?lang=en / #...&lang=en 切换英文数据与界面 ---- */
 let LANG="zh";
 const I18N={
 zh:{
  doc_title:"HVAC 供应链情报",h1:"HVAC 供应链情报",live:"每日更新",
  sub:"暖通空调 / 液冷 CDU · 每天 08:30（CST）按早报六段更新",
- copylink:"🔗 复制本期链接",rss:"📡 RSS 订阅",calsub:"📅 日历订阅",langbtn:"EN",
- nav:["行业动态","头条事件","AI虹吸","跨行业传导","供应商动态","预警与建议","我的供应链"],
- railq_ph:"🔍 搜索本页内容…",
+ copylink:"复制本期链接",rss:"RSS 订阅",calsub:"日历订阅",langbtn:"EN",
+ nav:["行业动态","头条事件","AI虹吸","跨行业传导","供应商动态","预警与建议","事件时间线","我的供应链"],
+ railq_ph:"搜索本页内容…",
  foot1:"HVAC 供应链情报",foot2:"数据来自每日公开信息核实汇总，仅作供应链研究参考",
  foot3:"不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别",
- cal_title:"📅 订阅时间锚点日历",cal_desc:"每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。",
+ cal_title:"订阅时间锚点日历",cal_desc:"每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。",
  cal_copy:"复制订阅链接",cal_open:"用日历 App 打开",
  cal_ios:"<b>iPhone</b>：在 Safari 里点“用日历 App 打开”最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br><b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接",
- cal_close:"关闭",cal_copied:"✅ 已复制，去日历 App 粘贴订阅",
+ cal_close:"关闭",cal_copied:"已复制，去日历 App 粘贴订阅",
  digest:"今日导读：",
- sev_high:"🔴 严重",sev_mid:"🟡 预警",sev_low:"🟢 关注",
- tag_burst:"⚡突发",tag_bom:"影响BOM",
+ sev_high:"严重",sev_mid:"预警",sev_low:"关注",
+ tag_burst:"突发",tag_bom:"影响BOM",
  reason:"推荐理由：",src_label:"来源：",primary:"一手",rel_warn:"关联预警：",rel_ev:"关联事件：",
  u_high:"高",u_mid:"中",u_low:"低",urgency_suffix:"紧迫",
  act_do:"建议动作：",act_impact:"影响范围：",act_trigger:"触发条件：",
- act_dl:"⏰ 行动时间：{d}",act_bases:"涉及基地：",
- playbook:"💼 采购行动指引",
+ act_dl:"行动时间：{d}",act_bases:"涉及基地：",
+ playbook:"今日情景指引",
  sec:["行业动态 / 技术与合作","头条事件","数据中心 / AI 虹吸效应","跨行业传导","供应商动态","供应链预警与建议","我的供应链","方法说明"],
  u_oneliner:"条一句话",u_relev:"个相关事件",u_events:"个",u_materials:"类物料",u_links:"条",u_warnings:"条",u_items:"条",u_subcats:"小类",
  s1_guide:"今日 <b>{n}</b> 条{c}。",
  s1_guide_c:"，其中 <b>{vc}</b> 条为厂商口径（已标注，请甄别）",
  vendor_tag:"厂商口径",
  s2_guide:"热度最高：<b>{title}</b>（{heat} 分）",s2_empty:"本段暂无事件。",
- f_all:"全部",f_burst:"⚡ 突发",f_bom:"影响BOM",f_empty:"该筛选下暂无事件",
+ f_all:"全部",f_burst:"突发",f_bom:"影响BOM",f_empty:"该筛选下暂无事件",
  s3_guide:"承压物料：<b>{m}</b>。",
  s4_guide:"传导路径：<b>{m}</b>。",
  s5_guide:"有实质动态 <b>{a}</b> 类：{b}；今日点名排查 <b>{c}</b> 家，<b>{d}</b> 家有实质动态。",
  s5_none:"无",s5_check_t:"今日点名排查（{n} 家）",
  chk_yes:"有实质动态",chk_no:"无实质动态",chk_other:"已收录",
- s6_guide:"<b>{a}</b> 条高紧迫，首条：<b>{b}</b>{c}",s6_dl:"（⏰ {d}）",s6_none:"今日无高紧迫预警。",
- anchors_title:"⏰ 时间锚点",
+ s6_guide:"<b>{a}</b> 条高紧迫，首条：<b>{b}</b>{c}",s6_dl:"（{d}）",s6_none:"今日无高紧迫预警。",
+ anchors_title:"时间锚点",
  s7_cnt:"清单快照聚合",
  s7_guide:"EE 元器件品类（JCAC · PCBA 口径）· 基地供应商品类（JCAC / WXAC / GZAC / 亚太其他，183 子品类全量）· PCBA maker 分布。仅聚合口径，不含供应商名称。",
- alert_t:"🔴 今日 <b>{a}</b> 条高紧迫预警{b} <a href=\"#s6\">查看预警与建议 →</a>",
+ alert_t:"今日 <b>{a}</b> 条高紧迫预警{b} <a href=\"#s6\">查看预警与建议 →</a>",
  alert_b:" · 最近行动日 {d}",
  issue:"第 <b>{n}</b> 期",issue_plain:"第 {n} 期",
  strip_ev:"<b>{n}</b> 件大事",strip_wn:"<b>{n}</b> 条预警",strip_fp:"<b>{n}</b> 个一手来源",
@@ -300,7 +382,7 @@ zh:{
  older:"更早归档（{n}）",
  boot_err:"情报数据加载失败，请稍后刷新重试。",
  load_err_t:"的数据加载失败（",load_err_b:"）。当前显示的可能是旧日期内容。",retry:"点此重试",
- copied:"✅ 已复制",copy_prompt:"复制本期链接：",
+ copied:"已复制",copy_prompt:"复制本期链接：",
  rail_match:"{n} 处匹配 · 回车跳转",rail_nomatch:"无匹配",
  siphon_eased:"缓解",siphon_pressure:"承压",siphon_watch:"关注",
  st_hiked:"涨价（已生效）",st_hike:"涨价",st_price:"价格更新",st_ok:"排查无异常",st_risk:"经营风险",
@@ -313,53 +395,67 @@ zh:{
  sb_loading:"正在加载供应链画像…",sb_err:"画像数据暂未发布",
  base_err:"基地品类数据暂未发布",
  base_note:"183 个子品类全量 · 家数为该基地此品类供应商数 · 仅品类口径，不含供应商名称",
- base_nomatch:"无匹配子品类",base_search_ph:"🔍 搜索子品类，如 compressor / 阀 / 电容…",
+ base_nomatch:"无匹配子品类",base_search_ph:"搜索子品类，如 compressor / 阀 / 电容…",
  u_suppliers:"家",
- rr_title:"📊 近{days}天风险品类榜",
+ rr_title:"近{days}天风险品类榜",
  rr_sub:"按涨价/缺料/交期动态加权 · 数据攒够30天后看趋势更有意义",
  rr_score:"{s}分 · {h}次",
  m_heat:"热度评分规则",
- m_heat_b:"90~95 多源证实+整机传导落地；85~89 多线叠加、有行动窗口；75~84 单一实质事件；60~74 技术/合作/法规信号；&lt;60 不进热点流。⚡突发 tag 来自当日快讯，<span class=\"tag-bom\">影响BOM</span> 表示命中用户 PCBA maker 或 8 大 EE 品类。",
+ m_heat_b:"90~95 多源证实+整机传导落地；85~89 多线叠加、有行动窗口；75~84 单一实质事件；60~74 技术/合作/法规信号；&lt;60 不进热点流。「突发」tag 来自当日快讯，<span class=\"tag-bom\">影响BOM</span> 表示命中用户 PCBA maker 或 8 大 EE 品类。",
  m_cov:"覆盖与更新",
- m_cov_b:"每天 08:30（CST）基于公开信息核实汇总更新；数字注明来源日期，无法核实舍去。覆盖 HVAC 整机厂、液冷 CDU、压缩机/阀件/制冷剂/铜铝、VSD 电气件、跨行业通用电子料。仅作供应链研究参考，不涉及证券买卖建议。"
+ m_cov_b:"每天 08:30（CST）基于公开信息核实汇总更新；数字注明来源日期，无法核实舍去。覆盖 HVAC 整机厂、液冷 CDU、压缩机/阀件/制冷剂/铜铝、VSD 电气件、跨行业通用电子料。仅作供应链研究参考，不涉及证券买卖建议。",
+ tl_title:"事件时间线",tl_cnt:"{n} 个事件",
+ tl_guide:"涨价、停产、交期等关键事件全程跟踪：共 <b>{n}</b> 个事件，<b>{a}</b> 个进行中，按最近进展排序。",
+ tl_expand:"展开全部 {n} 个节点",tl_loading:"正在加载事件时间线…",tl_pending:"事件数据待补",
+ evst_rumor:"传闻",evst_notified:"已通知",evst_effective:"已生效",evst_landed:"已落地",evst_expired:"已失效",
+ cd_future:"距生效 {n} 天",cd_today:"今日生效",cd_past:"已生效",
+ sp_title:"关键指标走势",sp_sub:"日度数据 · 窗口内全部数据点",
+ sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨",sp_ag:"白银",sp_ag_u:"美元/盎司",sp_fx:"美元/人民币",sp_fx_u:"元",
+ sit_eol:"停产应对",sit_shortage:"供应中断应对",sit_price:"涨价应对",sit_lead:"交期应对",sit_opp:"机会窗口",
+ pb_more:"还有 {n} 条",
+ pb_eol:["先盯最后下单日，倒排一次性采购计划","按生命周期用量备足：装机量加年维修率测算","替代料认证与切换排期同步推进","多备部分预先谈好同行调剂渠道，防呆滞"],
+ pb_shortage:["按料号盘点库存加在途，算清可撑周数","现货渠道扫货补缺口，先定溢价上限再出手","替代料同步询样验证，别等断线才启动","向原厂和代理确认配给份额与交付批次，落到书面"],
+ pb_price:["生效日在即的，先下单锁价，别等通知落地","测算涨幅对 BOM 成本的影响，更新 Should-Cost","谈判抓手：年度锁价 / 涨价豁免 / 成本传导条款","查框架协议剩余量与价格有效期，考虑提前锁量"],
+ pb_lead:["新订单提前量前置：需求日减当前交期再减缓冲","在途订单逐单确认批次与优先级，别只看承诺交期","关键项目物料提前锁产能、锁仓位","评估第二货源与国产替代的导入窗口"],
+ pb_opp:["非紧急采购放缓，等价格落地再锁","借窗口谈年度框架、返点与账期","高位锁价的合同评估重谈或对冲","低价位物料可适度抬安全库存"]
 },
 en:{
  doc_title:"HVAC Supply Chain Intelligence",h1:"HVAC Supply Chain Intelligence",live:"Daily",
  sub:"HVAC / liquid-cooling CDU · updated daily at 08:30 (CST) in six sections",
- copylink:"🔗 Copy issue link",rss:"📡 RSS",calsub:"📅 Calendar",langbtn:"中文",
- nav:["Industry","Top Stories","AI Siphon","Cross-Industry","Suppliers","Warnings","My Supply Chain"],
- railq_ph:"🔍 Search this page…",
+ copylink:"Copy issue link",rss:"RSS",calsub:"Calendar",langbtn:"中文",
+ nav:["Industry","Top Stories","AI Siphon","Cross-Industry","Suppliers","Warnings","Timeline","My Supply Chain"],
+ railq_ph:"Search this page…",
  foot1:"HVAC Supply Chain Intelligence",foot2:"Compiled from daily verified public sources; for supply-chain research only",
  foot3:"No securities advice · vendor-claim data is labeled — verify independently",
- cal_title:"📅 Subscribe to the time-anchor calendar",cal_desc:"Auto-updates after each daily briefing; subscribe once. Each event reminds one day ahead at 9:00.",
+ cal_title:"Subscribe to the time-anchor calendar",cal_desc:"Auto-updates after each daily briefing; subscribe once. Each event reminds one day ahead at 9:00.",
  cal_copy:"Copy subscription link",cal_open:"Open in calendar app",
  cal_ios:"<b>iPhone</b>: tap “Open in calendar app” in Safari; or Settings → Calendar → Add Calendar → Add Subscription Calendar → paste the link<br><b>Outlook</b>: Add calendar → Subscribe from URL → paste the link",
- cal_close:"Close",cal_copied:"✅ Copied — paste it in your calendar app",
+ cal_close:"Close",cal_copied:"Copied — paste it in your calendar app",
  digest:"Today's briefing: ",
- sev_high:"🔴 Critical",sev_mid:"🟡 Watch",sev_low:"🟢 Monitor",
- tag_burst:"⚡Breaking",tag_bom:"BOM Impact",
+ sev_high:"Critical",sev_mid:"Watch",sev_low:"Monitor",
+ tag_burst:"Breaking",tag_bom:"BOM Impact",
  reason:"Why it matters: ",src_label:"Sources: ",primary:"Primary",rel_warn:"Related warnings: ",rel_ev:"Related events: ",
  u_high:"High",u_mid:"Medium",u_low:"Low",urgency_suffix:" urgency",
  act_do:"Recommended actions: ",act_impact:"Impact: ",act_trigger:"Trigger: ",
- act_dl:"⏰ Action by: {d}",act_bases:"Bases affected: ",
- playbook:"💼 Procurement playbook",
+ act_dl:"Action by: {d}",act_bases:"Bases affected: ",
+ playbook:"Today's Playbooks",
  sec:["Industry / Technology & Partnerships","Top Stories","Data-Center / AI Siphon Effects","Cross-Industry Transmission","Supplier Dynamics","Supply-Chain Warnings & Recommendations","My Supply Chain","Methodology"],
  u_oneliner:"one-liners",u_relev:"related events",u_events:"events",u_materials:"material categories",u_links:"links",u_warnings:"warnings",u_items:"items",u_subcats:"subcategories",
  s1_guide:"Today: <b>{n}</b> one-liners{c}.",
  s1_guide_c:", including <b>{vc}</b> vendor-claim items (labeled — verify independently)",
  vendor_tag:"Vendor claim",
  s2_guide:"Hottest: <b>{title}</b> ({heat} pts)",s2_empty:"No events in this section.",
- f_all:"All",f_burst:"⚡ Breaking",f_bom:"BOM Impact",f_empty:"No events under this filter",
+ f_all:"All",f_burst:"Breaking",f_bom:"BOM Impact",f_empty:"No events under this filter",
  s3_guide:"Materials under pressure: <b>{m}</b>.",
  s4_guide:"Transmission paths: <b>{m}</b>.",
  s5_guide:"<b>{a}</b> categories with material updates: {b}. <b>{c}</b> companies checked today, <b>{d}</b> with material updates.",
  s5_none:"none",s5_check_t:"Company roll-call ({n} companies)",
  chk_yes:"Material updates",chk_no:"No material updates",chk_other:"Covered earlier",
- s6_guide:"<b>{a}</b> high-urgency warnings, top one: <b>{b}</b>{c}",s6_dl:" (⏰ {d})",s6_none:"No high-urgency warnings today.",
- anchors_title:"⏰ Time anchors",
+ s6_guide:"<b>{a}</b> high-urgency warnings, top one: <b>{b}</b>{c}",s6_dl:" ({d})",s6_none:"No high-urgency warnings today.",
+ anchors_title:"Time anchors",
  s7_cnt:"list snapshot",
  s7_guide:"EE component categories (JCAC · PCBA) · site supplier categories (JCAC / WXAC / GZAC / rest of APAC — all 183 subcategories) · PCBA maker distribution. Aggregated only; no supplier names.",
- alert_t:"🔴 <b>{a}</b> high-urgency warnings today{b} <a href=\"#s6\">View warnings →</a>",
+ alert_t:"<b>{a}</b> high-urgency warnings today{b} <a href=\"#s6\">View warnings →</a>",
  alert_b:" · earliest action date {d}",
  issue:"Issue <b>{n}</b>",issue_plain:"Issue {n}",
  strip_ev:"<b>{n}</b> top stories",strip_wn:"<b>{n}</b> warnings",strip_fp:"<b>{n}</b> primary sources",
@@ -367,7 +463,7 @@ en:{
  older:"Older issues ({n})",
  boot_err:"Failed to load briefing data. Please refresh and retry.",
  load_err_t:"Failed to load data for ",load_err_b:". What you see may be stale. ",retry:"Retry",
- copied:"✅ Copied",copy_prompt:"Copy this issue's link: ",
+ copied:"Copied",copy_prompt:"Copy this issue's link: ",
  rail_match:"{n} matches · Enter to jump",rail_nomatch:"No matches",
  siphon_eased:"Eased",siphon_pressure:"Under pressure",siphon_watch:"Watch",
  st_hiked:"Price hike (effective)",st_hike:"Price hike",st_price:"Price update",st_ok:"No anomalies",st_risk:"Business risk",
@@ -380,15 +476,29 @@ en:{
  sb_loading:"Loading supply-chain profile…",sb_err:"Profile data not yet published",
  base_err:"Site category data not yet published",
  base_note:"All 183 subcategories · counts are supplier counts per site · categories only, no supplier names",
- base_nomatch:"No matching subcategories",base_search_ph:"🔍 Search subcategories…",
+ base_nomatch:"No matching subcategories",base_search_ph:"Search subcategories…",
  u_suppliers:"suppliers",
- rr_title:"📊 {days}-day risk category ranking",
+ rr_title:"{days}-day risk category ranking",
  rr_sub:"Weighted by price-hike / shortage / lead-time signals · trends get meaningful after 30 days of data",
  rr_score:"{s} pts · {h} hits",
  m_heat:"Heat-score rubric",
- m_heat_b:"90–95: multi-source confirmed + OEM-level transmission; 85–89: overlapping signals with an action window; 75–84: single material event; 60–74: technology / partnership / regulatory signals; &lt;60: not in the hotspot stream. The ⚡Breaking tag comes from same-day flashes; the <span class=\"tag-bom\">BOM Impact</span> tag means it hits the user's PCBA makers or one of the 8 EE categories.",
+ m_heat_b:"90–95: multi-source confirmed + OEM-level transmission; 85–89: overlapping signals with an action window; 75–84: single material event; 60–74: technology / partnership / regulatory signals; &lt;60: not in the hotspot stream. The “Breaking” tag comes from same-day flashes; the <span class=\"tag-bom\">BOM Impact</span> tag means it hits the user's PCBA makers or one of the 8 EE categories.",
  m_cov:"Coverage & updates",
- m_cov_b:"Updated daily at 08:30 (CST) from verified public sources; figures carry source dates, unverifiable items are dropped. Covers HVAC OEMs, liquid-cooling CDU, compressors / valves / refrigerants / copper &amp; aluminum, VSD electrical parts, and cross-industry common electronic components. For supply-chain research only; no securities advice."
+ m_cov_b:"Updated daily at 08:30 (CST) from verified public sources; figures carry source dates, unverifiable items are dropped. Covers HVAC OEMs, liquid-cooling CDU, compressors / valves / refrigerants / copper &amp; aluminum, VSD electrical parts, and cross-industry common electronic components. For supply-chain research only; no securities advice.",
+ tl_title:"Event Timeline",tl_cnt:"{n} events",
+ tl_guide:"Full-lifecycle tracking of key events — price hikes, EOLs, lead times: <b>{n}</b> events, <b>{a}</b> active, sorted by latest development.",
+ tl_expand:"Show all {n} updates",tl_loading:"Loading event timeline…",tl_pending:"Event data pending",
+ evst_rumor:"Rumor",evst_notified:"Announced",evst_effective:"In effect",evst_landed:"Implemented",evst_expired:"Expired",
+ cd_future:"Takes effect in {n} days",cd_today:"Takes effect today",cd_past:"In effect",
+ sp_title:"Key indicator trends",sp_sub:"Daily data · all points in window",
+ sp_lme:"LME Copper 3M",sp_lme_u:"USD/t",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t",sp_ag:"Silver",sp_ag_u:"USD/ozt",sp_fx:"USD/CNY",sp_fx_u:"CNY",
+ sit_eol:"Discontinuation (EOL)",sit_shortage:"Supply Disruption",sit_price:"Price Hikes",sit_lead:"Lead-Time Pressure",sit_opp:"Opportunity Window",
+ pb_more:"{n} more",
+ pb_eol:["Work backwards from the last-time-buy date","Stock for lifecycle demand: installed base + annual repair rate","Run alternate qualification and switch-over schedule in parallel","Pre-arrange peer swap channels for any overstock"],
+ pb_shortage:["Count stock + in-transit by part number; compute weeks of cover","Sweep spot channels for the gap — set a premium cap first","Start alternate-part sampling and validation in parallel","Get allocation share and delivery batches confirmed in writing"],
+ pb_price:["Order and lock prices before the effective date","Quantify the BOM cost impact; update Should-Cost","Negotiate: annual price locks / hike exemptions / pass-through clauses","Check framework-agreement balance and price validity; consider locking volume early"],
+ pb_lead:["Pull orders forward: need date − lead time − buffer","Confirm batch and priority order by order","Lock capacity and slots for critical projects early","Open the window for second sources or domestic alternates"],
+ pb_opp:["Slow non-urgent buying; lock after prices settle","Negotiate annual frameworks, rebates and terms in the window","Review high-priced locked contracts for renegotiation","Selectively raise safety stock at low price points"]
 }};
 function t(k){const d=I18N[LANG];return (d&&d[k]!==undefined)?d[k]:I18N.zh[k];}
 function fmt(s,m){return String(s).replace(/\{(\w+)\}/g,(_,k)=>(m&&m[k]!==undefined)?m[k]:"");}
@@ -397,12 +507,13 @@ function applyLang(){
   document.documentElement.lang=LANG==="en"?"en":"zh-CN";
   document.title=t("doc_title");
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  const setH=(id,v)=>{const e=document.getElementById(id);if(e)e.innerHTML=v;};
   set("t_h1",t("h1"));set("t_live",t("live"));set("t_sub",t("sub"));
-  set("copylink",t("copylink"));set("t_rss",t("rss"));set("t_calsub",t("calsub"));set("langbtn",t("langbtn"));
+  setH("copylink",ICO.link+t("copylink"));setH("t_rss",ICO.rss+t("rss"));setH("calsub",ICO.cal+t("calsub"));set("langbtn",t("langbtn"));
   document.querySelectorAll("nav.secnav a .nl").forEach((s,i)=>{const nv=t("nav");if(nv[i])s.textContent=nv[i];});
   const rq=document.getElementById("railq");if(rq)rq.placeholder=t("railq_ph");
   set("t_foot1",t("foot1"));set("t_foot2",t("foot2"));set("t_foot3",t("foot3"));
-  set("c_title",t("cal_title"));set("c_desc",t("cal_desc"));set("c_copy",t("cal_copy"));set("c_open",t("cal_open"));
+  setH("c_title",ICO.cal+t("cal_title"));set("c_desc",t("cal_desc"));set("c_copy",t("cal_copy"));set("c_open",t("cal_open"));
   const ci=document.getElementById("c_ios");if(ci)ci.innerHTML=t("cal_ios");
   set("c_close",t("cal_close"));
 }
@@ -415,7 +526,7 @@ const heatColor=h=>h>=90?"#e0654f":h>=80?"#eda445":h>=70?"#c79a2e":"#1e86d6";
 const mmdd=d=>String(d||"").slice(5);
 let WMAP={},EMAP={},CUR=null,FILTER="all";
 
-function tags(tt){return (tt||[]).map(x=>x==="突发"?`<span class="tag-burst">${esc(t("tag_burst"))}</span>`:x==="影响BOM"?`<span class="tag-bom">${esc(t("tag_bom"))}</span>`:`<span class="tag">${esc(x)}</span>`).join("");}
+function tags(tt){return (tt||[]).map(x=>x==="突发"?`<span class="tag-burst">${ICO.bolt}${esc(t("tag_burst"))}</span>`:x==="影响BOM"?`<span class="tag-bom">${esc(t("tag_bom"))}</span>`:`<span class="tag">${esc(x)}</span>`).join("");}
 
 function sevLabel(s){return {"高":["sev-high",t("sev_high")],"中":["sev-mid",t("sev_mid")],"低":["sev-low",t("sev_low")]}[s||"中"];}
 function evCard(e,compact){
@@ -428,7 +539,7 @@ function evCard(e,compact){
       :`${esc(s.outlet)}（${esc(s.date)}）`;
     return fh+body;}).join("；");
   const wc=(e.related_warnings||[]).filter(w=>WMAP[w])
-    .map(w=>`<button class="chip" onclick="goId('${w}')">⚠️ ${esc(WMAP[w].title.slice(0,13))}…</button>`).join("");
+    .map(w=>`<button class="chip" onclick="goId('${w}')">${ICO.warn}${esc(WMAP[w].title.slice(0,13))}…</button>`).join("");
   return `<article class="card" id="${e.id}">
     <div class="heatrow"><div class="hscore" style="color:${heatColor(e.heat)}">${e.heat}</div>
     <div class="hbar"><div class="hfill" style="width:${e.heat}%;background:${heatColor(e.heat)}"></div></div></div>
@@ -457,57 +568,92 @@ function affectedBases(w){
   });
   return out;
 }
-/* 预警 → 采购行动指引（静态模板，按预警关键词匹配；纯行动清单，无系统操作指引） */
-const PLAYBOOKS=[
- {k:["涨价","调价","提价","加价","高位","锁价","成本","price hike","price increase","price round","pricing","high level","cost"],
-  zh:["测算涨价对 BOM 成本的影响，更新 Should-Cost","谈判要点：年度锁价 / 涨价豁免 / 成本传导条款","检查框架协议剩余量与价格有效期，考虑提前锁量","评估替代料或第二货源的成本对冲空间"],
-  en:["Assess the BOM cost impact of the increase; update should-cost","Negotiation points: annual price lock / increase exemption / cost pass-through clauses","Check remaining volumes and price validity under framework agreements; consider locking volume early","Evaluate cost offsets via alternative materials or second sources"]},
- {k:["缺料","断供","短缺","分配","allocation","产能紧张","挤占","shortage","stock-out","capacity"],
-  zh:["测算现有库存+在途可覆盖周数，明确预计缺料日期","启动替代料询样与验证","评估 NCNR 锁产能（权衡违约风险）","向多家现货商询价比价，警惕假货"],
-  en:["Work out how many weeks current stock + in-transit covers; pin down the expected stock-out date","Start alternative-material sampling and qualification","Evaluate NCNR capacity locks (weighing cancellation risk)","Get quotes from multiple spot suppliers; watch out for counterfeits"]},
- {k:["EOL","停产","退市","最后采购","LTB","淘汰","discontinu"],
-  zh:["确认 LTB（最后下单）窗口、MOQ 与 NCNR 条款","测算停产前需求总量，决策一次性备库量","现货市场扫货比价（注意假货风险）","启动替代料验证或改版评估"],
-  en:["Confirm the LTB window, MOQ and NCNR terms","Size total demand before discontinuation; decide one-time stock-up quantity","Sweep the spot market for stock (beware counterfeits)","Kick off alternative qualification or redesign evaluation"]},
- {k:["交期延长","交期恶化","交期","lead time","排产","lead-time"],
-  zh:["重算缺料时点，更新安全库存水位","与计划确认：提前下单 / 调整排产顺序","跟进在途订单是否被推迟，必要时催交","评估第二供应商分流"],
-  en:["Recalculate the stock-out point; update safety-stock levels","Align with planning: place orders early / resequence production","Follow up on in-transit orders for push-outs; expedite where needed","Evaluate splitting volume to a second supplier"]},
- {k:["地震","洪水","火灾","爆炸","限电","停工","罢工","疫情","自然灾害","earthquake","flood","fire","strike","shutdown"],
-  zh:["确认供应商受影响工厂与复产时间表","评估在手库存可支撑周数","启动第二货源 / 跨基地调拨","跟进在途货物物流状态"],
-  en:["Confirm affected supplier plants and recovery timelines","Assess how many weeks on-hand stock can support","Activate second sources / cross-site transfers","Track in-transit shipment logistics"]},
- {k:["并购","收购","合并","merger","acquisition"],
-  zh:["索取供货连续性承诺与客户通知函","评估产品线整合后的 EOL 风险","关键料考虑 LTB 备货"],
-  en:["Request supply-continuity commitments and customer notices","Assess EOL risk from product-line consolidation","Consider LTB stocking for critical parts"]},
- {k:["诉讼","质押","财务","破产","资金链","lawsuit","bankrupt"],
-  zh:["控制预付款敞口，缩短账期","清点在途订单金额与交付风险","准备替代供应商切换预案"],
-  en:["Limit prepayment exposure; shorten payment terms","Tally in-transit order value and delivery risk","Prepare an alternative-supplier switch plan"]},
+/* 今日情景指引：预警按情景归类（纯函数，可单测）。
+   信号次序：标题定桶 → 关联事件 tags → action/trigger/impact 兜底；
+   桶优先级 EOL > 缺料 > 涨价 > 交期 > 机会，每条预警只进第一个命中的桶。
+   标题优先的原因：标题是预警的主语义，action 里常顺带提及其他情景的执行细节
+   （如 MLCC 涨价预警的 action 提到村田 EOL 料 LTB），全文本同权会误抢桶。 */
+const SIT_RULES=[
+ {id:"eol",kw:["停产","eol","最后下单","last time buy","last-time-buy","生命周期","ltb","退市","discontinu","end of life"]},
+ {id:"shortage",kw:["缺料","断供","短缺","配给","allocation","无货","缺货","shortage","stock-out","stockout","out of stock"]},
+ {id:"price",kw:["涨价","调价","提价","上调","锁价","涨","price hike","price-hike","price increase","price adjustment","repricing","hike","rise","lock price"]},
+ {id:"leadtime",kw:["交期","货期","延期","拉长","lead time","lead-time"]},
+ {id:"opportunity",kw:["降价","回落","缓解","降幅","price drop","price decline","easing","relief","pullback"]}
 ];
-const PB_DEFAULT={
- zh:["测算库存与需求缺口，明确影响时点","列出可选动作与责任人","设日历提醒复查，明确触发升级的条件"],
- en:["Size the inventory-vs-demand gap; pin down the impact date","List options and owners","Set a calendar reminder to re-check; define escalation triggers"]};
-function playbook(w){
-  const txt=((w.title||"")+" "+(w.action||"")+" "+(w.trigger||"")).toLowerCase();
-  for(const p of PLAYBOOKS){if(p.k.some(k=>txt.indexOf(k.toLowerCase())>=0))return LANG==="en"?p.en:p.zh;}
-  return (w.urgency==="高"||w.urgency==="中")?PB_DEFAULT[LANG]:null;
+const SIT_TAGKW={eol:["停产","eol"],shortage:["短缺","缺料","断供"],price:["涨价"],leadtime:["交期"],opportunity:[]};
+function classifySituation(w,eventsById){
+  const title=String((w&&w.title)||"").toLowerCase();
+  const rest=(String((w&&w.action)||"")+" "+String((w&&w.trigger)||"")+" "+String((w&&w.impact)||"")).toLowerCase();
+  const has=(txt,kws)=>kws.some(k=>txt.indexOf(k)>=0);
+  const priceHit=txt=>has(txt,SIT_RULES[2].kw)
+    ||(txt.indexOf("生效")>=0&&/价|涨|调|函/.test(txt))
+    ||(txt.indexOf("lock")>=0&&txt.indexOf("price")>=0);
+  const hit=(r,txt)=>r.id==="price"?priceHit(txt):has(txt,r.kw);
+  for(const r of SIT_RULES)if(hit(r,title))return r.id;
+  const evs=((w&&w.related_events)||[]).map(id=>(eventsById||{})[id]).filter(Boolean);
+  for(const r of SIT_RULES){
+    const tk=SIT_TAGKW[r.id]||[];
+    if(tk.length&&evs.some(e=>(e.tags||[]).some(tg=>tk.some(k=>String(tg).toLowerCase().indexOf(k)>=0))))return r.id;
+    if(r.id==="opportunity"&&evs.some(e=>e.severity==="低"&&/缓解|回落|降价|easing|relief/.test(String(e.title||"").toLowerCase())))return "opportunity";
+  }
+  for(const r of SIT_RULES)if(hit(r,rest))return r.id;
+  return null;
+}
+const SIT_ORDER=["eol","shortage","price","leadtime","opportunity"];
+const SIT_NAME={eol:"sit_eol",shortage:"sit_shortage",price:"sit_price",leadtime:"sit_lead",opportunity:"sit_opp"};
+const SIT_LINES={eol:"pb_eol",shortage:"pb_shortage",price:"pb_price",leadtime:"pb_lead",opportunity:"pb_opp"};
+function pbToggle(btn){
+  const box=btn.closest(".sit");if(!box)return;
+  box.querySelectorAll(".pbhid").forEach(x=>{x.style.display="flex";});
+  btn.style.display="none";
+}
+function playbooksCard(ws){
+  const buckets={};
+  (ws||[]).forEach(w=>{const s=classifySituation(w,EMAP);if(s)(buckets[s]=buckets[s]||[]).push(w);});
+  const hit=SIT_ORDER.filter(k=>buckets[k]&&buckets[k].length);
+  if(!hit.length)return "";
+  const ent=(w,hid)=>`<button class="pbw${hid?" pbhid":""}"${hid?' style="display:none"':""} onclick="goId('${w.id}')"><span class="udot ${w.urgency==="高"?"uh":w.urgency==="中"?"um":"ul"}"></span><span class="tt">${esc(w.title)}</span>${cdBadge(w.deadline)}</button>`;
+  const sitHtml=k=>{
+    const list=buckets[k];
+    const lines=t(SIT_LINES[k])||[];
+    let rows=list.slice(0,4).map(w=>ent(w,false)).join("");
+    if(list.length>4)rows+=list.slice(4).map(w=>ent(w,true)).join("")
+      +`<button class="pbmore" onclick="pbToggle(this)">${fmt(t("pb_more"),{n:list.length-4})}</button>`;
+    return `<div class="sit"><div class="sit-h">${esc(t(SIT_NAME[k]))}<span class="n">${list.length} ${t("u_warnings")}</span></div><ol>${lines.map(i=>`<li>${esc(i)}</li>`).join("")}</ol><div class="pbws">${rows}</div></div>`;
+  };
+  return `<div class="pb"><b>${ICO.brief}${t("playbook")}</b>${hit.map(sitHtml).join("")}</div>`;
+}
+/* 预警倒计时：deadline 严格解析为 YYYY-MM-DD 且为真实日期才算，以当前所看期号日期为基准 */
+function cdBadge(dl){
+  const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(dl||""));
+  if(!m||!CURDATE)return "";
+  const t1=Date.UTC(+m[1],+m[2]-1,+m[3]);
+  const dt=new Date(t1);
+  if(dt.getUTCFullYear()!==+m[1]||dt.getUTCMonth()!==+m[2]-1||dt.getUTCDate()!==+m[3])return "";
+  const cm=/^(\d{4})-(\d{2})-(\d{2})$/.exec(CURDATE);
+  if(!cm)return "";
+  const days=Math.round((t1-Date.UTC(+cm[1],+cm[2]-1,+cm[3]))/86400000);
+  if(days>0){var ft=fmt(t("cd_future"),{n:days});if(days===1)ft=ft.replace("days","day");return `<span class="cd cd-f">${ft}</span>`;}
+  if(days===0)return `<span class="cd cd-t">${t("cd_today")}</span>`;
+  return `<span class="cd cd-p">${t("cd_past")}</span>`;
 }
 function warnCard(w){
   const ec=(w.related_events||[]).filter(id=>EMAP[id])
-    .map(id=>`<button class="chip" onclick="goId('${id}')">📄 ${esc(EMAP[id].title.slice(0,13))}…</button>`).join("");
+    .map(id=>`<button class="chip" onclick="goId('${id}')">${ICO.file}${esc(EMAP[id].title.slice(0,13))}…</button>`).join("");
   const cls=w.urgency==="高"?"":w.urgency==="中"?" mid":" low";
   const bases=affectedBases(w);
-  const pb=playbook(w);
   const ul=w.urgency==="高"?t("u_high"):w.urgency==="中"?t("u_mid"):t("u_low");
   return `<article class="act${cls}" id="${w.id}">
-    <h4>${w.urgency==="高"?"🔴":w.urgency==="中"?"🟠":"🔵"} ${esc(w.title)}
+    <h4><span class="udot ${w.urgency==="高"?"uh":w.urgency==="中"?"um":"ul"}"></span>${esc(w.title)}
     <span class="pill ${w.urgency==="高"?"p-red":w.urgency==="中"?"p-org":"p-blu"}">${esc(ul)}${t("urgency_suffix")}</span></h4>
     <div class="do"><b>${t("act_do")}</b>${esc(w.action)}</div>
-    <div class="meta">${t("act_impact")}${esc(w.impact)}<br>${t("act_trigger")}${esc(w.trigger)}${w.deadline?`<br>${fmt(t("act_dl"),{d:esc(w.deadline)})}`:""}</div>
+    <div class="meta">${t("act_impact")}${esc(w.impact)}<br>${t("act_trigger")}${esc(w.trigger)}${w.deadline?`<br>${ICO.clock}${fmt(t("act_dl"),{d:esc(w.deadline)})}${cdBadge(w.deadline)}`:""}</div>
     ${bases.length?`<div class="bases">${t("act_bases")}${bases.map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}</div>`:""}
-    ${ec?`<div class="rel">${t("rel_ev")}${ec}</div>`:""}
-    ${pb?`<div class="pb"><b>${t("playbook")}</b><ol>${pb.map(i=>`<li>${i}</li>`).join("")}</ol></div>`:""}</article>`;
+    ${ec?`<div class="rel">${t("rel_ev")}${ec}</div>`:""}</article>`;
 }
 
-function secttl(no,title,cnt){const NOM={"一":"1","二":"2","三":"3","四":"4","五":"5","六":"6","七":"7","附":"App."};return `<div class="secttl"><span class="no">${LANG==="en"?(NOM[no]||no):no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
-function guide(html){return `<div class="guide">💡 ${html}</div>`;}
+function secttl(no,title,cnt){const NOM={"一":"1","二":"2","三":"3","四":"4","五":"5","六":"6","七":"7","八":"8","附":"App."};return `<div class="secttl"><span class="no">${LANG==="en"?(NOM[no]||no):no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
+function guide(html){return `<div class="guide">${ICO.bulb}${html}</div>`;}
 function goId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});}
 function setFilter(f){FILTER=f;renderMain(CUR);const y=$("#s2").offsetTop-70;window.scrollTo({top:y,behavior:"smooth"});}
 
@@ -586,7 +732,7 @@ function initSpy(){
         a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id));
     }});
   },{rootMargin:"-30% 0px -60% 0px"});
-  ["s1","s2","s3","s4","s5","s6","s7"].forEach(id=>{
+  ["s1","s2","s3","s4","s5","s6","s7","s8"].forEach(id=>{
     const s=document.getElementById(id); if(s)_SPY.observe(s);
   });
 }
@@ -604,7 +750,7 @@ function renderMain(d){
   if(highs.length){
     const dl=d.warnings.filter(w=>w.deadline).map(w=>w.deadline).sort()[0];
     ab.classList.add("show");
-    ab.innerHTML=fmt(t("alert_t"),{a:highs.length,b:dl?fmt(t("alert_b"),{d:mmdd(dl)}):""});
+    ab.innerHTML=ICO.warn+fmt(t("alert_t"),{a:highs.length,b:dl?fmt(t("alert_b"),{d:mmdd(dl)}):""});
   }else{ab.classList.remove("show");ab.innerHTML="";}
 
   /* ---- 顶部导读 ---- */
@@ -626,7 +772,7 @@ function renderMain(d){
   let s2ev=d.hotspot_events.filter(e=>e.section==="头条事件"||(e.tags||[]).includes("突发")).sort((a,b)=>b.heat-a.heat);
   const frows=`<div class="frow">
       <button class="fchip${FILTER==="all"?" on":""}" onclick="setFilter('all')">${t("f_all")}</button>
-      <button class="fchip${FILTER==="burst"?" on":""}" onclick="setFilter('burst')">${t("f_burst")}</button>
+      <button class="fchip${FILTER==="burst"?" on":""}" onclick="setFilter('burst')">${ICO.bolt}${t("f_burst")}</button>
       <button class="fchip${FILTER==="bom"?" on":""}" onclick="setFilter('bom')">${t("f_bom")}</button></div>`;
   if(FILTER==="burst")s2ev=s2ev.filter(e=>(e.tags||[]).includes("突发"));
   if(FILTER==="bom")s2ev=s2ev.filter(e=>(e.tags||[]).includes("影响BOM"));
@@ -656,13 +802,13 @@ function renderMain(d){
   /* ---- 五、供应商动态 ---- */
   const tcol=s=>s==="涨价"?"p-red":s==="排查无异常"?"p-gry":s==="经营风险"?"p-org":"p-blu";
   const subChips=s=>{const sc=(s.subcategories||[]).map(x=>`<span class="subchip">${esc(x)}</span>`).join("");
-    const co=s.company?`<span class="subchip" style="background:#fff6e5;color:#b3851f;border-color:#f0d9ac">🏢 ${esc(s.company)}</span>`:"";
+    const co=s.company?`<span class="subchip" style="background:#fff6e5;color:#b3851f;border-color:#f0d9ac">${ICO.bldg}${esc(s.company)}</span>`:"";
     return (sc||co)?`<div class="subchips">${sc}${co}</div>`:"";};
   const sup=(d.supplier_updates||[]).map(s=>`<div class="supp"><div class="srow" style="border-bottom:none;padding-bottom:0"><span class="pill ${tcol(s.type)}">${esc(supType(s.type))}</span><span class="cat">${esc(s.category)}</span><span class="dt">${esc(s.detail).slice(0,30)}</span></div>${subChips(s)}</div>`).join("");
   const s5ev=bySec("供应商动态");
   const chk=d.company_checklist||[];
   const hot5=chk.filter(c=>c.status==="有实质动态");
-  const chkHtml=chk.map(c=>`<span class="cchip" title="${esc(c.note||chkLabel(c.status))}">${c.status==="有实质动态"?"🔥":c.status==="无实质动态"?"✅":"↩️"} ${esc(c.company)}</span>`).join("");
+  const chkHtml=chk.map(c=>`<span class="cchip" title="${esc(c.note||chkLabel(c.status))}"><span class="cic ${c.status==="有实质动态"?"hot":c.status==="无实质动态"?"ok":"bk"}">${c.status==="有实质动态"?ICO.flame:c.status==="无实质动态"?ICO.check:ICO.undo}</span>${esc(c.company)}</span>`).join("");
   const dynCats=[...new Set((d.supplier_updates||[]).filter(s=>s.type!=="排查无异常").map(s=>s.category))];
   const s5=secttl("五",t("sec")[4],(d.supplier_updates||[]).length+" "+t("u_items"))
     +guide(fmt(t("s5_guide"),{a:dynCats.length,b:dynCats.map(esc).join("、")||t("s5_none"),c:chk.length,d:hot5.length}))
@@ -672,18 +818,18 @@ function renderMain(d){
 
   /* ---- 六、预警与建议 ---- */
   const warns=[...d.warnings].sort((a,b)=>({高:0,中:1,低:2}[a.urgency]-{高:0,中:1,低:2}[b.urgency]));
-  const anchors=(d.time_anchors||[]).map(x=>`<div class="anchor">⏰ <b>${mmdd(x.date)}</b> ${esc(x.event)}</div>`).join("");
+  const anchors=(d.time_anchors||[]).map(x=>`<div class="anchor">${ICO.clock}<b>${mmdd(x.date)}</b> ${esc(x.event)}</div>`).join("");
   const firstHigh=highs[0];
   const s6=secttl("六",t("sec")[5],d.warnings.length+" "+t("u_warnings"))
     +guide(firstHigh?fmt(t("s6_guide"),{a:highs.length,b:esc(firstHigh.title),c:firstHigh.deadline?fmt(t("s6_dl"),{d:esc(firstHigh.deadline)}):""}):t("s6_none"))
-    +(anchors?`<div class="secsub">${t("anchors_title")}</div><div class="anchors">${anchors}</div>`:"")
+    +(anchors?`<div class="secsub">${ICO.clock}${t("anchors_title")}</div><div class="anchors">${anchors}</div>`:"")
+    +playbooksCard(warns)
     +warns.map(warnCard).join("");
 
-  /* ---- 七、我的供应链 ---- */
-  const s7=secttl("七",t("sec")[6],t("s7_cnt"))
+  /* ---- 八、我的供应链 ---- */
+  const s8=secttl("八",t("sec")[6],t("s7_cnt"))
     +guide(t("s7_guide"))
-    +`<div id="supplybase"><div class="card"><div class="loading">${t("sb_loading")}</div></div></div>`
-    +`<div class="riskrank card" id="riskrank" style="display:none"></div>`;
+    +`<div id="supplybase"><div class="card"><div class="loading">${t("sb_loading")}</div></div></div>`;
 
   $("#main").innerHTML=
     `<section class="blk" id="s1">${s1}</section>`
@@ -691,19 +837,23 @@ function renderMain(d){
    +`<section class="blk" id="s3">${s3}</section>`
    +`<section class="blk" id="s4">${s4}</section>`
    +`<section class="blk" id="s5">${s5}</section>`
+   +`<div class="card" id="sparkband" style="display:none"></div>`
    +`<section class="blk" id="s6">${s6}</section>`
-   +`<section class="blk" id="s7">${s7}</section>`
+   +`<section class="blk" id="s7"><div id="timeline"></div><div class="riskrank card" id="riskrank" style="display:none"></div></section>`
+   +`<section class="blk" id="s8">${s8}</section>`
    +`<section class="blk"><div class="secttl"><span class="no">${LANG==="en"?"App.":"附"}</span><h2>${t("sec")[7]}</h2></div>
      <div class="rubric"><h4>${t("m_heat")}</h4>
-     <div style="font-size:13px">${t("m_heat_b")}</div></div>
+     <div style="font-size:14px">${t("m_heat_b")}</div></div>
      <div class="rubric"><h4>${t("m_cov")}</h4>
-     <div style="font-size:13px">${t("m_cov_b")}</div></div></section>`;
+     <div style="font-size:14px">${t("m_cov_b")}</div></div></section>`;
   $("#footmeta").textContent=`${d.meta.date} · schema ${d.meta.schema_version}`;
   renderIssuestrip();
   initSpy();
   const rq=document.getElementById("railq");
   if(rq&&rq.value.trim())railSearch();
   loadSupply();
+  paintTimeline();
+  paintSpark();
 }
 
 async function loadSupply(){
@@ -718,7 +868,7 @@ async function loadSupply(){
     const mkBars=s.pcba.top_makers.map(x=>
       `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#5ea3dd"></div></div></div>`).join("");
     const ee=s.ee_categories.map(c=>
-      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:13px;color:#3c546e">${c.subs.map(esc).join(" · ")}</div></div></details>`).join("");
+      `<details class="sec"><summary style="font-size:14px">${esc(c.name)}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(esc).join(" · ")}</div></div></details>`).join("");
     const p=s.pcba;
     /* 基地供应商品类 tabs */
     let baseHtml=`<div class="card"><div class="errmsg">${t("base_err")}</div></div>`;
@@ -728,19 +878,19 @@ async function loadSupply(){
       baseHtml=`<div class="tabs">${tabs}</div>
         <input class="searchbox" id="basesearch" placeholder="${esc(t("base_search_ph"))}" oninput="filterBase(this.value)">
         <div class="card" id="baselist" style="max-height:520px;overflow-y:auto"></div>
-        <div style="font-size:11.5px;color:#8a99ab;margin:2px 2px 0">${t("base_note")}</div>`;
+        <div style="font-size:12px;color:#8a99ab;margin:2px 2px 0">${t("base_note")}</div>`;
       window._TAX=tax;window._BASE=order[0];window._Q="";
     }
     box.innerHTML=
      `<div class="card"><h3 style="margin-top:0">${t("sb_title")} <span class="pill p-blu">${t("sb_snapshot")} ${esc(s.snapshot_date)}</span></h3>
-      <div style="font-size:13.5px;color:#3c546e">${s.supplier_base.supplier_count} ${t("sb_u1")} · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} ${t("sb_u2")}</div>
+      <div style="font-size:14px;color:#3c546e">${s.supplier_base.supplier_count} ${t("sb_u1")} · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} ${t("sb_u2")}</div>
       <div style="margin-top:6px;font-size:12px;color:#8a99ab">${t("sb_note")}</div></div>
       <div class="secsub">${t("sb_risk")}</div>
       <div class="mgrid" style="grid-template-columns:1fr 1fr">
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#1e86d6">${p.total}</b><div style="font-size:11px;color:#64748b">${t("sb_total")}</div></div>
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#e0654f">${p.risk.High}</b><div style="font-size:11px;color:#64748b">${t("sb_high")}</div></div>
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.eol}</b><div style="font-size:11px;color:#64748b">${t("sb_eol")}</div></div>
-        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.lead_time_days.ge_180}</b><div style="font-size:11px;color:#64748b">${t("sb_lt")}</div></div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#1e86d6">${p.total}</b><div style="font-size:12px;color:#64748b">${t("sb_total")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#e0654f">${p.risk.High}</b><div style="font-size:12px;color:#64748b">${t("sb_high")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.eol}</b><div style="font-size:12px;color:#64748b">${t("sb_eol")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.lead_time_days.ge_180}</b><div style="font-size:12px;color:#64748b">${t("sb_lt")}</div></div></div>
       <div class="secsub">${t("sb_ee")} <span style="font-weight:400;color:#8a99ab">${t("sb_ee_sub")}</span></div>${ee}
       <div class="secsub">${t("sb_base")} <span style="font-weight:400;color:#8a99ab">${t("sb_base_sub")}</span></div>${baseHtml}
       <div class="secsub">${t("sb_maker")}</div><div class="card">${mkBars}</div>`;
@@ -765,7 +915,7 @@ function renderBase(){
 let CURDATE=null;
 function copyIssueLink(){
   const u=location.origin+location.pathname+"#date="+(CURDATE||"")+(LANG==="en"?"&lang=en":"");
-  const done=()=>{const b=$("#copylink");if(!b)return;const t0=b.textContent;b.textContent=t("copied");setTimeout(()=>{b.textContent=t0;},1500);};
+  const done=()=>{const b=$("#copylink");if(!b)return;const h0=b.innerHTML;b.innerHTML=ICO.check+t("copied");setTimeout(()=>{b.innerHTML=h0;},1500);};
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done).catch(()=>prompt(t("copy_prompt"),u));}
   else prompt(t("copy_prompt"),u);
 }
@@ -797,7 +947,7 @@ async function loadDay(date){
   }catch(e){
     const m=$("#main");
     if(m)m.insertAdjacentHTML("afterbegin",
-      `<div class="errbar">⚠️ ${esc(date)}${t("load_err_t")}${esc(e.message)}${t("load_err_b")}<a href="javascript:loadDay(CURDATE)">${t("retry")}</a></div>`);
+      `<div class="errbar">${ICO.warn}${esc(date)}${t("load_err_t")}${esc(e.message)}${t("load_err_b")}<a href="javascript:loadDay(CURDATE)">${t("retry")}</a></div>`);
   }
 }
 
@@ -810,10 +960,100 @@ async function renderRiskRank(){
     if(!items.length)return;
     const max=Math.max(...items.map(i=>i.score),1);
     const el=$("#riskrank");
-    el.innerHTML=`<h3>${fmt(t("rr_title"),{days:d.window_days||30})}<span class="rrsub">${t("rr_sub")}</span></h3>`+
+    el.innerHTML=`<h3>${ICO.chart}${fmt(t("rr_title"),{days:d.window_days||30})}<span class="rrsub">${t("rr_sub")}</span></h3>`+
       items.map((i,ix)=>`<div class="rrrow" title="${esc(i.sample||"")}"><span class="rrname">${ix+1}. ${esc(i.name)}</span><span class="rrbar"><i style="width:${Math.round(i.score/max*100)}%"></i></span><span class="rrscore">${fmt(t("rr_score"),{s:i.score,h:i.hits})}</span></div>`).join("");
     el.style.display="block";
   }catch(e){}
+}
+
+/* ---- 七、事件时间线（data/events.json，全量快照，与期号无关，加载一次后缓存重绘） ---- */
+let EVDATA=null,EVFAIL=false;
+function evStatus(s){return {"传闻":["evst-rum",t("evst_rumor")],"已通知":["evst-not",t("evst_notified")],"已生效":["evst-eff",t("evst_effective")],"已落地":["evst-done",t("evst_landed")],"已失效":["evst-dead",t("evst_expired")]}[s]||["evst-rum",esc(s)];}
+function toggleEv(btn){
+  const card=btn.closest(".evcard");if(!card)return;
+  card.querySelectorAll(".evhid").forEach(x=>{x.style.display="";});
+  const li=btn.closest("li");if(li)li.style.display="none";
+}
+function paintTimeline(){
+  const box=document.getElementById("timeline");if(!box)return;
+  const head=cnt=>secttl("七",t("tl_title"),cnt);
+  if(!EVDATA){
+    box.innerHTML=head("")+(EVFAIL
+      ?`<div class="card"><div class="errmsg">${t("tl_pending")}</div></div>`
+      :`<div class="card"><div class="loading">${t("tl_loading")}</div></div>`);
+    return;
+  }
+  const rank=s=>(s==="已落地"||s==="已失效")?1:0;
+  const items=EVDATA.map(e=>{
+    const tl=[...(e.timeline||[])].sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
+    return {e,tl,latest:tl.length?String(tl[0].date||""):""};
+  }).sort((a,b)=>rank(a.e.status)-rank(b.e.status)||b.latest.localeCompare(a.latest));
+  const active=items.filter(x=>rank(x.e.status)===0).length;
+  const li=(n,hid)=>`<li${hid?' class="evhid" style="display:none"':""}><span class="ed">${esc(n.date)}</span><span class="ec">${esc(n.change)}</span></li>`;
+  const cards=items.map(({e,tl})=>{
+    const st=evStatus(e.status);
+    let body="";
+    if(tl.length>4){
+      body=tl.slice(0,3).map(n=>li(n,false)).join("")
+        +`<li class="evbtn"><button class="evmorebtn" onclick="toggleEv(this)">${fmt(t("tl_expand"),{n:tl.length})}</button></li>`
+        +tl.slice(3,-1).map(n=>li(n,true)).join("")
+        +li(tl[tl.length-1],false);
+    }else{
+      body=tl.map(n=>li(n,false)).join("");
+    }
+    return `<article class="card evcard"><div class="evhead"><h3>${esc(e.title)}</h3><span class="evst ${st[0]}">${st[1]}</span></div><ul class="evt">${body}</ul></article>`;
+  }).join("");
+  box.innerHTML=head(fmt(t("tl_cnt"),{n:items.length}))+guide(fmt(t("tl_guide"),{n:items.length,a:active}))+cards;
+}
+async function loadEvents(){
+  try{
+    const r=await fetch("data/events.json");
+    if(!r.ok)throw 0;
+    const d=await r.json();
+    EVDATA=Array.isArray(d)?d:(d.events||[]);
+  }catch(e){EVFAIL=true;}
+  paintTimeline();
+}
+
+/* ---- 关键指标走势（data/series.json；缺失或点数不足时静默隐藏） ---- */
+let SERIES=null;
+function sparkSVG(pts){
+  const w=260,h=30;
+  const vs=pts.map(p=>+p.value),mn=Math.min.apply(null,vs),mx=Math.max.apply(null,vs),rg=(mx-mn)||1;
+  const X=i=>Math.round(2+i*(w-4)/(pts.length-1)*100)/100;
+  const Y=v=>Math.round((3+(1-(v-mn)/rg)*(h-6))*100)/100;
+  const line=pts.map((p,i)=>X(i)+","+Y(+p.value)).join(" ");
+  const last=pts[pts.length-1];
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#1e86d6" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="${X(pts.length-1)}" cy="${Y(+last.value)}" r="2.6" fill="#1e86d6"/></svg>`;
+}
+function paintSpark(){
+  const box=document.getElementById("sparkband");if(!box)return;
+  const defs=[
+    {k:"copper_lme_usd_t",name:t("sp_lme"),unit:t("sp_lme_u")},
+    {k:"aluminium_lme_usd_t",name:t("sp_alu"),unit:t("sp_alu_u")},
+    {k:"silver_usd_oz",name:t("sp_ag"),unit:t("sp_ag_u")},
+    {k:"usdcny",name:t("sp_fx"),unit:t("sp_fx_u"),dec:4}
+  ];
+  const rows=[];
+  if(SERIES)defs.forEach(d=>{
+    const pts=(SERIES[d.k]||[]).filter(p=>p&&isFinite(+p.value));
+    if(pts.length<2)return;
+    const first=pts[0],last=pts[pts.length-1];
+    const pct=(last.value-first.value)/first.value*100;
+    const pcol=pct>0?"#d4695c":pct<0?"#4a9457":"var(--mut)";
+    rows.push(`<div class="sparkrow"><span class="sparkname">${esc(d.name)}</span><span class="sparkwrap">${sparkSVG(pts)}</span><span class="sparklv"><b>${d.dec?Number(last.value).toFixed(d.dec):Number(last.value).toLocaleString("en-US")} ${esc(d.unit)}</b>${esc(mmdd(last.date))} · <span style="color:${pcol};font-weight:700">${pct>=0?"+":""}${pct.toFixed(2)}%</span></span></div>`);
+  });
+  if(!rows.length){box.style.display="none";box.innerHTML="";return;}
+  box.innerHTML=`<h3 style="margin-top:0;font-size:14.5px">${ICO.chart}${t("sp_title")}<span class="rrsub" style="font-weight:400;color:var(--mut);font-size:12px;margin-left:6px">${t("sp_sub")}</span></h3>`+rows.join("");
+  box.style.display="block";
+}
+async function loadSeries(){
+  try{
+    const r=await fetch("data/series.json");
+    if(!r.ok)throw 0;
+    SERIES=await r.json();
+  }catch(e){SERIES=null;}
+  paintSpark();
 }
 
 async function boot(){
@@ -843,18 +1083,25 @@ async function boot(){
     const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
     const start=(hm&&days.indexOf(hm[1])>=0)?hm[1]:(idx.latest||days[days.length-1]);
     window.addEventListener("hashchange",()=>{
-      const m2=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
-      if(m2&&m2[1]!==CURDATE&&days.indexOf(m2[1])>=0)loadDay(m2[1]);
+      const h=location.hash||"";
+      const m2=h.match(/date=(\d{4}-\d{2}-\d{2})/);
+      const lm=h.match(/lang=(en|zh)/);
+      const nl=lm?lm[1]:"zh";
+      const nd=(m2&&days.indexOf(m2[1])>=0)?m2[1]:CURDATE;
+      if(nl!==LANG){initLang();applyLang();if(nd)loadDay(nd);}
+      else if(m2&&m2[1]!==CURDATE&&days.indexOf(m2[1])>=0)loadDay(m2[1]);
     });
     await loadDay(start);
     renderRiskRank();
+    loadEvents();
+    loadSeries();
   }catch(e){$("#main").innerHTML=`<div class="errmsg">${t("boot_err")}</div>`;}
 }
 boot();
 </script>
 <div id="calsub" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:99;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)hideCalSub()">
   <div style="background:#fff;color:#222;max-width:430px;width:100%;border-radius:12px;padding:20px;font-size:14px;line-height:1.7">
-    <div style="font-weight:700;font-size:16px;margin-bottom:6px" id="c_title">📅 订阅时间锚点日历</div>
+    <div style="font-weight:700;font-size:16px;margin-bottom:6px" id="c_title"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>订阅时间锚点日历</div>
     <div style="color:#666;font-size:13px;margin-bottom:10px" id="c_desc">每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。</div>
     <input id="calurl" readonly value="https://nohho.github.io/hvac-intel/anchors.ics" onclick="this.select()" style="width:100%;box-sizing:border-box;padding:8px;border:1px solid #ddd;border-radius:8px;font-size:12px;color:#444;background:#f7f9fb">
     <div style="display:flex;gap:10px;margin:12px 0">
