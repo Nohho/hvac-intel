@@ -27,6 +27,7 @@ header.top h1{font-size:20px;letter-spacing:.5px}
 header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
 .headline{margin-top:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:9px 12px;font-size:14px;line-height:1.6}
 .headline b{color:#ffe9a8}
+.hl-more{display:block;font-size:12px;color:#c4d9ef;margin-top:3px}
 .dpills{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:2px}
 .dpill{flex:none;font-size:12.5px;color:#dce9f8;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px}
 .dpill.on{background:#fff;color:var(--navy);font-weight:700;border-color:#fff}
@@ -365,7 +366,7 @@ zh:{
  cal_copy:"复制订阅链接",cal_open:"用日历 App 打开",
  cal_ios:"<b>iPhone</b>：在 Safari 里点“用日历 App 打开”最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br><b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接",
  cal_close:"关闭",cal_copied:"已复制，去日历 App 粘贴订阅",
- digest:"今日导读：",
+ digest:"今日导读：",digest_more:"余下要点见下方各段",
  sev_high:"严重",sev_mid:"预警",sev_low:"关注",
  tag_burst:"突发",tag_bom:"影响BOM",
  reason:"推荐理由：",src_label:"来源：",primary:"一手",rel_warn:"关联预警：",rel_ev:"关联事件：",
@@ -453,7 +454,7 @@ en:{
  cal_copy:"Copy subscription link",cal_open:"Open in calendar app",
  cal_ios:"<b>iPhone</b>: tap “Open in calendar app” in Safari; or Settings → Calendar → Add Calendar → Add Subscription Calendar → paste the link<br><b>Outlook</b>: Add calendar → Subscribe from URL → paste the link",
  cal_close:"Close",cal_copied:"Copied — paste it in your calendar app",
- digest:"Today's briefing: ",
+ digest:"Today's briefing: ",digest_more:"More highlights in the sections below",
  sev_high:"Critical",sev_mid:"Watch",sev_low:"Monitor",
  tag_burst:"Breaking",tag_bom:"BOM Impact",
  reason:"Why it matters: ",src_label:"Sources: ",primary:"Primary",rel_warn:"Related warnings: ",rel_ev:"Related events: ",
@@ -768,6 +769,17 @@ function initSpy(){
 }
 function supType(s){return {"涨价（已生效）":t("st_hiked"),"涨价":t("st_hike"),"价格更新":t("st_price"),"排查无异常":t("st_ok"),"经营风险":t("st_risk")}[s]||s;}
 function chkLabel(s){return s==="有实质动态"?t("chk_yes"):s==="无实质动态"?t("chk_no"):t("chk_other");}
+/* 导读瘦身：headline 按 ；/; 切分；≥3 条取前 2 条以；连接、缺句号补。，并标记提示行；≤2 条（含单条长句）原文照渲 */
+function slimDigest(h){
+  const parts=String(h).split(/；|;/).map(s=>s.trim()).filter(Boolean);
+  if(parts.length>=3){
+    const en=(typeof LANG!=="undefined"&&LANG==="en");
+    let txt=parts.slice(0,2).join(en?"; ":"；");
+    if(!/[。.]$/.test(txt))txt+=(en?".":"。");
+    return {txt:txt,more:true};
+  }
+  return {txt:h,more:false};
+}
 function renderMain(d){
   CUR=d;WMAP={};EMAP={};
   d.warnings.forEach(w=>WMAP[w.id]=w);
@@ -783,9 +795,13 @@ function renderMain(d){
     ab.innerHTML=ICO.warn+fmt(t("alert_t"),{a:highs.length,b:dl?fmt(t("alert_b"),{d:mmdd(dl)}):""});
   }else{ab.classList.remove("show");ab.innerHTML="";}
 
-  /* ---- 顶部导读 ---- */
+  /* ---- 顶部导读（瘦身：≥3 条只渲前 2 条 + 提示行；≤2 条原文照渲） ---- */
   const hl=$("#headline");
-  if(d.daily_report&&d.daily_report.headline){hl.style.display="block";hl.innerHTML=`<b>${t("digest")}</b>${esc(d.daily_report.headline)}`;}
+  if(d.daily_report&&d.daily_report.headline){
+    const sd=slimDigest(d.daily_report.headline);
+    hl.style.display="block";
+    hl.innerHTML=`<b>${t("digest")}</b>${esc(sd.txt)}${sd.more?`<span class="hl-more">${t("digest_more")}</span>`:""}`;
+  }
   else{hl.style.display="none";}
 
   /* ---- 一、行业动态 ---- */
