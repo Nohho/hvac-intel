@@ -1,0 +1,403 @@
+{
+  "snapshot_date": "2026-10-04",
+  "note": "BOM 快照（2026-10-04）聚合：有效品类取 Sub-category Update 优先、否则 Sub-category；供应商按名去重。仅列名册内登记供应商 ≤2 家的品类（单一/双来源），不含供应商名称。",
+  "total_categories": 189,
+  "items": [
+    {
+      "name": "Accumulators",
+      "supplier_count": 1
+    },
+    {
+      "name": "Air Moving Equipment",
+      "supplier_count": 1
+    },
+    {
+      "name": "Axial Fans",
+      "supplier_count": 1
+    },
+    {
+      "name": "BOLTS - SCREWS - STUDS",
+      "supplier_count": 1
+    },
+    {
+      "name": "Badging",
+      "supplier_count": 1
+    },
+    {
+      "name": "Belts & Chains",
+      "supplier_count": 1
+    },
+    {
+      "name": "Burners",
+      "supplier_count": 1
+    },
+    {
+      "name": "Capacitors",
+      "supplier_count": 1
+    },
+    {
+      "name": "Cell Battery",
+      "supplier_count": 1
+    },
+    {
+      "name": "Check Valves",
+      "supplier_count": 1
+    },
+    {
+      "name": "Chill Plates",
+      "supplier_count": 1
+    },
+    {
+      "name": "Clips",
+      "supplier_count": 1
+    },
+    {
+      "name": "Communication Modules",
+      "supplier_count": 1
+    },
+    {
+      "name": "Compression Molding Plastics",
+      "supplier_count": 1
+    },
+    {
+      "name": "Condensing Units",
+      "supplier_count": 1
+    },
+    {
+      "name": "Deluge Valves",
+      "supplier_count": 1
+    },
+    {
+      "name": "Die Castings",
+      "supplier_count": 1
+    },
+    {
+      "name": "Digital Logic",
+      "supplier_count": 1
+    },
+    {
+      "name": "Diode",
+      "supplier_count": 1
+    },
+    {
+      "name": "Diodes (Large)",
+      "supplier_count": 1
+    },
+    {
+      "name": "E-Coat (Electrocoating)",
+      "supplier_count": 1
+    },
+    {
+      "name": "Fabricated Bus Bars",
+      "supplier_count": 1
+    },
+    {
+      "name": "Filter Drier Valves",
+      "supplier_count": 1
+    },
+    {
+      "name": "Fire Mass Notification",
+      "supplier_count": 1
+    },
+    {
+      "name": "Forging-Steel",
+      "supplier_count": 1
+    },
+    {
+      "name": "Forgings - Steel",
+      "supplier_count": 1
+    },
+    {
+      "name": "Gate Valves",
+      "supplier_count": 1
+    },
+    {
+      "name": "Gears: Actuators",
+      "supplier_count": 1
+    },
+    {
+      "name": "Heatsink",
+      "supplier_count": 1
+    },
+    {
+      "name": "Hot Melts",
+      "supplier_count": 1
+    },
+    {
+      "name": "Hot Roll Steel, Coil & Sheet",
+      "supplier_count": 1
+    },
+    {
+      "name": "IGBT Modules",
+      "supplier_count": 1
+    },
+    {
+      "name": "Intrusion Sensors",
+      "supplier_count": 1
+    },
+    {
+      "name": "Lighting",
+      "supplier_count": 1
+    },
+    {
+      "name": "Lubricants",
+      "supplier_count": 1
+    },
+    {
+      "name": "Magnetic Bearings",
+      "supplier_count": 1
+    },
+    {
+      "name": "Magnets",
+      "supplier_count": 1
+    },
+    {
+      "name": "Microchannel",
+      "supplier_count": 1
+    },
+    {
+      "name": "Packaging: Returnables",
+      "supplier_count": 1
+    },
+    {
+      "name": "Plastic Tube",
+      "supplier_count": 1
+    },
+    {
+      "name": "Plate - Steel",
+      "supplier_count": 1
+    },
+    {
+      "name": "Power Supplies - Electronic",
+      "supplier_count": 1
+    },
+    {
+      "name": "Precision Stampings",
+      "supplier_count": 1
+    },
+    {
+      "name": "Relay",
+      "supplier_count": 1
+    },
+    {
+      "name": "Rubber Rings",
+      "supplier_count": 1
+    },
+    {
+      "name": "Sealed Lead Acid (SLA) Battery",
+      "supplier_count": 1
+    },
+    {
+      "name": "Shell & Plate",
+      "supplier_count": 1
+    },
+    {
+      "name": "Starters",
+      "supplier_count": 1
+    },
+    {
+      "name": "Steel - Expanded, Perforated & Wire Mesh",
+      "supplier_count": 1
+    },
+    {
+      "name": "Structural, Bar And Profile",
+      "supplier_count": 1
+    },
+    {
+      "name": "TVS",
+      "supplier_count": 1
+    },
+    {
+      "name": "Test And Drain Valves",
+      "supplier_count": 1
+    },
+    {
+      "name": "Thrust Bearing",
+      "supplier_count": 1
+    },
+    {
+      "name": "Transformers (Small)",
+      "supplier_count": 1
+    },
+    {
+      "name": "UPS",
+      "supplier_count": 1
+    },
+    {
+      "name": "Uncategorized Access Control",
+      "supplier_count": 1
+    },
+    {
+      "name": "Uncategorized Drive Components",
+      "supplier_count": 1
+    },
+    {
+      "name": "Uncategorized Fans & Blowers",
+      "supplier_count": 1
+    },
+    {
+      "name": "Uncategorized Rubber Products",
+      "supplier_count": 1
+    },
+    {
+      "name": "Valve Trim Kit",
+      "supplier_count": 1
+    },
+    {
+      "name": "Variable Speed Drives Low Voltage",
+      "supplier_count": 1
+    },
+    {
+      "name": "Vessels",
+      "supplier_count": 1
+    },
+    {
+      "name": "Washer",
+      "supplier_count": 1
+    },
+    {
+      "name": "Wire Form & Guards",
+      "supplier_count": 1
+    },
+    {
+      "name": "Zone Valves",
+      "supplier_count": 1
+    },
+    {
+      "name": "Access Control Panels",
+      "supplier_count": 2
+    },
+    {
+      "name": "Angle Valves",
+      "supplier_count": 2
+    },
+    {
+      "name": "Ball Bearings",
+      "supplier_count": 2
+    },
+    {
+      "name": "Ball Valves",
+      "supplier_count": 2
+    },
+    {
+      "name": "Centrifugal Compressors",
+      "supplier_count": 2
+    },
+    {
+      "name": "Connectors - Electrical",
+      "supplier_count": 2
+    },
+    {
+      "name": "Control Valves",
+      "supplier_count": 2
+    },
+    {
+      "name": "Copper & Silver",
+      "supplier_count": 2
+    },
+    {
+      "name": "Displays",
+      "supplier_count": 2
+    },
+    {
+      "name": "Fuses",
+      "supplier_count": 2
+    },
+    {
+      "name": "Isolators",
+      "supplier_count": 2
+    },
+    {
+      "name": "Large Motors (100 HP And Above 75KW) - Hermetic",
+      "supplier_count": 2
+    },
+    {
+      "name": "Linear Actuators",
+      "supplier_count": 2
+    },
+    {
+      "name": "Oil Pumps",
+      "supplier_count": 2
+    },
+    {
+      "name": "PAINTS & COATINGS",
+      "supplier_count": 2
+    },
+    {
+      "name": "PCB Boards",
+      "supplier_count": 2
+    },
+    {
+      "name": "Pin Or Rivet",
+      "supplier_count": 2
+    },
+    {
+      "name": "Reciprocating Compressors",
+      "supplier_count": 2
+    },
+    {
+      "name": "Refrigerant Oil",
+      "supplier_count": 2
+    },
+    {
+      "name": "Resistors (Large)",
+      "supplier_count": 2
+    },
+    {
+      "name": "Reversing Valves",
+      "supplier_count": 2
+    },
+    {
+      "name": "Rotary Compressors",
+      "supplier_count": 2
+    },
+    {
+      "name": "Screw Compressors",
+      "supplier_count": 2
+    },
+    {
+      "name": "Small Motors: Fan Motors",
+      "supplier_count": 2
+    },
+    {
+      "name": "Small Motors: Fractional HP - ECM Motors",
+      "supplier_count": 2
+    },
+    {
+      "name": "Sound Insulation",
+      "supplier_count": 2
+    },
+    {
+      "name": "Stampings",
+      "supplier_count": 2
+    },
+    {
+      "name": "Tube & Fin Coils",
+      "supplier_count": 2
+    },
+    {
+      "name": "Uncategorized Branded HVAC & IR Equip",
+      "supplier_count": 2
+    },
+    {
+      "name": "Uncategorized Controls",
+      "supplier_count": 2
+    },
+    {
+      "name": "Uncategorized Pumps",
+      "supplier_count": 2
+    },
+    {
+      "name": "Uncategorized Security - Intrusion",
+      "supplier_count": 2
+    },
+    {
+      "name": "Vacuum Pumps",
+      "supplier_count": 2
+    },
+    {
+      "name": "Variable Speed Drives Medium Voltage",
+      "supplier_count": 2
+    }
+  ]
+}
