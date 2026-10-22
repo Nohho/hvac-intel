@@ -408,7 +408,7 @@ zh:{
  copied:"已复制",copy_prompt:"复制本期链接：",
  rail_match:"{n} 处匹配 · 回车跳转",rail_nomatch:"无匹配",
  siphon_eased:"缓解",siphon_pressure:"承压",siphon_watch:"关注",
- st_hiked:"涨价（已生效）",st_hike:"涨价",st_price:"价格更新",st_ok:"排查无异常",st_risk:"经营风险",
+ st_hiked:"涨价（已生效）",st_hike:"涨价",st_price:"价格更新",st_ok:"排查无异常",st_risk:"经营风险",st_lead:"交期",st_tight:"供应紧张",st_active:"有实质动态",st_ma:"并购",st_capex:"产能投资",
  sb_title:"供应链画像",sb_snapshot:"快照",sb_u1:"家供应商",sb_u2:"个元器件",
  sup_hit:"近 7 天情报命中供应链：<b>{x}</b> 条动态 · 涉及 <b>{m}</b> 个品类",sup_hit_none:"近 7 天无命中动态",cat_badge:"{d}天动态 {h} 条 · 风险 {s}",ss_single:"单一来源",ss_dual:"双来源",
  sb_note:"仅品类 / maker 口径聚合，不含供应商名称",
@@ -498,7 +498,7 @@ en:{
  copied:"Copied",copy_prompt:"Copy this issue's link: ",
  rail_match:"{n} matches · Enter to jump",rail_nomatch:"No matches",
  siphon_eased:"Eased",siphon_pressure:"Under pressure",siphon_watch:"Watch",
- st_hiked:"Price hike (effective)",st_hike:"Price hike",st_price:"Price update",st_ok:"No anomalies",st_risk:"Business risk",
+ st_hiked:"Price hike (effective)",st_hike:"Price hike",st_price:"Price update",st_ok:"No anomalies",st_risk:"Business risk",st_lead:"Lead time",st_tight:"Tight supply",st_active:"Material update",st_ma:"M&A",st_capex:"Capacity investment",
  sb_title:"Supply-chain profile",sb_snapshot:"snapshot",sb_u1:"suppliers",sb_u2:"components",
  sup_hit:"Intel hits on your supply chain (last 7d): <b>{x}</b> items · <b>{m}</b> categories",sup_hit_none:"No hits in the last 7 days",cat_badge:"{h} hits in {d}d · risk {s}",ss_single:"Single source",ss_dual:"Dual source",
  sb_note:"Aggregated by category / maker only; no supplier names",
@@ -779,7 +779,7 @@ function initSpy(){
     const s=document.getElementById(id); if(s)_SPY.observe(s);
   });
 }
-function supType(s){return {"涨价（已生效）":t("st_hiked"),"涨价":t("st_hike"),"价格更新":t("st_price"),"排查无异常":t("st_ok"),"经营风险":t("st_risk")}[s]||s;}
+function supType(s){if(LANG!=="en")return s;if(s.includes("已生效"))return t("st_hiked");if(s.includes("涨价"))return t("st_hike");if(s.includes("价格"))return t("st_price");if(s.includes("交期"))return t("st_lead");if(s.includes("缺货")||s.includes("产能紧张"))return t("st_tight");if(s.includes("无异常"))return t("st_ok");if(s.includes("风险")||s.includes("贸易壁垒"))return t("st_risk");if(s.includes("实质动态")||s.includes("轮查结论"))return t("st_active");if(s.includes("并购"))return t("st_ma");if(s.includes("投产")||s.includes("产能投资"))return t("st_capex");return s;}
 function chkLabel(s){return s==="有实质动态"?t("chk_yes"):s==="无实质动态"?t("chk_no"):t("chk_other");}
 /* 导读瘦身：headline 按 ；/; 切分；≥3 条取前 2 条以；连接、缺句号补。，并标记提示行；≤2 条（含单条长句）原文照渲 */
 function slimDigest(h){
