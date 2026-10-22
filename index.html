@@ -81,6 +81,8 @@ nav.secnav a.on{background:var(--blue);color:#fff}
 .rrscore{flex:none;width:64px;text-align:right;color:var(--mut);font-size:12px}
 .issuestrip b{font-size:20px;color:var(--navy);margin-right:3px;font-weight:800}
 .fh{display:inline-block;font-size:12px;font-weight:700;color:#0a6b3a;background:#e6f4ec;border:1px solid #bfe3cd;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
+.fr{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
+.sdate{white-space:nowrap}
 /* 小屏：统计条收紧，导航保持顶部横滑 */
 @media(max-width:480px){
   .issuestrip{gap:12px;font-size:12px;padding:10px 4px 8px}
@@ -369,7 +371,7 @@ zh:{
  digest:"今日导读：",digest_more:"余下要点见下方各段",
  sev_high:"严重",sev_mid:"预警",sev_low:"关注",
  tag_burst:"突发",tag_bom:"影响BOM",
- reason:"推荐理由：",src_label:"来源：",primary:"一手",rel_warn:"关联预警：",rel_ev:"关联事件：",
+ reason:"推荐理由：",src_label:"来源：",primary:"一手",repost:"转载",rel_warn:"关联预警：",rel_ev:"关联事件：",
  u_high:"高",u_mid:"中",u_low:"低",urgency_suffix:"紧迫",
  act_do:"建议动作：",act_impact:"影响范围：",act_trigger:"触发条件：",
  act_dl:"行动时间：{d}",act_bases:"涉及基地：",
@@ -457,7 +459,7 @@ en:{
  digest:"Today's briefing: ",digest_more:"More highlights in the sections below",
  sev_high:"Critical",sev_mid:"Watch",sev_low:"Monitor",
  tag_burst:"Breaking",tag_bom:"BOM Impact",
- reason:"Why it matters: ",src_label:"Sources: ",primary:"Primary",rel_warn:"Related warnings: ",rel_ev:"Related events: ",
+ reason:"Why it matters: ",src_label:"Sources: ",primary:"Primary",repost:"Repost",rel_warn:"Related warnings: ",rel_ev:"Related events: ",
  u_high:"High",u_mid:"Medium",u_low:"Low",urgency_suffix:" urgency",
  act_do:"Recommended actions: ",act_impact:"Impact: ",act_trigger:"Trigger: ",
  act_dl:"Action by: {d}",act_bases:"Bases affected: ",
@@ -563,11 +565,12 @@ function evCard(e,compact){
   const nums=(e.numbers||[]).map(n=>`<span class="num">${esc(n)}</span>`).join("");
   const sv=sevLabel(e.severity||"中");
   const srcs=(e.sources||[]).map(s=>{
-    const fh=s.first_party?`<span class="fh">${esc(t("primary"))}</span>`:"";
+    const badge=s.first_party?`<span class="fh">${esc(t("primary"))}</span>`:`<span class="fr">${esc(t("repost"))}</span>`;
     const body=s.url
-      ?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}（${esc(s.date)}）</a>`
-      :`${esc(s.outlet)}（${esc(s.date)}）`;
-    return fh+body;}).join("；");
+      ?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`
+      :`${esc(s.outlet)}`;
+    const dt=s.date?`<span class="sdate"> · ${esc(mmdd(s.date))}</span>`:"";
+    return badge+body+dt;}).join("；");
   const wc=(e.related_warnings||[]).filter(w=>WMAP[w])
     .map(w=>`<button class="chip" onclick="goId('${w}')">${ICO.warn}${esc(WMAP[w].title.slice(0,13))}…</button>`).join("");
   return `<article class="card" id="${e.id}">
