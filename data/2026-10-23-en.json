@@ -1,0 +1,837 @@
+{
+ "meta": {
+  "date": "2026-10-23",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-23-hvac-cdu-morning-briefing.md",
+  "note": "Friday briefing. Three headlines: Samsung Electro-Mechanics MLCC lead time stretches to 52 weeks and Yageo plans a new hike round for late Oct-Nov (high-cap possibly +50%+); Kingboard's 8th hike letter of the year (+15%), general PCB lead times 2 weeks to 6-8 weeks, copper foil and glass cloth move to quota allocation; systematic industrial-component repricing continues (sensors up to +50%, relays +25%, connectors +30%, UBS report on analog chip prices/inventory). Carrier to invest over $600M in a Fort Worth advanced manufacturing & engineering center; Hitachi spins off home appliances as KADENOVA; Lenovo launches 6th-gen Poseidon liquid cooling (PUE 1.04); Goaland Q3 net profit +207.89%; Gree wins 'internationally leading' ratings for three in-house technologies; Samsung's Southeast Asia / Oceania smart HVAC strategy. Yangshan copper premium at $158/t, highest since Feb 2014; Panasonic US October hike 3.7%-4.0% (effective Oct 19); ZSI-Foster/Wesanco hike effective Oct 26, 3 days out. Event store: 3 new events (Carrier Fort Worth / Hitachi KADENOVA / Lenovo Poseidon Gen 6), 6 timeline entries appended (MLCC/DRAM/PCB-CCL/copper/North America hikes/transformers), 41 events in total."
+ },
+ "daily_report": {
+  "date": "2026-10-23",
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Morning Briefing",
+  "headline": "Samsung Electro-Mechanics MLCC lead time hits 52 weeks, Yageo plans a new hike round for late Oct-Nov; Kingboard's 8th hike letter +15%, PCB lead times 2 weeks to 6-8 weeks; systematic industrial-component repricing continues; Carrier to invest $600M in a Fort Worth plant; Hitachi spins off home appliances as KADENOVA; Lenovo launches 6th-gen Poseidon liquid cooling; Yangshan copper premium at its highest since Feb 2014.",
+  "sections": [
+   "Industry / Technology & Partnerships",
+   "Top Stories",
+   "Data-Center / AI Siphon Effects",
+   "Cross-Industry Transmission",
+   "Supplier Dynamics",
+   "Supply-Chain Warnings & Recommendations"
+  ],
+  "hotspot_count": 3,
+  "warning_count": 10
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261023-01",
+   "title": "Samsung Electro-Mechanics MLCC lead time stretches to 52 weeks; Yageo plans a new hike round for late Oct-Nov",
+   "heat": 88,
+   "heat_reason": "Lead time out to a full year + makers hiking proactively to suppress low/mid-cap orders + TrendForce sees further Q4 increases - multiple lines converging, a clear action window",
+   "tags": [
+    "涨价",
+    "影响BOM",
+    "被动元件"
+   ],
+   "date": "2026-10-22",
+   "sources": [
+    {
+     "outlet": "21st Century Business Herald (via CLS / Korea Herald Business)",
+     "date": "2026-10-22",
+     "url": "https://www.21jingji.com/article/20261022/herald/3c444c8dfe87fbb7ea499c4e51c3bd0e.html",
+     "first_party": false
+    },
+    {
+     "outlet": "JRJ.com",
+     "date": "2026-10-21",
+     "url": "https://m.jrj.com.cn/madapter/finance/2026/10/21162258808399.shtml",
+     "first_party": false
+    }
+   ],
+   "summary": "Samsung Electro-Mechanics' MLCC order lead time has stretched to 52 weeks; it plans to raise consumer-grade X5R prices by an average 25%-30% in 2026 Q4 to curb low/mid-cap orders and free lines for high-end parts; its component division ran at 91% utilization in H1, and the new Philippines line will not ramp until after 2027. Yageo plans a new hike round for late Oct-Nov (high-cap possibly +50%+, low/mid-cap +10%-30%, running through 2027 Q1); TrendForce expects Q4 consumer mid/high-cap quotes to rise a further 10%-20%.",
+   "numbers": [
+    "MLCC lead time: 52 weeks",
+    "Consumer X5R: planned +25%-30% in Q4",
+    "Yageo: high-cap possibly +50%+, low/mid-cap +10%-30%",
+    "TrendForce: Q4 consumer mid/high-cap quotes +10%-20% further",
+    "Samsung Electro-Mechanics utilization: 91%"
+   ],
+   "related_warnings": [
+    "warn-20261023-02"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "id": "evt-20261023-02",
+   "title": "CCL prices rise again in October; PCB lead times stretch across the board",
+   "heat": 87,
+   "heat_reason": "Kingboard's 8th hike letter of the year + lead times 2 weeks to 6-8 weeks + copper foil and glass cloth on quota allocation - multiple lines converging, a clear action window",
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "date": "2026-10-21",
+   "sources": [
+    {
+     "outlet": "Huirong (reposting China Securities Journal)",
+     "date": "2026-10-21",
+     "url": "https://m.qdxirui.com/articles/daily-bf958ec26a2a.html",
+     "first_party": false
+    },
+    {
+     "outlet": "Chenxin Weiye",
+     "date": "2026-10-16",
+     "url": "https://www.szcxwykj.com/news/n1792119823767.html",
+     "first_party": false
+    }
+   ],
+   "summary": "Kingboard Laminates issued its 8th hike letter of the year on Oct 13 (thin-fabric boards of 2116 and below / PP new orders +15%); Shengyi raised board/PP prices another 10-20% in early October; Panasonic has notified +200% on conventional multilayer CCL for shipments from Jan 1, 2027 (channel report). General FR-4 lead times have stretched from ~2 weeks to 6-8 weeks, high-layer/impedance boards 12-24 weeks; copper foil and low-Dk glass cloth have moved to quota allocation, prioritizing long-contract key accounts; 7628 e-glass fabric is up to RMB 13.5-14/m (up over 200% since Sep 2025).",
+   "numbers": [
+    "Kingboard: 8th hike letter of the year, +15%",
+    "General FR-4 lead time: 2 weeks to 6-8 weeks",
+    "High-layer / impedance boards: 12-24 weeks",
+    "7628 e-glass fabric: RMB 13.5-14/m (up 200%+ since Sep 2025)",
+    "Panasonic: +200% from Jan 1, 2027 (channel report)"
+   ],
+   "related_warnings": [
+    "warn-20261023-08"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-pcb-ccl-price-hike-2"
+  },
+  {
+   "id": "evt-20261023-03",
+   "title": "Systematic repricing of industrial components continues",
+   "heat": 86,
+   "heat_reason": "Sensors/relays/connectors repricing across the board + UBS analog price-and-inventory double signal - the hike chain is stacking on multiple lines",
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "date": "2026-10-16",
+   "sources": [
+    {
+     "outlet": "Chenxin Weiye",
+     "date": "2026-10-16",
+     "url": "https://www.szcxwykj.com/news/n1792126921469.html",
+     "first_party": false
+    },
+    {
+     "outlet": "MarsBit (via UBS research)",
+     "date": "2026-10-19",
+     "url": "https://news.marsbit.co/20261019123510531819.html",
+     "first_party": false
+    }
+   ],
+   "summary": "Since 2026 Q1, sensor makers ST / Allegro / Novosense / SmartSens have raised prices 10%-50%; Omron/Schneider relays followed with +10%-25%; Turck/Pepperl+Fuchs sensors +15%-35%; Phoenix Contact/Weidmueller connectors +12%-30%. UBS's Oct 16 report: analog distribution inventory -7% to -10% QoQ, True Analog average prices +12% QoQ, Power Analog +9%, the share of parts on extended lead times up from 62% to 65%, and MCU lead times as long as ~52 weeks.",
+   "numbers": [
+    "Sensor makers: +10%-50%",
+    "Omron/Schneider relays: +10%-25%",
+    "Connectors: +12%-30%",
+    "True Analog avg price: +12% QoQ",
+    "Distribution inventory: -7% to -10% QoQ",
+    "MCU lead times up to ~52 weeks"
+   ],
+   "related_warnings": [
+    "warn-20261023-06"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-industrial-components-price-hike"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "Memory (DRAM/NAND)",
+   "change": "Barclays, Oct 13: October DDR4 contract prices +4% MoM, +24% cumulative over 3 months; DDR5 +3% MoM, +20% over 3 months; forecast: 2027 Q4 DRAM demand exceeds supply by 13.9%, 2028 Q1 NAND gap peaks at 8.3%",
+   "source": "TechNews (via Barclays), Oct 13",
+   "date": "2026-10-13"
+  },
+  {
+   "material": "MLCC",
+   "change": "Samsung Electro-Mechanics signs a KRW 1.0722 trillion AI-server MLCC long-term deal (largest single order on record); lead time 52 weeks, utilization 91%; Murata to invest ~JPY 9 billion expanding MLCC ceramic-material capacity in Okayama (starts Oct 2026, production Apr 2028)",
+   "source": "JRJ.com / 21st Century Business Herald, Oct 21/22",
+   "date": "2026-10-22"
+  },
+  {
+   "material": "Connectors",
+   "change": "PCIe 6.0/CXL unit prices up from under $10 in 2025 to $30+ (+200%+), lead times 8 weeks to 36 weeks; Molex raised line-wide 5%-30% from Jul 1, TE +5%-12% from Jan 5, Amphenol began a second hike round Jul 1; domestic self-sufficiency for 224G+ high-speed connectors under 15%",
+   "source": "Chenxin Weiye, Oct 9/17",
+   "date": "2026-10-17"
+  },
+  {
+   "material": "Copper",
+   "change": "LME 3M copper at $14,342/t on Oct 19 (-0.4%); Yangshan copper premium at $158/t on Oct 22, the highest since Feb 2014; Glencore's 2025 copper output 851,600 t (low end of guidance, -11% YoY)",
+   "source": "Reuters, Oct 19/22",
+   "date": "2026-10-22"
+  },
+  {
+   "material": "Compute-infrastructure demand",
+   "change": "China Mobile intelligent computing center (Hohhot) B25/B27 expansion completed Oct 12: total IT power 120 MW, total compute 20,100 P, 88% green power, cold-plate liquid cooling",
+   "source": "Yuejiwang, Oct 14",
+   "date": "2026-10-14"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "Power grid / transformers",
+   "key_data": "Average delivery for large US power transformers ~128 weeks (GSU ~144 weeks), vs just 24-30 months before 2020; US transformer unit prices up 45%-95% vs 2019; of ~12 GW of US data centers planned for 2026 energization, only about a third are under construction and 30%-50% are expected to slip",
+   "chain": "Grid and data centers compete for transformer / grain-oriented silicon steel capacity; electrical-component procurement cycles stretch in sync",
+   "source": "PEdaily, mid-Oct",
+   "date": "2026-10-18"
+  },
+  {
+   "industry": "Photovoltaics",
+   "key_data": "MIIT, Oct 20: mainstream domestic module prices stabilized over the first three quarters; October module utilization only ~44.3%; polysilicon N-type dense material steady at RMB 38-43/kg (still below the RMB 42/kg production cost)",
+   "chain": "PV softness poses no new squeeze on power devices for now",
+   "source": "Mysteel / MIIT, Oct 19/20",
+   "date": "2026-10-20"
+  },
+  {
+   "industry": "Consumer electronics (reverse transmission)",
+   "key_data": "Consumer-grade commodity MLCCs spiked in June, peaked and fell back in July, returning to rational levels; 0201 small-size resistor supply eased as consumer-electronics growth slowed",
+   "chain": "Marginal positive for HVAC's general low-end parts, but high-end parts are still crowded out by AI",
+   "source": "CCTV Finance / Chenxin Weiye, Oct 1/6 backfill",
+   "date": "2026-10-06"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Carrier announces $600M+ Fort Worth advanced manufacturing & engineering center over 3 years",
+   "detail": "A 1M+ sq ft plant expanding commercial air-/water-cooled chillers and other thermal-management equipment, adding 1,500 jobs, targeting data-center / healthcare / education demand; the CEO says the backlog is at a record",
+   "source": "PR Newswire official release",
+   "date": "2026-10-22",
+   "first_party": true,
+   "event_id": "evt-carrier-fortworth-plant"
+  },
+  {
+   "title": "Hitachi spins off home-appliance business to operate independently as KADENOVA",
+   "detail": "Strategic partnership with Nojima, operations planned to start within FY2026; Hitachi-brand air conditioners and appliances continue under a brand-licensing agreement",
+   "source": "Futurum Group (citing the official announcement)",
+   "date": "2026-10-22",
+   "first_party": false,
+   "event_id": "evt-hitachi-kadenova-spinoff"
+  },
+  {
+   "title": "Lenovo launches 6th-generation Wentian Poseidon liquid-cooling technology",
+   "detail": "Bionic cold plates (cooling limit up 50%+), specialty-steel memory cold plates, monolithic all-diamond-copper CPU cold plates, end-to-end leak monitoring, AI-driven multi-level PID closed-loop control; data-center PUE down to 1.04",
+   "source": "Shanghai Securities News / Securities Daily",
+   "date": "2026-10-20",
+   "first_party": false,
+   "event_id": "evt-lenovo-poseidon-gen6"
+  },
+  {
+   "title": "Goaland Q3 net profit RMB 34.8021M, +207.89% YoY",
+   "detail": "Q3 revenue RMB 273M (+60.78%); net profit for the first three quarters RMB 60.5347M (+76.82%)",
+   "source": "Sina Finance (via company announcement)",
+   "date": "2026-10-22",
+   "first_party": false,
+   "event_id": null
+  },
+  {
+   "title": "Three Gree in-house technologies rated 'internationally leading'",
+   "detail": "Rotary-cylinder refrigeration compressor (outdoor-unit minimum noise 28.1 dB(A), already exported in volume), high-efficiency parallel vapor-injection compressor (all-condition efficiency +1.7%-15.1%, injection volume +12%, covering 1-6 HP), reversible top/bottom-discharge air conditioner; 56 such ratings in total",
+   "source": "CNMO",
+   "date": "2026-10-19",
+   "first_party": false,
+   "event_id": null
+  },
+  {
+   "title": "Samsung unveils smart HVAC strategy for Southeast Asia / Oceania",
+   "detail": "Southeast Asia B2B revenue to grow 20%+ YoY in 2026, B2B over 50% of regional HVAC business (vs 29% in 2021); business extending from residential/commercial into production facilities and data centers",
+   "source": "Samsung Newsroom",
+   "date": "2026-10-21",
+   "first_party": true,
+   "event_id": null
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控/约克",
+   "status": "回补旧闻已排除",
+   "note": "YORK YDAM named to TIME 2026 Best Inventions (Oct 15, old news)"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "$600M+ Fort Worth advanced manufacturing & engineering center over 3 years (PR Newswire official, Oct 22)"
+  },
+  {
+   "company": "特灵",
+   "status": "回补旧闻已排除",
+   "note": "Cancoil acquisition (announced Oct 21, covered yesterday); Q3 earnings Oct 29"
+  },
+  {
+   "company": "大金",
+   "status": "回补旧闻已排除",
+   "note": "Phoenix plant expansion (covered Oct 14); 2.5 MW CDU report (covered Oct 20)"
+  },
+  {
+   "company": "美的",
+   "status": "回补旧闻已排除",
+   "note": "Oct 10 Shejijia new-product promotion (old-news backfill)"
+  },
+  {
+   "company": "格力",
+   "status": "有实质动态",
+   "note": "Three in-house technologies rated 'internationally leading' (CNMO, Oct 19)"
+  },
+  {
+   "company": "海尔",
+   "status": "回补旧闻已排除",
+   "note": "Oct 16 Canton Fair AI large-HVAC showcase (old-news backfill)"
+  },
+  {
+   "company": "日立",
+   "status": "有实质动态",
+   "note": "Home-appliance business spun off as KADENOVA (Oct 22)"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "US October price hike 3.7%-4.0% (effective Oct 19; ACHR News)"
+  },
+  {
+   "company": "LG",
+   "status": "回补旧闻已排除",
+   "note": "Virginia chiller plant (DBTA Oct 19, already in the event store)"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "Southeast Asia / Oceania smart HVAC strategy (Samsung Newsroom, Oct 21)"
+  },
+  {
+   "company": "Vertiv",
+   "status": "回补旧闻已排除",
+   "note": "DSX Ready certification (covered Oct 6-8); Q3 earnings Oct 28"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "Only share-price coverage in the last 3 days"
+  },
+  {
+   "company": "申菱环境",
+   "status": "回补旧闻已排除",
+   "note": "$415M overseas agreement (announced Sep 17, already in the event store)"
+  },
+  {
+   "company": "高澜股份",
+   "status": "有实质动态",
+   "note": "Q3 net profit RMB 34.80M (+207.89%) (Sina Finance, Oct 22)"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "Only share-price / fund-holding coverage in the last 3 days"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "回补旧闻已排除",
+   "note": "Q3 results preview (Oct 13, outside the window)"
+  },
+  {
+   "company": "联想",
+   "status": "有实质动态",
+   "note": "6th-generation Wentian Poseidon liquid cooling launched (Oct 20)"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Copper",
+   "type": "行情",
+   "detail": "LME 3M copper closed Oct 19 at $14,342/t (-0.4%); Yangshan copper premium $158/t on Oct 22 (highest since Feb 2014); SHFE copper night session closed at RMB 106,900/t (+0.2%). (Reuters, Oct 19/22)",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "company": null,
+   "event_id": "evt-copper-high",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "Refrigerants",
+   "type": "行情",
+   "detail": "R32 East China mainstream RMB 63,500-65,500/t (Longzhong, Oct 14; Dongyue Green Cold / Juhua quotes flat at 65,500); R410A RMB 57,000-59,500/t; Middle-East R32 ~RMB 120,000/t (tight year-end price in the local quota base year); R32/R410A Q4 long-contract prices already raised RMB 500/t. (Securities Star, Oct 15)",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Aluminum",
+   "type": "行情",
+   "detail": "SHFE aluminium main contract closed Oct 21 at RMB 23,050/t (+0.22%); Chalco (Shanghai) Carbon's October prebaked-anode sales price +RMB 495/t MoM. (Mysteel, Oct 21)",
+   "subcategories": [
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "IGBT / Power Devices",
+   "type": "涨价已生效",
+   "detail": "onsemi's second-round hike (MOSFET/IGBT/SiC +5%-15%) took effect Oct 10 (event store, no new progress); PANJIT / Taiwan Semiconductor plan a further 10-15% spot increase in October (September industry tracking); Renesas's new pricing system takes effect Jan 2027.",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": null,
+   "event_id": "evt-onsemi-price-hike-2",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "Analog / Power ICs",
+   "type": "涨价",
+   "detail": "UBS, Oct 16: analog distribution inventory -7% to -10% QoQ, True Analog average prices +12%, Power Analog +9%, MCU -7%; 73% of buyers ordering early / signing long-term supply contracts; MCU lead times up to ~52 weeks.",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "company": null,
+   "event_id": "evt-ti-analog-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "Sensors",
+   "type": "涨价",
+   "detail": "ST / Allegro / Novosense / SmartSens factory hikes of 10%-50%; Turck / Pepperl+Fuchs +15%-35%; automotive MEMS foundry lead times ~36 weeks. (Chenxin Weiye, Oct 16, Class B)",
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature"
+   ],
+   "company": null,
+   "event_id": "evt-industrial-components-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "Relays / Connectors",
+   "type": "涨价",
+   "detail": "Omron / Schneider relays +10%-25%; Phoenix Contact / Weidmueller connectors +12%-30%. (Chenxin Weiye, Oct 16, Class B)",
+   "subcategories": [
+    "Relay",
+    "连接器与线束"
+   ],
+   "company": null,
+   "event_id": "evt-industrial-components-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "MLCC",
+   "type": "涨价",
+   "detail": "See Headline 1; Samsung Electro-Mechanics signs a KRW 1.0722 trillion AI-server MLCC long-term deal (largest single order on record); Murata to invest ~JPY 9 billion expanding MLCC ceramic-material capacity in Okayama (starts Oct 2026, production Apr 2028).",
+   "subcategories": [
+    "电容"
+   ],
+   "company": null,
+   "event_id": "evt-mlcc-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "Memory",
+   "type": "涨价",
+   "detail": "Barclays, Oct 13: October DDR4 contract prices +4% MoM, +24% cumulative over 3 months; DDR5 +3% MoM, +20% over 3 months; TrendForce: Q4 commodity DRAM contract prices +10-15% QoQ, NAND +15-20% (Oct 8).",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "event_id": "evt-dram-hbm-shortage",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "PCB/CCL",
+   "type": "涨价",
+   "detail": "See Headline 2; Shengyi raised board/PP prices another 10-20% in early October.",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "company": null,
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "North America HVAC price-hike list",
+   "type": "涨价",
+   "detail": "Panasonic October hike 3.7%-4.0% (effective Oct 19; ACHR News); ZSI-Foster/Wesanco hike effective Oct 26 (3 days out); Resideo-Honeywell Home air-zoning adjustment coming Oct 31. (Event store, continuing)",
+   "subcategories": [],
+   "company": "松下/ZSI-Foster/Wesanco/Resideo-Honeywell",
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "tags": [
+    "涨价"
+   ]
+  },
+  {
+   "category": "Magnet steel",
+   "type": "行情",
+   "detail": "Praseodymium-neodymium oxide RMB 741,000/t (-3,000); NdFeB N-series blanks steady (35N RMB 185/kg, N38H RMB 264/kg, N45M RMB 235-245/kg); inquiries light, operating rates 60-70%. (Mysteel, Oct 21) Essentially no anomalies.",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": null,
+   "event_id": "evt-rare-earth-q4-price",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "category": "Tier B rotation",
+   "type": "排查无异常",
+   "detail": "Batch 5 (round-2 batch 5), 11 categories: Badging, Closed Cell Foam, Displays, Forgings - Steel, Integrated Motor Fans, Memory, Readers & Keypads, Starters, Uncategorized Controls, Vessels, Plastic Parts & Packaging - checked, no anomalies (combined line; PP resin regional quotes RMB 10,500-10,700/t on Oct 13 are normal fluctuation, no hike letter; Memory dynamics are covered under Tier A Memory). Downgrade rule not triggered.",
+   "subcategories": [
+    "Badging",
+    "Closed Cell Foam",
+    "Displays",
+    "Forgings - Steel",
+    "Integrated Motor Fans",
+    "Memory",
+    "Readers & Keypads",
+    "Starters",
+    "Uncategorized Controls",
+    "Vessels",
+    "塑料件与包装"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Compressors (centrifugal / reciprocating / rotary / scroll / screw)",
+   "type": "排查无异常",
+   "detail": "No compressor-body hike letters or lead-time news in the last 3 days; only end-product retail air-conditioner pricing news.",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Scroll Compressors",
+    "Screw Compressors"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Refrigeration oil / copper parts",
+   "type": "排查无异常",
+   "detail": "No commercial supply dynamics for refrigeration oil; the 3 copper-fabrication categories (copper tube etc.) move with the exchange, no independent hikes.",
+   "subcategories": [
+    "Refrigerant Oil",
+    "Fabrications & Assemblies - Copper",
+    "Fittings - Copper",
+    "Tube, Lw Coil Igt Or Smooth - Copper",
+    "Tube, Technical - Copper"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Steel",
+   "type": "排查无异常",
+   "detail": "Boiler-plate price index 4,043.23 (Oct 22, +0.46), steady; northern medium-plate weekly average RMB 3,554/t (-6 WoW). (Mysteel)",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Variable-frequency drives / power supplies",
+   "type": "排查无异常",
+   "detail": "No VSD / power-supply hike letters or lead-time news in the last 3 days; Siemens DI China repricing takes effect Nov 1, no new progress.",
+   "subcategories": [
+    "Power Supplies - Electronic",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Low-voltage electricals (circuit breakers / contactors)",
+   "type": "排查无异常",
+   "detail": "No new low-voltage repricing letters from Schneider / ABB / Siemens / Chint / Delixi in the last 3 days; relay dynamics in the entry above.",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Transformers",
+   "type": "排查无异常",
+   "detail": "Already in the event store, status unchanged: large US transformer deliveries ~128 weeks, unit prices +45%-95% vs 2019 (PEdaily, mid-Oct); domestic plants at full capacity, orders booked into 2027.",
+   "subcategories": [
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers"
+   ],
+   "company": null,
+   "event_id": "evt-hitachi-energy-transformer-warning",
+   "tags": []
+  },
+  {
+   "category": "Motors / fans / pumps / bearings",
+   "type": "排查无异常",
+   "detail": "No motor / fan / pump / bearing hike, shortage or EOL news in the last 3 days.",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Valves",
+   "type": "排查无异常",
+   "detail": "No hike or shortage news for expansion / solenoid / reversing valves in the last 3 days.",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Heat exchange",
+   "type": "排查无异常",
+   "detail": "No hike or shortage news for microchannel / finned-tube / shell-and-tube in the last 3 days.",
+   "subcategories": [
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Clock / crystal oscillators / FPGAs",
+   "type": "排查无异常",
+   "detail": "No new progress on AMD's second repricing letter (effective Dec 27).",
+   "subcategories": [
+    "时钟/晶振/FPGA"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "Resistors & inductors",
+   "type": "排查无异常",
+   "detail": "No sudden anomalies.",
+   "subcategories": [
+    "电阻与电感"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "PCBA contract manufacturing",
+   "type": "排查无异常",
+   "detail": "No sudden PCBA contract-manufacturing dynamics in the last 3 days.",
+   "subcategories": [
+    "PCBA板卡"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261023-01",
+   "title": "ZSI-Foster/Wesanco hike effective Oct 26 (3 days out)",
+   "urgency": "高",
+   "impact": "North America HVAC parts/components procurement costs",
+   "action": "Complete orders by Oct 25 to lock pre-hike prices",
+   "trigger": "10-26",
+   "deadline": "2026-10-26",
+   "related_events": [
+    "evt-na-hvac-october-price-hikes"
+   ]
+  },
+  {
+   "id": "warn-20261023-02",
+   "title": "MLCC hike round imminent (late Oct-Nov, high-cap possibly +50%+) and Samsung Electro-Mechanics lead time at 52 weeks",
+   "urgency": "高",
+   "impact": "Passive components across the BOM (high-cap MLCC)",
+   "action": "Lock prices / add orders on high-cap MLCC now; plan key part numbers on 52-week lead times; advance Murata EOL last-time-buy window (last order Mar 31, 2028) in parallel",
+   "trigger": "Yageo issues its official letter",
+   "deadline": null,
+   "related_events": [
+    "evt-20261023-01",
+    "evt-mlcc-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261023-03",
+   "title": "Resideo-Honeywell Home air-zoning products reprice Oct 31",
+   "urgency": "高",
+   "impact": "North America air-zoning procurement costs",
+   "action": "Complete orders by Oct 30",
+   "trigger": "10-31",
+   "deadline": "2026-10-31",
+   "related_events": [
+    "evt-na-hvac-october-price-hikes"
+   ]
+  },
+  {
+   "id": "warn-20261023-04",
+   "title": "Siemens DI China repricing effective Nov 1 (9 days out)",
+   "urgency": "高",
+   "impact": "Low-voltage electrical / industrial-control procurement costs",
+   "action": "Complete orders by Oct 31",
+   "trigger": "11-01",
+   "deadline": "2026-11-01",
+   "related_events": [
+    "evt-siemens-di-china-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261023-05",
+   "title": "onsemi hike in effect and popular models' lead times stretch to 16 weeks",
+   "urgency": "中",
+   "impact": "IGBT / MOSFET / SiC power devices",
+   "action": "Stock popular models through 2027 Q1; evaluate ST / Infineon alternates",
+   "trigger": "Lead times exceed 20 weeks",
+   "deadline": null,
+   "related_events": [
+    "evt-onsemi-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261023-06",
+   "title": "Systematic industrial-component repricing spreads (sensors up to +50%, relays +25%, connectors +30%)",
+   "urgency": "中",
+   "impact": "Sensors / relays / connectors",
+   "action": "Audit on-hand inventory and lead times for ST / Allegro sensors and Omron / Schneider relays; order early on part numbers with lead times over 20 weeks",
+   "trigger": "Factory repricing letters land",
+   "deadline": null,
+   "related_events": [
+    "evt-20261023-03",
+    "evt-industrial-components-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261023-07",
+   "title": "Copper at highs and Yangshan premium at its highest since Feb 2014",
+   "urgency": "中",
+   "impact": "Copper tube / foil / enameled wire / copper-part costs",
+   "action": "Lock prices quarterly; watch smelter output-cut intentions",
+   "trigger": "LME breaks $14,500/t or the Yangshan premium climbs further",
+   "deadline": null,
+   "related_events": [
+    "evt-copper-high"
+   ]
+  },
+  {
+   "id": "warn-20261023-08",
+   "title": "Kingboard CCL's 8th hike round and PCB lead times stretch (general boards 6-8 weeks)",
+   "urgency": "中",
+   "impact": "PCB / CCL procurement costs and lead times",
+   "action": "Renegotiate PCB orders at new prices; pre-stock Q4 volumes; watch for a further Kingboard hike in Nov/Dec (Citi warns +10%)",
+   "trigger": "Kingboard's next hike letter",
+   "deadline": null,
+   "related_events": [
+    "evt-20261023-02",
+    "evt-pcb-ccl-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261023-09",
+   "title": "DRAM/NAND up again in Q4 and MCU lead times up to 52 weeks",
+   "urgency": "中",
+   "impact": "PCBA memory parts, analog / power ICs",
+   "action": "Lock Q4 memory demand in a single order; order early on analog / power IC part numbers with lead times over 20 weeks",
+   "trigger": "Q4 contract prices land",
+   "deadline": null,
+   "related_events": [
+    "evt-dram-hbm-shortage",
+    "evt-ti-analog-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261023-10",
+   "title": "Trane to acquire Cancoil (closing by end-2026)",
+   "urgency": "中",
+   "impact": "North America heat-exchanger supplier landscape",
+   "action": "Assess term-change risk on existing Cancoil orders; start qualifying a second heat-exchanger source",
+   "trigger": "Closing announcement",
+   "deadline": null,
+   "related_events": [
+    "evt-trane-cancoil-acquisition"
+   ]
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-26",
+   "event": "ZSI-Foster/Wesanco hike takes effect (3 days out)"
+  },
+  {
+   "date": "2026-10-28",
+   "event": "Vertiv Q3 earnings (pre-market US)"
+  },
+  {
+   "date": "2026-10-29",
+   "event": "Trane / Carrier Q3 earnings"
+  },
+  {
+   "date": "2026-10-30",
+   "event": "Murata Q2 earnings (additional capacity-investment amount to be announced)"
+  },
+  {
+   "date": "2026-10-31",
+   "event": "Resideo-Honeywell Home air-zoning repricing takes effect"
+  },
+  {
+   "date": "2026-11-01",
+   "event": "Siemens DI China repricing letter takes effect"
+  }
+ ]
+}
