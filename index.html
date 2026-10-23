@@ -576,7 +576,9 @@ const heatColor=h=>h>=90?"#e0654f":h>=80?"#eda445":h>=70?"#c79a2e":"#1e86d6";
 const mmdd=d=>String(d||"").slice(5);
 let WMAP={},EMAP={},CUR=null,FILTER="all";
 
-function tags(tt){return (tt||[]).map(x=>x==="突发"?`<span class="tag-burst">${ICO.bolt}${esc(t("tag_burst"))}</span>`:x==="影响BOM"?`<span class="tag-bom">${esc(t("tag_bom"))}</span>`:`<span class="tag">${esc(x)}</span>`).join("");}
+const TAG_EN={"涨价":"Price Hike","数据中心":"Data Center","存储":"Memory","原材料":"Raw Materials","功率器件":"Power Devices","技术路线":"Technology","被动元件":"Passive Components","产能投资":"Capacity Investment","并购":"M&A","液冷":"Liquid Cooling","MLCC":"MLCC","PCB":"PCB","跨行业传导":"Cross-Industry","覆铜板":"CCL","CCL":"CCL","战略合作":"Partnership","产能":"Capacity","铜":"Copper","交期":"Lead Time","预警":"Alert","环保合规":"Env. Compliance","制冷剂":"Refrigerant","新能源车":"EV","变压器":"Transformers","Tier B 轮查":"Tier B Scan","电网":"Power Grid","消费电子":"Consumer Electronics","智能家居":"Smart Home","整机传导":"System-Level Impact","供应商风险":"Supplier Risk","Vertiv":"Vertiv","CDU":"CDU","模拟IC":"Analog IC","连接器":"Connectors","供应链出海":"Overseas Expansion","成本传导":"Cost Pass-Through","产能紧张":"Tight Capacity","订单":"Orders","合规":"Compliance","VSD/逆变器":"VSD / Inverter","光伏":"Solar PV","停产":"Discontinuation","EOL":"EOL","需求":"Demand","缺货":"Shortage","MCU":"MCU","整机":"Systems","压缩机":"Compressors","电机":"Motors","北美":"North America"};
+function tagName(s){return LANG==="en"?(TAG_EN[s]||TAXNAME_EN[s]||s):s;}
+function tags(tt){return (tt||[]).map(x=>x==="突发"?`<span class="tag-burst">${ICO.bolt}${esc(t("tag_burst"))}</span>`:x==="影响BOM"?`<span class="tag-bom">${esc(t("tag_bom"))}</span>`:`<span class="tag">${esc(tagName(x))}</span>`).join("");}
 
 function sevLabel(s){return {"高":["sev-high",t("sev_high")],"中":["sev-mid",t("sev_mid")],"低":["sev-low",t("sev_low")]}[s||"中"];}
 function evCard(e,compact){
