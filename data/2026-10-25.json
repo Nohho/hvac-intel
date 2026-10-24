@@ -1,0 +1,847 @@
+{
+ "meta": {
+  "date": "2026-10-25",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-25-hvac-cdu-morning-briefing.md",
+  "note": "周日早报。头条两件：美国对加Section 338清单调整、加拿大原产空调10-30起新纳入50%加征；2027年HBM均价预计+121%、DRAM交期超40周。特灵Revit/Forma参考套件；松下Aquarea M/N扩容；开利Fort Worth新厂2027年投运细节。铜：Westmetall LME 3M 10-23收14270美元/吨回升、库存连续回升（口径修正：昨日SMM晨会14098实为10-22场次）。事件库：新建4事件（对加关税/特灵Revit/松下Aquarea/Section 301排除到期），追加2条timeline（开利Fort Worth/铜），共57事件。"
+ },
+ "daily_report": {
+  "date": "2026-10-25",
+  "title": "HVAC / 液冷 CDU 行业情报早报",
+  "headline": "美国对加关税清单调整：加拿大原产空调10-30起新纳入50%加征；2027年HBM均价预计+121%、DRAM交期超40周；特灵数据中心热管理参考套件首进Revit/Forma；松下Aquarea M/N扩容；开利Fort Worth新厂2027年投运；铜价回升、LME库存连续回升。",
+  "sections": [
+   "行业动态/技术与合作",
+   "头条事件",
+   "数据中心/AI虹吸效应",
+   "跨行业传导",
+   "供应商动态",
+   "供应链预警与建议"
+  ],
+  "hotspot_count": 2,
+  "warning_count": 12
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261025-01",
+   "title": "美国对加关税清单调整：加拿大原产空调10-30起新纳入50%加征范围",
+   "heat": 88,
+   "heat_reason": "已签署公告、10-30生效在即、指名空调品类，涉加进口商须立即行动",
+   "tags": [
+    "关税",
+    "空调"
+   ],
+   "date": "2026-10-23",
+   "sources": [
+    {
+     "outlet": "Supply Chain Dive",
+     "date": "2026-10-23",
+     "url": "https://www.supplychaindive.com/news/trump-tweaks-canada-tariffs-removing-certain-goods-while-adding-others/833895/",
+     "first_party": false
+    }
+   ],
+   "summary": "美国10-23签署公告调整对加Section 338清单：胶合板、部分工业机械与包装纸品10-30起移出50%加征范围，空调新纳入加征范围；加拿大原产空调10-30起面临50%关税，另有诉讼挑战该措施合法性。",
+   "numbers": [
+    "50%",
+    "2026-10-30"
+   ],
+   "related_warnings": [
+    "warn-20261025-02"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-us-canada-section338-ac-tariff"
+  },
+  {
+   "id": "evt-20261025-02",
+   "title": "2027年HBM均价预计再涨121%、DRAM交期超40周",
+   "heat": 80,
+   "heat_reason": "存储短缺量化升级：2027年HBM均价预测与40周+交期，2027产能传已售罄",
+   "tags": [
+    "存储",
+    "涨价"
+   ],
+   "date": "2026-10-24",
+   "sources": [
+    {
+     "outlet": "VLSI",
+     "date": "2026-10-24",
+     "url": "https://www.vlsi.kr/en/memory-giants-compared-2026-en/",
+     "first_party": false
+    }
+   ],
+   "summary": "TrendForce预测2027年HBM均价同比上涨121%；DRAM交期已超40周，2027年产能传已售罄，新增产能2027下半年~2028年才到位；高盛称这是15年来最严重的存储短缺。",
+   "numbers": [
+    "+121%",
+    "40周+"
+   ],
+   "related_warnings": [
+    "warn-20261025-06"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "event_id": "evt-dram-hbm-shortage"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "DRAM",
+   "change": "TrendForce 9-30预测：Q4常规DRAM合约价环比+10~15%（含HBM +15~20%）、NAND +15~20%、企业级SSD +23~28%",
+   "source": "TrendForce（Guru3D/VLSI转述）",
+   "date": "2026-10-24"
+  },
+  {
+   "material": "HBM",
+   "change": "2027年HBM均价预计同比+121%；DRAM交期超40周，2027年产能传已售罄",
+   "source": "TrendForce（VLSI转述）",
+   "date": "2026-10-24"
+  },
+  {
+   "material": "MLCC",
+   "change": "三星电机全线交期52周、国巨30~52周、产能利用率91%延续；菲律宾扩产2027年后才量产",
+   "source": "TokenPost",
+   "date": "2026-10-21"
+  },
+  {
+   "material": "液冷市场",
+   "change": "液冷市场规模55亿美元→2030年157.5亿美元；新一代AI数据中心单MW成本15~20百万美元",
+   "source": "高盛（BitRss转述）",
+   "date": "2026-10-24"
+  },
+  {
+   "material": "电缆",
+   "change": "Nexans称电缆产能成AI数据中心新瓶颈，新建XLPE产线需约3年（延续）",
+   "source": "Nexans CFO",
+   "date": "2026-10-23"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "铝",
+   "key_data": "南昌铝棒Φ90 10-23报24120元/吨，加工费单日+50元至450元；A00铝现货23670元/吨",
+   "chain": "铝棒加工费上行→铝箔/翅片成本压力在途",
+   "source": "SMM",
+   "date": "2026-10-23"
+  },
+  {
+   "industry": "铜",
+   "key_data": "LME库存连续回升缓解供应担忧；中东紧张推高油价、通胀担忧压制铜价",
+   "chain": "库存回升+油价上行→铜价高位震荡",
+   "source": "SMM",
+   "date": "2026-10-23"
+  },
+  {
+   "industry": "光伏",
+   "key_data": "无新增实质",
+   "chain": "延续10-20判断：组件价格企稳、10月产能利用率约44.3%",
+   "source": "早报排查",
+   "date": "2026-10-25"
+  },
+  {
+   "industry": "新能源车电池",
+   "key_data": "无新增实质",
+   "chain": "延续：9月产销同比+50%+，压力在利润端",
+   "source": "早报排查",
+   "date": "2026-10-25"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "特灵数据中心热管理参考套件首进Autodesk Revit与Forma",
+   "detail": "系统级参考设计，减少重复建模与返工风险，覆盖Continuum Rubin DSX参考设计",
+   "source": "HVAC Insider",
+   "date": "2026-10-22",
+   "first_party": false,
+   "event_id": "evt-trane-revit-forma-kits"
+  },
+  {
+   "title": "松下扩容Aquarea住宅热泵M/N系列",
+   "detail": "R290的M系列（3/5/7/9kW，-10°C时出水可达75°C、-28°C运行）与R454C的N系列（GWP<150，管长可达50m）同步上新",
+   "source": "Refindustry",
+   "date": "2026-10-21",
+   "first_party": false,
+   "event_id": "evt-panasonic-aquarea-mn-expansion"
+  },
+  {
+   "title": "开利Fort Worth新厂补充细节",
+   "detail": "预计2027年投运、约1500个制造与工程岗位，厂内含结构件制造、换热器生产、制冷回路集成与钎焊；另可获最高约1090万美元地方房产税减免与250万美元州企业补助",
+   "source": "Advanced Manufacturing",
+   "date": "2026-10-23",
+   "first_party": false,
+   "event_id": "evt-carrier-fortworth-plant"
+  },
+  {
+   "title": "美国对加Section 338清单调整：空调新纳入50%加征范围",
+   "detail": "胶合板等10-30起移出清单，空调新纳入；加拿大原产空调10-30起面临50%关税（另有诉讼挑战）",
+   "source": "Supply Chain Dive",
+   "date": "2026-10-23",
+   "first_party": false,
+   "event_id": "evt-us-canada-section338-ac-tariff"
+  },
+  {
+   "title": "日立涡旋压缩机Chillventa 2026独立首秀（回补）",
+   "detail": "主推R290与R454C热泵用压缩机方案（10-13~15，纽伦堡）",
+   "source": "Third News",
+   "date": "2026-10-15",
+   "first_party": false,
+   "event_id": null
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控/约克",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态；10-15 TIME/YDAM奖项在窗口外"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Fort Worth新厂2027年投运、约1500岗位等补充细节（Advanced Manufacturing，10-23）"
+  },
+  {
+   "company": "特灵",
+   "status": "有实质动态",
+   "note": "数据中心热管理参考套件首进Revit/Forma（HVAC Insider，10-22）；Cancoil收购延续"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "日立",
+   "status": "有实质动态",
+   "note": "涡旋压缩机Chillventa 2026独立首秀（回补，10-13~15）"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "Aquarea住宅热泵M/N系列扩容（Refindustry，10-21）"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态（Multi V 7为10-22已报）"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "Vertiv",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态（GTC Berlin方案为10-21已报）"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "铜",
+   "type": "行情",
+   "detail": "Westmetall：LME 3M 10-23收14270美元/吨，高于10-22的14096；LME库存273750吨（+800）连续回升。（Westmetall，10-23）",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "company": null,
+   "event_id": "evt-copper-high",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "category": "铝",
+   "type": "行情",
+   "detail": "SMM A00现货23670元/吨；南昌铝棒Φ90 24120元/吨、加工费+50元。（SMM，10-23）",
+   "subcategories": [
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ],
+   "company": null,
+   "event_id": "evt-woodmac-aluminum-deficit",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "category": "制冷剂",
+   "type": "行情",
+   "detail": "无新报价，沿用基线：R32华东64500~65500、R410a 59500~60000元/吨（10-19券商周报，数据截至10-16）。（同花顺财经）",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "磁钢",
+   "type": "行情",
+   "detail": "无新报价，沿用10-23：氧化镨钕732500元/吨；钕铁硼毛坯N38H 264元/kg、35N 185元/kg持稳。（Mysteel）",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": null,
+   "event_id": "evt-rare-earth-q4-price",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "category": "MLCC",
+   "type": "涨价延续",
+   "detail": "三星电机全线交期52周、国巨30~52周、产能利用率91%延续；菲律宾扩产2027年后才量产。【影响BOM：三星电机/国巨为被动元件主力maker】",
+   "subcategories": [
+    "电容"
+   ],
+   "company": null,
+   "event_id": "evt-mlcc-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "存储",
+   "type": "涨价",
+   "detail": "TrendForce：Q4常规DRAM +10~15%（含HBM +15~20%）、NAND +15~20%；2027年HBM均价预计+121%，DRAM交期超40周。【影响BOM】",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "event_id": "evt-dram-hbm-shortage",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "PCB/CCL",
+   "type": "涨价延续",
+   "detail": "建滔年内第八次涨价函+15%延续；生益10月初板材/PP再涨10~20%；通用FR-4交期6~8周。【影响BOM】",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "company": null,
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "IGBT/功率器件",
+   "type": "涨价已生效",
+   "detail": "无新进展：安森美第二轮涨价+5%~15%延续。【影响BOM：ON为PCBA主力maker】",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": null,
+   "event_id": "evt-onsemi-price-hike-2",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "模拟/电源IC",
+   "type": "涨价延续",
+   "detail": "无新进展（TI模拟器件10月第三轮调价落地延续）。【影响BOM：TI为PCBA主力maker】",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "company": null,
+   "event_id": "evt-ti-analog-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "工控元器件",
+   "type": "涨价延续",
+   "detail": "调价明细延续：传感器最高+50%、继电器+25%、连接器+30%；部分海外芯片交期超52周。【影响BOM】",
+   "subcategories": [
+    "Sensor",
+    "Relay",
+    "连接器与线束"
+   ],
+   "company": null,
+   "event_id": "evt-industrial-components-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "category": "连接器/线束",
+   "type": "交期",
+   "detail": "Nexans电缆产能瓶颈延续（新建XLPE产线需约3年）；PCIe 6.0/CXL连接器交期36周延续。【影响BOM】",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "company": null,
+   "event_id": "evt-nexans-cable-bottleneck",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "category": "压缩机",
+   "type": "涨价已生效",
+   "detail": "无新涨价函：Embraco制冷压缩机/冷凝机组涨价10-19确认生效延续。",
+   "subcategories": [
+    "Reciprocating Compressors"
+   ],
+   "company": null,
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "tags": [
+    "涨价"
+   ]
+  },
+  {
+   "category": "北美HVAC涨价清单",
+   "type": "涨价",
+   "detail": "ZSI-Foster/Wesanco 10-26生效（倒计时1天）。（Supply House Times 10月清单，10-16更新）",
+   "subcategories": [],
+   "company": "ZSI-Foster/Wesanco",
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "tags": [
+    "涨价"
+   ]
+  },
+  {
+   "category": "北美HVAC涨价清单",
+   "type": "涨价",
+   "detail": "Resideo-Honeywell Home空气分区产品10-31调价在途。",
+   "subcategories": [],
+   "company": "Resideo-Honeywell Home",
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "tags": [
+    "涨价"
+   ]
+  },
+  {
+   "category": "北美HVAC涨价清单",
+   "type": "涨价",
+   "detail": "西门子DI中国区11-01生效（倒计时7天）。",
+   "subcategories": [],
+   "company": "西门子DI",
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "tags": [
+    "涨价"
+   ]
+  },
+  {
+   "category": "Tier B 轮查",
+   "type": "排查无异常",
+   "detail": "新一轮第6批11品类：Ball Valves、Communication Modules、E-Coat (Electrocoating)、Frame & Plate、Intrusion Sensors、Nylon Resin、Relief - Safety Valves、Steel - Expanded, Perforated & Wire Mesh、Uncategorized Drive Components、Washer、轴承与弹簧——无新增实质动态（尼龙树脂Celanese聚酰胺涨价10-19已生效、无新增幅度，见10-11记录）。",
+   "subcategories": [
+    "Ball Valves",
+    "Communication Modules",
+    "E-Coat (Electrocoating)",
+    "Frame & Plate",
+    "Intrusion Sensors",
+    "Nylon Resin",
+    "Relief - Safety Valves",
+    "Steel - Expanded, Perforated & Wire Mesh",
+    "Uncategorized Drive Components",
+    "Washer",
+    "轴承与弹簧"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "压缩机（其余4类）",
+   "type": "排查无异常",
+   "detail": "无涨价函。",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "冷冻油/铜加工件",
+   "type": "排查无异常",
+   "detail": "随盘面波动、无独立涨价。",
+   "subcategories": [
+    "Refrigerant Oil",
+    "Fabrications & Assemblies - Copper",
+    "Fittings - Copper",
+    "Tube, Lw Coil Igt Or Smooth - Copper",
+    "Tube, Technical - Copper"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "钢",
+   "type": "排查无异常",
+   "detail": "无独立涨价。",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "变频器/电源",
+   "type": "排查无异常",
+   "detail": "无新函。",
+   "subcategories": [
+    "Power Supplies - Electronic",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "低压电气（断路器/接触器）",
+   "type": "排查无异常",
+   "detail": "无新函。",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "变压器",
+   "type": "排查无异常",
+   "detail": "事件库延续、无新进展。",
+   "subcategories": [
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers"
+   ],
+   "company": null,
+   "event_id": "evt-hitachi-energy-transformer-warning",
+   "tags": []
+  },
+  {
+   "category": "电机/风机/水泵/轴承",
+   "type": "排查无异常",
+   "detail": "无异常。",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "阀件",
+   "type": "排查无异常",
+   "detail": "无异常。",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "换热",
+   "type": "排查无异常",
+   "detail": "无异常。",
+   "subcategories": [
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "传感器",
+   "type": "排查无异常",
+   "detail": "无异常。",
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "时钟/晶振/FPGA",
+   "type": "排查无异常",
+   "detail": "无异常。",
+   "subcategories": [
+    "时钟/晶振/FPGA"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "电阻与电感",
+   "type": "排查无异常",
+   "detail": "无异常。",
+   "subcategories": [
+    "电阻与电感"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  },
+  {
+   "category": "PCBA代工",
+   "type": "排查无异常",
+   "detail": "无异常。",
+   "subcategories": [
+    "PCBA板卡"
+   ],
+   "company": null,
+   "event_id": null,
+   "tags": []
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261025-01",
+   "title": "ZSI-Foster/Wesanco涨价10-26生效（倒计时1天）",
+   "urgency": "高",
+   "impact": "北美HVAC阀件/管件",
+   "action": "今日内完成下单，锁定涨价前价格",
+   "trigger": "10-26",
+   "deadline": "2026-10-26",
+   "related_events": [
+    "evt-na-hvac-october-price-hikes"
+   ]
+  },
+  {
+   "id": "warn-20261025-02",
+   "title": "加拿大原产空调10-30起纳入50%加征",
+   "urgency": "高",
+   "impact": "加拿大原产空调进口",
+   "action": "涉加在途订单10-30前完成入境或改道，核对原产地与HTS编码",
+   "trigger": "10-30",
+   "deadline": "2026-10-30",
+   "related_events": [
+    "evt-20261025-01"
+   ]
+  },
+  {
+   "id": "warn-20261025-03",
+   "title": "Resideo-Honeywell Home空气分区产品10-31调价",
+   "urgency": "高",
+   "impact": "北美HVAC空气分区产品",
+   "action": "10-30前完成下单",
+   "trigger": "10-31",
+   "deadline": "2026-10-31",
+   "related_events": [
+    "evt-na-hvac-october-price-hikes"
+   ]
+  },
+  {
+   "id": "warn-20261025-04",
+   "title": "西门子DI中国区调价11-01生效（倒计时7天）",
+   "urgency": "高",
+   "impact": "西门子DI工控产品（中国区）",
+   "action": "10-31前完成下单",
+   "trigger": "11-01",
+   "deadline": "2026-11-01",
+   "related_events": [
+    "evt-siemens-di-china-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261025-05",
+   "title": "国巨MLCC新一轮涨价10月底~11月启动在即（高容或+50%+）+全线交期52周",
+   "urgency": "高",
+   "impact": "全BOM被动件（高容MLCC）",
+   "action": "高容MLCC立即锁价/加单；关键料号交期按52周规划",
+   "trigger": "国巨正式发函",
+   "deadline": null,
+   "related_events": [
+    "evt-mlcc-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261025-06",
+   "title": "2027年HBM均价预计+121%、DRAM交期超40周",
+   "urgency": "中",
+   "impact": "存储料（DRAM/HBM）",
+   "action": "存储料Q4需求一次性锁单；2027年用量签长协锁量",
+   "trigger": "Q4合约价落地",
+   "deadline": null,
+   "related_events": [
+    "evt-20261025-02"
+   ]
+  },
+  {
+   "id": "warn-20261025-07",
+   "title": "Section 301排除条款11-09到期（178项）",
+   "urgency": "中",
+   "impact": "中国原产受排除条款覆盖的进口料",
+   "action": "本周内核对报关行HTS行是否含9903.88.69/70，有则评估11-09后成本跳升",
+   "trigger": "11-09",
+   "deadline": "2026-11-09",
+   "related_events": [
+    "evt-section301-exclusions-expire-nov9"
+   ]
+  },
+  {
+   "id": "warn-20261025-08",
+   "title": "工控元器件调价明细延续（传感器最高+50%、继电器+25%、连接器+30%）",
+   "urgency": "中",
+   "impact": "传感器/继电器/连接器",
+   "action": "盘点在手库存与交期，交期超20周料号提前下单",
+   "trigger": "原厂调价函落地",
+   "deadline": null,
+   "related_events": [
+    "evt-industrial-components-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261025-09",
+   "title": "铜价回升但LME库存连续回升",
+   "urgency": "中",
+   "impact": "铜管/铜箔/漆包线",
+   "action": "按季度锁价；关注库存拐点",
+   "trigger": "LME破14500美元/吨或库存转降",
+   "deadline": null,
+   "related_events": [
+    "evt-copper-high"
+   ]
+  },
+  {
+   "id": "warn-20261025-10",
+   "title": "铝供应冲击（WoodMac：2026年约100万吨缺口）+铝棒加工费上行",
+   "urgency": "中",
+   "impact": "铝箔/翅片",
+   "action": "提前锁量锁价",
+   "trigger": "缺口兑现或铝价突破",
+   "deadline": null,
+   "related_events": [
+    "evt-woodmac-aluminum-deficit"
+   ]
+  },
+  {
+   "id": "warn-20261025-11",
+   "title": "建滔CCL第八轮涨价延续+PCB交期拉长（通用板6~8周）",
+   "urgency": "中",
+   "impact": "PCB/CCL",
+   "action": "PCB订单按新价重谈；Q4用量提前备",
+   "trigger": "建滔下一轮涨价函",
+   "deadline": null,
+   "related_events": [
+    "evt-pcb-ccl-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261025-12",
+   "title": "特灵收购Cancoil（2026年底前交割）",
+   "urgency": "中",
+   "impact": "换热器（Cancoil订单）",
+   "action": "评估现有Cancoil订单条款变化风险；启动换热器二供准备",
+   "trigger": "交割公告",
+   "deadline": null,
+   "related_events": [
+    "evt-trane-cancoil-acquisition"
+   ]
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-26",
+   "event": "ZSI-Foster/Wesanco涨价生效（倒计时1天）"
+  },
+  {
+   "date": "2026-10-28",
+   "event": "Vertiv Q3财报（美股盘前）"
+  },
+  {
+   "date": "2026-10-29",
+   "event": "特灵Q3财报"
+  },
+  {
+   "date": "2026-10-30",
+   "event": "加拿大原产空调50%加征生效"
+  },
+  {
+   "date": "2026-10-31",
+   "event": "Resideo空气分区产品调价"
+  },
+  {
+   "date": "2026-11-01",
+   "event": "西门子DI中国区调价生效"
+  },
+  {
+   "date": "2026-11-09",
+   "event": "Section 301排除条款到期（178项）"
+  }
+ ]
+}
