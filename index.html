@@ -42,7 +42,7 @@ header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
 .alertbar.show{display:block}
 .alertbar a{color:#fff}
 /* 时效提示条：看的是最新一期且该期早于读者本地今天时显示（信息提示、非告警，故用琥珀档不用预警红） */
-.freshbar{display:none;margin:0;padding:9px 14px;background:#fef6e0;color:#b3851f;font-size:13.5px;font-weight:600;text-align:center;border-bottom:1px solid #f0e2b6}
+.freshbar{display:none;margin:0;padding:9px 14px;background:#fef6e0;color:#b3851f;font-size:14px;font-weight:600;text-align:center;border-bottom:1px solid #f0e2b6}
 .freshbar.show{display:block}
 /* 六段导航 */
 nav.secnav{display:flex;gap:7px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:19;overflow-x:auto;box-shadow:0 1px 6px rgba(11,42,74,.06)}
@@ -208,7 +208,7 @@ section.blk{scroll-margin-top:60px}
 .act.mid{border-top-color:#eda445}
 .act.low{border-top-color:#1e86d6}
 /* 今日情景指引卡（数据驱动：按当日预警归类渲染，不涉及系统集成） */
-.pb{margin-top:10px;background:#f4f8fd;border:1px dashed #bcd6ef;border-radius:10px;padding:8px 11px;font-size:13.5px;color:#3c546e}
+.pb{margin-top:10px;background:#f4f8fd;border:1px dashed #bcd6ef;border-radius:10px;padding:8px 11px;font-size:14px;color:#3c546e}
 .pb>b{color:#1e86d6}
 .pb ol{margin:5px 0 2px 18px;padding:0}
 .pb li{margin:2px 0;line-height:1.65}
@@ -378,7 +378,7 @@ zh:{
  foot3:"不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别",
  cal_title:"订阅时间锚点日历",cal_desc:"每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。",
  cal_copy:"复制订阅链接",cal_open:"用日历 App 打开",
- cal_ios:"<b>iPhone</b>：在 Safari 里点“用日历 App 打开”最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br><b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接",
+ cal_ios:"<b>iPhone</b>：在 Safari 里点「用日历 App 打开」最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br><b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接",
  cal_close:"关闭",cal_copied:"已复制，去日历 App 粘贴订阅",
  digest:"今日导读：",digest_more:"余下要点见下方各段",
  fresh_t:"今日早报尚未发布 · 当前为 {m} 月 {d} 日一期",
@@ -1366,7 +1366,7 @@ boot();
       <a href="webcal://nohho.github.io/hvac-intel/anchors.ics" id="c_open" style="flex:1;text-align:center;padding:10px;border-radius:8px;background:#e8f1fb;color:#0b5cab;font-size:14px;text-decoration:none">用日历 App 打开</a>
     </div>
     <div style="font-size:13px;color:#555" id="c_ios">
-      <b>iPhone</b>：在 Safari 里点“用日历 App 打开”最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
+      <b>iPhone</b>：在 Safari 里点「用日历 App 打开」最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
       <b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接
     </div>
     <button onclick="hideCalSub()" id="c_close" style="margin-top:12px;width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;background:#fff;font-size:14px;cursor:pointer">关闭</button>
