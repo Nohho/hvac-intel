@@ -1,0 +1,597 @@
+{
+ "company_checklist": [
+  {
+   "company": "江森自控/约克",
+   "status": "有实质动态",
+   "note": "Q4 earnings Oct 27 pre-market (expected EPS $1.58, revenue $7.04 billion)"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Q3 earnings Oct 29 pre-market; new HVAC training center established Oct 26"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days (2.5 MW CDU reported Oct 20, launching Nov 01, in progress)"
+  },
+  {
+   "company": "美的",
+   "status": "有实质动态",
+   "note": "Board to review Q3 report Oct 29; September air-conditioner exports +20.69% (SMM, Oct 25)"
+  },
+  {
+   "company": "格力",
+   "status": "有实质动态",
+   "note": "September air-conditioner exports -50.00% (SMM, Oct 25, industry data, not a company announcement)"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "Samsung Electro-Mechanics MLCC lead times extended to 61 weeks, see Supplier Dynamics"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "Q3 earnings Oct 28 pre-market (expected EPS $1.82, revenue $3.75 billion); share price fell about 13.9% last week (AI financing concerns)"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "No material new developments in the past 3 days"
+  }
+ ],
+ "cross_industry": [
+  {
+   "chain": "Financing cost is a project-pacing variable, not a demand disproof; in large-order negotiations, payment terms and financing backing carry rising weight, and orders need not be withdrawn because of share-price swings",
+   "date": "2026-10-26",
+   "industry": "AI financing sentiment",
+   "key_data": "Last week Vertiv fell about 13.9% and Bloom Energy about 13.8%, triggered by CoreWeave 2032 bond yields approaching 15%; Morgan Stanley still gives Vertiv a $330 target price (about 60% above Monday's close)",
+   "source": "TIKR"
+  },
+  {
+   "chain": "Overseas-market finished units and components rank above domestic sales in production scheduling; domestic channel payment terms and inventory strategy must be calculated separately",
+   "date": "2026-10-25",
+   "industry": "Home-appliance exports",
+   "key_data": "September China home-appliance exports $10.182 billion, +31.7% year on year; industry-online data: domestic air-conditioner sales -23.73%, exports +7.96%, exports accounting for 54.0% of production and sales",
+   "source": "SMM"
+  },
+  {
+   "chain": "Aluminum prices lead on gap expectations, copper oscillates at a high level, inventory inflection not yet reached",
+   "date": "2026-10-27",
+   "industry": "Copper and aluminum",
+   "key_data": "LME 3-month aluminum reported $2,177/ton on Oct 27, up 1.5% on the day; copper carried over from Oct 23 Westmetall LME 3M $14,270/ton, inventory 273,750 tons (rising consecutively)",
+   "source": "BigMint / Westmetall"
+  }
+ ],
+ "daily_report": {
+  "date": "2026-10-27",
+  "headline": "Samsung Electro-Mechanics MLCC lead times extended to 61 weeks, high-capacitance prices up about 23% in a month; three cost nodes arrive within 5 days (Oct 30 Canada 50% additional tariff on air conditioners, Oct 31 Resideo price adjustment, Nov 01 Siemens DI price adjustment); earnings window opens today (JCI Oct 27, Vertiv Oct 28, Carrier Oct 29); Cooler Master 2.5 MW in-row CDU targets Q4 mass production; China September air-conditioner exports +7.96% offset domestic sales -23.73%.",
+  "hotspot_count": 2,
+  "sections": [
+   "Industry / Technology & Partnerships",
+   "Top Stories",
+   "Data-Center / AI Siphon Effects",
+   "Cross-Industry Transmission",
+   "Supplier Dynamics",
+   "Supply-Chain Warnings & Recommendations"
+  ],
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Morning Briefing",
+  "warning_count": 11
+ },
+ "hotspot_events": [
+  {
+   "date": "2026-10-27",
+   "event_id": "evt-mlcc-price-hike",
+   "heat": 90,
+   "heat_reason": "MLCC shortage has lengthened lead times for the second time within October and high-capacitance prices have already risen materially, directly hitting PCBA critical-material scheduling and costs",
+   "id": "evt-20261027-01",
+   "numbers": [
+    "61 weeks",
+    "+23%",
+    "$17.50/100 pcs → $21.60/100 pcs"
+   ],
+   "related_warnings": [
+    "warn-20261027-05"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "sources": [
+    {
+     "date": "2026-10-24",
+     "first_party": false,
+     "outlet": "FourWeekMBA compilation of Korean media (Newspim Oct 22 / Financial Post citing TrendForce Oct 24)",
+     "url": "https://fourweekmba.com/ai-samsung-capacitor-waits-hit-61-weeks-as-prices-jump-23/"
+    }
+   ],
+   "summary": "Standard lead times for some Samsung Electro-Mechanics MLCCs at DigiKey rose from 39→49 weeks in September to 61 weeks in October, with new orders arriving around end-2027; 47μF high-capacitance MLCCs rose from $17.50/100 pcs in August to $21.60 in October, about +23%. The shortage has spread from high-capacitance to the full range.",
+   "tags": [
+    "涨价",
+    "影响BOM",
+    "存储",
+    "功率器件"
+   ],
+   "title": "Samsung Electro-Mechanics MLCC lead times extended to 61 weeks, high-capacitance prices up about 23% in a month"
+  },
+  {
+   "date": "2026-10-27",
+   "event_id": "evt-us-canada-section338-ac-tariff",
+   "heat": 87,
+   "heat_reason": "Three unrelated effective dates collide in the same week, covering Canada-bound in-transit orders, North America zoning products and China industrial-control materials, each requiring entry or ordering before its own deadline",
+   "id": "evt-20261027-02",
+   "numbers": [
+    "50%",
+    "10-30",
+    "10-31",
+    "11-01"
+   ],
+   "related_warnings": [
+    "warn-20261027-01",
+    "warn-20261027-02",
+    "warn-20261027-03"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "sources": [
+    {
+     "date": "2026-10-16",
+     "first_party": false,
+     "outlet": "ACHR News October list (Resideo Oct 31 price adjustment)",
+     "url": "https://www.achrnews.com/articles/166764-hvac-price-increase-list-october-2026"
+    },
+    {
+     "date": "2026-10-26",
+     "first_party": false,
+     "outlet": "Siemens DI China price-adjustment letter, as reported (effective Nov 01)",
+     "url": "https://plcs-automation.com/news/siemens-digital-industries-price-adjustment-november-2026/"
+    },
+    {
+     "date": "2026-10-09",
+     "first_party": false,
+     "outlet": "Section 301 exclusion provisions expiring Nov 09 — background",
+     "url": "https://www.summitsourcingcn.com/blog-section-301-exclusions-expire-november-2026.html"
+    }
+   ],
+   "summary": "Canada-origin air conditioners are included in a 50% additional tariff on Oct 30, Resideo-Honeywell Home air zoning products adjust prices on Oct 31, and Siemens DI China adjusts prices on Nov 01 — three cost nodes arrive within 5 days, and missing a deadline means settlement at the new price.",
+   "tags": [
+    "涨价",
+    "关税"
+   ],
+   "title": "Three cost nodes arrive within 5 days: Oct 30 additional tariff, Oct 31 price adjustment, Nov 01 price adjustment"
+  }
+ ],
+ "industry_updates": [
+  {
+   "date": "2026-10-26",
+   "detail": "Johnson Controls Q4 expected EPS $1.58, revenue $7.04 billion; Vertiv Q3 expected EPS $1.82, revenue $3.75 billion; Carrier Q3 expected EPS $0.759, revenue $6.08 billion; Midea board to review Q3 report Oct 29",
+   "event_id": null,
+   "first_party": false,
+   "source": "Defense World / TipRanks",
+   "title": "Earnings window opens today: JCI Oct 27, Vertiv Oct 28, Carrier Oct 29"
+  },
+  {
+   "date": "2026-10-26",
+   "detail": "Carrier has established a new HVAC training center, easing the skilled-technician shortage amid data-center and smart-factory expansion, alongside data-center cooling capacity expansion",
+   "event_id": null,
+   "first_party": false,
+   "source": "Aktiensensor",
+   "title": "Carrier establishes new training center"
+  },
+  {
+   "date": "2026-10-12",
+   "detail": "2,500 kW liquid-to-liquid in-row CDU anchored to an AI-infrastructure full-stack cooling portfolio, flow 990 GPM, approach temperature difference 4~5°C, up to 32 units interconnectable, targeting mass production in Q4 2026",
+   "event_id": "evt-cooler-master-25mw-cdu",
+   "first_party": true,
+   "source": "BusinessWire company release",
+   "title": "Cooler Master 2.5 MW in-row CDU nearing mass production"
+  },
+  {
+   "date": "2026-10-20",
+   "detail": "OmniTherm series' Two-Phase Matrix Flow Boiling combines pool-boiling stability with flow-boiling scalability across multiple boiling zones; cold plates can be as thin as a single-width PCIe slot, and were already deployed this quarter in Nvidia RTX PRO 6000 Blackwell server deployments",
+   "event_id": null,
+   "first_party": false,
+   "source": "StorageNewsletter",
+   "title": "ZutaCore two-phase cold plate technology"
+  },
+  {
+   "date": "2026-10-26",
+   "detail": "Munters closed-loop system integrated with ZutaCore waterless two-phase direct-to-chip cooling, an end-to-end liquid-cooling solution for hundreds-of-MW AI loads without a facility water loop",
+   "event_id": null,
+   "first_party": false,
+   "source": "DCD",
+   "title": "Munters × ZutaCore partnership"
+  },
+  {
+   "date": "2026-10-25",
+   "detail": "National Bureau of Statistics: September air-conditioner output 16.574 million units, -4.9% year on year; industry-online data: domestic air-conditioner sales -23.73%, exports +7.96%, exports accounting for 54.0% of production and sales; Midea exports +20.69%, Gree exports -50.00%",
+   "event_id": null,
+   "first_party": false,
+   "source": "SMM",
+   "title": "China September home-appliance production and sales diverge"
+  }
+ ],
+ "meta": {
+  "date": "2026-10-27",
+  "note": "Tuesday morning briefing. Two top stories: Samsung Electro-Mechanics MLCC lead times 61 weeks, high-capacitance prices +23%; three cost nodes arrive within 5 days (Oct 30 / Oct 31 / Nov 01). Earnings window: JCI Oct 27, Vertiv Oct 28, Carrier Oct 29; Cooler Master 2.5 MW in-row CDU targets Q4 mass production, ZutaCore two-phase cold plates, Munters × ZutaCore partnership, China September air-conditioner exports offsetting domestic sales. Tariff screening found no new finalized policy. Events library: 1 new event created (Cooler Master 2.5 MW CDU), 2 timeline entries added (MLCC / DRAM), 61 events in total. Tier B batch 8: 0 hits.",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-27-hvac-cdu-morning-briefing.md"
+ },
+ "siphon_effects": [
+  {
+   "change": "Samsung Electro-Mechanics 61 weeks is the second lengthening within October (above 30 weeks in September → 52 weeks in October → 61 weeks for some parts); Yageo main lead times 30~52 weeks unrelieved; Samsung Electro-Mechanics components division capacity utilization 91%, Philippines expansion not in mass production until after 2027",
+   "date": "2026-10-24",
+   "material": "MLCC",
+   "source": "FourWeekMBA compilation of Korean media / Meritz"
+  },
+  {
+   "change": "TrendForce: DRAM lead times 20 weeks, NAND 16 weeks, about double the usual 8 weeks; Barclays expects DRAM demand to exceed supply by 13.9% (Q4 2027) and NAND gap peaking at 8.3% (Q1 2028); Nanya says Q4 price increases slowing but not stopping, Fab 5A mass production after H2 2028",
+   "date": "2026-10-15",
+   "material": "DRAM/NAND",
+   "source": "MT / TrendForce"
+  },
+  {
+   "change": "Amazon CEO said AWS capacity for 2027 is essentially sold out, with a considerable portion of 2028 already pre-sold; demand has not cooled, and lead-time and price pressure on the supply side remain driven by compute orders",
+   "date": "2026-10-26",
+   "material": "Compute demand",
+   "source": "DCD"
+  },
+  {
+   "change": "Continuing: Kingboard eighth price-increase letter this year +15%, Shengyi board / PP up another 10%~20% in early October, general FR-4 lead times 6~8 weeks",
+   "date": "2026-10-15",
+   "material": "PCB/CCL",
+   "source": "Reported in mid-October, no new letter"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Refrigerants",
+   "company": null,
+   "detail": "China market Oct 21 quotations: R22 ex-factory RMB 19,500/ton (leading declines), R32 and R134a each RMB 65,000/ton stable; third-generation refrigerants 2026 quota 797,800 tons, top six enterprises accounting for over 90%, quota tight but demand divergent, R22 pullback does not mean R32 follows down. (SectorVantage, Oct 21)",
+   "event_id": null,
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [],
+   "type": "行情"
+  },
+  {
+   "category": "MLCC",
+   "company": null,
+   "detail": "See Top Story 1: Samsung Electro-Mechanics MLCC lead times 61 weeks, 47μF high-capacitance prices up about +23% from August to October.",
+   "event_id": "evt-mlcc-price-hike",
+   "subcategories": [
+    "电容"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Memory",
+   "company": null,
+   "detail": "See siphon effect: DRAM lead times 20 weeks, NAND 16 weeks; Barclays gap peak in Q4 2027~Q1 2028.",
+   "event_id": "evt-dram-hbm-shortage",
+   "subcategories": [
+    "存储器"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "交期"
+  },
+  {
+   "category": "IGBT / Power and Industrial Control",
+   "company": null,
+   "detail": "No new letter, continuing A2 Global Q4 warning: Infineon orders repeatedly delayed, some changed price near delivery; Altera allocations for long-standing customers only 40%~60%; some ADI September orders scheduled for delivery after September 2027, some into 2028; TI some product lines still rising in price. (A2 Global, around Oct 23)",
+   "event_id": "evt-a2-q4-2026-semiconductor-split",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "交期"
+  },
+  {
+   "category": "Connectors / harnesses",
+   "company": null,
+   "detail": "Nexans cable capacity bottleneck continues; PCIe 6.0/CXL connector lead times 36 weeks continue.",
+   "event_id": "evt-ai-server-connector-squeeze",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "交期"
+  },
+  {
+   "category": "Compressors",
+   "company": null,
+   "detail": "No new price-increase letter (Embraco refrigeration compressors / condensing units effective Oct 19 continue).",
+   "event_id": null,
+   "subcategories": [
+    "Reciprocating Compressors"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "North America HVAC price-hike list",
+   "company": null,
+   "detail": "Resideo-Honeywell Home air zoning products Oct 31 price adjustment pending; Siemens DI China effective Nov 01 (5 days to go); all other October list items already effective. (ACHR News October list, updated Oct 16)",
+   "event_id": "evt-na-hvac-october-price-hikes",
+   "subcategories": [
+    "Control Valves"
+   ],
+   "tags": [],
+   "type": "涨价"
+  },
+  {
+   "category": "Copper",
+   "company": null,
+   "detail": "No new Oct 26 close obtained, carried over from Oct 23 Westmetall LME 3M $14,270/ton, inventory 273,750 tons (rising consecutively).",
+   "event_id": "evt-copper-high",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "行情"
+  },
+  {
+   "category": "Aluminum",
+   "company": null,
+   "detail": "LME 3-month aluminum reported $2,177/ton on Oct 27, up 1.5% on the day (BigMint, Oct 27).",
+   "event_id": null,
+   "subcategories": [
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ],
+   "tags": [],
+   "type": "行情"
+  },
+  {
+   "category": "Tier B rotation",
+   "company": null,
+   "detail": "Batch 8 rapid screening found no new material developments: Bolts - Screws - Studs, Condensing Units, Fabrications - Electrical Enclosures, Gaskets - Grommets - Seals, Iron Castings - Small <100 Lbs, PCBA, Rotary, Switch - Electrical, Uncategorized Electrn Components-Assbly, Wire Harness, castings/forgings and machining (of which Condensing Units' Embraco Oct 19 price increase is a previously reported continuation, not counted as a new hit).",
+   "event_id": null,
+   "subcategories": [
+    "Bolts - Screws - Studs",
+    "Condensing Units",
+    "Fabrications - Electrical Enclosures",
+    "Gaskets - Grommets - Seals",
+    "Iron Castings - Small <100 Lbs",
+    "PCBA",
+    "Rotary",
+    "Switch - Electrical",
+    "Uncategorized Electrn Components-Assbly",
+    "Wire Harness",
+    "铸锻件与机加工"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Tier A screening",
+   "company": null,
+   "detail": "Screening found no anomalies: 5 compressor types, refrigeration oil, 3 copper fabricated-part types, 2 steel types, power / VSD low- and medium-voltage, breakers / contactors, transformers, 3 motor types / medium motors / axial / centrifugal fans / pumps / 2 bearing types, 3 valve types, 3 heat-exchange types, 3 sensor types, magnet steel (no new quotation), clock crystals / FPGA, resistors and inductors, analog and power ICs / MCU, PCBA contract manufacturing.",
+   "event_id": null,
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors",
+    "Refrigerant Oil",
+    "Circuit Breakers",
+    "Contactors",
+    "Sensor"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-27",
+   "event": "Johnson Controls Q4 earnings (US pre-market)"
+  },
+  {
+   "date": "2026-10-28",
+   "event": "Vertiv Q3 earnings (US pre-market)"
+  },
+  {
+   "date": "2026-10-29",
+   "event": "Carrier Q3 earnings (US pre-market); Midea board reviews Q3 report"
+  },
+  {
+   "date": "2026-10-30",
+   "event": "Canada-origin air conditioners 50% additional tariff takes effect"
+  },
+  {
+   "date": "2026-10-31",
+   "event": "Resideo air zoning products price adjustment"
+  },
+  {
+   "date": "2026-11-01",
+   "event": "Siemens DI China price adjustment takes effect; Daikin 2.5 MW CDU launch"
+  },
+  {
+   "date": "2026-11-09",
+   "event": "Section 301 exclusion provisions expire (178 items)"
+  }
+ ],
+ "warnings": [
+  {
+   "action": "Complete entry for Canada-related in-transit orders before Oct 30 or reroute, and check origin and HTS codes",
+   "deadline": "2026-10-30",
+   "id": "warn-20261027-01",
+   "impact": "Canada-related air conditioner imports",
+   "related_events": [
+    "evt-20261027-02"
+   ],
+   "title": "Canada-origin air conditioners included in 50% additional tariff from Oct 30",
+   "trigger": "10-30",
+   "urgency": "高"
+  },
+  {
+   "action": "Complete ordering before Oct 30",
+   "deadline": "2026-10-31",
+   "id": "warn-20261027-02",
+   "impact": "North America air zoning products",
+   "related_events": [
+    "evt-20261027-02"
+   ],
+   "title": "Resideo-Honeywell Home air zoning products price adjustment Oct 31",
+   "trigger": "10-31",
+   "urgency": "高"
+  },
+  {
+   "action": "Complete ordering before Oct 31",
+   "deadline": "2026-11-01",
+   "id": "warn-20261027-03",
+   "impact": "China industrial-control / low-voltage electricals",
+   "related_events": [
+    "evt-20261027-02"
+   ],
+   "title": "Siemens DI China price adjustment effective Nov 01 (5 days to go)",
+   "trigger": "11-01",
+   "urgency": "高"
+  },
+  {
+   "action": "This week check with customs broker whether HTS lines include 9903.88.69/70; if so, assess cost jump after Nov 09 (list rates up to 25 points)",
+   "deadline": "2026-11-09",
+   "id": "warn-20261027-04",
+   "impact": "Categories covered by Section 301 exclusion provisions",
+   "related_events": [],
+   "title": "Section 301 exclusion provisions expire Nov 09 (178 items)",
+   "trigger": "11-09",
+   "urgency": "中"
+  },
+  {
+   "action": "Immediately lock prices / add orders for high-capacitance and critical part numbers; plan new orders on a 61-week lead time, do not schedule pre-end-2027 volumes on old lead times",
+   "deadline": "",
+   "id": "warn-20261027-05",
+   "impact": "MLCC (Samsung Electro-Mechanics)",
+   "related_events": [
+    "evt-20261027-01"
+   ],
+   "title": "Samsung Electro-Mechanics MLCC lead times 61 weeks, high-capacitance prices +23%",
+   "trigger": "New order placement",
+   "urgency": "中"
+  },
+  {
+   "action": "Lock Q4 demand in a single order; sign long-term agreements locking volumes for 2027 demand",
+   "deadline": "",
+   "id": "warn-20261027-06",
+   "impact": "DRAM/NAND",
+   "related_events": [],
+   "title": "DRAM lead times 20 weeks, NAND 16 weeks, gap peak in Q4 2027~Q1 2028",
+   "trigger": "Q4 contract prices landing",
+   "urgency": "中"
+  },
+  {
+   "action": "Review promised delivery periods and price-change terms on orders on hand; for part numbers with lead times over 20 weeks, order early and require written delivery commitments",
+   "deadline": "",
+   "id": "warn-20261027-07",
+   "impact": "Power and industrial-control devices",
+   "related_events": [],
+   "title": "Power and industrial-control delivery commitments loosening continue",
+   "trigger": "Distributor rescheduling / repricing notices",
+   "urgency": "中"
+  },
+  {
+   "action": "Lock volumes and prices for aluminum foil / fin stock early",
+   "deadline": "",
+   "id": "warn-20261027-08",
+   "impact": "Aluminum",
+   "related_events": [],
+   "title": "Aluminum prices rising (LME 3M $2,177/ton) + WoodMac 2026 gap about 1 million tons",
+   "trigger": "Gap materializing or aluminum price breakout",
+   "urgency": "中"
+  },
+  {
+   "action": "Lock R32 volumes at high levels, do not chase declines; buy R22 as needed, do not stockpile",
+   "deadline": "",
+   "id": "warn-20261027-09",
+   "impact": "Refrigerants",
+   "related_events": [],
+   "title": "R22 falling, R32/R134a stable at high RMB 65,000/ton",
+   "trigger": "R32 quotation loosening",
+   "urgency": "中"
+  },
+  {
+   "action": "Renegotiate PCB orders at new prices; prepare Q4 volumes early",
+   "deadline": "",
+   "id": "warn-20261027-10",
+   "impact": "PCB/CCL",
+   "related_events": [],
+   "title": "Kingboard CCL eighth price increase continues + PCB lead times lengthening (general boards 6~8 weeks)",
+   "trigger": "Kingboard next price-increase letter",
+   "urgency": "中"
+  },
+  {
+   "action": "Do not withdraw orders because of share-price swings, but large data-center projects must recheck customer financing backing and payment terms",
+   "deadline": "",
+   "id": "warn-20261027-11",
+   "impact": "Data-center project orders",
+   "related_events": [],
+   "title": "AI financing sentiment swings (Vertiv -13.9% in a week)",
+   "trigger": "Customer financing news or payment delays",
+   "urgency": "中"
+  }
+ ]
+}
