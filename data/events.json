@@ -193,6 +193,11 @@
      "date": "2026-10-27",
      "change": "三星电机部分MLCC在DigiKey的标准交期由9月39→49周升至10月61周（新单约2027年底到货）；47μF高容MLCC由8月17.50美元/100只涨至10月21.60美元，约+23%（Newspim 10-22 / Financial Post引TrendForce 10-24）",
      "text_en": "Samsung Electro-Mechanics MLCC standard lead times on DigiKey rose from 39 to 49 weeks in September to 61 weeks in October (a new order would arrive around end-2027); the 47uF high-capacitance MLCC rose from USD 17.50 per 100 units in August to USD 21.60 in October, about +23% (Newspim, Oct 22 / Financial Post citing TrendForce, Oct 24)"
+    },
+    {
+     "date": "2026-10-28",
+     "change": "Emerald Q4更新（10-23）：标准电阻/陶瓷电容8~12周平稳，高容/高压MLCC 18~24周且拉长、部分分配制；DigiKey渠道61周仍为部分料号高位（FourWeekMBA 10-24口径延续）",
+     "text_en": "Emerald Q4 update (Oct 23): standard resistors / ceramic capacitors steady at 8-12 weeks, while high-capacitance / high-voltage MLCCs stretch at 18-24 weeks with some allocation; the 61-week DigiKey channel figure remains the high end for selected part numbers (FourWeekMBA Oct 24 basis, continuing)"
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -292,6 +297,11 @@
      "date": "2026-10-25",
      "change": "Westmetall：LME 3M铜10-23收14270美元/吨，高于10-22的14096；LME库存273750吨（+800）连续回升",
      "text_en": "Westmetall: LME 3-month copper closed Oct 23 at $14,270/t, above $14,096 on Oct 22; LME stocks at 273,750 t (+800), rising for consecutive days"
+    },
+    {
+     "date": "2026-10-28",
+     "change": "SMM 10-27晨会：LME铜隔夜收14,338美元/吨、+0.28%；10-27盘面铜约14,370美元/吨（SP Angel）",
+     "text_en": "SMM Oct 27 morning briefing: LME copper closed overnight at USD 14,338/t, +0.28%; Oct 27 session copper around USD 14,370/t (SP Angel)"
     }
    ],
    "title": "铜价历史高位",
@@ -418,6 +428,11 @@
      "date": "2026-10-27",
      "change": "TrendForce口径DRAM交期20周、NAND 16周，约为常规8周的两倍；巴克莱预计DRAM需求超供给13.9%（2027年Q4）、NAND缺口峰值8.3%（2028年Q1）；南亚科称Q4涨幅放缓但不停涨，Fab 5A量产在2028年下半年之后（MT / TrendForce，10-15）",
      "text_en": "TrendForce puts DRAM lead times at 20 weeks and NAND at 16 weeks, about double the usual 8 weeks; Barclays expects DRAM demand to exceed supply by 13.9% (Q4 2027) and the NAND gap to peak at 8.3% (Q1 2028); Nanya says Q4 price rises will slow but not stop, with Fab 5A volume production only after H2 2028 (MT / TrendForce, Oct 15)"
+    },
+    {
+     "date": "2026-10-28",
+     "change": "Sourceability Q3报告：美光部分技术交期达52周，企业级SSD多家分配制、交期24~52周且趋长；TrendForce口径DRAM 20周、NAND 16周延续",
+     "text_en": "Sourceability Q3 report: Micron lead times reach 52 weeks for some technologies, enterprise SSDs on allocation from most manufacturers at 24-52 weeks and lengthening; TrendForce basis of DRAM 20 weeks / NAND 16 weeks continues"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -549,6 +564,11 @@
      "date": "2026-10-26",
      "change": "ZSI-Foster/Wesanco涨价10-26按期生效（此前倒计时1天）；Resideo空气分区10-31、西门子DI中国区11-01仍在途",
      "text_en": "ZSI-Foster/Wesanco price increase took effect as scheduled on Oct 26 (previously 1 day to go); Resideo air zoning Oct 31 and Siemens DI China Nov 1 still pending"
+    },
+    {
+     "date": "2026-10-28",
+     "change": "倒计时收紧：加拿大空调50%加征10-30（2天）、Resideo空气分区10-31（3天）、西门子DI中国区11-01（4天）；其余10月清单项目均已生效",
+     "text_en": "Countdown tightens: Canada air-conditioner 50% surcharge Oct 30 (2 days), Resideo air zoning Oct 31 (3 days), Siemens DI China Nov 1 (4 days); all other October list items already effective"
     }
    ],
    "title": "北美HVAC 10月涨价潮（ACHR清单）",
@@ -1492,6 +1512,11 @@
      "date": "2026-10-22",
      "change": "称中东袭击致两座大冶炼厂受损，全球原铝产量减少近2%，2026年全球转为约100万吨缺口，中国开工率99%，2027年预计重回盈余",
      "text_en": "Said Middle East attacks damaged two large smelters, cutting global aluminum output by ~2%; 2026 shifts to a ~1 Mt deficit; China operating rate 99%, surplus expected to return in 2027"
+    },
+    {
+     "date": "2026-10-28",
+     "change": "路透经Kitco 10-27：LME 3M铝+1.5%至3,085美元/吨、创两周多新高，亚洲仓库3,500吨提货登记助推",
+     "text_en": "Reuters via Kitco, Oct 27: LME 3-month aluminium +1.5% to USD 3,085/t, a more-than-two-week high, helped by 3,500 t of warehouse withdrawal orders in Asia"
     }
    ]
   },
@@ -1713,6 +1738,11 @@
      "date": "2026-10-25",
      "change": "178项Section 301中国商品排除条款将于11-09 23:59（美东）到期，此后按清单税率恢复征收（Lists 1~3为25%、4A为7.5%）；进口商须核对报关行HTS行是否含9903.88.69/70（USTR 2025-12公告，Summit Sourcing/Airlift转述）",
      "text_en": "178 Section 301 exclusions for China-origin goods expire at 11:59 p.m. ET on Nov 9, after which list rates resume (25% for Lists 1-3, 7.5% for List 4A); importers should check broker entries for HTS lines 9903.88.69/70 (USTR Dec 2025 notice, via Summit Sourcing/Airlift)"
+    },
+    {
+     "date": "2026-10-28",
+     "change": "USTR 10-26在联邦公报发布征求意见提案：拟将海事港口费暂停延长至2027-01-09（意见截止10-30），该提案未定案；178项排除条款本身仍无延长通知、11-09到期不变；港口费暂停与排除条款同日到期",
+     "text_en": "USTR published a Federal Register request for comments on Oct 26 proposing to extend the maritime port-fee suspension to Jan 9, 2027 (comments due Oct 30); the proposal is not final, and no extension notice exists for the 178 exclusions, which still expire Nov 9; the port-fee suspension and the exclusions lapse the same day"
     }
    ]
   },
@@ -1769,6 +1799,21 @@
      "text_en": "Cooler Master's 2,500 kW liquid-to-liquid in-row CDU anchors its AI-infrastructure cooling portfolio, with 990 GPM flow, a 4-5 degC approach temperature difference and up to 32 interconnected units, targeting mass production in Q4 2026 (BusinessWire company release, Oct 12)"
     }
    ]
+  },
+  {
+   "id": "evt-jci-fy26-q4-earnings",
+   "title": "江森自控2026财年Q4超预期、积压230亿美元创纪录",
+   "title_en": "Johnson Controls FY2026 Q4 beats expectations, backlog hits record USD 23B",
+   "status": "已落地",
+   "subcategories": [],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-10-28",
+     "change": "江森自控2026财年Q4（截至2026-09-30）：营收71.1亿美元、同比+10.4%，调整后EPS 1.66美元、同比+31.7%（预期1.58美元）；有机订单+44%，积压230亿美元、同比+43%创纪录；FY27指引有机收入+11%~12%、调整后EPS 6.15~6.30美元，计划资本开支约9亿美元（公司财报稿，10-27）",
+     "text_en": "Johnson Controls fiscal Q4 2026 (ended Sep 30, 2026): revenue USD 7.11B, +10.4% YoY; adjusted EPS USD 1.66, +31.7% YoY (consensus USD 1.58); organic orders +44%; backlog USD 23B, +43% YoY, a record; FY27 guidance: organic revenue +11%-12%, adjusted EPS USD 6.15-6.30, planned capex ~USD 900M (company earnings release, Oct 27)"
+    }
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -1780,5 +1825,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-10-27"
+ "updated": "2026-10-28"
 }
