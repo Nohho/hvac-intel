@@ -198,6 +198,11 @@
      "date": "2026-10-28",
      "change": "Emerald Q4更新（10-23）：标准电阻/陶瓷电容8~12周平稳，高容/高压MLCC 18~24周且拉长、部分分配制；DigiKey渠道61周仍为部分料号高位（FourWeekMBA 10-24口径延续）",
      "text_en": "Emerald Q4 update (Oct 23): standard resistors / ceramic capacitors steady at 8-12 weeks, while high-capacitance / high-voltage MLCCs stretch at 18-24 weeks with some allocation; the 61-week DigiKey channel figure remains the high end for selected part numbers (FourWeekMBA Oct 24 basis, continuing)"
+    },
+    {
+     "date": "2026-10-29",
+     "change": "三星电机高容47μF MLCC 8月17.50美元/100只涨至10月21.60美元、约+23%（Financial Post引TrendForce，10-24）；DigiKey渠道部分三星电机料号交期61周（10月）；国巨主力料交期30~52周",
+     "text_en": "Samsung Electro-Mechanics high-capacitance 47uF MLCC rises from $17.50/100 units in August to $21.60 in October, about +23% (Financial Post citing TrendForce, Oct 24); some Samsung Electro-Mechanics part numbers on DigiKey at 61-week lead times (October); Yageo main parts at 30-52 weeks"
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -302,6 +307,11 @@
      "date": "2026-10-28",
      "change": "SMM 10-27晨会：LME铜隔夜收14,338美元/吨、+0.28%；10-27盘面铜约14,370美元/吨（SP Angel）",
      "text_en": "SMM Oct 27 morning briefing: LME copper closed overnight at USD 14,338/t, +0.28%; Oct 27 session copper around USD 14,370/t (SP Angel)"
+    },
+    {
+     "date": "2026-10-29",
+     "change": "SMM 10-28晨会：LME 3M铜14,621美元/吨、铝3,250美元/吨，较10-27早报口径（14,338/3,085）再涨；北美废铜主力等级10-27单日+11美分/磅",
+     "text_en": "SMM Oct 28 morning: LME 3M copper $14,621/t, aluminum $3,250/t, up from the Oct 27 briefing levels (14,338/3,085); North American clean copper scrap grades +11 cents/lb on Oct 27"
     }
    ],
    "title": "铜价历史高位",
@@ -1814,6 +1824,85 @@
      "text_en": "Johnson Controls fiscal Q4 2026 (ended Sep 30, 2026): revenue USD 7.11B, +10.4% YoY; adjusted EPS USD 1.66, +31.7% YoY (consensus USD 1.58); organic orders +44%; backlog USD 23B, +43% YoY, a record; FY27 guidance: organic revenue +11%-12%, adjusted EPS USD 6.15-6.30, planned capex ~USD 900M (company earnings release, Oct 27)"
     }
    ]
+  },
+  {
+   "id": "evt-vertiv-q3-2026",
+   "status": "已落地",
+   "title": "Vertiv Q3 2026：销售额+61%、有机订单翻倍、上调全年指引",
+   "title_en": "Vertiv Q3 2026: sales +61%, organic orders more than double, full-year guidance raised",
+   "subcategories": [],
+   "tags": [
+    "影响BOM"
+   ],
+   "timeline": [
+    {
+     "date": "2026-10-29",
+     "change": "Q3净销售额43.13亿美元、同比+61%（有机+55%），调整后EPS 2.21美元、同比+78%，有机订单同比增长超100%，调整后经营利润率25.2%（+290个基点）；全年指引中点上调6.5亿美元至146.5亿美元，调整后EPS指引7.10~7.20美元；Q4指引净销售额中点44.13亿美元、有机+50%",
+     "text_en": "Q3 net sales $4.313B, +61% YoY (+55% organic); adjusted EPS $2.21, +78% YoY; organic orders up over 100% YoY; adjusted operating margin 25.2% (+290 bps); full-year guidance midpoint raised $650M to $14.65B, adjusted EPS guidance $7.10-7.20; Q4 guidance midpoint net sales $4.413B, +50% organic"
+    }
+   ]
+  },
+  {
+   "id": "evt-vertiv-uig-close",
+   "status": "已落地",
+   "title": "Vertiv完成收购微电网公司UtilityInnovation Group",
+   "title_en": "Vertiv completes acquisition of microgrid firm UtilityInnovation Group",
+   "subcategories": [],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-10-29",
+     "change": "以约14.5亿美元现金完成收购UIG，另有最高11.5亿美元与12/24个月EBITDA目标挂钩的或有对价；补微电网控制、现场发电调度与表后电力架构",
+     "text_en": "Completed the UIG acquisition for ~$1.45B in cash, plus up to $1.15B contingent on 12-/24-month EBITDA targets; adds microgrid controls, onsite generation orchestration and behind-the-meter power architecture"
+    }
+   ]
+  },
+  {
+   "id": "evt-lg-aidc-orders-3t",
+   "status": "已通知",
+   "title": "LG AI数据中心制冷累计订单超3万亿韩元",
+   "title_en": "LG AI data center cooling cumulative orders exceed KRW 3 trillion",
+   "subcategories": [],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-10-29",
+     "change": "累计订单由上半年末约0.6万亿韩元增至三季度末超3万亿韩元（含与北美Air Control Concepts的冷水机长期供应协议）；追加2,200亿韩元扩产（含美国新生产基地）；1MW与2.6MW CDU获英伟达认可，2.6MW款获DSX Ready认证",
+     "text_en": "Cumulative orders rise from ~KRW 0.6T at end-H1 to over KRW 3T at end-Q3 (including a long-term chiller supply agreement with North America's Air Control Concepts); additional KRW 220B capacity investment (including a new US production base); 1MW and 2.6MW CDUs recognized by NVIDIA, 2.6MW model DSX Ready certified"
+    }
+   ]
+  },
+  {
+   "id": "evt-daikin-phoenix-modular-expansion",
+   "status": "已通知",
+   "title": "大金美国凤凰城模块化工厂扩产约150%",
+   "title_en": "Daikin expands Phoenix modular factory capacity by about 150%",
+   "subcategories": [],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-10-29",
+     "change": "Daikin Applied凤凰城Modular Solutions工厂由5.8万平方英尺扩至19.1万平方英尺，定制工厂预制水力与电力系统产能提升约150%",
+     "text_en": "Daikin Applied's Phoenix Modular Solutions plant expands from 58,000 to 191,000 sq ft, lifting custom factory-built hydronic and electric systems capacity by about 150%"
+    }
+   ]
+  },
+  {
+   "id": "evt-prysmian-cable-nov-hike",
+   "status": "已通知",
+   "title": "Prysmian北美公用事业电缆11-01起涨价5%~7%",
+   "title_en": "Prysmian North America utility cable price increase of 5%-7% from Nov 1",
+   "subcategories": [
+    "Cables"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-10-29",
+     "change": "Prysmian北美宣布公用事业电缆产品11-01起涨价5%~7%，原因为关键原材料成本持续大幅上涨，具体幅度按电缆设计规格而定",
+     "text_en": "Prysmian North America announces a 5%-7% price increase on utility wire and cable products effective Nov 1, citing sustained sharp increases in key material costs; exact percentage varies by cable design"
+    }
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -1825,5 +1914,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-10-28"
+ "updated": "2026-10-29"
 }
