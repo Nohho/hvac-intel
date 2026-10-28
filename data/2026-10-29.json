@@ -1,0 +1,644 @@
+{
+ "meta": {
+  "date": "2026-10-29",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-29-hvac-cdu-morning-briefing.md",
+  "note": "周四早报。头条三件：Vertiv Q3销售额+61%、有机订单翻倍、上调全年指引6.5亿美元；LG AI制冷订单一季增2.4万亿韩元、追加2,200亿韩元扩产；成本节点1~3天连到（10-30加拿大空调50%加征、10-31 Resideo、11-01西门子DI与Prysmian电缆）。财报窗口：开利/特灵今晚盘前、美的今日董事会。关税排查：无新增定案政策，港口费延长仍为提案（意见截止10-30）；178项排除与港口费暂停11-09到期。事件库：新建5事件（Vertiv Q3、UIG交割、LG订单3万亿、大金凤凰城扩产、Prysmian电缆涨价），追加2条timeline（MLCC、铜铝）。Tier B第11批：1 hit（Prysmian电缆）。"
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261029-01",
+   "event_id": "evt-vertiv-q3-2026",
+   "date": "2026-10-28",
+   "title": "Vertiv Q3销售额+61%、有机订单翻倍、全年指引上调6.5亿美元",
+   "heat": 93,
+   "heat_reason": "数据中心供电与制冷龙头订单翻倍且Q4指引有机增速仍达50%，直接指向CDU/配电/换热产能排产窗口继续收窄",
+   "tags": [
+    "影响BOM"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "summary": "Vertiv Q3净销售额43.13亿美元、同比+61%（有机+55%），调整后EPS 2.21美元、同比+78%，有机订单同比增长超100%，调整后经营利润率25.2%（+290个基点）；全年指引中点上调6.5亿美元至146.5亿美元，Q4指引有机增速50%。",
+   "numbers": [
+    "43.13亿美元",
+    "+61%",
+    "+100%",
+    "2.21美元",
+    "+78%",
+    "25.2%",
+    "146.5亿美元",
+    "6.5亿美元",
+    "50%"
+   ],
+   "related_warnings": [
+    "warn-20261029-06"
+   ],
+   "sources": [
+    {
+     "outlet": "Vertiv官网财报稿（PR Newswire）",
+     "date": "2026-10-28",
+     "url": "https://www.morningstar.com/news/pr-newswire/20261028cl81445/vertiv-reports-strong-third-quarter-2026-with-net-sales-growth-of-61-organic-orders-growth-over-100-and-diluted-eps-growth-of-91-adjusted-diluted-eps-growth-of-78-raises-full-year-2026-guidance-across-all-key-metrics",
+     "first_party": true
+    }
+   ]
+  },
+  {
+   "id": "evt-20261029-02",
+   "event_id": "evt-lg-aidc-orders-3t",
+   "date": "2026-10-28",
+   "title": "LG AI数据中心制冷订单一季增2.4万亿韩元、追加2,200亿韩元扩产",
+   "heat": 88,
+   "heat_reason": "韩系冷水机/CDU一季新增订单规模罕见且同步美国建厂，北美AI项目冷水机与大容量CDU供给格局与交期谈判面正在变化",
+   "tags": [],
+   "section": "头条事件",
+   "severity": "中",
+   "summary": "LG AI数据中心制冷累计订单由上半年末约0.6万亿韩元增至三季度末超3万亿韩元，含与北美Air Control Concepts的冷水机长期供应协议；追加2,200亿韩元扩产（含美国新生产基地），1MW与2.6MW CDU获英伟达认可、2.6MW款获DSX Ready认证。",
+   "numbers": [
+    "3万亿韩元",
+    "0.6万亿韩元",
+    "2.4万亿韩元",
+    "2,200亿韩元",
+    "2.6MW"
+   ],
+   "related_warnings": [
+    "warn-20261029-06"
+   ],
+   "sources": [
+    {
+     "outlet": "首尔经济日报",
+     "date": "2026-10-28",
+     "url": "https://en.sedaily.com/finance/2026/10/28/lg-electronics-data-center-cooling-orders-top-3-trillion-won",
+     "first_party": false
+    }
+   ]
+  },
+  {
+   "id": "evt-20261029-03",
+   "event_id": "evt-us-canada-section338-ac-tariff",
+   "date": "2026-10-29",
+   "title": "成本节点1~3天连到：加拿大空调50%加征、Resideo、西门子DI与Prysmian电缆同步调价",
+   "heat": 90,
+   "heat_reason": "四个互不相关的成本截止日集中在1~3天内，错过即按新价结算，且其后11-09还有Section 301双到期",
+   "tags": [],
+   "section": "头条事件",
+   "severity": "高",
+   "summary": "10-30加拿大原产空调纳入50%加征、10-31 Resideo空气分区产品调价、11-01西门子DI中国区调价与Prysmian公用事业电缆+5%~7%同步生效；11-09 Section 301排除与港口费暂停双到期。",
+   "numbers": [
+    "50%",
+    "5%~7%"
+   ],
+   "related_warnings": [
+    "warn-20261029-01",
+    "warn-20261029-02",
+    "warn-20261029-03",
+    "warn-20261029-04",
+    "warn-20261029-05"
+   ],
+   "sources": [
+    {
+     "outlet": "Prysmian官方涨价函",
+     "date": "2026-10-01",
+     "url": "https://na.prysmian.com/sites/na.prysmian.com/files/2026-10/Price-Announcement-Letter-October-2026.pdf",
+     "first_party": true
+    },
+    {
+     "outlet": "ICPA Section 301 Tracker",
+     "date": "2026-10-26",
+     "url": "https://www.icpainc.org/section-301-tracker/",
+     "first_party": false
+    }
+   ]
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Vertiv Q3大超预期并上调全年指引",
+   "date": "2026-10-28",
+   "detail": "Q3净销售额43.13亿美元、同比+61%（有机+55%），调整后EPS 2.21美元、同比+78%（预期1.82美元），有机订单同比增长超100%；全年指引中点上调6.5亿美元至146.5亿美元，调整后EPS指引7.10~7.20美元，Q4指引净销售额中点44.13亿美元、有机+50%。",
+   "source": "Vertiv官网财报稿经PR Newswire",
+   "first_party": true,
+   "event_id": "evt-vertiv-q3-2026"
+  },
+  {
+   "title": "Vertiv完成收购微电网公司UIG",
+   "date": "2026-10-27",
+   "detail": "以约14.5亿美元现金完成收购UtilityInnovation Group，另有最高11.5亿美元与12/24个月EBITDA目标挂钩的或有对价；补微电网控制、现场发电调度与表后电力架构。",
+   "source": "Vertiv官网稿经PR Newswire",
+   "first_party": true,
+   "event_id": "evt-vertiv-uig-close"
+  },
+  {
+   "title": "LG AI数据中心制冷订单一季暴增2.4万亿韩元",
+   "date": "2026-10-28",
+   "detail": "累计订单由上半年末约0.6万亿韩元增至三季度末超3万亿韩元，含与北美Air Control Concepts的冷水机长期供应协议；追加2,200亿韩元扩产（含美国新生产基地），1MW与2.6MW CDU已获英伟达认可、2.6MW款获DSX Ready认证。",
+   "source": "LG三季报电话会经首尔经济日报",
+   "first_party": false,
+   "event_id": "evt-lg-aidc-orders-3t"
+  },
+  {
+   "title": "今晚财报三连发：开利、特灵盘前，美的董事会审三季报",
+   "date": "2026-10-29",
+   "detail": "开利、特灵均于美东今日盘前发Q3（北京时间今晚），市场预期开利调整后EPS约0.81美元、营收约60.8亿美元，特灵EPS约4.74美元、营收约65亿美元；美的今日董事会审三季报。",
+   "source": "Zacks / Barchart预览",
+   "first_party": false,
+   "event_id": null
+  },
+  {
+   "title": "大金美国模块化工厂产能扩至约2.5倍",
+   "date": "2026-10-27",
+   "detail": "Daikin Applied凤凰城Modular Solutions工厂由5.8万平方英尺扩至19.1万平方英尺，定制工厂预制水力与电力系统产能提升约150%，并可在厂内集成大金自有技术与测试。",
+   "source": "Mechanical Business",
+   "first_party": false,
+   "event_id": "evt-daikin-phoenix-modular-expansion"
+  },
+  {
+   "title": "HEXONIC推CDU换热器选型支持",
+   "date": "2026-10-28",
+   "detail": "针对数据中心CDU的液-液换热界面提供按热容量、温度、流量、压损与冷却液兼容性选型的技术支持，覆盖垫片式板框、钎焊板式与管壳式换热器。",
+   "source": "HEXONIC公司稿经Access Newswire",
+   "first_party": true,
+   "event_id": null
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "MLCC",
+   "date": "2026-10-24",
+   "change": "三星电机高容47μF MLCC由8月17.50美元/100只涨至10月21.60美元、约+23%（Financial Post引TrendForce）；DigiKey渠道部分三星电机料号交期61周，国巨主力料30~52周；Emerald口径标准料仍8~12周平稳。",
+   "source": "Financial Post引TrendForce / Newspim / Emerald Q4更新"
+  },
+  {
+   "material": "存储器",
+   "date": "2026-10-15",
+   "change": "TrendForce口径DRAM交期20周、NAND 16周延续；Sourceability Q3口径美光部分技术交期达52周、企业级SSD多家分配制、交期24~52周且趋长。",
+   "source": "TrendForce / Sourceability Q3报告"
+  },
+  {
+   "material": "功率与工控",
+   "date": "2026-10-23",
+   "change": "Emerald Q4口径高性能MCU与专用PMIC 22~28周以上且拉长，MOSFET与高压功率分立器件逼近26周；英飞凌/安森美无新函，A2 Global Q4预警延续。",
+   "source": "Emerald Q4更新 / A2 Global"
+  },
+  {
+   "material": "铜",
+   "date": "2026-10-28",
+   "change": "SMM 10-28晨会口径LME 3M铜14,621美元/吨，较昨日早报口径14,338美元/吨再涨约2.0%；北美废铜主力等级10-27单日+11美分/磅。",
+   "source": "SMM / ScrapMonster"
+  },
+  {
+   "material": "铝",
+   "date": "2026-10-28",
+   "change": "SMM 10-28晨会口径LME 3M铝3,250美元/吨，较昨日早报口径3,085美元/吨再涨约5.3%。",
+   "source": "SMM"
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "原材料成本挤压",
+   "date": "2026-10-28",
+   "key_data": "LG Innotek Q3创纪录销售额约6.36万亿韩元下净利润同比-25.8%、营业利润-53.4%，公司归因于美元走强时购入的高价原材料与出货时韩元走强叠加",
+   "chain": "原材料与汇率双重挤压正在以外购料为主的制造环节兑现，报价有效期要缩短、改价条款要前置",
+   "source": "LG Innotek三季报经Particle News"
+  },
+  {
+   "industry": "废铜现货",
+   "date": "2026-10-28",
+   "key_data": "北美废铜主力等级10-27单日+11美分/磅、黄铜/青铜+3美分/磅，铝废料普遍+1~2美分/磅",
+   "chain": "铜价上涨已从期货盘面传导至现货与废料端，铜管/铜加工件供应商调价函风险上升，下单前先书面确认铜价基准日",
+   "source": "ScrapMonster"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "MLCC",
+   "type": "涨价",
+   "detail": "三星电机高容47μF MLCC 8→10月约+23%至21.60美元/100只，DigiKey渠道部分料号交期61周，国巨主力料30~52周；标准料8~12周平稳。",
+   "subcategories": [
+    "电容"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "category": "存储器",
+   "type": "交期",
+   "detail": "TrendForce口径DRAM交期20周、NAND 16周延续；Sourceability Q3口径美光部分技术交期达52周，企业级SSD多家分配制、交期24~52周且趋长。",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-dram-hbm-shortage"
+  },
+  {
+   "category": "IGBT/功率与工控",
+   "type": "交期",
+   "detail": "MOSFET/高压分立器件逼近26周（Emerald 10-23），高性能MCU/专用PMIC 22~28周以上；西门子DI中国区调价11-01在途（倒计时3天）；英飞凌/安森美无新函，A2预警延续。",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-a2-q4-2026-semiconductor-split"
+  },
+  {
+   "category": "电缆",
+   "type": "涨价",
+   "detail": "Prysmian北美宣布公用事业电缆产品11-01起涨价5%~7%，原因为关键原材料成本持续大幅上涨，具体幅度按电缆设计规格而定。",
+   "subcategories": [
+    "Cables"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-prysmian-cable-nov-hike"
+  },
+  {
+   "category": "连接器/线束",
+   "type": "交期",
+   "detail": "Nexans电缆产能瓶颈延续；PCIe 6.0/CXL连接器交期36周延续。",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-ai-server-connector-squeeze"
+  },
+  {
+   "category": "制冷剂",
+   "type": "行情",
+   "detail": "无新报价，沿用10-21口径：R22出厂19,500元/吨领跌，R32与R134a各65,000元/吨持稳；三代配额79.78万吨、前六大企业占90%以上。",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": null
+  },
+  {
+   "category": "压缩机",
+   "type": "排查无异常",
+   "detail": "无新涨价函（Embraco 10-19生效延续）。",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": null
+  },
+  {
+   "category": "北美HVAC涨价清单",
+   "type": "涨价",
+   "detail": "Resideo-Honeywell Home空气分区产品10-31调价（倒计时2天）；其余10月清单项目均已生效。",
+   "subcategories": [
+    "Control Valves"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-na-hvac-october-price-hikes"
+  },
+  {
+   "category": "铜",
+   "type": "行情",
+   "detail": "SMM 10-28晨会LME 3M铜14,621美元/吨，较昨日口径再涨约2.0%；北美废铜主力等级10-27单日+11美分/磅；无独立加工件涨价函。",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-copper-high"
+  },
+  {
+   "category": "铝",
+   "type": "行情",
+   "detail": "SMM 10-28晨会LME 3M铝3,250美元/吨，较昨日口径3,085美元/吨再涨约5.3%。",
+   "subcategories": [
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-woodmac-aluminum-deficit"
+  },
+  {
+   "category": "Tier B轮查",
+   "type": "涨价",
+   "detail": "第11批1个实质hit：Cables（Prysmian公用事业电缆11-01起+5%~7%）；其余10品类快速排查均无新增实质动态。",
+   "subcategories": [
+    "Cables",
+    "Controllers",
+    "Fiberglass",
+    "Gears: Actuators",
+    "Large Motors (100 HP And Above 75KW) - Hermetic",
+    "Packaging: Plastics & Distribution Supp",
+    "Sealants - Caulks",
+    "Tanks, Cylinders",
+    "Uncategorized Insulation",
+    "密封与制冷剂",
+    "风机"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-prysmian-cable-nov-hike"
+  },
+  {
+   "category": "Tier A排查",
+   "type": "排查无异常",
+   "detail": "压缩机5类、冷冻油、铜加工件3类（随盘面波动、无独立涨价）、钢2类、电源/VSD低中压、断路器/接触器、变压器、电机/风机/水泵/轴承、阀件3类、换热3类、传感器3类、磁钢、时钟晶振/FPGA、电阻与电感、模拟与电源IC/MCU、PCBA代工均无异常。",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors",
+    "Refrigerant Oil",
+    "Circuit Breakers",
+    "Contactors",
+    "Sensor"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": null
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控/约克",
+   "status": "无实质动态",
+   "note": "近3天无新增实质动态；Q4财报10-27已报"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Q3财报美东今日盘前（北京时间今晚）；市场预期调整后EPS约0.81美元、营收约60.8亿美元"
+  },
+  {
+   "company": "特灵",
+   "status": "有实质动态",
+   "note": "Q3财报美东今日盘前（北京时间今晚）；市场预期EPS约4.74美元、营收约65亿美元"
+  },
+  {
+   "company": "大金",
+   "status": "有实质动态",
+   "note": "凤凰城模块化工厂扩至19.1万平方英尺、产能提升约150%（10-27）"
+  },
+  {
+   "company": "美的",
+   "status": "有实质动态",
+   "note": "今日董事会审三季报"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "LG",
+   "status": "有实质动态",
+   "note": "AI制冷累计订单超3万亿韩元、一季增2.4万亿韩元，追加2,200亿韩元扩产（10-28）"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "三星电机高容MLCC +23%、交期52~61周，见供应商动态"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "Q3财报10-28：销售额43.13亿美元+61%、有机订单翻倍、上调全年指引；10-27完成收购UIG"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "近3天无实质新动态"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-29",
+   "event": "开利Q3财报（美股盘前）；特灵Q3财报（美股盘前）；美的董事会审三季报"
+  },
+  {
+   "date": "2026-10-30",
+   "event": "加拿大原产空调50%加征生效；USTR港口费延长提案意见截止"
+  },
+  {
+   "date": "2026-10-31",
+   "event": "Resideo空气分区产品调价"
+  },
+  {
+   "date": "2026-11-01",
+   "event": "西门子DI中国区调价生效；Prysmian公用事业电缆涨价5%~7%生效；大金2.5MW CDU上市"
+  },
+  {
+   "date": "2026-11-09",
+   "event": "Section 301排除条款到期（178项）；港口费暂停到期"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261029-01",
+   "title": "加拿大原产空调10-30起纳入50%加征（倒计时1天）",
+   "urgency": "高",
+   "impact": "涉加空调进口",
+   "action": "涉加在途订单10-30前完成入境或改道，核对原产地与HTS编码",
+   "trigger": "10-30",
+   "deadline": "2026-10-30",
+   "related_events": [
+    "evt-20261029-03"
+   ]
+  },
+  {
+   "id": "warn-20261029-02",
+   "title": "Resideo-Honeywell Home空气分区产品10-31调价（倒计时2天）",
+   "urgency": "高",
+   "impact": "北美空气分区产品采购",
+   "action": "10-30前完成下单",
+   "trigger": "10-31",
+   "deadline": "2026-10-31",
+   "related_events": [
+    "evt-20261029-03"
+   ]
+  },
+  {
+   "id": "warn-20261029-03",
+   "title": "西门子DI中国区调价11-01生效（倒计时3天）",
+   "urgency": "高",
+   "impact": "西门子DI工控采购",
+   "action": "10-31前完成下单",
+   "trigger": "11-01",
+   "deadline": "2026-11-01",
+   "related_events": [
+    "evt-20261029-03"
+   ]
+  },
+  {
+   "id": "warn-20261029-04",
+   "title": "Prysmian公用事业电缆11-01起+5%~7%（倒计时3天）",
+   "urgency": "高",
+   "impact": "公用事业电缆采购",
+   "action": "11-01前完成下单或书面确认旧价保护与按规格的具体幅度",
+   "trigger": "11-01",
+   "deadline": "2026-11-01",
+   "related_events": [
+    "evt-20261029-03"
+   ]
+  },
+  {
+   "id": "warn-20261029-05",
+   "title": "Section 301排除与港口费暂停11-09双到期（倒计时11天）",
+   "urgency": "中",
+   "impact": "涉美进口报关与船期",
+   "action": "本周内核对报关行HTS行是否含9903.88.69/70；港口费延长只是提案（意见截止10-30），切勿按已延长排船期与报价",
+   "trigger": "11-09",
+   "deadline": "2026-11-09",
+   "related_events": [
+    "evt-20261029-03"
+   ]
+  },
+  {
+   "id": "warn-20261029-06",
+   "title": "Vertiv订单翻倍 + LG订单一季增2.4万亿韩元",
+   "urgency": "中",
+   "impact": "CDU/冷水机/换热产能",
+   "action": "CDU/冷水机/换热关键产能提前锁单并书面确认交期，北美项目优先锁定冷水机+CDU组合产能",
+   "trigger": "供应商交期通知拉长",
+   "deadline": null,
+   "related_events": [
+    "evt-20261029-01",
+    "evt-20261029-02"
+   ]
+  },
+  {
+   "id": "warn-20261029-07",
+   "title": "MLCC高容料+23%、交期52~61周",
+   "urgency": "中",
+   "impact": "MLCC高容料采购",
+   "action": "高容与关键料号立即锁价/加单；标准料按8~12周正常排产，不必跟风按61周囤货",
+   "trigger": "新单下单",
+   "deadline": null,
+   "related_events": [
+    "evt-20261029-01"
+   ]
+  },
+  {
+   "id": "warn-20261029-08",
+   "title": "DRAM交期20周、NAND 16周，企业级SSD分配制24~52周",
+   "urgency": "中",
+   "impact": "存储料采购",
+   "action": "存储料Q4需求一次性锁单；2027年用量签长协锁量",
+   "trigger": "Q4合约价落地",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261029-09",
+   "title": "功率分立器件逼近26周、高性能MCU/PMIC 22~28周以上",
+   "urgency": "中",
+   "impact": "功率/工控料采购",
+   "action": "交期超20周料号提前下单并要求书面交付承诺，核查改价条款",
+   "trigger": "分销商改期/改价通知",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261029-10",
+   "title": "铜14,621美元/吨、铝3,250美元/吨双双再涨",
+   "urgency": "中",
+   "impact": "铜加工件与铝箔/翅片采购",
+   "action": "铜加工件与铝箔/翅片分批锁量锁价，不宜单次全押；下单前书面确认铜价基准日",
+   "trigger": "铜铝价格再创新高",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261029-11",
+   "title": "R32/R134a高位持稳65,000元/吨、R22回落",
+   "urgency": "中",
+   "impact": "制冷剂采购",
+   "action": "R32按高位锁量不追跌，R22按需采购不囤货",
+   "trigger": "R32报价松动",
+   "deadline": null,
+   "related_events": []
+  },
+  {
+   "id": "warn-20261029-12",
+   "title": "开利/特灵今晚盘前Q3、美的今日三季报",
+   "urgency": "中",
+   "impact": "整机厂订单与交期预期",
+   "action": "盯三家财报的数据中心订单与交期表态，订单口径变化即调整锁单节奏；以财报实报为准，不按盘前预期下单",
+   "trigger": "财报发布",
+   "deadline": null,
+   "related_events": []
+  }
+ ],
+ "daily_report": {
+  "date": "2026-10-29",
+  "title": "HVAC / 液冷 CDU 行业情报早报",
+  "headline": "Vertiv Q3销售额+61%、有机订单翻倍、上调全年指引6.5亿美元；LG AI制冷订单一季增2.4万亿韩元、追加2,200亿韩元扩产；成本节点1~3天连到（10-30加拿大空调50%加征、10-31 Resideo、11-01西门子DI与Prysmian电缆）；开利/特灵今晚盘前Q3、美的今日三季报；铜14,621美元/吨、铝3,250美元/吨。",
+  "sections": [
+   "行业动态/技术与合作",
+   "头条事件",
+   "数据中心/AI虹吸效应",
+   "跨行业传导",
+   "供应商动态",
+   "供应链预警与建议"
+  ],
+  "hotspot_count": 3,
+  "warning_count": 12
+ }
+}
