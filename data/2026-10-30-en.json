@@ -1,0 +1,875 @@
+{
+ "meta": {
+  "date": "2026-10-30",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-10-30-hvac-cdu-morning-briefing.md",
+  "note": "Friday morning briefing. Three top stories: Carrier Q3 data-center orders +300%, backlog US$8.5 billion to a record; Trane backlog US$12.5 billion (+73%), Americas commercial HVAC orders +80%; Vertiv Q3 revenue +61%, orders doubled, completed US$1.45 billion UIG acquisition. Earnings season: JCI FY26 Q4 backlog US$23.0 billion to a record, Midea 9M net profit +9.3%, Gree Q3 net profit halved (copper/aluminum costs squeezed gross margin 5.62 pp). Tariffs: Busan Xi-Trump deal (China tariffs 57%->47%, rare-earth controls paused one year, reciprocal port fees halted; leaders announced, details pending); Section 338 Canada adjustment effective Oct 30 (some refrigeration equipment removed from the 50% list); Section 301 exclusions expire Nov 9, 10-day countdown. Second-round power-device hikes effective (onsemi Oct 10), INVT VSD price-adjustment letter effective Oct 8, MLCC lead times past 61 weeks, Kingboard's 8th CCL hike letter of the year, ethylene glycol +20.75%. Event library: 7 new events (Carrier Q3, Trane Q3, Gree Q3, INVT VSD, ethylene glycol, Busan deal, Vertiv SmartIT), 11 timeline appends (DRAM / MLCC / OSAT / CoolerMaster / CCL / Nexans / cloud capex / 338 / JCI / Samsung phones / Shenling convertible bond -> effective). Tier B batch 12: 1 hit (Coolants - ethylene glycol)."
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261030-01",
+   "event_id": "evt-carrier-q3-2026",
+   "date": "2026-10-29",
+   "title": "Carrier Q3 data-center orders surge 300%, backlog tops US$8.5 billion to record high",
+   "heat": 90,
+   "heat_reason": "Measured +300% data-center cooling-source demand feeds directly into commercial chiller capacity and lead times",
+   "tags": [
+    "影响BOM",
+    "涨价",
+    "数据中心"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "summary": "Carrier Q3 revenue US$6.26 billion (+12%, +15% organic), adjusted EPS US$0.87 (+30%); commercial HVAC orders +60%, data-center orders +300% (data-center sales ~2.5x last year, ~US$2.0 billion full-year target); backlog tops US$8.5 billion (+60%), a record; full-year revenue guidance raised to US$23.8-24.0 billion; tariff refunds also boosted profit.",
+   "numbers": [
+    "+300%",
+    "+60%",
+    "US$8.5 billion",
+    "+60%",
+    "US$6.26 billion",
+    "US$23.8-24.0 billion"
+   ],
+   "related_warnings": [
+    "warn-20261030-05"
+   ],
+   "sources": [
+    {
+     "outlet": "Zacks (based on company earnings release)",
+     "date": "2026-10-29",
+     "url": "https://www.zacks.com/stock/news/3018800/carrier-q3-earnings-sales-beat-on-hvac-demand-tariff-refunds",
+     "first_party": false
+    }
+   ]
+  },
+  {
+   "id": "evt-20261030-02",
+   "event_id": "evt-trane-q3-2026",
+   "date": "2026-10-29",
+   "title": "Trane Q3 revenue +18%, backlog jumps 73% to US$12.5 billion",
+   "heat": 87,
+   "heat_reason": "Americas commercial HVAC backlog +80%, applied-air lead times stay under pressure",
+   "tags": [
+    "数据中心",
+    "涨价"
+   ],
+   "section": "头条事件",
+   "severity": "中",
+   "summary": "Trane Q3 revenue US$6.76 billion (+18%, +16% organic), adjusted EPS US$4.86 (+25%); organic orders +20% (US$7.2 billion); total backlog US$12.5 billion (+73%, Americas commercial HVAC backlog +80%); full-year revenue growth guidance raised to ~13.5% (~11% organic); the earnings call also acknowledged supply-chain inflation pressure.",
+   "numbers": [
+    "+18%",
+    "US$12.5 billion",
+    "+73%",
+    "+80%",
+    "~13.5%"
+   ],
+   "related_warnings": [
+    "warn-20261030-05"
+   ],
+   "sources": [
+    {
+     "outlet": "Company 8-K filing (via TradingView) + Motley Fool earnings call transcript",
+     "date": "2026-10-29",
+     "url": "https://www.tradingview.com/news/tradingview:e17dc697b7fbc:0-trane-technologies-reports-18-revenue-growth-raises-2026-revenue-guidance/",
+     "first_party": false
+    }
+   ]
+  },
+  {
+   "id": "evt-20261030-03",
+   "event_id": "evt-vertiv-q3-2026",
+   "date": "2026-10-28",
+   "title": "Vertiv Q3 revenue +61%, organic orders more than double, completes US$1.45 billion UIG acquisition",
+   "heat": 86,
+   "heat_reason": "AI data-center power-plus-cooling integration accelerates; OEM capacity scheduling and price-hike expectations heat up",
+   "tags": [
+    "数据中心",
+    "并购",
+    "影响BOM"
+   ],
+   "section": "头条事件",
+   "severity": "低",
+   "summary": "Vertiv Q3 revenue US$4.31 billion (+61%), adjusted EPS US$2.21 (+78%), adjusted operating margin 25.2%, organic orders more than doubled YoY; full-year revenue guidance raised to US$14.45-14.85 billion; completed the ~US$1.45 billion all-cash acquisition of Utility Innovation Group on Oct 27 (up to US$1.15 billion in additional earnouts), doubling down on microgrid controls and behind-the-meter power architectures.",
+   "numbers": [
+    "+61%",
+    "+100%",
+    "US$4.31 billion",
+    "US$14.45-14.85 billion",
+    "US$1.45 billion"
+   ],
+   "related_warnings": [
+    "warn-20261030-05"
+   ],
+   "sources": [
+    {
+     "outlet": "Zacks",
+     "date": "2026-10-28",
+     "url": "https://www.zacks.com/stock/news/3016720/vertiv-holdings-co-vrt-q3-earnings-and-revenues-surpass-estimates",
+     "first_party": false
+    },
+    {
+     "outlet": "Vertiv acquisition press release (PR Newswire)",
+     "date": "2026-10-27",
+     "url": "https://www.morningstar.com/news/pr-newswire/20261027cl80987/vertiv-completes-acquisition-of-utilityinnovation-group",
+     "first_party": true
+    }
+   ]
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Johnson Controls FY26 Q4 beats expectations, backlog hits record US$23 billion",
+   "detail": "FY26 Q4 (ended September 2026) released Oct 27: revenue US$7.11 billion (+10.4%, +12% organic), adjusted EPS US$1.66 (+31.7%), organic orders +44%, backlog US$23.0 billion (+43%) to a record, with data-center demand driving Americas applied HVAC orders; same day announced the sale of its global intrusion security business (DSC/Qolsys) to Truelink Capital (price undisclosed, expected to close H1 2027); initiated FY27 guidance (adjusted EPS US$6.15-6.30, organic revenue growth 11-12%).",
+   "source": "JCI official PR Newswire earnings release (via Morningstar), 2026-10-27",
+   "url": "https://www.morningstar.com/news/pr-newswire/20261027cg81690/johnson-controls-reports-q4-and-fy26-results-initiates-fy27-guidance",
+   "first_party": true,
+   "event_id": "evt-jci-fy26-q4-earnings"
+  },
+  {
+   "title": "Midea Q3 results: 9M net profit RMB 41.4 billion (+9.3%), Building Technologies the growth engine",
+   "detail": "9M revenue RMB 369.1 billion (+1.19%), net profit attributable to parent RMB 41.393 billion (+9.27%), Q3 net profit RMB 14.947 billion (+25.93%); Building Technologies revenue RMB 30.9 billion (+10%), robotics & automation RMB 24.9 billion (+10%), Q3 overseas OBM revenue +20%, RMB 13.3 billion in buybacks YTD.",
+   "source": "China Securities Journal / cs.com.cn / The Paper (company filing basis), 2026-10-29",
+   "url": "https://www.cs.com.cn/ssgs/01/2026/10/29/detail_2026102910048372.html",
+   "first_party": false,
+   "event_id": ""
+  },
+  {
+   "title": "Gree Q3 results: Q3 net profit halved, worst Q3 report since listing",
+   "detail": "Q3 revenue RMB 36.678 billion (-7.97%), net profit attributable to parent RMB 3.996 billion (-43.31%, largest Q3 single-quarter drop since listing); 9M revenue RMB 126.075 billion (-8.1%), net profit RMB 17.274 billion (-19.51%); Q3 copper and aluminum spot prices +35%/+15% YoY squeezed gross margin by 5.62 pp; ChinaIoL: 2026 9M China residential AC sell-through 150 million units (-8.4%), AVC projects Q4 industry sales -19.2%.",
+   "source": "21jingji.com / Yicai (company filing basis), 2026-10-26~28",
+   "url": "https://www.21jingji.com/article/20261029/herald/a5814c77a128bfe6aea55b341ee7be4b.html",
+   "first_party": false,
+   "event_id": "evt-gree-q3-2026"
+  },
+  {
+   "title": "Shenling Environmental lands RMB 1.0 billion convertible bond, RMB 800 million for liquid-cooling smart manufacturing base",
+   "detail": "Oct 26 issuance results disclosed: RMB 1.0 billion convertible bond placed, RMB 800 million for a liquid-cooling new-quality intelligent manufacturing base in Shunde, Foshan (land, filings and EIA all secured), RMB 200 million to replenish working capital; the company says growing liquid-cooling thermal-control orders have pushed existing capacity toward saturation.",
+   "source": "Securities Daily (company filing basis), 2026-10-28",
+   "url": "https://www.cs.com.cn/ssgs/cj2020/2026/10/28/detail_2026102810047808.html",
+   "first_party": false,
+   "event_id": "evt-shenling-convertible-bond"
+  },
+  {
+   "title": "Envicool Q3 results: revenue up, profit flat trend continues",
+   "detail": "Q3 revenue RMB 1.933 billion (+33.04%), net profit RMB 184 million (+0.25%); 9M revenue RMB 4.95 billion (+22.94%), net profit RMB 369 million (-7.62%), mainly due to regional sales-mix changes, higher expenses and FX losses; operating cash flow RMB 214 million (+167%).",
+   "source": "Yicai (company filing basis), 2026-10-26",
+   "url": "https://news.china.com/socialgd/10000169/20261027/49819916.html",
+   "first_party": false,
+   "event_id": ""
+  },
+  {
+   "title": "Vertiv launches SmartIT pre-engineered AI infrastructure platform (NVL72 liquid cooling)",
+   "detail": "Released on the official site Oct 26: built on NVIDIA MGX and OCP ORV3 architecture, supporting GB300 NVL72, Vera Rubin NVL72 and DGX/HGX Rubin NVL8; integrates racks, DC power conversion & distribution, direct-to-chip liquid cooling, in-row cooling distribution and monitoring, factory pre-validated, now orderable globally; Oct 29 announced a global AI thermal-management and fluid-management ecosystem with Dow (advanced coolants) and Solenis (chemical water treatment).",
+   "source": "Vertiv official site (Oct 26, primary) + datacenter-technology.com (Oct 29)",
+   "url": "https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-simplifies-high-density-ai-infrastructure-deployment-across-data-center-environments/",
+   "first_party": true,
+   "event_id": "evt-vertiv-smartit"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "Memory",
+   "detail": "TrendForce outlook: Q4 conventional DRAM contract prices +10%-15% QoQ, NAND +15%-20%; Samsung Oct 29 earnings call: Q3 DRAM ASP +20% QoQ, HBM4 shipments more than tripled QoQ, 2027 HBM capacity fully sold out, tightness continues; SK Hynix Oct 28 call: Q3 DRAM ASP +high-20% QoQ, DDR4 8Gb ~US$26 (~US$6.3 a year ago, ~4x), shortage expected through 2030.",
+   "source": "TrendForce / Pandromeda, Samsung Q3 earnings call, SK Hynix Q3 call, 2026-10-28/29",
+   "event_id": "evt-dram-hbm-shortage",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "MLCC",
+   "detail": "Samsung Electro-Mechanics MLCC lead times stretched to 52 weeks (Korean media, Oct 20), Q4 consumer X5R +25%-30%; Yageo plans another round late Oct-Nov (high-cap +50%, mid/low-cap +10%-30%), Sanhuan +10%-30% to distributors from October; TrendForce Oct 29: AI-grade MLCC shortage extends into H1 2027, Murata new capacity unlikely before 2028, Japanese MLCC makers highly likely to follow in November price talks; Murata issued EOL on select part numbers in 9 series in Sep-Oct (last order 2028-3-31).",
+   "source": "Korea Economic Daily (via Cailian Press) / 21st Century Business Herald, TrendForce Oct 29, 2026-10-20/22/29",
+   "event_id": "evt-mlcc-price-hike",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "Cloud capex",
+   "detail": "Amazon Oct 29 earnings: Q3 capex US$77.3 billion (well above US$57.5 billion consensus), ~US$220 billion for full-year 2026, CEO guides 2027 \"significantly higher\"; AWS revenue US$46.0 billion (+39%), backlog US$578 billion, AWS growth above 40% in 2027 and 2028.",
+   "source": "CNBC (via MarketFlux), 2026-10-29",
+   "event_id": "evt-cloud-capex-2026",
+   "tags": []
+  },
+  {
+   "material": "Connectors / cables",
+   "detail": "Nexans CFO (Reuters, Oct 22): global cable capacity tight, building a new XLPE line takes ~3 years, France's Enedis has shifted procurement contracts from 1-year to 6-7 years to lock in supply; Oracle declared force majeure in September on a large New Mexico data-center project (insufficient power); ABB data-center orders up triple digits. High-speed fiber connectors (CCS / Amphenol) ~50-week lead times (hyperscalers locked in capacity years ahead).",
+   "source": "Reuters, Edgewater channel survey, 2026-10-22 / Sep",
+   "event_id": "evt-nexans-cable-bottleneck",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "Copper-clad laminate (CCL) / copper foil",
+   "detail": "Kingboard Laminates issued its 8th price-hike letter of the year on Oct 13 (2116 and thinner styles / PP +15%); Shengyi Technology raised boards/PP another 10%-20% in early October; electronic cloth 7628 up to RMB 13.5-14/m (~RMB 3.9 in Sep 2025, +200%+), lead times 12-18 months; 6-micron lithium-battery copper foil tolling rose from RMB 20,500 to 24,000/ton between Jul 20 and Oct 12 (+17.1%); Kingboard HTE copper foil tolling ~RMB 30,000/ton (~RMB 15,000 a year ago), inventory near zero (UBS, Oct 12).",
+   "source": "China Securities Journal, Securities Star (citing Mysteel / UBS), 2026-10-19/21",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "Advanced packaging / OSAT",
+   "detail": "TrendForce (Oct 20): TSMC CoWoS monthly capacity 120-140K wafers, 2026 advanced-packaging capacity still 10%-20% short; Taiwan OSATs quoting +10%-30% for Q4 (EEWorld, Oct 17); ASE 2026 capex US$8.5 billion (+60%).",
+   "source": "newtimespace, EEWorld, 2026-10-17/20",
+   "event_id": "evt-osat-price-hike",
+   "tags": [
+    "影响BOM"
+   ]
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "Industrial automation",
+   "detail": "Industrial-control components repriced across the board: Omron / Schneider relays +10%-25%, Turck / Pepperl+Fuchs sensors +15%-35%, Phoenix Contact / Weidmueller connectors +12%-30%, automation-line costs up ~8%-15% overall; some European chip lead times exceed 52 weeks, one major analog vendor advises customers to book orders into 2028.",
+   "source": "ICkey industry roundup (channel compilation), 2026-10-17",
+   "event_id": "evt-industrial-components-price-hike"
+  },
+  {
+   "industry": "Semiconductor foundry",
+   "detail": "TSMC 3nm +15% in 2026H2, another +5-10% in 2027, 2nm wafer ~US$30,000; 12/16/28nm potentially +10%; global 8-inch fab utilization ~90% on average; PSMC logic +10%-15%, memory foundry +45%; Intel (effective Sep 1) and Qualcomm Snapdragon X/X2 (effective Oct 1, +10%) have passed through price hikes.",
+   "source": "anysilicon industry roundup, Espresso, Sep 2026",
+   "event_id": ""
+  },
+  {
+   "industry": "Consumer electronics",
+   "detail": "Counterpoint preliminary (via Korea JoongAng Daily, Oct 15): Q3 global smartphone shipments -20% YoY (worst Q3 since 2012), mainly due to memory price hikes and shortages, retail prices up ~20% overall; Samsung raised Galaxy S26 prices Oct 1, Apple raised iPhone 18 Pro prices - memory costs passed through.",
+   "source": "Korea JoongAng Daily, GlobalData, 2026-10-15 / Oct 1",
+   "event_id": "evt-samsung-q4-mobile-production-cut"
+  },
+  {
+   "industry": "Semiconductor upstream",
+   "detail": "Japanese photoresist giants (JSR / Tokyo Ohka / Shin-Etsu) raised all categories a base +15% from Oct 1, spot lots up to +38% (Sina Finance, citing Oct 12); ASML notified Korean customers of a blanket +10% on lithography replacement parts effective for 2027-January deliveries (The Elec via Sina Finance, Oct 10) - fab cost pressure continues to transmit into foundry/OSAT.",
+   "source": "Sina Finance, 2026-10-10/12",
+   "event_id": ""
+  },
+  {
+   "industry": "Trade policy",
+   "detail": "Busan Xi-Trump deal (Oct 30): US tariffs on China 57%->47% (fentanyl-related rate down to 10%), China suspends this month's rare-earth export controls for one year and resumes soybean purchases, both sides agree to halt reciprocal port-fee measures; announced publicly by the leaders, implementation details pending. If implemented it would ease cross-border costs for electronic materials.",
+   "source": "TheEdge / Reuters Busan wire (via i3investor), 2026-10-30",
+   "event_id": "evt-busan-tariff-deal-2026"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Refrigerants",
+   "type": "价格",
+   "detail": "R32 holds near historic highs: East China mainstream RMB 63,500-64,500/ton, Dongyue Lv Leng / Juhua quotes RMB 65,500/ton (Oct 14), industry annualized quota utilization 96.71%; R410A RMB 57,000-59,500/ton; R22 ex-factory RMB 19,500/ton (pulled back on softer demand, Oct 21).",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Copper & silver",
+   "type": "价格",
+   "detail": "LME 3-month copper closed Oct 28 at US$14,484/ton, rebounding ~2.8% from the Oct 22 five-week low of US$14,089 (calculated from observed prices), still below the Oct 12 peak of US$14,657.5/ton; spot silver Oct 29 ~US$52.08-52.38/oz (down ~3.5% on the day).",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-copper-high"
+  },
+  {
+   "category": "Steel",
+   "type": "涨价",
+   "detail": "Nucor Oct 19 customer letter: HRC CSP up another US$15/short ton to US$1,255/short ton (JV CSI to US$1,320), after US$10 to US$1,230 on Oct 5 - consecutive weekly hikes, delivery 3-5 weeks, US HRC +52% YoY (four-year high); domestic HRC soft (Xuzhou Shagang commodity coil RMB 3,390/ton on Oct 27, -RMB 20).",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-steel-pipe-price-hike-oct"
+  },
+  {
+   "category": "Aluminum",
+   "type": "价格",
+   "detail": "LME 3-month aluminum rebounded to US$3,064/ton on Oct 27 (+1.22%); Wood Mackenzie (Oct 22): ~900Kt-1,000Kt global primary aluminum deficit in 2026 (damaged Middle East smelters took ~2% of capacity offline), swinging to surplus in 2027.",
+   "subcategories": [
+    "Aluminum Fin Stock"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-woodmac-aluminum-deficit"
+  },
+  {
+   "category": "IGBT / Power Devices",
+   "type": "涨价",
+   "detail": "onsemi's second broad price hike effective Oct 10 (channel sources: MOSFET/IGBT/SiC +5%-15%, second this year), TI and Renesas following (Renesas next round 2027-1-1), ST raised prices three times this year (Apr 1 / Jun 28 / Aug 23), Infineon at least twice; mainstream power-device lead times stretched from 8-12 weeks to 30+ weeks; domestic IDMs (China Resources Micro / Silan) +15%+ across the board from Jul 1.",
+   "subcategories": [
+    "IGBT Modules",
+    "功率器件"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-onsemi-price-hike-2"
+  },
+  {
+   "category": "Variable-frequency drives (VSD)",
+   "type": "涨价",
+   "detail": "INVT's official price-adjustment letter (issued Sep 7) effective Oct 8: low-voltage drives full range +3%-15%, medium/high-voltage +5%, elevator drives +5%, servo systems (drives + motors) +3%-5%; mainstream brands (ABB / Siemens / Danfoss / Schneider) drive lead times 10-26 weeks and rising (third-party roundup).",
+   "subcategories": [
+    "Variable Speed Drives Low Voltage"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-invt-vsd-price-hike"
+  },
+  {
+   "category": "Low-voltage electricals",
+   "type": "涨价",
+   "detail": "Systematic repricing of industrial-control components: Omron / Schneider relays +10%-25%, Turck / Pepperl+Fuchs sensors +15%-35%, Phoenix Contact / Weidmueller connectors +12%-30% (channel compilation); no new breaker/contactor hike letters from Schneider / ABB / Siemens / Chint / Delixi this round; Siemens DI China price adjustment effective 11-01 (2 days to go).",
+   "subcategories": [
+    "Relay",
+    "Circuit Breakers",
+    "Contactors",
+    "继电器与电源"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-siemens-di-china-price-hike"
+  },
+  {
+   "category": "Transformers",
+   "type": "产能",
+   "detail": "Hitachi Energy announced a C$479 million investment in a transformer insulation material (pressboard) plant in London, Ontario (Canada's first and the largest of its kind globally, online 2028, 20Kt/year pressboard), plus C$270 million to expand large-transformer capacity in Varennes, Quebec (Oct 16); China transformer exports RMB 64.6 billion (+36%, +182% to the US, citing CSC Financial research); North America transformer lead times 128-144 weeks.",
+   "subcategories": [
+    "Transformers (Large)",
+    "变压器与互感器"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-hitachi-energy-transformer-warning"
+  },
+  {
+   "category": "Magnet steel",
+   "type": "价格",
+   "detail": "Oct 27 praseodymium-neodymium metal down RMB 5,000 to RMB 890,000/ton, praseodymium-neodymium oxide RMB 717,500/ton; West China Securities (Oct 17): light rare earths steady at highs, heavy rare earths (terbium oxide -2.60% WoW) still falling; the Busan deal's one-year pause on rare-earth export controls (leaders announced, details pending) gives NdFeB supply brief breathing room.",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-rare-earth-q4-price"
+  },
+  {
+   "category": "PCB / CCL",
+   "type": "涨价",
+   "detail": "Kingboard Laminates raised 2116 and thinner styles and PP another 15% on Oct 13 (multiple rounds this year); Shengyi Technology raised boards/PP another 10%-20% in early October; copper foil tolling: 18-micron HTE RMB 26,000->26,500/ton (steady after Oct 26, Mysteel), Kingboard HTE tolling ~RMB 30,000/ton (~RMB 15,000 a year ago); electronic cloth 7628 lead times 12-18 months.",
+   "subcategories": [
+    "PCB Boards",
+    "PCBA板卡"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-pcb-ccl-price-hike-2"
+  },
+  {
+   "category": "Memory",
+   "type": "涨价",
+   "detail": "SK Hynix Oct 28 Q3 call: Q3 DRAM ASP +high-20% QoQ, DDR4 8Gb ~US$26 (~US$6.3 a year ago, ~4x), NAND 128Gb US$30.61 (8x in a year), shortage expected through 2030; Samsung Oct 29: Q3 DRAM ASP +20% QoQ, HBM4 shipments more than tripled QoQ, 2027 HBM capacity fully sold out; TrendForce: Q4 conventional DRAM contract prices +10%-15%, NAND +15%-20%.",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-dram-hbm-shortage"
+  },
+  {
+   "category": "Capacitors",
+   "type": "涨价",
+   "detail": "Select Samsung Electro-Mechanics MLCC lead times stretched from 39-49 weeks to 61 weeks (DigiKey pricing, new orders deliver end-2027), 47uF high-cap MLCC US$17.50->US$21.60 per 100 pcs Aug-Oct (+23%); TrendForce Oct 29: AI-grade MLCC shortage extends into H1 2027, Murata new capacity unlikely before 2028, Japanese MLCC makers highly likely to follow in November price talks; Murata issued EOL on select part numbers in 9 series in Sep-Oct (last order 2028-3-31); Yageo plans another round late Oct-Nov (high-cap +50%, mid/low-cap +10%-30%), Sanhuan +10%-30% to distributors from October.",
+   "subcategories": [
+    "电容"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "category": "Resistors & inductors",
+   "type": "涨价",
+   "detail": "Fenghua resistor new-order scheduling 16-20 weeks; general thick-film resistors +15%-20%, alloy resistors +20%-30%; Yageo / Walsin raised prices multiple times this year, capacity sold out (channel/media roundup).",
+   "subcategories": [
+    "电阻与电感"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-resistor-price-hike"
+  },
+  {
+   "category": "Analog & power ICs / MCUs",
+   "type": "涨价",
+   "detail": "Allegro's third price adjustment Oct 1, China Resources Micro / Silan +15% from July, Renesas has announced the next round for 2027-1-1, Nations Technologies MCU +10%-20% from Oct 1 (official notice); mainstream power-chip lead times 30+ weeks, 8-inch analog devices 20-40 weeks.",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-renesas-price-hike"
+  },
+  {
+   "category": "Sensors",
+   "type": "涨价",
+   "detail": "Sensor makers ST / Allegro / Novosense / SmartSens +10%-50% (automotive-grade oxygen sensors, industrial Pt100/Pt1000 RTDs, force sensors, channel compilation); automotive MEMS wafer foundry lead times stretched to 36 weeks.",
+   "subcategories": [
+    "Sensor",
+    "Sensors - Pressure",
+    "传感器与仪表"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-industrial-components-price-hike"
+  },
+  {
+   "category": "Connectors & harnesses",
+   "type": "交期",
+   "detail": "High-speed fiber connectors (CCS / Amphenol) ~50-week lead times (hyperscalers locked in capacity years ahead); Amphenol 10-14 weeks, TE 10-16 weeks (channel survey); Nexans: global cable capacity tight, a new XLPE line takes ~3 years.",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-ai-server-connector-squeeze"
+  },
+  {
+   "category": "Cables",
+   "type": "涨价",
+   "detail": "Prysmian North America announced utility cable products +5%-7% from Nov 1 (citing continued sharp rises in key raw-material costs); Section 338 on Canada effective Oct 30: some refrigeration equipment removed from the 50% tariff list (some valves added back).",
+   "subcategories": [
+    "Cables"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": "evt-prysmian-cable-nov-hike"
+  },
+  {
+   "category": "Tier B rotation",
+   "type": "排查无异常",
+   "detail": "Batch 12 (Cameras-Video, Filter Drier Valves, Gears, Large Motors 100HP+, Packaging: Returnables, Sealed Lead Acid Battery, Test And Drain Valves, Uncategorized Pumps, heat exchangers & cold plates, power devices): no anomalies in 10 categories; 1 substantive hit in Coolants (see below).",
+   "subcategories": [
+    "Cameras - Video",
+    "Filter Drier Valves",
+    "Gears: Chillers & Industrial Refrigeration",
+    "Large Motors (100 HP And Above 75KW) - Non-Hermetic",
+    "Packaging: Returnables",
+    "Sealed Lead Acid (SLA) Battery",
+    "Test And Drain Valves",
+    "Uncategorized Pumps",
+    "换热器与冷板",
+    "功率器件"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Coolants",
+   "type": "涨价",
+   "detail": "Ethylene glycol purchase prices +20.75% YoY (Tongyi's Q1-Q3 2026 key operating data announcement, Oct 28, primary disclosure), base oil +20.28% YoY, while its antifreeze selling prices -1.05% YoY; ethylene glycol front-month futures up over 5% at the Oct 28 close (RMB 5,276/ton).",
+   "subcategories": [
+    "Coolants"
+   ],
+   "company": null,
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-ethylene-glycol-cost-up"
+  },
+  {
+   "category": "Compressors",
+   "type": "排查无异常",
+   "detail": "No price-hike / shortage / capacity-move news in the last 3 days for Highly, Lingda, GMCC, Danfoss or any compressor type (centrifugal / reciprocating / rotary / scroll / screw); only industry research updates.",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Scroll Compressors",
+    "Screw Compressors",
+    "Rotary Compressors",
+    "Reciprocating Compressors"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Motors / fans / pumps",
+   "type": "排查无异常",
+   "detail": "No price or lead-time moves for HVAC ECM / fan / pump (Winday's Oct 16 research call covered wind turbines, a different scope from HVAC).",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Bearings",
+   "type": "排查无异常",
+   "detail": "Domestic GCr15 bearing-steel ex-factory prices steady Oct 26-28; no price-hike letters from SKF or other bearing makers.",
+   "subcategories": [
+    "Ball Bearings"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Valves",
+   "type": "排查无异常",
+   "detail": "Only company news such as Sanhua's four-way-valve patent grant (Oct 23) and DunAn Environmental's stop-valve patent grant (Oct 27); no valve price-hike / shortage news.",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Heat exchangers",
+   "type": "排查无异常",
+   "detail": "Stainless heat-exchange tube prices unchanged on Oct 26/27; no price-hike news for HVAC microchannel / finned-tube / shell-and-tube heat exchangers.",
+   "subcategories": [
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Clock / crystal oscillators / FPGAs",
+   "type": "排查无异常",
+   "detail": "Market rumor of AMD FPGA +10%-20% on Dec 27 marked unconfirmed (discarded as Grade C); no crystal-maker price-adjustment letters.",
+   "subcategories": [
+    "时钟/晶振/FPGA"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "PCBA boards",
+   "type": "排查无异常",
+   "detail": "No new price-hike letters from the contract-manufacturing side (the \"PCBA price-hike letter\" on ipcb.com is a 2021 article, discarded as Grade C); PCB board price hikes are transmitting into contract manufacturing.",
+   "subcategories": [
+    "PCBA板卡"
+   ],
+   "company": null,
+   "tags": [],
+   "event_id": ""
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "有实质动态",
+   "note": "FY26 Q4 beat expectations (revenue +10.4%, backlog US$23.0 billion to a record); selling global intrusion security business (DSC/Qolsys) to Truelink Capital"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Q3 results: data-center orders +300%, backlog US$8.5 billion to a record; full-year guidance raised"
+  },
+  {
+   "company": "特灵",
+   "status": "有实质动态",
+   "note": "Q3 results: revenue +18%, backlog US$12.5 billion (+73%); full-year guidance raised"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "Only an Oct 29 annual US-business PR roundup, no new moves; Oct 14 Phoenix expansion outside the window"
+  },
+  {
+   "company": "美的",
+   "status": "有实质动态",
+   "note": "Q3 results: 9M net profit RMB 41.4 billion (+9.3%), Q3 net profit RMB 14.947 billion (+25.93%); Building Technologies +10%"
+  },
+  {
+   "company": "格力",
+   "status": "有实质动态",
+   "note": "Q3 results: Q3 net profit RMB 3.996 billion (-43.31%, halved), copper/aluminum costs squeezed gross margin by 5.62 pp"
+  },
+  {
+   "company": "海尔智家",
+   "status": "有实质动态",
+   "note": "Q3 results: Q3 net profit RMB 4.682 billion (-12.31%), ~RMB 500 million in one-off supply-chain restructuring charges"
+  },
+  {
+   "company": "日立/KADENOVA",
+   "status": "无实质动态",
+   "note": "Oct 22 new company name KADENOVA slightly outside the 3-day window, excluded from the main text"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "No substantive news in the window (searched)"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "Oct 5 5GW deal and Oct 19 Virginia plant both outside the window"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "Oct 14 Southeast Asia commercial rollout outside the window"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "Q3 revenue +61%, organic orders doubled; completed US$1.45 billion UIG acquisition; launched SmartIT platform"
+  },
+  {
+   "company": "英维克",
+   "status": "有实质动态",
+   "note": "Q3 results: Q3 revenue +33.04%, net profit +0.25%, revenue-up-profit-flat trend continues"
+  },
+  {
+   "company": "申菱环境",
+   "status": "有实质动态",
+   "note": "RMB 1.0 billion convertible bond issuance results finalized, RMB 800 million for liquid-cooling smart manufacturing base"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "Only an Oct 27 unusual-price-move filing, no company action"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "Only unusual-price-move filings"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "Only an Oct 15 unusual-price-move filing"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "Only an Oct 21 HK-stock price-move piece"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-10-30",
+   "label": "Section 338 Canada adjustment takes effect (some refrigeration equipment removed from the 50% list)"
+  },
+  {
+   "date": "2026-11-01",
+   "label": "Siemens DI China price-adjustment letter effective (Nov 1)"
+  },
+  {
+   "date": "2026-11-01",
+   "label": "Prysmian North America utility cable +5%-7% price hike effective"
+  },
+  {
+   "date": "2026-11-09",
+   "label": "178 Section 301 exclusion items expire (no extension announced)"
+  },
+  {
+   "date": "2027-01-01",
+   "label": "Renesas next price-adjustment round effective; ASML Korea lithography spare parts +10% in effect"
+  },
+  {
+   "date": "2028-03-31",
+   "label": "Murata last-order date (EOL) for select MLCC part numbers in 9 series"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261030-01",
+   "title": "Section 301 exclusions expire Nov 9 (10-day countdown)",
+   "urgency": "高",
+   "impact": "US-imported electronic materials (semiconductors / passives / connectors)",
+   "action": "Check the 178-item exclusion list; complete customs clearance of in-transit orders or shift sourcing before Nov 9",
+   "trigger": "11-09",
+   "deadline": "2026-11-09",
+   "related_events": [
+    "evt-section301-exclusions-expire-nov9"
+   ]
+  },
+  {
+   "id": "warn-20261030-02",
+   "title": "Siemens DI China price adjustment effective Nov 1 (2-day countdown)",
+   "urgency": "高",
+   "impact": "Industrial-control electricals (drives / controls)",
+   "action": "Complete stocking and price locks by Oct 31",
+   "trigger": "11-01",
+   "deadline": "2026-11-01",
+   "related_events": [
+    "evt-siemens-di-china-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261030-03",
+   "title": "Prysmian North America utility cable +5%-7% from Nov 1",
+   "urgency": "高",
+   "impact": "North America cable procurement",
+   "action": "Confirm orders and pricing by Oct 31",
+   "trigger": "11-01",
+   "deadline": "2026-11-01",
+   "related_events": [
+    "evt-prysmian-cable-nov-hike"
+   ]
+  },
+  {
+   "id": "warn-20261030-04",
+   "title": "MLCC lead times breach 61 weeks, Murata likely to follow in November talks",
+   "urgency": "中",
+   "impact": "MLCC / passives",
+   "action": "Finish H1 2027 stocking of tight spot part numbers before November; start second-source qualification (Yageo / Walsin / Fenghua)",
+   "trigger": "November price talks",
+   "deadline": "",
+   "related_events": [
+    "evt-mlcc-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261030-05",
+   "title": "Top OEMs' order books overflow: chiller / CDU capacity being locked up",
+   "urgency": "中",
+   "impact": "Commercial chillers, CDUs, power distribution",
+   "action": "Confirm production slots this week for Q1-delivery chiller / CDU projects to avoid being crowded out",
+   "trigger": "Carrier backlog US$8.5 billion, Trane US$12.5 billion, Vertiv orders doubled",
+   "deadline": "",
+   "related_events": [
+    "evt-20261030-01",
+    "evt-20261030-02",
+    "evt-20261030-03"
+   ]
+  },
+  {
+   "id": "warn-20261030-06",
+   "title": "Power-device price hikes landing in waves",
+   "urgency": "中",
+   "impact": "IGBT / SiC / MOSFET, analog ICs, VSD",
+   "action": "Complete price-lock negotiations for power / analog devices by December; place long orders early for 30+-week-lead-time part numbers",
+   "trigger": "onsemi effective Oct 10; INVT VSD effective Oct 8; Renesas 2027-1-1 pending",
+   "deadline": "",
+   "related_events": [
+    "evt-onsemi-price-hike-2",
+    "evt-invt-vsd-price-hike",
+    "evt-renesas-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261030-07",
+   "title": "Ethylene glycol costs rising: coolant pass-through imminent",
+   "urgency": "中",
+   "impact": "Coolants / antifreeze",
+   "action": "Lock purchase prices in November or seek long-term agreements",
+   "trigger": "Purchase prices +20.75% YoY, futures up over 5% on Oct 28",
+   "deadline": "",
+   "related_events": [
+    "evt-ethylene-glycol-cost-up"
+   ]
+  },
+  {
+   "id": "warn-20261030-08",
+   "title": "DRAM / HBM price hikes continue, 2027 HBM capacity sold out",
+   "urgency": "中",
+   "impact": "Control / main boards (DRAM / HBM)",
+   "action": "Assess memory stocking cycles on the PCBA contract-manufacturing side; lock in 2027 supply for HBM-related projects",
+   "trigger": "Q4 contract prices +10%-15%; Samsung 2027 HBM sold out",
+   "deadline": "",
+   "related_events": [
+    "evt-dram-hbm-shortage"
+   ]
+  },
+  {
+   "id": "warn-20261030-09",
+   "title": "Rare-earth export controls paused for one year: NdFeB breathing room",
+   "urgency": "低",
+   "impact": "Permanent-magnet motors / magnet steel",
+   "action": "Use the 12-month window to complete second-source qualification and safety-stock assessment for magnet steel",
+   "trigger": "Busan deal (leaders announced, implementation details pending)",
+   "deadline": "",
+   "related_events": [
+    "evt-busan-tariff-deal-2026"
+   ]
+  },
+  {
+   "id": "warn-20261030-10",
+   "title": "Section 338 Canada adjustment effective Oct 30",
+   "urgency": "低",
+   "impact": "Canada-related refrigeration equipment procurement",
+   "action": "Check against the latest HTS codes (some refrigeration equipment removed from the 50% list, some valves added back)",
+   "trigger": "10-30",
+   "deadline": "2026-10-30",
+   "related_events": [
+    "evt-us-canada-section338-ac-tariff"
+   ]
+  },
+  {
+   "id": "warn-20261030-11",
+   "title": "Copper and aluminum steady at highs, HRC up again",
+   "urgency": "低",
+   "impact": "Copper tube / heat exchangers, sheet-metal parts",
+   "action": "Reference LME US$14,484/ton and Nucor HRC US$1,255/short ton in Q4 copper / steel long-term agreement talks",
+   "trigger": "LME copper 14,484; Nucor HRC 1,255",
+   "deadline": "",
+   "related_events": [
+    "evt-copper-high",
+    "evt-steel-pipe-price-hike-oct"
+   ]
+  },
+  {
+   "id": "warn-20261030-12",
+   "title": "Domestic OEM demand softening: upstream bargaining window opening",
+   "urgency": "低",
+   "impact": "Domestic upstream: compressors / valves / copper etc.",
+   "action": "Start annual cost-down negotiations when domestic suppliers face earnings pressure in Q4",
+   "trigger": "9M residential AC sell-through -8.4%, Gree Q3 net profit -43%",
+   "deadline": "",
+   "related_events": [
+    "evt-gree-q3-2026"
+   ]
+  }
+ ],
+ "daily_report": {
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Morning Briefing (2026-10-30, Friday)",
+  "date": "2026-10-30",
+  "headlines": [
+   "Carrier Q3 data-center orders surge 300%, backlog tops US$8.5 billion to record high",
+   "Trane backlog US$12.5 billion (+73%), Americas commercial HVAC orders +80%",
+   "Vertiv Q3 revenue +61%, organic orders doubled, completes US$1.45 billion UIG acquisition"
+  ],
+  "body_file": "briefs/2026-10-30-hvac-cdu-morning-briefing.md"
+ }
+}
