@@ -391,7 +391,7 @@ zh:{
  act_dl:"行动时间：{d}",act_bases:"涉及基地：",
  playbook:"今日情景指引",
  sec:["行业动态 / 技术与合作","头条事件","数据中心 / AI 虹吸效应","跨行业传导","供应商动态","供应链预警与建议","我的供应链","方法说明"],
- u_oneliner:"条一句话",u_relev:"个相关事件",u_events:"个",u_materials:"类物料",u_links:"条",u_warnings:"条",u_items:"条",u_subcats:"小类",
+ u_oneliner:"条动态",u_relev:"个相关事件",u_events:"个",u_materials:"类物料",u_links:"条",u_warnings:"条",u_items:"条",u_subcats:"小类",
  s1_guide:"今日 <b>{n}</b> 条{c}。",
  s1_guide_c:"，其中 <b>{vc}</b> 条为厂商口径（已标注，请甄别）",
  vendor_tag:"厂商口径",
@@ -482,7 +482,7 @@ en:{
  act_dl:"Action by: {d}",act_bases:"Bases affected: ",
  playbook:"Today's Playbooks",
  sec:["Industry / Technology & Partnerships","Top Stories","Data-Center / AI Siphon Effects","Cross-Industry Transmission","Supplier Dynamics","Supply-Chain Warnings & Recommendations","My Supply Chain","Methodology"],
- u_oneliner:"one-liners",u_relev:"related events",u_events:"events",u_materials:"material categories",u_links:"links",u_warnings:"warnings",u_items:"items",u_subcats:"subcategories",
+ u_oneliner:"updates",u_relev:"related events",u_events:"events",u_materials:"material categories",u_links:"links",u_warnings:"warnings",u_items:"items",u_subcats:"subcategories",
  s1_guide:"Today: <b>{n}</b> one-liners{c}.",
  s1_guide_c:", including <b>{vc}</b> vendor-claim items (labeled — verify independently)",
  vendor_tag:"Vendor claim",
@@ -836,7 +836,12 @@ function renderMain(d){
   /* ---- 一、行业动态 ---- */
   const iu=d.industry_updates||[];
   const vc=iu.filter(i=>i.vendor_claim).length;
-  const iuList=iu.map((i,n)=>`<li><span class="n">${n+1}</span><div>${i.vendor_claim?`<span class="vtag">${esc(t("vendor_tag"))}</span>`:""}${esc(i.title)}</div></li>`).join("");
+  const iuList=iu.map((i,n)=>{
+    const vt=i.vendor_claim?`<span class="vtag">${esc(t("vendor_tag"))}</span>`:"";
+    const badge=i.source?(i.first_party?`<span class="fh">${esc(t("primary"))}</span>`:`<span class="fr">${esc(t("repost"))}</span>`):"";
+    const srcBody=i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.source)}</a>`:esc(i.source||"");
+    return `<li><span class="n">${n+1}</span><div>${vt}<b>${esc(i.title)}</b>${i.detail?`<p class="sum">${esc(i.detail)}</p>`:""}${i.source?`<p class="src">${t("src_label")}${badge}${srcBody}</p>`:""}</div></li>`;
+  }).join("");
   const s1ev=bySec("行业动态");
   const s1=secttl("一",t("sec")[0],iu.length+" "+t("u_oneliner")+(s1ev.length?` · ${s1ev.length} `+t("u_relev"):""))
     +guide(fmt(t("s1_guide"),{n:iu.length,c:vc?fmt(t("s1_guide_c"),{vc:vc}):""}))
