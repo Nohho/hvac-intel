@@ -218,6 +218,11 @@
      "date": "2026-10-28",
      "change": "SEMCO Q4对OEM/ODM提价：消费级X5R约+25~30%、AI服务器X6S约+10~20%（rapidonline）。",
      "text_en": "SEMCO Q4 price hikes to OEM/ODM: consumer X5R +25-30%, AI-server X6S +10-20% (rapidonline)."
+    },
+    {
+     "date": "2026-11-01",
+     "change": "村田停产时间表明确：GRM/GRJ/GRT等九大系列特定料号2028-03-31最后下单、2029-03-31停止出货。",
+     "text_en": "Murata EOL schedule clarified: nine series incl. GRM/GRJ/GRT phased out, last order Mar 31 2028, final shipment Mar 31 2029."
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -332,6 +337,11 @@
      "date": "2026-10-30",
      "change": "LME 3M铜收14,140美元/吨（-1.5%），10月录得-1.8%月度下跌（6月以来首次）；世行《商品市场展望》（10-28）将2027铜价预测上调18%至13,000美元/吨（矿供应受限+电网/数据中心/电动车需求）。",
      "text_en": "LME 3M copper closed at $14,140/ton (-1.5%) on Oct 30; October posted a -1.8% monthly decline, the first since June. World Bank Commodity Markets Outlook (10-28) raised its 2027 copper forecast 18% to $13,000/ton (mine supply constraints + grid/data-center/EV demand)."
+    },
+    {
+     "date": "2026-11-01",
+     "change": "LME铜10-19~23当周收14,232.5美元/吨维持历史高位；10-30沪铜主力108,050元/吨、国内1#电解铜现货约110,165元/吨、升水1,250~1,300元/吨（LME Insight 10-23、Mysteel 10-30）。",
+     "text_en": "LME copper held historic highs at $14,232.5/t the week of Oct 19-23; Oct 30 SHFE main contract RMB 108,050/t, domestic #1 cathode spot ~RMB 110,165/t (LME Insight Oct 23, Mysteel Oct 30)."
     }
    ],
    "title": "铜价历史高位",
@@ -478,6 +488,11 @@
      "date": "2026-10-30",
      "change": "10月现货：通用DDR4 8Gb均价$27.50再创历史新高（环比+5.77%）；128Gb MLC NAND持平于$30.61，结束21个月连涨；TrendForce预计Q4 PC DRAM合约价+13~18%。",
      "text_en": "October spot: generic DDR4 8Gb averaged $27.50, a new all-time high (+5.77% MoM); 128Gb MLC NAND flat at $30.61, ending a 21-month rally. TrendForce sees Q4 PC DRAM contract prices +13-18% QoQ."
+    },
+    {
+     "date": "2026-11-01",
+     "change": "SK海力士Q3电话会：DRAM及HBM产能到2029年\"近乎售罄\"（含在谈LTA），供不应求延续至2030年。",
+     "text_en": "SK Hynix Q3 call: DRAM and HBM capacity \"nearly sold out\" through 2029 (incl. LTAs under negotiation); supply tightness into 2030."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -813,6 +828,11 @@
      "date": "2026-10-30",
      "change": "氧化镨钕报711,500元/吨（日降5,500，Mysteel）；稀土管制暂停包将于11-10到期，截至10月中旬无延期公告。",
      "text_en": "Praseodymium-neodymium oxide quoted at RMB 711,500/ton (-5,500/day, Mysteel) on Oct 30; rare-earth control pause expires Nov 10 with no extension announced as of mid-October."
+    },
+    {
+     "date": "2026-11-01",
+     "change": "北方稀土Q4稀土精矿关联交易价38,769元/吨（环比+0.53%、同比+48%）；氧化镨钕10月下旬72~72.5万元/吨，较月中高点回撤2~3万（Mysteel 10-26~30）。",
+     "text_en": "Northern Rare Earth Q4 2026 concentrate transfer price RMB 38,769/t (+0.53% QoQ, +48% YoY); praseodymium-neodymium oxide RMB 720k-725k/ton late Oct (Mysteel Oct 26-30)."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -1308,7 +1328,7 @@
   {
    "id": "evt-siemens-di-china-price-hike",
    "seeded": false,
-   "status": "已通知",
+   "status": "已生效",
    "status_note": "公告2026-10-12、2026-11-01生效；调价对象为DI自动化产品线（PLC/HMI/变频器/伺服），非低压电气线",
    "subcategories": [],
    "company": "西门子",
@@ -1322,6 +1342,11 @@
      "date": "2026-10-12",
      "change": "西门子DI中国区调价函（第三方转述官方函全文）：SIMATIC S7-1500 CPU +15%、S7-1200 G2 +7%、HMI Comfort面板+15%、IPC平均+25%（硬件包+30%）、HMI面板存储卡+50%、SINAMICS存储卡+125%、SINAMICS硬件+9%、V90/1FL6 +10%、SIMOTICS电机+6%，2026-11-01生效",
      "text_en": "Siemens DI China price-adjustment letter (third-party relay of the full official letter): SIMATIC S7-1500 CPU +15%, S7-1200 G2 +7%, HMI Comfort panels +15%, IPC averaging +25% (hardware bundles +30%), HMI panel memory cards +50%, SINAMICS memory cards +125%, SINAMICS hardware +9%, V90/1FL6 +10%, SIMOTICS motors +6%; effective Nov 1, 2026"
+    },
+    {
+     "date": "2026-11-01",
+     "change": "西门子DI中国区调价函11-01生效：SIMATIC S7-1500 CPU +15%、S7-1200 G2 +7%、HMI Comfort面板+15%、IPC平均+25%、SINAMICS硬件+9%、V90/1FL6 +10%等。",
+     "text_en": "Siemens DI China price list effective Nov 1: S7-1500 CPU +15%, S7-1200 G2 +7%, HMI Comfort panels +15%, IPC avg +25%, SINAMICS hardware +9%, V90/1FL6 +10%."
     }
    ]
   },
@@ -1849,6 +1874,11 @@
      "date": "2026-10-28",
      "change": "USTR 10-26在联邦公报发布征求意见提案：拟将海事港口费暂停延长至2027-01-09（意见截止10-30），该提案未定案；178项排除条款本身仍无延长通知、11-09到期不变；港口费暂停与排除条款同日到期",
      "text_en": "USTR published a Federal Register request for comments on Oct 26 proposing to extend the maritime port-fee suspension to Jan 9, 2027 (comments due Oct 30); the proposal is not final, and no extension notice exists for the 178 exclusions, which still expire Nov 9; the port-fee suspension and the exclusions lapse the same day"
+    },
+    {
+     "date": "2026-11-01",
+     "change": "截至10-31仍无延期公告：178项排除11-09（美东）到期进入倒计时8天；海事港口费暂停延期提案意见征集10-30已截止、仍未定案。",
+     "text_en": "No extension notice as of Oct 31: 178 exclusions expire Nov 9 (ET), 8 days out; maritime-fee suspension extension proposal comment period closed Oct 30, still unfinalized."
     }
    ]
   },
@@ -1995,7 +2025,7 @@
   },
   {
    "id": "evt-prysmian-cable-nov-hike",
-   "status": "已通知",
+   "status": "已生效",
    "title": "Prysmian北美公用事业电缆11-01起涨价5%~7%",
    "title_en": "Prysmian North America utility cable price increase of 5%-7% from Nov 1",
    "subcategories": [
@@ -2007,6 +2037,11 @@
      "date": "2026-10-29",
      "change": "Prysmian北美宣布公用事业电缆产品11-01起涨价5%~7%，原因为关键原材料成本持续大幅上涨，具体幅度按电缆设计规格而定",
      "text_en": "Prysmian North America announces a 5%-7% price increase on utility wire and cable products effective Nov 1, citing sustained sharp increases in key material costs; exact percentage varies by cable design"
+    },
+    {
+     "date": "2026-11-01",
+     "change": "Prysmian北美公用事业电缆11-01起涨价5%~7%已生效（关键原材料成本持续大幅上涨）。",
+     "text_en": "Prysmian North America utility-cable price hike 5%-7% effective Nov 1 (rising raw-material costs)."
     }
    ]
   },
@@ -2182,6 +2217,32 @@
      "date": "2026-10-27",
      "change": "TI/ADI/安森美/意法/瑞萨模拟电源芯片连环涨价（8月起先后两轮涨价函）；通用服务器PMIC交期35~40周，分销商电源模拟库存Q3降10%；UBS 10-16调查76%直采买家担心半年内缺货（辰芯伟业，B类为渠道汇总）。",
      "text_en": "TI/ADI/Onsemi/ST/Renesas analog/power chips raised prices twice since August; general-purpose server PMIC lead times reached 35-40 weeks; distributor power-analog inventories fell 10% in Q3; UBS survey (Oct 16): 76% of direct buyers fear shortages within six months."
+    }
+   ]
+  },
+  {
+   "id": "evt-invt-vsd-price-hike",
+   "title": "英威腾工业自动化产品调价函（10-8 生效）",
+   "title_en": "INVT industrial-automation product price adjustment (effective 2026-10-08)",
+   "status": "已生效",
+   "timeline": [
+    {
+     "date": "2026-11-01",
+     "change": "英威腾官网发布调价通知（落款9-7）：低压变频器全系列+3%~15%、中压/高压变频器+5%、电梯变频器+5%、伺服系统+3%~5%，2026-10-08 00:00起生效。",
+     "text_en": "INVT price notice on official site (dated Sep 7): LV drives +3%-15%, MV/HV drives +5%, elevator drives +5%, servo systems +3%-5%, effective 2026-10-08 00:00 CST."
+    }
+   ]
+  },
+  {
+   "id": "evt-refrigerant-q4-price-up",
+   "title": "制冷剂 R32 高位运行、四季度长协上调",
+   "title_en": "R32 refrigerant holds high; Q4 contract prices up",
+   "status": "已生效",
+   "timeline": [
+    {
+     "date": "2026-11-01",
+     "change": "R32华东主流价63,500~64,500元/吨（隆众10-14）；R32/R410A四季度长协价上调500元/吨；巨化前三季度制冷剂均价同比+11.3%至45,137.30元/吨、销量同比-6.31%。",
+     "text_en": "R32 at RMB 63,500-64,500/ton in East China (Longzhong, Oct 14); Q4 contract +RMB 500/ton for R32/R410A; Juhua 9M avg refrigerant price +11.3% YoY to RMB 45,137.30/ton, volume -6.31%."
     }
    ]
   }
