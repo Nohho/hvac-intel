@@ -208,6 +208,16 @@
      "date": "2026-10-30",
      "change": "三星电机MLCC交期延长至52周（韩媒10-20）、Q4消费级X5R MLCC提价25%~30%；国巨拟10月底~11月启动新一轮涨价（高容+50%、中低容+10%~30%），三环10月起对代理商+10%~30%；集邦预计Q4消费级中高容+10%~20%。",
      "text_en": "Samsung Electro-Mechanics MLCC lead time extended to 52 weeks (Korean press 10-20), Q4 consumer X5R prices +25%-30%; Yageo planning a new round late-Oct~Nov (+50% high-cap, +10%-30% mid/low-cap), Walsin +10%-30% to distributors from Oct; TrendForce expects Q4 consumer mid/high-cap +10%-20%."
+    },
+    {
+     "date": "2026-10-29",
+     "change": "TrendForce：AI服务器高容MLCC缺货延续至2027上半年，村田/SEMCO/太阳诱电book-to-bill达1.30/1.31/1.25（疫情后最高）；2027Q1议价11月启动，日厂可能跟随涨价。",
+     "text_en": "TrendForce (10-29): AI-server high-capacitance MLCC shortage extends into 2027H1; Murata/SEMCO/Taiyo Yuden book-to-bill at 1.30/1.31/1.25 (post-pandemic highs); 2027Q1 pricing talks begin in November, Japanese makers likely to follow suit."
+    },
+    {
+     "date": "2026-10-28",
+     "change": "SEMCO Q4对OEM/ODM提价：消费级X5R约+25~30%、AI服务器X6S约+10~20%（rapidonline）。",
+     "text_en": "SEMCO Q4 price hikes to OEM/ODM: consumer X5R +25-30%, AI-server X6S +10-20% (rapidonline)."
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -317,6 +327,11 @@
      "date": "2026-10-29",
      "change": "SMM 10-28晨会：LME 3M铜14,621美元/吨、铝3,250美元/吨，较10-27早报口径（14,338/3,085）再涨；北美废铜主力等级10-27单日+11美分/磅",
      "text_en": "SMM Oct 28 morning: LME 3M copper $14,621/t, aluminum $3,250/t, up from the Oct 27 briefing levels (14,338/3,085); North American clean copper scrap grades +11 cents/lb on Oct 27"
+    },
+    {
+     "date": "2026-10-30",
+     "change": "LME 3M铜收14,140美元/吨（-1.5%），10月录得-1.8%月度下跌（6月以来首次）；世行《商品市场展望》（10-28）将2027铜价预测上调18%至13,000美元/吨（矿供应受限+电网/数据中心/电动车需求）。",
+     "text_en": "LME 3M copper closed at $14,140/ton (-1.5%) on Oct 30; October posted a -1.8% monthly decline, the first since June. World Bank Commodity Markets Outlook (10-28) raised its 2027 copper forecast 18% to $13,000/ton (mine supply constraints + grid/data-center/EV demand)."
     }
    ],
    "title": "铜价历史高位",
@@ -453,6 +468,16 @@
      "date": "2026-10-30",
      "change": "三星10-29 Q3业绩会：Q3 DRAM ASP环比+20%、HBM4销量环比增3倍以上、2027年HBM产能已全部售罄、紧缺将延续；TrendForce展望Q4常规DRAM合约价+10%~15% QoQ、NAND +15%~20%。",
      "text_en": "Samsung Q3 call 10-29: Q3 DRAM ASP +20% QoQ, HBM4 sales up 3x+ QoQ, 2027 HBM capacity fully sold out; TrendForce sees Q4 conventional DRAM contract prices +10%-15% QoQ, NAND +15%-20%."
+    },
+    {
+     "date": "2026-10-29",
+     "change": "三星Q3电话会：DRAM ASP环比+20%、NAND +10%，HBM4销量环比增3倍以上，Q4需求继续扩大。",
+     "text_en": "Samsung Q3 call (10-29): DRAM ASP +20% QoQ, NAND +10% QoQ; HBM4 sales up 3x+ QoQ; Q4 demand to expand further."
+    },
+    {
+     "date": "2026-10-30",
+     "change": "10月现货：通用DDR4 8Gb均价$27.50再创历史新高（环比+5.77%）；128Gb MLC NAND持平于$30.61，结束21个月连涨；TrendForce预计Q4 PC DRAM合约价+13~18%。",
+     "text_en": "October spot: generic DDR4 8Gb averaged $27.50, a new all-time high (+5.77% MoM); 128Gb MLC NAND flat at $30.61, ending a 21-month rally. TrendForce sees Q4 PC DRAM contract prices +13-18% QoQ."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -783,6 +808,11 @@
      "date": "2026-10-22",
      "change": "氧化镨钕10-21约73.8万元/吨（-2,000）横盘（Mysteel 10-21）；状态无变化",
      "text_en": "Praseodymium-neodymium oxide ~RMB 738,000/t on Oct 21 (-2,000), sideways (Mysteel, Oct 21); status unchanged"
+    },
+    {
+     "date": "2026-10-30",
+     "change": "氧化镨钕报711,500元/吨（日降5,500，Mysteel）；稀土管制暂停包将于11-10到期，截至10月中旬无延期公告。",
+     "text_en": "Praseodymium-neodymium oxide quoted at RMB 711,500/ton (-5,500/day, Mysteel) on Oct 30; rare-earth control pause expires Nov 10 with no extension announced as of mid-October."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -881,6 +911,11 @@
      "date": "2026-10-16",
      "change": "美的确认加入英伟达MGX AI Factory生态（2026 OCP全球峰会公布名单；每日经济新闻10-15）；MGX围绕Vera Rubin平台覆盖液冷/电源/配电，45°C高温液冷成新标准，美的热管理获下一代AI基础设施规格对接先发优势",
      "text_en": "Midea confirmed as joining NVIDIA's MGX AI Factory ecosystem (list announced at the 2026 OCP Global Summit; National Business Daily, Oct 15); MGX, built around the Vera Rubin platform, spans liquid cooling / power / distribution, with 45°C high-temperature liquid cooling becoming the new standard; Midea's thermal management gains a first-mover interface advantage for next-generation AI infrastructure specs"
+    },
+    {
+     "date": "2026-10-29",
+     "change": "OCP全球峰会期间披露：美的以自研磁悬浮温控技术进入英伟达MGX热管理合作伙伴名单；另已拿下中国移动2026-2028低压冷水机集采70%份额、与阿里达成AIDC液冷战略合作。",
+     "text_en": "OCP Global Summit (10-29): Midea's self-developed magnetic-levitation thermal-control tech enters NVIDIA MGX ecosystem partner list; China Mobile 2026-2028 low-pressure chiller tender 70% share secured; AIDC liquid-cooling strategic partnership with Alibaba."
     }
    ],
    "title": "美的加入英伟达 MGX AI Factory 生态",
@@ -1232,8 +1267,8 @@
   {
    "id": "evt-infineon-wolfspeed-sic-deal",
    "seeded": false,
-   "status": "已通知",
-   "status_note": "宣布2026-10-15；150mm→200mm SiC衬底升级；财务条款/采购量/期限未披露",
+   "status": "已落地",
+   "status_note": "多年期200mm SiC晶圆供应协议已签署（10-15），支撑英飞凌马来西亚居林200mm SiC工厂",
    "subcategories": [
     "IGBT Modules"
    ],
@@ -1309,6 +1344,11 @@
      "date": "2026-10-19",
      "change": "AI服务器连接器：PCIe 6.0/CXL单价从2025年不足10美元涨至30美元以上（+200%+），交期8周拉长至36周；Molex 7-1起全线调价5%~30%；TE 2026-1-5起全系调价5%~12%；液冷不锈钢快接头涨价超150%、部分交期超一年（辰芯伟业综合行业公开数据）",
      "text_en": "AI server connectors: PCIe 6.0 / CXL unit prices rose from under US$10 in 2025 to over US$30 (+200%+), lead times stretched from 8 weeks to 36 weeks; Molex raised prices across the board by 5%~30% from Jul 1; TE adjusts its full line +5%~12% from Jan 5, 2026; liquid-cooling stainless quick connectors up over 150%, some lead times over a year (Chenxin Weiye, compiled from public industry data)"
+    },
+    {
+     "date": "2026-10-08",
+     "change": "AI服务器PCIe 6.0/CXL连接器单价从不足10美元涨至30美元以上、交期8周拉长至36周；Molex 7-1起全线涨5%~30%（辰芯伟业）。",
+     "text_en": "AI-server PCIe 6.0/CXL connector ASPs rose from under $10 to $30+, lead times stretched 8 to 36 weeks; Molex raised prices 5-30% from Jul 1 (Shenzhen Chenyao)."
     }
    ]
   },
@@ -1363,6 +1403,11 @@
      "date": "2026-10-16",
      "change": "10-16调价明细补全：意法/Allegro/纳芯微/思特威传感器+10%-50%、欧姆龙/施耐德继电器+10%-25%、图尔克/倍加福传感器+15%-35%、菲尼克斯/魏德米勒连接器+12%-30%、自动化产线整体成本+8%-15%；华润微/士兰微7/1起全线+15%以上，国产IDM订单能见度达9个月、热门型号超一年；部分海外芯片交期超52周",
      "text_en": "Oct 16 price-hike details completed: ST/Allegro/Novosense/SmartSens sensors +10%-50%, Omron/Schneider relays +10%-25%, Turck/Pepperl+Fuchs sensors +15%-35%, Phoenix/Weidmueller connectors +12%-30%, automation line costs +8%-15%; CR Micro/Silan raised all lines 15%+ from Jul 1 with 9-month order visibility, >1 year for hot models; some overseas chips' lead times exceed 52 weeks"
+    },
+    {
+     "date": "2026-10-17",
+     "change": "Allegro全产品线涨价生效（生效10-1，10月汇总披露；贵金属/稀土材料/晶圆代工及封测成本上涨）。",
+     "text_en": "Allegro raised prices across its full product line effective Oct 1 (disclosed in October roundup; cites precious metals, rare-earth materials, wafer foundry and OSAT costs)."
     }
    ]
   },
@@ -1635,6 +1680,11 @@
      "date": "2026-10-30",
      "change": "亚马逊10-29财报：Q3 capex 773亿美元（远超575亿预期）、2026年全年约2,200亿美元，CEO指引2027年\"显著高于\"；AWS营收460亿美元（+39%）、在手订单5,780亿美元。",
      "text_en": "Amazon Q3 10-29: Q3 capex $77.3B (vs $57.5B expected), full-2026 capex ~$220B, 2027 to be \"meaningfully higher\"; AWS revenue $46B (+39%), backlog $578B."
+    },
+    {
+     "date": "2026-10-29",
+     "change": "Alphabet/微软/亚马逊Q3单季capex合计约1670亿美元（Alphabet $514亿、微软约$500亿、亚马逊$773亿），Alphabet CFO称2027年capex将显著增长；AWS积压5780亿美元、Azure RPO 6770亿（+73%）、Google Cloud在手订单5610亿美元。",
+     "text_en": "Alphabet/Microsoft/Amazon Q3 capex totaled ~$167B ($51.4B/$50B/$77.3B); Alphabet CFO said 2027 capex will grow significantly. Backlogs: AWS $578B, Azure RPO $677B (+73%), Google Cloud $561B."
     }
    ]
   },
@@ -1722,7 +1772,7 @@
   },
   {
    "id": "evt-us-canada-section338-ac-tariff",
-   "status": "已通知",
+   "status": "已生效",
    "title": "美国对加Section 338清单调整：空调新纳入50%加征范围",
    "title_en": "US revises Canada Section 338 list: air conditioners newly subject to 50% duties",
    "subcategories": [],
@@ -1741,7 +1791,8 @@
      "change": "10-23特朗普签署公告、10-30生效：部分制冷设备移出50%加征清单（部分阀门加回）；涉加采购需按最新HTS编码核对。",
      "text_en": "Trump proclamation signed 10-23, effective 10-30: some refrigeration equipment removed from the 50% additional-tariff list (some valves added back); Canada-sourced procurement must verify latest HTS codes."
     }
-   ]
+   ],
+   "status_note": "10-30新版清单生效：阀门新纳入50%加征范围，冷冻设备等移出"
   },
   {
    "id": "evt-trane-revit-forma-kits",
@@ -2039,6 +2090,11 @@
      "date": "2026-10-30",
      "change": "开利10-29发布Q3：营收62.6亿美元（+12%、有机+15%）、调整后EPS 0.87美元（+30%）；商用HVAC订单+60%、数据中心订单+300%（数据中心销售额约为去年同期2.5倍、全年目标约20亿美元）；在手订单超85亿美元（+60%）创纪录；全年营收指引上调至238~240亿美元。",
      "text_en": "Carrier Q3 released 10-29: revenue $6.26B (+12%, organic +15%), adjusted EPS $0.87 (+30%); commercial HVAC orders +60%, data-center orders +300% (DC sales ~2.5x last year, full-year target ~$2B); record backlog over $8.5B (+60%); full-year revenue guidance raised to $23.8-24.0B."
+    },
+    {
+     "date": "2026-10-29",
+     "change": "财报电话会（10-29）宣布CSA产品组合涨价最高10%、四季度末生效，以对冲5.5~6亿美元输入成本通胀；同时与超大规模客户签署超30亿美元协议（含最低采购承诺）。",
+     "text_en": "Q3 earnings call (10-29): CSA portfolio price increase of up to 10% effective end of Q4 to offset $550-600M input-cost inflation; 30B+ hyperscaler agreement signed with minimum purchase commitment."
     }
    ],
    "title": "开利Q3：数据中心订单+300%、在手订单85亿美元创新高",
@@ -2057,6 +2113,11 @@
      "date": "2026-10-30",
      "change": "特灵10-29发布Q3：营收67.6亿美元（+18%）、调整后EPS 4.86美元（+25%）；有机订单+20%（72亿美元）；在手订单125亿美元（+73%，美洲商用HVAC在手订单+80%）；全年营收增速指引上调至约13.5%（有机约11%）。",
      "text_en": "Trane Q3 released 10-29: revenue $6.76B (+18%), adjusted EPS $4.86 (+25%); organic orders +20% ($7.2B); backlog $12.5B (+73%, Americas commercial HVAC backlog +80%); full-year revenue growth guidance raised to ~13.5% (organic ~11%)."
+    },
+    {
+     "date": "2026-10-29",
+     "change": "电话会下调全年有机经营杠杆与价格传导预期，承认通胀与供应链压力。",
+     "text_en": "Earnings call: full-year organic operating leverage and price-realization outlook trimmed, citing inflation and supply-chain pressure."
     }
    ],
    "title": "特灵Q3：营收+18%、在手订单125亿美元大涨73%",
@@ -2101,6 +2162,28 @@
    ],
    "title": "Vertiv发布SmartIT预工程AI基础设施平台（NVL72液冷）",
    "title_en": "Vertiv launches SmartIT pre-engineered AI infrastructure platform (NVL72 liquid cooling)"
+  },
+  {
+   "id": "evt-analog-pmic-price-hike",
+   "seeded": false,
+   "title": "模拟电源芯片连环涨价、通用服务器PMIC交期35~40周",
+   "title_en": "Analog/power chip price hikes, general-purpose server PMIC lead times stretch to 35-40 weeks",
+   "status": "已通知",
+   "status_note": "TI/ADI/安森美/意法/瑞萨自8月起先后两轮涨价函；UBS 10-16调查76%直采买家担心半年内缺货",
+   "subcategories": [
+    "模拟与电源 IC / MCU"
+   ],
+   "tags": [
+    "涨价",
+    "影响BOM"
+   ],
+   "timeline": [
+    {
+     "date": "2026-10-27",
+     "change": "TI/ADI/安森美/意法/瑞萨模拟电源芯片连环涨价（8月起先后两轮涨价函）；通用服务器PMIC交期35~40周，分销商电源模拟库存Q3降10%；UBS 10-16调查76%直采买家担心半年内缺货（辰芯伟业，B类为渠道汇总）。",
+     "text_en": "TI/ADI/Onsemi/ST/Renesas analog/power chips raised prices twice since August; general-purpose server PMIC lead times reached 35-40 weeks; distributor power-analog inventories fell 10% in Q3; UBS survey (Oct 16): 76% of direct buyers fear shortages within six months."
+    }
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -2112,5 +2195,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-10-29"
+ "updated": "2026-10-31"
 }
