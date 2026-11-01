@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-01",
-  "window_days": 29,
+  "generated": "2026-11-02",
+  "window_days": 30,
   "items": [
     {
       "name": "电容",
@@ -9,16 +9,16 @@
       "sample": "三星电机MLCC交期52周、Q4消费级X5R +25%~30%；国巨规划10月底~11月新一轮涨价（高容或50%+）；村田九大系列特定料号停产时间表明确（2028-03-31 LT"
     },
     {
+      "name": "IGBT Modules",
+      "score": 64,
+      "hits": 26,
+      "sample": "Fusion Greensheet 10月：功率MOSFET/分立二极管交期48-104+周（onsemi 50+周、Vishay AI相关MOSFET 104+周、Diodes "
+    },
+    {
       "name": "存储器",
       "score": 62,
       "hits": 26,
       "sample": "SK海力士DRAM/HBM 2029年近乎售罄、紧缺延续2030年；TrendForce预计Q4常规DRAM合约价+10%~15%、NAND +15%~20%。"
-    },
-    {
-      "name": "IGBT Modules",
-      "score": 62,
-      "hits": 25,
-      "sample": "MOSFET涨超10%、交期30周+、车规IGBT/SiC交期超40周；TI/ADI/安森美/意法/瑞萨8月起连环涨价（一年两涨），通用服务器PMIC交期35~40周；英飞凌-Wo"
     },
     {
       "name": "PCB Boards",
@@ -34,9 +34,9 @@
     },
     {
       "name": "模拟与电源 IC / MCU",
-      "score": 39,
-      "hits": 15,
-      "sample": "MOSFET涨超10%、交期30周+、车规IGBT/SiC交期超40周；TI/ADI/安森美/意法/瑞萨8月起连环涨价（一年两涨），通用服务器PMIC交期35~40周；英飞凌-Wo"
+      "score": 41,
+      "hits": 16,
+      "sample": "Fusion Greensheet 10月：功率MOSFET/分立二极管交期48-104+周（onsemi 50+周、Vishay AI相关MOSFET 104+周、Diodes "
     },
     {
       "name": "PCBA板卡",
@@ -46,9 +46,9 @@
     },
     {
       "name": "Refrigerant",
-      "score": 23,
-      "hits": 19,
-      "sample": "R32华东主流价63,500~64,500元/吨；R32/R410A四季度长协价上调500元/吨；巨化前三季度制冷剂均价同比+11.3%至45,137.30元/吨。"
+      "score": 24,
+      "hits": 20,
+      "sample": "R32东岳/巨化报盘65,500元/吨持稳；R22出厂价回落至19,500元/吨（需求走弱）；R32、R410A四季度长协价上调500元/吨已报"
     },
     {
       "name": "Copper & Silver",
@@ -64,9 +64,9 @@
     },
     {
       "name": "Magnets",
-      "score": 21,
-      "hits": 17,
-      "sample": "N35毛坯180~190元/kg持稳；氧化镨钕72~72.5万元/吨（较月中高点回撤2~3万）；北方稀土Q4精矿关联交易价38,769元/吨（环比+0.53%、同比+48%）。"
+      "score": 22,
+      "hits": 18,
+      "sample": "N35毛坯180~190元/kg持稳（中间价185）；氧化镨钕11-01报71.1万元/吨，较10月中旬高点回落约3万"
     },
     {
       "name": "Sensor",
