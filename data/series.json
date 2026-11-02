@@ -291,6 +291,11 @@
       "date": "2026-10-30",
       "value": 6.7138,
       "src": "chinamoney"
+    },
+    {
+      "date": "2026-11-02",
+      "value": 6.7146,
+      "src": "chinamoney"
     }
   ],
   "silver_usd_oz": [
@@ -392,6 +397,11 @@
     {
       "date": "2026-10-30",
       "value": 49.32,
+      "src": "conv"
+    },
+    {
+      "date": "2026-11-02",
+      "value": 49.38,
       "src": "conv"
     }
   ]
