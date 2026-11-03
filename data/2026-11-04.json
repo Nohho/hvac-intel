@@ -1,0 +1,622 @@
+{
+ "meta": {
+  "date": "2026-11-04",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-11-04-hvac-cdu-morning-briefing.md",
+  "note": "周三早报。头条三件：开利Q3数据中心订单+300%/在手订单85亿美元+住宅机涨价8%/全年8亿美元成本逆风（一半关税）；TrendForce高电容MLCC短缺至2027H1、1Q27谈判本月启动+村田1兆日元扩产+三星电机8800亿韩元AI服务器长约；Section 301 178项排除11-09到期倒计时5天仍无延期。技术合作：开利Fort Worth 6亿美元制造中心、海尔完成法罗力东南亚收购交割、Vertiv SmartIT平台、松下AIDC液冷新事业、Bosch Home Comfort印度双品牌+8000万欧元投资。虹吸：DDR4 $27.50历史新高/NAND 21个月首止涨、JEITA 8月电容出货+33%、建滔CCL 10-13再+15%（年内第8轮）+11月新一轮+10~15%、中信建投称功率半导体进入新周期（英飞凌/TI/安森美/ST集体涨价）、美国大型变压器交期2-3年。跨行业：华为/科华光储逆变器+5~15%、Marvell 1150亿美元收购Lumentum。事件库：新建4事件（海尔法罗力东南亚收购、Bosch印度、Marvell-Lumentum、松下AIDC液冷），追加17条timeline。Tier B batch 3（第三轮第3批）：11品类中1个弱hit（液冷介质）。英文版：由09:00翻译cron生成。"
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261104-01",
+   "title": "开利Q3：数据中心订单+300%、在手订单超85亿美元创新高；住宅机涨价8%；全年输入成本逆风约8亿美元（一半来自关税）",
+   "heat": 90,
+   "heat_reason": "头部整机厂财报确认数据中心需求爆发与关税成本传导至终端价格",
+   "tags": [
+    "涨价",
+    "财报",
+    "关税"
+   ],
+   "date": "2026-11-01",
+   "severity": "中",
+   "sources": [
+    {
+     "出处": "ACHR News",
+     "日期": "2026-11-01",
+     "url": "https://www.achrnews.com/articles/166938-carrier-residential-hvac-rebounds-but-price-hikes-loom",
+     "first_party": false
+    }
+   ],
+   "event_id": "evt-carrier-q3-2026"
+  },
+  {
+   "id": "evt-20261104-02",
+   "title": "TrendForce：高电容MLCC短缺持续至2027H1，1Q27价格谈判本月启动；村田1兆日元扩产、三星电机8800亿韩元AI服务器长约",
+   "heat": 92,
+   "heat_reason": "PCBA核心被动件进入2027年议价窗口，短缺时间表明朗",
+   "tags": [
+    "涨价",
+    "影响BOM",
+    "被动元件"
+   ],
+   "date": "2026-11-03",
+   "severity": "中",
+   "sources": [
+    {
+     "出处": "HardwareFPS转述TrendForce",
+     "日期": "2026-10-30",
+     "url": "https://hardwarefps.com/news/trendforce-high-capacitance-mlcc-shortage-through-1h27-price-talks-november/",
+     "first_party": false
+    },
+    {
+     "出处": "MoneyDJ",
+     "日期": "2026-11-03",
+     "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=620b4192-0aeb-4c59-8929-eff6e63679dd",
+     "first_party": false
+    }
+   ],
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "id": "evt-20261104-03",
+   "title": "Section 301 178项排除条款11月9日到期倒计时5天，USTR仍未发布延期通知",
+   "heat": 88,
+   "heat_reason": "硬性关税时点临近，直接影响对美供应链成本",
+   "tags": [
+    "关税"
+   ],
+   "date": "2026-11-02",
+   "severity": "中",
+   "sources": [
+    {
+     "出处": "ICPA Section 301 Tracker",
+     "日期": "2026-11-01",
+     "url": "https://www.icpainc.org/section-301-tracker/",
+     "first_party": false
+    },
+    {
+     "出处": "gatewaylines",
+     "日期": "2026-11-02",
+     "url": "https://gatewaylines.com/press-releases/china-section-301-tariffs-stay-178-exclusions-end",
+     "first_party": false
+    }
+   ],
+   "event_id": "evt-section301-exclusions-expire-nov9"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "开利未来3年投资超6亿美元建Fort Worth制造中心",
+   "detail": "100万平方英尺冷水机组与热管理工程制造中心，1500个岗位，明年投产，直接面向数据中心/医疗/教育需求",
+   "source": "Facilities Dive，2026-11-03",
+   "url": "https://www.facilitiesdive.com/news/carrier-600m-ft-worth-manufacturing-campus-HVAC/873436/",
+   "first_party": false,
+   "event_id": "evt-carrier-fortworth-plant"
+  },
+  {
+   "title": "海尔智家完成法罗力东南亚子公司收购交割",
+   "detail": "11月3日在越南举行交割仪式，100%收购意大利法罗力（Ferroli）东南亚子公司，聚焦热水器与暖通产品，东南亚“大暖通”扩张提速",
+   "source": "财联社，2026-11-03",
+   "url": "https://finance.sina.cn/stock/jdts/2026-11-03/detail-inixnitq9831112.d.html",
+   "first_party": false,
+   "event_id": "evt-haier-ferroli-sea-acquisition"
+  },
+  {
+   "title": "Vertiv推出SmartIT预工程化高密度AI基础设施平台",
+   "detail": "11月2日发布，集成机架/直流配电/芯片级直接液冷，工厂预验证，曾部署NVIDIA DGX GB300",
+   "source": "IT-Online，2026-11-02",
+   "url": "https://it-online.co.za/2026/11/02/vertiv-simplifies-high-density-ai-infrastructure/",
+   "first_party": false,
+   "event_id": "evt-vertiv-smartit"
+  },
+  {
+   "title": "松下开拓AIDC液冷新事业",
+   "detail": "将在11月5-10日进博会展出“液冷三剑客”：In-Rack CDU液冷泵、In-Row屏蔽泵、EC永磁无刷轴流风机",
+   "source": "新浪财经，2026-10-30",
+   "url": "https://finance.sina.cn/2026-10-30/detail-iniwziin5405113.d.html",
+   "first_party": false,
+   "event_id": "evt-panasonic-aidc-liquid-cooling"
+  },
+  {
+   "title": "Bosch Home Comfort宣布双品牌战略+€8000万印度投资",
+   "detail": "运营原JCI-Hitachi全球住宅/轻商空调业务；Hitachi主打印度大众/中高端、明年推Bosch高端空调，投资€8000万扩产能，目标2年内印度市占率两位数",
+   "source": "The Hindu BusinessLine，2026-11-01",
+   "url": "https://www.thehindubusinessline.com/companies/bosch-home-comfort-eyes-double-digit-share-in-india-ac-market-with-dual-brand-strategy/article71652285.ece",
+   "first_party": false,
+   "event_id": "evt-bosch-home-comfort-india"
+  },
+  {
+   "title": "关税政策排查：Section 301 178项排除11-09到期",
+   "detail": "截至11月2日USTR未发布任何延期通知；到期后相关商品恢复清单全额税率（多为25%）；海事港口费暂停延期仍为提案未定案；CBAM无新定案",
+   "source": "ICPA/gatewaylines，2026-11-01~02",
+   "url": "https://www.icpainc.org/section-301-tracker/",
+   "first_party": false,
+   "event_id": "evt-section301-exclusions-expire-nov9"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "存储",
+   "detail": "DDR4 8Gb 10月均价$27.50创历史新高（19连涨、环比+5.77%）；128Gb MLC NAND持平$30.61（21个月来首次止涨）；TrendForce预计Q4常规DRAM合约+13%~18%、NAND +15%~20%",
+   "source": "DRAMeXchange/TheElec，2026-11-02~03",
+   "event_id": "evt-dram-hbm-shortage",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "material": "被动元件",
+   "detail": "JEITA 8月日本电子零件出货：电容+33%至1816亿日元（历史次高）、连接器+21%、电阻+28%、电感+8%；村田Q3订单7534亿日元（+54.7%历史新高）、电容订单+85.2%",
+   "source": "MoneyDJ，2026-11-03",
+   "event_id": "evt-mlcc-price-hike",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "PCB/CCL",
+   "detail": "建滔10-13薄布类板料/半固化片再+15%（年内第8轮）；供应链称玻纤布/CCL 11月起新一轮+10%~15%；松下通知部分多层板CCL自2027年1月起+200%",
+   "source": "mpbxchange/TechNews/证券日报，2026-10-22~11-03",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "material": "功率器件",
+   "detail": "中信建投11-03：AIDC爆发+新能源车增量驱动功率半导体进入新周期，2026年以来英飞凌/TI/安森美/ST集体涨价；车规IGBT交期仍40-50周、供应缺口约40-50%",
+   "source": "新浪财经/depend-ele，2026-11-03",
+   "event_id": "evt-fusion-greensheet-mosfet-allocation-oct26",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ]
+  },
+  {
+   "material": "变压器",
+   "detail": "美国大型变压器交期长达2-3年（数据中心150-200MVA需求）；JCI管理层警告客户电力/电气基础设施制约交付节奏；伊顿数据中心相关订单同比+240%",
+   "source": "快取新闻/fx168/投资界，2026-10-19~11-03",
+   "event_id": "evt-hitachi-energy-transformer-warning",
+   "tags": [
+    "交期"
+   ]
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "光储",
+   "detail": "华为数能/科华数能10-29同日宣布调价+5%~15%（科华11-1起全系列生效）；阳光电源9月已调+5%~15%；调价函直指大宗原材料、PCB及存储介质多轮涨价；逆变器与VSD共用IGBT/SiC产能",
+   "source": "21经济网，2026-10-29",
+   "event_id": "evt-huawei-kehua-pv-storage-price-hike"
+  },
+  {
+   "industry": "AI服务器/光通信",
+   "detail": "Marvell宣布以1150亿美元企业价值全股票收购光通信巨头Lumentum（11-03），AI服务器光模块供应链重组",
+   "source": "新浪，2026-11-03",
+   "event_id": "evt-marvell-lumentum-acquisition"
+  },
+  {
+   "industry": "消费电子",
+   "detail": "海尔智家Q3数据中心业务销售额达去年同期近5倍，并中标大型算力中心风冷磁悬浮订单",
+   "source": "iResearch，2026-11-02",
+   "event_id": ""
+  },
+  {
+   "industry": "GPU现货",
+   "detail": "华强北RTX 5090D 32G单日跌4500元、连跌5个交易日（截至11-02），存储/GPU争夺向消费端传导出现松动",
+   "source": "界面，2026-11-03",
+   "event_id": ""
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "制冷剂",
+   "type": "价格持稳",
+   "detail": "R32截至10-30内贸65,000元/吨、外贸62,000元/吨，双双持平、高位企稳；2026年全国HFCs配额79.78万吨刚性约束",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": "evt-refrigerant-q4-price-up"
+  },
+  {
+   "category": "铜",
+   "type": "价格",
+   "detail": "LME 11-03收$14,325.5/吨（+1.38%），SHFE主力108,370元/吨，历史高位延续",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": "evt-copper-high"
+  },
+  {
+   "category": "铝",
+   "type": "价格",
+   "detail": "LME 11-03收$3,040.5/吨（-1.82%）；Fastmarkets LME Week观点：印尼新增产能释放，2027年或现过剩、情绪转弱",
+   "subcategories": [
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": "evt-woodmac-aluminum-deficit"
+  },
+  {
+   "category": "稀土/磁钢",
+   "type": "价格回调",
+   "detail": "Mysteel 11-03：氧化镨钕701,500元/吨（-7,500），钕铁硼废料镨钕710-715元/kg（10月中旬755-765回落企稳），原料市场弱势运行、询盘冷清；北方稀土预计Q4镨钕价格以稳为主",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-rare-earth-q4-price"
+  },
+  {
+   "category": "液冷介质",
+   "type": "新品/认证",
+   "detail": "Chemours 11-02发布5款Faizeon两相液冷介电流体（HFO基，直触冷板+浸没）；Dynalene PG-D25液冷介质通过NVIDIA DSX Ready认证",
+   "subcategories": [
+    "Chill Plates"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "IGBT/功率器件",
+   "type": "涨价/交期",
+   "detail": "2026年以来英飞凌/TI/安森美/ST集体涨价（中信建投11-03）；车规IGBT交期仍40-50周、供应缺口约40-50%",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ],
+   "event_id": "evt-fusion-greensheet-mosfet-allocation-oct26"
+  },
+  {
+   "category": "MLCC/被动元件",
+   "type": "涨价",
+   "detail": "高电容MLCC短缺持续至2027H1，1Q27价格谈判11月启动；村田1兆日元扩产（2026-2030）、三星电机8800亿韩元AI服务器长约",
+   "subcategories": [
+    "电容",
+    "电阻与电感"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ],
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "category": "存储器",
+   "type": "涨价",
+   "detail": "DDR4 8Gb $27.50历史新高（19连涨）；NAND $30.61持平（21个月首止涨）；TrendForce预计Q4 DRAM合约+13%~18%、NAND +15%~20%",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ],
+   "event_id": "evt-dram-hbm-shortage"
+  },
+  {
+   "category": "PCB/CCL",
+   "type": "涨价",
+   "detail": "建滔10-13薄布类板料/半固化片再+15%（年内第8轮）；玻纤布/CCL 11月起新一轮+10%~15%；松下部分多层板CCL 2027-01起+200%",
+   "subcategories": [
+    "PCB Boards",
+    "PCBA板卡"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ],
+   "event_id": "evt-pcb-ccl-price-hike-2"
+  },
+  {
+   "category": "低压电气",
+   "type": "排查无异常",
+   "detail": "本轮无新涨价函（施耐德/ABB/西门子/正泰/德力西均无新动作）；施耐德10-16上调全年指引（数据中心需求）",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "压缩机",
+   "type": "排查无异常",
+   "detail": "5类压缩机本轮无新增涨价/交期/产能动态",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "变频器",
+   "type": "排查无异常",
+   "detail": "本轮无新调价函（英威腾10-8调价已生效、无新增）",
+   "subcategories": [
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "阀件",
+   "type": "排查无异常",
+   "detail": "PHCP-PVF 10月涨价放缓，无11月新增；控制/电磁/四通换向阀无异常",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Tier A其余单元",
+   "type": "排查无异常",
+   "detail": "冷冻机油、铜加工件、钢、变压器（交期2-3年动态见虹吸、无新变化）、电机/风机/水泵、轴承、换热器、传感器、驱动板与电源、MCU/模拟与电源IC/时钟晶振/FPGA、连接器线束均无新增实质动态",
+   "subcategories": [
+    "Refrigerant Oil",
+    "Fabrications & Assemblies - Copper",
+    "Fittings - Copper",
+    "Tube, Lw Coil Igt Or Smooth - Copper",
+    "Tube, Technical - Copper",
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel",
+    "Power Supplies - Electronic",
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers",
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps",
+    "Ball Bearings",
+    "Magnetic Bearings",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube",
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature",
+    "连接器与线束",
+    "时钟/晶振/FPGA",
+    "模拟与电源 IC / MCU"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Tier B轮查",
+   "type": "排查无异常",
+   "detail": "batch 3（第三轮第3批）11品类：Air Moving Equipment、Chill Plates（液冷介质新品/认证动态见上，非短缺异常）、Diodes (Large)、Fire Suppression Foams, Gases And Agents、Inductors (Large)、Lubricants、Precision Stampings、Springs、Uncategorized Branded HVAC & IR Equip、Valve Actuators、熔断器；实质hit 1（弱），其余10品类无异常",
+   "subcategories": [
+    "Air Moving Equipment",
+    "Chill Plates",
+    "Diodes (Large)",
+    "Fire Suppression Foams, Gases And Agents",
+    "Inductors (Large)",
+    "Lubricants",
+    "Precision Stampings",
+    "Springs",
+    "Uncategorized Branded HVAC & IR Equip",
+    "Valve Actuators",
+    "熔断器"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "排查无异常",
+   "note": "FYQ4 10-27已报（营收+10%、在手订单$230亿），本轮无新增"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Q3数据中心订单+300%、在手订单超$85亿；住宅机涨价8%；Fort Worth 6亿美元制造中心"
+  },
+  {
+   "company": "特灵",
+   "status": "排查无异常",
+   "note": "Q3已报（营收+18%、在手订单$125亿+73%），本轮无新增"
+  },
+  {
+   "company": "大金",
+   "status": "排查无异常",
+   "note": "近3天无实质新闻"
+  },
+  {
+   "company": "美的",
+   "status": "有实质动态",
+   "note": "Q3营收-4.12%、扣非净利-15.7%（汇兑损失）；本月已进入英伟达供应链"
+  },
+  {
+   "company": "格力",
+   "status": "排查无异常",
+   "note": "近3天无供应链实质新闻（11-04 AI家电发布为营销事件）"
+  },
+  {
+   "company": "海尔",
+   "status": "有实质动态",
+   "note": "完成法罗力东南亚子公司收购交割；Q3数据中心业务销售额达去年同期近5倍"
+  },
+  {
+   "company": "日立",
+   "status": "排查无异常",
+   "note": "KADENOVA命名为10-23旧闻，本轮无新增"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "开拓AIDC液冷新事业，进博会展出液冷三剑客"
+  },
+  {
+   "company": "LG",
+   "status": "有实质动态",
+   "note": "LG CNS雅加达30MW AI数据中心一期落成；Q3 AIDC制冷累计订单超$21.1亿"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "三星SDS龟尾AI数据中心奠基（4273亿韩元、60MW、可扩至120MW）"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "发布SmartIT预工程化AI基础设施平台；完成14.5亿美元收购UIG交割；Q3营收+61.2%"
+  },
+  {
+   "company": "英维克",
+   "status": "排查无异常",
+   "note": "10-30股票期权激励计划（公司治理事项），无供应链实质新闻"
+  },
+  {
+   "company": "申菱",
+   "status": "有实质动态",
+   "note": "10-31完成10亿元可转债发行（募资净额9.89亿，用于液冷新质智造基地）"
+  },
+  {
+   "company": "高澜股份",
+   "status": "排查无异常",
+   "note": "近3天无实质新闻"
+  },
+  {
+   "company": "同飞股份",
+   "status": "排查无异常",
+   "note": "近3天无实质新闻"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "排查无异常",
+   "note": "近3天无实质新闻"
+  },
+  {
+   "company": "联想",
+   "status": "排查无异常",
+   "note": "第六代问天海神为10-19旧闻，本轮无新增"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-11-09",
+   "label": "Section 301排除条款到期（178项）"
+  },
+  {
+   "date": "2027-01-01",
+   "label": "瑞萨产品价格体系调整生效"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261104-01",
+   "title": "11-09 Section 301到期",
+   "urgency": "高",
+   "impact": "对美出口供应链（9903.88.69/70项下商品）",
+   "action": "立即筛查9903.88.69/70项下SKU，能提前报关的赶在11-09前出货；与美国客户确认DDP条款下的关税分担",
+   "trigger": "USTR未发布延期公告",
+   "deadline": "2026-11-09",
+   "related_events": [
+    "evt-20261104-03"
+   ]
+  },
+  {
+   "id": "warn-20261104-02",
+   "title": "MLCC 1Q27谈判季",
+   "urgency": "高",
+   "impact": "PCBA高容MLCC备料",
+   "action": "本月内与村田/三星电机/国巨等锁定Q1长约量价，PCBA备料向高容规格倾斜",
+   "trigger": "2027Q1议价窗口开启",
+   "deadline": "",
+   "related_events": [
+    "evt-20261104-02"
+   ]
+  },
+  {
+   "id": "warn-20261104-03",
+   "title": "CCL 11月+10~15%",
+   "urgency": "中",
+   "impact": "PCB/PCBA板料成本",
+   "action": "PCB/PCBA订单提前下单锁价，评估替代板材",
+   "trigger": "板料交期>4周",
+   "deadline": "",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261104-04",
+   "title": "DRAM Q4 +13~18%",
+   "urgency": "中",
+   "impact": "存储类物料成本",
+   "action": "存储类物料按Q1需求提前备货",
+   "trigger": "Q4合约价涨幅>10%",
+   "deadline": "",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261104-05",
+   "title": "稀土走弱",
+   "urgency": "低",
+   "impact": "钕铁硼磁钢采购",
+   "action": "钕铁硼磁钢暂缓追高、按需分批采购",
+   "trigger": "Q4价格以稳为主",
+   "deadline": "",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261104-06",
+   "title": "变压器2-3年交期",
+   "urgency": "中",
+   "impact": "数据中心配套项目",
+   "action": "相关项目变压器提前2年以上锁定产能/排队",
+   "trigger": "项目含150MVA+变压器需求",
+   "deadline": "",
+   "related_events": []
+  }
+ ],
+ "daily_report": {
+  "title": "HVAC / 液冷 CDU 行业情报早报（2026-11-04 · 周三）",
+  "date": "2026-11-04",
+  "headlines": [
+   "开利Q3数据中心订单+300%、在手订单超85亿美元；住宅机涨价8%；全年输入成本逆风约8亿美元（一半来自关税）",
+   "TrendForce：高电容MLCC短缺至2027H1、1Q27谈判本月启动；村田1兆日元扩产、三星电机8800亿韩元AI服务器长约",
+   "Section 301 178项排除11-09到期倒计时5天，USTR仍未发布延期通知"
+  ],
+  "body_file": "briefs/2026-11-04-hvac-cdu-morning-briefing.md"
+ }
+}
