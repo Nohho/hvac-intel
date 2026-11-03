@@ -233,6 +233,11 @@
      "date": "2026-11-03",
      "change": "国巨规划10月底-11月新一轮涨价（高容或+50%+）；村田10-31宣布2026-2030财年1万亿日元扩产（产能利用率95%、冈山新产线2028年末投产）；TrendForce称2027H1高阶缺口最严重、11月启动2027Q1议价",
      "text_en": "Yageo plans new price hikes late-Oct to November (high-capacitance up to +50%+); Murata announced JPY 1T capex for 2026-2030 (95% utilization, new Okayama line online end-2028); TrendForce: severest high-end shortage in 2027H1, 2027Q1 negotiations start in November"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "TrendForce 10-29：高电容MLCC短缺持续至2027H1，1Q27价格谈判11月启动，村田新增产能不早于2028；村田10-30宣布2026-2030年合计投资约1兆日元扩产MLCC、目标2030年营收翻倍，Q3订单7534亿日元（+54.7%历史新高）；三星电机签下8800亿韩元AI服务器MLCC供应合同、累计AI服务器合同超5万亿韩元",
+     "text_en": "TrendForce Oct 29: high-capacitance MLCC shortage through 1H27, 1Q27 price talks start November, Murata new capacity not before 2028; Murata Oct 30: ~1T yen MLCC capex 2026-2030, revenue target 2x by 2030, Q3 orders 753.4B yen (+54.7% record); Samsung Electro-Mechanics signs 880B won AI-server MLCC supply deal, cumulative AI-server contracts >5T won"
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -362,6 +367,11 @@
      "date": "2026-11-03",
      "change": "LME 11-02报14,258美元/吨（盘中14,349）；高盛上调2026年底目标至14,700美元/吨，预计非美缺口约95万吨；沪铜2612 11-02收107,810元/吨",
      "text_en": "LME at $14,258/t on Nov-02 (intraday $14,349); Goldman raised year-end-2026 target to $14,700/t, sees ~950kt ex-US deficit; SHFE copper 2612 closed at RMB 107,810/t on Nov-02"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "SMM 11-03：LME铜收$14,325.5/吨（+1.38%），SHFE主力108,370元/吨，历史高位延续",
+     "text_en": "SMM Nov 3: LME copper $14,325.5/t (+1.38%), SHFE 108,370 yuan/t, historic highs continue"
     }
    ],
    "title": "铜价历史高位",
@@ -523,6 +533,11 @@
      "date": "2026-11-03",
      "change": "DDR5 16Gb现货11-02报$61.48/片（30天+7.83%、同比+480%）；TrendForce口径Q4常规DRAM合约+10~15%、NAND +15~20%",
      "text_en": "DDR5 16Gb spot at $61.48/chip on Nov-02 (+7.83% in 30 days, +480% YoY); TrendForce: Q4 conventional DRAM contract +10~15%, NAND +15~20%"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "DRAMeXchange/TheElec：DDR4 8Gb 10月均价$27.50创历史新高（19连涨、环比+5.77%）；128Gb MLC NAND持平$30.61（21个月来首次止涨）；TrendForce预计Q4常规DRAM合约+13%~18%、NAND +15%~20%",
+     "text_en": "DRAMeXchange/TheElec: DDR4 8Gb Oct avg $27.50 record (19th straight gain, +5.77% MoM); 128Gb MLC NAND flat $30.61 (first flat in 21 months); TrendForce sees Q4 conventional DRAM contracts +13%~18%, NAND +15%~20%"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -752,6 +767,11 @@
      "date": "2026-11-03",
      "change": "11月新一轮：生益科技11月起M6及以下板材+15%、粘结片PP+25%（近两年单轮最大）；松下通知多层板基材自2027-01起+200%；FR-4交期从几天升至约4周",
      "text_en": "November round: Shengyi raised M6-and-below laminates +15% and PP prepreg +25% from November (largest single hike in two years); Panasonic notified +200% on multilayer substrate materials from Jan-2027; FR-4 lead time stretched from days to ~4 weeks"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "建滔10-13：薄布类板料/半固化片再+15%（年内第8轮）；工商时报10-22：玻纤布/CCL 11月起新一轮+10%~15%；证券日报11-03：松下通知部分多层板CCL自2027年1月起+200%；建滔1080规格玻纤布年内累计涨幅约300%",
+     "text_en": "Kingboard Oct 13: thin-cloth laminates/prepreg +15% (8th hike this year); Oct 22: glass cloth/CCL +10%~15% from November; Nov 3: Panasonic +200% on multilayer CCL from Jan 2027; Kingboard 1080 glass cloth up ~300% YTD"
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -878,6 +898,11 @@
      "date": "2026-11-02",
      "change": "氧化镨钕 11-01 报 71.1 万元/吨（较 10 月中旬高点回落约 3 万）；N35 毛坯 185 元/kg 持稳",
      "text_en": "Pr-Nd oxide quoted RMB 711,000/ton on Nov 1 (down ~30,000 from mid-Oct high); N35 blank holds at RMB 185/kg"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "Mysteel 11-03：氧化镨钕701,500元/吨（-7,500），钕铁硼废料镨钕710-715元/kg（10月中旬755-765回落企稳），原料市场弱势运行、询盘冷清；北方稀土预计Q4镨钕价格以稳为主",
+     "text_en": "Mysteel Nov 3: PrNd oxide 701,500 yuan/t (-7,500), NdFeB scrap PrNd 710-715 yuan/kg (eased from 755-765 mid-Oct), weak market; Northern Rare Earth sees stable Q4 PrNd prices"
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -981,6 +1006,11 @@
      "date": "2026-10-29",
      "change": "OCP全球峰会期间披露：美的以自研磁悬浮温控技术进入英伟达MGX热管理合作伙伴名单；另已拿下中国移动2026-2028低压冷水机集采70%份额、与阿里达成AIDC液冷战略合作。",
      "text_en": "OCP Global Summit (10-29): Midea's self-developed magnetic-levitation thermal-control tech enters NVIDIA MGX ecosystem partner list; China Mobile 2026-2028 low-pressure chiller tender 70% share secured; AIDC liquid-cooling strategic partnership with Alibaba."
+    },
+    {
+     "date": "2026-11-02",
+     "change": "第一财经转述11-02：美的Q3单季营收1073.2亿（-4.12%）、扣非净利-15.7%（汇兑损失）；本月已进入英伟达供应链；加码数据中心液冷",
+     "text_en": "Nov 2: Midea Q3 revenue 107.32B yuan (-4.12%), core net profit -15.7% (FX losses); entered NVIDIA supply chain this month; doubling down on data-center liquid cooling"
     }
    ],
    "title": "美的加入英伟达 MGX AI Factory 生态",
@@ -1217,6 +1247,11 @@
      "date": "2026-10-30",
      "change": "10-26披露发行结果：10亿元可转债落地，8亿元投建佛山顺德液冷新质智造基地（土地、备案、环评均已取得），公司称液冷温控订单增长致现有产能趋于饱和。",
      "text_en": "Issuance result disclosed 10-26: RMB 1B convertible bond closed, RMB 800M for a new liquid-cooling smart manufacturing base in Shunde, Foshan (land/filing/EIA secured); existing capacity near saturation on rising liquid-cooling orders."
+    },
+    {
+     "date": "2026-10-31",
+     "change": "希财舆情宝10-31：完成10亿元可转债发行、募资净额约9.89亿元，主要用于液冷新质智造基地建设；Q3单季微亏",
+     "text_en": "Oct 31: completed 1B yuan convertible bond issue, net proceeds ~989M yuan for liquid-cooling smart manufacturing base; Q3 slightly loss-making"
     }
    ]
   },
@@ -1260,6 +1295,11 @@
      "date": "2026-10-23",
      "change": "美国大型电力变压器平均交付周期约128周（GSU发电机升压站约144周），2020年前仅需24~30个月；美国变压器单价比2019年上涨45%~95%；2026年美国计划投运约12GW数据中心中仅约三分之一在建、30%~50%预计延期（投资界pedaily 10月中旬深度报道，B类转述）",
      "text_en": "US large power transformer average delivery now ~128 weeks (GSU generator step-up ~144 weeks) vs 24-30 months before 2020; US transformer unit prices up 45%-95% vs 2019; of ~12GW of US data centers planned for 2026, only about a third are under construction with 30%-50% expected to be delayed (pedaily in-depth report, mid-Oct, Class B relays)"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "快取新闻11-03转述经济日报：美国大型变压器交期长达2-3年（数据中心150-200MVA需求）；投资界10-19：中国变压器出口646亿元同比+36%、美国变压器单价较2019年+45%~95%、交期约128周",
+     "text_en": "Cache News Nov 3: US large transformer lead times 2-3 years (150-200MVA data-center demand); Oct 19: China transformer exports 64.6B yuan +36% YoY, US unit prices +45%~95% vs 2019, ~128-week lead times"
     }
    ]
   },
@@ -1564,6 +1604,11 @@
      "date": "2026-10-25",
      "change": "补充细节：新厂预计2027年投运、约1500个制造与工程岗位，厂内含结构件制造、换热器生产、制冷回路集成与钎焊；另可获最高约1090万美元地方房产税减免与250万美元州企业补助（Advanced Manufacturing，10-23）",
      "text_en": "Additional details: new plant expected to begin operations in 2027 with ~1,500 manufacturing and engineering jobs, covering structural fabrication, heat-exchanger production, refrigeration-circuit integration and brazing; may also qualify for up to ~$10.9M in local property tax abatements and a $2.5M state enterprise grant (Advanced Manufacturing, Oct 23)"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "Facilities Dive 11-03披露细节：3年超6亿美元，在德州Fort Worth建100万平方英尺冷水机组与热管理工程制造中心，1500个岗位，明年投产，面向数据中心/医疗/教育需求",
+     "text_en": "Facilities Dive Nov 3: 3-year $600M+ Fort Worth 1M sq ft chiller/thermal management engineering & manufacturing campus, 1,500 jobs, production next year, targeting data center/healthcare/education demand"
     }
    ]
   },
@@ -1672,6 +1717,11 @@
      "date": "2026-10-28",
      "change": "路透经Kitco 10-27：LME 3M铝+1.5%至3,085美元/吨、创两周多新高，亚洲仓库3,500吨提货登记助推",
      "text_en": "Reuters via Kitco, Oct 27: LME 3-month aluminium +1.5% to USD 3,085/t, a more-than-two-week high, helped by 3,500 t of warehouse withdrawal orders in Asia"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "Fastmarkets LME Week 2026：铝价跌破$3,000/吨，海湾出口恢复+印尼新增产能释放，2027年或现显著过剩、情绪转弱——与Wood Mackenzie缺口预期形成对冲",
+     "text_en": "Fastmarkets LME Week 2026: aluminum below $3,000/t, Gulf exports resume + Indonesian capacity, significant 2027 surplus possible — offsets Wood Mackenzie deficit call"
     }
    ]
   },
@@ -1944,6 +1994,11 @@
      "date": "2026-11-03",
      "change": "截至11-03 USTR仍无延期公告，倒计时6天；海事港口费暂停延期（拟延至2027-01-09）仍为提案、未定案",
      "text_en": "As of Nov-03 USTR has issued no extension notice, 6 days to expiry; maritime port-fee suspension extension (proposed to Jan-09-2027) remains a proposal, not finalized"
+    },
+    {
+     "date": "2026-11-02",
+     "change": "ICPA 11-01/gatewaylines 11-02：截至11-02 USTR未发布任何延期通知；178项排除11-09 23:59 EDT到期，11-10起恢复清单全额税率；海事港口费暂停延期提案（FR Doc 2026-21755）评论期10-30已截止、仍未定案",
+     "text_en": "ICPA Nov 1 / gatewaylines Nov 2: no USTR extension notice as of Nov 2; 178 exclusions expire 11-09 23:59 EDT, full List rates resume Nov 10; maritime fee suspension proposal (FR Doc 2026-21755) comment period closed Oct 30, still not final"
     }
    ]
   },
@@ -2023,6 +2078,11 @@
      "date": "2026-10-30",
      "change": "10-27发布FY26 Q4：营收71.1亿美元（+10.4%）、有机订单+44%、在手订单230亿美元（+43%）创纪录；同步启动FY27指引：调整后EPS 6.15–6.30美元、有机营收增长11–12%。",
      "text_en": "FY26 Q4 released 10-27: revenue $7.11B (+10.4%), organic orders +44%, record backlog $23B (+43%); FY27 guidance initiated: adjusted EPS $6.15-6.30, organic revenue growth 11-12%."
+    },
+    {
+     "date": "2026-10-27",
+     "change": "fx168 10-27：FYQ4营收$71.13亿+10%、有机+12%、总在手订单$230亿（77%为数据中心）、订单+44%；管理层警告客户电力/电气基础设施制约影响交付节奏",
+     "text_en": "Oct 27: FYQ4 revenue $7.113B +10%, organic +12%, backlog $23B (77% data center), orders +44%; management warns customer power/electrical infrastructure constraints affecting delivery pace"
     }
    ]
   },
@@ -2070,6 +2130,11 @@
      "date": "2026-10-29",
      "change": "累计订单由上半年末约0.6万亿韩元增至三季度末超3万亿韩元（含与北美Air Control Concepts的冷水机长期供应协议）；追加2,200亿韩元扩产（含美国新生产基地）；1MW与2.6MW CDU获英伟达认可，2.6MW款获DSX Ready认证",
      "text_en": "Cumulative orders rise from ~KRW 0.6T at end-H1 to over KRW 3T at end-Q3 (including a long-term chiller supply agreement with North America's Air Control Concepts); additional KRW 220B capacity investment (including a new US production base); 1MW and 2.6MW CDUs recognized by NVIDIA, 2.6MW model DSX Ready certified"
+    },
+    {
+     "date": "2026-11-02",
+     "change": "AIAffairs 11-02：LG CNS完成雅加达30MW AI数据中心一期建设，后续扩建至400MW（后期导入液冷）；LG Q3：AIDC制冷累计订单超$21.1亿",
+     "text_en": "AIAffairs Nov 2: LG CNS completes Jakarta 30MW AI data center phase 1, expansion to 400MW planned (liquid cooling later); LG Q3: cumulative AIDC cooling orders >$2.11B"
     }
    ]
   },
@@ -2200,6 +2265,11 @@
      "date": "2026-11-02",
      "change": "Q3 电话会披露与超大型客户签逾 30 亿美元长期协议（含最低采购量承诺）；2026 年数据中心销售目标约 20 亿美元；沃斯堡新工厂将使美洲商用 HVAC 产能翻倍；宣布主要产品线涨价最高 10%，对冲全年约 8 亿美元成本压力（不到一半与关税相关）",
      "text_en": "Q3 call: >$3B long-term agreement with a hyperscaler incl. minimum volume commitments; 2026 data-center sales target ~$2B; Fort Worth plant to double Americas commercial HVAC capacity; up to 10% price increases across key portfolios to offset ~$800M full-year cost headwinds (less than half tariff-related)"
+    },
+    {
+     "date": "2026-11-01",
+     "change": "ACHR News 11-01：Q3调整后EPS $0.87超预期、营收$62.6亿+12.3%；订单+35%、商用HVAC+60%、数据中心订单+300%、在手订单超$85亿；宣布住宅机涨价8%（本季度末生效）；管理层称全年输入成本逆风约$8亿，其中一半来自关税",
+     "text_en": "ACHR News Nov 1: Q3 adj EPS $0.87 beat, revenue $6.26B +12.3%; orders +35%, commercial HVAC +60%, data center orders +300%, backlog $8.5B+; residential +8% price hike effective end of quarter; ~$800M full-year input cost headwind, half from tariffs"
     }
    ],
    "title": "开利Q3：数据中心订单+300%、在手订单85亿美元创新高",
@@ -2323,6 +2393,11 @@
      "date": "2026-11-03",
      "change": "R32截至10-30内贸65,000/外贸62,000元/吨持平；2026年第二次制冷剂配额调整方案公示、总量小幅收缩",
      "text_en": "R32 flat at RMB 65,000/t domestic / 62,000/t export as of Oct-30; 2026 second refrigerant quota adjustment plan published, total volume slightly reduced"
+    },
+    {
+     "date": "2026-11-01",
+     "change": "开源证券11-01：截至10-30 R32内贸65,000元/吨、外贸62,000元/吨，双双持平、高位企稳；specialtubing 10-26：R32 64,500元/吨、R410A 58,500元/吨，同比+5.74%",
+     "text_en": "Kaiyuan Securities Nov 1: R32 domestic 65,000 / export 62,000 yuan/t as of Oct 30, both flat at highs; Oct 26: R32 64,500, R410A 58,500 yuan/t, +5.74% YoY"
     }
    ]
   },
@@ -2375,6 +2450,11 @@
      "date": "2026-11-02",
      "change": "10-29 宣布：华为数字能源户用/工商业光储、电站逆变器产品 +5%~15%，构网型储能方案 +5%~10%，调价理由为大宗原材料、PCB、存储介质多轮大幅上涨；科华数能 11-01 起全系列产品 +5%~15%",
      "text_en": "Announced Oct 29: Huawei Digital Power raises residential/commercial PV-storage and utility inverter products +5%~15% and grid-forming storage solutions +5%~10%, citing sharp multi-round rises in raw materials, PCBs and storage media; Kehua raises all products +5%~15% effective Nov 1"
+    },
+    {
+     "date": "2026-10-29",
+     "change": "21经济网10-29：华为数能/科华数能同日宣布调价+5%~15%（科华11月1日起全系列生效）；阳光电源9月已调+5%~15%；调价函直指大宗原材料、PCB及存储介质多轮涨价",
+     "text_en": "21st Century Business Herald Oct 29: Huawei Digital Power / Kehua both raise prices +5%~15% (Kehua effective Nov 1); Sungrow already raised in Sept; letters cite raw materials, PCB and storage media cost surges"
     }
    ]
   },
@@ -2401,6 +2481,11 @@
      "date": "2026-11-02",
      "change": "Fusion Greensheet 10 月：功率 MOSFET/分立二极管交期 48-104+ 周（onsemi 50+ 周、Vishay AI 相关 MOSFET 104+ 周、Diodes 48-52+ 周且 Q4 仅满足约 10% 需求量），AI 服务器电源/多相控制交期 Elevated 并上调价格；TI 成熟制程模拟器件名义 12-16 周、实际约半年，部分客户被告知 52+ 周并出现 decommits；ADI 典型 60-70+ 周",
      "text_en": "Fusion Greensheet October: power MOSFET/discrete diode lead times 48-104+ weeks (onsemi 50+ weeks, Vishay AI-related MOSFETs 104+ weeks, Diodes 48-52+ weeks with only ~10% of requested Q4 allocation met); AI server power/multiphase controls lead times Elevated with price increases; TI mature-node analog quoted 12-16 weeks vs ~6 months in practice, some customers hearing 52+ weeks with decommits; ADI typically 60-70+ weeks"
+    },
+    {
+     "date": "2026-11-03",
+     "change": "depend-ele 10-31~11-06周报：车规IGBT供应仍紧，IDM车规IGBT交期约40-50周、供应缺口估计40-50%；中信建投11-03：AIDC爆发+新能源车增量驱动功率半导体进入新周期，英飞凌/TI/安森美/ST 2026年以来集体涨价",
+     "text_en": "depend-ele weekly: automotive IGBT still tight, IDM auto IGBT lead times ~40-50 weeks, supply gap ~40-50%; CSC Nov 3: AIDC + NEV drive power semiconductors into new cycle, Infineon/TI/onsemi/ST all raised prices in 2026"
     }
    ]
   },
@@ -2440,6 +2525,58 @@
      "date": "2026-11-03",
      "change": "10亿元建顺德液冷智造基地（12条产线）；海尔投超10亿元在泰国罗勇布局数据中心生产基地",
      "text_en": "RMB 1B Shunde liquid-cooling manufacturing base (12 production lines); Haier to invest over RMB 1B in a data-center manufacturing base in Rayong, Thailand"
+    }
+   ]
+  },
+  {
+   "id": "evt-haier-ferroli-sea-acquisition",
+   "title": "海尔智家完成法罗力东南亚子公司收购交割",
+   "title_en": "Haier Smart Home completes acquisition of Ferroli Southeast Asia subsidiary",
+   "status": "已落地",
+   "timeline": [
+    {
+     "date": "2026-11-03",
+     "change": "财联社11-03：11月3日在越南举行交割仪式，完成对意大利法罗力（Ferroli）东南亚子公司100%股权收购，聚焦热水器与暖通产品，东南亚\"大暖通\"扩张",
+     "text_en": "Cailian Press Nov 3: closing ceremony held in Vietnam; 100% acquisition of Italian Ferroli Southeast Asia subsidiary completed, focused on water heaters and HVAC products, accelerating Southeast Asia \"large HVAC\" expansion"
+    }
+   ]
+  },
+  {
+   "id": "evt-bosch-home-comfort-india",
+   "title": "Bosch Home Comfort双品牌战略+€8000万印度投资",
+   "title_en": "Bosch Home Comfort dual-brand strategy + 80M euro India investment",
+   "status": "已通知",
+   "timeline": [
+    {
+     "date": "2026-11-01",
+     "change": "The Hindu BusinessLine 11-01：Bosch Home Comfort（运营原JCI-Hitachi全球住宅/轻商空调业务）宣布双品牌战略，Hitachi主打印度大众/中高端、明年推Bosch高端空调，投资€8000万扩产能，目标2年内印度市占率两位数",
+     "text_en": "The Hindu BusinessLine Nov 1: Bosch Home Comfort (operating the former JCI-Hitachi global residential/light-commercial AC business) announces dual-brand strategy — Hitachi for mass/mid-high segments, Bosch premium AC next year; 80M euro capacity investment, targeting double-digit India market share in 2 years"
+    }
+   ]
+  },
+  {
+   "id": "evt-marvell-lumentum-acquisition",
+   "title": "Marvell 1150亿美元收购光通信巨头Lumentum",
+   "title_en": "Marvell to acquire optical communications giant Lumentum for $115B",
+   "status": "已通知",
+   "timeline": [
+    {
+     "date": "2026-11-03",
+     "change": "新浪11-03：Marvell宣布以1150亿美元企业价值全股票收购光通信巨头Lumentum，AI服务器光模块供应链重组信号",
+     "text_en": "Sina Nov 3: Marvell announces all-stock acquisition of optical communications giant Lumentum at $115B enterprise value — AI server optical module supply chain reshuffle signal"
+    }
+   ]
+  },
+  {
+   "id": "evt-panasonic-aidc-liquid-cooling",
+   "title": "松下开拓AIDC液冷新事业",
+   "title_en": "Panasonic launches AIDC liquid-cooling business",
+   "status": "已通知",
+   "timeline": [
+    {
+     "date": "2026-10-30",
+     "change": "新浪财经10-30：松下将在11月5-10日进博会展出\"液冷三剑客\"：In-Rack CDU液冷泵、In-Row屏蔽泵、EC永磁无刷轴流风机，全新开拓AIDC液冷新事业",
+     "text_en": "Sina Finance Oct 30: Panasonic to exhibit \"liquid-cooling trio\" at Nov 5-10 CIIE — In-Rack CDU pumps, In-Row shielded pumps, EC permanent-magnet brushless axial fans — launching a new AIDC liquid-cooling business"
     }
    ]
   }
