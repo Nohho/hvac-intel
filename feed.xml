@@ -3,7 +3,10 @@
 <channel>
 <title>HVAC 供应链情报</title><link>https://nohho.github.io/hvac-intel/</link>
 <description>HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议</description>
-<language>zh-CN</language><lastBuildDate>Mon, 02 Nov 2026 23:55:59 GMT</lastBuildDate>
+<language>zh-CN</language><lastBuildDate>Tue, 03 Nov 2026 23:50:13 GMT</lastBuildDate>
+<item><title>HVAC 供应链情报早报 2026-11-04</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-04</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-04</guid><pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate><description>• 开利Q3：数据中心订单+300%、在手订单超85亿美元创新高；住宅机涨价8%；全年输入成本逆风约8亿美元（一半来自关税）
+• TrendForce：高电容MLCC短缺持续至2027H1，1Q27价格谈判本月启动；村田1兆日元扩产、三星电机8800亿韩元AI服务器长约
+• Section 301 178项排除条款11月9日到期倒计时5天，USTR仍未发布延期通知</description></item>
 <item><title>HVAC 供应链情报早报 2026-11-03</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-03</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-03</guid><pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate><description>• Section 338加拿大清单新增窗式空调等HVAC品类加征50%（10-30生效）；178项Section 301排除11-09到期倒计时6天、仍无延期
 • 生益11月板材再提价15%/25%（近两年单轮最大）、松下2027-01起多层板基材上调200%
 • DDR5现货$61.48/片（30天+7.8%）、Q4合约预期再涨；国巨10月底-11月新一轮涨价（高容或+50%+）、村田1万亿日元MLCC扩产</description></item>
@@ -131,11 +134,5 @@
 • DRAM/HBM结构性短缺延续至2028，Q4合约价再涨10%~15%
 • LG获北美5GW+AI数据中心冷水机组长期供货协议，并在美建首座冷水机组工厂
 • Vertiv收购爱尔兰King Environmental，补齐液冷流体管理服务拼图</description></item>
-<item><title>HVAC 供应链情报早报 2026-10-05</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-05</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-05</guid><pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate><description>安森美第二轮涨价本周六（10-10）生效，功率器件涨价链延续至 2027；MLCC 三环 10-1 已生效 + 交期 20-26 周
-• 安森美第二轮涨价本周六（10-10）生效，功率器件涨价链延续至 2027
-• MLCC 三重压力：三环 10-1 已生效 + 村田停产消费级 + 高端交期 20-26 周
-• 存储：Q4 DRAM 合约价 +10%~15%，三星 HBM4 谈判价约为 HBM3E 的 3 倍
-• CCL 新一轮涨价潮 9 月下旬落地：建滔/松下/南亚/巨石接力调价
-• 模拟 IC 第三轮涨价潮：TI/ST/ADI/国民技术接力</description></item>
 </channel>
 </rss>
