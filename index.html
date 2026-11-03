@@ -864,8 +864,8 @@ function renderMain(d){
     +(s2ev.length?s2ev.map(e=>evCard(e)).join(""):`<div class="card"><div class="errmsg">${t("f_empty")}</div></div>`);
 
   /* ---- 三、AI 虹吸 ---- */
-  const sev=s=>/回落|缓解|\b(eas\w*|relief|reliev\w*|cool\w*)\b/i.test(s.change)?`<span class="pill p-blu">${esc(t("siphon_eased"))}</span>`:/涨|紧张|延长|紧缺|吃紧|\b(doubl\w*|surg\w*|soar\w*|jump\w*|ris\w+|tight\w*|shortage|extend\w*|rais\w*|increas\w*|upward|price (hik\w*|round\w*|increas\w*))\b/i.test(s.change)?`<span class="pill p-red">${esc(t("siphon_pressure"))}</span>`:`<span class="pill p-org">${esc(t("siphon_watch"))}</span>`;
-  const sip=(d.siphon_effects||[]).map(s=>`<div class="card">${sev(s)}<h4>${esc(s.material)}</h4><p>${esc(s.change)}</p></div>`).join("");
+  const sev=s=>/回落|缓解|\b(eas\w*|relief|reliev\w*|cool\w*)\b/i.test(s.change||s.detail||'')?`<span class="pill p-blu">${esc(t("siphon_eased"))}</span>`:/涨|紧张|延长|紧缺|吃紧|\b(doubl\w*|surg\w*|soar\w*|jump\w*|ris\w+|tight\w*|shortage|extend\w*|rais\w*|increas\w*|upward|price (hik\w*|round\w*|increas\w*))\b/i.test(s.change||s.detail||'')?`<span class="pill p-red">${esc(t("siphon_pressure"))}</span>`:`<span class="pill p-org">${esc(t("siphon_watch"))}</span>`;
+  const sip=(d.siphon_effects||[]).map(s=>`<div class="card">${sev(s)}<h4>${esc(s.material)}</h4><p>${esc(s.change||s.detail)}</p></div>`).join("");
   const s3ev=bySec("数据中心/AI 虹吸效应");
   const s3=secttl("三",t("sec")[2],(d.siphon_effects||[]).length+" "+t("u_materials"))
     +guide(fmt(t("s3_guide"),{m:`<b>${(d.siphon_effects||[]).map(s=>esc(s.material)).join("、")}</b>`}))
@@ -873,7 +873,7 @@ function renderMain(d){
     +(s3ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s3ev.map(e=>evCard(e,true)).join(""):"");
 
   /* ---- 四、跨行业传导 ---- */
-  const cro=(d.cross_industry||[]).map(c=>`<div class="card"><div class="chain"><div class="nd"><b>${esc(c.industry)}</b></div><div class="arw">→</div><div class="nd">${esc(c.chain||c.link)}</div></div></div>`).join("");
+  const cro=(d.cross_industry||[]).map(c=>`<div class="card"><div class="chain"><div class="nd"><b>${esc(c.industry)}</b></div><div class="arw">→</div><div class="nd">${esc(c.chain||c.link||c.detail)}</div></div></div>`).join("");
   const s4ev=bySec("跨行业传导");
   const s4=secttl("四",t("sec")[3],(d.cross_industry||[]).length+" "+t("u_links"))
     +guide(fmt(t("s4_guide"),{m:`<b>${(d.cross_industry||[]).map(c=>esc(c.industry)).join("、")}</b>`}))
