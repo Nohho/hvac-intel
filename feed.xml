@@ -3,7 +3,10 @@
 <channel>
 <title>HVAC 供应链情报</title><link>https://nohho.github.io/hvac-intel/</link>
 <description>HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议</description>
-<language>zh-CN</language><lastBuildDate>Tue, 03 Nov 2026 23:50:13 GMT</lastBuildDate>
+<language>zh-CN</language><lastBuildDate>Wed, 04 Nov 2026 23:46:17 GMT</lastBuildDate>
+<item><title>HVAC 供应链情报早报 2026-11-05</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-05</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-05</guid><pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate><description>• MLCC新一轮涨价落地窗口：国巨高容拟涨50%+、村田已启动涨价、产能利用率95%、高端料号交期延长至5-10个月
+• 稀土出口管制暂停11-10到期（剩5天），续期无明确法律文本；7种重稀土公告从未暂停
+• Section 301 178项排除11-09 23:59（美东）到期（剩4天），联邦公报暂无延期文本</description></item>
 <item><title>HVAC 供应链情报早报 2026-11-04</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-04</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-04</guid><pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate><description>• 开利Q3：数据中心订单+300%、在手订单超85亿美元创新高；住宅机涨价8%；全年输入成本逆风约8亿美元（一半来自关税）
 • TrendForce：高电容MLCC短缺持续至2027H1，1Q27价格谈判本月启动；村田1兆日元扩产、三星电机8800亿韩元AI服务器长约
 • Section 301 178项排除条款11月9日到期倒计时5天，USTR仍未发布延期通知</description></item>
@@ -128,11 +131,5 @@
 • 铜价历史高位徘徊，LME铜10-5报14,420美元/吨、盘中破14,800新高
 • 特灵与Kroenke Sports &amp; Entertainment签多年期协议，成为官方HVAC与热管理合作伙伴
 • 开利日本发布数据中心用AquaForce 30XFZ风冷螺杆冷水机组</description></item>
-<item><title>HVAC 供应链情报早报 2026-10-06</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-06</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-06</guid><pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate><description>安森美第二轮涨价10-10生效，功率器件交期30周以上现"分货"；村田停产消费型通用MLCC，2028年停止下单；DRAM/HBM短缺延续至2028
-• 安森美第二轮涨价10-10生效，功率半导体交期30周以上现"分货"
-• 村田停产消费型通用MLCC：2028年停止下单、2029年最后出货，全面转向AI高端
-• DRAM/HBM结构性短缺延续至2028，Q4合约价再涨10%~15%
-• LG获北美5GW+AI数据中心冷水机组长期供货协议，并在美建首座冷水机组工厂
-• Vertiv收购爱尔兰King Environmental，补齐液冷流体管理服务拼图</description></item>
 </channel>
 </rss>
