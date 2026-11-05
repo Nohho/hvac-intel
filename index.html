@@ -850,7 +850,7 @@ function renderMain(d){
     +(s1ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s1ev.map(e=>evCard(e,true)).join(""):"");
 
   /* ---- 二、头条事件 ---- */
-  let s2ev=d.hotspot_events.filter(e=>(e.section||"头条事件")==="头条事件"||(e.tags||[]).includes("突发")).sort((a,b)=>b.heat-a.heat);
+  let s2ev=d.hotspot_events.filter(e=>(e.section||"头条事件")==="头条事件"||(e.tags||[]).includes("突发")).sort((a,b)=>b.heat-a.heat); /* 筛选逻辑与门禁 check-shell-fields.py 的渲染一致性断言保持同步，改一处必须改另一处 */
   const frows=`<div class="frow">
       <button class="fchip${FILTER==="all"?" on":""}" onclick="setFilter('all')">${t("f_all")}</button>
       <button class="fchip${FILTER==="burst"?" on":""}" onclick="setFilter('burst')">${ICO.bolt}${t("f_burst")}</button>
