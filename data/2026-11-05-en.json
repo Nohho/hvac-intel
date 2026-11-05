@@ -1,0 +1,662 @@
+{
+ "hotspot_events": [
+  {
+   "id": "evt-20261105-01",
+   "title": "New Window for MLCC Price Increase Execution: Yageo Plans 50%+ Hike on High-Capacitance MLCCs, Murata Initiates Price Hike, Capacity Utilization Rate Hits 95%, High-End Part Lead Times Extended to 5-10 Months",
+   "heat": 88,
+   "heat_reason": "Multiple lines in the passive component price increase chain are compounding; late October to November serves as a clear action window, impacting key PCBA makers.",
+   "tags": [
+    "涨价",
+    "交期",
+    "MLCC",
+    "被动元件",
+    "影响BOM",
+    "预警"
+   ],
+   "date": "2026-11-05",
+   "severity": "中",
+   "sources": [
+    {
+     "outlet": "Chenxin Weiye",
+     "date": "2026-10-16",
+     "url": "https://www.szcxwykj.com/news/n1792141366024.html",
+     "first_party": false
+    },
+    {
+     "outlet": "sportschosun",
+     "date": "2026-11-02",
+     "url": "https://www.sportschosun.com/life/2026-11-02/202611020000000000000515",
+     "first_party": false
+    }
+   ],
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "id": "evt-20261105-02",
+   "title": "Rare Earth Export Control Suspension Set to Expire on Nov 10 (5 Days Remaining), No Clear Legal Text for Extension; Announcements for 7 Heavy Rare Earths Were Never Suspended",
+   "heat": 85,
+   "heat_reason": "Export control suspension is expiring with no extension text; NdFeB price increase/supply disruption risks directly threaten motor magnet steel",
+   "tags": [
+    "合规",
+    "涨价",
+    "影响BOM",
+    "预警"
+   ],
+   "date": "2026-11-05",
+   "severity": "中",
+   "sources": [
+    {
+     "outlet": "hs-hardwares",
+     "date": "2026-10-09",
+     "url": "https://www.hs-hardwares.com/2026/10/09/rare-earth-export-controls-suspension/",
+     "first_party": false
+    },
+    {
+     "outlet": "technology.org",
+     "date": "2026-10-19",
+     "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/",
+     "first_party": false
+    },
+    {
+     "outlet": "topstocksdaily",
+     "date": "2026-11-01",
+     "url": "https://www.topstocksdaily.com/2026/11/01/two-china-trade-deadlines-hit-the-same-week-neither-has-paper/",
+     "first_party": false
+    }
+   ],
+   "event_id": "evt-rareearth-pause-expiry-1110"
+  },
+  {
+   "id": "evt-20261105-03",
+   "title": "Section 301 Exclusions for 178 Items Expire on Nov 9 at 23:59 (EST) (4 Days Remaining), No Extension Text Yet in Federal Register",
+   "heat": 85,
+   "heat_reason": "Only 4 days remaining before expiration with no extension announcement; 25%/7.5% tariffs will resume starting Nov 10, directly raising export costs to the US",
+   "tags": [
+    "关税",
+    "合规",
+    "预警"
+   ],
+   "date": "2026-11-05",
+   "severity": "中",
+   "sources": [
+    {
+     "outlet": "USTR Federal Register",
+     "date": "2025-12-01",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-12-01/html/2025-21671.htm",
+     "first_party": true
+    },
+    {
+     "outlet": "prepvia",
+     "date": "2026-10-28",
+     "url": "https://www.prepvia.com/blogs/section-301-exclusions-november-9-2026",
+     "first_party": false
+    },
+    {
+     "outlet": "gatewaylines",
+     "date": "2026-11-02",
+     "url": "https://gatewaylines.com/press-releases/china-ship-fee-delay-jan-9-2027-301-exclusions",
+     "first_party": false
+    }
+   ],
+   "event_id": "evt-section301-exclusions-expire-nov9"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Power Semiconductors / IGBT",
+   "type": "涨价/交期",
+   "detail": "CSC Financial Nov 3 research report (Infineon/TI/onsemi/ST collective price increase); onsemi MOSFET/IGBT/SiC up 5%-15% effective Oct 10 (continuous transmission); standard MOSFET lead time 8-12 weeks → approx. 30 weeks, automotive-grade IGBT/SiC 40-50 weeks, SiC supply chain inventory 3 months → 1 month; Infineon expects tightness to last 2-3 years",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价",
+    "交期",
+    "功率器件"
+   ],
+   "event_id": "evt-onsemi-price-hike-2"
+  },
+  {
+   "category": "Relays / Low-Voltage Electricals",
+   "type": "涨价",
+   "detail": "Omron and Schneider relays raised by 10%-25%, Phoenix Contact / Weidmüller connectors increased by 12%-30%; TE Connectivity full-line price adjustment of 5%-12% on July 6; TI's second round of price adjustments on April 1 saw digital isolators / isolated drivers / power management ICs rise by 15%-85% (aggregated distributor channel scope, non-original vendor official website)",
+   "subcategories": [
+    "Relay",
+    "Circuit Breakers",
+    "Connectors - Electrical"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ],
+   "event_id": ""
+  },
+  {
+   "category": "Siemens DI Price Adjustment",
+   "type": "涨价",
+   "detail": "Effective Nov 1: S7-1500 CPU (incl. failsafe) +15%, S7-1200 G1 +15%, HMI Comfort +15%, Industrial PCs avg +25% (memory cards +50%/+125%), SIMOTICS motors +6%, SINAMICS hardware +9% (V20/G120XA variable-frequency drive +5%)",
+   "subcategories": [
+    "Controllers",
+    "Contactors",
+    "Circuit Breakers"
+   ],
+   "company": "",
+   "tags": [
+    "涨价"
+   ],
+   "event_id": "evt-siemens-di-china-price-hike"
+  },
+  {
+   "category": "Variable-Frequency Drives",
+   "type": "涨价",
+   "detail": "INVT price adjustment letter effective Oct 8: full series of low-voltage variable-frequency drives up 3%-15%, medium/high-voltage variable-frequency drives all +5%, elevator variable-frequency drives +5%, servo systems (drives + motors) +3%-5% (primary source notification on official website issued Sep 7)",
+   "subcategories": [
+    "Variable Speed Drives Low Voltage"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价",
+    "VSD/逆变器"
+   ],
+   "event_id": "evt-invt-vsd-price-hike"
+  },
+  {
+   "category": "Vertiv Channel Price Adjustment",
+   "type": "涨价",
+   "detail": "Oct 20 channel price adjustment: list prices for UPS / precision air conditioners / DC power supplies / medium-voltage variable-frequency drives adjusted upward by 3%-8%, new orders effective same day, cited reasons being raw material and component price increases + AI data center demand (paraphrased channel announcement, non-official website original text)",
+   "subcategories": [],
+   "company": "Vertiv",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "PCB / CCL",
+   "type": "涨价/交期",
+   "detail": "Kingboard on Oct 13 increased copper-clad laminate / prepreg made of 2116 and thinner glass-fiber cloth by +15% (8th round within the year); electronic yarn / cloth generally rose MoM in November (G75 yarn +3,000 RMB/ton to 28,750-28,850, 2116 thin cloth +2.5 RMB/m to 20.2); FR-4 lead time extended from a few days to approx. 4 weeks; TPCA expects tightness to continue through 2027; LME copper Q3 average price +44% YoY",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价",
+    "交期",
+    "PCB",
+    "覆铜板"
+   ],
+   "event_id": "evt-pcb-ccl-price-hike-2"
+  },
+  {
+   "category": "Copper",
+   "type": "价格回落",
+   "detail": "LME 3-month copper closed at $14,036/ton on Nov 3 (-2.15%, intraday 13,883 lowest since Aug 19); LME copper inventories reached a 4-month high of 309,650 tons; SHFE copper on Nov 3 at 106,090 RMB/ton (-1.39%)",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "company": "",
+   "tags": [
+    "铜"
+   ],
+   "event_id": "evt-copper-high"
+  },
+  {
+   "category": "Refrigerant",
+   "type": "价格持稳",
+   "detail": "Oct 30 Baichuan Info: R32 / R134a / R125 market average prices at 6.50 / 6.50 / 5.50 ten thousand RMB/ton, remaining stable over the past month; R22 average price at 1.80 ten thousand RMB/ton (weekly -5.26%); total HFCs production quota for 2026 at 797,800 tons (Juhua 37.58%)",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": "",
+   "tags": [
+    "制冷剂"
+   ],
+   "event_id": "evt-refrigerant-q4-price-up"
+  },
+  {
+   "category": "Rare Earth / NdFeB",
+   "type": "价格走弱+管制预警",
+   "detail": "Nov 4 praseodymium-neodymium oxide 698,500 RMB/ton (-3,000), NdFeB blank N38H steady at 260 RMB/kg; export control suspension expires on Nov 10 (5 days remaining) with no renewal text, see Top Stories",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": "",
+   "tags": [
+    "涨价",
+    "预警",
+    "影响BOM"
+   ],
+   "event_id": "evt-rareearth-pause-expiry-1110"
+  },
+  {
+   "category": "Steel",
+   "type": "价格回落",
+   "detail": "Nov 3 China export benchmark rebar FOB $513.1/ton (-0.55%), hot-rolled coil $484.14/ton (-0.58%); domestic construction steel average price 3,229 RMB/ton (-4)",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Compressors",
+   "type": "排查无异常",
+   "detail": "5 categories (centrifugal, reciprocating, rotary, scroll, screw): no price increase letters or lead time change announcements in this round",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Valves & Heat Exchangers",
+   "type": "排查无异常",
+   "detail": "Sanhua / DunAn / Yinlun: no price increase / EOL / lead time news in this round",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Ball Valves"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Motors / Fans / Water Pumps & Heat Sinks",
+   "type": "排查无异常",
+   "detail": "No substantial supply news in this round (for Siemens SIMOTICS motors +6%, see DI price adjustment item above)",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Axial Fans",
+    "Water Pumps"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Tier B Round-Check",
+   "type": "排查无异常",
+   "detail": "batch 4 (4th batch of this round) 11 categories: angle valves, clips, material labels, steel fittings, injection molded parts, machined parts, pulleys, stampings, general chemicals, valve accessories, relays and power supplies; 0 substantial hits, no other anomalies (for relay statements, see item 2 above)",
+   "subcategories": [
+    "Angle Valves",
+    "Clips",
+    "Direct Material Labels",
+    "Fittings - Steel",
+    "Injection Molding Plastics",
+    "Machining, Non-Casting",
+    "Pulley & Sheaves",
+    "Stampings",
+    "Uncategorized Chemicals",
+    "Valve Trim Kit",
+    "继电器与电源"
+   ],
+   "company": "",
+   "tags": [
+    "Tier B 轮查"
+   ],
+   "event_id": ""
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "有实质动态",
+   "note": "Released YORK YMSC magnetic-bearing centrifugal chiller + MCH-D dual-source air wall at the CIIE (PR Newswire official release, Nov 4)."
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "Expanded CDU product line to 5MW with a $3 billion+ hyperscaler agreement; full-year data center sales target set at $2 billion (relayed Nov 2 from Oct 29 earnings report)."
+  },
+  {
+   "company": "特灵",
+   "status": "有实质动态",
+   "note": "Announced the acquisition of Canadian heat-exchanger manufacturer Cancoil on Nov 4 (Business Wire official release)."
+  },
+  {
+   "company": "大金",
+   "status": "有实质动态",
+   "note": "Officially launched the 2.5MW standalone liquid-cooling CDU on Nov 1; released VRV 7 (first R32 platform) in Australia on Nov 2."
+  },
+  {
+   "company": "美的",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "格力",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days (new home appliance releases in Vietnam are consumer-grade)."
+  },
+  {
+   "company": "海尔",
+   "status": "有实质动态",
+   "note": "Completed the Ferroli Southeast Asia handover ceremony on Nov 3; Q3 data center sales reached nearly 5 times the same period last year (Q3 earnings report, Oct 29)."
+  },
+  {
+   "company": "日立",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "松下",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "LG",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "三星",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "Q3 organic orders doubled, full-year guidance raised, and Utility Innovation acquisition completed; channel price adjustments of +3~8% on UPS, precision air conditioners, etc., implemented on Oct 20."
+  },
+  {
+   "company": "英维克",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days (Coolinside solution figures are expectations from IR event communications)."
+  },
+  {
+   "company": "申菱环境",
+   "status": "有实质动态",
+   "note": "Issued 1 billion RMB in convertible bonds, with 800 million RMB allocated to the Shunde liquid-cooling intelligent manufacturing base (Oct 29); granted a utility model patent related to CDUs (Oct 31)."
+  },
+  {
+   "company": "台达",
+   "status": "有实质动态",
+   "note": "The Chairman stated on Oct 30 that AI-related revenue has reached 50%, liquid cooling thermal management accounts for about 13%, and liquid cooling revenue is expected to double in 2026 (company guidance)."
+  },
+  {
+   "company": "三花智控",
+   "status": "有实质动态",
+   "note": "Q3 revenue reached 25.274 billion RMB (+5.18%), disclosed the 2MW S341 large brazed plate heat exchanger (Nov 3)."
+  },
+  {
+   "company": "高澜股份",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "同飞股份",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "浪潮信息",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  },
+  {
+   "company": "联想",
+   "status": "排查无异常",
+   "note": "No material news in the past 3 days."
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Trane Technologies Announces Acquisition of Canadian Heat Exchanger Manufacturer Cancoil Thermal",
+   "detail": "Founded in 1983 with dual manufacturing plants in Ontario, Canada and Jacksonville, Texas, and 450+ employees, producing fluid coolers, air-cooled condensers, and finned-tube heat exchangers (an existing Trane supplier); the transaction is expected to close before the end of the year, with terms undisclosed.",
+   "source": "Business Wire, 2026-11-04",
+   "url": "https://www.businesswire.com/news/home/20261104524656/en/Trane-Technologies-to-Present-at-the-Baird-Global-Industrial-Conference",
+   "first_party": true,
+   "event_id": "evt-trane-cancoil-acquisition"
+  },
+  {
+   "title": "Carrier Expands CDU Product Line to 5MW, Secures $3 Billion+ Hyperscaler Agreement",
+   "detail": "The 1MW CDU has been released, with a 2.6MW version coming in the next 2 months and a 5MW version launching by year-end; data center orders in the first 9 months exceeded $3 billion (+350% YoY), with a $3 billion+ agreement signed with a hyperscaler in early October; full-year data center sales target is set at $2 billion.",
+   "source": "Facilities Dive, 2026-11-02",
+   "url": "https://www.facilitiesdive.com/news/carrier-leverages-new-chillers-to-grow-data-center-business/873395/",
+   "first_party": false,
+   "event_id": "evt-carrier-q3-2026"
+  },
+  {
+   "title": "Vertiv Q3 Organic Orders Double, Completes Microgrid Company Acquisition",
+   "detail": "Q3 net sales reached $4.313 billion (+61%, organic +55%), full-year sales guidance raised by $650 million to $14.45–14.85 billion; initial cash consideration for the Utility Innovation Group acquisition is approximately $1.45 billion + up to $1.15 billion in earn-outs.",
+   "source": "BusinessNews, 2026-10-29",
+   "url": "https://businessnews.com.my/vertiv-q3-sales-jump-outlook-raised/",
+   "first_party": false,
+   "event_id": "evt-vertiv-q3-2026"
+  },
+  {
+   "title": "Daikin Officially Launches 2.5MW Standalone Liquid-Cooling CDU on Nov 1, Releases VRV 7 in Australia",
+   "detail": "Units support parallel connection from 400kW to 2.5MW, featuring redundant pumps, dual pressure/temperature sensors, and leak detection; iDCM platform expanded to cover CDU/CRAH/AHU/air walls; Australia's VRV 7 is the first R32 refrigerant VRV platform, delivering a cooling seasonal efficiency ratio 35% higher and heating 42% higher than the previous R410A generation.",
+   "source": "Refindustry, 2026-11-02",
+   "url": "https://refindustry.com/news/daikin-introduces-coolant-distribution-unit-for-ai-data-center-cooling/",
+   "first_party": false,
+   "event_id": "evt-daikin-2p5mw-cdu"
+  },
+  {
+   "title": "JCI Releases YORK YMSC Magnetic-Bearing Centrifugal Chiller + MCH-D Dual-Source Air Wall at CIIE",
+   "detail": "YMSC is an oil-free magnetic-bearing inverter centrifugal water chiller, and MCH-D is a dual-source air wall designed for high-density cooling of AI computing power (dual-source architecture + intelligent collaborative control; specific capacity/energy efficiency parameters not disclosed).",
+   "source": "PR Newswire, 2026-11-04",
+   "url": "https://www.prnasia.com/story/554635-1.shtml",
+   "first_party": true,
+   "event_id": ""
+  },
+  {
+   "title": "Shenling Environment Issues 1 Billion RMB Convertible Bonds, Invests 800 Million RMB in Liquid-Cooling Intelligent Manufacturing Base",
+   "detail": "Shunde liquid-cooling advanced intelligent manufacturing base (land certificate, filing, and EIA completed), adding production capacity for nearly 20,000 units of liquid-cooling equipment; the company stated that existing liquid-cooling capacity is approaching saturation; data service sector new orders in H1 reached 2.3 times the same period last year.",
+   "source": "jinbaoli2007, 2026-10-29",
+   "url": "https://www.jinbaoli2007.com/articles/daily-2ff57f34e68b.html",
+   "first_party": false,
+   "event_id": "evt-shenling-convertible-bond"
+  },
+  {
+   "title": "Third Revision of US Section 338 Tariff List on Canada Effective Oct 30",
+   "detail": "A 50% ad valorem tariff added to air conditioning equipment, valves, carpets, and horizontal freezers, while certain mechanical refrigeration equipment was removed; USMCA originating goods are not exempt and can be stacked with Section 232.",
+   "source": "Longbridge, 2026-10-23",
+   "url": "https://longbridge.com/zh-CN/events/3393820?channel=n296081767",
+   "first_party": false,
+   "event_id": "evt-us-canada-section338-ac-tariff"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "存储",
+   "detail": "Micron October earnings report: data center DRAM gross margin reached 90% (41% a year ago), CEO states 2027 and 2028 will be tighter than 2026; TrendForce: in 2027, nine cloud vendors will purchase approximately $1.02 trillion in memory ≈ 96% of that year's global memory market.",
+   "source": "deadrisk, 2026-10-28",
+   "event_id": "evt-dram-hbm-shortage",
+   "tags": [
+    "存储",
+    "涨价"
+   ]
+  },
+  {
+   "material": "MLCC",
+   "detail": "Yageo plans a new round of price increases from late October to November: high-capacitance up 50%+, medium-to-low capacitance up 10%-30%; Murata capacity utilization at 95%, AI server high-capacitance market share approx. 70%; Samsung Electro-Mechanics Q4 consumer-grade X5R up 25%-30%, high-end X6S up 10%-20%; lead times for high-end part numbers at 5-10 months.",
+   "source": "Sports Chosun relaying iM Securities, 2026-11-02",
+   "event_id": "evt-mlcc-price-hike",
+   "tags": [
+    "MLCC",
+    "涨价",
+    "交期",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "PCB/CCL",
+   "detail": "Kingboard raised prices by +15% on copper-clad laminates using 2116 and thinner glass-fiber cloth on Oct 13 (8th round this year); November electronic yarn/cloth generally up MoM (G75 yarn +3,000 RMB/ton, 2116 thin cloth +2.5 RMB/meter); FR-4 lead time extended from a few days to approx. 4 weeks; TPCA expects tightness to continue into 2027.",
+   "source": "21 Finance, 2026-11-03",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "tags": [
+    "PCB",
+    "覆铜板",
+    "涨价",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "功率器件",
+   "detail": "CICC confirmed the price hike wave on Nov 3 (Infineon, TI, onsemi, ST collectively); onsemi implemented a 5%-15% hike on MOSFETs/IGBTs/SiC starting Oct 10, with ongoing transmission; general MOSFET lead times extended from 8-12 weeks to approx. 30 weeks, automotive-grade IGBTs/SiC at 40-50 weeks; Infineon expects tightness to last 2-3 years.",
+   "source": "Sina Finance, 2026-11-03",
+   "event_id": "evt-onsemi-price-hike-2",
+   "tags": [
+    "功率器件",
+    "涨价",
+    "交期",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "变压器",
+   "detail": "Wood Mackenzie: 2026 power transformer shortage at 15%, average lead time 128 weeks (approx. 2.5 years); US August 31 executive order bans imports of bulk Chinese power equipment; Eaton stated on Nov 3 that its Electrical Americas backlog is +33% YoY.",
+   "source": "Second Order, 2026-11-03",
+   "event_id": "",
+   "tags": [
+    "变压器",
+    "电网",
+    "交期"
+   ]
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "新能源车",
+   "detail": "Automotive chip price hike wave, NXP's third price adjustment of the year effective Jan 1, 2027 (Infineon, ST, TI, Renesas, Vishay with intensive price adjustments this year); automotive-grade memory overall up approx. 180% from March to June 2026; 15+ automakers raised retail prices or implemented disguised price hikes; shares MCUs, memory, and power devices with HVAC.",
+   "source": "Drive China, 2026-11-03",
+   "event_id": ""
+  },
+  {
+   "industry": "光储",
+   "detail": "Kehua Digital Energy raised prices across its entire lineup by 5%-15% starting Nov 1; Huawei Digital Power issued a letter on Oct 20 proposing a 5%-15% hike (customer-by-customer negotiations, effective date TBD); Sungrow already raised prices on Sep 20, Inovance raised energy storage PCS prices by 5%-15% in August.",
+   "source": "pv-magazine, 2026-11-03",
+   "event_id": "evt-huawei-kehua-pv-storage-price-hike"
+  },
+  {
+   "industry": "出口管制",
+   "detail": "Ministry of Commerce Announcement No. 48: public solicitation of opinions on incorporating cutting-edge AI-related items into export controls (40 technologies proposed for addition, 23 of which belong to AI), temporary export registration has taken effect, public comment period from Oct 16 to Nov 15; indicates tightening compliance criteria for dual-use item exports.",
+   "source": "lumiagent, 2026-11-04",
+   "event_id": ""
+  },
+  {
+   "industry": "碳关税",
+   "detail": "EU CBAM final phase took effect on Jan 1, 2026 (Omnibus simplified version); Q3 2026 certificate price at 82.32 euros (+9.4% MoM); planned expansion to approx. 180 downstream products by 2028 (including steel/aluminum components); impacts export costs of copper, aluminum, and steel used in HVAC to Europe.",
+   "source": "Enhesa, 2026-11-04",
+   "event_id": ""
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261105-01",
+   "title": "Price increase window for high-capacitance MLCCs (Late Oct—Nov)",
+   "urgency": "高",
+   "impact": "Passive components and connectors (full PCBA board)",
+   "action": "Urgent inventory audit for high-capacitance MLCCs, lock in rolling demand for 2026Q4-2027Q1, and negotiate long-term price protection contracts with distributors of Yageo, Murata, and Samsung Electro-Mechanics",
+   "trigger": "Price increase letters take effect or lead times for high-end part numbers confirmed >8 weeks",
+   "deadline": "",
+   "related_events": [
+    "evt-20261105-01"
+   ]
+  },
+  {
+   "id": "warn-20261105-02",
+   "title": "Rare earth control suspension expires on 11-10",
+   "urgency": "高",
+   "impact": "Magnet steel / motors",
+   "action": "Verify license status of magnet steel suppliers before Nov 10, back-schedule safety stock based on a 4-month review cycle, and accelerate alternative magnet steel part number validation",
+   "trigger": "No renewal legal text published by Nov 10",
+   "deadline": "2026-11-10",
+   "related_events": [
+    "evt-20261105-02"
+   ]
+  },
+  {
+   "id": "warn-20261105-03",
+   "title": "Section 301 exclusions expire on 11-09",
+   "urgency": "高",
+   "impact": "164 tariff-code products exported from China to the US",
+   "action": "Review USTR Federal Register before Nov 9, recalculate US order costs upon expiration based on reinstated tariff rates (25%/7.5%), and negotiate price pass-through clauses with US customers",
+   "trigger": "No extension text as of Nov 10",
+   "deadline": "2026-11-09",
+   "related_events": [
+    "evt-20261105-03"
+   ]
+  },
+  {
+   "id": "warn-20261105-04",
+   "title": "50% Section 338 tariff on air conditioners imported into Canada already in effect",
+   "urgency": "中",
+   "impact": "Air conditioners and valves exported to Canada",
+   "action": "Verify USMCA rules of origin qualifications for Canada-bound supply chains, and assess total tax burden combined with Section 232",
+   "trigger": "Already in effect, verify immediately",
+   "deadline": "",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261105-05",
+   "title": "Power semiconductor lead times extended (MOSFETs -> 30 weeks, automotive IGBTs/SiC 40-50 weeks)",
+   "urgency": "高",
+   "impact": "Chips and semiconductors (VSD/driver boards)",
+   "action": "Build inventory of critical parts to 4-6 months, place orders via dual channels (direct procurement from original manufacturer + agents), and validate domestic alternative part numbers such as Silan Microelectronics",
+   "trigger": "Confirmed lead time >26 weeks or receipt of price increase letter",
+   "deadline": "",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261105-06",
+   "title": "New round of PCB/CCL price increases of 10%-15% in November",
+   "urgency": "中",
+   "impact": "PCBA / electronics manufacturing services",
+   "action": "Lock in Q4 copper-clad laminate long-term contracts before the end of November, and consolidate PCB orders to increase volume and protect prices",
+   "trigger": "Kingboard's new November letter takes effect",
+   "deadline": "",
+   "related_events": []
+  }
+ ],
+ "daily_report": {
+  "title": "HVAC / liquid-cooling CDU Industry Intelligence Morning Briefing (2026-11-05 · Thursday)",
+  "date": "2026-11-05",
+  "headlines": [
+   "New round of MLCC price increase window taking effect: Yageo high-capacitance to increase by 50%+, Murata has initiated price increases, capacity utilization at 95%, high-end part number lead times extended to 5-10 months",
+   "Rare earth export control suspension expires on Nov 10 (5 days left), no clear legal text for extension; 7 heavy rare earths in announcement never suspended",
+   "Section 301 178 exclusions expire on Nov 09 (4 days left), no extension text in Federal Register yet; 25%/7.5% tariffs reinstated starting Nov 10"
+  ],
+  "body_file": "briefs/2026-11-05-hvac-cdu-morning-briefing.md"
+ },
+ "time_anchors": [
+  {
+   "date": "2026-11-09",
+   "label": "Section 301 178 exclusion clauses expire (4 days left)"
+  },
+  {
+   "date": "2026-11-10",
+   "label": "Rare earth export control suspension expires (5 days left)"
+  },
+  {
+   "date": "2026-11-15",
+   "label": "Deadline for comments on Ministry of Commerce Announcement No. 48"
+  },
+  {
+   "date": "2027-01-01",
+   "label": "NXP/Renesas product price system adjustment takes effect"
+  },
+  {
+   "date": "2027-01-09",
+   "label": "Ocean freight 301 fee suspension proposal expires"
+  }
+ ],
+ "meta": {
+  "date": "2026-11-05",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-11-05-hvac-cdu-morning-briefing.md",
+  "note": "Thursday morning briefing. Three top stories: new round of MLCC price increase window taking effect (Yageo high-capacitance 50%+, Murata already increased, capacity utilization 95%, lead times 5-10 months); rare earth control suspension expires on 11-10 with 5 days left and no extension text; Section 301 178 exclusions expire on 11-09 with 4 days left and still no extension (review Federal Register before delivery). Industry dynamics: Trane acquires Cancoil, Carrier expands CDU to 5MW + $3B agreement, Vertiv Q3 orders double + acquisition closure, Daikin launches 2.5MW CDU, JCI CIIE YMSC magnetic levitation, Shenling 1B convertible bonds with 800M invested in liquid-cooling base; tariff item: Section 338 effective 10-30 (air conditioners/valves 50%). Siphon effects: 2027 capex approaches $1 trillion, Micron DRAM gross margin 90%, CoWoS planned price increase 10-20%, transformer gap 15% with 128-week lead time, optical module demand revised upward. Cross-industry: NXP third round of price adjustments effective 2027-1-1, Kehua 11-01 full series price increase 5-15%, CBAM final phase effective, Announcement No. 48 public comment. Event repository: 3 new events (rare earth suspension expiration, CoWoS price increase, Delta liquid cooling doubling), 19 timelines added. Tier B batch 4: 11 categories audited with no anomalies. English version: generated by 09:00 translation cron."
+ }
+}
