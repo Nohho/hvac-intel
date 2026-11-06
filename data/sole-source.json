@@ -2,6 +2,18 @@
   "snapshot_date": "2026-10-04",
   "note": "BOM 快照（2026-10-04）聚合：有效品类取 Sub-category Update 优先、否则 Sub-category；供应商按名去重。仅列名册内登记供应商 ≤2 家的品类（单一/双来源），不含供应商名称。",
   "total_categories": 189,
+  "aliases": [
+    {
+      "name": "电容",
+      "supplier_count": 1,
+      "alias_of": "Capacitors"
+    },
+    {
+      "name": "MLCC",
+      "supplier_count": 1,
+      "alias_of": "Capacitors"
+    }
+  ],
   "items": [
     {
       "name": "Accumulators",
@@ -144,6 +156,11 @@
       "supplier_count": 1
     },
     {
+      "name": "MLCC",
+      "supplier_count": 1,
+      "alias_of": "Capacitors"
+    },
+    {
       "name": "Magnetic Bearings",
       "supplier_count": 1
     },
@@ -262,6 +279,11 @@
     {
       "name": "Zone Valves",
       "supplier_count": 1
+    },
+    {
+      "name": "电容",
+      "supplier_count": 1,
+      "alias_of": "Capacitors"
     },
     {
       "name": "Access Control Panels",
