@@ -258,6 +258,11 @@
      "date": "2026-11-06",
      "change": "KEMET钽电容第二轮涨价11-01生效（T520/T521/T530系列+20%-30%，由分销扩展至直销客户）；三星电机MLCC交期延至52周（部分经销商挂牌61周，9月为39-49周）；松下聚合物钽电容交期拉长至84周，70%-80%的2027年产能已被锁定。",
      "text_en": "KEMET second-round tantalum capacitor price increases took effect Nov 1 (T520/T521/T530 series +20%-30%, extended from distributors to direct customers); Samsung Electro-Mechanics MLCC lead times stretched to 52 weeks (some distributors list 61 weeks, vs 39-49 in September); Panasonic polymer tantalum lead times stretched to 84 weeks, with 70%-80% of 2027 capacity already locked."
+    },
+    {
+     "date": "2026-11-07",
+     "change": "国巨新一轮涨价进入落地窗口（10 月底至 11 月），高容料号 +50% 以上、中低容 +10-30%；三星电机签下 1.0722 万亿韩元 AI 服务器 MLCC 长单，为公司史上最大单笔 MLCC 订单",
+     "text_en": "Yageo’s new hike enters its landing window (late Oct to Nov): high-capacity parts +50% or more, mid/low-capacity +10-30%; Samsung Electro-Mechanics signed a KRW 1.0722 trillion AI-server MLCC long-term contract, its largest single MLCC order ever"
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -402,6 +407,11 @@
      "date": "2026-11-06",
      "change": "LME三月铜11-05收14,005.5美元/吨（-0.04%），11-03一度跌破14,000美元；LME铜总库存318,675吨，其中美国仓库223,300吨、占70.1%（2019年3月以来最高占比），背景为市场预期美国自2027年起对精炼铜进口征15%关税。",
      "text_en": "LME 3-month copper closed at $14,005.5/t on Nov 5 (-0.04%), briefly breaking below $14,000 on Nov 3; total LME copper stocks 318,675t, of which US warehouses held 223,300t (70.1%, highest share since March 2019), amid expectations of a 15% US tariff on refined copper imports from 2027."
+    },
+    {
+     "date": "2026-11-07",
+     "change": "LME 3M 11-06 盘中跌破 14,000 美元，本周跌幅为 3 月以来最大；但上期所铜库存周降超 24%、创近 3 年新低，洋山铜溢价创纪录高位——期货跌、现货紧并存",
+     "text_en": "LME 3M broke below $14,000 intraday on Nov 6, the biggest weekly drop since March; yet SHFE copper stocks fell over 24% w/w to a near-3-year low and the Yangshan premium hit a record — futures down, physical tight"
     }
    ],
    "title": "铜价历史高位",
@@ -578,6 +588,11 @@
      "date": "2026-11-06",
      "change": "DDR5 16Gb现货61.66美元/颗（30日+8.13%、同比+484%）、DDR4 8Gb 47.59美元/颗（同比+856%）；Q4常规DRAM合约价预计环比+10-15%、NAND +15-20%；TeamGroup 11-02法说会称最严重短缺在2026Q4至2027Q2末、供需最早2028年下半年才平衡。",
      "text_en": "DDR5 16Gb spot at $61.66 per chip (+8.13% in 30 days, +484% year on year), DDR4 8Gb at $47.59 (+856% year on year); Q4 conventional DRAM contract prices expected +10-15% quarter on quarter, NAND +15-20%; TeamGroup said on its Nov 2 call the worst shortage runs from Q4 2026 to end-Q2 2027, with balance only in H2 2028 at the earliest."
+    },
+    {
+     "date": "2026-11-07",
+     "change": "DDR5 16Gb 现货 11-06 报 62.17 美元/颗，周度 -0.6%，为 12 周连涨 +16.7% 后首次周跌；DDR4 8Gb 周均 47.81 美元、周 -1.0%，连续第三周下跌；Q4 常规 DRAM 合约价仍预计 +10-15%",
+     "text_en": "DDR5 16Gb spot quoted $62.17 on Nov 6, -0.6% w/w, the first weekly dip after a 12-week +16.7% run; DDR4 8Gb averaged $47.81, -1.0% w/w, a third straight weekly decline; Q4 conventional DRAM contract prices still expected +10-15%"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -2084,6 +2099,11 @@
      "date": "2026-11-06",
      "change": "距11-09 23:59（美东）到期剩3天。截至11-06上午复核联邦公报：仍无延期文本；往年USTR常在到期前0-3天才公告。11-10起恢复全额301关税（清单1/2/3为25%、4A为7.5%）。",
      "text_en": "Three days left until the Nov 9 11:59 p.m. ET expiry. Rechecked the Federal Register before this briefing (morning of Nov 6): still no extension notice; USTR has historically announced 0-3 days before expiry. Full Section 301 duties snap back on Nov 10 (25% for Lists 1/2/3, 7.5% for List 4A)."
+    },
+    {
+     "date": "2026-11-07",
+     "change": "截至 11-06 复核联邦公报仍无延期文本，剩 2 天；海事费用暂停延至 2027-01-09 的最终决定亦未发布",
+     "text_en": "As of Nov 6 review, still no extension text in the Federal Register, 2 days left; no final decision published on extending the maritime fee pause to Jan 9, 2027"
     }
    ]
   },
@@ -2736,6 +2756,11 @@
      "date": "2026-11-06",
      "change": "距11-10暂停到期剩4天，截至11-05仍无续期法律文本；商务部9-28称中美休战延至2027-01-10但未点名稀土、未修订第70号公告。氧化镨钕11-05报711,000元/吨（+10,000），10月下旬下行后小幅回稳。",
      "text_en": "Four days left until the Nov 10 suspension expiry; as of Nov 5 no renewal legal text exists. MOFCOM said on Sep 28 the truce extends to Jan 10, 2027 but did not name rare earths or amend Notice No. 70. Praseodymium-neodymium oxide was 711,000 yuan/t on Nov 5 (+10,000), stabilizing after a late-October slide."
+    },
+    {
+     "date": "2026-11-07",
+     "change": "截至 11-06 仍无修订第 70 号公告的法律文本，剩 3 天；贝森特称釜山休战覆盖稀土、延至 2027-01-10，但未见正式文本；氧化镨钕 11-05 报 711,000 元/吨（+10,000）",
+     "text_en": "As of Nov 6, still no legal text amending Announcement No. 70, 3 days left; Bessent says the Busan truce covers rare earths through Jan 10, 2027, but no formal text seen; praseodymium-neodymium oxide quoted 711,000 yuan/t on Nov 5 (+10,000)"
     }
    ]
   },
@@ -2819,6 +2844,105 @@
      "date": "2026-11-05",
      "change": "特灵与LiquidStack联合发布2.5MW CDU，2027年Q2起发货；Nidec同期发布3.2MW行间CDU；10-26 Cooler Master亦发布2.5MW行间CDU、目标Q4量产。",
      "text_en": "Trane and LiquidStack jointly launched a 2.5MW CDU, shipping from Q2 2027; Nidec released a 3.2MW in-row CDU in the same period; Cooler Master also launched a 2.5MW in-row CDU on Oct 26 targeting Q4 volume production."
+    }
+   ]
+  },
+  {
+   "id": "evt-nylon-resin-price-hike",
+   "title": "尼龙树脂集体涨价（BASF/Celanese/Envalior/东丽/金发，10-11 月）",
+   "title_en": "Nylon resin collective price hikes (BASF/Celanese/Envalior/Toray/Kingfa, Oct-Nov)",
+   "status": "已生效",
+   "status_note": "BASF 北美己内酰胺/PA6 10-01 起 +0.15 美元/磅；Celanese 美洲 PA6 +0.44 美元/kg、PA66 +0.33 美元/kg（10-19 起）；Envalior 大中华区 +1700 元/吨（10-15 起）；东丽 11 月起 +30 日元/kg；金发改性 PA6 +2500 元/吨、PA66 +2000 元/吨",
+   "subcategories": [
+    "Nylon Resin"
+   ],
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-07",
+     "change": "BASF/Celanese/Envalior/东丽/金发 10-11 月集体调价，风机罩壳、接插件外壳、线束绝缘等塑料件成本承压",
+     "text_en": "BASF, Celanese, Envalior, Toray and Kingfa raised prices collectively in Oct-Nov, pressuring costs of fan housings, connector shells, wire-harness insulation and other plastic parts"
+    }
+   ]
+  },
+  {
+   "id": "evt-vertiv-dow-solenis-liquid-cooling",
+   "title": "Vertiv 联合 Dow 与 Solenis 推出液冷生态方案",
+   "title_en": "Vertiv launches liquid-cooling ecosystem with Dow and Solenis",
+   "status": "已通知",
+   "status_note": "11-02 宣布：扩展 Dow Coolant Care Network 合作、新增 Solenis 合作，冷却液化学、流体健康监测与全生命周期服务整合成统一运维体系",
+   "subcategories": [],
+   "tags": [
+    "液冷"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-07",
+     "change": "Vertiv 11-02 宣布液冷生态方案：扩展 Dow 合作、新增 Solenis 合作，液冷竞争从部件转向系统运维能力",
+     "text_en": "Vertiv announced on Nov 2 a liquid-cooling ecosystem: expanded Dow collaboration and a new Solenis partnership, shifting liquid-cooling competition from components to system operations"
+    }
+   ]
+  },
+  {
+   "id": "evt-daikin-vrv7-r32",
+   "title": "大金澳洲发布 R32 VRV 7 商用空调系统",
+   "title_en": "Daikin Australia launches R32 VRV 7 commercial air conditioning system",
+   "status": "已通知",
+   "status_note": "11-02 发布：首款 R32 平台，GWP 较 R410A 低 66%，制冷季节能效 +35%、制热 +42%，11 月起澳洲上市",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [
+    "技术路线"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-07",
+     "change": "大金澳洲 11-02 发布 R32 VRV 7：首款 R32 平台，GWP 较 R410A 低 66%，制冷能效 +35%、制热 +42%",
+     "text_en": "Daikin Australia launched R32 VRV 7 on Nov 2: its first R32 platform, 66% lower GWP than R410A, cooling efficiency +35% and heating +42%"
+    }
+   ]
+  },
+  {
+   "id": "evt-modine-q2-fy27",
+   "title": "Modine Q2 FY2027：营收 +35%、数据中心 +95%",
+   "title_en": "Modine Q2 FY2027: revenue +35%, data centers +95%",
+   "status": "已落地",
+   "status_note": "11-03 财报：营收 9.944 亿美元（+35%），数据中心 +95%、商用 HVAC +23%；FY2027 营收指引 +50-55%",
+   "subcategories": [
+    "Tube & Fin Coils"
+   ],
+   "tags": [
+    "财报"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-07",
+     "change": "Modine 11-03 发布 Q2 FY2027：营收 9.944 亿美元（+35%），数据中心 +95%、商用 HVAC +23%，FY2027 营收指引 +50-55%",
+     "text_en": "Modine reported Q2 FY2027 on Nov 3: revenue $994.4M (+35%), data centers +95%, commercial HVAC +23%; FY2027 revenue guidance +50-55%"
+    }
+   ]
+  },
+  {
+   "id": "evt-bearings-tight-2027",
+   "title": "工业轴承供应紧张延续至 2027 上半年（Honeywell/RBC）",
+   "title_en": "Industrial bearings tight through H1 2027 (Honeywell/RBC)",
+   "status": "已通知",
+   "status_note": "Honeywell 航空 CEO 10-29 称轴承是\"今年最难的品类\"，二供 2027 年初清完积压、第三家 2027Q2 上线；RBC Bearings 积压翻倍至 23 亿美元",
+   "subcategories": [
+    "Ball Bearings"
+   ],
+   "tags": [
+    "交期"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-07",
+     "change": "Honeywell 航空 CEO 10-29 称轴承是\"今年最难的品类\"；RBC Bearings 积压翻倍至 23 亿美元，工业轴承紧张延续至 2027 上半年",
+     "text_en": "Honeywell Aerospace CEO said on Oct 29 bearings are \"the most difficult category\" this year; RBC Bearings backlog doubled to $2.3B, industrial bearing tightness extends through H1 2027"
     }
    ]
   }
