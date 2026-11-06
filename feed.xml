@@ -3,7 +3,10 @@
 <channel>
 <title>HVAC 供应链情报</title><link>https://nohho.github.io/hvac-intel/</link>
 <description>HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议</description>
-<language>zh-CN</language><lastBuildDate>Thu, 05 Nov 2026 23:46:05 GMT</lastBuildDate>
+<language>zh-CN</language><lastBuildDate>Fri, 06 Nov 2026 23:46:44 GMT</lastBuildDate>
+<item><title>HVAC 供应链情报早报 2026-11-07</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-07</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-07</guid><pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate><description>• Section 301 178项排除11-09到期（剩2天），联邦公报仍无延期文本
+• 稀土出口管制暂停11-10到期（剩3天），续期无明确法律文本
+• 铜价期货跌破14,000美元、本周跌幅3月以来最大，但现货市场创近3年最紧</description></item>
 <item><title>HVAC 供应链情报早报 2026-11-06</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-06</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-06</guid><pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate><description>• Section 301 178项排除11-09到期（剩3天），联邦公报仍无延期文本
 • 稀土出口管制暂停11-10到期（剩4天），续期无明确法律文本
 • 被动元件与覆铜板涨价链再收紧：建滔11-04新函、钽电容11-01起+20-30%、三星电机MLCC交期52周</description></item>
@@ -122,11 +125,5 @@
 • 北美HVAC 10月涨价潮：Nidec压缩机/Regal Rexnord电机/铜linesets已生效，Robertshaw最高15%下周一生效
 • 三星Q3实际业绩落地：营业利润107.4万亿韩元（+782.5%）创纪录
 • LG获北美5GW AI数据中心冷水机组多年期供货协议</description></item>
-<item><title>HVAC 供应链情报早报 2026-10-08</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-08</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-08</guid><pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate><description>节后首日：安森美10-10涨价、10-09是最后一个工作日；国巨/华新科MLCC产能售罄、涨价潮升级；Comex铜三连涨逼近纪录高点；三星Q3数字今日待公布
-• 安森美第二轮涨价10-10生效，交期拉长至32周，10-09是最后一个工作日
-• MLCC涨价潮升级：国巨/华新科产能售罄，高端料交期8周拉长至10个月
-• 国民技术部分MCU 10-1起涨价10%~20%，交期背景40~52周
-• 铜价三连涨逼近纪录高点：Comex 10-6报$6.5945/磅，距新高仅差3%
-• 美光FY27 75%产能已锁定、客户预付款320亿美元，2027-28年供给更紧</description></item>
 </channel>
 </rss>
