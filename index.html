@@ -1120,7 +1120,8 @@ async function sitThinCell(){
   const rr=await riskRankJson();if(!rr)return;
   const el=document.getElementById("sit-thin");if(!el)return;
   const risk=new Set((rr.items||[]).map(i=>i.name));
-  const cross=(ss.items||[]).filter(i=>risk.has(i.name)).map(i=>taxName(i.name));
+  const rscore={};(rr.items||[]).forEach(i=>{rscore[i.name]=i.score||0;});
+  const cross=(ss.items||[]).filter(i=>risk.has(i.name)).sort((a,b)=>(rscore[b.name]||0)-(rscore[a.name]||0)).map(i=>taxName(i.name)); /* 2026-11-06：按风险分降序取前 5，之前按底册顺序取前 5 会漏掉高分项 */
   const sep=LANG==="en"?", ":"、";
   let list=cross.slice(0,5).join(sep);
   if(cross.length>5)list+=(LANG==="en"?", etc.":"等");
