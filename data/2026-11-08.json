@@ -1,0 +1,627 @@
+{
+ "meta": {
+  "date": "2026-11-08",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-11-08-hvac-cdu-morning-briefing.md",
+  "note": "周日早报。头条三件：Section 301 178项排除明日11-09到期剩1天仍无延期文本；稀土管制暂停11-10到期剩2天、贝森特11-06施压、氧化镨钕707,500元/吨；铜价再跌破14,000美元、本周跌幅3月以来最大但现货更紧。行业动态：JCI约克YDAM磁悬浮机组、开利39CV CRAH、大金Q2超预期。虹吸：DRAM现货续跌、AI板块回调与capex背离、MLCC交期61周+松下CCL 2027年+200%。跨行业：OSAT瓶颈拉长模拟/功率交期、结构钢区域分化。事件库：新建4事件（JCI YDAM、开利39CV、大金Q2、谷歌Crusoe），追加10条timeline；更正11-07期Vertiv -14%日期（实为11-05）。Tier B batch 7：5个hit，其余6个无异常。英文版：由09:00翻译cron生成。"
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261108-01",
+   "title": "Section 301 178项排除明日到期（剩1天），仍无延期文本",
+   "heat": 89,
+   "heat_reason": "关税成本突增在即，11-10起恢复25%/7.5%，行动时间窗口仅剩1天",
+   "tags": [
+    "关税",
+    "预警"
+   ],
+   "date": "2026-11-08",
+   "severity": "中",
+   "sources": [
+    {
+     "outlet": "USTR 联邦公报 2025-21671",
+     "date": "2025-12-01",
+     "url": "https://public-inspection.federalregister.gov/2025-21671.pdf",
+     "first_party": true
+    },
+    {
+     "outlet": "Gateway Lines",
+     "date": "2026-11-02",
+     "url": "https://gatewaylines.com/press-releases/china-ship-fee-delay-jan-9-2027-301-exclusions",
+     "first_party": false
+    },
+    {
+     "outlet": "The Oregon Group",
+     "date": "2026-11-06",
+     "url": "https://theoregongroup.com/latest-news/us-warns-china-rare-earths-two-thirds-busan-pledge/",
+     "first_party": false
+    }
+   ],
+   "summary": "178项Section 301排除条款明日11-09 23:59（美东）到期，截至11-08检索仍无延期文本；11-10起恢复全额301关税（清单1/2/3为25%、4A为7.5%）。海事费用暂停延至2027-01-09的最终决定亦未发布。11-06美财长贝森特与USTR格里尔同何立峰视频通话，要求中方“立即”落实釜山承诺。USTR往年常在到期前0-3天才公告，甚至过期后追溯发布。",
+   "numbers": [
+    "11-09 23:59（美东）到期",
+    "11-10起恢复25%/7.5%"
+   ],
+   "related_warnings": [
+    "warn-20261108-01"
+   ],
+   "section": "头条事件",
+   "event_id": "evt-section301-exclusions-expire-nov9"
+  },
+  {
+   "id": "evt-20261108-02",
+   "title": "稀土出口管制暂停11-10到期（剩2天），续期无明确法律文本",
+   "heat": 87,
+   "heat_reason": "磁钢供应收紧在即，许可证审查约4个月，行动窗口仅剩2天",
+   "tags": [
+    "稀土",
+    "预警",
+    "影响BOM"
+   ],
+   "date": "2026-11-08",
+   "severity": "中",
+   "sources": [
+    {
+     "outlet": "Materials Dispatch",
+     "date": "2026-10-27",
+     "url": "https://cms.materialsdispatch.com/china-0-1-percent-rare-earth-rule-mofcom-2026/",
+     "first_party": false
+    },
+    {
+     "outlet": "The Oregon Group",
+     "date": "2026-11-06",
+     "url": "https://theoregongroup.com/latest-news/us-warns-china-rare-earths-two-thirds-busan-pledge/",
+     "first_party": false
+    },
+    {
+     "outlet": "Mysteel",
+     "date": "2026-11-06",
+     "url": "https://list1.mysteel.com/zhishi/yhpnzxjg.html",
+     "first_party": false
+    }
+   ],
+   "summary": "2025-10-09六项公告暂停至11-10，第70号公告未修订、未见正式法律文本；贝森特称釜山休战覆盖稀土、延至2027-01-10，但未见法律文本。2025-04-04第18号公告（钐/钆/铽/镝/镥/钪/钇等7种重稀土）从未暂停、持续生效，许可证审查约4个月。氧化镨钕11-06均价707,500元/吨（-3,500）。",
+   "numbers": [
+    "11-10到期",
+    "氧化镨钕707,500元/吨（-3,500）"
+   ],
+   "related_warnings": [
+    "warn-20261108-02"
+   ],
+   "section": "头条事件",
+   "event_id": "evt-rareearth-pause-expiry-1110"
+  },
+  {
+   "id": "evt-20261108-03",
+   "title": "铜价再跌破14,000美元、本周跌幅3月以来最大，但现货更紧",
+   "heat": 85,
+   "heat_reason": "期货跌、现货紧并存，成本窗口与实物紧张同在，影响核心BOM",
+   "tags": [
+    "原材料",
+    "影响BOM"
+   ],
+   "date": "2026-11-06",
+   "severity": "中",
+   "sources": [
+    {
+     "outlet": "Westmetall",
+     "date": "2026-11-06",
+     "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_stock&year=2026",
+     "first_party": false
+    },
+    {
+     "outlet": "Mysteel",
+     "date": "2026-11-06",
+     "url": "https://list1.mysteel.com/zhishi/htxqzxjg.html",
+     "first_party": false
+    },
+    {
+     "outlet": "新浪财经",
+     "date": "2026-11-07",
+     "url": "https://finance.sina.cn/china/gjcj/2026-11-07/detail-inixwakn8486854.d.html",
+     "first_party": false
+    }
+   ],
+   "summary": "LME 3M 11-06收13,780美元/吨（-1.78%），再度跌破14,000美元，本周-2.7%、为7月以来最低；沪铜主力104,260元/吨（-1.94%），现货升水2,500–2,800元/吨创年内新高，国内电解铜现货库存6.74万吨刷新年内新低——期货跌、现货紧并存。",
+   "numbers": [
+    "13,780美元/吨（-1.78%）",
+    "本周-2.7%",
+    "现货升水2,500–2,800元/吨"
+   ],
+   "related_warnings": [
+    "warn-20261108-03"
+   ],
+   "section": "头条事件",
+   "event_id": "evt-copper-high"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "江森自控发布约克 YDAM 磁悬浮离心机组（3.5MW）",
+   "detail": "发布约克 YDAM 气悬浮变频离心式冷水机组（3.5MW、支持45°C温水冷却），预告约克 YK-HT 两级经济器离心机组，2026年底开始交付；同期发布吸收式制冷机数据中心参考设计指南，称2MW制冷量吸收式方案仅需25kW电力（传统电制冷约500kW）。",
+   "source": "DCD，2026-11",
+   "url": "https://www.datacenterdynamics.com/en/news/johnson-controls-launches-new-chillers-carrier-launches-crah/",
+   "first_party": false,
+   "event_id": "evt-jci-ydam-chiller"
+  },
+  {
+   "title": "开利发布 AiroVision 39CV CRAH（20–250kW）",
+   "detail": "发布 AiroVision 39CV CRAH（QuantumLeap系列，欧洲制造，4个规格、制冷量20–250kW，支持高温冷冻水、适配更高机架密度）。",
+   "source": "DCD，2026-11",
+   "url": "https://www.datacenterdynamics.com/en/news/johnson-controls-launches-new-chillers-carrier-launches-crah/",
+   "first_party": false,
+   "event_id": "evt-carrier-39cv-crah"
+  },
+  {
+   "title": "大金 Q2 财报超预期（营收 93.7 亿美元）",
+   "detail": "Q2（截至2026-09-30）财报11-05发布：营收93.7亿美元、超预期85.8亿美元，EPS 0.20美元、超预期0.1896美元。",
+   "source": "大金官网，2026-11-05",
+   "url": "https://www.daikin.com/news",
+   "first_party": true,
+   "event_id": "evt-daikin-q2-2026"
+  },
+  {
+   "title": "关税政策排查：Section 301 排除明日到期、贝森特 11-06 施压稀土",
+   "detail": "Section 301 178项排除明日11-09 23:59（美东）到期，截至11-08检索仍无延期文本；11-06美财长贝森特与USTR格里尔同何立峰视频通话，要求中方“立即”落实釜山承诺、重点点名稀土，美方称中方仅履行约三分之二稀土承诺（FT 9月口径转述）。",
+   "source": "Gateway Lines，2026-11-02；The Oregon Group，2026-11-06",
+   "url": "https://gatewaylines.com/press-releases/china-ship-fee-delay-jan-9-2027-301-exclusions",
+   "first_party": false,
+   "event_id": "evt-section301-exclusions-expire-nov9"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "DRAM/存储",
+   "detail": "DDR5 16Gb现货11-06报60.17美元/颗，周均61.06美元、周-0.6%，连续第二周回落；DDR4 8Gb周均47.81美元、周-1.0%，连续第三周下跌；Q4常规DRAM合约价仍预计+10-15%、NAND+15-20%。现货降温≠合约降价，板卡成本压力未解除",
+   "source": "DDRWatcher，2026-11-07",
+   "event_id": "evt-dram-hbm-shortage",
+   "tags": [
+    "存储",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "AI算力/半导体股",
+   "detail": "Vertiv 11-05单日-14%（前一交易日已跌12.9%），11-06随AI板块反弹，Evercore 11-06下调目标价至325美元、维持买入；Modine 11-04大跌21%至约99.10美元、创52周新低；半导体ETF单周-11.8%、为2006年以来最长连跌；但四大云2026年capex合计预计超7,400亿美元未变，谷歌接手Crusoe怀俄明数据中心项目、投170亿美元",
+   "source": "Trefis，2026-11-06；BlockWest，2026-11-06/07",
+   "event_id": "evt-google-crusoe-wyoming-dc",
+   "tags": [
+    "AI"
+   ]
+  },
+  {
+   "material": "MLCC/覆铜板",
+   "detail": "窗口内无新涨价函，但三星电机MLCC在DigiKey标准交期10月已拉长至61周（9月39–49周），村田约17周、国巨约28周；松下通知客户2027-01-01起部分通用多层覆铜板+200%；KCE披露Q3玻纤布购入均价0.95美元/米、环比+27.84%，主因AI服务器优先占用产能",
+   "source": "FourWeekMBA，2026-10-27；MPBxChange，2026-11-05",
+   "event_id": "evt-mlcc-price-hike",
+   "tags": [
+    "影响BOM",
+    "涨价",
+    "交期"
+   ]
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "半导体封测/OSAT",
+   "detail": "封装产能优先供AI，报价12–16周的模拟/功率料交期被拉长；TI 10-21称交期上行、拿到的OSAT产能少于预期；ABF载板交期48–56周（均衡市场约12周）",
+   "source": "Vyrian，2026-11-06",
+   "event_id": "evt-osat-price-hike"
+  },
+  {
+   "industry": "钢铁/结构钢",
+   "detail": "台湾丰兴螺纹钢10-27起+200新台币/吨、龙钢与东和调涨H型钢，日本共英制钢11月螺纹钢+5,000日元/吨；中国45#圆钢全国均价3,542元/吨（10-30），连降四周",
+   "source": "Double Steel，2026-11-02",
+   "event_id": ""
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "铜",
+   "type": "价格",
+   "detail": "LME 3M 11-06收13,780美元/吨（-1.78%），再度跌破14,000美元，本周-2.7%、为7月以来最低；沪铜主力104,260元/吨（-1.94%），现货升水2,500–2,800元/吨创年内新高，国内电解铜现货库存6.74万吨刷新年内新低（Westmetall 11-06、Mysteel 11-06）",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "event_id": "evt-copper-high"
+  },
+  {
+   "category": "铝",
+   "type": "价格",
+   "detail": "电解铝A00全国汇总价11-06报23,340元/吨（-40）；沪铝主力收23,030元/吨（+0.07%）；LME期铝3,062.5美元/吨、基本持平（Mysteel 11-06、新浪财经11-07）",
+   "subcategories": [
+    "Aluminum Fin Stock",
+    "Extrusions - Aluminum"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": "evt-woodmac-aluminum-deficit"
+  },
+  {
+   "category": "钢材",
+   "type": "价格",
+   "detail": "螺纹钢11-06全国均价3,242元/吨（普涨10–50元/吨）；热卷4.75mm全国均价3,224元/吨、周-26元/吨；热卷社会库存351.31万吨、周-9.17万吨（Mysteel 11-06）",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "制冷剂",
+   "type": "价格持平",
+   "detail": "本周无新报价；沿用10-30口径：R32/R134a/R125市场均价6.50/6.50/5.50万元/吨、近一月持平，R22均价1.80万元/吨；生意社11-06：R22受维修淡季拖累价格明显回落，R32以长协订单为主、散单成交一般（摩熵化工周报10-30/11-02、生意社11-06）",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": "evt-refrigerant-q4-price-up"
+  },
+  {
+   "category": "稀土/钕铁硼",
+   "type": "价格",
+   "detail": "氧化镨钕11-06均价707,500元/吨（-3,500），较10-29高点继续回落；盛和资源预计Q4稀土主要产品价格维持窄幅震荡（Mysteel 11-06）",
+   "subcategories": [
+    "Magnets"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-rare-earth-q4-price"
+  },
+  {
+   "category": "MLCC",
+   "type": "交期",
+   "detail": "三星电机MLCC在DigiKey标准交期10月已拉长至61周（9月39–49周），村田约17周、国巨约28周；KEMET钽电容第二轮+20-30%已于11-01生效，松下聚合物钽电容随后+15-30%（FourWeekMBA 10-27、PCBA-HYH 11-02）",
+   "subcategories": [
+    "电容"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价",
+    "交期"
+   ],
+   "event_id": "evt-mlcc-price-hike"
+  },
+  {
+   "category": "功率半导体/IGBT",
+   "type": "涨价/交期",
+   "detail": "窗口内无新函；沿用口径：安森美10-10涨价5-15%持续传导，主流功率芯片交期30周以上；ST MCU交期约54周、英飞凌32位MCU部分型号97周（富昌10月报告）（The Inference 10-10、LDeepAI 10-29）",
+   "subcategories": [
+    "IGBT Modules"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-onsemi-price-hike-2"
+  },
+  {
+   "category": "PCB/CCL",
+   "type": "涨价",
+   "detail": "松下通用多层覆铜板2027-01-01起+200%；建滔第八轮+15%（10-13）仍为最新一轮；玻纤布KCE Q3购入均价0.95美元/米、环比+27.84%（MPBxChange 11-05、NextPCB 11-06）",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM",
+    "涨价"
+   ],
+   "event_id": "evt-pcb-ccl-price-hike-2"
+  },
+  {
+   "category": "存储器",
+   "type": "价格",
+   "detail": "DDR5 16Gb现货11-06报60.17美元/颗，周均61.06美元、周-0.6%，连续第二周回落；DDR4 8Gb周均47.81美元、周-1.0%，连续第三周下跌；Q4合约价+10-15%预期未变（DDRWatcher 11-07、TrendForce 11-03）",
+   "subcategories": [
+    "存储器"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-dram-hbm-shortage"
+  },
+  {
+   "category": "压缩机",
+   "type": "排查无异常",
+   "detail": "离心/往复/转子/涡旋/螺杆5类无涨价/货期消息",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "阀件与换热器",
+   "type": "排查无异常",
+   "detail": "三花/盾安/银轮仅专利消息、无涨价/EOL/交期新闻",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "电机/风机/水泵与散热器",
+   "type": "排查无异常",
+   "detail": "电机/风机/水泵无针对性公告",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "低压电气",
+   "type": "排查无异常",
+   "detail": "施耐德/ABB/西门子/正泰中国市场无新函",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "连接器",
+   "type": "排查无异常",
+   "detail": "TE/Molex无新函",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "company": "",
+   "tags": [],
+   "event_id": ""
+  },
+  {
+   "category": "Tier B 轮查",
+   "type": "排查无异常",
+   "detail": "本轮第7批：Belts & Chains、Compression Molding Plastics、Fabricated Bus Bars、Fuses、Iron Castings - Large - >100 Lbs、Oil Pumps、Resistors (Large)、Structural, Bar And Profile、Uncategorized Electrical、Wire Form & Guards、钣金与结构件——5个实质hit（铜母排、熔断器、Uncategorized Electrical、结构型钢、钣金与结构件，见第4节/第5节）；其余6个子品类排查无异常",
+   "subcategories": [
+    "Belts & Chains",
+    "Compression Molding Plastics",
+    "Fabricated Bus Bars",
+    "Fuses",
+    "Iron Castings - Large - >100 Lbs",
+    "Oil Pumps",
+    "Resistors (Large)",
+    "Structural, Bar And Profile",
+    "Uncategorized Electrical",
+    "Wire Form & Guards",
+    "钣金与结构件"
+   ],
+   "company": "",
+   "tags": [
+    "影响BOM"
+   ],
+   "event_id": "evt-osat-price-hike"
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "有实质动态",
+   "note": "发布约克YDAM磁悬浮离心机组（3.5MW）、吸收式制冷机设计指南（11月，DCD）"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "发布AiroVision 39CV CRAH（20–250kW）（11月，DCD）"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "收购Cancoil已在11-05期报过，近3天无新动态"
+  },
+  {
+   "company": "大金",
+   "status": "有实质动态",
+   "note": "Q2财报11-05发布：营收93.7亿美元超预期"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "三季报已在11-06期报过，近3天无新动态"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "三季报已在11-06期报过，近3天无新动态"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "三季报及Ferroli交割已报过，近3天无新动态"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "近3天无新HVAC动态"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "近3天无新HVAC动态"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "Q3 AIDC订单已在11-06期报过，近3天无新动态"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "近3天无新动态"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "股价11-05单日-14%、11-06反弹；Evercore下调目标价至325美元、维持买入"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "近3天无新公告"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "近3天无新公告"
+  },
+  {
+   "company": "高澜股份",
+   "status": "有实质动态",
+   "note": "11-06完成出售东莞硅翔16.98%股权（换爱克股份3.32%股权，11-10上市）"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "近3天无新公告"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "近3天无新动态"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "近3天无新动态"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-11-09",
+   "label": "Section 301 178项排除条款到期（剩1天）"
+  },
+  {
+   "date": "2026-11-10",
+   "label": "稀土出口管制暂停到期（剩2天）"
+  },
+  {
+   "date": "2027-01-09",
+   "label": "海运301费用暂停提议到期"
+  },
+  {
+   "date": "2028-03-31",
+   "label": "村田停产MLCC最后下单日"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261108-01",
+   "title": "Section 301排除明日到期",
+   "urgency": "高",
+   "impact": "中国输美164个税号产品",
+   "action": "11-09当天复核USTR联邦公报、到期即按恢复税率（25%/7.5%）重算美国订单成本、与美客户谈价格传导条款；同时盯11-09当天是否出现最后一刻公告（2025年有当天宣布、过期后追溯先例）",
+   "trigger": "11-10起无延期文本",
+   "deadline": "2026-11-09",
+   "related_events": [
+    "evt-20261108-01"
+   ]
+  },
+  {
+   "id": "warn-20261108-02",
+   "title": "稀土管制暂停11-10到期",
+   "urgency": "高",
+   "impact": "磁钢/电机",
+   "action": "11-10前核实磁钢供应商许可证状态、按4个月审查周期倒排安全库存、加速替代磁钢料号验证；盯11-10前后MOFCOM公告与11-18/19 APEC习特会面",
+   "trigger": "11-10未见续期法律文本",
+   "deadline": "2026-11-10",
+   "related_events": [
+    "evt-20261108-02"
+   ]
+  },
+  {
+   "id": "warn-20261108-03",
+   "title": "铜价期货跌、现货紧并存",
+   "urgency": "中",
+   "impact": "铜/银",
+   "action": "近月用量可分批锁价、勿追空；长单等期货企稳信号再谈，同步盯现货升水与库存回落",
+   "trigger": "LME跌破14,000美元且现货升水仍处年内高位",
+   "deadline": "",
+   "related_events": [
+    "evt-20261108-03"
+   ]
+  },
+  {
+   "id": "warn-20261108-04",
+   "title": "DRAM现货续跌但合约仍涨",
+   "urgency": "高",
+   "impact": "芯片与半导体（MCU/存储）",
+   "action": "板卡存储料号按Q4合约+10-15%做成本预算、核查库存与长协覆盖",
+   "trigger": "Q4合约价确认涨10-15%",
+   "deadline": "",
+   "related_events": [
+    "evt-dram-hbm-shortage"
+   ]
+  },
+  {
+   "id": "warn-20261108-05",
+   "title": "MLCC交期61周+覆铜板2027年+200%",
+   "urgency": "高",
+   "impact": "被动元件与连接件、PCB",
+   "action": "高容MLCC锁定2027年分配、核查村田停产清单（最后下单2028-03-31）；覆铜板长协覆盖至2027H1、评估替代基材",
+   "trigger": "三星电机交期确认61周、松下+200%函落地",
+   "deadline": "2028-03-31",
+   "related_events": [
+    "evt-mlcc-price-hike",
+    "evt-pcb-ccl-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261108-06",
+   "title": "OSAT瓶颈拉长模拟/功率交期",
+   "urgency": "中",
+   "impact": "PCBA板卡",
+   "action": "核查模拟/电源IC与MCU在途订单交期、提前下单锁定OSAT产能窗口；ABF载板48–56周的料号做双源验证",
+   "trigger": "TI称OSAT产能不足、ABF交期48–56周",
+   "deadline": "",
+   "related_events": [
+    "evt-osat-price-hike"
+   ]
+  }
+ ],
+ "daily_report": {
+  "title": "HVAC / 液冷 CDU 行业情报早报（2026-11-08 · 周日）",
+  "date": "2026-11-08",
+  "headlines": [
+   "Section 301 178项排除明日到期（剩1天），仍无延期文本；11-10起恢复25%/7.5%关税",
+   "稀土出口管制暂停11-10到期（剩2天），续期无明确法律文本；氧化镨钕707,500元/吨",
+   "铜价再跌破14,000美元、本周跌幅3月以来最大，但现货市场创年内最紧"
+  ],
+  "body_file": "briefs/2026-11-08-hvac-cdu-morning-briefing.md"
+ }
+}
