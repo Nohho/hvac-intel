@@ -263,6 +263,11 @@
      "date": "2026-11-07",
      "change": "国巨新一轮涨价进入落地窗口（10 月底至 11 月），高容料号 +50% 以上、中低容 +10-30%；三星电机签下 1.0722 万亿韩元 AI 服务器 MLCC 长单，为公司史上最大单笔 MLCC 订单",
      "text_en": "Yageo’s new hike enters its landing window (late Oct to Nov): high-capacity parts +50% or more, mid/low-capacity +10-30%; Samsung Electro-Mechanics signed a KRW 1.0722 trillion AI-server MLCC long-term contract, its largest single MLCC order ever"
+    },
+    {
+     "date": "2026-11-08",
+     "change": "窗口内无新涨价函；三星电机 MLCC 在 DigiKey 标准交期 10 月已拉长至 61 周（9 月 39–49 周），村田约 17 周、国巨约 28 周；KEMET 钽电容第二轮 +20–30% 已于 11-01 生效，松下聚合物钽电容随后 +15–30%",
+     "text_en": "No new price-hike notice in the window; Samsung Electro-Mechanics MLCC standard lead times at DigiKey stretched to 61 weeks in October (39-49 weeks in September), Murata ~17 weeks, Yageo ~28 weeks; KEMET's second-round tantalum price hike of 20-30% took effect Nov 1, followed by Panasonic polymer tantalum +15-30%"
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -412,6 +417,11 @@
      "date": "2026-11-07",
      "change": "LME 3M 11-06 盘中跌破 14,000 美元，本周跌幅为 3 月以来最大；但上期所铜库存周降超 24%、创近 3 年新低，洋山铜溢价创纪录高位——期货跌、现货紧并存",
      "text_en": "LME 3M broke below $14,000 intraday on Nov 6, the biggest weekly drop since March; yet SHFE copper stocks fell over 24% w/w to a near-3-year low and the Yangshan premium hit a record — futures down, physical tight"
+    },
+    {
+     "date": "2026-11-08",
+     "change": "LME 3M 11-06 收 13,780 美元/吨（-1.78%），再度跌破 14,000 美元，本周 -2.7%、创 3 月以来最大单周跌幅；沪铜主力 104,260 元/吨（-1.94%），现货升水 2,500–2,800 元/吨创年内新高，国内电解铜现货库存 6.74 万吨刷新年内新低——期货跌、现货紧并存",
+     "text_en": "LME 3M closed at $13,780/t on Nov 6 (-1.78%), below $14,000 again, down 2.7% for the week, the largest weekly drop since March; SHFE copper fell 1.94% to 104,260 yuan/t, spot premiums hit a yearly high of 2,500-2,800 yuan/t and domestic refined-copper spot inventories hit a yearly low of 67,400 t — futures down, physical tight"
     }
    ],
    "title": "铜价历史高位",
@@ -593,6 +603,11 @@
      "date": "2026-11-07",
      "change": "DDR5 16Gb 现货 11-06 报 62.17 美元/颗，周度 -0.6%，为 12 周连涨 +16.7% 后首次周跌；DDR4 8Gb 周均 47.81 美元、周 -1.0%，连续第三周下跌；Q4 常规 DRAM 合约价仍预计 +10-15%",
      "text_en": "DDR5 16Gb spot quoted $62.17 on Nov 6, -0.6% w/w, the first weekly dip after a 12-week +16.7% run; DDR4 8Gb averaged $47.81, -1.0% w/w, a third straight weekly decline; Q4 conventional DRAM contract prices still expected +10-15%"
+    },
+    {
+     "date": "2026-11-08",
+     "change": "DDR5 16Gb 现货 11-06 报 60.17 美元/颗，周均 61.06 美元、周 -0.6%，连续第二周回落；DDR4 8Gb 周均 47.81 美元、周 -1.0%，连续第三周下跌；Q4 合约价 +10–15%、NAND +15–20% 预期未变",
+     "text_en": "DDR5 16Gb spot was $60.17 on Nov 6, weekly average $61.06, down 0.6% w/w for a second straight weekly decline; DDR4 8Gb weekly average $47.81, down 1.0% w/w for a third straight week; Q4 contract prices are still expected up 10-15% for DRAM and 15-20% for NAND"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -837,6 +852,11 @@
      "date": "2026-11-06",
      "change": "建滔积层板11-04新函：所有厚度FR-4覆铜板统一+10%、PP半固化片厚布+10%/薄布+20%；电子布11月2116薄布20.2元/米（环比+2.5元）、7628厚布14.6-14.65元/米（环比+1.5元）；FR-4覆铜板交期从几天延至约4周。",
      "text_en": "Kingboard Laminates issued a new notice on Nov 4: all FR-4 copper-clad laminates +10%, PP prepreg thick cloth +10% / thin cloth +20%; electronic glass cloth 2116 at 20.2 yuan/m in November (+2.5 month on month), 7628 thick cloth 14.6-14.65 yuan/m (+1.5); FR-4 CCL lead times stretched from days to about 4 weeks."
+    },
+    {
+     "date": "2026-11-08",
+     "change": "松下通知客户 2027-01-01 起部分通用多层覆铜板 +200%；KCE 披露 Q3 玻纤布购入均价 0.95 美元/米，环比 +27.84%、同比 +87.64%，主因 AI 服务器优先占用产能；建滔第八轮 +15%（10-13）仍为最新一轮",
+     "text_en": "Panasonic notified customers that some general multilayer CCL prices rise 200% from Jan 1, 2027; KCE disclosed Q3 glass-fabric purchase prices averaged $0.95/m, up 27.84% q/q and 87.64% y/y, mainly because AI servers take capacity first; Kingboard's eighth 2026 hike of 15% (Oct 13) remains the latest round"
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1895,6 +1915,11 @@
      "date": "2026-10-29",
      "change": "Alphabet/微软/亚马逊Q3单季capex合计约1670亿美元（Alphabet $514亿、微软约$500亿、亚马逊$773亿），Alphabet CFO称2027年capex将显著增长；AWS积压5780亿美元、Azure RPO 6770亿（+73%）、Google Cloud在手订单5610亿美元。",
      "text_en": "Alphabet/Microsoft/Amazon Q3 capex totaled ~$167B ($51.4B/$50B/$77.3B); Alphabet CFO said 2027 capex will grow significantly. Backlogs: AWS $578B, Azure RPO $677B (+73%), Google Cloud $561B."
+    },
+    {
+     "date": "2026-11-08",
+     "change": "四大 hyperscaler 2026 年合计 capex 预计超 7,400 亿美元（BlockWest 11-06）；高盛口径前五大 hyperscaler 2026 年 AI 基建支出约 8,000 亿美元、2027 年或达 1.2 万亿美元；微软 12 月季度 capex 预计超 500 亿美元",
+     "text_en": "The four hyperscalers' combined 2026 capex is now expected above $740B (BlockWest, Nov 6); Goldman puts the top five hyperscalers' 2026 AI infrastructure spending at ~$800B, possibly $1.2T in 2027; Microsoft's December-quarter capex is expected above $50B"
     }
    ]
   },
@@ -2104,6 +2129,11 @@
      "date": "2026-11-07",
      "change": "截至 11-06 复核联邦公报仍无延期文本，剩 2 天；海事费用暂停延至 2027-01-09 的最终决定亦未发布",
      "text_en": "As of Nov 6 review, still no extension text in the Federal Register, 2 days left; no final decision published on extending the maritime fee pause to Jan 9, 2027"
+    },
+    {
+     "date": "2026-11-08",
+     "change": "截至 11-08 检索，USTR 仍未发布延长 178 项排除的通知；排除定于 11-09 23:59（美东）到期，剩 1 天；11-06 美财长贝森特与 USTR 格里尔同何立峰视频通话，要求中方“立即”落实釜山承诺；2025 年有 USTR 于到期当天宣布、过期后追溯发布的先例",
+     "text_en": "As of Nov 8 checks, USTR has published no notice extending the 178 exclusions; they expire at 11:59 p.m. ET on Nov 9, one day out; on Nov 6 Treasury Secretary Bessent and USTR Greer spoke with He Lifeng by video, urging China to implement the Busan commitments 'immediately'; in 2025 USTR announced on the expiry day itself and published retroactively"
     }
    ]
   },
@@ -2215,6 +2245,11 @@
      "date": "2026-11-05",
      "change": "11-02转述10-28财报：Q3净销售额43.13亿美元（+61%、有机+55%）、有机订单同比2倍以上、全年销售指引上调6.5亿美元至144.5~148.5亿美元（有机+37~39%）；10-27完成Utility Innovation Group收购（初始现金约14.5亿美元+最高11.5亿美元业绩对赌）。",
      "text_en": "Nov 2 readout of Oct 28 earnings: 3Q net sales $4.313B (+61%, organic +55%), organic orders more than doubled YoY, full-year sales guidance raised $650M to $14.45-14.85B (organic +37-39%); Utility Innovation Group acquisition closed Oct 27 (~$1.45B initial cash + up to $1.15B earnout)."
+    },
+    {
+     "date": "2026-11-08",
+     "change": "股价 11-05 单日 -14%（前一交易日已跌 12.9%），11-06 随 AI 板块反弹；Evercore 11-06 下调目标价至 325 美元、维持买入（11-07 期误作 11-06 单日 -14%，以 Trefis 11-06 核实为准）",
+     "text_en": "Shares fell 14% in a single session on Nov 5 (after -12.9% the prior session), then rebounded with AI stocks on Nov 6; Evercore cut its price target to $325 on Nov 6, keeping Buy (the Nov 7 edition wrongly dated the -14% to Nov 6; corrected per Trefis Nov 6)"
     }
    ]
   },
@@ -2360,6 +2395,11 @@
      "date": "2026-10-30",
      "change": "习特会釜山达成协议（10-30）：美对华关税57%→47%（芬太尼相关税率降至10%），中方暂停本月出台的稀土出口管制一年、恢复大豆采购，双方同意互停对等港口费措施；领导人公开宣布，实施细节待落实。",
      "text_en": "Trump-Xi Busan summit deal (10-30): US tariffs on China 57%→47% (fentanyl-related to 10%), China pauses this month's rare-earth export controls for one year and resumes soybean purchases, both sides suspend reciprocal port fees; announced publicly by leaders, implementation details pending."
+    },
+    {
+     "date": "2026-11-08",
+     "change": "11-06 美财长贝森特与 USTR 格里尔同何立峰视频通话，要求中方立即全面落实釜山承诺，重点点名稀土、其他关键矿产与农产品采购；美方称中方仅履行约三分之二稀土承诺（FT 9 月口径转述）",
+     "text_en": "On Nov 6 Bessent and Greer spoke with He Lifeng by video, urging China to implement the Busan commitments immediately, singling out rare earths, other critical minerals and farm purchases; the US side said China has fulfilled only about two-thirds of its rare-earth pledges (FT September wording, as relayed)"
     }
    ],
    "title": "釜山习特会：对华关税57%→47%、稀土管制暂停一年",
@@ -2761,6 +2801,11 @@
      "date": "2026-11-07",
      "change": "截至 11-06 仍无修订第 70 号公告的法律文本，剩 3 天；贝森特称釜山休战覆盖稀土、延至 2027-01-10，但未见正式文本；氧化镨钕 11-05 报 711,000 元/吨（+10,000）",
      "text_en": "As of Nov 6, still no legal text amending Announcement No. 70, 3 days left; Bessent says the Busan truce covers rare earths through Jan 10, 2027, but no formal text seen; praseodymium-neodymium oxide quoted 711,000 yuan/t on Nov 5 (+10,000)"
+    },
+    {
+     "date": "2026-11-08",
+     "change": "11-06 美财长贝森特与 USTR 格里尔同何立峰视频通话，要求中方立即全面落实釜山承诺、重点点名稀土；美方称中方仅履行约三分之二稀土承诺（FT 9 月口径转述）；第 70 号公告法定到期日仍为 11-10，未见修订文本；氧化镨钕 11-06 均价 707,500 元/吨（-3,500）",
+     "text_en": "On Nov 6 Bessent and Greer spoke with He Lifeng by video, urging China to fully implement the Busan commitments immediately, singling out rare earths; the US side said China has fulfilled only about two-thirds of its rare-earth pledges (FT September wording, as relayed); Announcement No. 70 still legally expires Nov 10 with no amendment text; praseodymium-neodymium oxide averaged 707,500 yuan/t on Nov 6 (-3,500)"
     }
    ]
   },
@@ -2923,6 +2968,11 @@
      "date": "2026-11-07",
      "change": "Modine 11-03 发布 Q2 FY2027：营收 9.944 亿美元（+35%），数据中心 +95%、商用 HVAC +23%，FY2027 营收指引 +50-55%",
      "text_en": "Modine reported Q2 FY2027 on Nov 3: revenue $994.4M (+35%), data centers +95%, commercial HVAC +23%; FY2027 revenue guidance +50-55%"
+    },
+    {
+     "date": "2026-11-08",
+     "change": "11-04 股价大跌 21% 至约 99.10 美元、创 52 周新低（EPS 1.35 美元不及预期 1.55 美元，数据中心毛利率降 470bp 至 19.7%，负自由现金流 -1.456 亿美元）",
+     "text_en": "Shares plunged 21% on Nov 4 to about $99.10, a 52-week low (EPS $1.35 vs $1.55 expected; data-center gross margin down 470bp to 19.7%; negative free cash flow of -$145.6M)"
     }
    ]
   },
@@ -2945,6 +2995,74 @@
      "text_en": "Honeywell Aerospace CEO said on Oct 29 bearings are \"the most difficult category\" this year; RBC Bearings backlog doubled to $2.3B, industrial bearing tightness extends through H1 2027"
     }
    ]
+  },
+  {
+   "id": "evt-jci-ydam-chiller",
+   "status": "已落地",
+   "title": "江森自控发布约克 YDAM 磁悬浮离心机组（3.5MW）",
+   "title_en": "Johnson Controls launches YORK YDAM magnetic-bearing centrifugal chiller (3.5 MW)",
+   "subcategories": [],
+   "tags": [
+    "技术路线"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-08",
+     "change": "发布约克 YDAM 气悬浮变频离心式冷水机组（3.5MW、支持 45°C 温水冷却），预告约克 YK-HT 两级经济器离心机组，2026 年底开始交付；同期发布吸收式制冷机数据中心参考设计指南（DCD 11 月报道）",
+     "text_en": "Launched the YORK YDAM air-cooled magnetic-bearing centrifugal chiller (3.5 MW, supports 45°C warm-water cooling) and previewed the YORK YK-HT two-stage economized centrifugal chiller, with shipments starting late 2026; also released an absorption-chiller reference design guide for data centers (DCD, November)"
+    }
+   ]
+  },
+  {
+   "id": "evt-carrier-39cv-crah",
+   "status": "已落地",
+   "title": "开利发布 AiroVision 39CV CRAH（20–250kW）",
+   "title_en": "Carrier launches AiroVision 39CV CRAH (20–250 kW)",
+   "subcategories": [],
+   "tags": [
+    "技术路线"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-08",
+     "change": "发布 AiroVision 39CV CRAH（QuantumLeap 系列，欧洲制造，4 个规格、制冷量 20–250kW，支持高温冷冻水、适配更高机架密度）（DCD 11 月报道）",
+     "text_en": "Launched the AiroVision 39CV CRAH (QuantumLeap portfolio, made in Europe, four sizes, 20-250 kW cooling, supports elevated chilled-water temperatures for higher rack densities) (DCD, November)"
+    }
+   ]
+  },
+  {
+   "id": "evt-daikin-q2-2026",
+   "status": "已落地",
+   "title": "大金 Q2 财报超预期（营收 93.7 亿美元）",
+   "title_en": "Daikin Q2 earnings beat expectations (revenue $9.37B)",
+   "subcategories": [],
+   "tags": [
+    "财报"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-08",
+     "change": "Q2（截至 2026-09-30）财报 11-05 发布：营收 93.7 亿美元、超预期 85.8 亿美元，EPS 0.20 美元、超预期 0.1896 美元（公司官网、MarketBeat）",
+     "text_en": "Q2 results (quarter ended Sep 30, 2026) released Nov 5: revenue $9.37B vs $8.58B expected, EPS $0.20 vs $0.1896 expected (company website, MarketBeat)"
+    }
+   ]
+  },
+  {
+   "id": "evt-google-crusoe-wyoming-dc",
+   "status": "已通知",
+   "title": "谷歌接手 Crusoe 怀俄明数据中心项目、投 170 亿美元",
+   "title_en": "Google takes over Crusoe Wyoming data center project, to invest $17B",
+   "subcategories": [],
+   "tags": [
+    "数据中心"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-08",
+     "change": "谷歌接手 Crusoe 怀俄明州数据中心用地（原计划扩至 10GW），宣布投资 170 亿美元开发该园区；Crusoe 仍为谷歌得州 Armstrong County 园区开发商（BlockWest 11-07）",
+     "text_en": "Google took over Crusoe's Wyoming data center site (originally planned to scale to 10 GW) and announced a $17B investment to develop the campus; Crusoe remains Google's developer for the Armstrong County, Texas campus (BlockWest, Nov 7)"
+    }
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -2956,5 +3074,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-06"
+ "updated": "2026-11-08"
 }
