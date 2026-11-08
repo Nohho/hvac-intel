@@ -268,6 +268,11 @@
      "date": "2026-11-08",
      "change": "窗口内无新涨价函；三星电机 MLCC 在 DigiKey 标准交期 10 月已拉长至 61 周（9 月 39–49 周），村田约 17 周、国巨约 28 周；KEMET 钽电容第二轮 +20–30% 已于 11-01 生效，松下聚合物钽电容随后 +15–30%",
      "text_en": "No new price-hike notice in the window; Samsung Electro-Mechanics MLCC standard lead times at DigiKey stretched to 61 weeks in October (39-49 weeks in September), Murata ~17 weeks, Yageo ~28 weeks; KEMET's second-round tantalum price hike of 20-30% took effect Nov 1, followed by Panasonic polymer tantalum +15-30%"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "村田 10-30 宣布 2026–2030 财年投入约 1 万亿日元扩产 MLCC；TrendForce 11-02 称 AI 高容 MLCC 短缺将于 2027 上半年达峰，交期约 35 周（正常约 12 周）、三星电机 52 周；三星电机 10-30 签下约 8,793 亿韩元 AI 服务器 MLCC 供应合同",
+     "text_en": "Murata announced on Oct 30 a roughly JPY 1 trillion MLCC capacity expansion for FY2026–2030; TrendForce said on Nov 2 that the AI high-capacitance MLCC shortage will peak in H1 2027, with lead times of about 35 weeks (vs about 12 normally) and 52 weeks at Samsung Electro-Mechanics; Samsung Electro-Mechanics signed an AI-server MLCC supply contract worth about KRW 879.3 billion on Oct 30"
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -422,6 +427,11 @@
      "date": "2026-11-08",
      "change": "LME 3M 11-06 收 13,780 美元/吨（-1.78%），再度跌破 14,000 美元，本周 -2.7%、创 3 月以来最大单周跌幅；沪铜主力 104,260 元/吨（-1.94%），现货升水 2,500–2,800 元/吨创年内新高，国内电解铜现货库存 6.74 万吨刷新年内新低——期货跌、现货紧并存",
      "text_en": "LME 3M closed at $13,780/t on Nov 6 (-1.78%), below $14,000 again, down 2.7% for the week, the largest weekly drop since March; SHFE copper fell 1.94% to 104,260 yuan/t, spot premiums hit a yearly high of 2,500-2,800 yuan/t and domestic refined-copper spot inventories hit a yearly low of 67,400 t — futures down, physical tight"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "LME 3M 11-06 收 13,768 美元/吨（7 月下旬以来最低收盘），全周跌幅 3 月以来最大；上期所库存周 -24% 至 33,848 吨、洋山溢价创纪录 217.50 美元/吨——期货跌、现货紧并存（11-08 期 13,780 美元为官方卖出价口径，本期改用期货收盘价）",
+     "text_en": "LME 3M closed at $13,768/t on Nov 6, the lowest close since late July, with the biggest weekly drop since March; SHFE stocks fell 24% w/w to 33,848 t and the Yangshan premium hit a record $217.50/t — futures down, physical tight (the $13,780 in the Nov 8 edition was the official ask; this edition uses the 3M futures close)"
     }
    ],
    "title": "铜价历史高位",
@@ -608,6 +618,11 @@
      "date": "2026-11-08",
      "change": "DDR5 16Gb 现货 11-06 报 60.17 美元/颗，周均 61.06 美元、周 -0.6%，连续第二周回落；DDR4 8Gb 周均 47.81 美元、周 -1.0%，连续第三周下跌；Q4 合约价 +10–15%、NAND +15–20% 预期未变",
      "text_en": "DDR5 16Gb spot was $60.17 on Nov 6, weekly average $61.06, down 0.6% w/w for a second straight weekly decline; DDR4 8Gb weekly average $47.81, down 1.0% w/w for a third straight week; Q4 contract prices are still expected up 10-15% for DRAM and 15-20% for NAND"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "DDR5 16Gb 现货 11-03 报 61.50 美元/颗、持平；SK 海力士预计存储短缺延续至至少 2030 年，三星称 2027 年 HBM 产能已全部锁定；HBM3E 经销商报价约 4,000 美元/颗",
+     "text_en": "DDR5 16Gb spot was $61.50 on Nov 3, flat; SK Hynix expects the memory shortage to last until at least 2030 and Samsung says its 2027 HBM capacity is fully booked; HBM3E dealer quotes are about $4,000 per chip"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -857,6 +872,11 @@
      "date": "2026-11-08",
      "change": "松下通知客户 2027-01-01 起部分通用多层覆铜板 +200%；KCE 披露 Q3 玻纤布购入均价 0.95 美元/米，环比 +27.84%、同比 +87.64%，主因 AI 服务器优先占用产能；建滔第八轮 +15%（10-13）仍为最新一轮",
      "text_en": "Panasonic notified customers that some general multilayer CCL prices rise 200% from Jan 1, 2027; KCE disclosed Q3 glass-fabric purchase prices averaged $0.95/m, up 27.84% q/q and 87.64% y/y, mainly because AI servers take capacity first; Kingboard's eighth 2026 hike of 15% (Oct 13) remains the latest round"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "生益科技 11 月起 M6 及以下板材 +15%、PP +25%（行业沟通信息）；松下通用多层板 2027-01-01 +200% 通知待经销商报价二次确认；建滔 11-04 新函仍为最新一轮，本窗口无第九轮",
+     "text_en": "Shengyi raised M6-and-below laminates 15% and PP 25% from November (industry channel reports); Panasonic’s notice of +200% on general multilayer CCL from Jan 1, 2027 awaits distributor-quote confirmation; Kingboard’s Nov 4 notice remains the latest round, with no ninth round in this window"
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1920,6 +1940,11 @@
      "date": "2026-11-08",
      "change": "四大 hyperscaler 2026 年合计 capex 预计超 7,400 亿美元（BlockWest 11-06）；高盛口径前五大 hyperscaler 2026 年 AI 基建支出约 8,000 亿美元、2027 年或达 1.2 万亿美元；微软 12 月季度 capex 预计超 500 亿美元",
      "text_en": "The four hyperscalers' combined 2026 capex is now expected above $740B (BlockWest, Nov 6); Goldman puts the top five hyperscalers' 2026 AI infrastructure spending at ~$800B, possibly $1.2T in 2027; Microsoft's December-quarter capex is expected above $50B"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "高盛预计 2027 年四大云 capex 近 1.14 万亿美元；制约转向电力与并网，PJM 称 2026/27–2028/29 预测数据中心需求增长的 42% 已延期或取消",
+     "text_en": "Goldman expects the big-four cloud capex to approach $1.14 trillion in 2027; the constraint has shifted to power and grid connection, with PJM saying 42% of forecast data-center demand growth for 2026/27–2028/29 has been deferred or cancelled"
     }
    ]
   },
@@ -2077,9 +2102,9 @@
   },
   {
    "id": "evt-section301-exclusions-expire-nov9",
-   "status": "已通知",
-   "title": "Section 301排除条款11-09到期（178项）",
-   "title_en": "Section 301 exclusions expire Nov 9 (178 items)",
+   "status": "已生效",
+   "title": "Section 301 178项排除延至2027-01-09（原11-09到期）",
+   "title_en": "Section 301 exclusions extended to Jan 9, 2027 (178 items; were due Nov 9)",
    "subcategories": [],
    "tags": [
     "关税"
@@ -2134,6 +2159,11 @@
      "date": "2026-11-08",
      "change": "截至 11-08 检索，USTR 仍未发布延长 178 项排除的通知；排除定于 11-09 23:59（美东）到期，剩 1 天；11-06 美财长贝森特与 USTR 格里尔同何立峰视频通话，要求中方“立即”落实釜山承诺；2025 年有 USTR 于到期当天宣布、过期后追溯发布的先例",
      "text_en": "As of Nov 8 checks, USTR has published no notice extending the 178 exclusions; they expire at 11:59 p.m. ET on Nov 9, one day out; on Nov 6 Treasury Secretary Bessent and USTR Greer spoke with He Lifeng by video, urging China to implement the Busan commitments 'immediately'; in 2025 USTR announced on the expiry day itself and published retroactively"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "USTR 11-06 发布两份通知：178 项排除延至 2027-01-09 23:59（美东），海事费用暂停同步延至同一日；仅延两个月，下次到期 2027-01-09；联邦公报刊登尚未确认",
+     "text_en": "USTR issued two notices on Nov 6: all 178 exclusions extended through 11:59 p.m. ET Jan 9, 2027, and the maritime suspension extended to the same date; only a two-month extension, next expiry Jan 9, 2027; Federal Register publication not yet confirmed"
     }
    ]
   },
@@ -2806,6 +2836,11 @@
      "date": "2026-11-08",
      "change": "11-06 美财长贝森特与 USTR 格里尔同何立峰视频通话，要求中方立即全面落实釜山承诺、重点点名稀土；美方称中方仅履行约三分之二稀土承诺（FT 9 月口径转述）；第 70 号公告法定到期日仍为 11-10，未见修订文本；氧化镨钕 11-06 均价 707,500 元/吨（-3,500）",
      "text_en": "On Nov 6 Bessent and Greer spoke with He Lifeng by video, urging China to fully implement the Busan commitments immediately, singling out rare earths; the US side said China has fulfilled only about two-thirds of its rare-earth pledges (FT September wording, as relayed); Announcement No. 70 still legally expires Nov 10 with no amendment text; praseodymium-neodymium oxide averaged 707,500 yuan/t on Nov 6 (-3,500)"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "截至 11-09 上午仍无修订第 70 号公告的法律文本；商务部 11-06 回应仅确认暂停至 11-10；氧化镨钕 11-06 均价 707,500 元/吨（-3,500）",
+     "text_en": "As of the morning of Nov 9, still no legal text amending Announcement No. 70; MOFCOM said on Nov 6 only that the suspension runs to Nov 10; praseodymium-neodymium oxide averaged RMB 707,500/t on Nov 6 (-3,500)"
     }
    ]
   },
@@ -3061,6 +3096,19 @@
      "date": "2026-11-08",
      "change": "谷歌接手 Crusoe 怀俄明州数据中心用地（原计划扩至 10GW），宣布投资 170 亿美元开发该园区；Crusoe 仍为谷歌得州 Armstrong County 园区开发商（BlockWest 11-07）",
      "text_en": "Google took over Crusoe's Wyoming data center site (originally planned to scale to 10 GW) and announced a $17B investment to develop the campus; Crusoe remains Google's developer for the Armstrong County, Texas campus (BlockWest, Nov 7)"
+    }
+   ]
+  },
+  {
+   "id": "evt-natural-rubber-record-high",
+   "title": "印度天然橡胶触及 300 卢比/kg 历史新高",
+   "title_en": "Indian natural rubber hits record INR 300/kg",
+   "status": "已生效",
+   "timeline": [
+    {
+     "date": "2026-11-09",
+     "change": "印度 RSS-4 天然橡胶 11-02 触及 300 卢比/kg 历史新高（同比 +62%）；印度轮胎制造商协会 ATMA 11-06 正式要求政府以关税配额方式临时免税进口，点名软管、密封件、传送带同受影响",
+     "text_en": "Indian RSS-4 natural rubber hit a record INR 300/kg on Nov 2 (+62% y/y); the Automotive Tyre Manufacturers’ Association (ATMA) formally asked the government on Nov 6 for a temporary duty-free import quota, noting hoses, seals and conveyor belts are also affected"
     }
    ]
   }
