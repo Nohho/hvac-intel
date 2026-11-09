@@ -3,7 +3,10 @@
 <channel>
 <title>HVAC 供应链情报</title><link>https://nohho.github.io/hvac-intel/</link>
 <description>HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议</description>
-<language>zh-CN</language><lastBuildDate>Sun, 08 Nov 2026 23:53:04 GMT</lastBuildDate>
+<language>zh-CN</language><lastBuildDate>Mon, 09 Nov 2026 23:53:38 GMT</lastBuildDate>
+<item><title>HVAC 供应链情报早报 2026-11-10</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-10</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-10</guid><pubDate>Mon, 09 Nov 2026 16:00:00 GMT</pubDate><description>• 商务部宣布稀土出口管制暂停延至 2027-01-10
+• 铜价周一反弹、现货再创纪录紧
+• Section 301 排除延期今日起适用</description></item>
 <item><title>HVAC 供应链情报早报 2026-11-09</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-09</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-09</guid><pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate><description>• USTR 11-06连发两通知：178项301排除与海事费用暂停双双延至2027-01-09
 • 稀土出口管制暂停11-10到期（剩1天），续期无明确法律文本
 • 铜价再探7月以来最低收盘、现货更紧</description></item>
@@ -113,11 +116,5 @@
 • 铜价逼近纪录高位：LME 10-9 $14,474.5/吨，冶炼端收紧
 • PCB 涨价向上游蔓延：电子布/电子纱轮动涨价
 • 苹果削减 iPhone 18 Pro 零部件订单 ≥15%（DRAM 成本所致）</description></item>
-<item><title>HVAC 供应链情报早报 2026-10-11</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-11</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-11</guid><pubDate>Sat, 10 Oct 2026 16:00:00 GMT</pubDate><description>PCB/CCL 新一轮涨价（10-5 起）、紧缺延续至 2027；LG 北美 5GW+ 冷水机协议+1.1 亿美元弗吉尼亚建厂；铜价再逼历史高点（Comex 10-9 $6.6425/磅）
-• PCB/CCL 新一轮涨价（10-5 起），结构性紧缺延续至 2027
-• LG 北美 5GW+ AI 数据中心冷水机协议 + 1.1 亿美元弗吉尼亚建厂
-• 铜价再逼历史高点：Comex 10-9 收 $6.6425/磅
-• 尼龙树脂涨价：BASF $0.15/磅 10-1 生效、Celanese 10-19 生效（Tier B 轮查 hit）
-• 村田“全面涨价 15%~35%”澄清为 3 月已正式通知，10 月窗口无新公告</description></item>
 </channel>
 </rss>
