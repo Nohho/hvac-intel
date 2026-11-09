@@ -432,6 +432,11 @@
      "date": "2026-11-09",
      "change": "LME 3M 11-06 收 13,768 美元/吨（7 月下旬以来最低收盘），全周跌幅 3 月以来最大；上期所库存周 -24% 至 33,848 吨、洋山溢价创纪录 217.50 美元/吨——期货跌、现货紧并存（11-08 期 13,780 美元为官方卖出价口径，本期改用期货收盘价）",
      "text_en": "LME 3M closed at $13,768/t on Nov 6, the lowest close since late July, with the biggest weekly drop since March; SHFE stocks fell 24% w/w to 33,848 t and the Yangshan premium hit a record $217.50/t — futures down, physical tight (the $13,780 in the Nov 8 edition was the official ask; this edition uses the 3M futures close)"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "LME 3M 11-09 收 13,880 美元/吨（+0.81%），周一反弹；洋山铜溢价创纪录 230 美元/吨、上海现货升水 2,615 元/吨创纪录、上期所库存 33,848 吨近三年最低",
+     "text_en": "LME 3M closed at $13,880/t on Nov 9 (+0.81%), rebounding on Monday; the Yangshan copper premium hit a record $230/t, the Shanghai spot premium a record 2,615 yuan/t, and SHFE stocks 33,848 t, the lowest in nearly three years"
     }
    ],
    "title": "铜价历史高位",
@@ -623,6 +628,11 @@
      "date": "2026-11-09",
      "change": "DDR5 16Gb 现货 11-03 报 61.50 美元/颗、持平；SK 海力士预计存储短缺延续至至少 2030 年，三星称 2027 年 HBM 产能已全部锁定；HBM3E 经销商报价约 4,000 美元/颗",
      "text_en": "DDR5 16Gb spot was $61.50 on Nov 3, flat; SK Hynix expects the memory shortage to last until at least 2030 and Samsung says its 2027 HBM capacity is fully booked; HBM3E dealer quotes are about $4,000 per chip"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "DDR5 16Gb 现货 11-09 报 61.51 美元/颗，持平高位（11-05 曾跌至 60.667）；TrendForce：Q4 合约仍预计 +10-15%、NAND +15-20%，现货买家观望、合约继续涨",
+     "text_en": "DDR5 16Gb spot was $61.51 on Nov 9, flat at the high (it had dipped to $60.667 on Nov 5); TrendForce still expects Q4 contract prices +10-15% for DRAM and +15-20% for NAND, with spot buyers holding back while contracts keep rising"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1008,6 +1018,11 @@
      "date": "2026-11-03",
      "change": "Mysteel 11-03：氧化镨钕701,500元/吨（-7,500），钕铁硼废料镨钕710-715元/kg（10月中旬755-765回落企稳），原料市场弱势运行、询盘冷清；北方稀土预计Q4镨钕价格以稳为主",
      "text_en": "Mysteel Nov 3: PrNd oxide 701,500 yuan/t (-7,500), NdFeB scrap PrNd 710-715 yuan/kg (eased from 755-765 mid-Oct), weak market; Northern Rare Earth sees stable Q4 PrNd prices"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "氧化镨钕 11-09 报 707,500 元/吨（持平 11-06）；Mysteel 月报：10 月均价 73.2 万元/吨（-3.79%），11 月预计窄幅震荡阴跌；钕铁硼毛坯 35N 180 元/kg 持平",
+     "text_en": "PrNd oxide was 707,500 yuan/t on Nov 9 (flat vs Nov 6); Mysteel monthly report: the October average was 732,000 yuan/t (-3.79%), with a narrow, slightly soft November expected; NdFeB blank 35N flat at 180 yuan/kg"
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -2164,6 +2179,11 @@
      "date": "2026-11-09",
      "change": "USTR 11-06 发布两份通知：178 项排除延至 2027-01-09 23:59（美东），海事费用暂停同步延至同一日；仅延两个月，下次到期 2027-01-09；联邦公报刊登尚未确认",
      "text_en": "USTR issued two notices on Nov 6: all 178 exclusions extended through 11:59 p.m. ET Jan 9, 2027, and the maritime suspension extended to the same date; only a two-month extension, next expiry Jan 9, 2027; Federal Register publication not yet confirmed"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "延期今日起适用：11-10 00:01 起报关/出库货物适用延期后排除；联邦公报刊登截至今晨仍未确认",
+     "text_en": "The extension takes effect today: goods entered or withdrawn for consumption from 00:01 on Nov 10 use the extended exclusions; Federal Register publication was still unconfirmed as of this morning"
     }
    ]
   },
@@ -2280,6 +2300,11 @@
      "date": "2026-11-08",
      "change": "股价 11-05 单日 -14%（前一交易日已跌 12.9%），11-06 随 AI 板块反弹；Evercore 11-06 下调目标价至 325 美元、维持买入（11-07 期误作 11-06 单日 -14%，以 Trefis 11-06 核实为准）",
      "text_en": "Shares fell 14% in a single session on Nov 5 (after -12.9% the prior session), then rebounded with AI stocks on Nov 6; Evercore cut its price target to $325 on Nov 6, keeping Buy (the Nov 7 edition wrongly dated the -14% to Nov 6; corrected per Trefis Nov 6)"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "股价 11-09 单日 +9.63% 至 200.47 美元，AI 基建股反弹；5 日仍 -13.78%",
+     "text_en": "Shares rose 9.63% in a single session on Nov 9 to $200.47 as AI infrastructure stocks rebounded; still -13.78% over five sessions"
     }
    ]
   },
@@ -2430,6 +2455,11 @@
      "date": "2026-11-08",
      "change": "11-06 美财长贝森特与 USTR 格里尔同何立峰视频通话，要求中方立即全面落实釜山承诺，重点点名稀土、其他关键矿产与农产品采购；美方称中方仅履行约三分之二稀土承诺（FT 9 月口径转述）",
      "text_en": "On Nov 6 Bessent and Greer spoke with He Lifeng by video, urging China to implement the Busan commitments immediately, singling out rare earths, other critical minerals and farm purchases; the US side said China has fulfilled only about two-thirds of its rare-earth pledges (FT September wording, as relayed)"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "中方 11-09 落实釜山安排一揽子延期：稀土管制暂停延至 2027-01-10、对美加征 24% 关税暂停再延两月、美籍船舶特别港务费暂停延至 2027-01-10、韩华海洋关联制裁暂停延两月；商务部短声明未给更多细节",
+     "text_en": "On Nov 9 China rolled out a package of Busan-arrangement extensions: the rare-earth control pause to Jan 10, 2027, the suspension of the additional 24% tariff on US imports for two more months, the suspension of special port fees on US-linked ships to Jan 10, 2027, and the sanctions suspension for Hanwha Ocean affiliates for two months; MOFCOM gave no further details in its short statement"
     }
    ],
    "title": "釜山习特会：对华关税57%→47%、稀土管制暂停一年",
@@ -2803,7 +2833,7 @@
   {
    "id": "evt-rareearth-pause-expiry-1110",
    "seeded": false,
-   "status": "已通知",
+   "status": "已生效",
    "status_note": "暂停到期日为官方公告既定日期；是否续期未知",
    "subcategories": [
     "Magnets"
@@ -2814,8 +2844,8 @@
     "预警",
     "影响BOM"
    ],
-   "title": "稀土出口管制暂停11-10到期，续期无明确法律文本",
-   "title_en": "Rare earth export control suspension expires Nov 10 with no renewal text published",
+   "title": "稀土出口管制暂停延至2027-01-10（原11-10到期，仅延两个月）",
+   "title_en": "Rare-earth export control pause extended to Jan 10, 2027 (was due Nov 10; only two months)",
    "timeline": [
     {
      "date": "2026-11-05",
@@ -2841,6 +2871,11 @@
      "date": "2026-11-09",
      "change": "截至 11-09 上午仍无修订第 70 号公告的法律文本；商务部 11-06 回应仅确认暂停至 11-10；氧化镨钕 11-06 均价 707,500 元/吨（-3,500）",
      "text_en": "As of the morning of Nov 9, still no legal text amending Announcement No. 70; MOFCOM said on Nov 6 only that the suspension runs to Nov 10; praseodymium-neodymium oxide averaged RMB 707,500/t on Nov 6 (-3,500)"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "商务部 11-09 宣布暂停期延至 2027-01-10：六项 2025-10-09 公告（55-58 号、61-62 号）11-11 至 2027-01-10 继续暂停；4 月七种中重稀土许可制从未暂停、持续生效；美方 11-06 曾称中方仅履行约三分之二釜山稀土承诺",
+     "text_en": "MOFCOM announced on Nov 9 the pause is extended to Jan 10, 2027: the six Oct 9, 2025 announcements stay suspended Nov 11, 2026-Jan 10, 2027; the April 2025 licensing regime for seven medium-heavy rare earths was never suspended; on Nov 6 the US side said China had met only about two-thirds of its Busan rare-earth commitments"
     }
    ]
   },
@@ -3109,6 +3144,11 @@
      "date": "2026-11-09",
      "change": "印度 RSS-4 天然橡胶 11-02 触及 300 卢比/kg 历史新高（同比 +62%）；印度轮胎制造商协会 ATMA 11-06 正式要求政府以关税配额方式临时免税进口，点名软管、密封件、传送带同受影响",
      "text_en": "Indian RSS-4 natural rubber hit a record INR 300/kg on Nov 2 (+62% y/y); the Automotive Tyre Manufacturers’ Association (ATMA) formally asked the government on Nov 6 for a temporary duty-free import quota, noting hoses, seals and conveyor belts are also affected"
+    },
+    {
+     "date": "2026-11-09",
+     "change": "沪胶 RU2701 11-04 收 18,865 元/吨（-1.92%），较 10-12 高点 21,005 回撤超 10%；但原料端仍处历史高位：科特迪瓦 11 月原料价 578 西非法郎/kg（同比 +66.6%）再创历史新高；ANRPC 预计 2026 全球天然橡胶供需缺口约 31.7 万吨",
+     "text_en": "SHFE rubber RU2701 closed at 18,865 yuan/t on Nov 4 (-1.92%), more than 10% below the Oct 12 high of 21,005; raw material prices remain at record highs - Cote d’Ivoire November feedstock at 578 CFA francs/kg (+66.6% y/y), another record; ANRPC expects a global natural rubber deficit of about 317,000 t in 2026"
     }
    ]
   }
