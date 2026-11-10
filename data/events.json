@@ -273,6 +273,11 @@
      "date": "2026-11-09",
      "change": "村田 10-30 宣布 2026–2030 财年投入约 1 万亿日元扩产 MLCC；TrendForce 11-02 称 AI 高容 MLCC 短缺将于 2027 上半年达峰，交期约 35 周（正常约 12 周）、三星电机 52 周；三星电机 10-30 签下约 8,793 亿韩元 AI 服务器 MLCC 供应合同",
      "text_en": "Murata announced on Oct 30 a roughly JPY 1 trillion MLCC capacity expansion for FY2026–2030; TrendForce said on Nov 2 that the AI high-capacitance MLCC shortage will peak in H1 2027, with lead times of about 35 weeks (vs about 12 normally) and 52 weeks at Samsung Electro-Mechanics; Samsung Electro-Mechanics signed an AI-server MLCC supply contract worth about KRW 879.3 billion on Oct 30"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "本窗口无新函；国巨新一轮涨价仍处规划阶段、无原厂函件确认；松下聚合物钽电容跟进 +15%~30%、交期最长 84 周（见 KEMET 钽电容事件）",
+     "text_en": "No new notice in this window; Yageo's next hike round still in planning with no factory letter confirmed; Panasonic polymer tantalum followed at +15%-30% with lead times up to 84 weeks (see KEMET tantalum event)"
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -437,6 +442,11 @@
      "date": "2026-11-09",
      "change": "LME 3M 11-09 收 13,880 美元/吨（+0.81%），周一反弹；洋山铜溢价创纪录 230 美元/吨、上海现货升水 2,615 元/吨创纪录、上期所库存 33,848 吨近三年最低",
      "text_en": "LME 3M closed at $13,880/t on Nov 9 (+0.81%), rebounding on Monday; the Yangshan copper premium hit a record $230/t, the Shanghai spot premium a record 2,615 yuan/t, and SHFE stocks 33,848 t, the lowest in nearly three years"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "LME 3M 11-09 收 13,880 美元/吨（+0.81%），11-10 盘中 13,939 美元/吨；洋山铜溢价持平纪录 230 美元/吨；上期所库存 33,848 吨、近三年最低、周降逾 24%",
+     "text_en": "LME 3M closed Nov 9 at $13,880/t (+0.81%), intraday $13,939/t on Nov 10; Yangshan copper premium flat at a record $230/t; SHFE inventory 33,848 t, a near-3-year low, down over 24% w/w"
     }
    ],
    "title": "铜价历史高位",
@@ -633,6 +643,11 @@
      "date": "2026-11-09",
      "change": "DDR5 16Gb 现货 11-09 报 61.51 美元/颗，持平高位（11-05 曾跌至 60.667）；TrendForce：Q4 合约仍预计 +10-15%、NAND +15-20%，现货买家观望、合约继续涨",
      "text_en": "DDR5 16Gb spot was $61.51 on Nov 9, flat at the high (it had dipped to $60.667 on Nov 5); TrendForce still expects Q4 contract prices +10-15% for DRAM and +15-20% for NAND, with spot buyers holding back while contracts keep rising"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "DDR5 16Gb 现货 11-10 报 61.83 美元/颗（+0.53%）；TrendForce：Q4 常规 DRAM 合约仍预计 +10–15%、NAND +15–20%；32GB DDR5 套条现货 11 月初三天内 459→570 美元（+25%）",
+     "text_en": "DDR5 16Gb spot at $61.83 on Nov 10 (+0.53%); TrendForce: Q4 conventional DRAM contract prices still expected +10-15%, NAND +15-20%; 32GB DDR5 kit spot rose $459 to ~$570 (+25%) within three days in early November"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -887,6 +902,11 @@
      "date": "2026-11-09",
      "change": "生益科技 11 月起 M6 及以下板材 +15%、PP +25%（行业沟通信息）；松下通用多层板 2027-01-01 +200% 通知待经销商报价二次确认；建滔 11-04 新函仍为最新一轮，本窗口无第九轮",
      "text_en": "Shengyi raised M6-and-below laminates 15% and PP 25% from November (industry channel reports); Panasonic’s notice of +200% on general multilayer CCL from Jan 1, 2027 awaits distributor-quote confirmation; Kingboard’s Nov 4 notice remains the latest round, with no ninth round in this window"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "松下新竹湖口厂火灾冲击高端 CCL 约 4% 供应、恢复或需数月；建滔 11-03 第七轮涨价函（FR-4 全系列 +10%）；生益 11 月提价传闻未证实",
+     "text_en": "Panasonic Hsinchu plant fire hits about 4% of high-end CCL supply, recovery may take months; Kingboard's seventh 2026 hike notice on Nov 3 (FR-4 CCL +10%); Shengyi November hike talk unconfirmed"
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1023,6 +1043,11 @@
      "date": "2026-11-09",
      "change": "氧化镨钕 11-09 报 707,500 元/吨（持平 11-06）；Mysteel 月报：10 月均价 73.2 万元/吨（-3.79%），11 月预计窄幅震荡阴跌；钕铁硼毛坯 35N 180 元/kg 持平",
      "text_en": "PrNd oxide was 707,500 yuan/t on Nov 9 (flat vs Nov 6); Mysteel monthly report: the October average was 732,000 yuan/t (-3.79%), with a narrow, slightly soft November expected; NdFeB blank 35N flat at 180 yuan/kg"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "氧化镨钕 11-10 报 712,000 元/吨（+5,500 元，11-09 为 707,500）；钕铁硼毛坯 35N 180 元/kg 持平",
+     "text_en": "Praseodymium-neodymium oxide at RMB 712,000/t on Nov 10 (+RMB 5,500; 707,500 on Nov 9); NdFeB blank 35N flat at RMB 180/kg"
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -2184,6 +2209,11 @@
      "date": "2026-11-10",
      "change": "延期今日起适用：11-10 00:01 起报关/出库货物适用延期后排除；联邦公报刊登截至今晨仍未确认",
      "text_en": "The extension takes effect today: goods entered or withdrawn for consumption from 00:01 on Nov 10 use the extended exclusions; Federal Register publication was still unconfirmed as of this morning"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "联邦公报 91 FR 72610（FR Doc. 2026-22925）11-10 已刊登，178 项排除延至 2027-01-09；CBP 报关指引截至 11-10 仍未发布；通知文本 1 月 9 日与 1 月 10 日表述矛盾，以 1 月 9 日为准",
+     "text_en": "Federal Register 91 FR 72610 (FR Doc. 2026-22925) published Nov 10, 178 exclusions extended to Jan 9, 2027; CBP entry instructions still unpublished as of Nov 10; the notice text contradicts itself on Jan 9 vs Jan 10, Jan 9 prevails"
     }
    ]
   },
@@ -2305,6 +2335,11 @@
      "date": "2026-11-09",
      "change": "股价 11-09 单日 +9.63% 至 200.47 美元，AI 基建股反弹；5 日仍 -13.78%",
      "text_en": "Shares rose 9.63% in a single session on Nov 9 to $200.47 as AI infrastructure stocks rebounded; still -13.78% over five sessions"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "Baird 全球工业会议：AI 与传统云需求在超大规模、企业与 AI 实验室均保持韧性，订单管道在增长；800VDC 路线图：混合方案 2027H2、原生端到端系统 2028H2",
+     "text_en": "Baird Global Industrial Conference: AI and traditional cloud demand resilient across hyperscale, enterprise and AI labs, order pipeline growing; 800VDC roadmap: hybrid in H2 2027, native end-to-end in H2 2028"
     }
    ]
   },
@@ -2460,6 +2495,11 @@
      "date": "2026-11-09",
      "change": "中方 11-09 落实釜山安排一揽子延期：稀土管制暂停延至 2027-01-10、对美加征 24% 关税暂停再延两月、美籍船舶特别港务费暂停延至 2027-01-10、韩华海洋关联制裁暂停延两月；商务部短声明未给更多细节",
      "text_en": "On Nov 9 China rolled out a package of Busan-arrangement extensions: the rare-earth control pause to Jan 10, 2027, the suspension of the additional 24% tariff on US imports for two more months, the suspension of special port fees on US-linked ships to Jan 10, 2027, and the sanctions suspension for Hanwha Ocean affiliates for two months; MOFCOM gave no further details in its short statement"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "国务院关税税则委员会第 6 号公告：对美加征 24% 关税暂停再延两月（11-10 13:01 起）、10% 保留；BIS 关联方规则暂停延至 2027-01-10（91 FR 70789）",
+     "text_en": "Tariff Commission Announcement No. 6: 24% additional tariff on US goods paused for another two months (from 13:01 Nov 10), 10% retained; BIS affiliates-rule pause extended to Jan 10, 2027 (91 FR 70789)"
     }
    ],
    "title": "釜山习特会：对华关税57%→47%、稀土管制暂停一年",
@@ -2543,6 +2583,11 @@
      "date": "2026-10-30",
      "change": "格力10-26发布三季报：Q3营收366.78亿元（-7.97%）、净利39.96亿元（-43.31%，上市以来三季度单季最大跌幅）；前三季营收1260.75亿元（-8.1%）；Q3铜、铝现价同比+35%/+15%压缩毛利率5.62个百分点。",
      "text_en": "Gree 3Q report 10-26: Q3 revenue RMB 36.678B (-7.97%), net profit RMB 3.996B (-43.31%, worst Q3 drop since listing); 9M revenue RMB 126.075B (-8.1%); Q3 copper/aluminum spot prices +35%/+15% YoY compressed gross margin by 5.62pp."
+    },
+    {
+     "date": "2026-11-10",
+     "change": "董明珠 11-10 回应业绩下滑主因铜价上涨（铜价为铝价 5–6 倍），宁可损失几十亿元利润也不降品质、坚持用铜",
+     "text_en": "Chairwoman Dong Mingzhu said on Nov 10 the earnings slide was mainly due to copper prices (copper costs 5-6x aluminum), preferring to lose billions in profit rather than cut quality and keep using copper"
     }
    ],
    "title": "格力Q3净利腰斩（铜铝成本压毛利5.62pp）",
@@ -2876,6 +2921,11 @@
      "date": "2026-11-09",
      "change": "商务部 11-09 宣布暂停期延至 2027-01-10：六项 2025-10-09 公告（55-58 号、61-62 号）11-11 至 2027-01-10 继续暂停；4 月七种中重稀土许可制从未暂停、持续生效；美方 11-06 曾称中方仅履行约三分之二釜山稀土承诺",
      "text_en": "MOFCOM announced on Nov 9 the pause is extended to Jan 10, 2027: the six Oct 9, 2025 announcements stay suspended Nov 11, 2026-Jan 10, 2027; the April 2025 licensing regime for seven medium-heavy rare earths was never suspended; on Nov 6 the US side said China had met only about two-thirds of its Busan rare-earth commitments"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "商务部/海关总署第 58 号公告（11-09）：11-11 起至 2027-01-10 继续暂停六项 2025-10-09 稀土出口管制；氧化镨钕 11-10 报 712,000 元/吨（+5,500 元）",
+     "text_en": "MOFCOM/GACC Announcement No. 58 (Nov 9): six Oct 9, 2025 rare-earth export controls remain paused from Nov 11 to Jan 10, 2027; praseodymium-neodymium oxide at RMB 712,000/t on Nov 10 (+RMB 5,500)"
     }
    ]
   },
@@ -3151,6 +3201,55 @@
      "text_en": "SHFE rubber RU2701 closed at 18,865 yuan/t on Nov 4 (-1.92%), more than 10% below the Oct 12 high of 21,005; raw material prices remain at record highs - Cote d’Ivoire November feedstock at 578 CFA francs/kg (+66.6% y/y), another record; ANRPC expects a global natural rubber deficit of about 317,000 t in 2026"
     }
    ]
+  },
+  {
+   "id": "evt-panasonic-hsinchu-fire-ccl",
+   "title": "松下台湾新竹湖口厂火灾冲击高端CCL供应",
+   "title_en": "Panasonic Hsinchu plant fire hits high-end CCL supply",
+   "status": "已生效",
+   "timeline": [
+    {
+     "date": "2026-11-10",
+     "change": "11-04 火灾后续：2 名失踪员工确认死亡、5 人受伤；该厂产 MEGTRON 高端超低损耗 CCL（M6/M7/M8），TrendForce 11-05 评估约影响全球高端 CCL 供应约 4%，恢复期或需数月，订单或转向台系 CCL 厂",
+     "text_en": "Follow-up to the Nov 4 fire: 2 missing workers confirmed dead, 5 injured; the plant makes MEGTRON high-end ultra-low-loss CCL (M6/M7/M8). TrendForce (Nov 5) estimates about 4% of global high-end CCL supply affected, recovery may take months, orders may shift to Taiwan CCL makers"
+    }
+   ],
+   "subcategories": [
+    "PCB Boards"
+   ]
+  },
+  {
+   "id": "evt-kemet-tantalum-price-hike-2",
+   "title": "KEMET钽电容第二轮涨价（11-01生效）",
+   "title_en": "KEMET tantalum capacitor second price hike (effective Nov 1)",
+   "status": "已生效",
+   "timeline": [
+    {
+     "date": "2026-11-10",
+     "change": "KEMET T520/T521/T530 系列 11-01 起 +20%~30%，年内第二轮调价，且扩至直供客户；松下跟进聚合物钽电容 +15%~30%、二氧化锰型 +10%~20%，部分聚合物钽电容最长交期 84 周",
+     "text_en": "KEMET T520/T521/T530 series +20%-30% from Nov 1, second hike this year, extended to direct customers; Panasonic followed with polymer tantalum +15%-30% and MnO2 type +10%-20%, longest lead time for some polymer tantalum capacitors 84 weeks"
+    }
+   ],
+   "subcategories": [
+    "电容"
+   ]
+  },
+  {
+   "id": "evt-us-steel-sheet-tight-2026",
+   "title": "美国钢板供应紧张、交期排进2027年",
+   "title_en": "US steel sheet supply tight, lead times into 2027",
+   "status": "已生效",
+   "timeline": [
+    {
+     "date": "2026-11-10",
+     "change": "SMU 11-03：板材价格飙升、现货几乎无货、交期已排进 2027 年；Nucor 11-09 热轧卷现货价上调至 1,295 美元/短吨；Marino\\WARE 钢产品自 2027-01-04 起再涨最低 10%",
+     "text_en": "SMU (Nov 3): sheet prices surging, spot nearly unavailable, lead times into 2027; Nucor raised HRC spot price to $1,295/short ton on Nov 9; Marino\\WARE steel products up at least 10% from Jan 4, 2027"
+    }
+   ],
+   "subcategories": [
+    "Fabrications - Steel Sheet",
+    "Hot Roll Steel, Coil & Sheet"
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -3162,5 +3261,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-08"
+ "updated": "2026-11-11"
 }
