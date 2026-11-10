@@ -1,0 +1,630 @@
+{
+ "hotspot_events": [
+  {
+   "id": "evt-20261110-01",
+   "title": "MOFCOM Announces Extension of Rare Earth Export Control Suspension to 2027-01-10",
+   "date": "2026-11-09",
+   "heat": 88,
+   "heat_reason": "The cliff is pushed back by two months but not lifted; combined with a package of US tariff and port fee extensions, this directly impacts the decision window for the magnet steel/motor supply chain",
+   "tags": [
+    "影响BOM",
+    "关税政策",
+    "稀土"
+   ],
+   "severity": "低",
+   "section": "头条事件",
+   "event_id": "evt-rareearth-pause-expiry-1110",
+   "summary": "MOFCOM announced on Nov 9 that the suspension period for six Oct 9, 2025 rare earth export control announcements is extended to 2027-01-10 (continuing the suspension from Nov 11 to Jan 10, 2027), pushing the cliff back by two months; bundled extensions include: extending the suspension of additional 24% tariffs on the US by another two months, and extending the suspension of special port fees for US-flagged vessels to 2027-01-10; the licensing system for 7 types of medium and heavy rare earths from April 2025 was never suspended and remains continuously in effect.",
+   "numbers": [
+    "Suspension extended to 2027-01-10",
+    "Six announcements remaining suspended from 11-11 to 2027-01-10",
+    "Suspension of 24% US tariffs extended by another two months"
+   ],
+   "sources": [
+    {
+     "outlet": "Reuters",
+     "date": "2026-11-09",
+     "url": "https://www.reuters.com/world/china/china-extends-suspension-new-rare-earth-controls-until-january-2026-11-09/",
+     "first_party": false
+    },
+    {
+     "outlet": "Reuters (US-flagged Vessel Port Fees)",
+     "date": "2026-11-09",
+     "url": "https://www.reuters.com/world/asia-pacific/china-extends-suspension-port-fees-us-linked-ships-2026-11-09/",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261110-01"
+   ]
+  },
+  {
+   "id": "evt-20261110-02",
+   "title": "Copper Prices Rebound on Monday; Spot Market Sets New Record Tightness",
+   "date": "2026-11-09",
+   "heat": 87,
+   "heat_reason": "Futures rebounded, but both spot premium and import premium hit record highs. The growing divergence between futures and spot markets increases misjudgment risk, directly affecting copper price-locking decisions",
+   "tags": [
+    "影响BOM",
+    "原材料",
+    "铜"
+   ],
+   "severity": "中",
+   "section": "头条事件",
+   "event_id": "evt-copper-high",
+   "summary": "LME 3M closed at $13,880/ton (+0.81%) on 11-09, after last Friday's 13,768 marked the lowest close since late July; Yangshan copper premium hit a record $230/ton, Shanghai spot premium reached a record 2,615 RMB/ton, and SHFE inventory at 33,848 tons was the lowest in nearly three years—a futures rebound does not equal spot market relief.",
+   "numbers": [
+    "LME 3M $13,880/ton (+0.81%)",
+    "Yangshan premium record $230/ton",
+    "Shanghai spot premium 2,615 RMB/ton",
+    "SHFE inventory 33,848 tons"
+   ],
+   "sources": [
+    {
+     "outlet": "Reuters / Malaya Business Insight",
+     "date": "2026-11-09",
+     "url": "https://malaya.com.ph/business/shipping-transportation/copper-rises-on-china-supply-concerns/",
+     "first_party": false
+    },
+    {
+     "outlet": "Mining.com",
+     "date": "2026-11-09",
+     "url": "https://www.indexbox.io/it/blog/copper-rebounds-as-china-supply-tightness-returns-to-focus/",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261110-03"
+   ]
+  },
+  {
+   "id": "evt-20261110-03",
+   "title": "Section 301 Exclusion Extension Applies Starting Today",
+   "date": "2026-11-10",
+   "heat": 85,
+   "heat_reason": "178 exclusion extensions apply starting today, directly determining the import cost for goods cleared through customs from today; Federal Register publication remains pending confirmation, leaving a formal procedural risk",
+   "tags": [
+    "影响BOM",
+    "关税政策"
+   ],
+   "severity": "低",
+   "section": "头条事件",
+   "event_id": "evt-section301-exclusions-expire-nov9",
+   "summary": "Two USTR notices on Nov 6 (178 exclusions + maritime fee suspension) extended to 2027-01-09, applying to goods customs cleared/withdrawn from warehouse starting 11-10 00:01; Federal Register publication remains unconfirmed as of this morning's search (a precedent occurred last year where publication lagged behind the effective date, after which it was applied retroactively).",
+   "numbers": [
+    "178 exclusions extended to 2027-01-09",
+    "Applies to customs-cleared goods from 11-10 00:01"
+   ],
+   "sources": [
+    {
+     "outlet": "USTR Official Notice",
+     "date": "2026-11-06",
+     "url": "https://ustr.gov/sites/default/files/files/Issue_Areas/Enforcement/Section%20301/USTR%20FRN%20Extending%20Section%20301%20China%20FTT%20Exclusions%20to%20Jan%202027.pdf",
+     "first_party": true
+    },
+    {
+     "outlet": "Gateway Lines",
+     "date": "2026-11-08",
+     "url": "https://gatewaylines.com/press-releases/china-ship-fee-delay-jan-9-2027-301-exclusions",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261110-02"
+   ]
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Copper",
+   "company": "",
+   "detail": "LME 3M 11-09 settled at 13,880 $/ton (+0.81%); Yangshan premium hit a record 230 $/ton; Shanghai spot premium at 2,615 RMB/ton; SHFE inventory at 33,848 tons (Reuters / Malaysia Business Insights 11-09)",
+   "event_id": "evt-copper-high",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Aluminum",
+   "company": "",
+   "detail": "LME 3M 11-09 approx 3,076 $/ton (-0.40%); SHFE aluminum benchmark 11-06 closed at 23,180 RMB/ton; LME aluminum inventory approx 227k tons, spot premium strengthening (Minmetals Futures 11-09, Bizportal 11-09)",
+   "event_id": "",
+   "subcategories": [
+    "Aluminum Fin Stock"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Steel",
+   "company": "",
+   "detail": "No new prices in this window, carrying over 11-06: national average rebar price 3,242 RMB/ton, hot-rolled coil 3,224 RMB/ton; total inventory across five major steel products 13,798,200 tons (Mysteel 11-06)",
+   "event_id": "",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "tags": [
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Refrigerant",
+   "company": "",
+   "detail": "No new prices in this window, carrying over East China prices from 11-02: R32 6.35–6.45, R134a 6.35–6.50, R125 5.4–5.7, R22 1.7–1.8 ten thousand RMB/ton (百川盈孚 / Longzhong Information 11-02)",
+   "event_id": "",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Rare Earth / NdFeB",
+   "company": "",
+   "detail": "Praseodymium-neodymium oxide quoted at 707,500 RMB/ton on 11-09 (flat vs 11-06); NdFeB blank 35N steady at 180 RMB/kg; Mysteel monthly report: Oct average praseodymium-neodymium oxide price 732,000 RMB/ton (-3.79%), Nov projected to fluctuate narrowly and edge lower; scrap-side praseodymium-neodymium at 705k–715k, thin trading volume (Mysteel 11-09)",
+   "event_id": "evt-rare-earth-q4-price",
+   "subcategories": [
+    "Magnets"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "MLCC / Passive Components",
+   "company": "",
+   "detail": "No new price notices/prices in this window; carrying over 11-09 baseline (TrendForce 11-02: high-capacitance MLCC lead time approx 35 weeks, Samsung Electro-Mechanics 52 weeks; Murata announced 10-30 approx 1 trillion yen capacity expansion for FY2026–2030)",
+   "event_id": "evt-mlcc-price-hike",
+   "subcategories": [
+    "电容"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "PCB / CCL",
+   "company": "",
+   "detail": "No new rounds in this window; carrying over 11-09 baseline (Kingboard 11-04 8th round +10%, Shengyi starting Nov M6 and below +15%, Panasonic general multi-layer boards effective 2027-01-01 +200% pending secondary confirmation of distributor quotes)",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Memory",
+   "company": "",
+   "detail": "DDR5 16Gb spot quoted at 61.51 $/unit on 11-09, holding high; Q4 contracts still projected at +10–15%, NAND +15–20% (MemoryIndex 11-09, TrendForce 11-04)",
+   "event_id": "evt-dram-hbm-shortage",
+   "subcategories": [
+    "存储器"
+   ],
+   "tags": [
+    "影响BOM",
+    "存储"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Rubber Products",
+   "company": "",
+   "detail": "SHFE rubber RU2701 closed at 18,865 RMB/ton on 11-04 (-1.92%), pulling back over 10% from the 10-12 peak of 21,005; however, raw material side remains at historic highs: Cote d'Ivoire November raw material price 578 CFA francs/kg (+66.6% YoY) hitting a new record high; ANRPC projects global natural rubber supply-demand deficit of approx 317k tons for full year 2026 (Quhe Net 11-04, APROMAC 11-02, ANRPC)",
+   "event_id": "evt-natural-rubber-record-high",
+   "subcategories": [
+    "Rubber Fittings - Tubes - Pipes - Sheets"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Compressors",
+   "company": "",
+   "detail": "No price hike / lead time news across the 5 categories (centrifugal, reciprocating, rotary, scroll, screw) (checked 2026-11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Valves & Heat Exchangers",
+   "company": "",
+   "detail": "No price hike / EOL / lead time news for Sanhua, DunAn, Yinlun (checked 2026-11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Motors / Fans / Pumps & Radiators",
+   "company": "",
+   "detail": "No targeted announcements (checked 2026-11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Low-Voltage Electricals",
+   "company": "",
+   "detail": "No new notices from Schneider / ABB / Siemens / Chint (checked 2026-11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay",
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Power Semiconductors",
+   "company": "",
+   "detail": "No new notices from Infineon / onsemi / ST / TI; already covered in CICC research report on 11-03 (checked 2026-11-10)",
+   "event_id": "",
+   "subcategories": [
+    "IGBT Modules",
+    "Power Supplies - Electronic"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Connectors",
+   "company": "",
+   "detail": "No new notices from TE / Molex (checked 2026-11-10)",
+   "event_id": "",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Tier B Routine Check",
+   "company": "",
+   "detail": "This round (Batch 9) 11 subcategories: 1 substantial hit (rubber fittings, see natural rubber entry); remaining 10 checked with no anomalies",
+   "event_id": "",
+   "subcategories": [
+    "Burners",
+    "Connector - Electronic",
+    "Fabrications - Steel Plate",
+    "Gate Valves",
+    "Isolators",
+    "Packaging: Corrugated & Paperboard",
+    "Rubber Fittings - Tubes - Pipes - Sheets",
+    "Switches - Electronic",
+    "Uncategorized Fans & Blowers",
+    "Wire Management - Wire Connectors",
+    "传感器与仪表"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "无实质动态",
+   "note": "Jeddah YORK manufacturing complex reported on 11-08; no new developments in the past 3 days"
+  },
+  {
+   "company": "开利",
+   "status": "无实质动态",
+   "note": "Full lifecycle initiative on 11-04 is a soft white paper, no substantive supply-chain actions; Fort Worth plant, Q3 reported"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "Acquisition of Cancoil reported on 11-04; Q3 reported"
+  },
+  {
+   "company": "大金",
+   "status": "有实质动态",
+   "note": "COP31 nine presentations announced on 11-04, conference opening on 11-09; Q2 earnings reported on 11-05"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "Third-quarter report filed; no new developments in the past 3 days"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "Third-quarter report filed; no new developments in the past 3 days"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "Third-quarter report filed; no new developments in the past 3 days"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "No new HVAC developments in the past 3 days"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "Taiwan Hsinchu subsidiary fire on 11-04, subsequent supply impact still unclear, not included in the main text"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "Q3 AI data center orders reported; no new developments in the past 3 days"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "SDS Turtle Tail data center reported on 11-06; no new developments in the past 3 days"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "Share price on 11-09 rose 9.63% in a single day to $200.47 (AI infrastructure stock rebound)"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "No new announcements in the past 3 days"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "No new announcements in the past 3 days"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "No new announcements in the past 3 days"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "No new announcements in the past 3 days"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "No new developments in the past 3 days"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "No new developments in the past 3 days"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Ministry of Commerce announces rare-earth control suspension extended to 2027-01-10, with the 24% U.S. tariff and U.S.-flagged vessel port fees also extended by two months",
+   "detail": "The six announcements from 2025-10-09 have their suspension period extended from 11-11 to 2027-01-10; the suspension of the 24% tariff on the U.S. is further extended by two months (effective from 11-10 13:01), and the special port fee for U.S.-flagged vessels is extended to 2027-01-10; the licensing regime for seven medium-to-heavy rare earths issued in 2025-04 has never been suspended and remains in effect.",
+   "source": "Reuters, 2026-11-09",
+   "url": "https://www.reuters.com/world/china/china-extends-suspension-new-rare-earth-controls-until-january-2026-11-09/",
+   "first_party": false,
+   "event_id": "evt-rareearth-pause-expiry-1110"
+  },
+  {
+   "title": "Daikin attends COP31 nine sessions, focusing on building decarbonization and full lifecycle management of refrigerants",
+   "detail": "Announced on 11-04; COP31 runs from 11-09 to 11-20 in Antalya, Daikin today at 9:30 delivered the opening speech at the Resilient Cities, Buildings and Cooling Pavilion titled “Achieving low‑carbon buildings through energy efficiency, electrification, and heat pumps”, and gave six additional presentations at the Japan pavilion.",
+   "source": "Daikin website, 2026-11-04",
+   "url": "https://www.daikin.com/press/2026/20261104",
+   "first_party": true,
+   "event_id": ""
+  },
+  {
+   "title": "Baird 2026 Global Industrial Conference held 11-10 to 11-12, Vertiv and Trane will attend",
+   "detail": "Vertiv senior executive joined a fireside chat today at 8:55 Eastern Time; Trane leadership participated in a fireside chat on 11-12 at 9:40 Central Time; Carrier also announced its participation on 11-02.",
+   "source": "BusinessWire, 2026-11-04",
+   "url": "https://www.businesswire.com/news/home/20261104524656/en/Trane-Technologies-to-Present-at-the-Baird-Global-Industrial-Conference",
+   "first_party": false,
+   "event_id": ""
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "DRAM/storage",
+   "detail": "DDR5 16Gb spot price reported on 11-09 at $61.51 per chip, holding at the high level (dropped to $60.667 on 11-05), 30‑day increase +5.93%, year‑over‑year +484%; TrendForce: Q4 conventional DRAM contracts still expected to rise +10–15%, NAND +15–20%, spot buyers are waiting, contracts continue to climb",
+   "event_id": "evt-dram-hbm-shortage",
+   "source": "MemoryIndex, 2026-11-09; TrendForce, 2026-11-04",
+   "tags": [
+    "存储",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "copper",
+   "detail": "LME 3‑month price on 11-09 settled at $13,880 per ton (+0.81%), rebounding on Monday; Yangshan copper premium hit a record $230 per ton, Shanghai spot premium reached a record 2,615 RMB/ton, and Shanghai Futures inventory fell to 33,848 tons, the lowest in three years",
+   "event_id": "evt-copper-high",
+   "source": "Reuters/Malaysian Business Insight, 2026-11-09",
+   "tags": [
+    "原材料",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "aluminum",
+   "detail": "LME 3‑month price on 11-09 around $3,076 per ton (essentially flat); LME aluminum inventory about 227,000 tons (lowest this century), spot premium strengthening, Rotterdam spot premium $560–590 per ton",
+   "event_id": "",
+   "source": "Bizportal, 2026-11-09; Minmetals Futures, 2026-11-09",
+   "tags": [
+    "原材料",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "liquid-cooling CDU/Vertiv",
+   "detail": "Vertiv share price on 11-09 rose 9.63% in a single day to $200.47, AI infrastructure stocks rebounding (down 14% on 11-05, rebounded on 11-06 and continued upward, still down 13.78% on the 5th); Q3 revenue $4.313 billion (+61%), full‑year guidance raised to $14.45–14.85 billion",
+   "event_id": "evt-vertiv-q3-2026",
+   "source": "Finnhub, 2026-11-09; company 10-28 earnings report",
+   "tags": [
+    "影响BOM"
+   ]
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "photovoltaics/energy storage",
+   "detail": "No new notices in this window for the photovoltaic‑energy storage price‑increase wave: Huawei plans +5–15% (negotiated per customer, effective date undecided), Kehua effective +5–15% as of 11-01, Sunlight effective +5–15% as of 9-20, all reported on 11-05/06; transmission logic unchanged (copper/PCB/storage share the same cost pool)",
+   "event_id": "",
+   "source": "Reported in the 2026-11-05/06 period"
+  },
+  {
+   "industry": "power equipment/transformer",
+   "detail": "Terrapin November update (medium‑voltage switchgear 52–80 weeks, oil‑immersed distribution transformers 40–65 weeks, large step‑up transformers over 100–150 weeks) was reported on 11-09, no new granularity in this window; data‑center supporting transformers still require capacity lock‑in more than two years in advance",
+   "event_id": "evt-hitachi-energy-transformer-warning",
+   "source": "Terrapin, 2026-11 (reported in the 11-09 period)"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261110-01",
+   "title": "Rare Earth Cliff Deferred to 2027-01-10, But Extended by Only Two Months",
+   "urgency": "中",
+   "impact": "Magnet steel / motors (NdFeB permanent magnets)",
+   "action": "Schedule safety stock build-up and permit verification timeline backwards from 2027-01-10, accelerate validation of alternative magnet steel part numbers; monitor US-China consultations in December and renewal signals before 2027-01-10",
+   "trigger": "MOFCOM 11-09 statement extending only to 2027-01-10",
+   "deadline": "2027-01-10",
+   "related_events": [
+    "evt-20261110-01"
+   ]
+  },
+  {
+   "id": "warn-20261110-02",
+   "title": "Section 301 Exclusion Extension Takes Effect Today, Federal Register Publication Awaits Confirmation",
+   "urgency": "中",
+   "impact": "164 tariff line products exported from China to the US",
+   "action": "Account for post-extension costs for goods entering from 11-10, while having customs brokers confirm HTSUS 9903.88.69/70 applicability status, retain USTR 11-06 notification text for reference; monitor Federal Register publication",
+   "trigger": "USTR 11-06 notice, Federal Register publication not seen as of this morning",
+   "deadline": "2027-01-09",
+   "related_events": [
+    "evt-20261110-03"
+   ]
+  },
+  {
+   "id": "warn-20261110-03",
+   "title": "Copper Futures Rebound While Spot Market Tightness Hits Record High",
+   "urgency": "中",
+   "impact": "Copper / silver",
+   "action": "Lock in prices in batches for near-term usage, avoid chasing short positions; wait for futures stabilization signals before negotiating long-term contracts, simultaneously monitor Yangshan premium and SHFE inventory decline",
+   "trigger": "LME closed at $13,880/ton on 11-09, Yangshan premium hit record $230/ton",
+   "deadline": "",
+   "related_events": [
+    "evt-20261110-02"
+   ]
+  },
+  {
+   "id": "warn-20261110-04",
+   "title": "Tightening Across Three Lines: MLCC, Tantalum Capacitors, and Copper-Clad Laminates",
+   "urgency": "高",
+   "impact": "Passive components and interconnects, PCB",
+   "action": "Lock in 2027 allocation for high-capacitance MLCCs, check Murata EOL list (last order date 2028-03-31); cover CCL long-term agreements through 2027H1, evaluate alternative substrates; check in-transit order prices for Shengyi part numbers with +15% price increase",
+   "trigger": "KEMET effective 11-01, Kingboard new letter on 11-04, Shengyi price adjustment starting November",
+   "deadline": "2028-03-31",
+   "related_events": [
+    "evt-mlcc-price-hike",
+    "evt-pcb-ccl-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261110-05",
+   "title": "DRAM Spot Prices Remain High, Contract Prices Continue Rising",
+   "urgency": "高",
+   "impact": "Chips and semiconductors (MCU / memory)",
+   "action": "Set cost budgets for board memory part numbers based on Q4 contract price +10–15%, verify inventory and long-term agreement coverage; SK Hynix states shortage to persist through 2030 with 2027 HBM capacity fully locked, lock in 2027 memory allocation in advance",
+   "trigger": "Q4 contract price increase confirmed at 10–15%",
+   "deadline": "",
+   "related_events": [
+    "evt-dram-hbm-shortage"
+   ]
+  },
+  {
+   "id": "warn-20261110-06",
+   "title": "Rubber Raw Materials Hit Historic High, Futures Pull Back Over 10%",
+   "urgency": "中",
+   "impact": "Rubber parts (hoses / seals)",
+   "action": "Check rubber cost share for seal/hose part numbers, budget costs based on high range; futures pullback does not equal raw material price cut, do not negotiate spot long-term agreements using futures prices",
+   "trigger": "Côte d'Ivoire November raw material prices set another historic high, SHFE rubber pulled back over 10% from previous high",
+   "deadline": "",
+   "related_events": [
+    "evt-natural-rubber-record-high"
+   ]
+  }
+ ],
+ "daily_report": {
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Morning Briefing (2026-11-10 · Tuesday)",
+  "date": "2026-11-10",
+  "body_file": "briefs/2026-11-10-hvac-cdu-morning-briefing.md",
+  "headlines": [
+   "MOFCOM announced on 11-09 that rare earth control suspension is extended to 2027-01-10 (extended by only two months)",
+   "Copper price closed at $13,880/ton on 11-09 (+0.81%), spot premium set record high, Yangshan premium at $230/ton",
+   "Section 301 178 exclusion extensions apply starting today, Federal Register publication pending confirmation"
+  ]
+ },
+ "time_anchors": [
+  {
+   "date": "2027-01-10",
+   "label": "Rare earth export control suspension extension expiration"
+  },
+  {
+   "date": "2027-01-09",
+   "label": "Section 301 178 exclusion extension expiration"
+  },
+  {
+   "date": "2028-03-31",
+   "label": "Murata EOL MLCC last order date"
+  }
+ ],
+ "meta": {
+  "date": "2026-11-10",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-11-10-hvac-cdu-morning-briefing.md",
+  "note": "Tuesday morning briefing. Top stories: MOFCOM announced on 11-09 that rare earth control suspension is extended to 2027-01-10 (only extended by two months, reversing the expiration warning for 11-09 issue; simultaneously extended 24% tariffs on US goods and port dues on US vessels for another two months); copper price closed at $13,880/ton on 11-09 (+0.81%), futures rebounded while spot market tightened further (Yangshan premium reached record $230/ton); 301 exclusion extension takes effect today, Federal Register publication pending confirmation. Siphoning: DDR5 spot price held high at $61.51/chip, Vertiv share price +9.63%. Event database: added 8 timeline entries (rare earth suspension extension, Busan, 301, copper, DRAM, Vertiv, rare earth prices, rubber), rare earth suspension event title and status updated synchronously. Tier B batch 9: 1 hit (rubber parts), remaining 10 showed no anomalies. English version: generated by 09:00 translation cron."
+ }
+}
