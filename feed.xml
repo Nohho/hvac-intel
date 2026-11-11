@@ -3,7 +3,10 @@
 <channel>
 <title>HVAC 供应链情报</title><link>https://nohho.github.io/hvac-intel/</link>
 <description>HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议</description>
-<language>zh-CN</language><lastBuildDate>Tue, 10 Nov 2026 23:54:47 GMT</lastBuildDate>
+<language>zh-CN</language><lastBuildDate>Wed, 11 Nov 2026 23:49:05 GMT</lastBuildDate>
+<item><title>HVAC 供应链情报早报 2026-11-12</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-12</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-12</guid><pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate><description>• 松下湖口 CCL 厂火灾冲击扩大：复工需数月以上，11-01 新一轮 CCL 涨价叠加玻纤布涨价
+• 铜现货极紧未缓解：洋山溢价连续 3 日创纪录 230 美元/吨，沪铜升水历史最高
+• DRAM/HBM 短缺恶化：SK 海力士售罄至 2029 年，Q4 合约价预测再涨 13–18%</description></item>
 <item><title>HVAC 供应链情报早报 2026-11-11</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-11</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-11</guid><pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate><description>• 松下台湾新竹湖口厂火灾后续：MEGTRON 高端 CCL 全球供应约 4% 受影响
 • Section 301 178 项排除延期联邦公报 11-10 已刊登
 • 铜现货极紧延续：洋山溢价持平纪录、上期所库存近三年最低</description></item>
@@ -108,10 +111,5 @@
 • 电子布/电子纱10月涨价落地：7628普通布+1.5元/米
 • 存储涨价向整机端传导加速：华强北内存现货一年涨超300%
 • MLCC涨价链加码：三星电机长协细节公开，产能锁定至2027年底</description></item>
-<item><title>HVAC 供应链情报早报 2026-10-13</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-13</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-13</guid><pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate><description>Chillventa 2026 今日开幕；MLCC涨价链加码（三星电机再签2.12亿美元长约、Q4消费级X5R计划提价25%~30%）；半导体封测涨价10%~30%；铜价再冲高、冶炼端收紧
-• MLCC涨价链加码：三星电机再签2.12亿美元长约，Q4消费级X5R计划提价25%~30%
-• 半导体封测涨价潮：报价上调10%~30%，AI封测挤压常规芯片产能
-• 铜价再冲高：伦铜10-9收14,550美元/吨，TC连续32周处历史极低位
-• DRAM/HBM涨价延续：三星HBM4报价约为HBM3E三倍，手机存储现货3个月+300%</description></item>
 </channel>
 </rss>
