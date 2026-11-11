@@ -1,0 +1,733 @@
+{
+ "hotspot_events": [
+  {
+   "id": "evt-20261111-01",
+   "title": "Follow-up on Panasonic's Hsinchu Hukou Plant Fire in Taiwan: Approximately 4% of Global Supply of MEGTRON High-End CCL Affected",
+   "date": "2026-11-10",
+   "heat": 88,
+   "heat_reason": "About 4% of high-end CCL supply impacted, recovery may take months, directly hitting lead times and costs for high-layer/high-speed boards",
+   "tags": [
+    "影响BOM",
+    "原材料",
+    "PCB"
+   ],
+   "severity": "中",
+   "section": "头条事件",
+   "event_id": "evt-panasonic-hsinchu-fire-ccl",
+   "summary": "Follow-up on the Nov 4 fire at Panasonic's Hsinchu Hukou plant in Taiwan: 2 missing employees confirmed dead, 5 injured. The plant produces MEGTRON high-end ultra-low-loss copper-clad laminates (M6/M7/M8). TrendForce assessed on Nov 5 that approximately 4% of global high-end CCL supply is affected, with recovery potentially taking several months, and orders may shift to Taiwanese CCL manufacturers.",
+   "numbers": [
+    "全球高端 CCL 供应约 4% 受影响",
+    "2 死 5 伤",
+    "恢复期或需数月"
+   ],
+   "sources": [
+    {
+     "outlet": "iConnect007",
+     "date": "2026-11-10",
+     "url": "https://iconnect007.com/article/152340/taiwan-panasonic-factory-fire-puts-supply-chain-under-further-pressure/152337/pcb",
+     "first_party": false
+    },
+    {
+     "outlet": "TrendForce",
+     "date": "2026-11-05",
+     "url": "https://www.trendforce.com/news/2026/11/05/news-panasonic-plant-fire-reportedly-puts-4-of-global-high-end-ccl-supply-at-risk-taiwan-makers-eye-order-shifts/",
+     "first_party": true
+    }
+   ],
+   "related_warnings": [
+    "warn-20261111-01",
+    "warn-20261111-04"
+   ]
+  },
+  {
+   "id": "evt-20261111-02",
+   "title": "Section 301 178 Exclusions Extension Published in Federal Register on Nov 10",
+   "date": "2026-11-10",
+   "heat": 86,
+   "heat_reason": "Yesterday's pending item finalized: Federal Register published confirmation of extension to January 9, 2027, customs declaration standards clarified, but CBP guidelines still not released",
+   "tags": [
+    "影响BOM",
+    "关税政策"
+   ],
+   "severity": "低",
+   "section": "头条事件",
+   "event_id": "evt-section301-exclusions-expire-nov9",
+   "summary": "Section 301 178 exclusions (164 general + 14 solar manufacturing equipment) extended to January 9, 2027, published in the Federal Register on Nov 10 (91 FR 72610, FR Doc. 2026-22925), applicable to customs declarations/cargo leaving warehouses starting Nov 10 at 00:01; CBP customs declaration guidelines still not released as of Nov 10; notification text has conflicting phrasing between January 9 and January 10, with January 9 taking precedence.",
+   "numbers": [
+    "178 项排除延至 2027-01-09",
+    "91 FR 72610"
+   ],
+   "sources": [
+    {
+     "outlet": "Strix Smart",
+     "date": "2026-11-10",
+     "url": "https://strixsmart.com/resources/blog/section-301-exclusions-november-2026",
+     "first_party": false
+    },
+    {
+     "outlet": "ICPA",
+     "date": "2026-11-09",
+     "url": "https://www.icpainc.org/section-301-tracker/",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261111-02"
+   ]
+  },
+  {
+   "id": "evt-20261111-03",
+   "title": "Extreme Copper Spot Tightness Persists: Yangshan Premium Ties Record, SHFE Inventory at Three-Year Low",
+   "date": "2026-11-09",
+   "heat": 87,
+   "heat_reason": "Futures rose slightly but spot market is tighter: Yangshan premium ties record at $230/ton, SHFE inventory at three-year low, risk of misjudging a rebound as a reversal still remains",
+   "tags": [
+    "影响BOM",
+    "原材料",
+    "铜"
+   ],
+   "severity": "中",
+   "section": "头条事件",
+   "event_id": "evt-copper-high",
+   "summary": "LME 3M closed at $13,880/ton on Nov 9 (+0.81%), quoted at $13,939/ton intraday on Nov 10 (+0.31%); Yangshan copper premium tied record at $230/ton (SMM Nov 10); SHFE inventory at 33,848 tons, a three-year low, down over 24% week-on-week.",
+   "numbers": [
+    "LME 3M 11-09 收 13,880 美元/吨（+0.81%）",
+    "洋山铜溢价 230 美元/吨（纪录）",
+    "上期所库存 33,848 吨（近三年最低）"
+   ],
+   "sources": [
+    {
+     "outlet": "Reuters",
+     "date": "2026-11-10",
+     "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L3N46R09F:0-copper-edges-up-as-tech-rebound-lower-oil-lift-risk-appetite/",
+     "first_party": false
+    },
+    {
+     "outlet": "SMM",
+     "date": "2026-11-10",
+     "url": "https://news.metal.com/newscontent/TI2UUPKJ6MZXGLSCMAZQM2TZBNNKIDYDRIM6IEY-early-market-offers-sluggish-market-quiet-smm-yangshan-spot-copper",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261111-03"
+   ]
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Copper",
+   "company": "",
+   "detail": "LME 3M 11-09 settled at 13,880 $/ton (+0.81%), 11-10 intraday 13,939 $/ton; Yangshan premium flat at record 230 $/ton; SHFE inventory 33,848 tons (Reuters/SMM 11-10)",
+   "event_id": "evt-copper-high",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Aluminum",
+   "company": "",
+   "detail": "LME 3M 11-09 settled at 3,066.50 $/ton (+approx. 0.1%); near-term premium 94 $/ton (5-month high); LME registered available inventory 207,525 tons; SHFE aluminum inventory 132,605 tons (Reuters 11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Aluminum Fin Stock"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Steel",
+   "company": "",
+   "detail": "Rebar 11-09 national average price 3,237 RMB/ton (-5 RMB); hot-rolled coil 3,218 RMB/ton (-5 RMB); 11-10 multiple regions temporarily stable (Mysteel 11-09/11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "tags": [
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Refrigerant",
+   "company": "",
+   "detail": "No new prices in this window, carrying over 11-02 East China prices: R32 6.35–6.45, R134a 6.35–6.50, R125 5.4–5.7, R22 1.7–1.8 ten-thousand RMB/ton (百川盈孚 / Longzhong Information 11-02)",
+   "event_id": "",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Rare Earth / NdFeB Magnet Steel",
+   "company": "",
+   "detail": "Praseodymium-neodymium oxide 11-10 quoted at 712,000 RMB/ton (+5,500 RMB, 11-09 was 707,500); NdFeB blank 35N 180 RMB/kg flat; Ministry of Commerce Announcement No. 58: from 11-11 to 2027-01-10 continue to suspend multiple rare earth export controls (Mysteel 11-10)",
+   "event_id": "evt-rare-earth-q4-price",
+   "subcategories": [
+    "Magnets"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "MLCC / Passive Components",
+   "company": "",
+   "detail": "No new letters in this window; carrying over 11-09 period caliber (KEMET tantalum capacitors second round +20–30% already effective 11-01; Panasonic polymer tantalum capacitors +15–30%, maximum lead time 84 weeks; Yageo's new round of price increases still in planning stage, no original factory letter confirmation)",
+   "event_id": "evt-mlcc-price-hike",
+   "subcategories": [
+    "电容"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "PCB / Copper-Clad Laminate (CCL)",
+   "company": "",
+   "detail": "Panasonic fire impact see top story #1; Kingboard 11-03 reported seventh price increase letter of the year (FR-4 CCL full series +10%); Shengyi November price hike is market rumor, no official letter evidence; Panasonic general multi-layer boards +200% starting 2027-01 (Everbright Securities research report relayed, 21 Finance 11-09)",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Memory",
+   "company": "",
+   "detail": "DDR5 16Gb spot 11-10 quoted at 61.83 $/pc (+0.53%); Q4 contracts still projected +10–15%, NAND +15–20% (MemoryIndex 11-10, TrendForce 11-04)",
+   "event_id": "evt-dram-hbm-shortage",
+   "subcategories": [
+    "存储器"
+   ],
+   "tags": [
+    "影响BOM",
+    "存储"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Power Semiconductors",
+   "company": "",
+   "detail": "Infineon FY2026 financial report see siphon #1; onsemi/TI/ST no new letters; NXP's third round price adjustment will take effect on 2027-01-01 (Drive China 11-03 report, magnitude not disclosed)",
+   "event_id": "",
+   "subcategories": [
+    "IGBT Modules",
+    "Power Supplies - Electronic"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Section Steel / Sheet Metal",
+   "company": "",
+   "detail": "US sheet prices soaring, spot virtually out of stock, lead times scheduled into 2027; Nucor 11-09 hot-rolled coil spot price raised to 1,295 $/short ton; Marino\\WARE steel products up minimum another 10% starting 2027-01-04 (SMU 11-03, Marino\\WARE 11-03)",
+   "event_id": "evt-us-steel-sheet-tight-2026",
+   "subcategories": [
+    "Fabrications - Steel Sheet"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Rubber Products",
+   "company": "",
+   "detail": "Indian RSS-4 rubber 11-02 hit historical high of 300 Rupees/kg (YoY +62%); global supply-demand gap approx. 317,000 tons; ATMA 11-06 requested temporary duty-free import (The Hindu BusinessLine 11-03, ANRPC)",
+   "event_id": "evt-natural-rubber-record-high",
+   "subcategories": [
+    "Rubber Rings & O-Rings"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Motors",
+   "company": "",
+   "detail": "Large frame / medium-voltage motor lead times extended to over 6 months, caused by copper shortage, new motor prices rising (used equipment platform Surplus Record 11-10 caliber, single source)",
+   "event_id": "",
+   "subcategories": [
+    "电机"
+   ],
+   "tags": [],
+   "type": "交期"
+  },
+  {
+   "category": "Packaging",
+   "company": "",
+   "detail": "North American lumber price index for week of 11-06 was 449 $/MBF (WoW -2%, MoM -10%), spot supply adequate, no shortage, slightly positive (Madison's/HBSDealer 11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Packaging: Lumber"
+   ],
+   "tags": [],
+   "type": "价格"
+  },
+  {
+   "category": "Valves & Fittings",
+   "company": "",
+   "detail": "November PHCP-PVF general increases: Crane full line, American Tube & Pipe +8% etc. effective 11-01, magnitude relatively moderate; no regional valve special price increase letters or stockout news (Plumbing & Mechanical 11-04/11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Zone Valves"
+   ],
+   "tags": [],
+   "type": "涨价"
+  },
+  {
+   "category": "Compressors",
+   "company": "",
+   "detail": "Centrifugal / reciprocating / rotary / scroll / screw 5 categories no price increase / delivery schedule news (checked 2026-11-11)",
+   "event_id": "",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Valves & Heat Exchangers",
+   "company": "",
+   "detail": "Sanhua / DunAn / Yinlun no price increase / EOL / lead time news (checked 2026-11-11)",
+   "event_id": "",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Motors / Fans / Water Pumps & Radiators",
+   "company": "",
+   "detail": "No targeted announcements (checked 2026-11-11)",
+   "event_id": "",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Low-Voltage Electricals",
+   "company": "",
+   "detail": "Schneider / ABB / Siemens / Chint no new letters (checked 2026-11-11)",
+   "event_id": "",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay",
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers",
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Connectors",
+   "company": "",
+   "detail": "TE / Molex no new letters (checked 2026-11-11)",
+   "event_id": "",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Tier B Routine Check",
+   "company": "",
+   "detail": "This round (10th batch) 11 sub-categories: 5 substantial hits (steel sheet metal, rubber rings/O-rings, general motors, wood packaging, zone valves, see corresponding entries); remaining 6 checked with no anomalies",
+   "event_id": "",
+   "subcategories": [
+    "Butterfly Valves Manual",
+    "Connectors - Electrical",
+    "Fabrications - Steel Sheet",
+    "Gauges",
+    "Laminated Bus Plates",
+    "Packaging: Lumber",
+    "Rubber Rings & O-Rings",
+    "TVS",
+    "Uncategorized Fire Detection",
+    "Zone Valves",
+    "电机"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "无实质动态",
+   "note": "Jeddah YORK manufacturing complex reported on 11-08; no new updates in the past 3 days"
+  },
+  {
+   "company": "开利",
+   "status": "有实质动态",
+   "note": "On 11-09 jointly released Carrier Smart Thermostat (InteliSense) with Universal Electronics"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "Acquisition of Cancoil reported on 11-04; Goodwill donation on 11-10 is a public welfare project, not included in the main text"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "Q2 financial report reported on 11-05; no new updates in the past 3 days"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "Third-quarter report already released; no new updates in the past 3 days"
+  },
+  {
+   "company": "格力",
+   "status": "有实质动态",
+   "note": "Dong Mingzhu on 11-10 responded that the main reason for performance decline is rising copper prices"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "11-07 Global Innovation Conference of DaBai Electric (website report on 11-09) is a management perspective, no substantive supply-chain actions"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "No new HVAC updates in the past 3 days"
+  },
+  {
+   "company": "松下",
+   "status": "有实质动态",
+   "note": "Taiwan Hsinchu Hukou plant fire follow-up on 11-04: 2 deaths and 5 injuries confirmed, MEGTRON high-end CCL supply affected by about 4%"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "Received CES 2027 Innovation Award (11-10); weak relevance to HVAC, not included in the main text"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "DRAM trade secrets case on 11-09 unrelated to HVAC"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "11-10 Baird conference: 800VDC roadmap (hybrid 2027 H2, native end-to-end 2028 H2)"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "No new announcements in the past 3 days"
+  },
+  {
+   "company": "申菱",
+   "status": "无实质动态",
+   "note": "Only Guolian Minsheng research report follow-up (11-09), no new company events"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "11-10 Aike Co. new share listing is a capital action, not included in the main text"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "No new announcements in the past 3 days"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "11-10 participation in venture capital fund is a capital action, not included in the main text"
+  },
+  {
+   "company": "联想",
+   "status": "有实质动态",
+   "note": "11-10 released Neptune liquid-cooling next-generation AI/HPC infrastructure"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Section 301 Item 178 exclusion extension see Federal Register, BIS affiliate rule suspension and 24% U.S. tariff suspension further extended in sync",
+   "detail": "Section 301 Item 178 exclusion extension on 11-10 published in the Federal Register (91 FR 72610, extended to 2027-01-09); BIS “affiliate rule” suspension extended to 2027-01-10 (91 FR 70789); the 24% tariff on the United States suspension further extended by two months (effective from 13:01 on 11-10, with 10% retained).",
+   "source": "Strix Smart，2026-11-10",
+   "url": "https://strixsmart.com/resources/blog/section-301-exclusions-november-2026",
+   "first_party": false,
+   "event_id": "evt-section301-exclusions-expire-nov9"
+  },
+  {
+   "title": "Lenovo launches AI and HPC convergence next-generation infrastructure, Neptune liquid-cooling can remove 100% system heat",
+   "detail": "Neptune liquid-cooling ThinkSystem SC755 can remove up to 100% of system heat via water, delivering up to 40% higher sustained performance compared to comparable air-cooled systems; targeted at enterprises and gigawatt-scale AI factories.",
+   "source": "BusinessWire，2026-11-10",
+   "url": "https://www.businesswire.com/news/home/20261110554834/en/Lenovo-Accelerates-AI-and-HPC-Convergence-with-Next-Generation-Infrastructure-for-the-New-Era-of-AI-Powered-HPC",
+   "first_party": true,
+   "event_id": ""
+  },
+  {
+   "title": "NVIDIA Rubin platform achieves 100% closed-loop liquid cooling, water supply temperature limit raised to 45°C",
+   "detail": "Rubin is the first 100% closed-loop liquid-cooled AI server architecture, using 75% water + 25% propylene glycol to directly cool chips, eliminating the need for chillers and evaporative water consumption; Microsoft’s next-generation data centers also adopt a closed-loop zero-evaporation design.",
+   "source": "FullStack，2026-11-09",
+   "url": "https://www.fullstack.com/blog/how-nvidia-plans-to-fix-ais-water-problem",
+   "first_party": false,
+   "event_id": ""
+  },
+  {
+   "title": "Carrier and Universal Electronics jointly launch Carrier Smart Thermostat (InteliSense technology)",
+   "detail": "Model TSTATCCIEWF-01, featuring remote diagnostics, peak demand energy management, guided tuning; paired with Performance 27VPA9 variable-frequency heat pump capable of managing 21-level adaptive heating/cooling; pricing and launch date not disclosed.",
+   "source": "BusinessWire，2026-11-09",
+   "url": "https://www.businesswire.com/news/home/20261109523714/en/Universal-Electronics-and-Carrier-Introduce-Smart-Thermostat-Featuring-InteliSense-Technology-to-Advance-Comfort-and-Service",
+   "first_party": true,
+   "event_id": ""
+  },
+  {
+   "title": "Gree's Dong Mingzhu responds that performance decline is mainly due to rising copper prices, says would rather lose tens of billions RMB profit than lower quality",
+   "detail": "Dong Mingzhu on 11-10 said the main cause of performance decline is rising copper prices (copper is 5–6 times the price of aluminum), would rather lose tens of billions RMB profit than lower quality, insisting on using copper; also revealed that a luxury‑grade product that “redefines home appliances” will be launched by year‑end.",
+   "source": "JRJ, 2026-11-10",
+   "url": "https://finance.jrj.com.cn/2026/11/10093559074990.shtml",
+   "first_party": false,
+   "event_id": "evt-gree-q3-2026"
+  },
+  {
+   "title": "Vertiv states at Baird conference that AI and traditional cloud demand remain resilient, 800VDC roadmap clarified",
+   "detail": "AI and traditional cloud demand remain resilient across hyperscale, enterprise customers, and AI labs, with the order pipeline growing; 800VDC roadmap: hybrid solution in H2 2027, native end‑to‑end system in H2 2028.",
+   "source": "AD HOC NEWS (via Reuters), 2026-11-10",
+   "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/vertiv-stock-gets-fresh-ai-demand-signal-at-baird-conference/70487464",
+   "first_party": false,
+   "event_id": "evt-vertiv-q3-2026"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "power semiconductors/IGBT",
+   "detail": "Infineon FY2026 earnings report on 11-10: revenue 163.53 billion EUR (+12%), Q4 record 47.06 billion EUR; data center power‑chip revenue 17 billion EUR (more than double); FY2027 guidance revenue about 200 billion EUR (+20% or more), backed by over 10 billion EUR of multi‑year orders/capacity reservations",
+   "event_id": "",
+   "source": "Reuters, 2026-11-10",
+   "tags": [
+    "功率器件",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "DRAM/storage",
+   "detail": "DDR5 16Gb spot price on 11-10 reported at $61.83 per chip (+0.53%); TrendForce: Q4 regular DRAM contracts still expected +10–15%, NAND +15–20%; 32GB DDR5 kit spot price in early November rose from $459 to about $570 within three days (+25%).",
+   "event_id": "evt-dram-hbm-shortage",
+   "source": "MemoryIndex，2026-11-10；IS Magazine，2026-11-10",
+   "tags": [
+    "存储",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "PCB/CCL",
+   "detail": "11-09 supply chain update: some CCL lead times 8–10 weeks, high‑performance grades 24–32 weeks, multiple CCL factories in quota allocation; Doosan announced on 11-06 expansion of CCL production in China; Panasonic announced on 10-30 approximately 92 billion JPY AI‑related investment (including about 67 billion JPY to expand MEGTRON capacity).",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "source": "BestPCBs，2026-11-09",
+   "tags": [
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "aluminum",
+   "detail": "LME near‑month contracts are $94/ton above the 3‑month benchmark (5‑month high); LME registered warehouse available inventory 207,525 tons (lowest since March 2025), Shanghai Futures Exchange aluminum inventory fell 31% to 132,605 tons (lowest since December last year).",
+   "event_id": "",
+   "source": "Reuters, 2026-11-10",
+   "tags": [
+    "原材料",
+    "影响BOM"
+   ]
+  },
+  {
+   "material": "AI compute/data center",
+   "detail": "CoreWeave Q3 (11-10): revenue year‑over‑year +168% to $3.661 billion, revenue backlog reached $132.5 billion (Q2 end $104.2 billion), full‑year capex guidance $37.0–$39.0 billion",
+   "event_id": "",
+   "source": "Unite.AI，2026-11-10",
+   "tags": []
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "Consumer Electronics",
+   "detail": "Apple memory cost pass‑through: 11-02 earnings guidance for Q4 2022 margin 45–46% (Q3 47.9%); CFO said the decline is mainly due to rising memory costs; iPhone 18 Pro series price increased by $100, 1TB top‑end configuration increased by $300; Apple’s quarterly procurement commitment increased by $33.0 billion to lock in memory supply",
+   "event_id": "evt-dram-hbm-shortage",
+   "source": "Reuters via TechCentral, 2026-11-03"
+  },
+  {
+   "industry": "New Energy Vehicles",
+   "detail": "China October retail sales of passenger new‑energy vehicles were 1.109 million units (YoY -13.7%, tenth consecutive month of decline), penetration rate record 67.5%; exports 582,000 units (YoY +144.7%) — strong exports support IGBT/power device and copper demand",
+   "event_id": "",
+   "source": "China Passenger Car Association, 2026-11-09"
+  },
+  {
+   "industry": "Data Center Construction",
+   "detail": "Goldman Sachs on 11-07 raised U.S. data‑center construction spending forecast: 2026 $67.0→$80.0 billion, 2027 $87.0→$100.0 billion, first time giving 2028 $125.0 billion; under‑construction projects about 86 GW, plus approximately $9.0 trillion of high‑confidence pipeline projects",
+   "event_id": "evt-cloud-capex-2026",
+   "source": "KuCoin via FireStar Finance, 2026-11-07"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261111-01",
+   "title": "Panasonic Fire Impacts High-End CCL",
+   "urgency": "高",
+   "impact": "PCB/CCL (High-Multilayer / High-Speed Board)",
+   "action": "Check in-transit MEGTRON part numbers and inventory coverage; inquire about alternative part numbers with Taiwanese CCL vendors (EMC/TUC/ITEQ) and initiate re-qualification; simultaneously check prices for Panasonic general multilayer board part numbers with +200% price increases in 2027-01",
+   "trigger": "TrendForce 11-05 assessment, iConnect007 11-10 follow-up",
+   "deadline": "",
+   "related_events": [
+    "evt-20261111-01"
+   ]
+  },
+  {
+   "id": "warn-20261111-02",
+   "title": "Section 301 Exclusions Published in Federal Register, CBP Guidance Pending",
+   "urgency": "中",
+   "impact": "178 exclusions covering mechanical products",
+   "action": "Calculate costs for entry goods starting 11-10 based on extended rates; request customs broker to confirm HTSUS 9903.88.69/70 applicability status; retain 91 FR 72610 text for reference; note contradictory wording between Jan 9 and Jan 10 in notice text, Jan 9 shall prevail",
+   "trigger": "91 FR 72610 (published 11-10)",
+   "deadline": "2027-01-09",
+   "related_events": [
+    "evt-20261111-02"
+   ]
+  },
+  {
+   "id": "warn-20261111-03",
+   "title": "Spot Copper Extreme Tightness Unrelieved",
+   "urgency": "中",
+   "impact": "Copper/Silver",
+   "action": "Lock prices in batches for near-term consumption; do not chase shorts; monitor Yangshan premium and SHFE inventory drawdown before negotiating long-term contracts",
+   "trigger": "Yangshan premium at $230/ton matching record, SHFE inventory at 33,848 tons",
+   "deadline": "",
+   "related_events": [
+    "evt-20261111-03"
+   ]
+  },
+  {
+   "id": "warn-20261111-04",
+   "title": "MLCC/Tantalum Capacitors/CCL Tightening on Three Fronts, Compounded by Panasonic Fire",
+   "urgency": "高",
+   "impact": "Passive components and connectors, PCB",
+   "action": "Lock 2027 allocations for high-capacitance MLCCs, check Murata EOL list (last order 2028-03-31); cover CCL long-term agreements through 2027H1, evaluate alternative substrate materials",
+   "trigger": "KEMET effective 11-01, Kingboard 11-03 new letter, Panasonic fire 11-04",
+   "deadline": "2028-03-31",
+   "related_events": [
+    "evt-mlcc-price-hike",
+    "evt-pcb-ccl-price-hike-2",
+    "evt-20261111-01"
+   ]
+  },
+  {
+   "id": "warn-20261111-05",
+   "title": "DRAM Spot Prices Slight Rise, Contract Prices Continue Upward",
+   "urgency": "高",
+   "impact": "Chips and semiconductors",
+   "action": "Budget cost for board memory part numbers based on Q4 contract +10–15%, check inventory and long-term agreement coverage; lock 2027 memory allocations in advance",
+   "trigger": "DDR5 spot $61.83/chip, Q4 contract +10–15%",
+   "deadline": "",
+   "related_events": [
+    "evt-dram-hbm-shortage"
+   ]
+  },
+  {
+   "id": "warn-20261111-06",
+   "title": "Rare Earth Exemption Cliff Postponed to 2027-01-10, But Only Two-Month Extension",
+   "urgency": "中",
+   "impact": "Magnet steel / motor (NdFeB permanent magnet)",
+   "action": "Reverse-engineer safety stock and license verification rhythm based on 2027-01-10, accelerate validation of alternative magnet steel part numbers; keep close tabs on US-China negotiations in December and renewal signals; Announcement No. 58 text officially released (11-09)",
+   "trigger": "MOFCOM Announcement No. 58",
+   "deadline": "2027-01-10",
+   "related_events": [
+    "evt-rareearth-pause-expiry-1110"
+   ]
+  },
+  {
+   "id": "warn-20261111-07",
+   "title": "Steel Sheet / Motor Lead Times Extending",
+   "urgency": "中",
+   "impact": "Steel sheet metal parts, motors",
+   "action": "Check US steel sheet supply proportion for sheet metal / enclosure part numbers, lock 2027H1 volume in advance; place orders early for large frame motors, evaluate second-hand / refurbished alternatives",
+   "trigger": "SMU 11-03, Nucor 11-09, Marino\\WARE 11-03",
+   "deadline": "2027-01-04",
+   "related_events": [
+    "evt-us-steel-sheet-tight-2026"
+   ]
+  }
+ ],
+ "daily_report": {
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Morning Briefing (2026-11-11 · Wednesday)",
+  "date": "2026-11-11",
+  "body_file": "briefs/2026-11-11-hvac-cdu-morning-briefing.md",
+  "headlines": [
+   "Follow-up on Panasonic Hsinchu Hukou Plant Fire in Taiwan: ~4% of Global MEGTRON High-End CCL Supply Affected, Recovery May Take Months",
+   "Section 301 178 Exclusions Extension Published in Federal Register on 11-10 (91 FR 72610), CBP Guidance Still Pending",
+   "Extreme Spot Copper Tightness Continues: Yangshan Premium Matches Record at $230/ton, SHFE Inventory at 33,848 Tons Lowest in Nearly Three Years"
+  ]
+ },
+ "time_anchors": [
+  {
+   "date": "2027-01-10",
+   "label": "Expiry of extended rare earth export control suspension"
+  },
+  {
+   "date": "2027-01-09",
+   "label": "Expiry of extended Section 301 178 exclusions"
+  },
+  {
+   "date": "2028-03-31",
+   "label": "Murata EOL MLCC last-time buy date"
+  },
+  {
+   "date": "2027-01-04",
+   "label": "Marino\\WARE steel product price increase takes effect"
+  }
+ ],
+ "meta": {
+  "date": "2026-11-11",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-11-11-hvac-cdu-morning-briefing.md",
+  "note": "Wednesday morning briefing. Top three stories: Follow-up on Panasonic Hsinchu Hukou plant fire in Taiwan (2 dead, 5 injured, ~4% of global MEGTRON high-end CCL supply affected, recovery may take months); Section 301 178 exclusions extension published in Federal Register on 11-10 (91 FR 72610, yesterday's pending item finalized); extreme spot copper tightness continues (Yangshan premium matches record at $230/ton, SHFE inventory at 33,848 tons lowest in nearly three years). Siphon: Infineon FY2026 financial report (data center power supply chips doubled to €1.7 billion), DDR5 spot at $61.83/chip, CCL procurement cycle extended to 24–32 weeks. Event library: Created 3 new events (Panasonic fire, KEMET tantalum capacitor second round price hike, US steel sheet tightness), added 10 timeline entries. Tier B batch 10: 5 hits (steel sheet metal, rubber rings/O-rings, general motors, wooden packaging, regional valves), remaining 6 no anomalies. English version: Generated by 09:00 translation cron."
+ }
+}
