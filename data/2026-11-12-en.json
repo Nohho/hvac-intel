@@ -1,0 +1,749 @@
+{
+  "hotspot_events": [
+    {
+      "id": "evt-20261112-01",
+      "title": "Panasonic Hukou CCL Plant Fire Impact Expands: Work Resumption Takes Months, Nov 1 New Round of CCL Price Increase Compounded by Glass-Fiber Cloth Price Increase",
+      "date": "2026-11-09",
+      "heat": 88,
+      "heat_reason": "~4% of high-end CCL supply is impacted and work resumption takes more than several months, combined with the Nov 1 new round of price increases and glass-fiber cloth price increases, directly impacting high-multilayer/high-speed board lead times and costs",
+      "tags": [
+        "影响BOM",
+        "原材料",
+        "PCB"
+      ],
+      "severity": "中",
+      "section": "头条事件",
+      "event_id": "evt-panasonic-hsinchu-fire-ccl",
+      "summary": "Follow-up on the Nov 4 fire at Panasonic's Hsinchu Hukou plant in Taiwan: this period confirms that work resumption will take more than several months; Panasonic is coordinating alternative supply from bases in Japan, China, and Thailand; Nov 1 new round of CCL price increases (M6 and below +15%, prepreg +25%, largest single round in two years); glass-fiber cloth price increases across the board on Nov 3 (7628 thick cloth +1.5 RMB/m, 2116 thin cloth +2.5 RMB/m); Shengyi states capacity is tight and expects further adjustments this month.",
+      "numbers": [
+        "~4% of global high-end CCL supply affected",
+        "Work resumption takes more than several months",
+        "M6 and below +15%, prepreg +25%",
+        "7628 thick cloth +1.5 RMB/m"
+      ],
+      "sources": [
+        {
+          "outlet": "21st Century Business Herald",
+          "date": "2026-11-09",
+          "url": "https://www.21jingji.com/article/20261109/herald/52a7e684e3eafd1576600059b3ffb07d.html",
+          "first_party": false
+        },
+        {
+          "outlet": "TrendForce",
+          "date": "2026-11-05",
+          "url": "https://www.trendforce.com/news/2026/11/05/news-panasonic-plant-fire-reportedly-puts-4-of-global-high-end-ccl-supply-at-risk-taiwan-makers-eye-order-shifts/",
+          "first_party": true
+        }
+      ],
+      "related_warnings": [
+        "warn-20261112-01",
+        "warn-20261112-04"
+      ]
+    },
+    {
+      "id": "evt-20261112-02",
+      "title": "Extreme Spot Copper Tightness Unrelieved: Yangshan Premium Hits Record $230/ton for 3 Consecutive Days, Shanghai Copper Premium Hits All-Time High",
+      "date": "2026-11-10",
+      "heat": 86,
+      "heat_reason": "Futures pulled back but spot premium reached an all-time high, physical tightness remains unrelieved, directly driving up costs for copper tubes, copper parts, and cables",
+      "tags": [
+        "影响BOM",
+        "原材料"
+      ],
+      "severity": "中",
+      "section": "头条事件",
+      "event_id": "evt-copper-high",
+      "summary": "LME 3M closed at $13,896.5/ton (+0.93%) on Nov 9, pulling back to $13,679/ton (-1.56%) on Nov 10; Yangshan copper premium set a record $230/ton for 3 consecutive days, and Shanghai copper spot premium reached 2,615 RMB/ton on Nov 6, an all-time high; spot silver reported $52.36/oz (+2.21%) on Nov 11.",
+      "numbers": [
+        "LME 3M closed at $13,896.5/ton (+0.93%) on Nov 9",
+        "Pulled back to $13,679/ton (-1.56%) on Nov 10",
+        "Yangshan premium reached record $230/ton",
+        "Shanghai copper premium reached all-time high 2,615 RMB/ton"
+      ],
+      "sources": [
+        {
+          "outlet": "SMM",
+          "date": "2026-11-09",
+          "url": "https://news.smm.cn/news/OQBE3NWXYYXFILHGX55Y7TBBAKKJMA6MAO53SRY",
+          "first_party": false
+        },
+        {
+          "outlet": "Reuters",
+          "date": "2026-11-11",
+          "url": "https://www.reuters.com/es/negocio/DUDNBFXFUJMURKRGITGAK2TLAE-2026-11-11/",
+          "first_party": false
+        }
+      ],
+      "related_warnings": [
+        "warn-20261112-02"
+      ]
+    },
+    {
+      "id": "evt-20261112-03",
+      "title": "DRAM/HBM Shortage Worsens: SK Hynix Sold Out Through 2029, Q4 Contract Prices Forecast to Rise Another 13–18%",
+      "date": "2026-11-11",
+      "heat": 87,
+      "heat_reason": "Memory shortage expectations extended to 2029–2030, Q4 contract prices rise again, putting pressure on both memory costs and allocation for boards/cards",
+      "tags": [
+        "影响BOM",
+        "存储"
+      ],
+      "severity": "中",
+      "section": "头条事件",
+      "event_id": "evt-dram-hbm-shortage",
+      "summary": "SK Hynix stated that DRAM and HBM are 'effectively sold out through 2029,' with shortages expected to last until at least 2030; October general DRAM contract price for DDR4 8Gb averaged $27.5 (+5.77%), and TrendForce forecasts Q4 PC DRAM contract prices to rise another 13–18%.",
+      "numbers": [
+        "Sold out through 2029",
+        "Shortage lasts until at least 2030",
+        "DDR4 8Gb $27.5 (+5.77%)",
+        "Q4 PC DRAM forecast +13–18%"
+      ],
+      "sources": [
+        {
+          "outlet": "21st Century Business Herald",
+          "date": "2026-11-11",
+          "url": "https://www.21jingji.com/article/20261111/herald/8587953ff8b1bda8b182d3f1de3b179d.html",
+          "first_party": false
+        },
+        {
+          "outlet": "Netz-Trends",
+          "date": "2026-11-07",
+          "url": "https://www.netz-trends.de/uk/sk-hynix-samsung-record-quarter-dram-prices-uk-winter-2026/",
+          "first_party": false
+        }
+      ],
+      "related_warnings": [
+        "warn-20261112-03",
+        "warn-20261112-04"
+      ]
+    }
+  ],
+  "supplier_updates": [
+    {
+      "category": "copper",
+      "company": "",
+      "detail": "LME 3M closed at $13,896.5/ton (+0.93%) on Nov 9, pulling back to $13,679/ton (-1.56%) on Nov 10; Yangshan premium set a record $230/ton for 3 consecutive days; SHFE copper spot premium reached 2,615 RMB/ton on Nov 6, an all-time high; spot silver quoted at $52.36/oz (+2.21%) on Nov 11 (SMM/Reuters/SilverPrice.hk, Nov 9-11)",
+      "event_id": "evt-copper-high",
+      "subcategories": [
+        "Copper & Silver"
+      ],
+      "tags": [
+        "影响BOM",
+        "原材料"
+      ],
+      "type": "价格"
+    },
+    {
+      "category": "aluminum",
+      "company": "",
+      "detail": "LME 3M closed at $3,082/ton (+0.6%) on Nov 9, falling to $3,010.5/ton on Nov 10; nearby premium $94/ton (5-month high); LME available inventory 207,500 tons (lowest since March 2025); SHFE aluminum closed at 23,175 RMB/ton on Nov 9 (MoneyDJ/World Aluminium Network, Nov 9-11)",
+      "event_id": "",
+      "subcategories": [
+        "Aluminum Fin Stock"
+      ],
+      "tags": [
+        "影响BOM",
+        "原材料"
+      ],
+      "type": "价格"
+    },
+    {
+      "category": "steel",
+      "company": "",
+      "detail": "U.S. hot-rolled coil spot above $1,450/ton, a 4.5-year high; Steel Warehouse quoted November HRC at $1,326/ton (vs. $1,260 last month); SMU sheet lead times extended to Jan-Feb 2027 (longest since 2021); China Steel raised December prices by NT$300/ton (Steel Warehouse/Gate, Nov 10)",
+      "event_id": "evt-us-steel-sheet-tight-2026",
+      "subcategories": [
+        "Hot Roll Steel, Coil & Sheet",
+        "Plate - Steel"
+      ],
+      "tags": [
+        "影响BOM",
+        "原材料"
+      ],
+      "type": "价格"
+    },
+    {
+      "category": "refrigerant",
+      "company": "",
+      "detail": "No new prices in this window; R32 East China reference price 63,500-64,800 RMB/ton, long-term contracts flat; R22 fell back to 18,000-20,000 RMB/ton (20,500-23,000 RMB/ton in early October); BaiChuan YingFu average R32 price of 65,000 RMB/ton on Oct 30, stable over the past month, +3.17% vs. start of year (Green Origin, Nov 7; Moentropy Consulting, Nov 2)",
+      "event_id": "evt-refrigerant-q4-price-up",
+      "subcategories": [
+        "Refrigerant"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "价格"
+    },
+    {
+      "category": "rare earth / magnet steel",
+      "company": "",
+      "detail": "Praseodymium-neodymium oxide quoted at 720,000-723,000 RMB/ton on Nov 11 (715,000-720,000 RMB/ton on Nov 10), rebounding from the Nov 4 low of 697,000-700,000 RMB/ton; Mysteel expects a slight softening in Q4, watching support at 680,000-700,000 RMB/ton; MOFCOM Announcement No. 58: multiple rare-earth export controls remain suspended from Nov 11 through Jan 10, 2027 (Mysteel, Nov 10-11)",
+      "event_id": "evt-rareearth-pause-expiry-1110",
+      "subcategories": [
+        "Magnets"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "价格"
+    },
+    {
+      "category": "MLCC / passive components",
+      "company": "",
+      "detail": "Samsung Electro-Mechanics raising prices for select customers from Q4 (consumer-grade X5R +25-30%, AI-server X6S +10-20%), AI-server MLCC lead times ~35 weeks; Murata MLCC orders at 1.47x sales; Sanhuan raised distributor prices 10-30% from October (some high-capacitance part numbers up to 80%); Yageo's new round of price increases still only in brokerage-research wording, no official letter seen; KEMET's second-round tantalum capacitor increases effective Nov 1 (+20-30%), extended to direct customers; Panasonic followed with polymer tantalum +15-30%, lead times up to 84 weeks; Murata discontinuation list last-order date Mar 31, 2028 (MT, Nov 2; BT Finance, Oct 14; pcba-hyh, Nov 2)",
+      "event_id": "evt-mlcc-price-hike",
+      "subcategories": [
+        "电容"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "涨价"
+    },
+    {
+      "category": "PCB/CCL",
+      "company": "",
+      "detail": "Panasonic Hukou plant fire: work resumption takes months; new round of CCL price increases from Nov 1 (M6 and below +15%, prepreg +25% - largest single round in two years); electronic glass-fiber cloth: 7628 thick cloth 14.6-14.65 RMB/m (+1.5 RMB/m), 2116 thin cloth 20.2 RMB/m (+2.5 RMB/m), 1080 thin cloth 20.75-20.8 RMB/m (+2.5-2.6 RMB/m); several leading companies say prices still rising through November, capacity fully loaded (21st Century Business Herald, Nov 3/Nov 9)",
+      "event_id": "evt-pcb-ccl-price-hike-2",
+      "subcategories": [
+        "PCB Boards"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "涨价"
+    },
+    {
+      "category": "memory",
+      "company": "",
+      "detail": "SK Hynix says DRAM and HBM 'effectively sold out through 2029', shortage expected to last until at least 2030; October DDR4 8Gb contract average $27.5 (+5.77%); TrendForce forecasts Q4 PC DRAM contract prices up another 13-18% (21st Century Business Herald, Nov 11)",
+      "event_id": "evt-dram-hbm-shortage",
+      "subcategories": [
+        "存储器"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "涨价"
+    },
+    {
+      "category": "power semiconductors",
+      "company": "",
+      "detail": "ST rumored to raise prices for a fourth round, effective Jan 1, 2027 for select products (fourth round this year; no official letter seen, Grade B); onsemi announced on Nov 3 a $600 million cash acquisition of Ferric (plus up to $175 million in milestones), AI data-center-related revenue expected to more than double YoY in 2026 and double again in 2027; onsemi's 10-20% increases across broad product lines, effective Oct 10, already in force; TI has adjusted prices 5 times in the past 12 months (fifth round on Sep 1, hottest models up to +85%), lead times for some analog devices stretched to 52 weeks; general-server PMIC lead times stretched from 21-26 weeks to 35-40 weeks (JRJ.com, Nov 11; Boursorama, Nov 3; CNK, Oct 22; Chenxin Weiye, Oct 27)",
+      "event_id": "evt-analog-pmic-price-hike",
+      "subcategories": [
+        "模拟与电源 IC / MCU"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "涨价"
+    },
+    {
+      "category": "low-voltage electricals",
+      "company": "",
+      "detail": "Schneider Electric Indonesia Digital Energy products repriced from Nov 1 (Price List 2025 coefficient 1.1 to 1.15, ~+4.5%); ABB low-voltage portfolio +3.2-5.5%, effective Feb 1, 2027 (Swiss distributor price list); Siemens SIMATIC S7-1500/S7-1200, LOGO!, SITOP, SINAMICS, SIMOTICS and HMI on the Nov 1 repricing list (~5-15%, distributor wording, Grade B); S7-1200 CPU 1214C discontinued from Nov 1 (Listrik Kita, Nov 1; Otto Fischer price list; PLCDCS Tech, Nov 1)",
+      "event_id": "",
+      "subcategories": [
+        "Circuit Breakers",
+        "Contactors",
+        "Relay"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "涨价"
+    },
+    {
+      "category": "plastics / packaging",
+      "company": "",
+      "detail": "Celanese announced on Nov 4 Asia PA6 +$0.30/kg, PA66 +$0.20/kg, PBT/PET +$0.30/kg, effective for shipments from Nov 9; domestic PA66 East China spot 21,333.89 RMB/ton on Nov 5 (+0.21%) (BusinessWire, Nov 4)",
+      "event_id": "evt-nylon-resin-price-hike",
+      "subcategories": [
+        "Nylon Resin"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "涨价"
+    },
+    {
+      "category": "cables",
+      "company": "",
+      "detail": "Copper-price linkage forces cable quotes to be repriced daily (a Nov 5 industry article warned of quote exposure, citing 'copper up 5,000 RMB/ton in two weeks, one reel of YJV-3x120 losing 8,000 RMB'); copper cable benchmark price $10.33/kg in November (+3.1% MoM, +38.3% over six months) (Jinlan Software, Nov 5; Stockatomics, Nov 11)",
+      "event_id": "",
+      "subcategories": [
+        "Cables"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "价格"
+    },
+    {
+      "category": "transformer",
+      "company": "",
+      "detail": "HD Hyundai Electric says lead times for large transformers from top vendors now exceed 5 years (ordered in 2026, delivered in 2031); U.S. imports of large transformers above 60MVA rose from $900 million in 2022 to $3.1 billion in 2025; Morgan Stanley says U.S. data centers need 72GW of power in 2025-2028, with only 25GW secured or under construction (MT Korea, Oct 30; USA Wire, Nov 4)",
+      "event_id": "evt-hitachi-energy-transformer-warning",
+      "subcategories": [
+        "Transformers (Large)",
+        "Transformers (Small)"
+      ],
+      "tags": [
+        "影响BOM"
+      ],
+      "type": "交期"
+    },
+    {
+      "category": "compressor",
+      "company": "",
+      "detail": "No price increase / lead-time news for the 5 types - centrifugal, reciprocating, rotary, scroll, screw (checked Nov 12, 2026)",
+      "event_id": "",
+      "subcategories": [
+        "Centrifugal Compressors",
+        "Reciprocating Compressors",
+        "Rotary Compressors",
+        "Screw Compressors",
+        "Scroll Compressors"
+      ],
+      "tags": [],
+      "type": "排查无异常"
+    },
+    {
+      "category": "valves & heat exchangers",
+      "company": "",
+      "detail": "No price increase / EOL / lead-time news from Sanhuan, DunAn or Yinlun; Sanhuan's microchannel heat-exchanger upgrade project (8.6 million sets/year) scheduled to break ground Dec 19, 2026 (checked Nov 12, 2026)",
+      "event_id": "",
+      "subcategories": [
+        "Control Valves",
+        "Solenoid Valves",
+        "Reversing Valves",
+        "Microchannel",
+        "Tube & Fin Coils",
+        "Shell & Tube"
+      ],
+      "tags": [],
+      "type": "排查无异常"
+    },
+    {
+      "category": "motors / fans / pumps & radiators",
+      "company": "",
+      "detail": "No targeted announcements (checked Nov 12, 2026)",
+      "event_id": "",
+      "subcategories": [
+        "Small Motors: Fan Motors",
+        "Small Motors: Fractional HP - ECM Motors",
+        "Small Motors: Fractional HP - Non-ECM Mtrs",
+        "Medium Motors (10-100 HP) - Ihp Motors",
+        "Axial Fans",
+        "Centrifugal Fans",
+        "Water Pumps"
+      ],
+      "tags": [],
+      "type": "排查无异常"
+    },
+    {
+      "category": "bearings",
+      "company": "",
+      "detail": "No new price increase / lead-time news (checked Nov 12, 2026)",
+      "event_id": "",
+      "subcategories": [
+        "Ball Bearings",
+        "Magnetic Bearings"
+      ],
+      "tags": [],
+      "type": "排查无异常"
+    },
+    {
+      "category": "connectors",
+      "company": "",
+      "detail": "No new letters from TE/Molex; TE/Staubli price-increase notice is second-hand from industry articles - no letter text or effective date seen, watch as Grade B for now (checked Nov 12, 2026)",
+      "event_id": "",
+      "subcategories": [
+        "连接器与线束"
+      ],
+      "tags": [],
+      "type": "排查无异常"
+    },
+    {
+      "category": "Tier B spot check",
+      "company": "",
+      "detail": "This round (Batch 11): 11 subcategories - 4 material hits (cables, controllers, glass-fiber cloth, seals & refrigerants - see corresponding entries); the other 7 checked with no anomalies",
+      "event_id": "",
+      "subcategories": [
+        "Cables",
+        "Controllers",
+        "Fiberglass",
+        "Gears: Actuators",
+        "Large Motors (100 HP And Above 75KW) - Hermetic",
+        "Packaging: Plastics & Distribution Supp",
+        "Sealants - Caulks",
+        "Tanks, Cylinders",
+        "Uncategorized Insulation",
+        "密封与制冷剂",
+        "风机"
+      ],
+      "tags": [],
+      "type": "排查无异常"
+    }
+  ],
+  "company_checklist": [
+    {
+      "company": "江森自控",
+      "status": "有实质动态",
+      "note": "11-11 Launched modular AI data center production with Armada at Dublin Galleon Forge Two plant, first unit shipped to Norway"
+    },
+    {
+      "company": "开利",
+      "status": "无实质动态",
+      "note": "Automated Logic acquisition of LSI reported on 11-05; no new updates in past 3 days"
+    },
+    {
+      "company": "特灵",
+      "status": "无实质动态",
+      "note": "11-10 public welfare training program; no substantial updates in past 3 days"
+    },
+    {
+      "company": "大金",
+      "status": "有实质动态",
+      "note": "11-10 Released 60MW AI factory cooling reference architecture D60-W (liquid cooling handles 92% of load)"
+    },
+    {
+      "company": "美的",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "格力",
+      "status": "有实质动态",
+      "note": "Won over 300 million RMB in China Mobile/China Tower thermal control centralized procurement in first week of Nov; Dong Mingzhu discussed copper prices on 11-10"
+    },
+    {
+      "company": "海尔",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "日立",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "松下",
+      "status": "有实质动态",
+      "note": "Hukou CCL plant fire: resumption requires several months or more, coordinating alternative supply across Japanese, Chinese, and Thai bases"
+    },
+    {
+      "company": "LG",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "三星",
+      "status": "有实质动态",
+      "note": "11-10 Reached building automation partnership with ABB (channel cooperation scope, not listed in text body)"
+    },
+    {
+      "company": "Vertiv",
+      "status": "有实质动态",
+      "note": "Stock price +9.63% on 11-09 and +6.33% on 11-11, recovering most of the 11-05 drop"
+    },
+    {
+      "company": "英维克",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "申菱",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "高澜股份",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "同飞股份",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "浪潮信息",
+      "status": "无实质动态",
+      "note": "No substantial new updates in past 3 days"
+    },
+    {
+      "company": "联想",
+      "status": "有实质动态",
+      "note": "11-10 Released Wanquan hybrid token factory, signed agreement for first Zhangjiakou master factory"
+    }
+  ],
+  "industry_updates": [
+    {
+      "title": "Johnson Controls × Armada launch Dublin modular AI data center production, first unit shipped to Norway",
+      "detail": "Johnson Controls and Armada have started continuous production of Leviathan modular AI data centers at the Galleon Forge Two plant in Dublin. The first unit has been shipped to Fossefall in Norway, and the initial batch of 5 units totaling over 9MW will be delivered by Q1 2027, with both parties targeting a capacity of at least 500MW by 2027.",
+      "source": "JCI Official Website, 2026-11-11",
+      "url": "https://www.johnsoncontrols.com/media-center/news/press-releases/2026/11/11/armada-and-johnson-controls-launch-galleon-forge-two-in-dublin",
+      "first_party": true,
+      "event_id": "evt-jci-armada-dublin-modular-dc"
+    },
+    {
+      "title": "Daikin releases 60MW AI factory cooling reference architecture D60-W, with liquid cooling handling 92% of load",
+      "detail": "Daikin released the 60MW AI factory cooling reference architecture D60-W: compatible with the NVIDIA DSX platform and Vera Rubin NVL72 racks, liquid cooling handles 92% of the load, centered around the oil-free magnetic-bearing Magnitude WME centrifugal chiller (maximum 10MW per unit), dry coolers replace cooling towers with zero makeup water; proprietary CDUs and data center dry coolers targeted for shipment in H2 2027.",
+      "source": "PR Newswire, 2026-11-10",
+      "url": "https://www.prnewswire.com/news-releases/daikin-applied-introduces-60-mw-ai-factory-cooling-reference-architecture-302934188.html",
+      "first_party": true,
+      "event_id": "evt-daikin-d60w-architecture"
+    },
+    {
+      "title": "Modine begins commercial production at new Grand Prairie chiller plant in Texas",
+      "detail": "Modine's new 682,000-square-foot Airedale chiller plant in Grand Prairie, Texas, has commenced commercial production, specializing in 2MW and 3MW chillers with free cooling, targeting four 2MW production lines by the end of the fiscal year, making it its largest global Airedale chiller production base.",
+      "source": "PR Newswire via Quantisnow, 2026-11-11",
+      "url": "https://www.quantisnow.com/insight/production-of-airedale-chillers-for-data-center-customers-begins-at-6785140",
+      "first_party": false,
+      "event_id": "evt-modine-grand-prairie-chiller-plant"
+    },
+    {
+      "title": "Lenovo releases \"Wanquan Hybrid Token Factory\" brand, signs agreement for first Zhangjiakou master factory",
+      "detail": "Lenovo released the \"Wanquan Hybrid Token Factory\" brand and signed an agreement with the Zhangjiakou municipal government to establish the first master factory: initial planning includes a 15,000 P heterogeneous computing cluster, an intelligent computing center of about 100MW, annual token production exceeding 2 quadrillion, with an intelligent computing center PUE below 1.1 using full-stack liquid cooling.",
+      "source": "Lenovo Group Official WeChat Account via Intelligent Manufacturing Network, 2026-11-10",
+      "url": "https://www.gkzhan.com/news/detail/197288.html",
+      "first_party": false,
+      "event_id": "evt-lenovo-token-factory"
+    },
+    {
+      "title": "Gree wins over 300 million RMB in China Mobile/China Tower thermal control centralized procurement bids, Dong Mingzhu discusses rising copper prices",
+      "detail": "In the first week of November, Gree successively won centralized procurement bids for thermal control equipment from China Mobile and China Tower, with total order amounts exceeding 300 million RMB (products include air-cooled refrigerant pump computer room air conditioners and chilled water row-level air conditioners); on 11-10, Dong Mingzhu responded that the main reason for performance decline was rising copper prices (copper prices are about 5–6 times aluminum prices), and to ensure quality, the company insists on using copper, willing to sacrifice tens of billions of RMB in profits.",
+      "source": "JRJ, 2026-11-07/11-10",
+      "url": "https://m.jrj.com.cn/madapter/finance/2026/11/07194759062051.shtml",
+      "first_party": false,
+      "event_id": ""
+    },
+    {
+      "title": "Vertiv stock rebounds for two days, recovering most losses from 11-05 plunge",
+      "detail": "Vertiv's stock closed at $200.47 (+9.63%) on 11-09 and closed again at $206.51 (+6.33%) on 11-11, recovering most of the ground lost during the -14% plunge on 11-05 (Thursday); management stated at the Baird conference on 11-10 that AI and traditional cloud demand remain resilient, and provided an 800VDC roadmap (hybrid solution in H2 2027, native end-to-end system in H2 2028).",
+      "source": "Finnhub/TipRanks Market Data, Reuters via ad-hoc-news, 2026-11-10",
+      "url": "https://www.tipranks.com/stocks/vrt/historical-prices",
+      "first_party": false,
+      "event_id": "evt-vertiv-q3-2026"
+    }
+  ],
+  "siphon_effects": [
+    {
+      "material": "Cloud capex",
+      "detail": "Combined 2026 capex guidance for the top four cloud providers is approximately $735 billion (Amazon approx. $220B, Alphabet $195–$205B, Microsoft approx. $175B, Meta $135–$145B), about 1.78x the $413.4 billion in 2025; Q3 single-quarter total for five companies (including Oracle) reached $237.3 billion, +95% YoY, with all four forecasting continued increases in 2027",
+      "event_id": "evt-cloud-capex-2026",
+      "source": "Market Analysis, 2026-11",
+      "tags": [
+        "影响BOM"
+      ]
+    },
+    {
+      "material": "DRAM/HBM",
+      "detail": "SK Hynix stated that DRAM and HBM are \"effectively sold out through 2029\" with shortages expected to persist until at least 2030; October average contract price for DDR4 8Gb was $27.5 (+5.77%), TrendForce forecasts Q4 PC DRAM contract prices to rise another 13–18%",
+      "event_id": "evt-dram-hbm-shortage",
+      "source": "21jingji, 2026-11-11",
+      "tags": [
+        "影响BOM",
+        "存储"
+      ]
+    },
+    {
+      "material": "MLCC",
+      "detail": "Samsung Electro-Mechanics lead time for AI server MLCCs is about 35 weeks (standard 12 weeks), raising prices for some customers starting Q4 (consumer-grade X5R +25–30%, AI server X6S +10–20%); Murata MLCC orders reached 1.47x sales, and expanding capacity by over 20% takes two years; TrendForce predicted on 10-29 that high-capacitance MLCC shortages will extend into H1 2027",
+      "event_id": "evt-mlcc-price-hike",
+      "source": "TrendForce, 2026-10-29",
+      "tags": [
+        "影响BOM",
+        "被动元件"
+      ]
+    },
+    {
+      "material": "Power semiconductors/IGBT",
+      "detail": "Infineon announced on 11-09 the successful processing of functional devices on 300mm SiC wafers at its Villach plant in Austria (technology milestone); CRRC Times Electric stated on 11-11 that Phase I, Phase II, and Phase III Yixing chip production lines for IGBTs are all operating at full capacity, with the Phase III Zhuzhou SiC production line ramping up capacity in 2026 and expected to reach first-stage design capacity by mid-2027",
+      "event_id": "",
+      "source": "JZP Components, 2026-11-10",
+      "tags": [
+        "影响BOM",
+        "功率器件"
+      ]
+    },
+    {
+      "material": "PCB/CCL",
+      "detail": "A new round of price hikes on 11-01 (M6 and below +15%, prepreg +25%) compounded by the Panasonic fire led to a comprehensive price increase for glass-fiber cloth on 11-03, with 7628 thick cloth rising over 250% cumulatively from 4.15 RMB/meter at the end of Q3 2025; VersaLogic stated on 11-04 that multiple CCL plants have implemented allocation quotas, with high-performance material lead times at 24–32 weeks",
+      "event_id": "evt-pcb-ccl-price-hike-2",
+      "source": "21jingji, 2026-11-03",
+      "tags": [
+        "影响BOM",
+        "PCB"
+      ]
+    },
+    {
+      "material": "Data center construction",
+      "detail": "Google announced on 11-05 a $1.7 billion investment to build its first data center in Laramie County, Wyoming, with a phase-one 702MW fuel cell power plant (built by AEP, supplied by Bloom Energy); Crusoe confirmed on 11-06 that it has sold the site to Google",
+      "event_id": "evt-google-crusoe-wyoming-dc",
+      "source": "MLQ, 2026-11-05",
+      "tags": []
+    }
+  ],
+  "cross_industry": [
+    {
+      "industry": "Power grid",
+      "detail": "Transformer lead times have exceeded 5 years: HD Hyundai Electric stated that large power transformers from top-tier manufacturers have lead times exceeding 5 years (ordered in 2026, delivered in 2031); US imports of large power transformers above 60MVA increased from $900 million in 2022 to $3.1 billion in 2025; Morgan Stanley stated that US data centers will require 72GW of power from 2025–2028, with only 25GW secured or under construction",
+      "event_id": "evt-hitachi-energy-transformer-warning",
+      "source": "MT Korea, 2026-10-30"
+    },
+    {
+      "industry": "Photovoltaic/Energy storage",
+      "detail": "Solar-storage product price adjustment wave: Huawei Digital Energy plans to raise solar-storage product prices by 5–15% (notified on 10-20, effective date pending); Kehua Digital Energy raised all series by 5–15%, effective 11-01; Sungrow raised inverters/PCS/energy storage by 5–15% starting 9-20 — solar-storage and HVAC share capacity for power devices and electrical components, causing price hike signals to spill over",
+      "event_id": "evt-huawei-kehua-pv-storage-price-hike",
+      "source": "pv magazine, 2026-11-04"
+    },
+    {
+      "industry": "Semiconductor foundry",
+      "detail": "Mature node foundry price increases: Powerchip Semiconductor Manufacturing Corporation (PSMC) stated in an earnings call on 10-21 that it is negotiating another 10–20% price hike for logic foundry in 2027, with 80% of MOSFET and IGBT capacity locked in via long-term agreements; United Microelectronics Corporation (UMC) reported on 10-28 for Q3 a capacity utilization rate of 92% with multiple 12-inch fabs fully loaded, expecting average selling prices in 2027 to rise 10% compared to 2026 — cost and lead-time pressures are synchronized for MCUs, analog, and power ICs on mature nodes",
+      "event_id": "evt-psmc-foundry-price-hike",
+      "source": "Talay Insight, 2026-10-21"
+    },
+    {
+      "industry": "AI optical interconnects",
+      "detail": "Marvell announced on 11-02 the acquisition of optical communications giant Lumentum in an all-stock transaction with an implied enterprise value of $115 billion (4.5 Marvell shares per share, a 23.9% premium), expected to close in H1 2028, resulting in a combined 2030 TAM of $550 billion — this AI optical interconnect M&A confirms intensifying competition for optical transceiver and laser capacity",
+      "event_id": "evt-marvell-lumentum-acquisition",
+      "source": "Futurum Group, 2026-11-02"
+    },
+    {
+      "industry": "Advanced packaging",
+      "detail": "NVIDIA invested billions of dollars to support ASE subsidiary Siliconware Precision Industries (SPIL) in expanding CoWoS capacity (including new cleanrooms and equipment), making advanced packaging an AI bottleneck; Yole forecasts advanced packaging capex to approach $28 billion in 2026, surpassing traditional packaging for the first time — intensified crowding out as packaging/testing and substrate resources are shared with HVAC board cards",
+      "event_id": "",
+      "source": "Reuters via AI Brief, 2026-11-06"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "warn-20261112-01",
+      "title": "Panasonic Fire Impacts High-End CCL",
+      "urgency": "高",
+      "impact": "PCB/CCL (High-Multilayer/High-Speed Board)",
+      "action": "Verify in-transit MEGTRON part numbers and inventory coverage, request alternative part numbers from Taiwanese CCL manufacturers (EMC/TUC/ITEQ) and initiate re-certification; cover long-term agreements for glass-fiber cloth and prepreg through 2027H1",
+      "trigger": "Panasonic fire on 11-04, new CCL notice on 11-01, glass-fiber cloth price increase on 11-03",
+      "deadline": "",
+      "related_events": [
+        "evt-20261112-01"
+      ]
+    },
+    {
+      "id": "warn-20261112-02",
+      "title": "Extreme Tightness in Spot Copper Unalleviated",
+      "urgency": "中",
+      "impact": "Copper/Silver",
+      "action": "Lock prices in batches for near-month usage, avoid chasing short positions; monitor Yangshan premiums and SHFE inventory pullbacks before negotiating long-term contracts",
+      "trigger": "Yangshan premium reached a record $230/ton, SHFE copper spot premium hit an all-time high of 2,615 RMB/ton",
+      "deadline": "",
+      "related_events": [
+        "evt-20261112-02"
+      ]
+    },
+    {
+      "id": "warn-20261112-03",
+      "title": "DRAM/HBM Shortage Worsens Through 2029–2030",
+      "urgency": "高",
+      "impact": "Chips & Semiconductors",
+      "action": "Budget board storage part numbers based on Q4 contract price +13–18%, check inventory and long-term agreement coverage; lock 2027 memory allocation in advance",
+      "trigger": "SK Hynix sold out through 2029, October DDR4 contract +5.77%",
+      "deadline": "",
+      "related_events": [
+        "evt-20261112-03"
+      ]
+    },
+    {
+      "id": "warn-20261112-04",
+      "title": "MLCC/Tantalum Capacitors/CCL Tighten on Three Fronts",
+      "urgency": "高",
+      "impact": "Passive Components & Connectors, PCB",
+      "action": "Lock 2027 allocation for high-cap MLCCs, verify Murata discontinuation list (last-time buy 2028-03-31); cover CCL long-term agreements through 2027H1, evaluate alternative substrate materials",
+      "trigger": "KEMET effective 11-01, Samsung Electro-Mechanics Q4 price increase, Kingboard new notice on 11-01",
+      "deadline": "2028-03-31",
+      "related_events": [
+        "evt-mlcc-price-hike",
+        "evt-pcb-ccl-price-hike-2",
+        "evt-20261112-01"
+      ]
+    },
+    {
+      "id": "warn-20261112-05",
+      "title": "Cascading Price Increases in Power Semiconductors",
+      "urgency": "高",
+      "impact": "Chips & Semiconductors",
+      "action": "Check lead times for ST/TI/onsemi part numbers, place orders early to lock 2027 allocation; adjust budget for ST's 4th round only after official letter confirmation",
+      "trigger": "JRJ 11-11, CNK 10-22, Chenxin Weiye 10-27",
+      "deadline": "2027-01-01",
+      "related_events": [
+        "evt-analog-pmic-price-hike"
+      ]
+    },
+    {
+      "id": "warn-20261112-06",
+      "title": "Rare Earth Cliff Delayed to 2027-01-10, But Extended for Only Two Months",
+      "urgency": "中",
+      "impact": "Magnet Steel/Motors",
+      "action": "Reverse schedule safety stock and license verification pace based on 2027-01-10, accelerate validation of alternative magnet steel part numbers; keep close tabs on US-China consultations and renewal signals in December",
+      "trigger": "MOFCOM Announcement No. 58 (11-09)",
+      "deadline": "2027-01-10",
+      "related_events": [
+        "evt-rareearth-pause-expiry-1110"
+      ]
+    },
+    {
+      "id": "warn-20261112-07",
+      "title": "US Steel Sheet/Cable Lead Times Extend",
+      "urgency": "中",
+      "impact": "Steel Sheet Metal Parts, Cables",
+      "action": "Check US steel sheet supply proportion for sheet metal/chassis part numbers, lock 2027H1 usage in advance; price cable orders daily and shorten quotation validity",
+      "trigger": "Steel Warehouse 11-10, Marino\\WARE steel products further increase by min. 10% starting 2027-01-04 (11-03), Jinlan Software 11-05",
+      "deadline": "2027-01-04",
+      "related_events": [
+        "evt-us-steel-sheet-tight-2026"
+      ]
+    }
+  ],
+  "daily_report": {
+    "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Morning Briefing (2026-11-12 · Thursday)",
+    "date": "2026-11-12",
+    "body_file": "briefs/2026-11-12-hvac-cdu-morning-briefing.md",
+    "headlines": [
+      "Impact of Panasonic Hukou CCL plant fire widens: Work resumption will take over several months, 11-01 new round of CCL price increases coupled with comprehensive glass-fiber cloth price increases",
+      "Extreme tightness in spot copper unalleviated: Yangshan premium set a record $230/ton for 3 consecutive days, SHFE copper spot premium hit an all-time high",
+      "DRAM/HBM shortage worsens: SK Hynix sold out through 2029, Q4 PC DRAM contract prices forecast to rise another 13–18%"
+    ]
+  },
+  "time_anchors": [
+    {
+      "date": "2027-01-01",
+      "label": "ST 4th round price increase (rumored) effective date"
+    },
+    {
+      "date": "2027-01-04",
+      "label": "Marino\\WARE steel products further price increase takes effect"
+    },
+    {
+      "date": "2027-01-09",
+      "label": "Expiration of Section 301 178 item exclusions after extension"
+    },
+    {
+      "date": "2027-01-10",
+      "label": "Expiration of rare earth export control pause after extension"
+    },
+    {
+      "date": "2028-03-31",
+      "label": "Murata discontinued MLCC last-time buy (LTB) date"
+    }
+  ],
+  "meta": {
+    "date": "2026-11-12",
+    "schema_version": "v0.6",
+    "source_briefing": "briefs/2026-11-12-hvac-cdu-morning-briefing.md",
+    "note": "Thursday morning briefing. Top three stories: Impact of Panasonic Hukou CCL plant fire widens (work resumption will take over several months, 11-01 new round of CCL price increases coupled with glass-fiber cloth price increases); extreme tightness in spot copper unalleviated (Yangshan premium set a record $230/ton for 3 consecutive days, SHFE copper spot premium hit an all-time high); DRAM/HBM shortage worsens (SK Hynix sold out through 2029). Industry news: JCI×Armada Dublin modular AI data center commissioned, Daikin D60-W 60MW liquid-cooling architecture, Modine Texas chiller new plant commissioned. Event repository: 5 new events created (JCI×Armada, Daikin D60-W, Modine new plant, onsemi acquires Ferric, Lenovo Token Factory), 11 timeline entries appended. Tier B batch 11: 4 hits (cables, controllers, glass-fiber cloth, seals & refrigerants), remaining 7 show no anomalies. English version: Generated by 09:00 translation cron."
+  }
+}
