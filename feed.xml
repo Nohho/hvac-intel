@@ -3,7 +3,10 @@
 <channel>
 <title>HVAC 供应链情报</title><link>https://nohho.github.io/hvac-intel/</link>
 <description>HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议</description>
-<language>zh-CN</language><lastBuildDate>Thu, 12 Nov 2026 23:46:07 GMT</lastBuildDate>
+<language>zh-CN</language><lastBuildDate>Fri, 13 Nov 2026 23:52:49 GMT</lastBuildDate>
+<item><title>HVAC 供应链情报早报 2026-11-14</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-14</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-14</guid><pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate><description>• 铝现货升水创 36 年纪录、LME 库存 1990 年以来最低
+• 铜期货五连周跌、现货极紧却再创新高
+• 存储再收紧：原厂口头提价意向已释放、HBM 售罄至 2029 年</description></item>
 <item><title>HVAC 供应链情报早报 2026-11-13</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-13</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-13</guid><pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate><description>• 铝现货升水创 30 年纪录、LME 库存 1990 年以来最低
 • 铜现货极紧未缓解：洋山溢价持于 230 美元/吨纪录高位
 • HBM4 明年供应已售罄、存储短缺再收紧</description></item>
@@ -104,10 +107,5 @@
 <item><title>HVAC 供应链情报早报 2026-10-16</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-16</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-16</guid><pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate><description>PCB/CCL涨价链再加码（建滔第八度调价、松下CCL 2027年涨3倍）、铜价回落、铝创年内低点；美的加入英伟达MGX生态；Tier B第11批3个涨价动态。
 • PCB/CCL涨价链再加码：建滔第八度调价+15%，松下部分CCL 2027年涨3倍
 • 铜价回落：LME 10-14收约14,436美元/吨，铝跌破3,000美元创年内低点</description></item>
-<item><title>HVAC 供应链情报早报 2026-10-15</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-15</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-15</guid><pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate><description>DRAM缺口拉长至2028、MLCC龙头扩产对冲供需紧平衡、铜价高位震荡；Chillventa 2026闭幕1095家展商创纪录。
-• DRAM缺口周期拉长至2028：DDR4三个月累计涨24%
-• MLCC供需紧平衡延续：村田拟追加扩产，接单出货比1.47创纪录
-• 铜价高位震荡：LME 10-13收14,621.5美元/吨
-• 电子布涨价官方求证属实：新产能明年年底才释放</description></item>
 </channel>
 </rss>
