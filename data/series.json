@@ -142,6 +142,11 @@
       "date": "2026-11-11",
       "value": 13795,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-12",
+      "value": 13655,
+      "src": "westmetall"
     }
   ],
   "aluminium_lme_usd_t": [
@@ -284,6 +289,11 @@
       "date": "2026-11-11",
       "value": 3064,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-12",
+      "value": 3032,
+      "src": "westmetall"
     }
   ],
   "usdcny": [
@@ -415,6 +425,11 @@
     {
       "date": "2026-11-12",
       "value": 6.7174,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-11-13",
+      "value": 6.7152,
       "src": "chinamoney"
     }
   ],
@@ -562,6 +577,11 @@
     {
       "date": "2026-11-12",
       "value": 50.13,
+      "src": "conv"
+    },
+    {
+      "date": "2026-11-13",
+      "value": 49.29,
       "src": "conv"
     }
   ]
