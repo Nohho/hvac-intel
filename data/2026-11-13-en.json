@@ -1,0 +1,765 @@
+{
+ "hotspot_events": [
+  {
+   "id": "evt-20261113-01",
+   "title": "Aluminum spot premium hits 30-year record, LME inventory at lowest since 1990",
+   "date": "2026-11-11",
+   "heat": 88,
+   "heat_reason": "Aluminum spot premium hits a 30-year record and LME deliverable inventory hits its lowest since 1990, putting simultaneous pressure on the cost and lead time of aluminum fins and profiles",
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "severity": "中",
+   "section": "头条事件",
+   "event_id": "evt-aluminum-spot-squeeze",
+   "summary": "LME 3M aluminum closed at 3,068.5 $/ton (+1.9%) on Nov 11, with the spot premium over three-month futures reaching up to 151.50 $/ton (highest in 30 years). LME deliverable inventory dropped to the lowest since 1990, with a large portion of remaining inventory controlled by two traders. SHFE aluminum December contract intraday rose by as much as 2.65% on Nov 12, marking the largest intraday gain since April 16.",
+   "numbers": [
+    "LME 3M closed at $3,068.5/ton on Nov 11 (+1.9%)",
+    "Spot premium hit $151.50/ton at one point (30-year high)",
+    "LME inventories at lowest since 1990",
+    "SHFE aluminum Dec contract up as much as +2.65% intraday on Nov 12"
+   ],
+   "sources": [
+    {
+     "outlet": "Sina Finance",
+     "date": "2026-11-12",
+     "url": "https://finance.sina.cn/usstock/mggd/2026-11-12/detail-iniymmzi1321209.d.html",
+     "first_party": false
+    },
+    {
+     "outlet": "Reuters via TradingView",
+     "date": "2026-11-12",
+     "url": "https://tw.tradingview.com/news/reuters.com,2026:newsml_L6T46T0LX:0/",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261113-01"
+   ]
+  },
+  {
+   "id": "evt-20261113-02",
+   "title": "Copper spot tightness unmitigated: Yangshan premium holds at record high of 230 $/ton",
+   "date": "2026-11-11",
+   "heat": 86,
+   "heat_reason": "Futures pulled back but spot premiums remain unmitigated, with the Yangshan premium holding at a record high, directly driving up costs for copper tubes, fittings, and cables",
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "severity": "中",
+   "section": "头条事件",
+   "event_id": "evt-copper-high",
+   "summary": "LME 3M closed at 13,817 $/ton (+1.0%) on Nov 11, and the Yangshan copper premium held at a record high of 230 $/ton. SHFE copper spot Guangdong average price on Nov 12 was 108,560 RMB/ton (+190 RMB), with the premium still exceeding 1,000 RMB/ton. Yong'an Futures stated that rumors of smelting production cuts are fermenting and November output may continue to decline.",
+   "numbers": [
+    "LME 3M closed at $13,817/ton on Nov 11 (+1.0%)",
+    "Yangshan premium at record high of $230/ton",
+    "Spot copper averaged RMB 108,560/ton in Guangdong on Nov 12",
+    "Premium still above RMB 1,000/ton"
+   ],
+   "sources": [
+    {
+     "outlet": "Gate",
+     "date": "2026-11-12",
+     "url": "https://www.gate.tr/en/news/detail/lme-copper-rebounds-over-1-on-1111-amid-china-supply-shortage-35863",
+     "first_party": false
+    },
+    {
+     "outlet": "SMM",
+     "date": "2026-11-12",
+     "url": "https://news.smm.cn/news/I2NGD6VJRXBDNIAVQHUAHWJGX4CFHQOPDOONMCA",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261113-02"
+   ]
+  },
+  {
+   "id": "evt-20261113-03",
+   "title": "HBM4 supply sold out for next year, memory shortage tightens further",
+   "date": "2026-11-12",
+   "heat": 87,
+   "heat_reason": "2027 HBM supply is locked out, spot DDR4 is up 856% year-on-year, and Q4 contract prices are rising again, putting pressure on both board-level memory costs and allocation",
+   "tags": [
+    "影响BOM",
+    "存储"
+   ],
+   "severity": "中",
+   "section": "头条事件",
+   "event_id": "evt-dram-hbm-shortage",
+   "summary": "Samsung stated that 2027 HBM supply is sold out, and SK Hynix has finalized volume and pricing for next year's HBM4 with customers. Spot DDR4 in early November was quoted at 46.31 $ (+2.55% weekly, +856% yearly), and TrendForce predicts Q4 conventional DRAM contract prices will rise another 10–15%, with NAND up 15–20%.",
+   "numbers": [
+    "2027 HBM supply sold out",
+    "DDR4 spot at $46.31 (+856% YoY)",
+    "Q4 DRAM contract prices forecast +10-15%",
+    "Q4 NAND contract prices forecast +15-20%"
+   ],
+   "sources": [
+    {
+     "outlet": "MemoryIndex",
+     "date": "2026-11-09",
+     "url": "https://memoryindex.io/newsletter/2026-11-09",
+     "first_party": false
+    },
+    {
+     "outlet": "ismagazine",
+     "date": "2026-11-10",
+     "url": "https://ismagazine.com/Home/Post/8928/Why-Is-RAM-So-Expensive-in-2026-The-AI-Memory-Squeeze-Explained",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261113-03"
+   ]
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "Copper",
+   "company": "",
+   "detail": "LME 3M 11-11 closed at $13,817/ton (+1.0%), Yangshan copper premium held at record high of $230/ton; Shanghai spot copper 11-12 Guangdong average price 108,560 RMB/ton (+190 RMB), premium still exceeding 1,000 RMB/ton; Yongan Futures reported smelting production cut rumors are fermenting, November output may continue to decline (Gate/SMM/Yongan Research 11-12)",
+   "event_id": "evt-copper-high",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Aluminum",
+   "company": "",
+   "detail": "LME 3M 11-11 closed at $3,068.5/ton (+1.9%), spot premium over 3-month futures reached $151.50/ton at one point (highest in 30 years), LME deliverable inventory dropped to lowest since 1990; SHFE aluminum 12-month contract 11-12 intraday rose up to 2.65%, hitting largest intraday gain since April 16 (Sina Finance/Reuters 11-12)",
+   "event_id": "evt-aluminum-spot-squeeze",
+   "subcategories": [
+    "Aluminum Fin Stock"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Steel",
+   "company": "",
+   "detail": "No new price adjustment/lead-time news in this window (Previous: US hot-rolled spot over $1,450/ton hit 4.5-year high, sheet lead times extended to Jan–Feb 2027; Steel Warehouse/Gate 11-10)",
+   "event_id": "evt-us-steel-sheet-tight-2026",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Refrigerant",
+   "company": "",
+   "detail": "No new price in this window, R32 East China reference price 63,500–64,800 RMB/ton, long-term contracts moving sideways; November hydrofluoric acid bidding price 15,300–15,650 RMB/ton, R32 major manufacturers' quotes firm, operating rate about 40% (Green Origin 11-07, ChemPriceHub 11-11)",
+   "event_id": "evt-refrigerant-q4-price-up",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Rare Earth / Magnets",
+   "company": "",
+   "detail": "Praseodymium-neodymium oxide 11-12 quoted at 715,000–718,000 RMB/ton (up week-on-week), dysprosium oxide 1.51–1.52 million RMB/ton strengthening for consecutive days, medium-heavy rare earths led the gains; Mysteel praseodymium-neodymium oxide index 716,500 RMB/ton (SMM/Mysteel 11-12)",
+   "event_id": "evt-rare-earth-q4-price",
+   "subcategories": [
+    "Magnets"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "MLCC / Passive Components",
+   "company": "",
+   "detail": "TrendForce stated high-end shortage will extend to the first half of 2027, with the most severe period in 2027Q1–Q2, 1Q27 price negotiations starting in November; Samsung Electro-Mechanics 4Q price hikes expanded to direct OEM/ODM customers; standard lead times for some Samsung Electro-Mechanics MLCCs on DigiKey reached 61 weeks (39–49 weeks in September), Murata 17 weeks, Yageo 28 weeks (NextPCB 11-12, Newspim via fourweekmba 10-22)",
+   "event_id": "evt-mlcc-price-hike",
+   "subcategories": [
+    "电容"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "PCB/CCL",
+   "company": "",
+   "detail": "No new official progress on Panasonic Hukou fire in this window (resumption of work still requires several months or more); 1Q27 MLCC price negotiations started, CCL Nov-01 new notices overlapped with glass-fiber cloth price increases, board cost pressure unabated (21 Economy 11-09)",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Memory",
+   "company": "",
+   "detail": "Samsung stated 2027 HBM supply is sold out, SK Hynix has finalized next year's HBM4 volume and price with customers; DDR4 spot price in early November quoted at $46.31 (weekly +2.55%, annual +856%), TrendForce predicts Q4 conventional DRAM contract prices will rise another 10–15%, NAND +15–20% (MemoryIndex 11-09, ismagazine 11-10)",
+   "event_id": "evt-dram-hbm-shortage",
+   "subcategories": [
+    "存储器"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Power Semiconductors",
+   "company": "",
+   "detail": "Vertiv signed a three-year Si/SiC supply agreement with Infineon on 11-04 (supporting next-generation power systems under 800VDC); ST's fourth round price hike rumors (2027-01-01) still awaiting official letter confirmation; onsemi price hike of 10–20% across a wide product range effective since 10-10; TI accumulated 5 price adjustments over the past 12 months (9-01 fifth round, popular models up to +85%); general server PMIC lead times 35–40 weeks (Vertiv official website 11-04, Financial 11-11)",
+   "event_id": "evt-analog-pmic-price-hike",
+   "subcategories": [
+    "IGBT Modules",
+    "模拟与电源 IC / MCU"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Low-Voltage Electricals",
+   "company": "",
+   "detail": "No new letter in this window (Previous: Schneider Indonesia +4.5% effective 11-01, ABB +3.2–5.5% effective 2027-02-01, Siemens 11-01 price adjustment list)",
+   "event_id": "",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Coolants",
+   "company": "",
+   "detail": "Ethylene glycol spot 11-12 quoted at 5,866.67 RMB/ton (+3.29%), DCE main contract EG2701 closed at 5,048 RMB/ton, East China main port inventory dropped to near five-year low; oil-to-ethylene glycol losses widened (Price CloudO3/Sunsirs 11-12)",
+   "event_id": "evt-ethylene-glycol-cost-up",
+   "subcategories": [
+    "Coolants"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Heat Exchangers & Cold Plates",
+   "company": "",
+   "detail": "Delta released 800VDC 2.5MW in-row liquid-to-liquid CDU, power-shelf embedded cold plates (up to 3,000W), hot-swappable SSD cold plates at SC26 on 11-11; Ecolab plans to launch liquid cooling platform combining CoolIT technology in November (PR Newswire via Morningstar 11-11, Electronics360)",
+   "event_id": "",
+   "subcategories": [
+    "换热器与冷板"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "新品/认证"
+  },
+  {
+   "category": "Sealed Lead Acid (SLA) Battery",
+   "company": "",
+   "detail": "SMM reported on 11-06 that terminal consumption of lead-acid batteries continues to weaken (electric vehicle peak season ended), downstream procurement is cautious, and some enterprises suspended procurement after lead prices rebounded to 16,000 RMB/ton—pricing negotiation window for UPS backup battery procurement leans favorable (SMM 11-06)",
+   "event_id": "",
+   "subcategories": [
+    "Sealed Lead Acid (SLA) Battery"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "Valves & Fittings",
+   "company": "",
+   "detail": "US PHCP-PVF another round of general increases in November: Crane full line, American Tube & Pipe +8% (both effective 11-01), Gastite +6% (effective 11-23); slowed down in October, another round started in November (Supply House Times 11-04, updated 11-10)",
+   "event_id": "",
+   "subcategories": [
+    "Ball Valves",
+    "Gate Valves"
+   ],
+   "tags": [
+    "影响BOM"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "Compressor",
+   "company": "",
+   "detail": "No price increase/lead-time news for 5 categories (centrifugal/reciprocating/rotary/scroll/screw) (Inspected 2026-11-13)",
+   "event_id": "",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Valves & Heat Exchangers",
+   "company": "",
+   "detail": "Sanhua/DunAn/Yinlun have no price increase/EOL/lead-time news (Inspected 2026-11-13)",
+   "event_id": "",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Motors/Fans/Pumps & Radiators",
+   "company": "",
+   "detail": "No targeted announcements (Inspected 2026-11-13)",
+   "event_id": "",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Small Motors: Fractional HP - ECM Motors",
+    "Small Motors: Fractional HP - Non-ECM Mtrs",
+    "Medium Motors (10-100 HP) - Ihp Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Bearings",
+   "company": "",
+   "detail": "No new price increase/lead-time news (Inspected 2026-11-13)",
+   "event_id": "",
+   "subcategories": [
+    "Ball Bearings",
+    "Magnetic Bearings"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Connectors",
+   "company": "",
+   "detail": "TE/Molex has no new letter; TE/Staubli price increase notices are paraphrased by industry articles, original letter and effective date not seen, temporarily observed as Grade B (Inspected 2026-11-13)",
+   "event_id": "",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "Tier B Rotation Check",
+   "company": "",
+   "detail": "This round (12th batch) 11 subcategories: 4 substantial hits (coolants, heat exchangers and cold plates, power devices, lead-acid batteries, see corresponding entries); remaining 7 inspected with no anomalies",
+   "event_id": "",
+   "subcategories": [
+    "Cameras - Video",
+    "Coolants",
+    "Filter Drier Valves",
+    "Gears: Chillers & Industrial Refrigeration",
+    "Large Motors (100 HP And Above 75KW) - Non-Hermetic",
+    "Packaging: Returnables",
+    "Sealed Lead Acid (SLA) Battery",
+    "Test And Drain Valves",
+    "Uncategorized Pumps",
+    "换热器与冷板",
+    "功率器件"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "无实质动态",
+   "note": "Galleon Forge Two 11-11 reported; no new updates in the past 3 days"
+  },
+  {
+   "company": "开利",
+   "status": "无实质动态",
+   "note": "$1.5 billion dual-tranche notes offering on 11-02 was for financing purposes and is not listed in the main text; no substantive updates in the past 3 days"
+  },
+  {
+   "company": "特灵",
+   "status": "无实质动态",
+   "note": "$1 million Goodwill philanthropic donation on 11-10 and no new outlook at the Baird conference on 11-12, not listed in the main text"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "D60-W reported on 11-10; large-space new product on 11-05 is a conventional product profile"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "No substantive new updates in the past 3 days"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "Gree Group / Zhuhai Duty-Free on 11-11 is at the group level and is not listed in the main text; no substantive new updates in the past 3 days"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "No substantive new updates in the past 3 days"
+  },
+  {
+   "company": "日立",
+   "status": "无实质动态",
+   "note": "No substantive new updates in the past 3 days"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "No new official progress on the Hukou CCL plant fire within this window"
+  },
+  {
+   "company": "LG",
+   "status": "无实质动态",
+   "note": "No substantive new updates in the past 3 days"
+  },
+  {
+   "company": "三星",
+   "status": "有实质动态",
+   "note": "Reached building automation cooperation with ABB on 11-10 (channel cooperation profile, not listed in the main text)"
+  },
+  {
+   "company": "Vertiv",
+   "status": "有实质动态",
+   "note": "Released outdoor medium-voltage UPS PowerNexus MV on 11-12; signed three-year Si/SiC agreement with Infineon on 11-04; stock closed at $209.64 (+1.52%) on 11-12"
+  },
+  {
+   "company": "英维克",
+   "status": "有实质动态",
+   "note": "Q3 single-quarter revenue of 1.933 billion RMB (+33%), contract liabilities of 665 million RMB; Q4 realization window is approaching"
+  },
+  {
+   "company": "申菱",
+   "status": "有实质动态",
+   "note": "Q3 revenue of 1.677 billion RMB (+103.2%), contract liabilities of 902 million RMB; Q4 realization window is approaching"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "No substantive new updates in the past 3 days"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "No substantive new updates in the past 3 days"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "No substantive new updates in the past 3 days"
+  },
+  {
+   "company": "联想",
+   "status": "无实质动态",
+   "note": "Token factory reported on 11-10; no new updates in the past 3 days"
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "Vertiv Releases Outdoor Medium-Voltage UPS PowerNexus MV, Shipping from Mid-2027",
+   "detail": "Vertiv released the outdoor medium-voltage UPS PowerNexus MV on 11-12: 3.0 MVA, direct connection to medium-voltage power grids, targeting AI data centers, with shipments starting from mid-2027; proof of concept already conducted in Bologna with QTS, SoftBank, and Rosendin; stock closed at $209.64 (+1.52%) on 11-12, extending the rebound since 11-09.",
+   "source": "Unite.AI, 2026-11-12",
+   "url": "https://www.unite.ai/vertiv-unveils-outdoor-medium-voltage-ups-for-ai-data-centers/",
+   "first_party": false,
+   "event_id": ""
+  },
+  {
+   "title": "Vertiv Signs Three-Year Si/SiC Power Semiconductor Strategic Supply Agreement with Infineon",
+   "detail": "Vertiv signed a three-year strategic agreement with Infineon on 11-04: securing long-term supply of Si and SiC power semiconductors to support 800VDC next-generation power systems; Infineon devices will be used in Vertiv's global products, covering data centers, communication networks, and industrial/commercial applications.",
+   "source": "Vertiv Official Website, 2026-11-04",
+   "url": "https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-and-infineon-deepen-strategic-partnership-for-critical-power-infrastructure/",
+   "first_party": true,
+   "event_id": "evt-vertiv-infineon-sic-deal"
+  },
+  {
+   "title": "Delta Releases SC26 800VDC 2.5MW In-Row CDU and Power Shelf Embedded Cold Plate",
+   "detail": "Delta released 'grid-to-chip' liquid cooling and 800VDC solutions at SC26 on 11-11: 800VDC 2.5MW in-row liquid-to-liquid CDU, power shelf embedded cold plate (up to 3,000W), and hot-swappable SSD cold plate.",
+   "source": "PR Newswire via Morningstar, 2026-11-11",
+   "url": "https://www.morningstar.com/news/pr-newswire/20261111sf94807/delta-unveils-from-grid-to-chip-cooling-innovations-for-ai-infrastructure-and-for-new-800-vdc-400-vdc-architectures-at-sc26",
+   "first_party": true,
+   "event_id": ""
+  },
+  {
+   "title": "Domestic Liquid-Cooling Tier 1 Q3 Financial Report Forward-Looking Indicators Improve, Q4 Expected to Centrally Realize Revenue",
+   "detail": "Envicool Q3 single-quarter revenue of 1.933 billion RMB (+33%), inventory of 2.507 billion RMB, contract liabilities of 665 million RMB; Shenling Q3 revenue of 1.677 billion RMB (+103.2%), inventory of 2.635 billion RMB, contract liabilities of 902 million RMB; Zheshang Securities stated that Q4 is expected to centrally realize revenue.",
+   "source": "21jingji.com, 2026-11-11",
+   "url": "https://www.21jingji.com/article/20261111/herald/c6ff311de2c74459f50c18c0cf7e9459.html",
+   "first_party": false,
+   "event_id": ""
+  },
+  {
+   "title": "China's Household Appliance Market First Three Quarters Retail Sales 604.1 Billion RMB, -10% YoY, Profit Divergence Among White Goods Giants",
+   "detail": "China's household appliance market first three quarters retail sales reached 604.1 billion RMB, down 10% YoY, with quarterly declines widening; Midea revenue of 369.087 billion RMB (+1.2%), net profit of 41.393 billion RMB (+9.27%); Haier revenue of 221.819 billion RMB (-5.23%), net profit of 14.999 billion RMB (-13.67%); Gree revenue of 126.544 billion RMB (-8.1%), net profit of 17.274 billion RMB (-19.51%).",
+   "source": "Xingkong Sports / Spiral Laboratory, 2026-11-09",
+   "url": "https://www.vaic-xing-kong.com.cn/detail/398258.html",
+   "first_party": false,
+   "event_id": ""
+  },
+  {
+   "title": "USTR Confirms Section 301 Maritime Fee Suspension Extended to January 9, 2027",
+   "detail": "USTR confirmed that Section 301 maritime fee suspensions are extended to January 9, 2027 (additional tariffs on service fees related to Chinese-flagged and Chinese-built vessels, shore cranes, and other cargo handling equipment remain suspended; China's reciprocal port fee suspension extended to January 10, 2027); the 178 Section 301 exclusions extended to January 9, 2027 were already reported on 11-11.",
+   "source": "GHY / The Logistic News, 2026-11-11/11-12",
+   "url": "https://thelogisticnews.com/us-extends-suspension-of-china-related-port-fees-until-january-2027/",
+   "first_party": false,
+   "event_id": "evt-busan-tariff-deal-2026"
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "DRAM/HBM",
+   "detail": "Samsung stated that 2027 HBM supply is sold out, SK Hynix has finalized HBM4 volume and pricing with customers for next year; DDR4 spot price in early November reported at $46.31 (weekly +2.55%, annual +856%), TrendForce predicts Q4 conventional DRAM contract prices will rise another 10-15%, NAND +15-20%",
+   "event_id": "evt-dram-hbm-shortage",
+   "source": "MemoryIndex, 2026-11-09",
+   "tags": [
+    "影响BOM",
+    "存储"
+   ]
+  },
+  {
+   "material": "MLCC",
+   "detail": "TrendForce states high-end shortages extend to the first half of 2027, most severe in 2027Q1-Q2, 1Q27 price negotiations start in November; Samsung Electro-Mechanics 4Q price increases expand to direct-supply OEM/ODM customers; standard lead time for some Samsung Electro-Mechanics MLCC on DigiKey reached 61 weeks (39-49 weeks in September), Murata 17 weeks, Yageo 28 weeks",
+   "event_id": "evt-mlcc-price-hike",
+   "source": "NextPCB, 2026-11-12",
+   "tags": [
+    "影响BOM",
+    "被动元件"
+   ]
+  },
+  {
+   "material": "Copper",
+   "detail": "LME 3M closed at $13,817/ton (+1.0%) on 11-11, Yangshan copper premium held at record high of $230/ton; Shanghai spot copper Guangdong average price on 11-12 at 108,560 RMB/ton (+190 RMB), basis premium still exceeds 1,000 RMB/ton; Yongan Futures stated smelting output reduction rumors are fermenting, November production may continue to decline",
+   "event_id": "evt-copper-high",
+   "source": "Gate / SMM, 2026-11-12",
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ]
+  },
+  {
+   "material": "Aluminum",
+   "detail": "LME 3M closed at $3,068.5/ton (+1.9%) on 11-11, spot premium over three-month futures briefly reached $151.50/ton (highest in 30 years), LME deliverable inventory dropped to lowest since 1990; Shanghai aluminum December contract briefly surged 2.65% intraday on 11-12",
+   "event_id": "evt-aluminum-spot-squeeze",
+   "source": "Sina Finance / Reuters, 2026-11-12",
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ]
+  },
+  {
+   "material": "Power Semiconductors / IGBTs",
+   "detail": "Vertiv and Infineon signed a three-year Si/SiC supply agreement (11-04) locking in the 800VDC power chain; Delta released the 800VDC 2.5MW in-row CDU (11-11) — the 800VDC architecture is moving from roadmap to product, locking in SiC/IGBT demand accordingly",
+   "event_id": "evt-vertiv-infineon-sic-deal",
+   "source": "Vertiv Official Website, 2026-11-04",
+   "tags": [
+    "影响BOM",
+    "功率器件"
+   ]
+  },
+  {
+   "material": "PCB/CCL",
+   "detail": "No new official progress on the Panasonic Hukou fire within this window (resumption of work still requires several months or more); 1Q27 MLCC price negotiations start, CCL 11-01 new letter and glass-fiber cloth price increases overlap, board cost pressure remains unabated",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "source": "21jingji.com, 2026-11-09",
+   "tags": [
+    "影响BOM",
+    "PCB"
+   ]
+  },
+  {
+   "material": "Liquid Cooling Demand",
+   "detail": "Envicool/Shenling Q3 financial report contract liabilities surge significantly (Envicool 665 million RMB, Shenling 902 million RMB), Q4 delivery centralized realization window is approaching, cold plate/CDU capacity and acceptance pace are key variables",
+   "event_id": "",
+   "source": "21jingji.com, 2026-11-11",
+   "tags": [
+    "影响BOM"
+   ]
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "Pipe Fittings & Valves / PVF",
+   "detail": "US PHCP-PVF another round of general increases in November: Crane full line, American Tube & Pipe +8% (both effective 11-01), Gastite +6% (effective 11-23); slowed down in October, another round starting in November, valve and pipe fitting costs continue to rise",
+   "event_id": "",
+   "source": "Supply House Times, 2026-11-04 (Updated 11-10)"
+  },
+  {
+   "industry": "Lead-Acid Batteries",
+   "detail": "SMM stated on 11-06 that lead-acid battery terminal consumption continues to weaken (electric vehicle peak season ends), downstream cautious procurement, some enterprises suspend procurement after lead prices rebounded to 16,000 RMB/ton — UPS backup battery procurement negotiation window is relatively favorable",
+   "event_id": "",
+   "source": "SMM, 2026-11-06"
+  },
+  {
+   "industry": "Chemicals / Coolant Raw Materials",
+   "detail": "Ethylene glycol spot reported at 5,866.67 RMB/ton (+3.29%) on 11-12, DCE main contract EG2701 closed at 5,048 RMB/ton, East China main port inventory dropped to nearly a five-year low — polyester demand and chemical costs transmit to liquid coolant formulation costs",
+   "event_id": "evt-ethylene-glycol-cost-up",
+   "source": "Price CloudO3 / SunSirs, 2026-11-12"
+  },
+  {
+   "industry": "Home Appliance Demand",
+   "detail": "China's household appliance market first three quarters retail sales reached 604.1 billion RMB, down 10% YoY, quarterly declines widening — complete machine manufacturers' scheduling and copper/aluminum procurement pace are under simultaneous pressure, peak season stock replenishment expectations downgraded",
+   "event_id": "",
+   "source": "Xingkong Sports / Spiral Laboratory, 2026-11-09"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261113-01",
+   "title": "Aluminum Spot Premium Hits 30-Year Record",
+   "urgency": "高",
+   "impact": "Aluminum — Aluminum Fin Stock",
+   "action": "Check inventory coverage and long-term contracts for aluminum fins/heat-exchanger aluminum, lock prices in batches for near-month consumption; monitor LME canceled warrants and spot premium pullbacks before negotiating long-term orders",
+   "trigger": "LME spot premium at $151.50/ton (11-11), SHFE aluminum Dec contract +2.65% intraday on 11-12",
+   "deadline": "",
+   "related_events": [
+    "evt-20261113-01"
+   ]
+  },
+  {
+   "id": "warn-20261113-02",
+   "title": "Extreme Tightness in Copper Spot Market Unrelieved",
+   "urgency": "中",
+   "impact": "Copper/Silver",
+   "action": "Lock prices in batches for near-month consumption, avoid chasing short positions; monitor Yangshan premium and SHFE inventory pullbacks before negotiating long-term orders",
+   "trigger": "Yangshan premium at $230/ton (11-11), SHFE copper premium still exceeding 1,000 RMB/ton",
+   "deadline": "",
+   "related_events": [
+    "evt-20261113-02"
+   ]
+  },
+  {
+   "id": "warn-20261113-03",
+   "title": "HBM4 Sold Out Next Year, Memory Shortage Tightens Further",
+   "urgency": "高",
+   "impact": "Chips and Semiconductors",
+   "action": "Set cost budget for board-level memory part numbers at Q4 contract +10–15%, verify inventory and long-term agreement coverage; lock in 2027 memory allocation ahead of time",
+   "trigger": "Samsung HBM sold out through 2027, DDR4 spot at $46.31",
+   "deadline": "",
+   "related_events": [
+    "evt-20261113-03"
+   ]
+  },
+  {
+   "id": "warn-20261113-04",
+   "title": "High-End MLCC Shortage Extends to 2027H1, 1Q27 Price Negotiations Starting This Month",
+   "urgency": "高",
+   "impact": "Passive Components and Connectors",
+   "action": "Lock in 2027 allocation for high-capacitance MLCCs, verify Murata discontinuation list (last-time buy 2028-03-31); complete inventory audits and alternative material verification prior to 1Q27 price negotiations",
+   "trigger": "TrendForce 11-12 statement, Samsung lead time at 61 weeks",
+   "deadline": "2028-03-31",
+   "related_events": [
+    "evt-mlcc-price-hike"
+   ]
+  },
+  {
+   "id": "warn-20261113-05",
+   "title": "Panasonic Fire Impacts High-End CCL (Continued)",
+   "urgency": "高",
+   "impact": "PCB/CCL",
+   "action": "Check in-transit MEGTRON part numbers and inventory coverage, request alternative part numbers from Taiwanese CCL suppliers (EMC/TUC/ITEQ) and initiate re-qualification; extend long-term agreements for glass-fiber cloth and prepreg to 2027H1",
+   "trigger": "Panasonic fire on 11-04, CCL 11-01 new notice, glass-fiber cloth price increase on 11-03",
+   "deadline": "",
+   "related_events": [
+    "evt-pcb-ccl-price-hike-2"
+   ]
+  },
+  {
+   "id": "warn-20261113-06",
+   "title": "Section 301 Ocean Freight Suspension Extended to 2027-01-09, But Only for Two Months",
+   "urgency": "中",
+   "impact": "Complete Equipment / Import Logistics",
+   "action": "Reverse schedule ocean freight booking and arrival cadence based on 2027-01-09, assess cost exposure from rate restorations after January; monitor US-China consultations and extension signals in December",
+   "trigger": "USTR confirmed extension on 11-11/12",
+   "deadline": "2027-01-09",
+   "related_events": [
+    "evt-busan-tariff-deal-2026"
+   ]
+  },
+  {
+   "id": "warn-20261113-07",
+   "title": "Ethylene Glycol (Coolant Raw Material) Spot Price Strengthens",
+   "urgency": "中",
+   "impact": "Liquid Cooling and Thermal Management",
+   "action": "Check inventory coverage for coolant/ethylene glycol part numbers, lock prices in batches for near-month consumption; monitor port arrivals and import volume rebound signals",
+   "trigger": "Ethylene glycol spot at 5,866.67 RMB/ton (11-12), major port inventories near 5-year lows",
+   "deadline": "",
+   "related_events": [
+    "evt-ethylene-glycol-cost-up"
+   ]
+  }
+ ],
+ "daily_report": {
+  "title": "HVAC / Liquid-Cooling CDU Industry Intelligence Morning Briefing (2026-11-13 · Friday)",
+  "date": "2026-11-13",
+  "body_file": "briefs/2026-11-13-hvac-cdu-morning-briefing.md",
+  "headlines": [
+   "Aluminum spot premium hits 30-year record, LME inventory at lowest since 1990: spot premium once reached $151.50/ton",
+   "Extreme tightness in copper spot market unrelieved: LME 3M closed at $13,817/ton on 11-11, Yangshan premium holding at record high of $230/ton",
+   "HBM4 next year's supply sold out, memory shortage tightens further: DDR4 spot up 856% YoY, Q4 contract prices projected to rise another 10–15%"
+  ]
+ },
+ "time_anchors": [
+  {
+   "date": "2027-01-01",
+   "label": "Effective date of ST 4th price hike (rumored)"
+  },
+  {
+   "date": "2027-01-04",
+   "label": "Marino\\WARE steel product further price increase takes effect"
+  },
+  {
+   "date": "2027-01-09",
+   "label": "Expiration of Section 301 178 exclusions and ocean freight suspension post-extension"
+  },
+  {
+   "date": "2027-01-10",
+   "label": "Expiration of rare earth export control suspension post-extension"
+  },
+  {
+   "date": "2028-03-31",
+   "label": "Murata discontinued MLCC last-time buy date"
+  }
+ ],
+ "meta": {
+  "date": "2026-11-13",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-11-13-hvac-cdu-morning-briefing.md",
+  "note": "Friday morning briefing. Three top stories: aluminum spot premium hits 30-year record (LME inventories lowest since 1990); extreme copper spot tightness unrelieved (Yangshan premium at record high of $230/ton); HBM4 supply sold out for next year (DDR4 spot +856% YoY). Industry dynamics: Vertiv outdoor medium-voltage UPS launch, Vertiv x Infineon 3-year Si/SiC agreement (retroactively reported for 11-04), Delta SC26 800VDC liquid-cooling solution, liquid-cooling Tier 1 Q3 forward metrics positive, USTR confirms Section 301 ocean freight suspension extended to 2027-01-09. Event DB: 1 new event created (aluminum spot squeeze), 8 timeline entries appended. Tier B batch 12: 4 hits (coolant, heat exchangers & cold plates, power devices, lead-acid batteries), remaining 7 showing no anomalies. English version: generated by 09:00 translation cron."
+ }
+}
