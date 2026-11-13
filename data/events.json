@@ -288,6 +288,11 @@
      "date": "2026-11-12",
      "change": "TrendForce 称高端 MLCC 短缺延至 2027 年上半年、最严重在 2027Q1-Q2，1Q27 议价 11 月启动；三星电机 4Q 涨价扩至直供 OEM/ODM 客户；部分三星电机 MLCC 在 DigiKey 标准交期已达 61 周（9 月为 39-49 周），村田 17 周、国巨 28 周。",
      "text_en": "TrendForce said the high-end MLCC shortage extends through 1H27, worst in 1Q-2Q27, with 1Q27 price talks starting in November; Samsung Electro-Mechanics extended its 4Q price hikes to direct OEM/ODM customers; some Samsung MLCCs reached a 61-week standard lead time at DigiKey (39-49 weeks in September), vs 17 weeks for Murata and 28 for Yageo."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "松下跟进聚合物钽电容 +15%–30%、二氧化锰型 +10%–20%，部分聚合物钽最长交期 84 周，2027 年产能已订出 70%–80%（KEMET 第二轮涨价 11-01 生效已报）；三星电机部分型号 DigiKey 标准交期 61 周，11 月内启动 2027 年一季度议价。",
+     "text_en": "Panasonic followed with polymer tantalum capacitors +15%-30% and manganese-dioxide types +10%-20%; some polymer tantalum lead times reach 84 weeks, with 70%-80% of 2027 capacity already booked (KEMET's second-round hike took effect Nov 1); Samsung Electro-Mechanics standard lead times on some models via DigiKey reached 61 weeks, and Q1 2027 price talks start within November."
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -467,6 +472,11 @@
      "date": "2026-11-12",
      "change": "LME 3M 11-11 收 13,817 美元/吨（+1.0%），洋山铜溢价持于 230 美元/吨纪录高位；沪铜现货 11-12 广东均价 108,560 元/吨（+190 元）、升水仍超 1,000 元/吨；永安期货称冶炼减产传闻发酵、11 月产量或继续下滑。",
      "text_en": "LME 3M closed Nov 11 at $13,817/t (+1.0%); Yangshan copper premium held at a record $230/t; SHFE spot copper in Guangdong averaged RMB 108,560/t on Nov 12 (+RMB 190), premium still above RMB 1,000/t; Yongan Futures cited smelter output-cut talk with November output likely to fall further."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "LME 3M 11-12 夜盘收 13,605 美元/吨（-1.37%），11-13 约 13,484.50 美元/吨、料创连续第五周下跌；洋山铜溢价 11-13 再创新高：仓单均价 285 美元/吨（+45）、提单 265 美元/吨（+35）；铜精矿 TC 指数 -247.68 美元/干吨纪录低位，SMM 预计 11 月精炼铜产量 108.2 万吨为年内低点。",
+     "text_en": "LME 3M copper closed overnight Nov 12 at $13,605/t (-1.37%) and traded around $13,484.50/t on Nov 13, set for a fifth straight weekly loss; the Yangshan premium hit a fresh record on Nov 13, with warrants averaging $285/t (+$45) and bills of lading $265/t (+$35); the copper concentrate TC index fell to a record low of -$247.68/dmt, and SMM expects November refined copper output of 1.082 Mt, the year's low."
     }
    ],
    "title": "铜价历史高位",
@@ -678,6 +688,11 @@
      "date": "2026-11-12",
      "change": "三星称 2027 年 HBM 供应已售罄，SK 海力士已与客户敲定明年 HBM4 量价；DDR4 现货 11 月初报 46.31 美元（周 +2.55%、年 +856%）；TrendForce 预测 Q4 常规 DRAM 合约价再涨 10-15%、NAND +15-20%。",
      "text_en": "Samsung said 2027 HBM supply is sold out; SK hynix has agreed next year's HBM4 volume and pricing with customers; DDR4 spot printed $46.31 in early November (+2.55% WoW, +856% YoY); TrendForce forecasts Q4 conventional DRAM contract prices up another 10-15% and NAND up 15-20%."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "TrendForce 11-12 称多家头部原厂已口头向渠道释放企业级颗粒提价意向（正式提价函尚未下发，渠道价已先动）；Q4 常规 DRAM 合约价预计 +10–15%、NAND +15–20%；SK 海力士 DRAM 与 HBM「实际售罄至 2029 年」；DDR4 现货周均 46.51 美元（周 -2.7%，连跌四周，仍处历史高位）。",
+     "text_en": "TrendForce reported Nov 12 that several leading memory makers have verbally signalled a new round of enterprise-grade price increases to distributors (no formal letter yet, but channel prices have already moved); Q4 conventional DRAM contract prices are forecast +10-15% and NAND +15-20%; SK Hynix says its DRAM and HBM are 'effectively sold out through 2029'; DDR4 spot averaged $46.51 for the week (-2.7% w/w, a fourth straight weekly fall, still near historic highs)."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -942,6 +957,11 @@
      "date": "2026-11-11",
      "change": "11-01 新一轮涨价（M6 及以下 +15%、半固化片 +25%，两年最大单轮）；玻纤布 11-03 全面涨价（7628 厚布 +1.5 元/米）；生益称产能紧张、预计本月还有调整",
      "text_en": "New hike round from Nov 1 (M6 and below +15%, prepreg +25%, biggest single round in two years); fiberglass cloth prices up across the board on Nov 3 (7628 heavy cloth +RMB 1.5/m); Shengyi says capacity is tight and another adjustment is expected this month"
+    },
+    {
+     "date": "2026-11-13",
+     "change": "松下湖口厂 11-12/13 无官方新进展（11-05 口径：2 名失踪员工确认死亡，复产时间表未发布）；CCL 涨价已运行 4–5 个季度，招商证券调研称保守预期每月涨价持续至 2027-06；某 PCB 上市公司今年以来累计涨价约 30%（高端 +40%–50%）；电子布薄布紧缺或持续至 2027-06。",
+     "text_en": "No official update from Panasonic's Hukou plant on Nov 12-13 (Nov 5 status: two missing workers confirmed dead, no restart timetable); CCL price hikes have run for 4-5 quarters, and China Merchants Securities research expects monthly increases to continue through June 2027; one listed PCB maker has raised prices about 30% this year (40%-50% on high-end products); thin glass-fabric tightness may persist through June 2027."
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1088,6 +1108,11 @@
      "date": "2026-11-12",
      "change": "氧化镨钕 11-12 报 715,000-718,000 元/吨（周环比上行），氧化镝 151-152 万元/吨连日走强，中重稀土领涨；Mysteel 氧化镨钕指数 716,500 元/吨。",
      "text_en": "Pr-Nd oxide quoted RMB 715,000-718,000/t on Nov 12 (up WoW); dysprosium oxide rose for consecutive days to RMB 1.51-1.52 million/t, with medium-heavy rare earths leading gains; Mysteel's Pr-Nd oxide index stood at RMB 716,500/t."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "氧化镨钕 11-13 报 717,000–719,000 元/吨（较 11-12 小幅上行），氧化镝 1,520–1,530 元/千克、氧化铽 6,400–6,450 元/千克继续上涨，镨钕金属 870,000–875,000 元/吨。",
+     "text_en": "Praseodymium-neodymium oxide quoted RMB 717,000-719,000/t on Nov 13 (slightly up from Nov 12); dysprosium oxide RMB 1,520-1,530/kg and terbium oxide RMB 6,400-6,450/kg kept rising; praseodymium-neodymium metal RMB 870,000-875,000/t."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -2628,6 +2653,11 @@
      "date": "2026-10-29",
      "change": "电话会下调全年有机经营杠杆与价格传导预期，承认通胀与供应链压力。",
      "text_en": "Earnings call: full-year organic operating leverage and price-realization outlook trimmed, citing inflation and supply-chain pressure."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "Baird 工业大会（11-12）称北美 14 个商用 HVAC 垂直行业中 Q3 有 11 个增长；Thermo King 订单 Q3 同比增长 30% 以上（此前连跌四年）；未给出 2027 年详细指引。",
+     "text_en": "At the Baird industrials conference (Nov 12), Trane said 11 of 14 North American commercial HVAC verticals grew in Q3; Thermo King orders rose more than 30% y/y in Q3 after four years of decline; no detailed 2027 guidance was given."
     }
    ],
    "title": "特灵Q3：营收+18%、在手订单125亿美元大涨73%",
@@ -2753,6 +2783,11 @@
      "date": "2026-11-11",
      "change": "11 月氢氟酸招标价 15,300-15,650 元/吨；R32 大厂报价坚挺、开工率约 40%；R32 华东参考价仍为 63,500-64,800 元/吨。",
      "text_en": "November hydrofluoric acid tender prices settled at RMB 15,300-15,650/t; leading R32 producers held offers firm with operating rates near 40%; East China R32 reference price unchanged at RMB 63,500-64,800/t."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "R32 华东 63,500–64,500 元/吨、R410A 57,000–59,500 元/吨，与上周持平；Q4 长协 R32 65,600 / R410A 60,500 元/吨（承兑），较三季度再涨约 500 元/吨；11 月空调排产预增 17.5%（10 月内销排产 510 万台、同比 +3.1% 转正）。",
+     "text_en": "R32 in East China held at RMB 63,500-64,500/t and R410A at RMB 57,000-59,500/t, flat w/w; Q4 contract prices are R32 RMB 65,600/t and R410A RMB 60,500/t (acceptance), up about RMB 500/t from Q3; November air-conditioner production schedules are expected +17.5% (October domestic sales schedules of 5.1m units, +3.1% y/y, back to growth)."
     }
    ]
   },
@@ -3284,6 +3319,11 @@
      "date": "2026-11-09",
      "change": "沪胶 RU2701 11-04 收 18,865 元/吨（-1.92%），较 10-12 高点 21,005 回撤超 10%；但原料端仍处历史高位：科特迪瓦 11 月原料价 578 西非法郎/kg（同比 +66.6%）再创历史新高；ANRPC 预计 2026 全球天然橡胶供需缺口约 31.7 万吨",
      "text_en": "SHFE rubber RU2701 closed at 18,865 yuan/t on Nov 4 (-1.92%), more than 10% below the Oct 12 high of 21,005; raw material prices remain at record highs - Cote d’Ivoire November feedstock at 578 CFA francs/kg (+66.6% y/y), another record; ANRPC expects a global natural rubber deficit of about 317,000 t in 2026"
+    },
+    {
+     "date": "2026-11-13",
+     "change": "沪胶主力 RU2701 11-11 收 19,475 元/吨（单日 +675 元、+3.62%），三连阳累计 +1,100 余点；青岛天胶库存 54.76 万吨（环比 -2.57%），保税区仅 4.22 万吨（-12.05%）；10 月中国天然及合成橡胶进口 55.3 万吨（同比 -17.1%）。",
+     "text_en": "SHFE rubber futures (RU2701) closed Nov 11 at RMB 19,475/t (+RMB 675, +3.62%), a third straight daily gain totalling over 1,100 points; Qingdao natural rubber stocks were 547,600 t (-2.57% w/w) and bonded stocks only 42,200 t (-12.05%); China's October natural and synthetic rubber imports were 553,000 t (-17.1% y/y)."
     }
    ]
   },
@@ -3339,6 +3379,11 @@
      "date": "2026-11-11",
      "change": "热轧现货超 1,450 美元/吨、创 4 年半新高；Steel Warehouse 11 月热轧报 1,326 美元/吨（上月 1,260）；SMU 板材交期延至 2027 年 1-2 月（2021 年后最长）；中钢 12 月涨价 NT$300/吨",
      "text_en": "Hot-rolled coil spot above $1,450/t, a 4.5-year high; Steel Warehouse November HRC at $1,326/t (vs $1,260 last month); SMU sheet lead times extended to Jan-Feb 2027 (longest since 2021); China Steel raising December prices by NT$300/t"
+    },
+    {
+     "date": "2026-11-13",
+     "change": "Nucor 热轧 11-09 再涨 15 美元/短吨（连续第 17 周上调，CSP 至 1,295 美元/短吨）；板材 11-13 宣布 +70 美元/短吨并开启 12 月订货，SMU 板材均价 1,550 美元/短吨（周 +55）；232 条款 50% 关税封堵进口，板材交期已进入 2027 年。",
+     "text_en": "Nucor raised hot-rolled coil by $15/st on Nov 9 (a 17th consecutive weekly increase, CSP $1,295/st); plate rose $70/st on Nov 13 with December bookings opened, and the SMU plate average reached $1,550/st (+$55 w/w); Section 232's 50% tariffs block imports, and plate lead times have moved into 2027."
     }
    ],
    "subcategories": [
@@ -3356,6 +3401,11 @@
      "date": "2026-11-11",
      "change": "江森自控与 Armada 在都柏林 Galleon Forge Two 工厂开始连续生产模块化 AI 数据中心 Leviathan，首台已发往挪威 Fossefall，首批 5 台合计超 9MW、2027 年一季度前交付，双方目标 2027 年产能至少 500MW",
      "text_en": "Johnson Controls and Armada began continuous production of the modular AI data center Leviathan at the Galleon Forge Two plant in Dublin; the first unit shipped to Fossefall, Norway, with the first batch of 5 units totaling over 9MW due before end-Q1 2027 and a joint target of at least 500MW capacity in 2027"
+    },
+    {
+     "date": "2026-11-11",
+     "change": "Armada×JCI 都柏林 Galleon Forge Two 投产：9 万平方英尺工厂开始连续生产，首台 Leviathan 模块化数据中心发往挪威 Fossefall；首批 5 台、合计 9MW 以上，2027 年 Q1 前交付；双方目标 2027 年 Galleon Forge 产能至少 500MW（产能目标，非已签订单）。",
+     "text_en": "Armada and JCI launched Galleon Forge Two in Dublin: the 90,000 sq ft plant began continuous production, with the first Leviathan modular data centre shipped to Fossefall, Norway; the first batch is 5 units totalling over 9MW, to be delivered before Q1 2027; the partners target at least 500MW of Galleon Forge capacity in 2027 (a capacity target, not signed orders)."
     }
    ],
    "subcategories": [],
@@ -3439,10 +3489,78 @@
      "date": "2026-11-12",
      "change": "LME 3M 11-11 收 3,068.5 美元/吨（+1.9%），现货较三个月期货升水一度达 151.50 美元/吨（30 年来最高），LME 可交割库存降至 1990 年以来最低、很大一部分剩余库存被两家交易商控制；沪铝 12 月合约 11-12 盘中一度涨 2.65%。",
      "text_en": "LME 3M aluminium closed Nov 11 at $3,068.5/t (+1.9%); the cash-to-3M premium touched $151.50/t, a 30-year high; LME deliverable stocks fell to their lowest since 1990, with much of the remaining stock controlled by two traders; the SHFE December aluminium contract rose as much as 2.65% intraday on Nov 12."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "现货升水 11-12 盘中达 176.80 美元/吨（1990 年 11 月以来最高、36 年纪录），刷新 151.50 美元/吨的 30 年纪录；LME 库存降至 226,350 吨（不到 1 月均值 498,670 吨的一半），99.98% 为俄罗斯 origin、单一持有者占 30–39% 仓单；11 月合约 11-18 到期、持仓总量已超交易所全部库存。",
+     "text_en": "The cash premium touched $176.80/t intraday on Nov 12, the highest since November 1990 (a 36-year record), topping the $151.50/t 30-year record; LME stocks fell to 226,350 t (under half the January average of 498,670 t), 99.98% of Russian origin, with a single holder controlling 30-39% of warrants; the November contract expires Nov 18 with open interest already above total exchange stocks."
     }
    ],
-   "title": "铝现货升水创 30 年纪录、LME 库存 1990 年以来最低",
-   "title_en": "Aluminium spot premium hits 30-year record; LME stocks lowest since 1990"
+   "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
+   "title_en": "Aluminium spot premium hits 36-year record; LME stocks lowest since 1990"
+  },
+  {
+   "id": "evt-samsung-modine-talks",
+   "seeded": false,
+   "status": "传闻",
+   "status_note": "",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [
+    "并购"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-13",
+     "change": "彭博 11-12 爆料三星洽购美国数据中心制冷商 Modine，未做最终决定、谈判可能破裂，三星与 Modine 均拒绝置评；Modine 市值约 56 亿美元；Modine 11-11 得州 Grand Prairie 新厂量产 2–3MW 数据中心冷水机、Q3 数据中心业务收入 4.397 亿美元（+95%）。",
+     "text_en": "Bloomberg reported Nov 12 that Samsung is in talks to acquire US data-center cooling maker Modine, with no final decision made and talks possibly collapsing; both companies declined to comment. Modine is valued at about $5.6bn; its new Grand Prairie, Texas plant began volume production of 2-3MW data-center chillers on Nov 11, and its Q3 data-center revenue was $439.7m (+95%)."
+    }
+   ],
+   "title": "三星洽购美国数据中心制冷商 Modine（彭博爆料，在谈未证实）",
+   "title_en": "Samsung in talks to acquire US data-center cooling maker Modine (Bloomberg report, unconfirmed)"
+  },
+  {
+   "id": "evt-vertiv-powerstation-3100-rpp",
+   "seeded": false,
+   "status": "已落地",
+   "status_note": "",
+   "subcategories": [
+    "低压电气与配电"
+   ],
+   "tags": [
+    "新品发布"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-13",
+     "change": "Vertiv 发布 PowerStation 3100 RPP：面向 100kW 以上 AI/HPC 机架的远程配电盘，600–1,200A 单一硬件平台，北美即刻供货；容量为传统配电盘式 RPP 的 3–5 倍，可单机架切断电源、配合液冷漏液隔离。",
+     "text_en": "Vertiv launched the PowerStation 3100 RPP, a remote power panel for 100kW+ AI/HPC racks on a single 600-1,200A hardware platform, available immediately in North America; capacity is 3-5x a conventional panelboard-style RPP, with per-rack power cut-off for liquid-cooling leak isolation."
+    }
+   ],
+   "title": "Vertiv 发布 PowerStation 3100 RPP（100kW+ 机架高密度配电）",
+   "title_en": "Vertiv launches PowerStation 3100 RPP for 100kW+ high-density racks"
+  },
+  {
+   "id": "evt-infineon-300mm-sic-milestone",
+   "seeded": false,
+   "status": "已落地",
+   "status_note": "",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [
+    "技术路线"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-13",
+     "change": "英飞凌 11-09 宣布在奥地利 Villach 工厂成功加工出功能性 300mm SiC 功率器件（用现有 300mm 硅产线），单片晶圆芯片数约为 200mm 的 2.3 倍；量产时间表待与客户商定，200mm SiC 路线图不变。",
+     "text_en": "Infineon announced Nov 9 that it has processed functional 300mm SiC power devices at its Villach, Austria fab (using an existing 300mm silicon line), with about 2.3x the chips per wafer of 200mm; the volume-production timetable is to be agreed with customers, and the 200mm SiC roadmap is unchanged."
+    }
+   ],
+   "title": "英飞凌加工出功能性 300mm SiC 功率器件",
+   "title_en": "Infineon processes functional 300mm SiC power devices"
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -3454,5 +3572,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-13"
+ "updated": "2026-11-14"
 }
