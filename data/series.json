@@ -147,6 +147,11 @@
       "date": "2026-11-12",
       "value": 13655,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-13",
+      "value": 13545,
+      "src": "westmetall"
     }
   ],
   "aluminium_lme_usd_t": [
@@ -293,6 +298,11 @@
     {
       "date": "2026-11-12",
       "value": 3032,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-13",
+      "value": 3018,
       "src": "westmetall"
     }
   ],
