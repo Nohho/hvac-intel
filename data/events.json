@@ -293,6 +293,11 @@
      "date": "2026-11-13",
      "change": "松下跟进聚合物钽电容 +15%–30%、二氧化锰型 +10%–20%，部分聚合物钽最长交期 84 周，2027 年产能已订出 70%–80%（KEMET 第二轮涨价 11-01 生效已报）；三星电机部分型号 DigiKey 标准交期 61 周，11 月内启动 2027 年一季度议价。",
      "text_en": "Panasonic followed with polymer tantalum capacitors +15%-30% and manganese-dioxide types +10%-20%; some polymer tantalum lead times reach 84 weeks, with 70%-80% of 2027 capacity already booked (KEMET's second-round hike took effect Nov 1); Samsung Electro-Mechanics standard lead times on some models via DigiKey reached 61 weeks, and Q1 2027 price talks start within November."
+    },
+    {
+     "date": "2026-11-12",
+     "change": "三星电机 Q4 起将涨价延伸至直供 OEM/ODM 客户，消费级 X5R 约 +25–30%、AI 服务器 X6S +10–20%（TrendForce 估算、非公司确认）；国巨下一轮高容酝酿 +50% 以上、中低容 +10–30%（分销商口径、未确认）。",
+     "text_en": "Samsung Electro-Mechanics extended its Q4 price hikes to direct OEM/ODM customers, consumer X5R up about 25-30% and AI-server X6S up 10-20% (TrendForce estimates, not company-confirmed); Yageo is reported to be preparing a next round of over +50% on high-capacitance and +10-30% on mid/low-capacitance (distributor accounts, unconfirmed)."
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -477,6 +482,11 @@
      "date": "2026-11-13",
      "change": "LME 3M 11-12 夜盘收 13,605 美元/吨（-1.37%），11-13 约 13,484.50 美元/吨、料创连续第五周下跌；洋山铜溢价 11-13 再创新高：仓单均价 285 美元/吨（+45）、提单 265 美元/吨（+35）；铜精矿 TC 指数 -247.68 美元/干吨纪录低位，SMM 预计 11 月精炼铜产量 108.2 万吨为年内低点。",
      "text_en": "LME 3M copper closed overnight Nov 12 at $13,605/t (-1.37%) and traded around $13,484.50/t on Nov 13, set for a fifth straight weekly loss; the Yangshan premium hit a fresh record on Nov 13, with warrants averaging $285/t (+$45) and bills of lading $265/t (+$35); the copper concentrate TC index fell to a record low of -$247.68/dmt, and SMM expects November refined copper output of 1.082 Mt, the year's low."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "LME 3M 官方收盘约 13,544 美元/吨（当日净跌约 120 美元）；沪铜现货对 2611 合约升水已从 11-06 创纪录的 2,615 元/吨回落至 200–250 元/吨；2611 合约 11-16 最后交易日、11-17–18 交割；上海电解铜现货 108,955 元/吨（+500 元）。",
+     "text_en": "LME 3M official close about $13,544/t (down about $120 on the day); the SHFE spot premium over the 2611 contract fell to RMB 200-250/t from a record RMB 2,615/t on Nov 6; the 2611 contract last trades Nov 16 with delivery Nov 17-18; Shanghai electrolytic copper spot RMB 108,955/t (+RMB 500)."
     }
    ],
    "title": "铜价历史高位",
@@ -693,6 +703,11 @@
      "date": "2026-11-13",
      "change": "TrendForce 11-12 称多家头部原厂已口头向渠道释放企业级颗粒提价意向（正式提价函尚未下发，渠道价已先动）；Q4 常规 DRAM 合约价预计 +10–15%、NAND +15–20%；SK 海力士 DRAM 与 HBM「实际售罄至 2029 年」；DDR4 现货周均 46.51 美元（周 -2.7%，连跌四周，仍处历史高位）。",
      "text_en": "TrendForce reported Nov 12 that several leading memory makers have verbally signalled a new round of enterprise-grade price increases to distributors (no formal letter yet, but channel prices have already moved); Q4 conventional DRAM contract prices are forecast +10-15% and NAND +15-20%; SK Hynix says its DRAM and HBM are 'effectively sold out through 2029'; DDR4 spot averaged $46.51 for the week (-2.7% w/w, a fourth straight weekly fall, still near historic highs)."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "SK 海力士称内存短缺至少持续至 2030 年，2027–2028 年过半产能已被长期协议锁定；Counterpoint 称 2026 年 Q3 全球 DRAM 收入同比 +369% 至近 2,000 亿美元；DDR4 现货 11-12 会话均价 44.714 美元（单日 -0.40%）。",
+     "text_en": "SK Hynix said the memory shortage will last at least until 2030, with over half of 2027-2028 capacity already locked under long-term agreements; Counterpoint put global Q3 2026 DRAM revenue up 369% year on year to nearly $200 billion; DDR4 spot averaged $44.714 in the Nov 12 session (-0.40% on the day)."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -962,6 +977,11 @@
      "date": "2026-11-13",
      "change": "松下湖口厂 11-12/13 无官方新进展（11-05 口径：2 名失踪员工确认死亡，复产时间表未发布）；CCL 涨价已运行 4–5 个季度，招商证券调研称保守预期每月涨价持续至 2027-06；某 PCB 上市公司今年以来累计涨价约 30%（高端 +40%–50%）；电子布薄布紧缺或持续至 2027-06。",
      "text_en": "No official update from Panasonic's Hukou plant on Nov 12-13 (Nov 5 status: two missing workers confirmed dead, no restart timetable); CCL price hikes have run for 4-5 quarters, and China Merchants Securities research expects monthly increases to continue through June 2027; one listed PCB maker has raised prices about 30% this year (40%-50% on high-end products); thin glass-fabric tightness may persist through June 2027."
+    },
+    {
+     "date": "2026-11-09",
+     "change": "生益科技称覆铜板产能紧张、今年以来产品一直在提价、预计本月还将有调整；高性能 CCL 采购周期 24–32 周（一般 8–10 周），106/1080/2116 玻纤布短缺，PCB 整体成本上涨约 30–50%。",
+     "text_en": "Shengyi Technology said CCL capacity is tight, prices have risen all year and another adjustment is expected this month; high-performance CCL lead times run 24-32 weeks (8-10 weeks for standard grades), 106/1080/2116 glass fabric is short, and overall PCB costs are up about 30-50%."
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1113,6 +1133,11 @@
      "date": "2026-11-13",
      "change": "氧化镨钕 11-13 报 717,000–719,000 元/吨（较 11-12 小幅上行），氧化镝 1,520–1,530 元/千克、氧化铽 6,400–6,450 元/千克继续上涨，镨钕金属 870,000–875,000 元/吨。",
      "text_en": "Praseodymium-neodymium oxide quoted RMB 717,000-719,000/t on Nov 13 (slightly up from Nov 12); dysprosium oxide RMB 1,520-1,530/kg and terbium oxide RMB 6,400-6,450/kg kept rising; praseodymium-neodymium metal RMB 870,000-875,000/t."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "氧化镨钕报 717,000–719,000 元/吨（11-04 为 697,000–700,000 元/吨，11 月以来上行约 3%）；氧化镝 1,520–1,530 元/千克继续上涨。",
+     "text_en": "Praseodymium-neodymium oxide quoted RMB 717,000-719,000/t (RMB 697,000-700,000/t on Nov 4, up about 3% so far in November); dysprosium oxide RMB 1,520-1,530/kg, still rising."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -1887,6 +1912,11 @@
      "date": "2026-10-23",
      "change": "联想10-20在CCF HPC 2026（深圳）发布第六代问天海神液冷技术：仿生学冷板（AI算法生成非对称拓扑微通道，散热极限提升50%以上）、特种钢内存冷板、微通道全金刚石铜一体成型CPU冷板、全链路漏液监控、AI驱动多级PID闭环智控；数据中心PUE降至1.04（上海证券报/证券日报，10-20）",
      "text_en": "Lenovo unveiled its 6th-gen Poseidon liquid cooling at CCF HPC 2026 (Shenzhen) on Oct 20: bionic cold plates (AI-generated asymmetric topological microchannels, heat-dissipation limit up 50%+), special-steel memory cold plates, monolithic diamond-copper microchannel CPU cold plates, full-link leak monitoring, AI-driven multi-stage PID closed-loop control; data center PUE down to 1.04 (Shanghai Securities News / Securities Daily, Oct 20)"
+    },
+    {
+     "date": "2026-11-12",
+     "change": "联想全球首发两款第六代 AMD EPYC 问天服务器 WR6215 G6 与 WR5225 G6，第六代问天海神液冷散热极限提升 50% 以上，三款新品兼容风冷并提供温水液冷可选方案。",
+     "text_en": "Lenovo globally launched two sixth-generation AMD EPYC ThinkSystem servers, WR6215 G6 and WR5225 G6; sixth-generation Neptune liquid cooling raises the heat-dissipation limit by over 50%, and all three new models support air cooling with warm-water liquid cooling as an option."
     }
    ]
   },
@@ -2055,6 +2085,11 @@
      "date": "2026-11-11",
      "change": "11 月跟踪器：四大云 2026 年 capex 指引合计约 7350 亿美元（约 2025 年 4134 亿美元的 1.78 倍）；Q3 单季五家（含甲骨文）合计 2373 亿美元、同比 +95%，四家均称 2027 年继续增加",
      "text_en": "November tracker: big-four cloud 2026 capex guidance totals about $735B (about 1.78x 2025's $413.4B); Q3 single-quarter total for five (incl. Oracle) was $237.3B, +95% YoY, all four say 2027 spending rises further"
+    },
+    {
+     "date": "2026-11-10",
+     "change": "CoreWeave 2026 年 capex 指引 370–390 亿美元（低端上调），有功功率 9 月 30 日已超 1.7GW、年底目标 1.85GW 以上；Q4 capex 仍有 63–83 亿美元，增量多为 2027 年上线容量。",
+     "text_en": "CoreWeave guided 2026 capex of $37-39 billion (low end raised), with active power above 1.7 GW at Sep 30 and a year-end target above 1.85 GW; Q4 capex of $6.3-8.3 billion is mostly capacity coming online in 2027."
     }
    ]
   },
@@ -2777,7 +2812,7 @@
     {
      "date": "2026-11-05",
      "change": "10-30百川盈孚：R32/R134a/R125市场均价6.50/6.50/5.50万元/吨、近一月平稳；R22周度-5.26%至1.80万元/吨；2026年HFCs生产总配额79.78万吨（巨化占37.58%）。",
-     "text_en": "Oct 30 百川盈孚: R32/R134a/R125 at 65,000/65,000/55,000 yuan/ton, flat over the past month; R22 -5.26% WoW to 18,000 yuan/ton; 2026 HFCs production quota 797,800 tons (Juhua 37.58%)."
+     "text_en": "Oct 30 BaiChuan YingFu: R32/R134a/R125 at 65,000/65,000/55,000 yuan/ton, flat over the past month; R22 -5.26% WoW to 18,000 yuan/ton; 2026 HFCs production quota 797,800 tons (Juhua 37.58%)."
     },
     {
      "date": "2026-11-11",
@@ -2788,6 +2823,11 @@
      "date": "2026-11-13",
      "change": "R32 华东 63,500–64,500 元/吨、R410A 57,000–59,500 元/吨，与上周持平；Q4 长协 R32 65,600 / R410A 60,500 元/吨（承兑），较三季度再涨约 500 元/吨；11 月空调排产预增 17.5%（10 月内销排产 510 万台、同比 +3.1% 转正）。",
      "text_en": "R32 in East China held at RMB 63,500-64,500/t and R410A at RMB 57,000-59,500/t, flat w/w; Q4 contract prices are R32 RMB 65,600/t and R410A RMB 60,500/t (acceptance), up about RMB 500/t from Q3; November air-conditioner production schedules are expected +17.5% (October domestic sales schedules of 5.1m units, +3.1% y/y, back to growth)."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "最近口径（11 月中旬）：R32 64,500–65,500 元/吨、R410A 59,500–60,000 元/吨、R134a 64,000–65,000 元/吨且现货偏紧；巨化前三季营收 190.86 亿元（-6.41%）、归母净利 34.22 亿元（+5.34%），Q3 单季净利 7.71 亿元（-35.58%），制冷剂销量 6.0 万吨（同比 -21%）。",
+     "text_en": "Latest quotes (mid-November): R32 RMB 64,500-65,500/t, R410A RMB 59,500-60,000/t, R134a RMB 64,000-65,000/t with tight spot supply; Juhua 9M revenue RMB 19.086 billion (-6.41%), net profit RMB 3.422 billion (+5.34%), Q3 net profit RMB 771 million (-35.58%), refrigerant sales 60,000 t (-21% year on year)."
     }
    ]
   },
@@ -3163,6 +3203,11 @@
      "date": "2026-11-07",
      "change": "Vertiv 11-02 宣布液冷生态方案：扩展 Dow 合作、新增 Solenis 合作，液冷竞争从部件转向系统运维能力",
      "text_en": "Vertiv announced on Nov 2 a liquid-cooling ecosystem: expanded Dow collaboration and a new Solenis partnership, shifting liquid-cooling competition from components to system operations"
+    },
+    {
+     "date": "2026-11-12",
+     "change": "Vertiv 推出 AI 规模液冷全球生态，扩大与 Dow 的合作（Dow Coolant Care Network）并新结盟 Solenis，整合热管理基础设施、冷却液/流体健康监测与全生命周期服务。",
+     "text_en": "Vertiv launched a global ecosystem for AI-scale liquid cooling, expanding its Dow partnership (Dow Coolant Care Network) and adding Solenis, integrating thermal infrastructure, coolant/fluid health monitoring and full lifecycle services."
     }
    ]
   },
@@ -3324,6 +3369,11 @@
      "date": "2026-11-13",
      "change": "沪胶主力 RU2701 11-11 收 19,475 元/吨（单日 +675 元、+3.62%），三连阳累计 +1,100 余点；青岛天胶库存 54.76 万吨（环比 -2.57%），保税区仅 4.22 万吨（-12.05%）；10 月中国天然及合成橡胶进口 55.3 万吨（同比 -17.1%）。",
      "text_en": "SHFE rubber futures (RU2701) closed Nov 11 at RMB 19,475/t (+RMB 675, +3.62%), a third straight daily gain totalling over 1,100 points; Qingdao natural rubber stocks were 547,600 t (-2.57% w/w) and bonded stocks only 42,200 t (-12.05%); China's October natural and synthetic rubber imports were 553,000 t (-17.1% y/y)."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "印度轮胎协会 11-06 要求临时免税进口配额；ANRPC 预计 2026 年全球产量 1,503.9 万吨、消费 1,535.6 万吨，存在供应缺口。",
+     "text_en": "India tyre association ATMA on Nov 6 asked for a temporary duty-free import quota; ANRPC expects 2026 global output of 15.039 million tonnes against consumption of 15.356 million tonnes, a supply gap."
     }
    ]
   },
@@ -3384,6 +3434,11 @@
      "date": "2026-11-13",
      "change": "Nucor 热轧 11-09 再涨 15 美元/短吨（连续第 17 周上调，CSP 至 1,295 美元/短吨）；板材 11-13 宣布 +70 美元/短吨并开启 12 月订货，SMU 板材均价 1,550 美元/短吨（周 +55）；232 条款 50% 关税封堵进口，板材交期已进入 2027 年。",
      "text_en": "Nucor raised hot-rolled coil by $15/st on Nov 9 (a 17th consecutive weekly increase, CSP $1,295/st); plate rose $70/st on Nov 13 with December bookings opened, and the SMU plate average reached $1,550/st (+$55 w/w); Section 232's 50% tariffs block imports, and plate lead times have moved into 2027."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "Nucor 中厚板拟涨 70 美元/短吨、同时开放 12 月订单簿，订单须 11 月 27 日前提交；SMU 中厚板均价截至 11-10 为 1,550 美元/短吨（周涨 55 美元）；热卷 CSP 11-9 为 1,295 美元/短吨（周涨 15 美元）。",
+     "text_en": "Nucor plans a $70/short-ton plate increase and opened its December order book, with orders due by Nov 27; SMU plate averaged $1,550/short ton through Nov 10 (+$55 on the week); hot-rolled CSP was $1,295/short ton on Nov 9 (+$15 on the week)."
     }
    ],
    "subcategories": [
@@ -3494,6 +3549,11 @@
      "date": "2026-11-13",
      "change": "现货升水 11-12 盘中达 176.80 美元/吨（1990 年 11 月以来最高、36 年纪录），刷新 151.50 美元/吨的 30 年纪录；LME 库存降至 226,350 吨（不到 1 月均值 498,670 吨的一半），99.98% 为俄罗斯 origin、单一持有者占 30–39% 仓单；11 月合约 11-18 到期、持仓总量已超交易所全部库存。",
      "text_en": "The cash premium touched $176.80/t intraday on Nov 12, the highest since November 1990 (a 36-year record), topping the $151.50/t 30-year record; LME stocks fell to 226,350 t (under half the January average of 498,670 t), 99.98% of Russian origin, with a single holder controlling 30-39% of warrants; the November contract expires Nov 18 with open interest already above total exchange stocks."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "Trafigura 已建立大规模 LME 铝多头、拟运往中国出售，11 月主力合约多头头寸合计超过交易所全部库存；LME 3M 11-13 收约 3,018–3,025 美元/吨；SMM 提示到期后多头移仓、升水回吐的尾部风险；11 月合约 11-18 到期。",
+     "text_en": "Trafigura has built a large LME aluminium long position for shipment to China, with November longs in aggregate exceeding total exchange stocks; LME 3M closed Nov 13 at about $3,018-3,025/t; SMM flagged tail risk of premium give-back as longs roll after expiry; the November contract expires Nov 18."
     }
    ],
    "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
@@ -3515,6 +3575,11 @@
      "date": "2026-11-13",
      "change": "彭博 11-12 爆料三星洽购美国数据中心制冷商 Modine，未做最终决定、谈判可能破裂，三星与 Modine 均拒绝置评；Modine 市值约 56 亿美元；Modine 11-11 得州 Grand Prairie 新厂量产 2–3MW 数据中心冷水机、Q3 数据中心业务收入 4.397 亿美元（+95%）。",
      "text_en": "Bloomberg reported Nov 12 that Samsung is in talks to acquire US data-center cooling maker Modine, with no final decision made and talks possibly collapsing; both companies declined to comment. Modine is valued at about $5.6bn; its new Grand Prairie, Texas plant began volume production of 2-3MW data-center chillers on Nov 11, and its Q3 data-center revenue was $439.7m (+95%)."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "截至 11-14 仍无双方确认、签约或新报价，状态仍为洽谈中、未确认；Modine 11-12 盘后涨约 29%、11-13 盘中涨约 28–33% 至约 137 美元；韩媒引分析师估算全购价约 75–80 亿美元（非官方报价）。",
+     "text_en": "As of Nov 14 there is still no confirmation, signing or new offer from either side; the talks remain unconfirmed; Modine rose about 29% after hours on Nov 12 and 28-33% intraday on Nov 13 to about $137; Korean media cited analyst estimates of a $7.5-8.0 billion full-buy price (not an official offer)."
     }
    ],
    "title": "三星洽购美国数据中心制冷商 Modine（彭博爆料，在谈未证实）",
@@ -3557,10 +3622,153 @@
      "date": "2026-11-13",
      "change": "英飞凌 11-09 宣布在奥地利 Villach 工厂成功加工出功能性 300mm SiC 功率器件（用现有 300mm 硅产线），单片晶圆芯片数约为 200mm 的 2.3 倍；量产时间表待与客户商定，200mm SiC 路线图不变。",
      "text_en": "Infineon announced Nov 9 that it has processed functional 300mm SiC power devices at its Villach, Austria fab (using an existing 300mm silicon line), with about 2.3x the chips per wafer of 200mm; the volume-production timetable is to be agreed with customers, and the 200mm SiC roadmap is unchanged."
+    },
+    {
+     "date": "2026-11-10",
+     "change": "2026 财年营收 163.53 亿欧元（同比 +12%），Q4 营收 47.06 亿欧元创纪录，SiC 收入 7 亿欧元（+10%）、2027 财年预计超 10 亿欧元，2027 财年营收指引约 200 亿欧元。",
+     "text_en": "Fiscal 2026 revenue EUR 16.353 billion (+12% year on year), Q4 revenue a record EUR 4.706 billion, SiC revenue EUR 700 million (+10%) and expected above EUR 1 billion in fiscal 2027, with fiscal 2027 revenue guidance of about EUR 20 billion."
     }
    ],
    "title": "英飞凌加工出功能性 300mm SiC 功率器件",
    "title_en": "Infineon processes functional 300mm SiC power devices"
+  },
+  {
+   "id": "evt-nvidia-huang-resigns",
+   "seeded": false,
+   "status": "已落地",
+   "status_note": "",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-12",
+     "change": "黄仁勋即刻辞去总裁、CEO 与董事职务，结束 33 年任期，董事会未给理由；CFO Colette Kress 兼任临时 CEO（保留 CFO 职务），Harvey C. Jones 任首任董事长，永久 CEO 内外候选人遴选中、无时间表；当日股价开盘跌约 13%、收盘跌 4.34% 至 166.19 美元。",
+     "text_en": "Jensen Huang resigned immediately as president, CEO and director, ending a 33-year tenure, with no reason given by the board; CFO Colette Kress serves as interim CEO while keeping the CFO role, Harvey C. Jones becomes the first board chair, and the search for a permanent CEO is under way with no timetable; shares opened down about 13% and closed down 4.34% at $166.19."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "股价再跌 2.01% 至 162.85 美元；Morningstar 将公允价值下调 19% 至 310 美元；11-17 盘后发布 FY2027 Q3 财报。",
+     "text_en": "Shares fell another 2.01% to $162.85; Morningstar cut its fair value by 19% to $310; FY2027 Q3 results are due after the close on Nov 17."
+    }
+   ],
+   "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
+   "title_en": "Jensen Huang resigns as Nvidia CEO; Kress named interim CEO"
+  },
+  {
+   "id": "evt-onsemi-czech-sic-scrapped",
+   "seeded": false,
+   "status": "已落地",
+   "status_note": "",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-06",
+     "change": "安森美与捷克工贸部联合宣布取消罗兹诺夫 SiC 扩产计划（2024 年 6 月宣布、上限 20 亿美元），理由为全球 SiC 市场变化；现有硅与 SiC 生产继续。",
+     "text_en": "Onsemi and the Czech Ministry of Industry and Trade jointly announced the cancellation of the Roznov SiC expansion (announced June 2024, up to $2 billion), citing changes in the global SiC market; existing silicon and SiC production continues."
+    }
+   ],
+   "title": "安森美取消 20 亿美元捷克 SiC 扩产计划",
+   "title_en": "Onsemi scraps $2 billion Czech SiC expansion"
+  },
+  {
+   "id": "evt-vertiv-powernexus-mv-ups",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "低压电气"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-12",
+     "change": "3.0 MVA 户外系统，瞄准 AI 数据中心并网加速与室内空间释放，2027 年中开始发货，已与 QTS、SoftBank、Rosendin 做概念验证；博洛尼亚中压实验室计划 2027 年投运。",
+     "text_en": "A 3.0 MVA outdoor system aimed at faster AI data-center grid connection and freeing indoor space for compute, shipping from mid-2027, with proof-of-concept work under way with QTS, SoftBank and Rosendin; a medium-voltage lab in Bologna is planned to open in 2027."
+    }
+   ],
+   "title": "Vertiv 推出 PowerNexus MV UPS 中压电源系统",
+   "title_en": "Vertiv launches PowerNexus MV UPS medium-voltage power system"
+  },
+  {
+   "id": "evt-carrier-q4-residential-hike",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "空调"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-10-29",
+     "change": "10-29 财报电话会称住宅设备拟于 Q4 末提价约 8%、美洲整体约 10%，全年输入成本压力约 8 亿美元、约半数来自关税。",
+     "text_en": "On the Oct 29 earnings call, Carrier said residential equipment prices would rise about 8% at the end of Q4, about 10% across the Americas, with full-year input cost pressure of about $800 million, roughly half from tariffs."
+    }
+   ],
+   "title": "开利住宅设备拟于 Q4 末提价约 8%",
+   "title_en": "Carrier plans ~8% residential equipment price hike at end of Q4"
+  },
+  {
+   "id": "evt-samsung-onyang-packaging-fab",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "存储器"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-14",
+     "change": "牙山 Onyang 园区新增 3.1 万平方米洁净室，主攻下一代 HBM 堆叠封装，目标 2028 年 6 月洁净室投运、2029 年 5 月量产，系 46 万亿韩元分阶段封装计划的核心。",
+     "text_en": "A new 31,000 sq m cleanroom at the Onyang campus in Asan will focus on next-generation HBM stacked packaging, targeting cleanroom operation in June 2028 and mass production in May 2029, as the core of a KRW 46 trillion phased packaging plan."
+    }
+   ],
+   "title": "三星 6 万亿韩元先进封装 Line 5 动工（HBM 封装）",
+   "title_en": "Samsung breaks ground on KRW 6 trillion advanced packaging Line 5 fab (HBM)"
+  },
+  {
+   "id": "evt-cerebras-openai-delay",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-12",
+     "change": "Q3 核心收入 2.309 亿美元（同比 +70%），全年指引上调至 9.4–9.6 亿美元，新增微软为第三家超大规模客户；对 OpenAI 首批 250MW 交付已落后，原因是土地、电力与数据中心建设慢于预期，交付延迟延续至 2027 年部分时段、2027 下半年才能赶上；已签约数据中心容量 700MW。",
+     "text_en": "Q3 core revenue $230.9 million (+70% year on year), full-year guidance raised to $940-960 million, with Microsoft added as a third hyperscale customer; delivery of the first 250 MW tranche to OpenAI is behind schedule because land, power and data-center construction are slower than expected, with delays extending into parts of 2027 and catch-up only in H2 2027; contracted data-center capacity stands at 700 MW."
+    }
+   ],
+   "title": "Cerebras 对 OpenAI 250MW 交付延迟、称芯片不是瓶颈",
+   "title_en": "Cerebras delays OpenAI 250MW delivery; says chips are not the bottleneck"
+  },
+  {
+   "id": "evt-us-pipe-valve-nov-hike",
+   "seeded": false,
+   "status": "已生效",
+   "status_note": "",
+   "subcategories": [
+    "Tube & Pipe"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-01",
+     "change": "American Tube & Pipe 全部产品 +8%（11-01 生效）；Crane 铸钢/青铜/铸铁/锻钢/球阀及 Stockham、Aloyco、Centerline、Flowseal、DuoChek 全线 11-01 提价（幅度未披露）；Southwark +8%（11-01 生效）；Gastite CSST 管材及配件 +6% 将于 11-23 生效；Q4 进口碳钢阀较去年 +2–4%。",
+     "text_en": "American Tube & Pipe raised all products +8% (effective Nov 1); Crane raised its full line of cast steel/bronze/cast iron/forged steel/ball valves and the Stockham, Aloyco, Centerline, Flowseal and DuoChek brands on Nov 1 (magnitude undisclosed); Southwark +8% (Nov 1); Gastite CSST pipe and fittings +6% effective Nov 23; Q4 imported carbon-steel valves up 2-4% year on year."
+    }
+   ],
+   "title": "美国管材阀门 11 月涨价潮（American Tube & Pipe +8%、Crane 全线提价）",
+   "title_en": "US pipe and valve November price hikes (American Tube & Pipe +8%, Crane full-line increase)"
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -3572,5 +3780,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-14"
+ "updated": "2026-11-15"
 }
