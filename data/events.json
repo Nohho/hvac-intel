@@ -492,6 +492,11 @@
      "date": "2026-11-16",
      "change": "LME 3M 11-13 官方结算 13,545 美元/吨，盘中跌破 13,500 美元创约 4 个月新低、将录得连续第五周下跌；沪铜现货对 2611 合约升水单日暴跌 500 元至 275 元/吨；洋山溢价 285 美元/吨再创纪录；上期所库存 27,642 吨（2023 年 12 月以来最低）；2611 合约 11-16 最后交易日、11-17–18 交割。",
      "text_en": "LME 3M settled Nov 13 at $13,545/t, dipping below $13,500 intraday to a roughly four-month low and heading for a fifth straight weekly loss; the SHFE spot premium over the 2611 contract plunged 500 yuan in a day to 275 yuan/t; the Yangshan premium hit a fresh record of $285/t; SHFE warehouse stocks fell to 27,642 t, the lowest since December 2023; the 2611 contract has its last trading day Nov 16, with delivery Nov 17-18."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "LME 3M 11-16 盘中约 13,251–13,264.5 美元/吨，较 11-13 收盘 13,588 美元/吨跌约 2.4%，创 4 个多月新低、三连跌；沪铜主力 2612 收 104,090 元/吨（-0.90%），上海电解铜现货 107,420 元/吨，现货对 2612 合约升水 3,400–3,500 元/吨（11-16 上午）；洋山铜进口溢价升至 290 美元/吨、创历史新高；上期所铜库存约 27,642 吨（11-13，2023 年 12 月以来最低）；2611 合约 11-16 为最后交易日、11-17 起进入交割。",
+     "text_en": "LME 3M copper traded around $13,251-13,264.5/t intraday on Nov 16, about 2.4% below the Nov 13 close of $13,588/t, a more than four-month low and a third straight decline; SHFE main contract CU2612 closed at RMB 104,090/t (-0.90%), Shanghai spot electrolytic copper at RMB 107,420/t, with the spot premium over the 2612 contract at RMB 3,400-3,500/t (morning of Nov 16); the Yangshan copper import premium rose to $290/t, a record high; SHFE copper stocks were about 27,642 t (Nov 13, lowest since December 2023); the 2611 contract had its last trading day on Nov 16, with delivery starting Nov 17."
     }
    ],
    "title": "铜价历史高位",
@@ -3111,6 +3116,11 @@
      "date": "2026-11-11",
      "change": "氧化镨钕 11-11 报 720,000-723,000 元/吨（11-10 为 715,000-720,000 元/吨），较 11-04 低点 697,000-700,000 元/吨回升；Mysteel 预计四季度小幅走弱、关注 68-70 万元/吨支撑",
      "text_en": "Praseodymium-neodymium oxide at RMB 720,000-723,000/t on Nov 11 (RMB 715,000-720,000/t on Nov 10), recovering from the Nov 4 low of RMB 697,000-700,000/t; Mysteel expects a slight Q4 softening, watching RMB 680,000-700,000/t support"
+    },
+    {
+     "date": "2026-11-17",
+     "change": "氧化镨钕 11-16 报 716,000–718,000 元/吨（均价 717,000 元/吨，-2,000），较 10 月中旬 740,000 元/吨以上高位明显回落；氧化镝 1,540–1,550 元/千克，氧化铽 6,450–6,500 元/千克；多项稀土出口管制自 11-11 起继续暂停至 2027-01-10。",
+     "text_en": "Praseodymium-neodymium oxide was quoted at RMB 716,000-718,000/t on Nov 16 (average RMB 717,000/t, down 2,000), well below the above-RMB 740,000/t highs of mid-October; dysprosium oxide at RMB 1,540-1,550/kg and terbium oxide at RMB 6,450-6,500/kg; multiple rare-earth export controls remain paused from Nov 11 through January 10, 2027."
     }
    ]
   },
@@ -3479,6 +3489,11 @@
      "date": "2026-11-16",
      "change": "Nucor 11-13 板材再涨 70 美元/短吨并开启 12 月订货（订单须 11-27 前提交）；板材均价 1,550 美元/短吨、热卷 1,375 美元/短吨（11-10）；交期 3–5 周；截至 11-14/15 未见其他钢厂跟进。",
      "text_en": "Nucor raised plate prices another $70/short ton on Nov 13 and opened its December order book (orders due by Nov 27); plate averaged $1,550/short ton and hot-rolled coil $1,375/short ton as of Nov 10; lead times are 3-5 weeks; no other mill had followed as of Nov 14-15."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "Nucor 热卷消费者现货价（CSP）11-16 再涨 15 美元/短吨至 1,310 美元/短吨（自 2025-08-25 以来连续 64 周持有或上调，累计 +435 美元/短吨），交期 3–5 周；板材 11-13 +70 美元/短吨后，截至 11-16 未见 Cleveland-Cliffs、U.S. Steel、SSAB 等跟进的公开宣布；SMU 板材均价截至 11-10 为 1,550 美元/短吨（周涨 55 美元）、热卷 1,375 美元/短吨（周涨 25 美元）。",
+     "text_en": "Nucor raised its hot-rolled coil consumer spot price by $15/short ton to $1,310 on Nov 16 (the 64th straight week of holding or raising since Aug 25, 2025, up $435 cumulatively), with lead times of 3-5 weeks; after the Nov 13 plate increase of $70/short ton, no other mills had publicly followed as of Nov 16; SMU assessed plate at $1,550/short ton as of Nov 10 (+$55 week on week) and hot-rolled coil at $1,375/short ton (+$25)."
     }
    ],
    "subcategories": [
@@ -3599,6 +3614,11 @@
      "date": "2026-11-16",
      "change": "LME 3M 11-13 官方结算 3,018 美元/吨，现货 3,150.50 美元/吨；现货升水 11-12 盘中 176.80 美元/吨仍为 36 年最宽，11-13 官方结算价差 132.50 美元/吨；LME 库存 224,150 吨（1990 年以来最低）；11 月合约合计持仓大于全部库存，4 名未披露多头合计持有至少 25% 未平仓量；11 月合约 11-18 到期。",
      "text_en": "LME 3M settled Nov 13 at $3,018/t, cash at $3,150.50/t; the cash premium touched $176.80/t intraday Nov 12, still a 36-year high, with the Nov 13 official cash-to-3M spread at $132.50/t; LME stocks fell to 224,150 t, the lowest since 1990; aggregate November open interest exceeds total exchange stocks, with four undisclosed longs holding at least 25% of open interest; the November contract expires Nov 18."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "LME 3M 11-16 约 3,010–3,019 美元/吨；现货对 3M 升水 11-16 扩大至 275 美元/吨，大幅超过 11-12 盘中高点 176.80 美元/吨，路透称紧张程度为 1988、1990 年双重挤仓以来未见；LME 库存 224,150 吨（11-13，1990 年以来最低）；11 月合约合计持仓大于交易所全部库存，4 名未披露多头合计持有至少 25% 未平仓量；11 月合约 11-18 到期，截至 11-16 未见 LME 触发强制借贷规则或紧急干预的新通报。",
+     "text_en": "LME 3M aluminium was about $3,010-3,019/t on Nov 16; the cash-to-3M premium widened to $275/t on Nov 16, far above the $176.80/t intraday high of Nov 12, with Reuters calling the tightness unseen since the 1988 and 1990 squeezes; LME stocks stood at 224,150 t (Nov 13, lowest since 1990); aggregate November open interest exceeds total exchange stocks, with four undisclosed longs holding at least 25% of open interest; the November contract expires Nov 18, and as of Nov 16 there was no new notice of LME triggering forced lending or emergency intervention."
     }
    ],
    "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
@@ -3630,6 +3650,11 @@
      "date": "2026-11-16",
      "change": "截至 11-16 早仍无双方确认、签约或新报价，状态仍为洽谈中、未确认；Modine 定于 11-18 举行分析师与投资者日。",
      "text_en": "As of the morning of Nov 16 there is still no confirmation, signing or new offer from either side; the talks remain unconfirmed; Modine holds its analyst and investor day on Nov 18."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "Modine 11-16 宣布股东投票通过、公司正式更名为 Modexus Solutions（股票代码仍为 MOD），11-18 举行分析师与投资者日，将更新多年增长战略与新财务目标；FY2027 指引：持续经营营收 31–32 亿美元、调整后 EBITDA 4.7–5 亿美元，数据中心营收 +80–90%；三星 11-16 披露 Q3 季报：1–9 月累计营收 500.6261 万亿韩元（+108.8%），营业利润 254.1657 万亿韩元（约 +10.8 倍）；洽购谈判截至 11-16 仍无双方确认、无报价；Modine 11-13 收 135.66 美元（+27.86%）、当周累计 +40.42%。",
+     "text_en": "Modine announced on Nov 16 that shareholders approved renaming the company Modexus Solutions (ticker still MOD); its analyst and investor day is Nov 18, where it will update its multi-year growth strategy and financial targets; FY2027 guidance: continuing-operations revenue $3.1-3.2bn, adjusted EBITDA $470-500m, data-center revenue +80-90%; Samsung reported Q3 results on Nov 16: January-September revenue KRW 500.6261tn (+108.8%), operating profit KRW 254.1657tn (about 10.8x); the acquisition talks remain unconfirmed with no offer as of Nov 16; Modine closed Nov 13 at $135.66 (+27.86%), up 40.42% for the week."
     }
    ],
    "title": "三星洽购美国数据中心制冷商 Modine（彭博爆料，在谈未证实）",
@@ -3706,6 +3731,11 @@
      "date": "2026-11-16",
      "change": "11-17 盘后发布 FY2027 Q3 财报（公司指引营收 1,080 亿美元 ±2%，市场预期约 1,092 亿美元、调整后 EPS 约 2.48 美元）；临时 CEO Kress 首次主持电话会，Q4 指引与毛利率（或探至 71%–72%）为关键。",
      "text_en": "FY2027 Q3 results are due after the close on Nov 17 (company guidance $108.0bn +/-2%; consensus about $109.2bn and adjusted EPS about $2.48); interim CEO Kress hosts the call for the first time, with Q4 guidance and gross margin (possibly down to 71%-72%) the key watch items."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "NVDA 11-16 收 156.14 美元（-4.12%），较 52 周高点 243.37 美元（10-06）回落约 35.9%；美国商务部 BIS 11-16 发布临时最终规则：向印尼、马来西亚、新加坡、泰国、巴西出口先进半导体须申请许可证，并堵住中国企业经第三国数据中心远程租用算力的漏洞（远程算力条款 90 天后生效）；董事会未讨论让黄仁勋回归（CNBC 11-16），财长贝森特称董事会应从外部物色新 CEO；英伟达定于 11-17 盘后发布 FY2027 Q3 财报，市场一致预期营收约 1,092 亿美元、调整后 EPS 约 2.47–2.48 美元，数据中心收入预期约 1,018 亿美元。",
+     "text_en": "NVDA closed Nov 16 at $156.14 (-4.12%), about 35.9% below its 52-week high of $243.37 (Oct 6); the US Commerce Department (BIS) issued an interim final rule on Nov 16 requiring licences for advanced-semiconductor exports to Indonesia, Malaysia, Singapore, Thailand and Brazil, and closing the loophole of Chinese firms remotely renting compute via third-country data centers (remote-compute provisions take effect in 90 days); the board has not discussed bringing Jensen Huang back (CNBC, Nov 16), and Treasury Secretary Bessent said the board should look for an outside CEO; Nvidia reports FY2027 Q3 results after the close on Nov 17, with consensus revenue of about $109.2bn and adjusted EPS of about $2.47-2.48, and data-center revenue expected at about $101.8bn."
     }
    ],
    "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
@@ -3806,6 +3836,11 @@
      "date": "2026-11-16",
      "change": "Q3 核心营收 2.31 亿美元（同比 +70%），全年指引上调至 9.4–9.6 亿美元；OpenAI 750MW 照单付款合同首批交付延迟（土地、电力与楼宇建设，非芯片），预计 2027 年下半年恢复交付节奏；微软成为第三家超大规模客户。",
      "text_en": "Q3 core revenue was $231m (+70% year on year) and full-year guidance was raised to $9.4-9.6bn; first deliveries under the 750MW take-or-pay OpenAI contract are delayed by land, power and building construction (not chips), with delivery pace expected to recover in H2 2027; Microsoft became the third hyperscale customer."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "Cerebras 10 月签署微软云服务协议（2027 年 Q1 起确认收入），为继 AWS、Oracle 后的第三家超大规模客户；OpenAI 750MW 订单交付滞后原因明确为土地、电力与机房楼宇短缺（非芯片），首批 250MW 须于 2026 年底前交付、目前已落后，已计提延期抵扣并从 backlog 中扣除；剩余履约义务 261 亿美元，Q3 核心收入 2.31 亿美元（同比 +70%），全年指引 9.4–9.6 亿美元。",
+     "text_en": "Cerebras signed a cloud services agreement with Microsoft in October (revenue recognition from Q1 2027), its third hyperscale customer after AWS and Oracle; the OpenAI 750MW delivery lag is explicitly due to land, power and data-center building shortages, not chips, with the first 250MW due by end-2026 and already behind, and delay credits accrued and deducted from backlog; remaining performance obligations total $26.1bn, Q3 core revenue was $231m (+70% YoY), and full-year guidance is $940-960m."
     }
    ],
    "title": "Cerebras 对 OpenAI 250MW 交付延迟、称芯片不是瓶颈",
@@ -3851,6 +3886,11 @@
      "date": "2026-11-16",
      "change": "CoreWeave Q3 营收 36.61 亿美元（同比 +168%），收入 backlog 1,325 亿美元；单季 capex 145.11 亿美元，全年 capex 指引上调至 370–390 亿美元；在运电力超 1.7GW、已签约电力超 4.6GW。",
      "text_en": "CoreWeave Q3 revenue was $3.661bn (+168% year on year) with a $132.5bn revenue backlog; quarterly capex hit $14.511bn and full-year capex guidance was raised to $37-39bn; operating power exceeds 1.7GW with over 4.6GW contracted."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "CoreWeave Q3 营收 36.61 亿美元（同比 +168%），收入 backlog 1,325 亿美元（单季 +283 亿美元）；单季 capex 145.11 亿美元，全年 capex 指引 370–390 亿美元；总债务 469 亿美元；已激活电力 1.7GW、已签约电力超 4.6GW（激活率仅 37%）；股价财报后 11-11 大涨 +24.7% 至 60.77 美元，11-13 回落 -6.13% 至 53.13 美元。",
+     "text_en": "CoreWeave Q3 revenue was $3.661bn (+168% YoY), with a revenue backlog of $132.5bn (+$28.3bn in the quarter); single-quarter capex was $14.511bn and full-year capex guidance is $37-39bn; total debt reached $46.9bn; activated power is 1.7GW against more than 4.6GW contracted (a 37% activation rate); shares jumped 24.7% to $60.77 on Nov 11 after earnings, then fell 6.13% to $53.13 on Nov 13."
     }
    ],
    "title": "CoreWeave 单季 capex 145 亿美元、全年指引 370–390 亿美元",
@@ -3872,6 +3912,11 @@
      "date": "2026-11-16",
      "change": "网传 ST 调价函（落款 11-04）称部分产品自 2027 年 1 月 1 日起涨价，为 2026 年内第四轮通知；TrendForce 11-12 明确指出产品范围与涨幅尚未官方确认，ST 官网未发布。",
      "text_en": "A circulated ST price-adjustment letter (dated Nov 4) says selected products will rise from Jan 1, 2027, the fourth such notice in 2026; TrendForce noted on Nov 12 that the product scope and magnitude remain unconfirmed and ST has published nothing on its website."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "落款 11-04 的 ST 客户函件 11-11/12 经媒体披露，称\"自 2027 年 1 月 1 日起上调部分产品价格\"，为 2026 年内第四轮通知（前三轮：4-26、6-28、8-23 生效）；函件未列明具体产品线与涨幅，TrendForce 11-12 明确指出产品范围与涨幅尚未官方确认，ST 官网未发布。",
+     "text_en": "A customer letter from ST dated Nov 4, disclosed by media on Nov 11-12, says prices for selected products will rise from January 1, 2027, the fourth such notice in 2026 (previous rounds effective Apr 26, Jun 28 and Aug 23); the letter lists no specific product lines or increases, and TrendForce noted on Nov 12 that the scope and size are still unconfirmed by the company, with nothing published on ST's website."
     }
    ],
    "title": "ST 第四轮涨价（2027-01-01）网传函未确认",
@@ -3954,10 +3999,100 @@
      "date": "2026-11-16",
      "change": "美国凤凰城市场：中压开关柜交期 52–80 周、标准垫装变压器 40–65 周、超大型变电站变压器 90–160 周（项目即使过审也可能等 2–3 年才能通电），结构钢交期翻倍至 55 周；中国变压器出口 2025 年 646 亿元（同比 +36%）、交期 10–12 个月。",
      "text_en": "In the Phoenix, US market, medium-voltage switchgear lead times are 52-80 weeks, standard pad-mount transformers 40-65 weeks and large substation transformers 90-160 weeks (approved projects may still wait 2-3 years for power), with structural steel lead times doubling to 55 weeks; China transformer exports reached 64.6 billion yuan in 2025 (+36%) with 10-12 month lead times."
+    },
+    {
+     "date": "2026-11-17",
+     "change": "大型电力变压器全球采购交期已从 2021 年约 2 年拉长至 160–210 周（3–4 年），主因取向硅钢短缺、绕线技工与高压测试能力不足，Wood Mackenzie 预计 2026 年电力变压器市场短缺 15%；Applied Digital 要求 Oracle、Meta 等大租户及英伟达、AMD 按项目提供数十亿美元财务担保以覆盖新 AI 数据中心并网的电网升级与接网成本；西门子能源 FY2026 backlog 1,640 亿欧元（数据中心客户约占 150 亿欧元），GE Vernova backlog 1,970 亿美元，伊顿数据中心订单滚动 12 个月翻倍以上。",
+     "text_en": "Global procurement lead times for large power transformers have stretched from about 2 years in 2021 to 160-210 weeks (3-4 years), driven by grain-oriented electrical steel shortages, winding-labour and high-voltage testing constraints; Wood Mackenzie expects a 15% power-transformer market shortage in 2026; Applied Digital is asking large tenants such as Oracle and Meta, plus Nvidia and AMD, for multi-billion-dollar financial guarantees per project to cover grid upgrade and interconnection costs for new AI data centers; Siemens Energy's FY2026 backlog is EUR 164bn (data-center customers about EUR 15bn), GE Vernova's backlog is $197bn, and Eaton's data-center orders more than doubled on a rolling 12-month basis."
     }
    ],
    "title": "美国变压器/开关柜交期拉至 40–160 周",
    "title_en": "US transformer and switchgear lead times stretch to 40-160 weeks"
+  },
+  {
+   "id": "evt-ga-ge-sb-pause-expiry-1127",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "功率器件"
+   ],
+   "tags": [
+    "出口管制"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-16",
+     "change": "商务部 72 号公告暂停期至 2026-11-27，截至 11-16 未见续延公告；若到期前无新公告，对美镓/锗/锑\"原则上不予许可\"将于 11-28 起恢复；参照稀土先例，续延仍可能在 11-26–27 日前后出现；受影响品类：GaN 功率器件（变频驱动）、射频器件、锑系阻燃剂（塑料件）、红外光学用锗；中国占全球原生镓供应约 98.9%、锗约 68.6%。",
+     "text_en": "The pause under MOFCOM Notice No. 72 runs to November 27, 2026, with no renewal announced as of Nov 16; if no new notice appears before expiry, the \"in principle no licence\" stance for gallium, germanium and antimony exports to the US resumes from Nov 28; following the rare-earth precedent, a renewal could still appear around Nov 26-27; affected categories: GaN power devices (VSD drives), RF devices, antimony flame retardants (plastics) and germanium for infrared optics; China accounts for about 98.9% of global primary gallium supply and 68.6% of germanium."
+    }
+   ],
+   "title": "镓/锗/锑对美出口禁令暂停 11-27 到期、暂无续延公告",
+   "title_en": "Gallium/germanium/antimony export ban pause for the US expires Nov 27 with no renewal announced"
+  },
+  {
+   "id": "evt-vertiv-atlas-lab",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-16",
+     "change": "Vertiv 11-16 官宣位于俄亥俄州哥伦布市的 ATLAS Lab（Advanced Test Lab for Architecture and Systems）投入使用，在芯片上市前对 AI 工厂的供电、散热与控制做系统级验证，目标缩短客户部署周期；与英伟达的工程合作覆盖建模、电源架构、液冷与控制；未披露收入/订单数字。",
+     "text_en": "Vertiv announced on Nov 16 that its ATLAS Lab (Advanced Test Lab for Architecture and Systems) in Columbus, Ohio is operational, validating power, cooling and controls for AI factories at system level before silicon ships, aiming to shorten customer deployment cycles; its engineering collaboration with Nvidia covers modelling, power architecture, liquid cooling and controls; no revenue or order figures were disclosed."
+    }
+   ],
+   "title": "Vertiv ATLAS Lab 投入使用（提前验证英伟达下一代平台供电与液冷）",
+   "title_en": "Vertiv ATLAS Lab opens to validate power and liquid cooling for Nvidia's next-generation platforms ahead of silicon"
+  },
+  {
+   "id": "evt-abb-robotics-deal-blocked",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "机器人"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-05",
+     "change": "中国发改委下属外商投资安全审查工作机制办公室通知软银，不批准其以约 53.75 亿美元（企业价值约 54 亿美元）收购 ABB 机器人业务；交易 2025 年 10 月 8 日签署，欧盟委员会已于 2026 年 3 月无条件批准；该业务 2024 年营收约 23 亿美元、员工约 7000 人，中国约占其业务 30%。",
+     "text_en": "China's foreign-investment security review office under the NDRC told SoftBank it will not approve the roughly $5.375bn acquisition (about $5.4bn enterprise value) of ABB's robotics business; the deal was signed October 8, 2025 and unconditionally approved by the European Commission in March 2026; the business had about $2.3bn revenue in 2024, about 7,000 employees, and China accounts for about 30% of its business."
+    },
+    {
+     "date": "2026-11-16",
+     "change": "截至 11-16 的跟进报道，双方均未宣布交易终止，也未公布重组方案（软银在评估拆分中国业务等重组可能；ABB 须决定自营或另寻买家）。",
+     "text_en": "As of Nov 16, neither side has announced the deal terminated or unveiled a restructuring plan (SoftBank is said to be weighing options such as spinning off the China business; ABB must decide whether to keep the business or find another buyer)."
+    }
+   ],
+   "title": "ABB 机器人业务出售遭中国否决（约 53.75 亿美元）",
+   "title_en": "China blocks sale of ABB robotics business to SoftBank (about $5.375bn)"
+  },
+  {
+   "id": "evt-schneider-ptc-vote",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "低压电气与配电"
+   ],
+   "tags": [
+    "并购"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-13",
+     "change": "PTC 11-13 向美国 SEC 提交最终合并代理声明，定于 2026-12-17 召开线上特别股东大会表决收购案（美东上午 11:00）；记录日 2026-11-10，流通股 108,633,154 股，合并议案须获多数流通股批准；交易条款（10-05 公告）：施耐德以每股 205 美元现金全资收购 PTC，股权价值约 226 亿美元，预计 2027Q3 前完成。",
+     "text_en": "PTC filed its definitive merger proxy with the US SEC on Nov 13, setting a virtual special shareholder meeting for December 17, 2026 (11:00 ET) to vote on the acquisition; record date November 10, 2026, with 108,633,154 shares outstanding, and the merger proposal requires approval by a majority of outstanding shares; deal terms (announced Oct 5): Schneider Electric to acquire PTC for $205 per share in cash, about $22.6bn equity value, expected to close before Q3 2027."
+    }
+   ],
+   "title": "施耐德收购 PTC 股东投票定于 12-17",
+   "title_en": "Schneider Electric acquisition of PTC: shareholder vote set for December 17"
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -3969,5 +4104,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-16"
+ "updated": "2026-11-17"
 }
