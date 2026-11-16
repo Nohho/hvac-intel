@@ -3,7 +3,10 @@
 <channel>
 <title>HVAC 供应链情报</title><link>https://nohho.github.io/hvac-intel/</link>
 <description>HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议</description>
-<language>zh-CN</language><lastBuildDate>Mon, 16 Nov 2026 00:03:19 GMT</lastBuildDate>
+<language>zh-CN</language><lastBuildDate>Mon, 16 Nov 2026 23:59:12 GMT</lastBuildDate>
+<item><title>HVAC 供应链情报早报 2026-11-17</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-17</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-17</guid><pubDate>Mon, 16 Nov 2026 16:00:00 GMT</pubDate><description>• 铝挤仓明日到期、现货升水再创 36 年新高
+• 铜：LME 3M 创 4 个月新低、沪铜现货升水与洋山溢价双双创新高
+• 英伟达今晚盘后财报 + 美国 11-16 新芯片出口管制</description></item>
 <item><title>HVAC 供应链情报早报 2026-11-16</title><link>https://nohho.github.io/hvac-intel/#date=2026-11-16</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-11-16</guid><pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate><description>• 铝挤仓 11-18 到期在即
 • 铜现货升水单日暴跌 500 元、2611 合约今日最后交易日
 • 变压器/开关柜交期拉至 90–160 周，AI 瓶颈转向电力与楼宇交付</description></item>
@@ -102,9 +105,5 @@
 • Hitachi Energy CEO警告变压器供应'不堪重负'
 • 管材管件10月涨价密集生效
 • 大金收购液冷公司Chilldyne</description></item>
-<item><title>HVAC 供应链情报早报 2026-10-18</title><link>https://nohho.github.io/hvac-intel/#date=2026-10-18</link><guid isPermaLink="true">https://nohho.github.io/hvac-intel/#date=2026-10-18</guid><pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate><description>大摩上调Q4内存涨价口径但Rubin放量落后计划；Q4半导体全链条近20家再涨价；JCI发布500kW~10MW+ CDU平台；铜收14496.93美元/吨（休市最新价）；制冷剂配额第二次调整公示；橡胶/硫磺暴涨。
-• 内存涨价预期再上调，Rubin放量落后计划
-• Q4半导体全链条近20家厂商再涨价
-• JCI发布Silent-Aire CDU平台（500kW~10MW+）</description></item>
 </channel>
 </rss>
