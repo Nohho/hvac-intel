@@ -298,6 +298,11 @@
      "date": "2026-11-12",
      "change": "三星电机 Q4 起将涨价延伸至直供 OEM/ODM 客户，消费级 X5R 约 +25–30%、AI 服务器 X6S +10–20%（TrendForce 估算、非公司确认）；国巨下一轮高容酝酿 +50% 以上、中低容 +10–30%（分销商口径、未确认）。",
      "text_en": "Samsung Electro-Mechanics extended its Q4 price hikes to direct OEM/ODM customers, consumer X5R up about 25-30% and AI-server X6S up 10-20% (TrendForce estimates, not company-confirmed); Yageo is reported to be preparing a next round of over +50% on high-capacitance and +10-30% on mid/low-capacitance (distributor accounts, unconfirmed)."
+    },
+    {
+     "date": "2026-11-18",
+     "change": "三星电机交期 52 周，AI 服务器高容产品涨幅 50%–80%（产业梳理口径）、正协商季度环比再涨 25% 以上；村田高端缺货延续至 2027 年上半年；2027 年 Q1 价格谈判本月启动。",
+     "text_en": "Samsung Electro-Mechanics lead time 52 weeks; AI-server high-capacitance MLCC up 50%-80% (industry compilation), negotiating a further 25%+ quarterly rise; Murata high-end shortage extends into H1 2027; Q1 2027 price talks started this month."
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -497,6 +502,11 @@
      "date": "2026-11-17",
      "change": "LME 3M 11-16 盘中约 13,251–13,264.5 美元/吨，较 11-13 收盘 13,588 美元/吨跌约 2.4%，创 4 个多月新低、三连跌；沪铜主力 2612 收 104,090 元/吨（-0.90%），上海电解铜现货 107,420 元/吨，现货对 2612 合约升水 3,400–3,500 元/吨（11-16 上午）；洋山铜进口溢价升至 290 美元/吨、创历史新高；上期所铜库存约 27,642 吨（11-13，2023 年 12 月以来最低）；2611 合约 11-16 为最后交易日、11-17 起进入交割。",
      "text_en": "LME 3M copper traded around $13,251-13,264.5/t intraday on Nov 16, about 2.4% below the Nov 13 close of $13,588/t, a more than four-month low and a third straight decline; SHFE main contract CU2612 closed at RMB 104,090/t (-0.90%), Shanghai spot electrolytic copper at RMB 107,420/t, with the spot premium over the 2612 contract at RMB 3,400-3,500/t (morning of Nov 16); the Yangshan copper import premium rose to $290/t, a record high; SHFE copper stocks were about 27,642 t (Nov 13, lowest since December 2023); the 2611 contract had its last trading day on Nov 16, with delivery starting Nov 17."
+    },
+    {
+     "date": "2026-11-18",
+     "change": "LME 3M 11-17 盘中跌至 13,144 美元/吨、创 7 月 1 日以来新低；沪铜现货对 2612 合约升水 4,500 元/吨、洋山铜现货 13,635 美元/吨；上期所 2611 合约交割挤仓，可交割库存仅 2,270 吨、对应当月持仓 24,050 吨。",
+     "text_en": "LME 3M copper fell intraday to $13,144/t on Nov 17, lowest since July 1; Shanghai spot premium vs Dec contract 4,500 yuan/t, Yangshan spot $13,635/t; SHFE Nov contract delivery squeeze with only 2,270t deliverable against 24,050t open interest."
     }
    ],
    "title": "铜价历史高位",
@@ -723,6 +733,11 @@
      "date": "2026-11-16",
      "change": "美国 DRAM 反垄断诉讼 11-14 法官驳回三星、SK 海力士、美光三家驳回动议（案号 5:26-cv-06345-NW），三家须于 12-07 前提交答辩；DDR4 现货周均 46.51 美元、环比 -2.7% 连续第四周下跌；美光称已签 26 份战略客户协议至 2030 年、75% 以上 FY2027 出货已锁定。",
      "text_en": "A US federal judge on Nov 14 denied the motions to dismiss filed by Samsung, SK Hynix and Micron in the DRAM antitrust suit (case No. 5:26-cv-06345-NW); the three must file answers by Dec 7; DDR4 spot averaged $46.51 for the week, down 2.7% for a fourth straight weekly decline; Micron said it has signed 26 strategic customer agreements through 2030, with over 75% of FY2027 shipments already booked."
+    },
+    {
+     "date": "2026-11-18",
+     "change": "10 月 DDR4 8Gb 平均合约价 27.5 美元（环比 +5.77%，创历史高位）；Q4 DRAM 合约价预计 +10%–15%；加州法院 11-14 驳回三家撤案动议，12-07 前答辩。",
+     "text_en": "October DDR4 8Gb average contract price $27.5 (+5.77% m/m, record high); Q4 DRAM contract prices seen +10%-15%; California court denied the three makers' motion to dismiss on Nov 14, answers due by Dec 7."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1002,6 +1017,11 @@
      "date": "2026-11-16",
      "change": "松下湖口（台湾新竹）厂仍无复产新进展；11 月电子布价格继续上涨（7628 电子布 14.4–14.8 元/米）；金安国纪 11-09 投资约 5 亿元在安徽宁国新建年产 1.3 亿米电子级玻纤布项目、计划 2027 年 3 月投产。",
      "text_en": "Panasonic's Hukou plant (Hsinchu, Taiwan) still has no resumption update; November electronic glass-cloth prices kept rising (7628 cloth at 14.4-14.8 yuan/m); Jin'an Guoji announced on Nov 9 a roughly 500 million yuan investment in a new 130-million-metre-per-year electronic glass-cloth project in Ningguo, Anhui, targeting production in March 2027."
+    },
+    {
+     "date": "2026-11-18",
+     "change": "松下湖口厂仍停产（截至 11-10）；生益称 11 月还将调整；CCL 每月涨价节奏保守预期持续至 2027 年 6 月。",
+     "text_en": "Panasonic Hukou plant still shut (as of Nov 10); Shengyi says another adjustment is expected in November; monthly CCL price rises conservatively expected to run to June 2027."
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -3619,6 +3639,11 @@
      "date": "2026-11-17",
      "change": "LME 3M 11-16 约 3,010–3,019 美元/吨；现货对 3M 升水 11-16 扩大至 275 美元/吨，大幅超过 11-12 盘中高点 176.80 美元/吨，路透称紧张程度为 1988、1990 年双重挤仓以来未见；LME 库存 224,150 吨（11-13，1990 年以来最低）；11 月合约合计持仓大于交易所全部库存，4 名未披露多头合计持有至少 25% 未平仓量；11 月合约 11-18 到期，截至 11-16 未见 LME 触发强制借贷规则或紧急干预的新通报。",
      "text_en": "LME 3M aluminium was about $3,010-3,019/t on Nov 16; the cash-to-3M premium widened to $275/t on Nov 16, far above the $176.80/t intraday high of Nov 12, with Reuters calling the tightness unseen since the 1988 and 1990 squeezes; LME stocks stood at 224,150 t (Nov 13, lowest since 1990); aggregate November open interest exceeds total exchange stocks, with four undisclosed longs holding at least 25% of open interest; the November contract expires Nov 18, and as of Nov 16 there was no new notice of LME triggering forced lending or emergency intervention."
+    },
+    {
+     "date": "2026-11-18",
+     "change": "11 月主合约 11-18 到期；现货升水 11-16 为 275 美元/吨（36 年新高），LME 铝 11-17 跌 2.0% 至 2,942.5 美元/吨；SMM 提示到期后多头移仓与现货升水回吐的尾部风险。",
+     "text_en": "November main contract expires Nov 18; cash premium was $275/t on Nov 16 (36-year high), LME aluminium fell 2.0% to $2,942.5/t on Nov 17; SMM warns of tail risk from long position rollover and premium give-back after expiry."
     }
    ],
    "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
@@ -3899,7 +3924,7 @@
   {
    "id": "evt-st-price-hike-2027-rumor",
    "seeded": false,
-   "status": "传闻",
+   "status": "已通知",
    "status_note": "",
    "subcategories": [
     "芯片与半导体"
@@ -3917,6 +3942,11 @@
      "date": "2026-11-17",
      "change": "落款 11-04 的 ST 客户函件 11-11/12 经媒体披露，称\"自 2027 年 1 月 1 日起上调部分产品价格\"，为 2026 年内第四轮通知（前三轮：4-26、6-28、8-23 生效）；函件未列明具体产品线与涨幅，TrendForce 11-12 明确指出产品范围与涨幅尚未官方确认，ST 官网未发布。",
      "text_en": "A customer letter from ST dated Nov 4, disclosed by media on Nov 11-12, says prices for selected products will rise from January 1, 2027, the fourth such notice in 2026 (previous rounds effective Apr 26, Jun 28 and Aug 23); the letter lists no specific product lines or increases, and TrendForce noted on Nov 12 that the scope and size are still unconfirmed by the company, with nothing published on ST's website."
+    },
+    {
+     "date": "2026-11-18",
+     "change": "ST 第四轮调价函（落款 11-04）确认：部分产品自 2027-01-01 起涨价（车规、MCU、功率器件），产品范围与涨幅尚未官方确认；2026 年内 TI 累计调价 5 次。",
+     "text_en": "ST's fourth 2026 price notice (dated Nov 4) confirmed: selected products rise from Jan 1, 2027 (automotive, MCU, power devices); product scope and rates not yet officially confirmed; TI has raised prices five times in 2026."
     }
    ],
    "title": "ST 第四轮涨价（2027-01-01）网传函未确认",
@@ -4093,6 +4123,134 @@
    ],
    "title": "施耐德收购 PTC 股东投票定于 12-17",
    "title_en": "Schneider Electric acquisition of PTC: shareholder vote set for December 17"
+  },
+  {
+   "id": "evt-nvidia-q3-fy2027-earnings",
+   "seeded": false,
+   "status": "已落地",
+   "status_note": "",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [
+    "财报",
+    "存储"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-17",
+     "change": "Q3 营收 1158 亿美元（同比 +103%），数据中心收入 1076 亿美元（同比 +110%），Q4 指引营收 1300 亿美元（±3%），毛利率指引降至 71%–72%；Vera Rubin NVL72 系统已开始出货；临时 CEO Kress 将 2028 财年营收增长预期由 70% 上调至 75%。",
+     "text_en": "Q3 revenue $115.8B (+103% y/y), data centre revenue $107.6B (+110% y/y), Q4 guidance $130B (+/-3%), gross margin guidance down to 71%-72%; Vera Rubin NVL72 systems have started shipping; interim CEO Kress raised FY2028 revenue growth expectations from 70% to 75%."
+    }
+   ],
+   "title": "英伟达 FY2027 Q3 财报超预期、Q4 指引 1300 亿美元",
+   "title_en": "Nvidia FY2027 Q3 earnings beat, Q4 guidance $130B"
+  },
+  {
+   "id": "evt-bis-remote-access-chip-rule",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [
+    "出口管制"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-16",
+     "change": "BIS 发布临时最终规则，新增 §744.24 数据中心最终用途管制：向总部位于中国、澳门或 D:5 国家集团的企业提供超 1200 万 TPP 算力接入须申请许可证，现有数据中心 90 天过渡期；向印尼、马来西亚、新加坡、泰国、巴西出口先进 AI 物项新增许可证要求；正式废止《AI 扩散规则》。",
+     "text_en": "BIS issued an interim final rule adding Section 744.24 data-centre end-use controls: a licence is required where a data centre provides over 12 million TPP of compute access to entities headquartered in China, Macau or D:5 destinations, with a 90-day transition for existing centres; new licence requirements for advanced AI items to Indonesia, Malaysia, Singapore, Thailand and Brazil; the AI Diffusion Framework is formally rescinded."
+    }
+   ],
+   "title": "美国 BIS 新规：管制先进芯片远程算力接入（11-19 生效）",
+   "title_en": "US BIS rule: remote access to advanced chips via data centres restricted (effective Nov 19)"
+  },
+  {
+   "id": "evt-vertiv-800vdc-expansion",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "液冷与热管理",
+    "低压电气与配电"
+   ],
+   "tags": [
+    "技术路线"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-17",
+     "change": "新增 PowerDirect 9000（AI 算力 pod 级）与 PowerNexus MV SST（5MW 固态变压器，中压交流一次转换为 800VDC），覆盖机架/pod/数据大厅三级部署；11-17～22 在 SC26 展出，试点项目与客户协同开发进行中。",
+     "text_en": "Added PowerDirect 9000 (AI compute pod level) and PowerNexus MV SST (5MW solid-state transformer, medium-voltage AC to 800VDC in one conversion), covering rack/pod/data-hall tiers; shown at SC26 Nov 17-22, pilot projects under joint development with customers."
+    }
+   ],
+   "title": "Vertiv 推出 800VDC 三级供电扩展（PowerDirect 9000 + PowerNexus MV SST）",
+   "title_en": "Vertiv launches 800VDC three-tier power expansion (PowerDirect 9000 + PowerNexus MV SST)"
+  },
+  {
+   "id": "evt-shenling-chenchun-lc-base",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [
+    "产能投资"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-16",
+     "change": "摘得顺德陈村超 260 亩产业地块，将建液冷算力基础设施智造基地；今年 3 月总投资 8 亿元的液冷新质智造基地已在陈村开工。",
+     "text_en": "Won a 260-mu-plus industrial plot in Chencun, Shunde, to build a liquid-cooling AI infrastructure manufacturing base; an 800 million yuan liquid-cooling base broke ground in Chencun in March this year."
+    }
+   ],
+   "title": "申菱环境摘地 260 亩建液冷算力基础设施智造基地",
+   "title_en": "Shenling wins 260-mu plot for liquid-cooling AI infrastructure manufacturing base"
+  },
+  {
+   "id": "evt-jci-lg-patent-lawsuit",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [
+    "诉讼"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-09",
+     "change": "JCI 向美国德州东区联邦法院起诉 LG 电子专利侵权，称 LG 风冷磁悬浮离心冷水机侵犯约克 YDAM 换热器专利（美国专利 9,869,487 号）；案件处于起诉阶段，法院尚未裁决。",
+     "text_en": "JCI sued LG Electronics in the US District Court for the Eastern District of Texas, alleging LG air-cooled magnetic-bearing centrifugal chillers infringe the YORK YDAM heat-exchanger patent (US Patent 9,869,487); the case is at the filing stage with no ruling yet."
+    }
+   ],
+   "title": "JCI 起诉 LG 磁悬浮离心机专利侵权",
+   "title_en": "JCI sues LG over magnetic-bearing centrifugal chiller patent"
+  },
+  {
+   "id": "evt-eu-cbam-court-upheld",
+   "seeded": false,
+   "status": "已落地",
+   "status_note": "",
+   "subcategories": [
+    "机械结构与辅材"
+   ],
+   "tags": [
+    "关税政策"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-12",
+     "change": "欧盟法院 11-12 驳回波兰要求废除 CBAM 的诉讼，确认机制合法性；欧盟委员会 11-16 发布实施条例 (EU) 2026/2498，明确第三国已缴碳价抵扣规则（国际碳信用抵扣上限 10%）；下游扩围三方谈判定于 11-30。",
+     "text_en": "The EU Court dismissed on Nov 12 Poland’s action to annul CBAM, confirming its legality; the European Commission issued Implementing Regulation (EU) 2026/2498 on Nov 16, setting rules for deducting carbon prices already paid in third countries (international carbon credit deduction capped at 10%); trilogue talks on downstream extension are set for Nov 30."
+    }
+   ],
+   "title": "欧盟法院确认 CBAM 合法性；抵扣实施条例发布",
+   "title_en": "EU court upholds CBAM legality; carbon-price deduction implementing regulation issued"
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -4104,5 +4262,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-17"
+ "updated": "2026-11-18"
 }
