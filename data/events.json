@@ -308,6 +308,11 @@
      "date": "2026-11-19",
      "change": "三星电机 11-18 被曝预收款超 1 万亿韩元、MLCC 产线满产且库存历史低位，TrendForce 口径交期 40 周，Q3 MLCC 均价较去年均价涨 21.4%；三环高容供需偏紧、2027 年 AI 服务器 MLCC 订单有望翻倍。",
      "text_en": "Samsung Electro-Mechanics was reported Nov 18 to hold over KRW 1 trillion in advance payments, with MLCC lines at full capacity and inventories at historic lows; TrendForce put lead times at 40 weeks and Q3 MLCC average prices up 21.4% vs last year's average; Sanhuan's high-capacitance supply is tight and its 2027 AI-server MLCC orders may double."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "三星电机截至 Q3 末长期供货合同预收款 7.77 亿美元（约 1 万亿韩元），较 6 月末 +43.9%；TrendForce 预估 Q4 消费级 X5R 对 OEM/ODM 均价或再涨 25%–30%（预估口径）。",
+     "text_en": "Samsung Electro-Mechanics' long-term supply contract prepayments reached $777 million (about KRW 1 trillion) at end-Q3, up 43.9% from end-June; TrendForce estimates Q4 consumer X5R prices to OEM/ODM customers could rise another 25%-30% (estimate, not in effect)."
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -517,6 +522,11 @@
      "date": "2026-11-19",
      "change": "LME 3M 11-18 盘中跌至 12,640 美元/吨、约 7 个月新低；沪铜现货对 2612 合约升水 4,600 元/吨、洋山溢价 360 美元/吨双双创历史新高；上期所库存 27,642 吨为 2023-12 以来最低。",
      "text_en": "LME 3M fell intraday to $12,640/t on Nov 18, a roughly 7-month low; Shanghai spot premium vs the 2612 contract reached RMB 4,600/t and the Yangshan premium $360/t, both record highs; SHFE inventory of 27,642 t was the lowest since Dec 2023."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "LME 3M 11-18 收盘 12,471 美元/吨，单日暴跌 755.5 美元（-5.7%，19 个月最大单日跌幅），创 4 月 7 日以来新低；11-19 收 12,443 美元，自 9 月历史高点 14,875 美元已跌 16%；JHU 研究预测美国最早明年出现铜短缺。",
+     "text_en": "LME 3M copper closed at $12,471/t on 11-18, down $755.5 (-5.7%, the largest single-day drop in 19 months) to its lowest since 4-07; it closed at $12,443 on 11-19, down 16% from the September record high of $14,875/t; a Johns Hopkins study predicts a US copper shortage as early as next year."
     }
    ],
    "title": "铜价历史高位",
@@ -753,6 +763,11 @@
      "date": "2026-11-19",
      "change": "10 月 DDR4 8Gb 平均合约价 27.5 美元（环比 +5.77%，创历史高位、连续第 19 个月上涨），TrendForce 预计 Q4 PC DRAM 合约价 +13%–18%；但现货 DDR4 8Gb 11-17 报 44.25 美元（-0.24%）、已连续四周下跌，NAND 512Gb TLC 晶圆现货近一个月跌超 20%，合约与现货背离。",
      "text_en": "October DDR4 8Gb average contract price was $27.50 (+5.77% MoM, a record high and the 19th straight monthly rise); TrendForce expects Q4 PC DRAM contract prices +13%-18%; but spot DDR4 8Gb was $44.25 on Nov 17 (-0.24%), down four weeks running, and NAND 512Gb TLC wafer spot prices fell over 20% in a month, diverging from contract prices."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "Q3 全球 DRAM 营收约 2000 亿美元（同比 +369%）；16Gb DDR5 合约价 48 美元（2025-10 为 8.70 美元）；美国 DRAM 集体诉讼继续推进（11-14 法院驳回撤诉动议，12-07 前答辩）。",
+     "text_en": "Global Q3 DRAM revenue was about $200 billion (+369% YoY); 16Gb DDR5 contract prices reached $48 (vs $8.70 in Oct 2025); the US DRAM class action proceeds (court denied motions to dismiss on 11-14; answers due by 12-07)."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1042,6 +1057,11 @@
      "date": "2026-11-19",
      "change": "松下湖口厂火灾后仍无复工消息（复工或需数月）；生益计划 11 月对 M6 及以下板材提价 15%、粘结片提价 25%，订单已排至 2027-01；建滔积层板年内第八轮涨价，薄布类板料与 PP 上调 15%。",
      "text_en": "Panasonic's Hukou plant still has no restart news after the fire (restart may take months); Shengyi plans November hikes of 15% on M6-and-below laminates and 25% on prepreg, with orders booked to Jan 2027; Kingboard raised prices for the eighth time this year, up 15% on thin-cloth laminates and PP."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "生益 11 月提价落地（M6 +15%、粘结片 +25%）；建滔第八轮（薄布板料与 PP +15%）；松下部分一般多层板用 CCL 自 2027-01 起调涨 200%（转述函件）。",
+     "text_en": "Shengyi's November increases took effect (M6 +15%, prepreg +25%); Kingboard's eighth round (+15% on thin cloth and PP); Panasonic notified a 200% increase on some general multilayer CCL from Jan 2027 (reported letter)."
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1213,6 +1233,11 @@
      "date": "2026-11-19",
      "change": "氧化镨钕 11-18 报 722,000–724,000 元/吨、均价 723,000 元/吨（+4,000），较 11-16 均价 717,000 元/吨涨 6,000 元/吨，小幅回升。",
      "text_en": "Praseodymium-neodymium oxide was RMB 722,000-724,000/t on Nov 18, averaging RMB 723,000/t (+4,000), up RMB 6,000/t from the Nov 16 average of RMB 717,000/t, a modest rebound."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "氧化镨钕 11-19 均价 723,000 元/吨（+4,000）；锗锭 11 月第一周报价创历史新高 29,000 元/公斤。",
+     "text_en": "Praseodymium-neodymium oxide averaged RMB 723,000/t on 11-19 (+4,000); germanium ingot prices hit a record high of RMB 29,000/kg in the first week of November."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -1762,6 +1787,11 @@
      "date": "2026-11-19",
      "change": "11-01 调价正式生效：S7-1500/S7-1200、SINAMICS 驱动等流传幅度约 5%–15%（分销商流传口径，未经官方确认）；施耐德印尼 Digital Energy 同日系数 1.1→1.15。",
      "text_en": "The Nov 1 price adjustment took effect: SIMATIC S7-1500/S7-1200, SINAMICS drives and others, at a circulated range of about 5%-15% (distributor-circulated, unconfirmed by the vendor); Schneider Electric Indonesia Digital Energy raised its coefficient to 1.15 from 1.1 the same day."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "11-01 调价涉及 SIMATIC S7-1500/S7-1200 CPU、LOGO!、SITOP 电源、SINAMICS 驱动、SIMOTICS 伺服电机及 HMI 面板，流传幅度约 5%–15%，西门子未发布官方新闻稿。",
+     "text_en": "The 11-01 adjustment covers SIMATIC S7-1500/S7-1200 CPUs, LOGO!, SITOP power supplies, SINAMICS drives, SIMOTICS servo motors and HMI panels, reportedly +5%-15%, with no official Siemens press release."
     }
    ]
   },
@@ -2170,6 +2200,11 @@
      "date": "2026-11-10",
      "change": "CoreWeave 2026 年 capex 指引 370–390 亿美元（低端上调），有功功率 9 月 30 日已超 1.7GW、年底目标 1.85GW 以上；Q4 capex 仍有 63–83 亿美元，增量多为 2027 年上线容量。",
      "text_en": "CoreWeave guided 2026 capex of $37-39 billion (low end raised), with active power above 1.7 GW at Sep 30 and a year-end target above 1.85 GW; Q4 capex of $6.3-8.3 billion is mostly capacity coming online in 2027."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "四大云 2026 合计 capex 约 7300 亿美元；AWS 积压 5780 亿、微软 RPO 6770 亿、谷歌云积压 5610 亿美元，订单排至 2028 年，但三家自由现金流集体转负。",
+     "text_en": "The four clouds' combined 2026 capex is about $730 billion; AWS backlog $578 billion, Microsoft RPO $677 billion, Google Cloud backlog $561 billion, with orders booked through 2028, but all three have turned free-cash-flow negative."
     }
    ]
   },
@@ -2745,6 +2780,11 @@
      "date": "2026-11-05",
      "change": "11-02转述10-29财报电话会：数据中心订单前9个月超30亿美元（+350% YoY），10月初与一hyperscaler签超30亿美元协议；CDU产品线1MW已发布、2.6MW未来2个月、5MW年底推出；Fort Worth工厂明年夏季投产、1500名员工；全年数据中心销售额目标20亿美元。",
      "text_en": "Nov 2 readout of the Oct 29 earnings call: data center orders exceeded $3B in the first nine months (+350% YoY); a $3B+ hyperscaler agreement signed in early October; CDU lineup at 1MW shipped, 2.6MW within 2 months, 5MW by year-end; Fort Worth plant starts next summer with 1,500 staff; full-year data center sales target $2B."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "11-16 报道 Baird 会议表态：数据中心销售额 2026 年约 20 亿美元、2027 年约 30 亿美元，年初至今订单 +350%。",
+     "text_en": "A 11-16 report on the Baird conference: data-centre sales of about $2 billion in 2026 and about $3 billion in 2027, with orders up 350% year to date."
     }
    ],
    "title": "开利Q3：数据中心订单+300%、在手订单85亿美元创新高",
@@ -3554,6 +3594,11 @@
      "date": "2026-11-19",
      "change": "Nucor 热卷 CSP 11-16 再涨 15 美元/短吨至 1,310 美元/短吨（连续第 18 周上调），中厚板 11-13 +70 美元/短吨并开启 12 月订货；国内热卷 11-17 全国均价 3,175 元/吨（-27 元/吨），续跌。",
      "text_en": "Nucor raised its hot-rolled coil CSP by $15/short ton to $1,310 on Nov 16, the 18th straight weekly increase, and plate by $70/short ton on Nov 13 with December order books open; China's domestic HRC average fell RMB 27/t to RMB 3,175/t on Nov 17."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "Nucor 热卷 CSP 11-16 再涨 15 美元/短吨至 1,310 美元/短吨（连续第 18 周上调）；SMU 现货热卷均价 1,390 美元/短吨（11-17），镀锌板供应紧张、交期约 12 周或更长。",
+     "text_en": "Nucor raised HR coil CSP by $15/st to $1,310/st on 11-16 (18th straight weekly increase); SMU spot HR coil averaged $1,390/st (11-17), with galvanized sheet tight and lead times of about 12 weeks or longer."
     }
    ],
    "subcategories": [
@@ -3689,6 +3734,11 @@
      "date": "2026-11-19",
      "change": "11 月主合约 11-18 到期；现货对 3M 升水 11-17 仍约 278 美元/吨，cash-to-December 价差自约 190 美元/吨收窄；LME 铝库存 11-17 降至 221,900 吨（1990 年以来最低）。",
      "text_en": "The November prompt contract expired Nov 18; the cash-to-3M premium was still about $278/t on Nov 17, with the cash-to-December spread narrowing from about $190/t; LME aluminium stocks fell to 221,900 t on Nov 17, the lowest since 1990."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "LME 3M 11-18 失守 3000 美元，官方价 2,864 美元/吨（-2.4%，年内低位）；现货升水 11-17 约 275 美元/吨（1988–1990 年逼仓以来最高），11-18 回落至 230 美元；11-19 收 2,814.5 美元（+0.90%）。",
+     "text_en": "LME 3M aluminium fell below $3,000 on 11-18, official price $2,864/t (-2.4%, a year low); the cash premium hit about $275/t on 11-17 (highest since the 1988-1990 squeeze) and eased to $230 on 11-18; it closed at $2,814.5 on 11-19 (+0.90%)."
     }
    ],
    "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
@@ -3730,6 +3780,11 @@
      "date": "2026-11-19",
      "change": "Modexus 11-18 投资者日发布 FY2029 目标（营收 57–77 亿美元、数据中心 45–65 亿美元）与 5 亿美元回购，均未提及三星；Jana Partners 同日公开要求 Modexus 提升利润率或考虑出售；双方仍未证实收购。",
      "text_en": "At its Nov 18 investor day Modexus set FY2029 targets (revenue $5.7-7.7B, data centre $4.5-6.5B) and a $500M buyback, with no mention of Samsung; Jana Partners publicly urged Modexus the same day to raise margins or consider a sale; neither side has confirmed a deal."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "截至 11-20 仍无新进展；Modexus 投资者日与回购公告均未提及三星。",
+     "text_en": "No new developments as of 11-20; neither Modexus' investor day nor its buyback announcement mentioned Samsung."
     }
    ],
    "title": "三星洽购美国数据中心制冷商 Modine（彭博爆料，在谈未证实）",
@@ -3811,6 +3866,11 @@
      "date": "2026-11-17",
      "change": "NVDA 11-16 收 156.14 美元（-4.12%），较 52 周高点 243.37 美元（10-06）回落约 35.9%；美国商务部 BIS 11-16 发布临时最终规则：向印尼、马来西亚、新加坡、泰国、巴西出口先进半导体须申请许可证，并堵住中国企业经第三国数据中心远程租用算力的漏洞（远程算力条款 90 天后生效）；董事会未讨论让黄仁勋回归（CNBC 11-16），财长贝森特称董事会应从外部物色新 CEO；英伟达定于 11-17 盘后发布 FY2027 Q3 财报，市场一致预期营收约 1,092 亿美元、调整后 EPS 约 2.47–2.48 美元，数据中心收入预期约 1,018 亿美元。",
      "text_en": "NVDA closed Nov 16 at $156.14 (-4.12%), about 35.9% below its 52-week high of $243.37 (Oct 6); the US Commerce Department (BIS) issued an interim final rule on Nov 16 requiring licences for advanced-semiconductor exports to Indonesia, Malaysia, Singapore, Thailand and Brazil, and closing the loophole of Chinese firms remotely renting compute via third-country data centers (remote-compute provisions take effect in 90 days); the board has not discussed bringing Jensen Huang back (CNBC, Nov 16), and Treasury Secretary Bessent said the board should look for an outside CEO; Nvidia reports FY2027 Q3 results after the close on Nov 17, with consensus revenue of about $109.2bn and adjusted EPS of about $2.47-2.48, and data-center revenue expected at about $101.8bn."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "11-19 股价收 145.98 美元（-3.30%），连续第六个交易日下跌，5 日跌幅约 16%；董事会 11-17 明确拒黄仁勋复任 CEO。",
+     "text_en": "Shares closed at $145.98 on 11-19 (-3.30%), a sixth straight daily decline and about -16% over five sessions; the board stated on 11-17 that it will not reinstate Jensen Huang as CEO."
     }
    ],
    "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
@@ -4007,6 +4067,11 @@
      "date": "2026-11-19",
      "change": "第四轮调价函 11-10 起在分销商与采购圈流传、2027-01-01 生效（部分产品，幅度与料号未确认）；NXP 11-02 发出第三轮调价函、2027-01-01 生效，瑞萨 2027-01-01 调价已确认。",
      "text_en": "A fourth-round price-increase letter has circulated among distributors and buyers since Nov 10, effective Jan 1, 2027 (selected products; scope and rates unconfirmed); NXP issued a third-round letter on Nov 2, also effective Jan 1, 2027, and Renesas' Jan 1, 2027 adjustment is confirmed."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "ST 第四轮涨价函确认（函件日期 11-04，部分产品 2027-01-01 起涨价，未公开涨幅与料号）。",
+     "text_en": "ST's fourth-round price-increase letter is confirmed (dated 11-04; some products up from 2027-01-01, with no published magnitude or part list)."
     }
    ],
    "title": "ST 第四轮涨价（2027-01-01）网传函未确认",
@@ -4094,6 +4159,11 @@
      "date": "2026-11-17",
      "change": "大型电力变压器全球采购交期已从 2021 年约 2 年拉长至 160–210 周（3–4 年），主因取向硅钢短缺、绕线技工与高压测试能力不足，Wood Mackenzie 预计 2026 年电力变压器市场短缺 15%；Applied Digital 要求 Oracle、Meta 等大租户及英伟达、AMD 按项目提供数十亿美元财务担保以覆盖新 AI 数据中心并网的电网升级与接网成本；西门子能源 FY2026 backlog 1,640 亿欧元（数据中心客户约占 150 亿欧元），GE Vernova backlog 1,970 亿美元，伊顿数据中心订单滚动 12 个月翻倍以上。",
      "text_en": "Global procurement lead times for large power transformers have stretched from about 2 years in 2021 to 160-210 weeks (3-4 years), driven by grain-oriented electrical steel shortages, winding-labour and high-voltage testing constraints; Wood Mackenzie expects a 15% power-transformer market shortage in 2026; Applied Digital is asking large tenants such as Oracle and Meta, plus Nvidia and AMD, for multi-billion-dollar financial guarantees per project to cover grid upgrade and interconnection costs for new AI data centers; Siemens Energy's FY2026 backlog is EUR 164bn (data-center customers about EUR 15bn), GE Vernova's backlog is $197bn, and Eaton's data-center orders more than doubled on a rolling 12-month basis."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "部分市场开关柜交期已拉长至 2–4 年，铜线缆同比涨 22%–36%；JHU 研究提示未来四年变压器缺口约 15%。",
+     "text_en": "Switchgear lead times in some markets have stretched to 2-4 years, with copper cable prices up 22%-36% YoY; a Johns Hopkins study flags a transformer gap of about 15% over the next four years."
     }
    ],
    "title": "美国变压器/开关柜交期拉至 40–160 周",
@@ -4120,6 +4190,11 @@
      "date": "2026-11-19",
      "change": "截至 11-19 约 08:00 仍无续延公告，暂停期按 2026-11-27 到期，倒计时 8 天；若到期前无新公告，对美镓/锗/锑\"原则上不予许可\"将于 11-28 起恢复。",
      "text_en": "As of about 08:00 on Nov 19 there was still no extension notice; the pause expires Nov 27, with 8 days left; without a new notice, the \"in principle no licences\" stance for gallium, germanium and antimony exports to the US resumes Nov 28."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "截至 11-20 约 07:35 仍无续延公告，暂停按 11-27 到期，倒计时 7 天；锗锭 11 月第一周报价创历史新高 29,000 元/公斤。",
+     "text_en": "As of about 07:35 on 11-20, no extension announcement has appeared; the suspension still expires 11-27, with 7 days to go; germanium ingot prices hit a record high of RMB 29,000/kg in the first week of November."
     }
    ],
    "title": "镓/锗/锑对美出口禁令暂停 11-27 到期、暂无续延公告",
@@ -4211,6 +4286,11 @@
      "date": "2026-11-19",
      "change": "财报利好出尽回落：11-18 股价收跌 2.89% 至 150.96 美元；云行业收入积压约 2.5 万亿美元，Rubin NVL72 开始出货。",
      "text_en": "The stock gave back its earnings gains, closing down 2.89% at $150.96 on Nov 18; cloud-industry revenue backlog is about $2.5 trillion and Rubin NVL72 systems have begun shipping."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "11-19 股价收 145.98 美元（-3.30%），六连跌；UBS 三天内第二次下调目标价至 220 美元（维持买入）。",
+     "text_en": "Shares closed at $145.98 on 11-19 (-3.30%), a sixth straight decline; UBS cut its price target to $220 for the second time in three days (buy maintained)."
     }
    ],
    "title": "英伟达 FY2027 Q3 财报超预期、Q4 指引 1300 亿美元",
@@ -4259,6 +4339,11 @@
      "date": "2026-11-17",
      "change": "新增 PowerDirect 9000（AI 算力 pod 级）与 PowerNexus MV SST（5MW 固态变压器，中压交流一次转换为 800VDC），覆盖机架/pod/数据大厅三级部署；11-17～22 在 SC26 展出，试点项目与客户协同开发进行中。",
      "text_en": "Added PowerDirect 9000 (AI compute pod level) and PowerNexus MV SST (5MW solid-state transformer, medium-voltage AC to 800VDC in one conversion), covering rack/pod/data-hall tiers; shown at SC26 Nov 17-22, pilot projects under joint development with customers."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "11-17 推出 800VDC 三级供电扩展（PowerDirect 9000 + PowerNexus MV SST），SC26 展出，试点项目进行中。",
+     "text_en": "On 11-17 Vertiv launched an 800VDC three-tier power expansion (PowerDirect 9000 + PowerNexus MV SST), shown at SC26 with pilot projects under way."
     }
    ],
    "title": "Vertiv 推出 800VDC 三级供电扩展（PowerDirect 9000 + PowerNexus MV SST）",
@@ -4280,6 +4365,11 @@
      "date": "2026-11-16",
      "change": "摘得顺德陈村超 260 亩产业地块，将建液冷算力基础设施智造基地；今年 3 月总投资 8 亿元的液冷新质智造基地已在陈村开工。",
      "text_en": "Won a 260-mu-plus industrial plot in Chencun, Shunde, to build a liquid-cooling AI infrastructure manufacturing base; an 800 million yuan liquid-cooling base broke ground in Chencun in March this year."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "11-16 以 2.3488 亿元竞得陈村 260.97 亩工业地，计划总投资 20 亿元建全球研发中心/液冷算力基础设施智造基地（今年第二次在陈村拿地）。",
+     "text_en": "On 11-16 Shenling won a 260.97-mu industrial plot in Chencun for RMB 234.88 million, planning RMB 2 billion for a global R&D centre and liquid-cooling AI infrastructure manufacturing base (its second Chencun land win this year)."
     }
    ],
    "title": "申菱环境摘地 260 亩建液冷算力基础设施智造基地",
@@ -4322,6 +4412,11 @@
      "date": "2026-11-12",
      "change": "欧盟法院 11-12 驳回波兰要求废除 CBAM 的诉讼，确认机制合法性；欧盟委员会 11-16 发布实施条例 (EU) 2026/2498，明确第三国已缴碳价抵扣规则（国际碳信用抵扣上限 10%）；下游扩围三方谈判定于 11-30。",
      "text_en": "The EU Court dismissed on Nov 12 Poland’s action to annul CBAM, confirming its legality; the European Commission issued Implementing Regulation (EU) 2026/2498 on Nov 16, setting rules for deducting carbon prices already paid in third countries (international carbon credit deduction capped at 10%); trilogue talks on downstream extension are set for Nov 30."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "欧盟委员会 11-16 发布实施条例 (EU) 2026/2498，明确第三国已付碳价抵扣认定规则（适用于 2026–2027 申报期，过渡安排至 2028-09-30）。",
+     "text_en": "On 11-16 the European Commission published Implementing Regulation (EU) 2026/2498, setting out how carbon prices paid in third countries are credited (for the 2026-2027 reporting period, with transitional arrangements to 2028-09-30)."
     }
    ],
    "title": "欧盟法院确认 CBAM 合法性；抵扣实施条例发布",
@@ -4350,6 +4445,11 @@
      "date": "2026-11-19",
      "change": "NXP 11-02 发出第三轮调价函、2027-01-01 生效（幅度与料号未披露）；ST 第四轮、瑞萨调价同指向 2027-01-01，功率器件 2027-01-01 调价潮成形。",
      "text_en": "NXP issued a third-round price-increase letter on Nov 2, effective Jan 1, 2027 (scope and rates undisclosed); ST's fourth round and Renesas' adjustment point to the same Jan 1, 2027 date, forming a power-device price-hike wave."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "NXP 第三轮调价函确认（11-02 发函，2027-01-01 生效，未披露幅度与料号）；前两轮 4-01、6-01 生效。",
+     "text_en": "NXP's third-round price-adjustment letter is confirmed (issued 11-02, effective 2027-01-01, with no disclosed magnitude or part list); the first two rounds took effect 04-01 and 06-01."
     }
    ]
   },
