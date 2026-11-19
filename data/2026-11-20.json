@@ -123,7 +123,7 @@
     {
      "outlet": "Finnhub 行情",
      "date": "2026-11-19",
-     "url": "https://finnhub.io/api/v1/quote?symbol=NVDA",
+     "url": "https://finnhub.io/?q=%22NVDA%22",
      "first_party": false
     }
    ],
@@ -430,9 +430,7 @@
     "Variable Speed Drives Low Voltage",
     "Variable Speed Drives Medium Voltage"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   },
   {
@@ -453,9 +451,7 @@
     "Vessels",
     "塑料件与包装"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   },
   {
@@ -470,9 +466,7 @@
     "Screw Compressors",
     "Scroll Compressors"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   },
   {
@@ -488,9 +482,7 @@
     "Tube & Fin Coils",
     "Shell & Tube"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   },
   {
@@ -504,9 +496,7 @@
     "Centrifugal Fans",
     "Water Pumps"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   },
   {
@@ -518,9 +508,7 @@
     "Ball Bearings",
     "Magnetic Bearings"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   },
   {
@@ -534,9 +522,7 @@
     "Sensors - Pressure",
     "Sensors - Temperature"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   },
   {
@@ -547,9 +533,7 @@
    "subcategories": [
     "连接器与线束"
    ],
-   "tags": [
-    "影响BOM"
-   ],
+   "tags": [],
    "type": "排查无异常"
   }
  ],
