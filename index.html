@@ -518,7 +518,7 @@ zh:{
  cw_cu_t:"铜价走势 · 近一年日度",cw_shfe:"沪铜主力连续 · 日收盘（元/吨）",cw_lme:"LME 3M 铜（美元/吨）",cw_range:"近一年高 {hi} / 低 {lo}",cw_5d:"近 5 交易日",
  cw_fc_t:"机构预测跟踪 · LME 铜均价（美元/吨）",cw_h_org:"机构",cw_h_view:"核心观点",cw_h_upd:"更新",
  cw_sc_t:"情景研判 · 2027 年上半年 LME 铜（美元/吨）",cw_cur:"预判基准",
- cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨）",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
+ cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨）",cw_rf_spot:"华东现货 · 早报每日核实",cw_unit_t:"元/吨",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
  cw_po_t:"政策框架与关键节点",cw_h_region:"地区",cw_h_law:"法规",cw_h_state:"2027 年状态",cw_h_next:"下一节点",en_fb:"英文版每周一至五发布，当前显示 {d} 期英文版。",
  sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨",sp_ag:"白银",sp_ag_u:"美元/盎司",sp_fx:"美元/人民币",sp_fx_u:"元",
  sit_title:"管理态势 · 近 7 天",
@@ -616,7 +616,7 @@ en:{
  cw_cu_t:"Copper prices · daily, past year",cw_shfe:"SHFE copper, continuous · daily close (CNY/t)",cw_lme:"LME copper 3M (USD/t)",cw_range:"1Y high {hi} / low {lo}",cw_5d:"5 sessions",
  cw_fc_t:"Institutional forecasts · LME copper average (USD/t)",cw_h_org:"Institution",cw_h_view:"Core view",cw_h_upd:"Updated",
  cw_sc_t:"Scenarios · LME copper, H1 2027 (USD/t)",cw_cur:"Base case",
- cw_rf_t:"Refrigerant contract prices by grade (CNY/t)",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
+ cw_rf_t:"Refrigerant contract prices by grade (CNY/t)",cw_rf_spot:"East China spot · verified daily in the briefing",cw_unit_t:"CNY/t",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
  cw_po_t:"Policy framework & key dates",cw_h_region:"Region",cw_h_law:"Framework",cw_h_state:"Status in 2027",cw_h_next:"Next milestone",en_fb:"The English edition is published Monday to Friday. Showing the {d} edition.",
  sp_lme:"LME Copper 3M",sp_lme_u:"USD/t",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t",sp_ag:"Silver",sp_ag_u:"USD/ozt",sp_fx:"USD/CNY",sp_fx_u:"CNY",
  sit_title:"Management Snapshot · Last 7 Days",
@@ -1436,8 +1436,8 @@ async function loadSeries(){
 
 /* ---- 九、铜·冷媒专题（data/commodity-watch[-en].json + series.json 近一年序列；数据缺失时静默不渲染） ---- */
 let CW=null;
-function cwChart(pts,color,W){
-  const w=Math.max(300,Math.min(1200,Math.round(W||360))),h=Math.round(Math.max(170,Math.min(235,w*0.42))),L=56,R=54,T=10,B=22;
+function cwChart(pts,color,W,hs){
+  const w=Math.max(300,Math.min(1200,Math.round(W||360))),h=Math.round(Math.max(170,Math.min(235,w*0.42))*(hs||1)),L=56,R=54,T=10,B=22;
   const vs=pts.map(p=>+p.value),mn=Math.min.apply(null,vs),mx=Math.max.apply(null,vs);
   const pad=(mx-mn)*0.06||1,lo=mn-pad,hi=mx+pad,iw=w-L-R,ih=h-T-B;
   const X=i=>Math.round((L+i*iw/(pts.length-1))*10)/10;
@@ -1479,6 +1479,11 @@ function paintCw(){
   const shfe=SERIES?(SERIES["copper_shfe_cny_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
   const lme1y=SERIES?(SERIES["copper_lme_1y_usd_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
   const hasCharts=shfe.length>=5&&lme1y.length>=5;
+  const r32=SERIES?(SERIES["refrigerant_r32_cny_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
+  const r410a=SERIES?(SERIES["refrigerant_r410a_cny_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
+  const rfL=SERIES?SERIES["refrigerant_spot_latest"]||null:null;
+  const hasRf=r32.length>=2&&r410a.length>=2&&!!rfL;
+  const rfRange=n=>{const it=rfL?rfL.items.find(x=>x.name===n):null;return it?Number(it.low).toLocaleString("en-US")+"\u2013"+Number(it.high).toLocaleString("en-US")+" "+t("cw_unit_t"):"";};
   const d=CW;
   let h=secttl("专",t("sec")[8],fmt(t("cw_cnt"),{d:d.updated||""}))+guide(t("cw_guide"));
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_status_t")}</h3><div class="cw-grid">`
@@ -1500,6 +1505,9 @@ function paintCw(){
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_rf_t")}</h3><div class="cw-twrap"><table class="cw-table gr"><colgroup><col style="width:15%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col><col style="width:13%"></colgroup><tr><th>${t("cw_h_grade")}</th><th class="n">2026 Q1</th><th class="n">Q2</th><th class="n">Q3</th><th>${t("cw_h_trend")}</th><th class="n">${t("cw_h_ytd")}</th></tr>`
     +d.refrigerant.grades.map(g=>`<tr><td><b>${esc(g.name)}</b></td><td class="n">${Number(g.q[0]).toLocaleString("en-US")}</td><td class="n">${Number(g.q[1]).toLocaleString("en-US")}</td><td class="n"><b>${g.approx?t("cw_approx"):""}${Number(g.q[2]).toLocaleString("en-US")}</b></td><td>${cwSpark3(g.q)}</td><td class="n" style="color:#d4695c;font-weight:700">${esc(g.chg)}</td></tr>`).join("")
     +`</table></div>`
+    +(hasRf?`<div class="cw-chartlab"><span class="cl">${t("cw_rf_spot")}</span><span class="cv">${esc((rfL.date||"").slice(5))}${rfL.outlet?" · "+esc(rfL.outlet):""}</span></div>`
+    +`<div class="cw-chartlab"><span class="cl">R32</span><span class="cv">${rfRange("R32")}</span></div><div id="cwc3"></div>`
+    +`<div class="cw-chartlab"><span class="cl">R410A</span><span class="cv">${rfRange("R410A")}</span></div><div id="cwc4"></div>`:"")
     +(d.refrigerant.rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
     +`<div class="src">${esc(d.refrigerant.src)}</div></div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_po_t")}</h3><div class="cw-twrap"><table class="cw-table pl"><colgroup><col style="width:12%"><col style="width:32%"><col style="width:34%"><col style="width:22%"></colgroup><tr><th>${t("cw_h_region")}</th><th>${t("cw_h_law")}</th><th>${t("cw_h_state")}</th><th>${t("cw_h_next")}</th></tr>`
@@ -1510,6 +1518,8 @@ function paintCw(){
   box.innerHTML=h;
   const c1=document.getElementById("cwc1");if(c1)c1.innerHTML=cwChart(shfe,"#1e86d6",c1.clientWidth);
   const c2=document.getElementById("cwc2");if(c2)c2.innerHTML=cwChart(lme1y,"#2c4a66",c2.clientWidth);
+  const c3=document.getElementById("cwc3");if(c3)c3.innerHTML=cwChart(r32,"#1e86d6",c3.clientWidth,0.6);
+  const c4=document.getElementById("cwc4");if(c4)c4.innerHTML=cwChart(r410a,"#b3851f",c4.clientWidth,0.6);
 }
 async function loadCw(){
   try{
