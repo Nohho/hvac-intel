@@ -1351,6 +1351,11 @@ async function boot(){
       const h=location.hash||"";
       const m2=h.match(/date=(\d{4}-\d{2}-\d{2})/);
       const lm=h.match(/lang=(en|zh)/);
+      if(!m2&&!lm){
+        // 纯页内锚点（如左侧导航 #s1-#s8）：只滚动，不切语言/日期；回写规范 hash 保住当前期与语言
+        if(CURDATE){try{history.replaceState(null,"","#date="+CURDATE+(LANG==="en"?"&lang=en":""));}catch(e){}}
+        return;
+      }
       const nl=lm?lm[1]:"zh";
       const nd=(m2&&days.indexOf(m2[1])>=0)?m2[1]:CURDATE;
       if(nl!==LANG){initLang();applyLang();if(nd)loadDay(nd);}
