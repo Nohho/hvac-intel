@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2c4a66">
 <title>HVAC 供应链情报</title>
 <meta name="description" content="HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 算力虹吸、跨行业传导、供应商动态、预警与建议。每天 08:30 更新。">
 <link rel="canonical" href="https://nohho.github.io/hvac-intel/">
@@ -351,6 +352,16 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
 .infobar{font-size:13px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:10px 0;line-height:1.6}
 .railsearch.msearch{display:none}
 @media(max-width:1023px){.railsearch.msearch{display:block;margin-top:12px}}
+/* ---- 现代化（2026-11-20 · modern-web-guidance 对照） ---- */
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+#s5,#s7,#s8{content-visibility:auto;contain-intrinsic-size:auto 900px}
+#calsub{border:none;background:#fff;color:#222;max-width:min(430px,calc(100vw - 40px));width:100%;border-radius:12px;padding:20px;font-size:14px;line-height:1.7}
+#calsub::backdrop{background:rgba(0,0,0,.55)}
+dialog:modal{overscroll-behavior:contain}
+dialog::backdrop{overflow:hidden;overscroll-behavior:contain}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
 </style>
 </head>
 <body>
@@ -379,6 +390,20 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
   <b id="t_foot1">HVAC 供应链情报</b> · <span id="t_foot2">数据来自每日公开信息核实汇总，仅作供应链研究参考</span><br>
   <span id="t_foot3">不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别</span><br><span id="footmeta"></span>
 </footer>
+<dialog id="calsub" closedby="any" aria-labelledby="c_title">
+    <div style="font-weight:700;font-size:16px;margin-bottom:6px" id="c_title"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>订阅时间锚点日历</div>
+    <div style="color:#666;font-size:13px;margin-bottom:10px" id="c_desc">每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。</div>
+    <input id="calurl" readonly autofocus value="https://nohho.github.io/hvac-intel/anchors.ics" onclick="this.select()" style="width:100%;box-sizing:border-box;padding:8px;border:1px solid #ddd;border-radius:8px;font-size:12px;color:#444;background:#f7f9fb">
+    <div style="display:flex;gap:10px;margin:12px 0">
+      <button onclick="copyCalUrl()" id="c_copy" style="flex:1;padding:10px;border:none;border-radius:8px;background:#0b5cab;color:#fff;font-size:14px;cursor:pointer">复制订阅链接</button>
+      <a href="webcal://nohho.github.io/hvac-intel/anchors.ics" id="c_open" style="flex:1;text-align:center;padding:10px;border-radius:8px;background:#e8f1fb;color:#0b5cab;font-size:14px;text-decoration:none">用日历 App 打开</a>
+    </div>
+    <div style="font-size:13px;color:#555" id="c_ios">
+      <b>iPhone</b>：在 Safari 里点「用日历 App 打开」最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
+      <b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接
+    </div>
+    <button onclick="hideCalSub()" id="c_close" style="margin-top:12px;width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;background:#fff;font-size:14px;cursor:pointer">关闭</button>
+</dialog>
 <script>
 "use strict";
 const $=s=>document.querySelector(s);
@@ -608,7 +633,7 @@ function applyLang(){
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   const setH=(id,v)=>{const e=document.getElementById(id);if(e)e.innerHTML=v;};
   set("t_h1",t("h1"));set("t_live",t("live"));set("t_sub",t("sub"));
-  setH("copylink",ICO.link+t("copylink"));setH("t_rss",ICO.rss+t("rss"));setH("calsub",ICO.cal+t("calsub"));set("langbtn",t("langbtn"));
+  setH("copylink",ICO.link+t("copylink"));setH("t_rss",ICO.rss+t("rss"));setH("t_calsub",ICO.cal+t("calsub"));set("langbtn",t("langbtn"));
   document.querySelectorAll("nav.secnav a .nl").forEach((s,i)=>{const nv=t("nav");if(nv[i])s.textContent=nv[i];});
   const rq=document.getElementById("railq");if(rq)rq.placeholder=t("railq_ph");const rq2=document.getElementById("railq2");if(rq2)rq2.placeholder=t("railq_ph");
   set("t_foot1",t("foot1"));set("t_foot2",t("foot2"));set("t_foot3",t("foot3"));
@@ -757,8 +782,10 @@ function warnCard(w){
 
 function secttl(no,title,cnt){const NOM={"一":"1","二":"2","三":"3","四":"4","五":"5","六":"6","七":"7","八":"8","九":"9","专":"Topic","附":"App."};return `<div class="secttl"><span class="no">${LANG==="en"?(NOM[no]||no):no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
 function guide(html){return `<div class="guide">${ICO.bulb}${html}</div>`;}
-function goId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});}
-function setFilter(f){FILTER=f;renderMain(CUR);const y=$("#s2").offsetTop-70;window.scrollTo({top:y,behavior:"smooth"});}
+const RMQ=window.matchMedia?matchMedia("(prefers-reduced-motion: reduce)"):null;
+function sb(){return RMQ&&RMQ.matches?"auto":"smooth";}
+function goId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:sb(),block:"center"});}
+function setFilter(f){FILTER=f;renderMain(CUR);const y=$("#s2").offsetTop-70;window.scrollTo({top:y,behavior:sb()});}
 
 function renderIssuestrip(){
   // 期号 / 件数 / 一手来源数 / 预计阅读时长（AIHOT 式）
@@ -815,7 +842,7 @@ function railJump(dir){
   if(!_MARKS.length)return;
   _MIDX=(_MIDX+dir+_MARKS.length)%_MARKS.length;
   _MARKS.forEach((m,i)=>m.classList.toggle("cur",i===_MIDX));
-  _MARKS[_MIDX].scrollIntoView({behavior:"smooth",block:"center"});
+  _MARKS[_MIDX].scrollIntoView({behavior:sb(),block:"center"});
 }
 function initRailSearch(){
   const inp=document.getElementById("railq"); if(!inp||inp._wired)return;
@@ -881,7 +908,7 @@ function renderMain(d){
     const dl=d.warnings.filter(w=>w.deadline).map(w=>w.deadline).sort()[0];
     ab.classList.add("show");
     ab.innerHTML=ICO.warn+fmt(t("alert_t"),{a:highs.length,b:dl?fmt(t("alert_b"),{d:mmdd(dl)}):""});
-  }else{ab.classList.remove("show");ab.innerHTML="";}
+  }else{ab.classList.remove("show");ab.replaceChildren();}
 
   /* ---- 顶部导读（瘦身：≥3 条只渲前 2 条 + 提示行；≤2 条原文照渲） ---- */
   const hl=$("#headline");
@@ -956,7 +983,7 @@ function renderMain(d){
     +`<div class="card"><h3 style="margin-top:0;font-size:14.5px">${fmt(t("s5_check_t"),{n:chk.length})}</h3><div class="checkchips">${chkHtml}</div></div>`;
 
   /* ---- 六、预警与建议 ---- */
-  const warns=[...d.warnings].sort((a,b)=>({高:0,中:1,低:2}[a.urgency]-{高:0,中:1,低:2}[b.urgency]));
+  const warns=d.warnings.toSorted((a,b)=>({高:0,中:1,低:2}[a.urgency]-{高:0,中:1,低:2}[b.urgency]));
   const anchors=(d.time_anchors||[]).map(x=>`<div class="anchor">${ICO.clock}<b>${mmdd(x.date)}</b> ${esc(x.event)}</div>`).join("");
   const firstHigh=highs[0];
   const s6=secttl("六",t("sec")[5],d.warnings.length+" "+t("u_warnings"))
@@ -1096,8 +1123,8 @@ function copyIssueLink(){
   else prompt(t("copy_prompt"),u);
 }
 const CALURL="https://nohho.github.io/hvac-intel/anchors.ics";
-function showCalSub(){document.getElementById("calsub").style.display="flex";}
-function hideCalSub(){document.getElementById("calsub").style.display="none";}
+function showCalSub(){const d=document.getElementById("calsub");if(d&&!d.open){if(d.showModal)d.showModal();else d.setAttribute("open","");}}
+function hideCalSub(){const d=document.getElementById("calsub");if(d&&d.open)d.close();}
 function copyCalUrl(){
   const done=()=>{const b=document.getElementById("calurl");b.value=t("cal_copied");setTimeout(()=>{b.value=CALURL;},1600);};
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(CALURL).then(done).catch(()=>{document.getElementById("calurl").select();});}
@@ -1135,8 +1162,10 @@ async function loadDay(date){
       try{const tr=await fetch("data/taxonomy.json");if(tr.ok)window._TAX=await tr.json();}catch(e){}
     }
     FILTER="all";
-    renderMain(await r.json());
-    if(enFb){paintFresh();const m=$("#main");if(m)m.insertAdjacentHTML("afterbegin",`<div class="infobar">${fmt(t("en_fb"),{d:eff})}</div>`);}
+    const data=await r.json();
+    const apply=()=>{try{renderMain(data);if(enFb){paintFresh();const m=$("#main");if(m)m.insertAdjacentHTML("afterbegin",`<div class="infobar">${fmt(t("en_fb"),{d:eff})}</div>`);}}catch(e){const m=$("#main");if(m)m.insertAdjacentHTML("afterbegin",`<div class="errbar">${ICO.warn}${esc(eff)}${t("load_err_t")}${esc(e.message)}${t("load_err_b")}<a href="javascript:loadDay(CURDATE)">${t("retry")}</a></div>`);}};
+    if(document.startViewTransition&&!(RMQ&&RMQ.matches))document.startViewTransition(apply);
+    else apply();
     document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===eff));
     const ip2=$("#issuepill");
     const no2=(window._ISSUE_DAYS||[]).indexOf(eff)+1;
@@ -1231,7 +1260,7 @@ function paintTimeline(){
   }
   const rank=s=>(s==="已落地"||s==="已失效")?1:0;
   const items=EVDATA.map(e=>{
-    const tl=[...(e.timeline||[])].sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
+    const tl=(e.timeline||[]).toSorted((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
     return {e,tl,latest:tl.length?String(tl[0].date||""):""};
   }).sort((a,b)=>rank(a.e.status)-rank(b.e.status)||b.latest.localeCompare(a.latest));
   const active=items.filter(x=>rank(x.e.status)===0).length;
@@ -1379,7 +1408,7 @@ function paintSpark(){
     const pcol=pct>0?"#d4695c":pct<0?"#4a9457":"var(--mut)";
     rows.push(`<div class="sparkrow"><span class="sparkname">${esc(d.name)}</span><span class="sparkwrap">${sparkSVG(pts)}</span><span class="sparklv"><b>${d.dec?Number(last.value).toFixed(d.dec):Number(last.value).toLocaleString("en-US")} ${esc(d.unit)}</b>${esc(mmdd(last.date))} · <span style="color:${pcol};font-weight:700">${pct>=0?"+":""}${pct.toFixed(2)}%</span></span></div>`);
   });
-  if(!rows.length){box.style.display="none";box.innerHTML="";return;}
+  if(!rows.length){box.style.display="none";box.replaceChildren();return;}
   box.innerHTML=`<h3 style="margin-top:0;font-size:14.5px">${ICO.chart}${t("sp_title")}<span class="rrsub" style="font-weight:400;color:var(--mut);font-size:12px;margin-left:6px">${fmt(t("sp_sub"),{a:mmdd(rngA),b:mmdd(rngB)})}</span></h3>`+rows.join("");
   box.style.display="block";
 }
@@ -1498,6 +1527,8 @@ async function boot(){
     window._ISSUE_DAYS=days;
     window._LATEST=idx.latest||days[days.length-1];
     initRailSearch();
+    const cd=document.getElementById("calsub");
+    if(cd)cd.addEventListener("click",e=>{const r=cd.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)hideCalSub();});
     const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
     const start=(hm&&days.indexOf(hm[1])>=0)?hm[1]:(idx.latest||days[days.length-1]);
     window.addEventListener("hashchange",()=>{
@@ -1523,21 +1554,5 @@ async function boot(){
 }
 boot();
 </script>
-<div id="calsub" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:99;align-items:center;justify-content:center;padding:20px" onclick="if(event.target===this)hideCalSub()">
-  <div style="background:#fff;color:#222;max-width:430px;width:100%;border-radius:12px;padding:20px;font-size:14px;line-height:1.7">
-    <div style="font-weight:700;font-size:16px;margin-bottom:6px" id="c_title"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>订阅时间锚点日历</div>
-    <div style="color:#666;font-size:13px;margin-bottom:10px" id="c_desc">每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。</div>
-    <input id="calurl" readonly value="https://nohho.github.io/hvac-intel/anchors.ics" onclick="this.select()" style="width:100%;box-sizing:border-box;padding:8px;border:1px solid #ddd;border-radius:8px;font-size:12px;color:#444;background:#f7f9fb">
-    <div style="display:flex;gap:10px;margin:12px 0">
-      <button onclick="copyCalUrl()" id="c_copy" style="flex:1;padding:10px;border:none;border-radius:8px;background:#0b5cab;color:#fff;font-size:14px;cursor:pointer">复制订阅链接</button>
-      <a href="webcal://nohho.github.io/hvac-intel/anchors.ics" id="c_open" style="flex:1;text-align:center;padding:10px;border-radius:8px;background:#e8f1fb;color:#0b5cab;font-size:14px;text-decoration:none">用日历 App 打开</a>
-    </div>
-    <div style="font-size:13px;color:#555" id="c_ios">
-      <b>iPhone</b>：在 Safari 里点「用日历 App 打开」最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
-      <b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接
-    </div>
-    <button onclick="hideCalSub()" id="c_close" style="margin-top:12px;width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;background:#fff;font-size:14px;cursor:pointer">关闭</button>
-  </div>
-</div>
 </body>
 </html>
