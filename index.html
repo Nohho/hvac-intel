@@ -1391,6 +1391,9 @@ function cwSpark3(vals){
   const line=vals.map((v,i)=>X(i)+","+Y(v)).join(" ");
   return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#1e86d6" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(vals.length-1)}" cy="${Y(vals[vals.length-1])}" r="2.4" fill="#1e86d6"/></svg>`;
 }
+function cwLinks(m){
+  return (m.links||[]).map(l=>` · <a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+}
 function cwStatLine(pts){
   const last=pts[pts.length-1];
   const vs=pts.map(p=>+p.value),mx=Math.max.apply(null,vs),mn=Math.min.apply(null,vs);
@@ -1415,10 +1418,10 @@ function paintCw(){
     +`<div class="cw-chartlab"><span class="cl">${t("cw_lme")}</span><span class="cv">${cwStatLine(lme1y)}</span></div>`
     +cwChart(lme1y,"#2c4a66"):"")
     +(d.copper.spot_rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
-    +`<div class="src">${esc(d.copper.src)}</div></div>`;
+    +`<div class="src">${esc(d.copper.src)}${cwLinks(d.copper)}</div></div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_fc_t")}</h3><div class="cw-twrap"><table class="cw-table"><tr><th>${t("cw_h_org")}</th><th class="n">2026</th><th class="n">2027</th><th>${t("cw_h_view")}</th><th>${t("cw_h_upd")}</th></tr>`
     +d.forecasts.rows.map(r=>`<tr><td><b>${esc(r.org)}</b></td><td class="n">${esc(r.y2026)}</td><td class="n">${esc(r.y2027)}${r.y2027_sub?`<br><span style="color:var(--mut);font-size:12px">${esc(r.y2027_sub)}</span>`:""}</td><td>${esc(r.view)}</td><td>${esc(r.upd)}</td></tr>`).join("")
-    +`</table></div><div class="src">${esc(d.forecasts.src)}</div></div>`;
+    +`</table></div><div class="src">${esc(d.forecasts.src)}${cwLinks(d.forecasts)}</div></div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_sc_t")}</h3><div class="cw-grid3">`
     +d.scenarios.items.map(it=>`<div class="cw-cell"><div class="sit-lab">${esc(it.name)} · ${esc(it.prob)}${it.cur?`<span class="cw-cur">${t("cw_cur")}</span>`:""}</div><div class="sit-big">${esc(it.range)}</div><div class="sit-sub">${esc(it.trig)}</div></div>`).join("")
     +`</div><div class="cw-scenow"><b>${esc(d.scenarios.now_head)}：</b>${esc(d.scenarios.now_body)}</div><div class="src">${esc(d.scenarios.src)}</div></div>`;
@@ -1431,7 +1434,7 @@ function paintCw(){
     +d.policy.rows.map(r=>`<tr><td><b>${esc(r.region)}</b></td><td>${esc(r.law)}</td><td>${esc(r.state)}</td><td>${esc(r.next)}</td></tr>`).join("")
     +`</table></div>`
     +(d.policy.nodes||[]).map(n=>`<div class="cw-noderow"><span class="nd">${esc(n.d)}</span><span><b>${esc(n.head)}</b>${esc(n.body)}</span></div>`).join("")
-    +`<div class="src">${esc(d.policy.src)}</div></div>`;
+    +`<div class="src">${esc(d.policy.src)}${cwLinks(d.policy)}</div></div>`;
   box.innerHTML=h;
 }
 async function loadCw(){
