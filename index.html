@@ -171,6 +171,8 @@ section.blk{scroll-margin-top:60px}
 /* 虹吸物料 */
 .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .mgrid .card{margin-bottom:0}
+.mgrid.siph.odd>.card:last-child{grid-column:span 2}
+@media(min-width:700px){.mgrid.siph.odd>.card:last-child{grid-column:auto}}
 .mgrid h4{font-size:14.5px;color:var(--navy);margin:6px 0 4px}
 .mgrid p{font-size:14px;color:#3c546e}
 .pill{font-size:12px;padding:2px 9px;border-radius:10px;font-weight:700;white-space:nowrap}
@@ -247,7 +249,12 @@ details.sec summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight
 details.sec summary::-webkit-details-marker{display:none}
 details.sec .body{padding:0 14px 12px}
 .secsub{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:1px;margin:14px 2px 8px}
-@media(min-width:700px){.mgrid{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:700px){.mgrid{grid-template-columns:repeat(4,1fr)}
+.mgrid.siph{grid-template-columns:repeat(6,1fr)}
+.mgrid.siph>.card{grid-column:span 2}
+.mgrid.siph.r2>.card:nth-last-child(-n+2){grid-column:span 3}
+.mgrid.siph.r1>.card:last-child{grid-column:span 6}
+.mgrid.siph.q>.card{grid-column:span 3}}
 
 /* 线性图标（内联 SVG）/ 严重度圆点 / 正文 pretty */
 .ic{width:15px;height:15px;flex:none;vertical-align:-2.5px;margin-right:5px}
@@ -954,11 +961,12 @@ function renderMain(d){
 
   /* ---- 三、AI 虹吸 ---- */
   const sev=s=>/回落|缓解|\b(eas\w*|relief|reliev\w*|cool\w*)\b/i.test(s.change||s.detail||'')?`<span class="pill p-blu">${esc(t("siphon_eased"))}</span>`:/涨|紧张|延长|紧缺|吃紧|\b(doubl\w*|surg\w*|soar\w*|jump\w*|ris\w+|tight\w*|shortage|extend\w*|rais\w*|increas\w*|upward|price (hik\w*|round\w*|increas\w*))\b/i.test(s.change||s.detail||'')?`<span class="pill p-red">${esc(t("siphon_pressure"))}</span>`:`<span class="pill p-org">${esc(t("siphon_watch"))}</span>`;
+  const _sn=(d.siphon_effects||[]).length,_sc=_sn===4?"q":(_sn%3===2?"r2":(_sn%3===1&&_sn>1?"r1":""))+(_sn%2?" odd":"");
   const sip=(d.siphon_effects||[]).map(s=>`<div class="card">${sev(s)}<h4>${esc(s.material)}</h4><p>${esc(s.change||s.detail)}</p></div>`).join("");
   const s3ev=bySec("数据中心/AI 虹吸效应");
   const s3=secttl("三",t("sec")[2],(d.siphon_effects||[]).length+" "+t("u_materials"))
     +guide(fmt(t("s3_guide"),{m:`<b>${(d.siphon_effects||[]).map(s=>esc(s.material)).join("、")}</b>`}))
-    +`<div class="mgrid">${sip}</div>`
+    +`<div class="mgrid siph${_sc}">${sip}</div>`
     +(s3ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s3ev.map(e=>evCard(e,true)).join(""):"");
 
   /* ---- 四、跨行业传导 ---- */
