@@ -368,6 +368,13 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
 #calsub::backdrop{background:rgba(0,0,0,.55)}
 dialog:modal{overscroll-behavior:contain}
 dialog::backdrop{overflow:hidden;overscroll-behavior:contain}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.22s;animation-timing-function:cubic-bezier(.25,1,.5,1)}
+#calsub[open]{animation:calsub-in .22s cubic-bezier(.25,1,.5,1)}
+#calsub[open]::backdrop{animation:calsub-bg .22s ease-out}
+#calsub.closing{animation:calsub-out .15s ease-in forwards}
+@keyframes calsub-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes calsub-out{to{opacity:0;transform:translateY(6px) scale(.98)}}
+@keyframes calsub-bg{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
@@ -1133,7 +1140,7 @@ function copyIssueLink(){
 }
 const CALURL="https://nohho.github.io/hvac-intel/anchors.ics";
 function showCalSub(){const d=document.getElementById("calsub");if(d&&!d.open){if(d.showModal)d.showModal();else d.setAttribute("open","");}}
-function hideCalSub(){const d=document.getElementById("calsub");if(d&&d.open)d.close();}
+function hideCalSub(){const d=document.getElementById("calsub");if(!d||!d.open||d.classList.contains("closing"))return;if(RMQ&&RMQ.matches){d.close();return;}d.classList.add("closing");setTimeout(()=>{d.classList.remove("closing");if(d.open)d.close();},150);}
 function copyCalUrl(){
   const done=()=>{const b=document.getElementById("calurl");b.value=t("cal_copied");setTimeout(()=>{b.value=CALURL;},1600);};
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(CALURL).then(done).catch(()=>{document.getElementById("calurl").select();});}
@@ -1554,6 +1561,7 @@ async function boot(){
     initRailSearch();
     const cd=document.getElementById("calsub");
     if(cd)cd.addEventListener("click",e=>{const r=cd.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)hideCalSub();});
+    if(cd)cd.addEventListener("cancel",e=>{e.preventDefault();hideCalSub();});
     const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
     const start=(hm&&days.indexOf(hm[1])>=0)?hm[1]:(idx.latest||days[days.length-1]);
     window.addEventListener("hashchange",()=>{
