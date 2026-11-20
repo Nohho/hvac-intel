@@ -39,7 +39,17 @@
         "body": "A basis of about +10,000 CNY/t over futures, the widest in a year — the source of the futures-down / spot-tight divergence. (per the research report)"
       }
     ],
-    "src": "Sources: SHFE daily closes via Sina Futures public feed (continuous main contract); LME on the Westmetall 3M basis. Spot premium and basis are point-in-time figures, not daily series; each is dated."
+    "src": "Sources: SHFE daily closes via Sina Futures public feed (continuous main contract); LME on the Westmetall 3M basis. Spot premium and basis are point-in-time figures, not daily series; each is dated.",
+    "links": [
+      {
+        "label": "Sina Futures · SHFE copper",
+        "url": "https://finance.sina.com.cn/futures/quotes/CU0.shtml"
+      },
+      {
+        "label": "Westmetall · LME copper table",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash&year=2026"
+      }
+    ]
   },
   "forecasts": {
     "rows": [
@@ -92,7 +102,25 @@
         "upd": "Long-term outlook"
       }
     ],
-    "src": "Sources: World Bank Commodity Markets Outlook (Oct 2026), Cochilco Q3 report, ICSG (2026-10-14); bank forecasts as reported by public media, not the original reports. Updated monthly; every revision leaves a dated line (date · old → new · source)."
+    "src": "Sources: World Bank Commodity Markets Outlook (Oct 2026), Cochilco Q3 report, ICSG (2026-10-14); bank forecasts as reported by public media, not the original reports. Updated monthly; every revision leaves a dated line (date · old → new · source).",
+    "links": [
+      {
+        "label": "World Bank October outlook (via Mining.com)",
+        "url": "https://www.mining.com/world-bank-lifts-copper-price-outlook-by-18/"
+      },
+      {
+        "label": "ICSG October forecast (Engineering News)",
+        "url": "https://www.engineeringnews.co.za/article/icsg-sees-global-refined-copper-surplus-widening-in-2027-2026-10-15"
+      },
+      {
+        "label": "Cochilco forecast (via Mining.com)",
+        "url": "https://www.mining.com/chile-copper-outlook-worsens-as-price-forecast-rises/"
+      },
+      {
+        "label": "Goldman / JPMorgan roundup (via Reuters)",
+        "url": "https://qmines.com.au/is-copper-a-good-investment/copper-price-forecast/"
+      }
+    ]
   },
   "scenarios": {
     "items": [
@@ -238,6 +266,24 @@
         "body": "China's first quota cut meets the US step-down to 30% of baseline; quota front-running is possible into 2029 and structural high prices persist."
       }
     ],
-    "src": "Sources: MEE 2027 HFC quota plan (2026-10-15), US EPA AIM Act notices, EU F-gas regulation (compiled in the research report, 2026-11-20). These dates also feed Section 6 anchors and the calendar subscription."
+    "src": "Sources: MEE 2027 HFC quota plan (2026-10-15), US EPA AIM Act notices, EU F-gas regulation (compiled in the research report, 2026-11-20). These dates also feed Section 6 anchors and the calendar subscription.",
+    "links": [
+      {
+        "label": "MEE · 2027 HFC quota plan (PDF, Chinese)",
+        "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk05/202610/W020261019356998263126.pdf"
+      },
+      {
+        "label": "40 CFR Part 84 · AIM phasedown schedule",
+        "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title40-vol21/xml/CFR-2025-title40-vol21-part84.xml"
+      },
+      {
+        "label": "EUR-Lex · Regulation (EU) 2024/573",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj"
+      },
+      {
+        "label": "India DGTR · R-32 anti-dumping final findings (PDF)",
+        "url": "https://files.indusdesk.com/indusdesk/dgtr/dgtr-recommends-five-more-years-of-anti-dumping-duty-on-hfc-r-32-from-276550.pdf"
+      }
+    ]
   }
 }
