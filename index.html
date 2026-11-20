@@ -334,6 +334,7 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
 .cw-table th{background:var(--tint);color:var(--navy);text-align:left;padding:7px 9px;font-size:12.5px;white-space:nowrap}
 .cw-table td{padding:7px 9px;border-bottom:1px solid #f0f4f8;vertical-align:top}
 .cw-table.fc{table-layout:fixed}
+.cw-table.gr,.cw-table.pl{table-layout:fixed}
 .cw-table td.u{white-space:nowrap;font-size:13px;color:var(--mut)}
 .cw-table td .oen{color:var(--mut);font-size:12px}
 .cw-table td.n,.cw-table th.n{text-align:left;white-space:nowrap}
@@ -1452,7 +1453,7 @@ function cwSpark3(vals){
   const X=i=>Math.round((3+i*(w-6)/(vals.length-1))*10)/10;
   const Y=v=>Math.round((3+(1-(v-mn)/rg)*(h-6))*10)/10;
   const line=vals.map((v,i)=>X(i)+","+Y(v)).join(" ");
-  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#1e86d6" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(vals.length-1)}" cy="${Y(vals[vals.length-1])}" r="2.4" fill="#1e86d6"/></svg>`;
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#1e86d6" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="${X(vals.length-1)}" cy="${Y(vals[vals.length-1])}" r="2.4" fill="#1e86d6"/></svg>`;
 }
 function cwLinks(m){
   return (m.links||[]).map(l=>` · <a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
@@ -1488,12 +1489,12 @@ function paintCw(){
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_sc_t")}</h3><div class="cw-grid3">`
     +d.scenarios.items.map(it=>`<div class="cw-cell"><div class="sit-lab">${esc(it.name)} · ${esc(it.prob)}${it.cur?`<span class="cw-cur">${t("cw_cur")}</span>`:""}</div><div class="sit-big">${esc(it.range)}</div><div class="sit-sub">${esc(it.trig)}</div></div>`).join("")
     +`</div><div class="cw-scenow"><b>${esc(d.scenarios.now_head)}：</b>${esc(d.scenarios.now_body)}</div><div class="src">${esc(d.scenarios.src)}</div></div>`;
-  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_rf_t")}</h3><div class="cw-twrap"><table class="cw-table"><tr><th>${t("cw_h_grade")}</th><th class="n">2026 Q1</th><th class="n">Q2</th><th class="n">Q3</th><th>${t("cw_h_trend")}</th><th class="n">${t("cw_h_ytd")}</th></tr>`
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_rf_t")}</h3><div class="cw-twrap"><table class="cw-table gr"><colgroup><col style="width:15%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col><col style="width:13%"></colgroup><tr><th>${t("cw_h_grade")}</th><th class="n">2026 Q1</th><th class="n">Q2</th><th class="n">Q3</th><th>${t("cw_h_trend")}</th><th class="n">${t("cw_h_ytd")}</th></tr>`
     +d.refrigerant.grades.map(g=>`<tr><td><b>${esc(g.name)}</b></td><td class="n">${Number(g.q[0]).toLocaleString("en-US")}</td><td class="n">${Number(g.q[1]).toLocaleString("en-US")}</td><td class="n"><b>${g.approx?t("cw_approx"):""}${Number(g.q[2]).toLocaleString("en-US")}</b></td><td>${cwSpark3(g.q)}</td><td class="n" style="color:#d4695c;font-weight:700">${esc(g.chg)}</td></tr>`).join("")
     +`</table></div>`
     +(d.refrigerant.rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
     +`<div class="src">${esc(d.refrigerant.src)}</div></div>`;
-  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_po_t")}</h3><div class="cw-twrap"><table class="cw-table"><tr><th>${t("cw_h_region")}</th><th>${t("cw_h_law")}</th><th>${t("cw_h_state")}</th><th>${t("cw_h_next")}</th></tr>`
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_po_t")}</h3><div class="cw-twrap"><table class="cw-table pl"><colgroup><col style="width:12%"><col style="width:32%"><col style="width:34%"><col style="width:22%"></colgroup><tr><th>${t("cw_h_region")}</th><th>${t("cw_h_law")}</th><th>${t("cw_h_state")}</th><th>${t("cw_h_next")}</th></tr>`
     +d.policy.rows.map(r=>`<tr><td><b>${esc(r.region)}</b></td><td>${esc(r.law)}</td><td>${esc(r.state)}</td><td>${esc(r.next)}</td></tr>`).join("")
     +`</table></div>`
     +(d.policy.nodes||[]).map(n=>`<div class="cw-noderow"><span class="nd">${esc(n.d)}</span><span><b>${esc(n.head)}</b>${esc(n.body)}</span></div>`).join("")
