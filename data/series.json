@@ -1,5 +1,5 @@
 {
-  "note": "口径：LME 铜/铝均为 3 月期收盘价（美元/吨，Westmetall 历史表 \"3 months\" 列）；美元/人民币为中国外汇交易中心人民币汇率中间价（USD/CNY，4 位小数）。早报明写值（src=brief）优先；公开源（src=westmetall / chinamoney / conv）补缺失日期，且重叠日期相对偏差 >0.5% 时改用公开源值（早报原值保留在该点的 brief_value 字段）。白银：Westmetall Fine Silver 定盘（欧元/公斤）经欧洲央行 EUR/USD 参考汇率换算为美元/盎司（×31.1035/1000），src=conv。重叠日期已交叉核对，偏差明细见 gen-series.py 运行输出。",
+  "note": "口径：LME 铜/铝均为 3 月期收盘价（美元/吨，Westmetall 历史表 \"3 months\" 列）；美元/人民币为中国外汇交易中心人民币汇率中间价（USD/CNY，4 位小数）。早报明写值（src=brief）优先；公开源（src=westmetall / chinamoney / conv）补缺失日期，且重叠日期相对偏差 >0.5% 时改用公开源值（早报原值保留在该点的 brief_value 字段）。白银：Westmetall Fine Silver 定盘（欧元/公斤）经欧洲央行 EUR/USD 参考汇率换算为美元/盎司（×31.1035/1000），src=conv。第九节专题大图另用近 1 年窗口序列：沪铜主力连续日收盘（新浪期货转上期所数据，src=sina）与 LME 铜 3M 近 1 年（Westmetall，src=westmetall）。重叠日期已交叉核对，偏差明细见 gen-series.py 运行输出。",
   "copper_lme_usd_t": [
     {
       "date": "2026-10-05",
@@ -166,6 +166,11 @@
     {
       "date": "2026-11-18",
       "value": 12773.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-19",
+      "value": 12555,
       "src": "westmetall"
     }
   ],
@@ -334,6 +339,11 @@
       "date": "2026-11-18",
       "value": 2865,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-19",
+      "value": 2845,
+      "src": "westmetall"
     }
   ],
   "usdcny": [
@@ -490,6 +500,11 @@
     {
       "date": "2026-11-19",
       "value": 6.7128,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-11-20",
+      "value": 6.7131,
       "src": "chinamoney"
     }
   ],
@@ -658,6 +673,2495 @@
       "date": "2026-11-18",
       "value": 45.04,
       "src": "conv"
+    },
+    {
+      "date": "2026-11-19",
+      "value": 44.32,
+      "src": "conv"
+    }
+  ],
+  "copper_shfe_cny_t": [
+    {
+      "date": "2025-11-20",
+      "value": 86130,
+      "src": "sina"
+    },
+    {
+      "date": "2025-11-21",
+      "value": 85660,
+      "src": "sina"
+    },
+    {
+      "date": "2025-11-24",
+      "value": 86080,
+      "src": "sina"
+    },
+    {
+      "date": "2025-11-25",
+      "value": 86600,
+      "src": "sina"
+    },
+    {
+      "date": "2025-11-26",
+      "value": 86590,
+      "src": "sina"
+    },
+    {
+      "date": "2025-11-27",
+      "value": 86990,
+      "src": "sina"
+    },
+    {
+      "date": "2025-11-28",
+      "value": 87430,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-01",
+      "value": 89280,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-02",
+      "value": 88920,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-03",
+      "value": 89210,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-04",
+      "value": 90980,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-05",
+      "value": 92780,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-08",
+      "value": 92970,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-09",
+      "value": 91090,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-10",
+      "value": 91850,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-11",
+      "value": 92310,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-12",
+      "value": 94170,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-15",
+      "value": 92490,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-16",
+      "value": 91920,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-17",
+      "value": 92820,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-18",
+      "value": 92600,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-19",
+      "value": 93180,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-22",
+      "value": 94320,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-23",
+      "value": 93930,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-24",
+      "value": 96100,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-25",
+      "value": 96210,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-26",
+      "value": 98720,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-29",
+      "value": 98860,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-30",
+      "value": 98090,
+      "src": "sina"
+    },
+    {
+      "date": "2025-12-31",
+      "value": 98240,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-05",
+      "value": 101350,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-06",
+      "value": 105320,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-07",
+      "value": 103410,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-08",
+      "value": 101220,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-09",
+      "value": 101580,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-12",
+      "value": 103980,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-13",
+      "value": 102480,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-14",
+      "value": 104120,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-15",
+      "value": 102810,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-16",
+      "value": 100770,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-19",
+      "value": 101180,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-20",
+      "value": 101230,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-21",
+      "value": 101280,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-22",
+      "value": 100700,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-23",
+      "value": 101340,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-26",
+      "value": 101880,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-27",
+      "value": 102600,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-28",
+      "value": 103060,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-29",
+      "value": 109110,
+      "src": "sina"
+    },
+    {
+      "date": "2026-01-30",
+      "value": 103680,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-02",
+      "value": 98580,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-03",
+      "value": 104500,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-04",
+      "value": 105160,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-05",
+      "value": 100980,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-06",
+      "value": 100100,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-09",
+      "value": 101840,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-10",
+      "value": 101560,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-11",
+      "value": 102180,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-12",
+      "value": 102330,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-13",
+      "value": 100630,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-24",
+      "value": 101810,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-25",
+      "value": 102890,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-26",
+      "value": 102670,
+      "src": "sina"
+    },
+    {
+      "date": "2026-02-27",
+      "value": 103920,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-02",
+      "value": 103850,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-03",
+      "value": 102100,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-04",
+      "value": 101660,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-05",
+      "value": 101080,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-06",
+      "value": 101050,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-09",
+      "value": 100190,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-10",
+      "value": 101520,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-11",
+      "value": 101150,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-12",
+      "value": 101010,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-13",
+      "value": 100310,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-16",
+      "value": 99720,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-17",
+      "value": 99340,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-18",
+      "value": 98610,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-19",
+      "value": 94420,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-20",
+      "value": 94740,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-23",
+      "value": 92100,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-24",
+      "value": 94030,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-25",
+      "value": 95590,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-26",
+      "value": 95350,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-27",
+      "value": 95930,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-30",
+      "value": 95760,
+      "src": "sina"
+    },
+    {
+      "date": "2026-03-31",
+      "value": 95340,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-01",
+      "value": 97030,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-02",
+      "value": 95880,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-03",
+      "value": 96250,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-07",
+      "value": 96560,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-08",
+      "value": 98220,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-09",
+      "value": 97810,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-10",
+      "value": 98440,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-13",
+      "value": 99610,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-14",
+      "value": 101190,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-15",
+      "value": 102090,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-16",
+      "value": 102720,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-17",
+      "value": 102330,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-20",
+      "value": 102620,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-21",
+      "value": 102140,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-22",
+      "value": 102640,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-23",
+      "value": 102780,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-24",
+      "value": 102460,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-27",
+      "value": 102800,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-28",
+      "value": 102260,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-29",
+      "value": 101630,
+      "src": "sina"
+    },
+    {
+      "date": "2026-04-30",
+      "value": 101030,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-06",
+      "value": 102660,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-07",
+      "value": 103000,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-08",
+      "value": 104550,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-11",
+      "value": 104620,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-12",
+      "value": 106510,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-13",
+      "value": 108510,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-14",
+      "value": 106750,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-15",
+      "value": 104710,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-18",
+      "value": 104330,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-19",
+      "value": 104530,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-20",
+      "value": 103980,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-21",
+      "value": 104040,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-22",
+      "value": 104870,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-25",
+      "value": 105650,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-26",
+      "value": 104960,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-27",
+      "value": 104680,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-28",
+      "value": 104150,
+      "src": "sina"
+    },
+    {
+      "date": "2026-05-29",
+      "value": 105000,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-01",
+      "value": 104680,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-02",
+      "value": 106620,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-03",
+      "value": 106380,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-04",
+      "value": 105150,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-05",
+      "value": 105150,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-08",
+      "value": 104120,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-09",
+      "value": 104650,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-10",
+      "value": 104110,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-11",
+      "value": 103160,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-12",
+      "value": 104660,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-15",
+      "value": 105590,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-16",
+      "value": 104610,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-17",
+      "value": 105470,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-18",
+      "value": 104860,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-22",
+      "value": 105000,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-23",
+      "value": 103580,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-24",
+      "value": 103550,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-25",
+      "value": 101220,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-26",
+      "value": 101560,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-29",
+      "value": 103160,
+      "src": "sina"
+    },
+    {
+      "date": "2026-06-30",
+      "value": 103290,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-01",
+      "value": 101920,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-02",
+      "value": 101950,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-03",
+      "value": 102980,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-06",
+      "value": 102960,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-07",
+      "value": 102970,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-08",
+      "value": 102850,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-09",
+      "value": 103160,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-10",
+      "value": 103710,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-13",
+      "value": 103060,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-14",
+      "value": 104340,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-15",
+      "value": 104140,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-16",
+      "value": 104350,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-17",
+      "value": 103370,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-20",
+      "value": 103790,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-21",
+      "value": 105460,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-22",
+      "value": 105820,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-23",
+      "value": 105890,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-24",
+      "value": 104750,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-27",
+      "value": 105050,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-28",
+      "value": 104810,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-29",
+      "value": 104890,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-30",
+      "value": 104690,
+      "src": "sina"
+    },
+    {
+      "date": "2026-07-31",
+      "value": 105460,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-03",
+      "value": 106120,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-04",
+      "value": 106650,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-05",
+      "value": 107340,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-06",
+      "value": 107330,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-07",
+      "value": 108400,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-10",
+      "value": 107850,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-11",
+      "value": 107950,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-12",
+      "value": 108390,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-13",
+      "value": 107410,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-14",
+      "value": 107690,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-17",
+      "value": 109540,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-18",
+      "value": 107930,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-19",
+      "value": 106850,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-20",
+      "value": 107200,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-21",
+      "value": 107520,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-24",
+      "value": 107910,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-25",
+      "value": 107980,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-26",
+      "value": 108750,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-27",
+      "value": 108300,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-28",
+      "value": 108900,
+      "src": "sina"
+    },
+    {
+      "date": "2026-08-31",
+      "value": 109100,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-01",
+      "value": 109220,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-02",
+      "value": 108040,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-03",
+      "value": 108410,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-04",
+      "value": 108780,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-07",
+      "value": 109410,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-08",
+      "value": 110620,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-09",
+      "value": 111080,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-10",
+      "value": 112200,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-11",
+      "value": 108990,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-14",
+      "value": 107840,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-15",
+      "value": 107030,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-16",
+      "value": 107740,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-17",
+      "value": 108500,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-18",
+      "value": 109620,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-21",
+      "value": 110180,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-22",
+      "value": 111320,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-23",
+      "value": 110330,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-24",
+      "value": 110130,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-28",
+      "value": 109440,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-29",
+      "value": 109570,
+      "src": "sina"
+    },
+    {
+      "date": "2026-09-30",
+      "value": 109680,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-08",
+      "value": 110260,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-09",
+      "value": 110110,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-12",
+      "value": 110630,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-13",
+      "value": 110990,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-14",
+      "value": 111080,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-15",
+      "value": 108940,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-16",
+      "value": 109860,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-19",
+      "value": 109770,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-20",
+      "value": 109550,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-21",
+      "value": 108780,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-22",
+      "value": 107590,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-23",
+      "value": 107900,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-26",
+      "value": 108110,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-27",
+      "value": 108390,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-28",
+      "value": 109200,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-29",
+      "value": 108660,
+      "src": "sina"
+    },
+    {
+      "date": "2026-10-30",
+      "value": 108050,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-02",
+      "value": 107810,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-03",
+      "value": 106090,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-04",
+      "value": 106170,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-05",
+      "value": 106410,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-06",
+      "value": 104260,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-09",
+      "value": 105500,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-10",
+      "value": 105460,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-11",
+      "value": 105820,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-12",
+      "value": 104950,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-13",
+      "value": 105150,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-16",
+      "value": 104090,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-17",
+      "value": 103510,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-18",
+      "value": 97920,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-19",
+      "value": 94720,
+      "src": "sina"
+    },
+    {
+      "date": "2026-11-20",
+      "value": 92400,
+      "src": "sina"
+    }
+  ],
+  "copper_lme_1y_usd_t": [
+    {
+      "date": "2025-11-20",
+      "value": 10803,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-11-21",
+      "value": 10705,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-11-24",
+      "value": 10780,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-11-25",
+      "value": 10858,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-11-26",
+      "value": 10965,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-11-27",
+      "value": 10925,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-11-28",
+      "value": 10985.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-01",
+      "value": 11238,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-02",
+      "value": 11210,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-03",
+      "value": 11348,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-04",
+      "value": 11411,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-05",
+      "value": 11617,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-08",
+      "value": 11678,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-09",
+      "value": 11550,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-10",
+      "value": 11630,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-11",
+      "value": 11710,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-12",
+      "value": 11800,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-15",
+      "value": 11735,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-16",
+      "value": 11640,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-17",
+      "value": 11735,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-18",
+      "value": 11730,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-19",
+      "value": 11839,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-22",
+      "value": 11935,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-23",
+      "value": 12041,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-24",
+      "value": 12220,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-29",
+      "value": 12270.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-30",
+      "value": 12477,
+      "src": "westmetall"
+    },
+    {
+      "date": "2025-12-31",
+      "value": 12466,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-02",
+      "value": 12511,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-05",
+      "value": 12840,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-06",
+      "value": 13230,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-07",
+      "value": 13110,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-08",
+      "value": 12855,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-09",
+      "value": 12995,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-12",
+      "value": 13245,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-13",
+      "value": 13236,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-14",
+      "value": 13245,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-15",
+      "value": 13150,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-16",
+      "value": 12930,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-19",
+      "value": 12872,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-20",
+      "value": 12939,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-21",
+      "value": 12877,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-22",
+      "value": 12687,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-23",
+      "value": 12981,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-26",
+      "value": 13250,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-27",
+      "value": 13040,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-28",
+      "value": 13090,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-29",
+      "value": 13952,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-01-30",
+      "value": 13445,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-02",
+      "value": 13041,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-03",
+      "value": 13365,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-04",
+      "value": 13332,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-05",
+      "value": 12910,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-06",
+      "value": 12905,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-09",
+      "value": 13045,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-10",
+      "value": 13098,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-11",
+      "value": 13385,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-12",
+      "value": 13239,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-13",
+      "value": 12825,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-16",
+      "value": 12870,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-17",
+      "value": 12674,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-18",
+      "value": 12701,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-19",
+      "value": 12726,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-20",
+      "value": 12822,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-23",
+      "value": 12915,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-24",
+      "value": 13105,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-25",
+      "value": 13260,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-26",
+      "value": 13287,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-02-27",
+      "value": 13484,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-02",
+      "value": 13290,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-03",
+      "value": 12865,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-04",
+      "value": 13015,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-05",
+      "value": 12915,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-06",
+      "value": 12842,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-09",
+      "value": 12802,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-10",
+      "value": 13025,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-11",
+      "value": 12950,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-12",
+      "value": 13004.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-13",
+      "value": 12849,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-16",
+      "value": 12842,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-17",
+      "value": 12792,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-18",
+      "value": 12609,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-19",
+      "value": 11930,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-20",
+      "value": 12131,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-23",
+      "value": 11990,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-24",
+      "value": 11975,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-25",
+      "value": 12235,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-26",
+      "value": 12190,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-27",
+      "value": 12120,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-30",
+      "value": 12225,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-03-31",
+      "value": 12236,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-01",
+      "value": 12370,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-02",
+      "value": 12236,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-07",
+      "value": 12346,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-08",
+      "value": 12655,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-09",
+      "value": 12553,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-10",
+      "value": 12757,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-13",
+      "value": 12885,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-14",
+      "value": 13141,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-15",
+      "value": 13230,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-16",
+      "value": 13240,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-17",
+      "value": 13210,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-20",
+      "value": 13240,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-21",
+      "value": 13290,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-22",
+      "value": 13275,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-23",
+      "value": 13249,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-24",
+      "value": 13295,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-27",
+      "value": 13270.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-28",
+      "value": 12990,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-29",
+      "value": 13075,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-04-30",
+      "value": 13090,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-01",
+      "value": 12967,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-05",
+      "value": 13054,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-06",
+      "value": 13412,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-07",
+      "value": 13391.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-08",
+      "value": 13498,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-11",
+      "value": 13720,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-12",
+      "value": 13938,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-13",
+      "value": 14140,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-14",
+      "value": 14034,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-15",
+      "value": 13600,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-18",
+      "value": 13475,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-19",
+      "value": 13485,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-20",
+      "value": 13492,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-21",
+      "value": 13481,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-22",
+      "value": 13600,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-26",
+      "value": 13611,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-27",
+      "value": 13598,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-28",
+      "value": 13570,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-05-29",
+      "value": 13656.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-01",
+      "value": 13845,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-02",
+      "value": 13975,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-03",
+      "value": 13932,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-04",
+      "value": 13900,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-05",
+      "value": 13763,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-08",
+      "value": 13670,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-09",
+      "value": 13745,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-10",
+      "value": 13431,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-11",
+      "value": 13458,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-12",
+      "value": 13655,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-15",
+      "value": 13750,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-16",
+      "value": 13765,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-17",
+      "value": 13806,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-18",
+      "value": 13685,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-19",
+      "value": 13600,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-22",
+      "value": 13712,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-23",
+      "value": 13395,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-24",
+      "value": 13240,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-25",
+      "value": 13235,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-26",
+      "value": 13310,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-29",
+      "value": 13330,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-06-30",
+      "value": 13366,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-01",
+      "value": 13209,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-02",
+      "value": 13250,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-03",
+      "value": 13345,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-06",
+      "value": 13370,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-07",
+      "value": 13360.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-08",
+      "value": 13169,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-09",
+      "value": 13411,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-10",
+      "value": 13454,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-13",
+      "value": 13503,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-14",
+      "value": 13592,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-15",
+      "value": 13585,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-16",
+      "value": 13606,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-17",
+      "value": 13415,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-20",
+      "value": 13616,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-21",
+      "value": 13836,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-22",
+      "value": 13876,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-23",
+      "value": 13741,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-24",
+      "value": 13617,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-27",
+      "value": 13771,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-28",
+      "value": 13606,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-29",
+      "value": 13608,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-30",
+      "value": 13770,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-07-31",
+      "value": 13800,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-03",
+      "value": 13876,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-04",
+      "value": 14070,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-05",
+      "value": 14055,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-06",
+      "value": 14260,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-07",
+      "value": 14092,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-10",
+      "value": 14152,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-11",
+      "value": 14217,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-12",
+      "value": 14201,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-13",
+      "value": 14082,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-14",
+      "value": 14134,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-17",
+      "value": 14315,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-18",
+      "value": 14080,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-19",
+      "value": 13890,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-20",
+      "value": 13970.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-21",
+      "value": 14235,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-24",
+      "value": 14245,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-25",
+      "value": 14298,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-26",
+      "value": 14336,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-27",
+      "value": 14236,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-08-28",
+      "value": 14370,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-01",
+      "value": 14215,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-02",
+      "value": 14227,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-03",
+      "value": 14275,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-04",
+      "value": 14365,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-07",
+      "value": 14448,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-08",
+      "value": 14705,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-09",
+      "value": 14632,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-10",
+      "value": 14371,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-11",
+      "value": 14233,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-14",
+      "value": 14065.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-15",
+      "value": 14077,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-16",
+      "value": 14232,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-17",
+      "value": 14409,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-18",
+      "value": 14515,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-21",
+      "value": 14730,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-22",
+      "value": 14760,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-23",
+      "value": 14658,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-24",
+      "value": 14640,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-25",
+      "value": 14647,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-28",
+      "value": 14455,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-29",
+      "value": 14448,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-09-30",
+      "value": 14455,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-01",
+      "value": 14290,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-02",
+      "value": 14320,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-05",
+      "value": 14366,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-06",
+      "value": 14434,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-07",
+      "value": 14422,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-08",
+      "value": 14417,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-09",
+      "value": 14570,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-12",
+      "value": 14657.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-13",
+      "value": 14625.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-14",
+      "value": 14635,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-15",
+      "value": 14362,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-16",
+      "value": 14485,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-19",
+      "value": 14378,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-20",
+      "value": 14357,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-21",
+      "value": 14315,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-22",
+      "value": 14096,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-23",
+      "value": 14270,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-26",
+      "value": 14332,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-27",
+      "value": 14435,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-28",
+      "value": 14484,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-29",
+      "value": 14350,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-10-30",
+      "value": 14250,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-02",
+      "value": 14242,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-03",
+      "value": 14001,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-04",
+      "value": 14095,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-05",
+      "value": 14030,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-06",
+      "value": 13780,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-09",
+      "value": 13855,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-10",
+      "value": 13830,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-11",
+      "value": 13795,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-12",
+      "value": 13655,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-13",
+      "value": 13545,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-16",
+      "value": 13305,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-17",
+      "value": 13211,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-18",
+      "value": 12773.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-19",
+      "value": 12555,
+      "src": "westmetall"
     }
   ]
 }
