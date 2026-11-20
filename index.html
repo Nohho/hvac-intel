@@ -348,6 +348,9 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
 .cw-noderow .nd{flex:none;width:92px;font-weight:700;color:var(--navy);font-size:12.5px;padding-top:1px}
 .cw-scenow{margin-top:10px;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px;line-height:1.65}
 .cw-cur{font-size:12px;font-weight:700;color:#fff;background:var(--blue);border-radius:9px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.infobar{font-size:13px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:10px 0;line-height:1.6}
+.railsearch.msearch{display:none}
+@media(max-width:1023px){.railsearch.msearch{display:block;margin-top:12px}}
 </style>
 </head>
 <body>
@@ -357,6 +360,7 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
   <div class="headline" id="headline" style="display:none"></div>
   <div class="dpills" id="dpills"></div>
   <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>复制本期链接</button><a href="feed.xml" id="t_rss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><line x1="4" y1="20" x2="4.01" y2="20"/></svg>RSS 订阅</a><button onclick="showCalSub()" id="t_calsub"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>日历订阅</button><button id="langbtn" onclick="toggleLang()" title="Switch language / 切换语言">EN</button></div>
+  <div class="railsearch msearch"><input id="railq2" placeholder="搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta2"></div></div>
 </header>
 <div class="alertbar" id="alertbar"></div>
 <div class="freshbar" id="freshbar"></div>
@@ -472,14 +476,14 @@ zh:{
  tl_expand:"展开全部 {n} 个节点",tl_loading:"正在加载事件时间线…",tl_pending:"事件数据待补",
  evst_rumor:"传闻",evst_notified:"已通知",evst_effective:"已生效",evst_landed:"已落地",evst_expired:"已失效",
  cd_future:"距生效 {n} 天",cd_today:"今日生效",cd_past:"已生效",
- sp_title:"关键指标走势",sp_sub:"日度数据 · 窗口内全部数据点",
- cw_cnt:"专题 · 状态月度复核",cw_guide:"铜看「波动管理」，冷媒看「政策锁量」。本节收拢两类关键原料的价格走势、机构预测、情景研判与政策节点；日内动态仍见第五节供应商动态，风险提示见第六节预警与建议。",
+ sp_title:"关键指标走势",sp_sub:"日度数据 · {a} – {b}",
+ cw_cnt:"专题 · 数据截至 {d} · 状态月度复核",cw_guide:"铜看「波动管理」，冷媒看「政策锁量」。本节收拢两类关键原料的价格走势、机构预测、情景研判与政策节点；日内动态仍见第五节供应商动态，风险提示见第六节预警与建议。",
  cw_status_t:"专题状态 · 四项研判",cw_status_src:"状态灯为研判结论（红=高位/收紧，黄=高波动/拉锯，绿=格局未变），月度复核、事件驱动临时更新；依据见本节各模块。",
  cw_cu_t:"铜价走势 · 近一年日度",cw_shfe:"沪铜主力连续 · 日收盘（元/吨）",cw_lme:"LME 3M 铜（美元/吨）",cw_range:"近一年高 {hi} / 低 {lo}",cw_5d:"近 5 交易日",
  cw_fc_t:"机构预测跟踪 · LME 铜均价（美元/吨）",cw_h_org:"机构",cw_h_view:"核心观点",cw_h_upd:"更新",
  cw_sc_t:"情景研判 · 2027 年上半年 LME 铜（美元/吨）",cw_cur:"预判基准",
  cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨）",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
- cw_po_t:"政策框架与关键节点",cw_h_region:"地区",cw_h_law:"法规",cw_h_state:"2027 年状态",cw_h_next:"下一节点",
+ cw_po_t:"政策框架与关键节点",cw_h_region:"地区",cw_h_law:"法规",cw_h_state:"2027 年状态",cw_h_next:"下一节点",en_fb:"英文版每周一至五发布，当前显示 {d} 期英文版。",
  sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨",sp_ag:"白银",sp_ag_u:"美元/盎司",sp_fx:"美元/人民币",sp_fx_u:"元",
  sit_title:"管理态势 · 近 7 天",
  sit_warn:"近 7 天预警",sit_warn_unit:" 条 · 高紧迫 {h}",
@@ -570,14 +574,14 @@ en:{
  tl_expand:"Show all {n} updates",tl_loading:"Loading event timeline…",tl_pending:"Event data pending",
  evst_rumor:"Rumor",evst_notified:"Announced",evst_effective:"In effect",evst_landed:"Implemented",evst_expired:"Expired",
  cd_future:"Takes effect in {n} days",cd_today:"Takes effect today",cd_past:"In effect",
- sp_title:"Key indicator trends",sp_sub:"Daily data · all points in window",
- cw_cnt:"Topic · status reviewed monthly",cw_guide:"Copper is about managing volatility; refrigerants are about policy-locked supply. This section gathers prices, institutional forecasts, scenarios and policy dates for the two key inputs; intraday moves remain in Section 5 and risk alerts in Section 6.",
+ sp_title:"Key indicator trends",sp_sub:"Daily data · {a} – {b}",
+ cw_cnt:"Topic · data as of {d} · status reviewed monthly",cw_guide:"Copper is about managing volatility; refrigerants are about policy-locked supply. This section gathers prices, institutional forecasts, scenarios and policy dates for the two key inputs; intraday moves remain in Section 5 and risk alerts in Section 6.",
  cw_status_t:"Topic status · four assessments",cw_status_src:"Lights are assessments (red = highs/tightening, amber = volatility/standoff, green = pattern unchanged), reviewed monthly and updated on events; evidence in the modules below.",
  cw_cu_t:"Copper prices · daily, past year",cw_shfe:"SHFE copper, continuous · daily close (CNY/t)",cw_lme:"LME copper 3M (USD/t)",cw_range:"1Y high {hi} / low {lo}",cw_5d:"5 sessions",
  cw_fc_t:"Institutional forecasts · LME copper average (USD/t)",cw_h_org:"Institution",cw_h_view:"Core view",cw_h_upd:"Updated",
  cw_sc_t:"Scenarios · LME copper, H1 2027 (USD/t)",cw_cur:"Base case",
  cw_rf_t:"Refrigerant contract prices by grade (CNY/t)",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
- cw_po_t:"Policy framework & key dates",cw_h_region:"Region",cw_h_law:"Framework",cw_h_state:"Status in 2027",cw_h_next:"Next milestone",
+ cw_po_t:"Policy framework & key dates",cw_h_region:"Region",cw_h_law:"Framework",cw_h_state:"Status in 2027",cw_h_next:"Next milestone",en_fb:"The English edition is published Monday to Friday. Showing the {d} edition.",
  sp_lme:"LME Copper 3M",sp_lme_u:"USD/t",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t",sp_ag:"Silver",sp_ag_u:"USD/ozt",sp_fx:"USD/CNY",sp_fx_u:"CNY",
  sit_title:"Management Snapshot · Last 7 Days",
  sit_warn:"Warnings — last 7 days",sit_warn_unit:" warnings · {h} high-urgency",
@@ -606,7 +610,7 @@ function applyLang(){
   set("t_h1",t("h1"));set("t_live",t("live"));set("t_sub",t("sub"));
   setH("copylink",ICO.link+t("copylink"));setH("t_rss",ICO.rss+t("rss"));setH("calsub",ICO.cal+t("calsub"));set("langbtn",t("langbtn"));
   document.querySelectorAll("nav.secnav a .nl").forEach((s,i)=>{const nv=t("nav");if(nv[i])s.textContent=nv[i];});
-  const rq=document.getElementById("railq");if(rq)rq.placeholder=t("railq_ph");
+  const rq=document.getElementById("railq");if(rq)rq.placeholder=t("railq_ph");const rq2=document.getElementById("railq2");if(rq2)rq2.placeholder=t("railq_ph");
   set("t_foot1",t("foot1"));set("t_foot2",t("foot2"));set("t_foot3",t("foot3"));
   setH("c_title",ICO.cal+t("cal_title"));set("c_desc",t("cal_desc"));set("c_copy",t("cal_copy"));set("c_open",t("cal_open"));
   const ci=document.getElementById("c_ios");if(ci)ci.innerHTML=t("cal_ios");
@@ -751,7 +755,7 @@ function warnCard(w){
     ${ec?`<div class="rel">${t("rel_ev")}${ec}</div>`:""}</article>`;
 }
 
-function secttl(no,title,cnt){const NOM={"一":"1","二":"2","三":"3","四":"4","五":"5","六":"6","七":"7","八":"8","九":"9","附":"App."};return `<div class="secttl"><span class="no">${LANG==="en"?(NOM[no]||no):no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
+function secttl(no,title,cnt){const NOM={"一":"1","二":"2","三":"3","四":"4","五":"5","六":"6","七":"7","八":"8","九":"9","专":"Topic","附":"App."};return `<div class="secttl"><span class="no">${LANG==="en"?(NOM[no]||no):no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
 function guide(html){return `<div class="guide">${ICO.bulb}${html}</div>`;}
 function goId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth",block:"center"});}
 function setFilter(f){FILTER=f;renderMain(CUR);const y=$("#s2").offsetTop-70;window.scrollTo({top:y,behavior:"smooth"});}
@@ -782,7 +786,7 @@ function clearMarks(){
     m.parentNode.replaceChild(document.createTextNode(m.textContent),m);
   });
   _MARKS=[];_MIDX=-1;
-  const meta=document.getElementById("rsmeta"); if(meta)meta.textContent="";
+  ["rsmeta","rsmeta2"].forEach(id=>{const meta=document.getElementById(id); if(meta)meta.textContent="";});
 }
 function railSearch(){
   const inp=document.getElementById("railq"); if(!inp)return;
@@ -804,8 +808,8 @@ function railSearch(){
     });
   });
   _MARKS=Array.prototype.slice.call(document.querySelectorAll("main mark.rhl"));
-  const meta=document.getElementById("rsmeta");
-  if(meta)meta.textContent=_MARKS.length?fmt(t("rail_match"),{n:_MARKS.length}):t("rail_nomatch");
+  const mtxt=_MARKS.length?fmt(t("rail_match"),{n:_MARKS.length}):t("rail_nomatch");
+  ["rsmeta","rsmeta2"].forEach(id=>{const meta=document.getElementById(id); if(meta)meta.textContent=mtxt;});
 }
 function railJump(dir){
   if(!_MARKS.length)return;
@@ -816,11 +820,22 @@ function railJump(dir){
 function initRailSearch(){
   const inp=document.getElementById("railq"); if(!inp||inp._wired)return;
   inp._wired=true;
-  inp.addEventListener("input",()=>{clearTimeout(_RQT);_RQT=setTimeout(railSearch,220);});
+  const inp2=document.getElementById("railq2");
+  inp.addEventListener("input",()=>{if(inp2)inp2.value=inp.value;clearTimeout(_RQT);_RQT=setTimeout(railSearch,220);});
   inp.addEventListener("keydown",e=>{
+    if(e.isComposing)return;
     if(e.key==="Enter"){e.preventDefault();railJump(e.shiftKey?-1:1);}
-    else if(e.key==="Escape"){inp.value="";clearMarks();inp.blur();}
+    else if(e.key==="Escape"){inp.value="";if(inp2)inp2.value="";clearMarks();inp.blur();}
   });
+  if(inp2&&!inp2._wired){
+    inp2._wired=true;
+    inp2.addEventListener("input",()=>{inp.value=inp2.value;clearTimeout(_RQT);_RQT=setTimeout(railSearch,220);});
+    inp2.addEventListener("keydown",e=>{
+      if(e.isComposing)return;
+      if(e.key==="Enter"){e.preventDefault();railJump(e.shiftKey?-1:1);}
+      else if(e.key==="Escape"){inp2.value="";inp.value="";clearMarks();inp2.blur();}
+    });
+  }
 }
 function initSpy(){
   if(!("IntersectionObserver" in window))return;
@@ -831,7 +846,7 @@ function initSpy(){
         a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id));
     }});
   },{rootMargin:"-30% 0px -60% 0px"});
-  ["s1","s2","s3","s4","s5","s6","s7","s8"].forEach(id=>{
+  ["s1","s2","s3","s4","s5","s6","s7","s8","s9"].forEach(id=>{
     const s=document.getElementById(id); if(s)_SPY.observe(s);
   });
 }
@@ -972,7 +987,7 @@ function renderMain(d){
      <div style="font-size:14px">${t("m_heat_b")}</div></div>
      <div class="rubric"><h4>${t("m_cov")}</h4>
      <div style="font-size:14px">${t("m_cov_b")}</div></div></section>`;
-  $("#footmeta").textContent=`${d.meta.date} · schema ${d.meta.schema_version}`;
+  $("#footmeta").textContent=`${d.meta.date} · ${LANG==="en"?"Daily briefing data":"每日早报数据"}`;
   renderIssuestrip();
   initSpy();
   const rq=document.getElementById("railq");
@@ -1105,19 +1120,28 @@ async function loadDay(date){
   CURDATE=date;
   paintFresh();
   document.querySelectorAll(".errbar").forEach(b=>b.remove());
+  let eff=date,enFb=false;
   try{
-    const r=await fetch("data/"+date+(LANG==="en"?"-en":"")+".json");
+    let r=await fetch("data/"+date+(LANG==="en"?"-en":"")+".json");
+    if(!r.ok&&LANG==="en"){
+      const prev=(window._ISSUE_DAYS||[]).filter(d=>d<date).slice(-3).reverse();
+      for(const cd of prev){
+        const rr=await fetch("data/"+cd+"-en.json");
+        if(rr.ok){r=rr;eff=cd;enFb=true;CURDATE=cd;break;}
+      }
+    }
     if(!r.ok)throw new Error("HTTP "+r.status);
     if(!window._TAX){
       try{const tr=await fetch("data/taxonomy.json");if(tr.ok)window._TAX=await tr.json();}catch(e){}
     }
     FILTER="all";
     renderMain(await r.json());
-    document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===date));
+    if(enFb){paintFresh();const m=$("#main");if(m)m.insertAdjacentHTML("afterbegin",`<div class="infobar">${fmt(t("en_fb"),{d:eff})}</div>`);}
+    document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===eff));
     const ip2=$("#issuepill");
-    const no2=(window._ISSUE_DAYS||[]).indexOf(date)+1;
+    const no2=(window._ISSUE_DAYS||[]).indexOf(eff)+1;
     if(ip2&&no2>0){ip2.textContent=fmt(t("issue_plain"),{n:no2});}
-    try{history.replaceState(null,"","#date="+date+(LANG==="en"?"&lang=en":""));}catch(e){}
+    try{history.replaceState(null,"","#date="+eff+(LANG==="en"?"&lang=en":""));}catch(e){}
     window.scrollTo({top:0});
   }catch(e){
     const m=$("#main");
@@ -1344,16 +1368,19 @@ function paintSpark(){
     {k:"usdcny",name:t("sp_fx"),unit:t("sp_fx_u"),dec:4}
   ];
   const rows=[];
+  let rngA="",rngB="";
   if(SERIES)defs.forEach(d=>{
     const pts=(SERIES[d.k]||[]).filter(p=>p&&isFinite(+p.value));
     if(pts.length<2)return;
     const first=pts[0],last=pts[pts.length-1];
+    if(!rngA||first.date<rngA)rngA=first.date;
+    if(!rngB||last.date>rngB)rngB=last.date;
     const pct=(last.value-first.value)/first.value*100;
     const pcol=pct>0?"#d4695c":pct<0?"#4a9457":"var(--mut)";
     rows.push(`<div class="sparkrow"><span class="sparkname">${esc(d.name)}</span><span class="sparkwrap">${sparkSVG(pts)}</span><span class="sparklv"><b>${d.dec?Number(last.value).toFixed(d.dec):Number(last.value).toLocaleString("en-US")} ${esc(d.unit)}</b>${esc(mmdd(last.date))} · <span style="color:${pcol};font-weight:700">${pct>=0?"+":""}${pct.toFixed(2)}%</span></span></div>`);
   });
   if(!rows.length){box.style.display="none";box.innerHTML="";return;}
-  box.innerHTML=`<h3 style="margin-top:0;font-size:14.5px">${ICO.chart}${t("sp_title")}<span class="rrsub" style="font-weight:400;color:var(--mut);font-size:12px;margin-left:6px">${t("sp_sub")}</span></h3>`+rows.join("");
+  box.innerHTML=`<h3 style="margin-top:0;font-size:14.5px">${ICO.chart}${t("sp_title")}<span class="rrsub" style="font-weight:400;color:var(--mut);font-size:12px;margin-left:6px">${fmt(t("sp_sub"),{a:mmdd(rngA),b:mmdd(rngB)})}</span></h3>`+rows.join("");
   box.style.display="block";
 }
 async function loadSeries(){
@@ -1408,7 +1435,7 @@ function paintCw(){
   const lme1y=SERIES?(SERIES["copper_lme_1y_usd_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
   const hasCharts=shfe.length>=5&&lme1y.length>=5;
   const d=CW;
-  let h=secttl("九",t("sec")[8],t("cw_cnt"))+guide(t("cw_guide"));
+  let h=secttl("专",t("sec")[8],fmt(t("cw_cnt"),{d:d.updated||""}))+guide(t("cw_guide"));
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_status_t")}</h3><div class="cw-grid">`
     +d.status.map(c=>`<div class="cw-cell"><div class="sit-lab"><span class="cw-dot ${esc(c.light)}"></span>${esc(c.title)}</div><div class="sit-big">${esc(c.big)}</div><div class="sit-sub">${esc(c.sub)}</div></div>`).join("")
     +`</div><div class="src">${t("cw_status_src")}</div></div>`;
