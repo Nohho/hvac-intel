@@ -39,7 +39,17 @@
         "body": "对期货基差约 +10,000 元/吨，处近 1 年最高——期货跌、现货紧的背离来源。（研究报告口径）"
       }
     ],
-    "src": "来源：沪铜为上期所日收盘（新浪期货公开接口，连续主力口径）；LME 为 Westmetall 3M 口径。现货升水与基差为点位口径、非日度序列，日期已逐项标注。"
+    "src": "来源：沪铜为上期所日收盘（新浪期货公开接口，连续主力口径）；LME 为 Westmetall 3M 口径。现货升水与基差为点位口径、非日度序列，日期已逐项标注。",
+    "links": [
+      {
+        "label": "新浪期货 · 沪铜主力行情",
+        "url": "https://finance.sina.com.cn/futures/quotes/CU0.shtml"
+      },
+      {
+        "label": "Westmetall · LME 铜年表",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash&year=2026"
+      }
+    ]
   },
   "forecasts": {
     "rows": [
@@ -92,7 +102,25 @@
         "upd": "长期展望"
       }
     ],
-    "src": "来源：World Bank《Commodity Markets Outlook》（2026-10）、Cochilco Q3 报告、ICSG（2026-10-14）；投行预测来自公开媒体转述，非原始报告。本表按月更新，每次调整留痕一行（日期 · 旧值 → 新值 · 来源）。"
+    "src": "来源：World Bank《Commodity Markets Outlook》（2026-10）、Cochilco Q3 报告、ICSG（2026-10-14）；投行预测来自公开媒体转述，非原始报告。本表按月更新，每次调整留痕一行（日期 · 旧值 → 新值 · 来源）。",
+    "links": [
+      {
+        "label": "世界银行 10 月展望（Mining.com 报道）",
+        "url": "https://www.mining.com/world-bank-lifts-copper-price-outlook-by-18/"
+      },
+      {
+        "label": "ICSG 10 月预测（Engineering News）",
+        "url": "https://www.engineeringnews.co.za/article/icsg-sees-global-refined-copper-surplus-widening-in-2027-2026-10-15"
+      },
+      {
+        "label": "Cochilco 预测（Mining.com 报道）",
+        "url": "https://www.mining.com/chile-copper-outlook-worsens-as-price-forecast-rises/"
+      },
+      {
+        "label": "高盛 / 摩根大通预测汇总（引 Reuters）",
+        "url": "https://qmines.com.au/is-copper-a-good-investment/copper-price-forecast/"
+      }
+    ]
   },
   "scenarios": {
     "items": [
@@ -238,6 +266,24 @@
         "body": "中国首次削减配额，美国降至基线 30%；2029 年前或有抢配额，结构性高价延续。"
       }
     ],
-    "src": "来源：生态环境部 2027 年 HFC 配额方案（2026-10-15）、美国 EPA AIM Act 公告、欧盟 F-gas 法规（研究报告汇总，2026-11-20）。节点同步进入第六节时间锚点与日历订阅。"
+    "src": "来源：生态环境部 2027 年 HFC 配额方案（2026-10-15）、美国 EPA AIM Act 公告、欧盟 F-gas 法规（研究报告汇总，2026-11-20）。节点同步进入第六节时间锚点与日历订阅。",
+    "links": [
+      {
+        "label": "生态环境部 · 2027 年度 HFCs 配额方案（PDF）",
+        "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk05/202610/W020261019356998263126.pdf"
+      },
+      {
+        "label": "美国 40 CFR Part 84 · AIM 削减时间表",
+        "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title40-vol21/xml/CFR-2025-title40-vol21-part84.xml"
+      },
+      {
+        "label": "EUR-Lex · (EU) 2024/573 法规原文",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj"
+      },
+      {
+        "label": "印度 DGTR · R32 反倾销终裁（PDF）",
+        "url": "https://files.indusdesk.com/indusdesk/dgtr/dgtr-recommends-five-more-years-of-anti-dumping-duty-on-hfc-r-32-from-276550.pdf"
+      }
+    ]
   }
 }
