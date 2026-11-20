@@ -993,7 +993,7 @@ function renderMain(d){
 
   /* ---- 六、预警与建议 ---- */
   const warns=d.warnings.toSorted((a,b)=>({高:0,中:1,低:2}[a.urgency]-{高:0,中:1,低:2}[b.urgency]));
-  const anchors=(d.time_anchors||[]).map(x=>`<div class="anchor">${ICO.clock}<b>${mmdd(x.date)}</b> ${esc(x.event)}</div>`).join("");
+  const anchors=(d.time_anchors||[]).map(x=>`<div class="anchor">${ICO.clock}<b>${mmdd(x.date)}</b> ${esc(x.event||x.label)}</div>`).join("");
   const firstHigh=highs[0];
   const s6=secttl("六",t("sec")[5],d.warnings.length+" "+t("u_warnings"))
     +guide(firstHigh?fmt(t("s6_guide"),{a:highs.length,b:esc(firstHigh.title),c:firstHigh.deadline?fmt(t("s6_dl"),{d:esc(firstHigh.deadline)}):""}):t("s6_none"))
@@ -1494,7 +1494,7 @@ function paintCw(){
     +(d.copper.spot_rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
     +`<div class="src">${esc(d.copper.src)}${cwLinks(d.copper)}</div></div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_fc_t")}</h3><div class="cw-twrap"><table class="cw-table fc"><colgroup><col style="width:20%"><col style="width:12%"><col style="width:16%"><col style="width:36%"><col style="width:16%"></colgroup><tr><th>${t("cw_h_org")}</th><th class="n">2026</th><th class="n">2027</th><th>${t("cw_h_view")}</th><th>${t("cw_h_upd")}</th></tr>`
-    +d.forecasts.rows.map(r=>`<tr><td>${cwOrg(r.org)}</td><td class="n">${esc(r.y2026)}</td><td class="n">${esc(r.y2027)}${r.y2027_sub?`<br><span style="color:var(--mut);font-size:12px">${esc(r.y2027_sub)}</span>`:""}</td><td>${esc(r.view)}</td><td class="u">${esc(r.upd)}</td></tr>`).join("")
+    +d.forecasts.rows.map(r=>`<tr><td>${cwOrg(r.org)}</td><td class="n">${esc(r.y2026)}</td><td class="n">${esc(r.y2027)}${r.y2027_sub?`<br><span style="color:var(--mut);font-size:12px;white-space:normal">${esc(r.y2027_sub)}</span>`:""}</td><td>${esc(r.view)}</td><td class="u">${esc(r.upd)}</td></tr>`).join("")
     +`</table></div><div class="src">${esc(d.forecasts.src)}${cwLinks(d.forecasts)}</div></div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_sc_t")}</h3><div class="cw-grid3">`
     +d.scenarios.items.map(it=>`<div class="cw-cell"><div class="sit-lab">${esc(it.name)} · ${esc(it.prob)}${it.cur?`<span class="cw-cur">${t("cw_cur")}</span>`:""}</div><div class="sit-big">${esc(it.range)}</div><div class="sit-sub">${esc(it.trig)}</div></div>`).join("")
