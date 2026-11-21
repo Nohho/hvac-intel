@@ -1,5 +1,5 @@
 {
-  "note": "口径：LME 铜/铝均为 3 月期收盘价（美元/吨，Westmetall 历史表 \"3 months\" 列）；美元/人民币为中国外汇交易中心人民币汇率中间价（USD/CNY，4 位小数）。早报明写值（src=brief）优先；公开源（src=westmetall / chinamoney / conv）补缺失日期，且重叠日期相对偏差 >0.5% 时改用公开源值（早报原值保留在该点的 brief_value 字段）。白银：Westmetall Fine Silver 定盘（欧元/公斤）经欧洲央行 EUR/USD 参考汇率换算为美元/盎司（×31.1035/1000），src=conv。第九节专题大图另用近 1 年窗口序列：沪铜主力连续日收盘（新浪期货转上期所数据，src=sina）与 LME 铜 3M 近 1 年（Westmetall，src=westmetall）。冷媒现货：早报每日核实的华东 R32/R410A 现货区间中间价（元/吨，src=brief；区间 low/high 记于各点）。重叠日期已交叉核对，偏差明细见 gen-series.py 运行输出。",
+  "note": "口径：LME 铜/铝均为 3 月期收盘价（美元/吨，Westmetall 历史表 \"3 months\" 列）；美元/人民币为中国外汇交易中心人民币汇率中间价（USD/CNY，4 位小数）。早报明写值（src=brief）优先；公开源（src=westmetall / chinamoney / conv）补缺失日期，且重叠日期相对偏差 >0.5% 时改用公开源值（早报原值保留在该点的 brief_value 字段）。白银：Westmetall Fine Silver 定盘（欧元/公斤）经欧洲央行 EUR/USD 参考汇率换算为美元/盎司（×31.1035/1000），src=conv。第九节专题大图另用近 1 年窗口序列：沪铜主力连续日收盘（新浪期货转上期所数据，src=sina）与 LME 铜 3M 近 1 年（Westmetall，src=westmetall）。冷媒现货：早报每日核实的华东 R32/R410A 现货区间中间价（元/吨，src=brief；区间 low/high 记于各点），滚动近 1 年窗口。重叠日期已交叉核对，偏差明细见 gen-series.py 运行输出。",
   "copper_lme_usd_t": [
     {
       "date": "2026-10-05",
@@ -172,6 +172,11 @@
       "date": "2026-11-19",
       "value": 12555,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-20",
+      "value": 12237,
+      "src": "westmetall"
     }
   ],
   "aluminium_lme_usd_t": [
@@ -343,6 +348,11 @@
     {
       "date": "2026-11-19",
       "value": 2845,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-20",
+      "value": 2831.5,
       "src": "westmetall"
     }
   ],
@@ -678,14 +688,14 @@
       "date": "2026-11-19",
       "value": 44.32,
       "src": "conv"
+    },
+    {
+      "date": "2026-11-20",
+      "value": 41.75,
+      "src": "conv"
     }
   ],
   "copper_shfe_cny_t": [
-    {
-      "date": "2025-11-20",
-      "value": 86130,
-      "src": "sina"
-    },
     {
       "date": "2025-11-21",
       "value": 85660,
@@ -1898,11 +1908,6 @@
     }
   ],
   "copper_lme_1y_usd_t": [
-    {
-      "date": "2025-11-20",
-      "value": 10803,
-      "src": "westmetall"
-    },
     {
       "date": "2025-11-21",
       "value": 10705,
@@ -3162,6 +3167,11 @@
       "date": "2026-11-19",
       "value": 12555,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-20",
+      "value": 12237,
+      "src": "westmetall"
     }
   ],
   "refrigerant_r32_cny_t": [
@@ -3174,6 +3184,13 @@
     },
     {
       "date": "2026-11-18",
+      "value": 64000,
+      "low": 63500,
+      "high": 64500,
+      "src": "brief"
+    },
+    {
+      "date": "2026-11-19",
       "value": 64000,
       "low": 63500,
       "high": 64500,
@@ -3200,6 +3217,13 @@
       "value": 58250,
       "low": 57000,
       "high": 59500,
+      "src": "brief"
+    },
+    {
+      "date": "2026-11-19",
+      "value": 55500,
+      "low": 55000,
+      "high": 56000,
       "src": "brief"
     },
     {
