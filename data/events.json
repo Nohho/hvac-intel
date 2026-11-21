@@ -313,6 +313,11 @@
      "date": "2026-11-20",
      "change": "三星电机截至 Q3 末长期供货合同预收款 7.77 亿美元（约 1 万亿韩元），较 6 月末 +43.9%；TrendForce 预估 Q4 消费级 X5R 对 OEM/ODM 均价或再涨 25%–30%（预估口径）。",
      "text_en": "Samsung Electro-Mechanics' long-term supply contract prepayments reached $777 million (about KRW 1 trillion) at end-Q3, up 43.9% from end-June; TrendForce estimates Q4 consumer X5R prices to OEM/ODM customers could rise another 25%-30% (estimate, not in effect)."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "TrendForce 将 MLCC 供需评估上调至“非常紧张”，交期 40 周（Meritz 称三星电机全线 52 周）；Q4 消费级 X5R 对 OEM/ODM 均价或再涨 25%–30%（预估）。",
+     "text_en": "TrendForce raised its MLCC supply-demand assessment to \"Very Tight\", with lead times of 40 weeks (Meritz says Samsung Electro-Mechanics' full line is at 52 weeks); Q4 consumer-grade X5R prices to OEM/ODM customers may rise another 25-30% (estimate)."
     }
    ],
    "title": "MLCC 涨价潮（三环/三星电机）",
@@ -527,6 +532,11 @@
      "date": "2026-11-20",
      "change": "LME 3M 11-18 收盘 12,471 美元/吨，单日暴跌 755.5 美元（-5.7%，19 个月最大单日跌幅），创 4 月 7 日以来新低；11-19 收 12,443 美元，自 9 月历史高点 14,875 美元已跌 16%；JHU 研究预测美国最早明年出现铜短缺。",
      "text_en": "LME 3M copper closed at $12,471/t on 11-18, down $755.5 (-5.7%, the largest single-day drop in 19 months) to its lowest since 4-07; it closed at $12,443 on 11-19, down 16% from the September record high of $14,875/t; a Johns Hopkins study predicts a US copper shortage as early as next year."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "沪铜主力 11-20 收 92,400 元/吨（-3.35%），本周累计跌 10,340 元（-10.06%，近十年最差单周之一）；LME 3M 收 12,526 美元/吨（+0.44%），日内曾触及 12,020 美元（近八个月新低）；国内 1#铜现货升水仍高达 6,580 元/吨，电解铜现货库存仅 5.48 万吨。",
+     "text_en": "SHFE copper's most-traded contract closed at RMB 92,400/t on Nov 20 (-3.35%), down RMB 10,340 (-10.06%) for the week, one of the worst weeks in nearly a decade; LME 3M closed at $12,526/t (+0.44%) after touching $12,020 intraday, an almost eight-month low; Shanghai spot premium for No.1 copper remained high at RMB 6,580/t, with spot electrolytic copper inventory of only 54,800 t."
     }
    ],
    "title": "铜价历史高位",
@@ -768,6 +778,11 @@
      "date": "2026-11-20",
      "change": "Q3 全球 DRAM 营收约 2000 亿美元（同比 +369%）；16Gb DDR5 合约价 48 美元（2025-10 为 8.70 美元）；美国 DRAM 集体诉讼继续推进（11-14 法院驳回撤诉动议，12-07 前答辩）。",
      "text_en": "Global Q3 DRAM revenue was about $200 billion (+369% YoY); 16Gb DDR5 contract prices reached $48 (vs $8.70 in Oct 2025); the US DRAM class action proceeds (court denied motions to dismiss on 11-14; answers due by 12-07)."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "TrendForce 11-18 首尔路演：Q4 通用 DRAM 合约价环比 +10%–15%、NAND +15%–20%，2027 年逐季续涨；HBM4 2027 年单价 3.00–5.50 美元/Gb（2026 年逾 2.05 美元，涨超 100%）；HBM 占三大厂 DRAM 晶圆份额从 23% 升至 2027 年近 30%。",
+     "text_en": "At TrendForce's Nov 18 Seoul roadshow: Q4 conventional DRAM contract prices +10-15% QoQ, NAND +15-20%, rising further each quarter in 2027; HBM4 priced at $3.00-5.50/Gb in 2027 (over $2.05 in 2026, up more than 100%); HBM's share of the big three's DRAM wafer input rises from 23% to nearly 30% in 2027."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1098,6 +1113,11 @@
      "date": "2026-11-16",
      "change": "LG 计划投资 6,400 万美元在弗吉尼亚州 Isle of Wight 县新建 HVAC 设备组装厂；就业人数、建设时间表与投产日期待官方确认。",
      "text_en": "LG plans to invest $64m in a new HVAC equipment assembly plant in Isle of Wight County, Virginia; headcount, construction timeline and start-up date await official confirmation."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "LG 11-19 宣布组织架构调整：在 Eco Solution 事业部下新设 Applied Business 专责 AI 数据中心冷却，并新设弗吉尼亚冷水机组生产子公司；目标明年冷水机组年销售额 1 万亿韩元。",
+     "text_en": "LG announced an organisational reshuffle on Nov 19: a new Applied Business unit under the Eco Solution division dedicated to AI data-centre cooling, plus a new Virginia chiller production subsidiary; it targets chiller sales of KRW 1 trillion next year."
     }
    ],
    "title": "LG 北美冷水机大单+自建工厂",
@@ -1238,6 +1258,11 @@
      "date": "2026-11-20",
      "change": "氧化镨钕 11-19 均价 723,000 元/吨（+4,000）；锗锭 11 月第一周报价创历史新高 29,000 元/公斤。",
      "text_en": "Praseodymium-neodymium oxide averaged RMB 723,000/t on 11-19 (+4,000); germanium ingot prices hit a record high of RMB 29,000/kg in the first week of November."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "氧化镨钕 11-20 报 725,500 元/吨（+2,500 元）；钕铁硼毛坯 N35 175.5 元/公斤持稳。",
+     "text_en": "Praseodymium-neodymium oxide was quoted at RMB 725,500/t on Nov 20 (+RMB 2,500); sintered NdFeB blank N35 was steady at RMB 175.5/kg."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -2963,6 +2988,11 @@
      "date": "2026-11-19",
      "change": "价格持平：R32 华东 63,500–64,500 元/吨、R410A 57,000–59,500 元/吨（11-12 周评）；上游无水氟化氢 11 月涨 500–1,100 元/吨至 15,300–15,650 元/吨，北方大厂停产未复产。",
      "text_en": "Prices were flat: R32 in East China RMB 63,500-64,500/t and R410A RMB 57,000-59,500/t (Nov 12 weekly review); upstream anhydrous hydrogen fluoride rose RMB 500-1,100/t in November to RMB 15,300-15,650/t, with a major northern plant still shut."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "R410A 华东现货 11-19 下调至 55,000–56,000 元/吨（较上期下调 2,000–3,500 元/吨）；R32 持平 63,500–64,500 元/吨；Q4 长协参考价 R32 65,600 元/吨、R410A 60,500 元/吨。",
+     "text_en": "East China spot R410A fell to RMB 55,000-56,000/t on Nov 19 (down RMB 2,000-3,500 from the prior quote); R32 was flat at RMB 63,500-64,500/t; Q4 long-term contract reference prices are RMB 65,600/t for R32 and RMB 60,500/t for R410A."
     }
    ]
   },
@@ -3739,6 +3769,11 @@
      "date": "2026-11-20",
      "change": "LME 3M 11-18 失守 3000 美元，官方价 2,864 美元/吨（-2.4%，年内低位）；现货升水 11-17 约 275 美元/吨（1988–1990 年逼仓以来最高），11-18 回落至 230 美元；11-19 收 2,814.5 美元（+0.90%）。",
      "text_en": "LME 3M aluminium fell below $3,000 on 11-18, official price $2,864/t (-2.4%, a year low); the cash premium hit about $275/t on 11-17 (highest since the 1988-1990 squeeze) and eased to $230 on 11-18; it closed at $2,814.5 on 11-19 (+0.90%)."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "LME 铝 3M 11-20 收 2,870 美元/吨（+1.66%）；沪铝主力 21,330 元/吨（-1.66%）；国内 A00 铝锭 22,340 元/吨，升水 390 元/吨；电解铝库存 39.6 万吨延续去库。",
+     "text_en": "LME 3M aluminium closed at $2,870/t on Nov 20 (+1.66%); SHFE aluminium's most-traded contract was RMB 21,330/t (-1.66%); domestic A00 aluminium ingot was RMB 22,340/t with a RMB 390/t premium; electrolytic aluminium inventory of 396,000 t continued to draw down."
     }
    ],
    "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
@@ -3785,6 +3820,11 @@
      "date": "2026-11-20",
      "change": "截至 11-20 仍无新进展；Modexus 投资者日与回购公告均未提及三星。",
      "text_en": "No new developments as of 11-20; neither Modexus' investor day nor its buyback announcement mentioned Samsung."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "截至 11-21 仍无收购新进展；Modexus 11-18 投资者日提 FY2029 目标与 5 亿美元回购、未提及三星；Jana Partners 施压要求提升利润率或考虑出售。",
+     "text_en": "No new developments as of Nov 21; Modexus' Nov 18 investor day set FY2029 targets and a $500M buyback without mentioning Samsung; Jana Partners is pressing for higher margins or a sale."
     }
    ],
    "title": "三星洽购美国数据中心制冷商 Modine（彭博爆料，在谈未证实）",
@@ -3871,6 +3911,11 @@
      "date": "2026-11-20",
      "change": "11-19 股价收 145.98 美元（-3.30%），连续第六个交易日下跌，5 日跌幅约 16%；董事会 11-17 明确拒黄仁勋复任 CEO。",
      "text_en": "Shares closed at $145.98 on 11-19 (-3.30%), a sixth straight daily decline and about -16% over five sessions; the board stated on 11-17 that it will not reinstate Jensen Huang as CEO."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "11-20 收盘 125.53 美元（-14.01%，盘中最低 124.50 美元），连续第七个交易日下跌，5 日跌幅约 24.5%、11 月累计约 -43%；盘后反弹至 130.27 美元（+3.78%）；分析师 11-18/19 集中下调目标价，Oppenheimer 下调至 Perform 并取消目标价；SEC 民事调查仍未获证实。",
+     "text_en": "Shares closed at $125.53 on Nov 20 (-14.01%, intraday low $124.50), a seventh straight daily decline, about -24.5% over five sessions and about -43% in November; they rebounded to $130.27 after hours (+3.78%); analysts cut price targets on Nov 18-19, Oppenheimer downgrading to Perform and dropping its target; the reported SEC civil probe remains unconfirmed."
     }
    ],
    "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
@@ -4195,6 +4240,11 @@
      "date": "2026-11-20",
      "change": "截至 11-20 约 07:35 仍无续延公告，暂停按 11-27 到期，倒计时 7 天；锗锭 11 月第一周报价创历史新高 29,000 元/公斤。",
      "text_en": "As of about 07:35 on 11-20, no extension announcement has appeared; the suspension still expires 11-27, with 7 days to go; germanium ingot prices hit a record high of RMB 29,000/kg in the first week of November."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "截至 11-21 早上仍无续延公告，倒计时 6 天；商务部 9-28 吉隆坡安排延至 2027-01-10 的表态未点名 72 号公告。",
+     "text_en": "As of the morning of Nov 21, no extension notice had been published; six days remain. The ministry's Sep 28 statement extending the Kuala Lumpur arrangement to Jan 10, 2027 did not mention Announcement No. 72."
     }
    ],
    "title": "镓/锗/锑对美出口禁令暂停 11-27 到期、暂无续延公告",
@@ -4465,6 +4515,48 @@
      "text_en": "Blackstone Digital Infrastructure Trust announced on Nov 18 a $5B acquisition of a 75% stake in two AWS joint ventures: 1.3GW of contracted capacity across 8 facilities in Virginia and 2 in Oregon, on 12-15 year leases at 100% occupancy."
     }
    ]
+  },
+  {
+   "id": "evt-jci-schertz-expansion",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [
+    "产能投资"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-19",
+     "change": "江森自控宣布得州 Schertz 扩建 HVAC 制造基地，投资超 1.79 亿美元、新增 552 个全职岗位，厂房 53.6 万平方英尺。",
+     "text_en": "Johnson Controls announced an expansion of its HVAC manufacturing base in Schertz, Texas, investing over $179m and adding 552 full-time jobs in a 536,000 sq ft facility."
+    }
+   ],
+   "title": "江森自控得州 Schertz 扩建 HVAC 制造基地",
+   "title_en": "Johnson Controls expands HVAC manufacturing base in Schertz, Texas"
+  },
+  {
+   "id": "evt-eu-cbam-expansion-no-is",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "机械结构与辅材"
+   ],
+   "tags": [
+    "关税政策"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-18",
+     "change": "欧盟委员会宣布 CBAM 自 2027-01-01 起适用于挪威与冰岛进口的铝、钢铁等商品；挪威与冰岛核查员注册自 2026-12-01 开始。",
+     "text_en": "The European Commission announced CBAM will apply from Jan 1, 2027 to CBAM goods (aluminium, steel and others) imported into Norway and Iceland; verifier registration in Norway and Iceland opens Dec 1, 2026."
+    }
+   ],
+   "title": "CBAM 扩展至挪威与冰岛",
+   "title_en": "CBAM extended to Norway and Iceland"
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -4476,5 +4568,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-18"
+ "updated": "2026-11-21"
 }
