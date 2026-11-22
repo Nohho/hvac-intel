@@ -1,0 +1,996 @@
+{
+ "meta": {
+  "date": "2026-11-23",
+  "schema_version": "v0.6",
+  "source_briefing": "briefs/2026-11-23-hvac-cdu-morning-briefing.md",
+  "note": "周一早报。头条三件：英伟达调查升级（NYT 称早期阶段；黄仁勋 12-03 参议院公开作证、12-01 众议院闭门面谈；10-Q 推迟）、铜价周线 -12.03% 但现货仍紧（LME 结算价订正为 12,230.50 美元）、镓/锗/锑暂停 11-27 到期倒计时 4 天。事件库：追加 11 条 timeline，新建 3 个事件（代工涨价潮、西门子 FY27 列表价、联想 Q2）。Tier B 第 8 批：0 项新涨价函/断供，关注 2 项。冷媒现货：11-20 当日区间未核实到，本期 JSON 不写 refrigerant_spot（不沿用旧值）。"
+ },
+ "daily_report": {
+  "title": "HVAC / 液冷 CDU 行业情报早报（2026-11-23 · 周一）",
+  "date": "2026-11-23",
+  "headlines": [
+   "英伟达调查升级、作证日程落定：SEC 调查处早期阶段，黄仁勋 12-03 参议院公开作证",
+   "铜价周线大跌 12.03%、现货仍紧：沪铜主力 11-20 收 92,400 元/吨",
+   "镓/锗/锑暂停 11-27 到期、倒计时 4 天仍无续延公告"
+  ],
+  "body_file": "briefs/2026-11-23-hvac-cdu-morning-briefing.md"
+ },
+ "hotspot_events": [
+  {
+   "id": "evt-20261123-01",
+   "event_id": "evt-nvidia-sec-accounting-probe",
+   "title": "英伟达调查升级、作证日程落定：SEC 调查处早期阶段，黄仁勋 12-03 参议院公开作证",
+   "heat": 90,
+   "heat_reason": "SEC 调查处早期阶段（NYT）+ 加州调查涉刑责可能 + 黄仁勋 12-03 参议院公开作证、12-01 众议院闭门面谈 + 10-Q 推迟，NVDA 单日 -14.01% 后盘后反弹",
+   "tags": [
+    "影响BOM",
+    "芯片与半导体"
+   ],
+   "severity": "中",
+   "date": "2026-11-20",
+   "section": "头条事件",
+   "summary": "英伟达 11-20 收 125.53 美元（-14.01%），盘中创 52 周新低 124.50 美元，连续第七个交易日下跌；纽约时报 11-21 称 SEC 调查处早期阶段，加州调查范围扩大至可能违反加州刑法的情形；黄仁勋同意 12-03 出席参议院银行委员会公开作证、12-01 接受众议院三个委员会闭门面谈；10-Q 推迟提交、法定截止约 12-04；路透称司法部正审查 129 亿美元收购 Hugging Face 交易；盘后反弹至 130.01 美元（+3.57%）。",
+   "numbers": [
+    "11-20 收 125.53 美元（-14.01%）",
+    "盘中创 52 周新低 124.50 美元",
+    "盘后反弹至 130.01 美元（+3.57%）",
+    "12-03 参议院公开作证、12-01 众议院闭门面谈",
+    "10-Q 法定截止约 12-04"
+   ],
+   "sources": [
+    {
+     "outlet": "Finnhub 行情",
+     "date": "2026-11-20",
+     "url": "https://finnhub.io/?q=%22NVDA%22",
+     "first_party": true
+    },
+    {
+     "outlet": "TechCrunch",
+     "date": "2026-11-18",
+     "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+     "first_party": false
+    },
+    {
+     "outlet": "The Apex Wire（梳理路透/WSJ/纽约时报）",
+     "date": "2026-11-20",
+     "url": "https://theapexwire.com/stock-market/sec-opens-civil-probe-nvidia-disclosures/",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261123-01"
+   ]
+  },
+  {
+   "id": "evt-20261123-02",
+   "event_id": "evt-copper-high",
+   "title": "铜价周线大跌 12.03%、现货仍紧：沪铜主力 11-20 收 92,400 元/吨",
+   "heat": 88,
+   "heat_reason": "沪铜周线 -12.03%、两日 -8.2%，但洋山升水 360 美元/吨创纪录、SHFE 库存三年最低、现货升水 7,250 元/吨创纪录，期货与现货严重背离",
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "severity": "中",
+   "date": "2026-11-20",
+   "section": "头条事件",
+   "summary": "沪铜主力 11-20 收 92,400 元/吨（-3.35%），当周周线 -12.03%；LME 铜官方结算价 12,230.50 美元/吨（昨日简报引 Mysteel 12,022.45 美元为盘中低点、非结算价，特此订正）；洋山铜溢价 360 美元/吨创纪录（路透）；SHFE 铜库存 27,642 吨（2023-12 以来最低）；SMM 上海 1# 电解铜现货升水 11-19 达创纪录的 7,250 元/吨、11-20 回落至 5,800 元/吨。",
+   "numbers": [
+    "沪铜 11-20 收 92,400 元/吨（-3.35%）",
+    "周线 -12.03%",
+    "LME 官方结算 12,230.50 美元/吨",
+    "洋山升水 360 美元/吨创纪录",
+    "SHFE 库存 27,642 吨"
+   ],
+   "sources": [
+    {
+     "outlet": "Mysteel",
+     "date": "2026-11-20",
+     "url": "https://list1.mysteel.com/zhishi/tjqhbnjg.html",
+     "first_party": true
+    },
+    {
+     "outlet": "SMM 上海有色网",
+     "date": "2026-11-20",
+     "url": "https://news.smm.cn/news/4HRBNX4WS5GIRVDZ6JOJQJI4G5XMO72LQCZPUJY",
+     "first_party": true
+    },
+    {
+     "outlet": "路透（经 UAnalyze 转载）",
+     "date": "2026-11-19",
+     "url": "https://admin.uanalyze.com.tw/articles/8823460374",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261123-02"
+   ]
+  },
+  {
+   "id": "evt-20261123-03",
+   "event_id": "evt-ga-ge-sb-pause-expiry-1127",
+   "title": "镓/锗/锑暂停 11-27 到期、倒计时 4 天仍无续延公告",
+   "heat": 85,
+   "heat_reason": "对美镓/锗/锑出口禁令暂停 11-27 到期，截至今早仍无续延公告；11-09 的 58 号公告未覆盖 72 号公告，到期后禁令恢复在即",
+   "tags": [
+    "影响BOM",
+    "芯片与半导体"
+   ],
+   "severity": "中",
+   "date": "2026-11-23",
+   "section": "头条事件",
+   "summary": "商务部 72 号公告暂停期至 2026-11-27，截至 11-23 早上仍未见续延公告；11-09 的 58 号公告只把 10 月一揽子措施延至 2027-01-10，未覆盖 72 号公告；到期后对美出口禁令恢复“原则上不予批准”。",
+   "numbers": [
+    "暂停期至 2026-11-27",
+    "倒计时 4 天",
+    "58 号公告延至 2027-01-10 未覆盖 72 号公告"
+   ],
+   "sources": [
+    {
+     "outlet": "外贸周报",
+     "date": "2026-11-13",
+     "url": "https://edu.ceo520.com/article/480.html",
+     "first_party": false
+    },
+    {
+     "outlet": "DW Advisory",
+     "date": "2026-11-18",
+     "url": "https://www.dwadvisory.co/post/chinas-export-controls-are-spreading-what-thai-buyers-should-check-from-18-november",
+     "first_party": false
+    }
+   ],
+   "related_warnings": [
+    "warn-20261123-04"
+   ]
+  }
+ ],
+ "industry_updates": [
+  {
+   "title": "LG 发布 AI 驱动 Multi V 7 VRF 热泵（Spin X 压缩机）",
+   "detail": "LG 11-20 在韩国 HARFKO 2026 发布商用 VRF 新品 Multi V 7：端侧+云端 AI 优化运行，搭载新研 Spin X 压缩机（双向供油、实时油况监测），容量/COP/冷媒型号未披露。",
+   "event_id": "evt-lg-multiv7-vrf",
+   "source": "GlobalSpec，2026-11-20",
+   "url": "https://insights.globalspec.com/article/25220/lg-unveils-ai-powered-vrf-heat-pump-with-new-compressor-technology",
+   "first_party": false
+  },
+  {
+   "title": "特灵发布温水数据中心制冷技术文章（混合液冷降耗）",
+   "detail": "特灵 11-20 发布温水数据中心制冷技术文章：混合系统（温水液冷+机械制冷）可降低高密度算力制冷电耗，800 VDC 可减少配电损耗，强调按工况实时响应的集成热管理。",
+   "event_id": "",
+   "source": "特灵官网，2026-11-20",
+   "url": "https://www.tranetechnologies.com/en/index/blog/technical-insights/warm-water-data-center-energy-efficiency.html",
+   "first_party": true
+  },
+  {
+   "title": "日立建成 Omika 数据中心实验室（液冷 GPU 同场验证）",
+   "detail": "日立 11-16 在茨城大甕建成 Omika 数据中心实验室：液冷 GPU 服务器与风冷服务器同场验证（含 CDU），目标秒级室温分布预测误差小于 1°C，成果用于扩展 HMAX Data Center 方案。",
+   "event_id": "",
+   "source": "日立公告经 Claypier，2026-11-16",
+   "url": "https://claypier.com/en/hitachi-omika-data-center-lab/",
+   "first_party": false
+  },
+  {
+   "title": "联想 Q2 营收首破 2000 亿元、AI 服务器营收同比增超 300%",
+   "detail": "联想 2026/27 财年 Q2 营收首破 2000 亿元、同比增近 50%，AI 服务器营收同比增超 300%、储备订单扩大至 5300 亿元，问天海神液冷可将数据中心 PUE 降至 1.04。",
+   "event_id": "evt-lenovo-q2-fy2027-earnings",
+   "source": "联想官网，2026-11-19",
+   "url": "https://www.lenovo.com.cn/wiki/article-50765.html",
+   "first_party": true
+  },
+  {
+   "title": "关税政策排查：窗口内无新定案；台积电/三星暂停部分对华芯片出货申领许可",
+   "detail": "窗口内无新的已定案/已生效 HVAC 相关政策；镓/锗/锑暂停 11-27 到期、截至今早仍无续延公告；金融时报 11-19 称台积电、三星 11-19 起暂停部分对华芯片出货以申领许可；11-18 起生效的中国无人机/盾构机/挖泥船出口管制与 HVAC/CDU 供应链无关。",
+   "event_id": "evt-bis-remote-access-chip-rule",
+   "source": "金融时报，2026-11-19；CASRAI，2026-11-20",
+   "url": "https://casrai.org/news/tsmc-samsung-suspend-china-chip-shipments-bis-rule-2026",
+   "first_party": false
+  }
+ ],
+ "siphon_effects": [
+  {
+   "material": "AI 算力需求",
+   "detail": "英伟达 Q3 超预期但 SEC 调查升级触发七连跌，盘后有所反弹；联想 Q2 AI 服务器营收同比增超 300%、储备订单 5,300 亿元，AI 算力需求未见降温——虹吸从“单边涨价”转向“需求分化、监管扰动”。",
+   "event_id": "evt-nvidia-q3-fy2027-earnings",
+   "source": "联想官网，2026-11-19；Finnhub，2026-11-20",
+   "tags": [
+    "影响BOM",
+    "芯片与半导体"
+   ]
+  },
+  {
+   "material": "存储器",
+   "detail": "窗口内未见 TrendForce 新发布；维持上周口径：Q4 PC DRAM 合约价环比 +13%–18%、企业级 SSD +15%–20%；闪迪 11 月 NAND 合约价上调约 50%（年内第三次），模组厂暂停报价与交货。",
+   "event_id": "evt-dram-hbm-shortage",
+   "source": "TrendForce，2026-11-11；芯通社，2026-11-11",
+   "tags": [
+    "影响BOM",
+    "存储器"
+   ]
+  },
+  {
+   "material": "MLCC",
+   "detail": "窗口内无新动态；维持上周口径：三星电机 Q4 消费级 X5R 报价 +25%–30%、AI 用 X6S +10%–20%（TrendForce 估计）；Q3 MLCC 均价同比 +21.4%，交期 40 周。",
+   "event_id": "evt-mlcc-price-hike",
+   "source": "MoneyToday，2026-11-18；XMY 引国泰证期，2026-11-11",
+   "tags": [
+    "影响BOM",
+    "被动元件"
+   ]
+  },
+  {
+   "material": "PCB/CCL",
+   "detail": "建滔 11-20 发出网传年内第七次涨价函（FR-4 覆铜板统一 +10%，PP 半固化片厚布 +10%/薄布 +20%），理由为玻纤布、铜箔供应紧缺；但未经建滔官网证实，且另一口径称建滔“年内已五轮涨价”，轮次冲突、待核实。",
+   "event_id": "evt-jiantao-ccl-8th-hike",
+   "source": "A 股异动报道，2026-11-20",
+   "tags": [
+    "影响BOM",
+    "PCB"
+   ]
+  },
+  {
+   "material": "液冷 CDU",
+   "detail": "联想问天海神液冷 PUE 1.04（Q2 财报 11-19）；日立 Omika 实验室液冷 GPU 同场验证（11-16）；特灵温水制冷技术文章强调混合液冷降耗（11-20）。",
+   "event_id": "evt-lenovo-q2-fy2027-earnings",
+   "source": "联想官网，2026-11-19；日立公告经 Claypier，2026-11-16",
+   "tags": [
+    "影响BOM",
+    "液冷与热管理"
+   ]
+  }
+ ],
+ "cross_industry": [
+  {
+   "industry": "晶圆代工涨价（2027 年 Q1）",
+   "detail": "台湾《工商时报》11-17 报道，部分 IC 设计公司已收到代工厂涨价通知 10%–20%+，2027 年 Q1 执行；TrendForce 预测 2027 年代工价涨 5%–20%，8 英寸最明显；Microchip CEO 11-05 电话会称代工与封测 2027 年 1 月起新一轮涨价。",
+   "event_id": "evt-foundry-price-hike-2027q1",
+   "source": "工商时报，2026-11-17；TechSpot，2026-11-20"
+  },
+  {
+   "industry": "模拟/电源芯片",
+   "detail": "TI 2027 年定价谈判进行中，供应保障额度开始计价、细节待 2027 年 1 月财报披露；ADI 第二轮全产品调价 9-13 已生效，部分产品线交期最长 6 个月。",
+   "event_id": "evt-analog-pmic-price-hike",
+   "source": "Zacks，2026-11-13；LinkedIn 行业周报，2026-10-27"
+  },
+  {
+   "industry": "BIS 出口管制传导",
+   "detail": "金融时报 11-19 称台积电、三星 11-19 起暂停部分对华芯片出货以申领许可；BIS 远程访问规则（1200 万 TPP 阈值）11-19 已生效。",
+   "event_id": "evt-bis-remote-access-chip-rule",
+   "source": "金融时报，2026-11-19；Gibson Dunn，2026-11-18"
+  },
+  {
+   "industry": "宏观（美联储）",
+   "detail": "11-25 将公布 10 月 PCE（共识同比 3.8%、核心 3.2%），为 12-08–09 FOMC 前最后通胀读数；CME 显示 12 月加息 100% 定价（25bp 约 94–98%），50bp 概率约 12%。",
+   "event_id": "",
+   "source": "Oxford Economics，2026-11-16；FXStreet，2026-11-20"
+  }
+ ],
+ "supplier_updates": [
+  {
+   "category": "铜",
+   "company": "",
+   "detail": "沪铜主力 11-20 收 92,400 元/吨（-3.35%），周线 -12.03%；LME 官方结算价 12,230.50 美元/吨（订正：Mysteel 12,022.45 美元为盘中低点）；洋山铜溢价 360 美元/吨创纪录（路透）；SHFE 库存 27,642 吨（2023-12 以来最低）；SMM 现货升水 11-19 达 7,250 元/吨纪录、11-20 回落至 5,800 元/吨（Mysteel/SMM 11-20、路透 11-19）",
+   "event_id": "evt-copper-high",
+   "subcategories": [
+    "Copper & Silver"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "铝",
+   "company": "",
+   "detail": "沪铝主力 11-20 收 21,535 元/吨（+0.96%）；LME 铝约 2,847 美元/吨（-0.78%），现货对三个月升水创纪录 323.50 美元/吨；LME 库存 224,425 吨，上期所铝库存 128,673 吨，SMM 三地铝锭库存 299,000 吨（Mysteel/SMM 11-20、每日经济新闻 11-21）",
+   "event_id": "evt-aluminum-spot-squeeze",
+   "subcategories": [
+    "Aluminum Fin Stock"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "钢材",
+   "company": "",
+   "detail": "Nucor 热卷仍为 11-16 当周 1,310 美元/短吨（+15 美元），现货交期 3–5 周；11-23 当周新报价截至发稿未出；Dimensional Metals 钢板 11-23 起 +4%–5%（今日生效）（SteelPrices 11-18、Dimensional Metals 11-06）",
+   "event_id": "evt-us-steel-sheet-tight-2026",
+   "subcategories": [
+    "Hot Roll Steel, Coil & Sheet",
+    "Plate - Steel"
+   ],
+   "tags": [
+    "影响BOM",
+    "原材料"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "稀土/磁钢",
+   "company": "",
+   "detail": "氧化镨钕 11-21/22 报 727,500 元/吨（+2,000 元/吨），分离企业报价约 72.3 万元/吨、现货稀缺；氧化镝 157–158 万元/吨上行（Mysteel 11-21/22）",
+   "event_id": "evt-rare-earth-q4-price",
+   "subcategories": [
+    "Magnets"
+   ],
+   "tags": [
+    "影响BOM",
+    "稀土"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "制冷剂",
+   "company": "",
+   "detail": "11-20 当日华东现货区间未核实到更新，最近可核实区间仍为 11-13（R32 63,500–64,500 元/吨、R410A 57,000–59,500 元/吨）；Q4 长协参考价不变（R32 65,600、R410A 60,500 元/吨，隆众 11-19）；巨化/东岳/三美/永和无新调价函（OpenThermalAI 第 46 周简报、制冷快报转引隆众 11-19）",
+   "event_id": "evt-refrigerant-q4-price-up",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [
+    "影响BOM",
+    "制冷剂"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "MLCC/被动元件",
+   "company": "",
+   "detail": "窗口内无新动态；三星电机 Q4 消费级 X5R +25%–30%、AI 用 X6S +10%–20%（TrendForce 估计）；Q3 MLCC 均价同比 +21.4%，交期 40 周；Viking 电阻平均交期 25 周（MoneyToday 11-18、AutoDCSTech 10-25/11-02）",
+   "event_id": "evt-mlcc-price-hike",
+   "subcategories": [
+    "电容",
+    "电阻与电感"
+   ],
+   "tags": [
+    "影响BOM",
+    "被动元件"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "PCB/CCL",
+   "company": "",
+   "detail": "建滔 11-20 发出网传年内第七次涨价函（FR-4 +10%，PP 厚布 +10%/薄布 +20%），未经官网证实、轮次口径冲突；生益 11 月提价已落地（M6 +15%、PP +25%），高性能 CCL 采购周期 24–32 周（A 股异动报道 11-20）",
+   "event_id": "evt-pcb-ccl-price-hike-2",
+   "subcategories": [
+    "PCB Boards"
+   ],
+   "tags": [
+    "影响BOM",
+    "PCB"
+   ],
+   "type": "交期"
+  },
+  {
+   "category": "存储器",
+   "company": "",
+   "detail": "窗口内未见 TrendForce 新发布；Q4 PC DRAM 合约价环比 +13%–18%、企业级 SSD +15%–20%；闪迪 11 月 NAND 合约价 +50%（年内第三次），模组厂暂停报价与交货（TrendForce 11-11）",
+   "event_id": "evt-dram-hbm-shortage",
+   "subcategories": [
+    "存储器"
+   ],
+   "tags": [
+    "影响BOM",
+    "存储器"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "功率半导体",
+   "company": "",
+   "detail": "ST 第四轮仍网传未确认（11-04 函，2027-01-01 起）；NXP 第三轮、瑞萨均 2027-01-01 生效不变；英飞凌 11-10 财报会确认年内已对部分功率产品涨价两轮；安森美无新函；TI 2027 年定价谈判进行中（TrendForce 11-12、Hengsen 11-06、Zacks 11-13）",
+   "event_id": "evt-st-price-hike-2027-rumor",
+   "subcategories": [
+    "IGBT Modules",
+    "模拟与电源 IC / MCU"
+   ],
+   "tags": [
+    "影响BOM",
+    "功率器件"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "低压电气",
+   "company": "",
+   "detail": "西门子 FY27 工控及配电产品列表价 12-01 生效、生效前下单最晚提货 12-31（经销商 10-23 转发、未见官方稿）；施耐德/ABB/正泰/德力西无新函（西门子经销商 10-23）",
+   "event_id": "evt-siemens-fy27-price-list",
+   "subcategories": [
+    "Circuit Breakers",
+    "Contactors",
+    "Relay"
+   ],
+   "tags": [
+    "影响BOM",
+    "低压电气与配电"
+   ],
+   "type": "涨价"
+  },
+  {
+   "category": "变压器与互感器",
+   "company": "",
+   "detail": "LATO 访谈：电网接入是最常提及的数据中心延期原因，大型变压器到货需 2 年以上；中压开关柜 52–80 周、垫装变压器 40–65 周、变电站变压器 90–160 周，大型电力变压器 160–210 周（LATO 11-19 前后）",
+   "event_id": "evt-us-transformer-leadtime-160w",
+   "subcategories": [
+    "Transformers (Large)",
+    "Transformers (Small)",
+    "Current Transformers",
+    "变压器与互感器"
+   ],
+   "tags": [
+    "影响BOM",
+    "变压器"
+   ],
+   "type": "交期"
+  },
+  {
+   "category": "连接器",
+   "company": "",
+   "detail": "Prysmian 美国公用事业线缆 +5%–7% 已于 11-01 生效；铜线缆 PPI 同比 +25.5%（10 月）；2027 年春节（2 月）前中国线束工厂产能压缩、需提前下单（Prysmian 涨价函 10-01）",
+   "event_id": "evt-prysmian-cable-nov-hike",
+   "subcategories": [
+    "Wire Harness"
+   ],
+   "tags": [
+    "影响BOM",
+    "连接器与线束"
+   ],
+   "type": "价格"
+  },
+  {
+   "category": "塑料/包装",
+   "company": "",
+   "detail": "Formosa 美国 Point Comfort 工厂 10-28 火灾后 10-29 对部分聚乙烯牌号宣布不可抗力；北美 PE 厂商 11 月提价意向 5–7 美分/磅（PlasInsight 11-18）",
+   "event_id": "evt-formosa-pe-force-majeure",
+   "subcategories": [
+    "Compression Molding Plastics"
+   ],
+   "tags": [
+    "影响BOM",
+    "机械结构与辅材"
+   ],
+   "type": "缺料"
+  },
+  {
+   "category": "整机（北美）",
+   "company": "江森自控",
+   "detail": "Frick/Sabroe/York SAP 系统切换：11-30 13:00 EST 为切换前最后接单时间，12-01–06 订单录入、发货、履约全面暂停，12-07 恢复；感恩节 11-26 进一步压缩窗口（Keep Supply 经销商通知 11-19）",
+   "event_id": "",
+   "subcategories": [],
+   "tags": [
+    "影响BOM",
+    "液冷与热管理"
+   ],
+   "type": "交期"
+  },
+  {
+   "category": "Tier B 轮查",
+   "company": "",
+   "detail": "本轮（第 8 批）11 个子品类 0 项新涨价函/断供；关注 2 项：PCBA 交期风险（ST 部分 MCU/模拟交期 30–52+ 周、瑞萨 18–36 周、个别二极管超 52 周）、线束铜传导（Prysmian +5%–7% 11-01 已生效）；其余 9 项排查无异常（Future Electronics 11 月报告、Prysmian 涨价函 10-01）",
+   "event_id": "",
+   "subcategories": [
+    "Bolts - Screws - Studs",
+    "Condensing Units",
+    "Fabrications - Electrical Enclosures",
+    "Gaskets - Grommets - Seals",
+    "Iron Castings - Small <100 Lbs",
+    "PCBA",
+    "Rotary",
+    "Switch - Electrical",
+    "Uncategorized Electrn Components-Assbly",
+    "Wire Harness",
+    "铸锻件与机加工"
+   ],
+   "tags": [
+    "影响BOM",
+    "PCBA/电子代工"
+   ],
+   "type": "排查无异常"
+  },
+  {
+   "category": "压缩机",
+   "company": "",
+   "detail": "离心/往复/转子/涡旋/螺杆 5 类排查无异常：海立、美芝、凌达窗口内无涨价/货期消息；丹佛斯 11-20 亮相 CDCC 展示冷源、CDU、二次侧流体网络及机柜连接液冷方案",
+   "event_id": "",
+   "subcategories": [
+    "Centrifugal Compressors",
+    "Reciprocating Compressors",
+    "Rotary Compressors",
+    "Screw Compressors",
+    "Scroll Compressors"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "制冷剂",
+   "company": "",
+   "detail": "制冷剂油排查无异常",
+   "event_id": "",
+   "subcategories": [
+    "Refrigerant Oil"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "变频器",
+   "company": "",
+   "detail": "变频器排查无异常：窗口内无新调价/交期消息",
+   "event_id": "",
+   "subcategories": [
+    "Variable Speed Drives Low Voltage",
+    "Variable Speed Drives Medium Voltage"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "阀件与换热器",
+   "company": "",
+   "detail": "阀件与换热器排查无异常",
+   "event_id": "",
+   "subcategories": [
+    "Control Valves",
+    "Solenoid Valves",
+    "Reversing Valves",
+    "Microchannel",
+    "Tube & Fin Coils",
+    "Shell & Tube"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "电机/风机/水泵与散热器",
+   "company": "",
+   "detail": "电机/风机/水泵排查无异常",
+   "event_id": "",
+   "subcategories": [
+    "Small Motors: Fan Motors",
+    "Axial Fans",
+    "Centrifugal Fans",
+    "Water Pumps"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "轴承",
+   "company": "",
+   "detail": "轴承排查无异常",
+   "event_id": "",
+   "subcategories": [
+    "Ball Bearings",
+    "Magnetic Bearings"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "传感器",
+   "company": "",
+   "detail": "传感器排查无异常",
+   "event_id": "",
+   "subcategories": [
+    "Sensor",
+    "Sensors - Flow",
+    "Sensors - Pressure",
+    "Sensors - Temperature"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  },
+  {
+   "category": "连接器",
+   "company": "",
+   "detail": "连接器与线束排查无异常：TE/安费诺/Molex 窗口内无新函",
+   "event_id": "",
+   "subcategories": [
+    "连接器与线束"
+   ],
+   "tags": [],
+   "type": "排查无异常"
+  }
+ ],
+ "warnings": [
+  {
+   "id": "warn-20261123-01",
+   "title": "英伟达监管风暴升级",
+   "urgency": "中",
+   "impact": "芯片与半导体/液冷与热管理",
+   "action": "跟踪 12-01 众议院闭门面谈、12-03 参议院公开作证与 10-Q 提交、永久 CEO 遴选；CDU/液冷订单排产按 AI 需求分化留缓冲，勿因单日暴跌调整长期产能规划",
+   "trigger": "NVDA 11-20 收 125.53 美元（-14.01%）",
+   "deadline": "2026-12-03",
+   "related_events": [
+    "evt-20261123-01"
+   ]
+  },
+  {
+   "id": "warn-20261123-02",
+   "title": "铜价周线大跌、现货仍紧",
+   "urgency": "高",
+   "impact": "铜/银",
+   "action": "近月用量分批锁价、勿追空；盯现货升水回落再谈长单",
+   "trigger": "沪铜主力 11-20 收 92,400 元/吨（-3.35%），周线 -12.03%",
+   "deadline": "2026-11-20",
+   "related_events": [
+    "evt-20261123-02"
+   ]
+  },
+  {
+   "id": "warn-20261123-03",
+   "title": "铝现货升水创纪录、库存仍低",
+   "urgency": "高",
+   "impact": "铝——Aluminum Fin Stock",
+   "action": "铝翅片/换热器用铝核查库存覆盖与长协，近月用量分批锁价",
+   "trigger": "沪铝主力 11-20 收 21,535 元/吨（+0.96%），LME 铝现货升水创纪录 323.50 美元/吨",
+   "deadline": "2026-11-20",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-04",
+   "title": "镓/锗/锑暂停 11-27 到期、倒计时 4 天仍无续延公告",
+   "urgency": "高",
+   "impact": "GaN 功率器件、射频器件、锑系阻燃剂、红外光学用锗",
+   "action": "向涉镓/锗/锑供应商核实许可状态与库存覆盖、评估第二来源；盯 11-26–27 公告窗口",
+   "trigger": "72 号公告暂停期至 2026-11-27、截至 11-23 无续延公告",
+   "deadline": "2026-11-27",
+   "related_events": [
+    "evt-20261123-03"
+   ]
+  },
+  {
+   "id": "warn-20261123-05",
+   "title": "ST/NXP/瑞萨 2027-01-01 调价潮确认",
+   "urgency": "中",
+   "impact": "芯片与半导体",
+   "action": "年底前与三家及分销商完成锁价谈判，核查 2027 年 Q1 料号覆盖与替代方案",
+   "trigger": "ST 调价函 11-04、NXP 调价函 11-02",
+   "deadline": "2027-01-01",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-06",
+   "title": "MLCC 高端短缺延续",
+   "urgency": "高",
+   "impact": "被动元件与连接件",
+   "action": "高容 MLCC 锁定 2027 年分配、核查村田停产清单（最后下单 2028-03-31）",
+   "trigger": "三星电机 Q4 涨价（TrendForce 11-11/12 口径）",
+   "deadline": "2028-03-31",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-07",
+   "title": "存储价格飙升、现货合约分化",
+   "urgency": "高",
+   "impact": "存储器",
+   "action": "2027 年存储用量提前锁定长协与分配，核查 DDR4/DDR5 替代料号与库存覆盖",
+   "trigger": "闪迪 11 月 NAND 合约价 +50%",
+   "deadline": "2026-12-07",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-08",
+   "title": "松下火灾冲击高端 CCL",
+   "urgency": "高",
+   "impact": "PCB/CCL",
+   "action": "核查在途 MEGTRON 料号与库存覆盖、向台系 CCL 厂询备选料号并启动再认证；玻纤布与半固化片长协覆盖至 2027H1",
+   "trigger": "松下火灾 11-04、CCL 涨价持续至 2027-06（券商调研口径）",
+   "deadline": "2027-01-01",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-09",
+   "title": "变压器/开关柜交期极长、电网成首要瓶颈",
+   "urgency": "高",
+   "impact": "变压器/开关柜/配电设备",
+   "action": "数据中心与 HVAC 项目配电设备提前 12 个月以上锁定产能",
+   "trigger": "变电站变压器 90–160 周、大型变压器 160–210 周",
+   "deadline": "",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-10",
+   "title": "12 月再加息预期强化、融资成本承压",
+   "urgency": "中",
+   "impact": "大宗商品与项目融资",
+   "action": "大额采购与项目融资按 12 月加息 25bp 做成本预算，盯 12-08–09 FOMC 会议与 11-25 PCE 数据",
+   "trigger": "CME FedWatch 11-20 定价",
+   "deadline": "2026-12-09",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-11",
+   "title": "钢板与保温/阀门/涂料 12 月涨价潮",
+   "urgency": "中",
+   "impact": "钢板/结构件、保温材料、管材/阀门、涂料",
+   "action": "结构钢/钣金、保温材料与管材阀门料号核查库存覆盖，近月用量分批锁价",
+   "trigger": "Dimensional Metals 调价函 11-06，钢板 11-23 起 +4%–5%（今日生效）",
+   "deadline": "2026-11-23",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-12",
+   "title": "BIS 远程访问规则已生效、东南亚算力枢纽承压",
+   "urgency": "中",
+   "impact": "芯片与半导体/数据中心建设",
+   "action": "核查向上述五国交付先进芯片/服务器的最终用途与客户资质，东南亚数据中心项目排产按许可周期留缓冲；90 天过渡期内完成现有客户办证",
+   "trigger": "BIS 远程访问规则 11-19 生效；台积电/三星 11-19 起暂停部分对华芯片出货申领许可",
+   "deadline": "2026-11-19",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-13",
+   "title": "三星洽购 Modexus 在谈、激进投资者施压出售",
+   "urgency": "低",
+   "impact": "液冷与热管理",
+   "action": "跟踪谈判进展，盯 Modexus 后续回应；暂不调整采购策略",
+   "trigger": "彭博 11-12 爆料、截至 11-23 仍无新进展",
+   "deadline": "2026-11-23",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-14",
+   "title": "301 排除延期仅两个月",
+   "urgency": "中",
+   "impact": "整机/设备进口物流",
+   "action": "按 2027-01-09 倒排海运订舱与到港节奏",
+   "trigger": "联邦公报 11-10 正式刊登确认",
+   "deadline": "2027-01-09",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-15",
+   "title": "JCI SAP 切换致 12-01–06 订单发货暂停",
+   "urgency": "中",
+   "impact": "JCI 备件（Frick/Sabroe/York）",
+   "action": "11-30 截单前完成 12 月初所需备件下单，核查在途订单状态",
+   "trigger": "SAP 切换公告 11-19",
+   "deadline": "2026-11-30",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-16",
+   "title": "R410A 现货口径分歧、散单报价待核对",
+   "urgency": "低",
+   "impact": "制冷剂",
+   "action": "散单询价以 57,000–59,500 元/吨区间为准、逐单核对，长协仍按 Q4 参考价（R32 65,600、R410A 60,500 元/吨）谈",
+   "trigger": "Mysteel 制冷剂周评 11-13–19",
+   "deadline": "2026-11-19",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-17",
+   "title": "Formosa 美国工厂火灾、部分 PE 牌号不可抗力",
+   "urgency": "中",
+   "impact": "注塑件/包装用 PE 树脂",
+   "action": "核查 PE 树脂料号库存覆盖与第二来源，向供应商确认受影响牌号清单",
+   "trigger": "Formosa 不可抗力公告 10-29",
+   "deadline": "2026-10-29",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-18",
+   "title": "晶圆代工涨价潮、2027 年 Q1 生效",
+   "urgency": "中",
+   "impact": "芯片与半导体（MCU/模拟/电源 IC 成本传导）",
+   "action": "与 MCU/模拟芯片供应商确认 2027 年 Q1 涨价覆盖料号与幅度，核查长协锁价窗口",
+   "trigger": "工商时报 11-17 报道",
+   "deadline": "",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-19",
+   "title": "西门子 FY27 工控及配电列表价 12-01 生效",
+   "urgency": "中",
+   "impact": "低压电气与配电",
+   "action": "核查在途西门子工控/配电订单提货安排，12-01 前完成需锁价的下单",
+   "trigger": "西门子经销商 10-23 转发通知（未见官方稿）",
+   "deadline": "2026-12-01",
+   "related_events": []
+  },
+  {
+   "id": "warn-20261123-20",
+   "title": "稀土价格上行",
+   "urgency": "中",
+   "impact": "钕铁硼永磁/磁钢",
+   "action": "核查磁钢/电机用稀土库存覆盖，近月用量分批锁价",
+   "trigger": "Mysteel 11-21/22 报价：氧化镨钕 727,500 元/吨（+2,000 元/吨），氧化镝 157–158 万元/吨",
+   "deadline": "",
+   "related_events": []
+  }
+ ],
+ "company_checklist": [
+  {
+   "company": "江森自控",
+   "status": "无实质动态",
+   "note": "Schertz 扩建与 SAP 切换昨日已报，窗口内无新增"
+  },
+  {
+   "company": "开利",
+   "status": "无实质动态",
+   "note": "ClimaVision 3 昨日已报；Baird 会议明确住宅涨价 8% 生效日为 12-15"
+  },
+  {
+   "company": "特灵",
+   "status": "有实质动态",
+   "note": "11-20 发布温水数据中心制冷技术文章（混合液冷降耗）"
+  },
+  {
+   "company": "大金",
+   "status": "无实质动态",
+   "note": "窗口内无新动态"
+  },
+  {
+   "company": "美的",
+   "status": "无实质动态",
+   "note": "R290 充注量 -40% 昨日已报，窗口内无新增"
+  },
+  {
+   "company": "格力",
+   "status": "无实质动态",
+   "note": "窗口内无新动态"
+  },
+  {
+   "company": "海尔",
+   "status": "无实质动态",
+   "note": "窗口内无新动态"
+  },
+  {
+   "company": "日立",
+   "status": "有实质动态",
+   "note": "11-16 建成 Omika 数据中心实验室（液冷 GPU 同场验证）"
+  },
+  {
+   "company": "Vertiv",
+   "status": "无实质动态",
+   "note": "800VDC/ATLAS 昨日已报，窗口内无新增"
+  },
+  {
+   "company": "英维克",
+   "status": "无实质动态",
+   "note": "窗口内无新动态；11-17 液冷快速接头实用新型专利属常规"
+  },
+  {
+   "company": "申菱环境",
+   "status": "无实质动态",
+   "note": "陈村拿地昨日已报，窗口内无新增"
+  },
+  {
+   "company": "同飞股份",
+   "status": "无实质动态",
+   "note": "窗口内无新动态"
+  },
+  {
+   "company": "高澜股份",
+   "status": "无实质动态",
+   "note": "无业务动态；第一大股东涉离婚诉讼、股份被司法冻结"
+  },
+  {
+   "company": "Modexus",
+   "status": "无实质动态",
+   "note": "截至今早无收购新进展"
+  },
+  {
+   "company": "LG",
+   "status": "有实质动态",
+   "note": "11-20 发布 Multi V 7 VRF（Spin X 压缩机）"
+  },
+  {
+   "company": "三星",
+   "status": "无实质动态",
+   "note": "Modine 收购谈判截至今早无新进展"
+  },
+  {
+   "company": "松下",
+   "status": "无实质动态",
+   "note": "窗口内无新动态"
+  },
+  {
+   "company": "浪潮信息",
+   "status": "无实质动态",
+   "note": "无公司新动态"
+  },
+  {
+   "company": "联想",
+   "status": "有实质动态",
+   "note": "11-19 发布 Q2 财报：营收首破 2000 亿元、AI 服务器营收同比增超 300%"
+  },
+  {
+   "company": "三花智控",
+   "status": "无实质动态",
+   "note": "窗口内无新动态"
+  }
+ ],
+ "time_anchors": [
+  {
+   "date": "2026-11-23",
+   "label": "钢板/卷材提价生效（Dimensional Metals +4%–5%）"
+  },
+  {
+   "date": "2026-11-25",
+   "label": "10 月 PCE 数据发布"
+  },
+  {
+   "date": "2026-11-27",
+   "label": "Nucor 板材 12 月订单提交截止"
+  },
+  {
+   "date": "2026-11-27",
+   "label": "镓/锗/锑对美出口禁令暂停到期（待观察）"
+  },
+  {
+   "date": "2026-11-30",
+   "label": "JCI Frick/Sabroe/York SAP 切换前最后接单（13:00 EST）"
+  },
+  {
+   "date": "2026-12-01",
+   "label": "保温材料首批涨价生效（Insulfoam +5%）"
+  },
+  {
+   "date": "2026-12-01",
+   "label": "Apollo 阀门提价 4%–8% 生效"
+  },
+  {
+   "date": "2026-12-01",
+   "label": "黄仁勋接受众议院三个委员会闭门面谈"
+  },
+  {
+   "date": "2026-12-01",
+   "label": "西门子 FY27 工控及配电列表价生效"
+  },
+  {
+   "date": "2026-12-03",
+   "label": "黄仁勋出席参议院银行委员会公开作证"
+  },
+  {
+   "date": "2026-12-04",
+   "label": "英伟达 10-Q 法定提交截止（约）"
+  },
+  {
+   "date": "2026-12-07",
+   "label": "DRAM 反垄断诉讼答辩截止"
+  },
+  {
+   "date": "2026-12-08",
+   "label": "FOMC 12 月会议（12-08–09）"
+  },
+  {
+   "date": "2026-12-15",
+   "label": "开利住宅设备涨价 8% 生效"
+  },
+  {
+   "date": "2026-12-17",
+   "label": "施耐德收购 PTC 股东投票"
+  },
+  {
+   "date": "2027-01-01",
+   "label": "ST/NXP/瑞萨调价生效"
+  },
+  {
+   "date": "2027-01-01",
+   "label": "CBAM 适用于挪威、冰岛"
+  },
+  {
+   "date": "2027-01-01",
+   "label": "松下部分一般多层板用 CCL 调涨 200%（转述函件）"
+  },
+  {
+   "date": "2027-01-09",
+   "label": "Section 301 排除再次到期"
+  },
+  {
+   "date": "2027-01-10",
+   "label": "稀土管制暂停到期"
+  },
+  {
+   "date": "2028-03-31",
+   "label": "村田停产清单最后下单日"
+  }
+ ]
+}
