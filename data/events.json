@@ -547,6 +547,11 @@
      "date": "2026-11-22",
      "change": "沪铜主力 11-19 跌 5.07% 收 94,720 元/吨，11-20 再跌 3.35% 收 92,400 元/吨；LME 铜 Mysteel 口径 11-20 报 12,022.45 美元/吨（-4.02%），与 SteelMint 口径 12,526 美元有出入；SHFE 库存 27,640 吨（2023-12 以来最低）、中国精炼铜进口升水创纪录 360 美元/吨，现货仍紧。",
      "text_en": "SHFE copper fell 5.07% to RMB 94,720/t on Nov 19 and another 3.35% to RMB 92,400/t on Nov 20; LME copper was quoted at $12,022.45/t (-4.02%) by Mysteel, differing from SteelMint's $12,526; SHFE inventories hit 27,640t (lowest since Dec 2023) and China's refined-copper import premium hit a record $360/t, so physical supply stays tight."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "沪铜主力 11-20 收 92,400 元/吨（-3.35%），当周周线 -12.03%；LME 官方结算价 12,230.50 美元/吨（订正：Mysteel 12,022.45 美元为盘中低点）；洋山铜溢价 360 美元/吨创纪录；SHFE 库存 27,642 吨（2023-12 以来最低）；SMM 现货升水 11-19 达 7,250 元/吨纪录。",
+     "text_en": "SHFE copper closed Nov 20 at 92,400 yuan/t (-3.35%), down 12.03% for the week; LME official settlement $12,230.50/t (correction: Mysteel's $12,022.45 was the intraday low); Yangshan premium hit a record $360/t; SHFE stocks 27,642 t, lowest since Dec 2023; SMM spot premium hit a record 7,250 yuan/t on Nov 19."
     }
    ],
    "title": "铜价历史高位",
@@ -1278,6 +1283,11 @@
      "date": "2026-11-21",
      "change": "氧化镨钕 11-20 报 725,500 元/吨（+2,500 元）；钕铁硼毛坯 N35 175.5 元/公斤持稳。",
      "text_en": "Praseodymium-neodymium oxide was quoted at RMB 725,500/t on Nov 20 (+RMB 2,500); sintered NdFeB blank N35 was steady at RMB 175.5/kg."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "氧化镨钕 11-21/22 报 727,500 元/吨（+2,000 元/吨），分离企业报价约 72.3 万元/吨、现货稀缺；氧化镝 157–158 万元/吨上行。",
+     "text_en": "Praseodymium-neodymium oxide quoted 727,500 yuan/t on Nov 21/22 (+2,000 yuan/t); separation plants quoted about 723,000 yuan/t with scarce spot supply; dysprosium oxide rose to 1.57–1.58M yuan/t."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -1751,6 +1761,11 @@
      "date": "2026-11-05",
      "change": "供应链预计11月起玻纤布+覆铜板新一轮涨10%-15%（建滔10-13 +15%为年内第8轮）。",
      "text_en": "Supply chain expects another 10%-15% round on glass cloth + CCL from November (Kingboard Oct 13 +15% was the year 8th round)."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "网传第七次涨价函（FR-4 覆铜板统一 +10%，PP 半固化片厚布 +10%/薄布 +20%），未经建滔官网证实，且另一口径称\"年内已五轮涨价\"，轮次冲突、待核实。",
+     "text_en": "Unverified online notice of a seventh 2026 price hike (FR-4 CCL +10%, PP prepreg thick cloth +10% / thin cloth +20%); not confirmed on Kingboard's official site, and another source says only five rounds this year — round count conflicts, pending verification."
     }
    ]
   },
@@ -2101,6 +2116,11 @@
      "date": "2026-10-22",
      "change": "在韩国HARFKO 2026发布AI驱动Multi V 7 VRF热泵系统（端侧+云端双AI、自研Spin X压缩机、AI Smart Care故障预测）",
      "text_en": "Launched AI-driven Multi V 7 VRF heat pump at HARFKO 2026 in Korea (edge + cloud dual AI, in-house Spin X compressor, AI Smart Care fault prediction)"
+    },
+    {
+     "date": "2026-11-20",
+     "change": "GlobalSpec 11-20 报道 Multi V 7 细节：Spin X 压缩机（双向供油、实时油况监测），端侧+云端 AI 优化运行。",
+     "text_en": "GlobalSpec Nov 20 reported Multi V 7 details: Spin X compressor (bidirectional oil supply, real-time oil monitoring) and on-device plus cloud AI optimization."
     }
    ]
   },
@@ -2858,6 +2878,11 @@
      "date": "2026-11-16",
      "change": "11-12 Baird 大会：CEO 称北美商用 HVAC 14 个垂直市场中 11 个 Q3 增长；Thermo King Q3 订单同比 +30% 以上；应用产能三年扩 4 倍；供应压力预计 6–9 个月内随供应商扩产缓解；未给 2027 年指引。",
      "text_en": "At the Baird conference on Nov 12, the CEO said 11 of 14 North American commercial HVAC verticals grew in Q3; Thermo King Q3 orders rose over 30% year on year; applied capacity has quadrupled in three years; supply pressure is expected to ease within 6-9 months as suppliers expand; no 2027 guidance was given."
+    },
+    {
+     "date": "2026-11-12",
+     "change": "Baird 会议：CEO 称 125 亿美元在手订单交付瓶颈在供应商产能而非自身，毛利率缓解预计 6–9 个月。",
+     "text_en": "Baird conference: CEO said the $12.5B backlog's delivery bottleneck is supplier capacity, not Trane itself; margin relief expected in 6–9 months."
     }
    ],
    "title": "特灵Q3：营收+18%、在手订单125亿美元大涨73%",
@@ -3794,6 +3819,11 @@
      "date": "2026-11-21",
      "change": "LME 铝 3M 11-20 收 2,870 美元/吨（+1.66%）；沪铝主力 21,330 元/吨（-1.66%）；国内 A00 铝锭 22,340 元/吨，升水 390 元/吨；电解铝库存 39.6 万吨延续去库。",
      "text_en": "LME 3M aluminium closed at $2,870/t on Nov 20 (+1.66%); SHFE aluminium's most-traded contract was RMB 21,330/t (-1.66%); domestic A00 aluminium ingot was RMB 22,340/t with a RMB 390/t premium; electrolytic aluminium inventory of 396,000 t continued to draw down."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "LME 铝约 2,847 美元/吨（-0.78%），现货对三个月升水创纪录 323.50 美元/吨；LME 库存 224,425 吨，上期所铝库存 128,673 吨，SMM 三地铝锭库存 299,000 吨（去库 46,500 吨）。",
+     "text_en": "LME aluminium about $2,847/t (-0.78%), cash-to-3M premium hit a record $323.50/t; LME stocks 224,425 t, SHFE stocks 128,673 t, SMM three-region ingot stocks 299,000 t (down 46,500 t)."
     }
    ],
    "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
@@ -3941,6 +3971,11 @@
      "date": "2026-11-22",
      "change": "路透 11-20 独家：SEC 执法人员正在审查英伟达潜在会计问题（SEC 未置评、英伟达未回应）；加州总检察长 11-21 调查芯片转移与误导投资者；特朗普称希望黄仁勋回归；黄仁勋已同意参议院公开作证、12-01 接受众议院三个委员会闭门面谈；股价 11-20 收 125.53 美元（-14.01%），七连跌。",
      "text_en": "Reuters exclusive Nov 20: SEC enforcement staff are reviewing potential accounting issues at Nvidia (SEC declined to comment, Nvidia did not respond); California AG opened an investigation into chip transfers and misleading investors on Nov 21; Trump said he wants Huang back; Huang agreed to testify publicly before the Senate and in closed House sessions on Dec 1; shares closed at $125.53 (-14.01%) on Nov 20, a seventh straight daily loss."
+    },
+    {
+     "date": "2026-11-22",
+     "change": "董事会立场不变：主席 Harvey Jones 称无意让黄仁勋回归 CEO，已聘猎头遴选永久 CEO；特朗普 11-20 称希望黄仁勋回归；NVDA 盘后 11-20 报 130.01 美元（+3.57%）。",
+     "text_en": "Board position unchanged: chairman Harvey Jones said there is no intention to bring Huang back as CEO; a headhunter has been engaged for a permanent CEO; Trump said on Nov 20 he wants Huang back; NVDA closed after hours on Nov 20 at $130.01 (+3.57%)."
     }
    ],
    "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
@@ -3998,6 +4033,11 @@
      "date": "2026-10-29",
      "change": "10-29 财报电话会称住宅设备拟于 Q4 末提价约 8%、美洲整体约 10%，全年输入成本压力约 8 亿美元、约半数来自关税。",
      "text_en": "On the Oct 29 earnings call, Carrier said residential equipment prices would rise about 8% at the end of Q4, about 10% across the Americas, with full-year input cost pressure of about $800 million, roughly half from tariffs."
+    },
+    {
+     "date": "2026-11-13",
+     "change": "Baird 会议明确住宅设备涨价 8% 生效日为 12-15；数据中心销售额 2026 年约 20 亿美元、2027 年约 30 亿美元（订单同比 +350%）。",
+     "text_en": "Baird conference clarified the residential equipment +8% hike takes effect Dec 15; data-center sales seen at about $2B in 2026 and about $3B in 2027 (orders +350% YoY)."
     }
    ],
    "title": "开利住宅设备拟于 Q4 末提价约 8%",
@@ -4280,6 +4320,11 @@
      "date": "2026-11-22",
      "change": "截至 11-22 早上仍无续延公告，倒计时 5 天。",
      "text_en": "As of the morning of Nov 22, still no extension notice; 5 days to expiry."
+    },
+    {
+     "date": "2026-11-23",
+     "change": "截至 11-23 早上仍无续延公告，倒计时 4 天。",
+     "text_en": "As of the morning of Nov 23, still no extension notice; 4 days to expiry."
     }
    ],
    "title": "镓/锗/锑对美出口禁令暂停 11-27 到期、暂无续延公告",
@@ -4412,6 +4457,11 @@
      "date": "2026-11-19",
      "change": "中国商务部同日表态强烈不满、称若美方一意孤行将采取反制（反制未定案）。",
      "text_en": "China's commerce ministry said the same day it strongly opposes the rule and will take countermeasures if the US persists (no countermeasure decided)."
+    },
+    {
+     "date": "2026-11-19",
+     "change": "金融时报 11-19：台积电、三星 11-19 起暂停部分对华芯片出货以申领许可。",
+     "text_en": "FT Nov 19: TSMC and Samsung suspended some chip shipments to China from Nov 19 to apply for licences."
     }
    ],
    "title": "美国 BIS 新规：管制先进芯片远程算力接入（11-19 生效）",
@@ -4618,6 +4668,11 @@
      "date": "2026-11-21",
      "change": "加州总检察长调查芯片转移与误导投资者；特朗普称希望黄仁勋回归。",
      "text_en": "California AG opened an investigation into chip transfers and misleading investors; Trump said he wants Huang back."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "纽约时报 11-21：SEC 调查处早期阶段；加州调查范围扩大至可能违反加州刑法的情形；黄仁勋同意 12-03 出席参议院银行委员会公开作证（Lutnick 同场）、12-01 接受众议院三个委员会闭门面谈；10-Q 推迟、法定截止约 12-04；路透称司法部正审查 129 亿美元收购 Hugging Face 交易。",
+     "text_en": "NYT Nov 21: SEC inquiry is in its early stages; California probe widened to possible violations of California criminal law; Huang agreed to testify publicly before the Senate Banking Committee on Dec 3 (Lutnick also testifying) and in closed session with three House committees on Dec 1; 10-Q delayed, statutory deadline around Dec 4; Reuters: DOJ reviewing the $12.9B Hugging Face acquisition."
     }
    ]
   },
@@ -4646,6 +4701,45 @@
      "text_en": "Shenling won 260.97 mu of industrial land in Chencun, Shunde for RMB 234.88M and plans to invest no less than RMB 2B in a global R&D center and next-generation liquid-cooling computing-infrastructure manufacturing base."
     }
    ]
+  },
+  {
+   "id": "evt-foundry-price-hike-2027q1",
+   "status": "已通知",
+   "title": "晶圆代工涨价潮、2027 年 Q1 生效（部分设计公司已收涨价通知 10%–20%+）",
+   "title_en": "Foundry price hikes coming in Q1 2027 (some IC designers already notified of +10%–20%+)",
+   "timeline": [
+    {
+     "date": "2026-11-17",
+     "change": "台湾《工商时报》11-17：部分 IC 设计公司已收到代工厂涨价通知 10%–20%+，2027 年 Q1 执行；TrendForce 预测 2027 年代工价涨 5%–20%，8 英寸最明显；Microchip CEO 11-05 电话会称代工与封测 2027 年 1 月起新一轮涨价；UMC/Tower 指引 2027 年混合均价 +10%/+20%。",
+     "text_en": "Taiwan Commercial Times Nov 17: some IC design houses have received foundry price-hike notices of +10%–20%+, effective Q1 2027; TrendForce forecasts 2027 foundry prices up 5%–20%, most for 8-inch; Microchip CEO said on Nov 5 call that foundry and OSAT prices rise again from Jan 2027; UMC/Tower guided 2027 blended ASP +10%/+20%."
+    }
+   ]
+  },
+  {
+   "id": "evt-siemens-fy27-price-list",
+   "status": "已通知",
+   "title": "西门子 FY27 工控及配电产品列表价调整 12-01 生效（经销商转发、未见官方稿）",
+   "title_en": "Siemens FY27 industrial-control and power-distribution list-price adjustment effective Dec 1 (dealer repost, no official release seen)",
+   "timeline": [
+    {
+     "date": "2026-10-23",
+     "change": "西门子经销商 10-23 转发电气产品事业部工控及配电产品 FY27 列表价调整通知：新价目表 2026-12-01 生效，生效前下单最晚提货 2026-12-31，逾期未提货订单取消；未见西门子官方新闻稿。",
+     "text_en": "A Siemens distributor reposted on Oct 23 an FY27 list-price adjustment notice for industrial-control and power-distribution products: new price list effective Dec 1, 2026; orders placed before then must be picked up by Dec 31, 2026 or are cancelled; no official Siemens release seen."
+    }
+   ]
+  },
+  {
+   "id": "evt-lenovo-q2-fy2027-earnings",
+   "status": "已落地",
+   "title": "联想 2026/27 财年 Q2：营收首破 2000 亿元、AI 服务器营收同比增超 300%",
+   "title_en": "Lenovo FY2026/27 Q2: revenue tops 200B yuan for the first time, AI server revenue up over 300% YoY",
+   "timeline": [
+    {
+     "date": "2026-11-19",
+     "change": "联想 2026/27 财年 Q2 营收首破 2000 亿元、同比增近 50%，AI 服务器营收同比增超 300%、储备订单扩大至 5300 亿元，ISG 营收 761 亿元、同比增 177.6%，问天海神液冷可将数据中心 PUE 降至 1.04。",
+     "text_en": "Lenovo FY2026/27 Q2 revenue topped 200B yuan for the first time, up nearly 50% YoY; AI server revenue up over 300% YoY, order backlog expanded to 530B yuan; ISG revenue 76.1B yuan, up 177.6% YoY; Neptune liquid cooling can cut data-center PUE to 1.04."
+    }
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -4657,5 +4751,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-21"
+ "updated": "2026-11-23"
 }
