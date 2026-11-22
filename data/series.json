@@ -697,11 +697,6 @@
   ],
   "copper_shfe_cny_t": [
     {
-      "date": "2025-11-21",
-      "value": 85660,
-      "src": "sina"
-    },
-    {
       "date": "2025-11-24",
       "value": 86080,
       "src": "sina"
@@ -1908,11 +1903,6 @@
     }
   ],
   "copper_lme_1y_usd_t": [
-    {
-      "date": "2025-11-21",
-      "value": 10705,
-      "src": "westmetall"
-    },
     {
       "date": "2025-11-24",
       "value": 10780,
