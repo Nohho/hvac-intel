@@ -552,6 +552,11 @@
      "date": "2026-11-20",
      "change": "沪铜主力 11-20 收 92,400 元/吨（-3.35%），当周周线 -12.03%；LME 官方结算价 12,230.50 美元/吨（订正：Mysteel 12,022.45 美元为盘中低点）；洋山铜溢价 360 美元/吨创纪录；SHFE 库存 27,642 吨（2023-12 以来最低）；SMM 现货升水 11-19 达 7,250 元/吨纪录。",
      "text_en": "SHFE copper closed Nov 20 at 92,400 yuan/t (-3.35%), down 12.03% for the week; LME official settlement $12,230.50/t (correction: Mysteel's $12,022.45 was the intraday low); Yangshan premium hit a record $360/t; SHFE stocks 27,642 t, lowest since Dec 2023; SMM spot premium hit a record 7,250 yuan/t on Nov 19."
+    },
+    {
+     "date": "2026-11-23",
+     "change": "沪铜主力收 92,420 元/吨（-1.01%）；SMM 上海 1# 电解铜现货升水均价 3,350 元/吨，较 11-20 大跌 2,450 元/吨；洋山铜溢价回落至 450 美元/吨；上期所铜库存 30,846 吨（+11.59%）；LME 铜 12,168 美元/吨（+0.1%）。",
+     "text_en": "SHFE copper closed at 92,420 yuan/ton (-1.01%); SMM Shanghai #1 spot premium averaged 3,350 yuan/ton, down 2,450 from Nov 20; Yangshan premium eased to $450/ton; SHFE inventory 30,846 tons (+11.59%); LME copper $12,168/ton (+0.1%)."
     }
    ],
    "title": "铜价历史高位",
@@ -803,6 +808,11 @@
      "date": "2026-11-22",
      "change": "闪迪 11 月 NAND 合约价上调约 50%（年内第三次），模组厂暂停报价与交货；TrendForce Q4 PC DRAM +13%–18%；联想称内存供应制约 AI 服务器交付。",
      "text_en": "SanDisk raised November NAND contract prices ~50% (third hike this year); module makers suspended quotes and deliveries; TrendForce sees Q4 PC DRAM +13%-18%; Lenovo says memory supply is constraining AI server deliveries."
+    },
+    {
+     "date": "2026-11-19",
+     "change": "TrendForce 11-19 大幅下调 NAND 预测：Q4 合约价涨幅由 +15%–20% 砍至 +8%–13%，1Q27 为 0%–-5%、2Q27 起转跌；通用 DRAM Q4 +10%–15% 不变；现货 512Gb NAND 晶圆 14.30 美元、季度 -32%。",
+     "text_en": "TrendForce Nov 19 sharply cut its NAND forecast: Q4 contract-price gains cut from +15%-20% to +8%-13%, 1Q27 at 0% to -5% and falling from 2Q27; conventional DRAM Q4 +10%-15% unchanged; spot 512Gb NAND wafers $14.30, down 32% on the quarter."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1766,6 +1776,11 @@
      "date": "2026-11-20",
      "change": "网传第七次涨价函（FR-4 覆铜板统一 +10%，PP 半固化片厚布 +10%/薄布 +20%），未经建滔官网证实，且另一口径称\"年内已五轮涨价\"，轮次冲突、待核实。",
      "text_en": "Unverified online notice of a seventh 2026 price hike (FR-4 CCL +10%, PP prepreg thick cloth +10% / thin cloth +20%); not confirmed on Kingboard's official site, and another source says only five rounds this year — round count conflicts, pending verification."
+    },
+    {
+     "date": "2026-11-20",
+     "change": "网传年内第七次涨价函（FR-4 覆铜板统一 +10%，PP 半固化片厚布 +10%/薄布 +20%），未经建滔官网证实，且与\"年内已八轮\"口径冲突、待核实。",
+     "text_en": "A purported seventh price-hike letter of the year circulated online (FR-4 CCL +10% across thicknesses, PP prepreg +10% thick cloth / +20% thin cloth), unconfirmed by Kingboard's official site and conflicting with the \"eight rounds this year\" count; pending verification."
     }
    ]
   },
@@ -1874,6 +1889,11 @@
      "date": "2026-10-08",
      "change": "AI服务器PCIe 6.0/CXL连接器单价从不足10美元涨至30美元以上、交期8周拉长至36周；Molex 7-1起全线涨5%~30%（辰芯伟业）。",
      "text_en": "AI-server PCIe 6.0/CXL connector ASPs rose from under $10 to $30+, lead times stretched 8 to 36 weeks; Molex raised prices 5-30% from Jul 1 (Shenzhen Chenyao)."
+    },
+    {
+     "date": "2026-11-12",
+     "change": "Supplyframe 互连价格指数 10 月 169.5（同比 +28.9%），预计 11 月环比 +9.3% 至 185.3（近五年第二高）；综合交期 12–21 周，大电流电源连接器 22–32 周。",
+     "text_en": "Supplyframe interconnect price index 169.5 in October (+28.9% YoY), expected +9.3% MoM to 185.3 in November (second-highest in five years); blended lead times 12-21 weeks, high-current power connectors 22-32 weeks."
     }
    ]
   },
@@ -3674,6 +3694,11 @@
      "date": "2026-11-20",
      "change": "Nucor 热卷 CSP 11-16 再涨 15 美元/短吨至 1,310 美元/短吨（连续第 18 周上调）；SMU 现货热卷均价 1,390 美元/短吨（11-17），镀锌板供应紧张、交期约 12 周或更长。",
      "text_en": "Nucor raised HR coil CSP by $15/st to $1,310/st on 11-16 (18th straight weekly increase); SMU spot HR coil averaged $1,390/st (11-17), with galvanized sheet tight and lead times of about 12 weeks or longer."
+    },
+    {
+     "date": "2026-11-23",
+     "change": "Nucor 热卷本周现货价 1,330 美元/短吨（+20 美元），连续第 18 周上调，交期 3–5 周；Dimensional Metals 钢板/卷 +4%–5% 自 11-23 生效。",
+     "text_en": "Nucor hot-rolled coil spot price $1,330/short ton this week (+$20), the 18th consecutive weekly increase, lead time 3-5 weeks; Dimensional Metals sheet/coil +4%-5% effective Nov 23."
     }
    ],
    "subcategories": [
@@ -3976,6 +4001,11 @@
      "date": "2026-11-22",
      "change": "董事会立场不变：主席 Harvey Jones 称无意让黄仁勋回归 CEO，已聘猎头遴选永久 CEO；特朗普 11-20 称希望黄仁勋回归；NVDA 盘后 11-20 报 130.01 美元（+3.57%）。",
      "text_en": "Board position unchanged: chairman Harvey Jones said there is no intention to bring Huang back as CEO; a headhunter has been engaged for a permanent CEO; Trump said on Nov 20 he wants Huang back; NVDA closed after hours on Nov 20 at $130.01 (+3.57%)."
+    },
+    {
+     "date": "2026-11-23",
+     "change": "董事会一致投票恢复黄仁勋 CEO/总裁/董事职务，立即生效，特朗普公开表态支持；NVDA 收 165.05 美元（+31.48%），单日市值增加约 9520 亿美元，纳指 +6.5%；独立董事调查继续，12-01 众议院闭门面谈、12-03 参议院公开作证如期推进，10-Q 法定截止约 12-04。",
+     "text_en": "Board unanimously voted to reinstate Jensen Huang as CEO, president and director, effective immediately, with public support from Trump; NVDA closed at $165.05 (+31.48%), adding about $952B in market value in one day, Nasdaq +6.5%; independent-director investigation continues, House closed-door interviews Dec 1 and Senate public testimony Dec 3 proceed as scheduled, 10-Q statutory deadline about Dec 4."
     }
    ],
    "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
@@ -4325,6 +4355,11 @@
      "date": "2026-11-23",
      "change": "截至 11-23 早上仍无续延公告，倒计时 4 天。",
      "text_en": "As of the morning of Nov 23, still no extension notice; 4 days to expiry."
+    },
+    {
+     "date": "2026-11-24",
+     "change": "截至 11-24 早上仍无续延公告，倒计时 3 天；58 号公告先例为到期前一天发布。",
+     "text_en": "As of the morning of Nov 24, still no extension notice; 3 days to expiry. The precedent (Notice No. 58) was published the day before expiry."
     }
    ],
    "title": "镓/锗/锑对美出口禁令暂停 11-27 到期、暂无续延公告",
@@ -4712,6 +4747,11 @@
      "date": "2026-11-17",
      "change": "台湾《工商时报》11-17：部分 IC 设计公司已收到代工厂涨价通知 10%–20%+，2027 年 Q1 执行；TrendForce 预测 2027 年代工价涨 5%–20%，8 英寸最明显；Microchip CEO 11-05 电话会称代工与封测 2027 年 1 月起新一轮涨价；UMC/Tower 指引 2027 年混合均价 +10%/+20%。",
      "text_en": "Taiwan Commercial Times Nov 17: some IC design houses have received foundry price-hike notices of +10%–20%+, effective Q1 2027; TrendForce forecasts 2027 foundry prices up 5%–20%, most for 8-inch; Microchip CEO said on Nov 5 call that foundry and OSAT prices rise again from Jan 2027; UMC/Tower guided 2027 blended ASP +10%/+20%."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "TechSpot 约 11-21：台积电等 2027 年晶圆价预计 +10% 至 20% 以上，台湾 IC 设计公司已收到涨价通知、2027 年 Q1 生效；台积电被曝按客户财务状况设信用额度、超额部分须现金支付（未官宣）。",
+     "text_en": "TechSpot around Nov 21: TSMC and peers expected to raise 2027 wafer prices by 10% to over 20%; Taiwan IC design houses have received hike notices effective Q1 2027; TSMC reportedly sets credit limits by customer financials with cash payment for excess (unannounced)."
     }
    ]
   },
@@ -4740,6 +4780,25 @@
      "text_en": "Lenovo FY2026/27 Q2 revenue topped 200B yuan for the first time, up nearly 50% YoY; AI server revenue up over 300% YoY, order backlog expanded to 530B yuan; ISG revenue 76.1B yuan, up 177.6% YoY; Neptune liquid cooling can cut data-center PUE to 1.04."
     }
    ]
+  },
+  {
+   "id": "evt-daikin-mini-vrv5-r32-retrofit",
+   "status": "已通知",
+   "title": "大金推出 R32 改造方案 Mini VRV 5",
+   "title_en": "Daikin launches R32 retrofit solution Mini VRV 5",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [
+    "技术路线"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-23",
+     "change": "大金推出 R32 改造方案 Mini VRV 5 RXYSA-B（4/5/6 HP），保留原有 R-410A 系统管路与布线，称安装时间省 22%、资本支出省 55%、能耗省 16%。",
+     "text_en": "Daikin launched the R32 retrofit solution Mini VRV 5 RXYSA-B (4/5/6 HP), reusing existing R-410A piping and wiring, claiming 22% less install time, 55% lower capex and 16% lower energy use."
+    }
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -4751,5 +4810,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-23"
+ "updated": "2026-11-24"
 }
