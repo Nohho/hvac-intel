@@ -4006,6 +4006,11 @@
      "date": "2026-11-23",
      "change": "董事会一致投票恢复黄仁勋 CEO/总裁/董事职务，立即生效，特朗普公开表态支持；NVDA 收 165.05 美元（+31.48%），单日市值增加约 9520 亿美元，纳指 +6.5%；独立董事调查继续，12-01 众议院闭门面谈、12-03 参议院公开作证如期推进，10-Q 法定截止约 12-04。",
      "text_en": "Board unanimously voted to reinstate Jensen Huang as CEO, president and director, effective immediately, with public support from Trump; NVDA closed at $165.05 (+31.48%), adding about $952B in market value in one day, Nasdaq +6.5%; independent-director investigation continues, House closed-door interviews Dec 1 and Senate public testimony Dec 3 proceed as scheduled, 10-Q statutory deadline about Dec 4."
+    },
+    {
+     "date": "2026-11-24",
+     "change": "NVDA 11-24 收 155.38 美元（-5.86%），单日回吐约 2400 亿美元市值；舒默 11-24 公开指控黄仁勋违反美国出口管制法；10-Q 仍未提交（法定截止约 12-04）；12-01/12-03 听证如期推进。",
+     "text_en": "NVDA closed at $155.38 on 2026-11-24 (-5.86%), giving back about $240 billion in market value in a day; Schumer publicly accused Jensen Huang of violating US export control law on 2026-11-24; the 10-Q remains unfiled (statutory deadline around 2026-12-04); hearings on 2026-12-01/12-03 proceed as scheduled."
     }
    ],
    "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
@@ -4217,10 +4222,15 @@
      "date": "2026-11-22",
      "change": "11-12 媒体报道第四轮调价细节（车规、MCU、功率器件），仍未见 ST 官网函件；NXP 约 80% 产品交期超 16 周（一年前为 25%）。",
      "text_en": "Nov 12 media reports gave details of the fourth-round hike (automotive, MCU, power devices), but no ST official letter has surfaced; ~80% of NXP products now have lead times over 16 weeks (vs 25% a year ago)."
+    },
+    {
+     "date": "2026-11-24",
+     "change": "TrendForce 11-24 报道确认 ST 第四轮调价：11-04 客户函称部分产品自 2027-01-01 起涨价，幅度与料号未公开；前三轮分别于 4-26、6-28、8-23 生效。",
+     "text_en": "TrendForce reported 2026-11-24 confirming ST's fourth price hike: a 2026-11-04 customer letter raises prices on select products from 2027-01-01, with magnitude and part numbers undisclosed; the first three rounds took effect 2026-04-26, 2026-06-28 and 2026-08-23."
     }
    ],
-   "title": "ST 第四轮涨价（2027-01-01）网传函未确认",
-   "title_en": "ST fourth price hike (from Jan 1, 2027) rumored in circulated letter, unconfirmed"
+   "title": "ST 第四轮涨价 2027-01-01 生效（函件已确认）",
+   "title_en": "STMicroelectronics' fourth price hike takes effect 2027-01-01 (letter confirmed)"
   },
   {
    "id": "evt-tongfei-private-placement-2026",
@@ -4360,10 +4370,15 @@
      "date": "2026-11-24",
      "change": "截至 11-24 早上仍无续延公告，倒计时 3 天；58 号公告先例为到期前一天发布。",
      "text_en": "As of the morning of Nov 24, still no extension notice; 3 days to expiry. The precedent (Notice No. 58) was published the day before expiry."
+    },
+    {
+     "date": "2026-11-24",
+     "change": "商务部 2026 年第 59 号公告（11-24 发布）：暂停期延至 2027-01-27（2026-11-28 至 2027-01-27 继续暂停实施）；对美军事用户/军事用途禁令继续有效，全球许可要求从未暂停。",
+     "text_en": "MOFCOM Announcement 2026 No. 59 (published 2026-11-24): suspension extended to 2027-01-27 (suspension continues 2026-11-28 to 2027-01-27); the ban on US military end-users/uses remains in force, and global licensing requirements were never suspended."
     }
    ],
-   "title": "镓/锗/锑对美出口禁令暂停 11-27 到期、暂无续延公告",
-   "title_en": "Gallium/germanium/antimony export ban pause for the US expires Nov 27 with no renewal announced"
+   "title": "镓/锗/锑对美出口禁令暂停延至 2027-01-27（商务部 2026 年第 59 号公告）",
+   "title_en": "Suspension of US-bound gallium/germanium/antimony export ban extended to 2027-01-27 (MOFCOM Announcement 2026 No. 59)"
   },
   {
    "id": "evt-vertiv-atlas-lab",
@@ -4708,6 +4723,11 @@
      "date": "2026-11-21",
      "change": "纽约时报 11-21：SEC 调查处早期阶段；加州调查范围扩大至可能违反加州刑法的情形；黄仁勋同意 12-03 出席参议院银行委员会公开作证（Lutnick 同场）、12-01 接受众议院三个委员会闭门面谈；10-Q 推迟、法定截止约 12-04；路透称司法部正审查 129 亿美元收购 Hugging Face 交易。",
      "text_en": "NYT Nov 21: SEC inquiry is in its early stages; California probe widened to possible violations of California criminal law; Huang agreed to testify publicly before the Senate Banking Committee on Dec 3 (Lutnick also testifying) and in closed session with three House committees on Dec 1; 10-Q delayed, statutory deadline around Dec 4; Reuters: DOJ reviewing the $12.9B Hugging Face acquisition."
+    },
+    {
+     "date": "2026-11-24",
+     "change": "10-Q 截至 11-24 仍未提交；UBS 称延迟与正在进行的调查及是否需补充风险因素有关；SEC 调查本身窗口内无新进展。",
+     "text_en": "The 10-Q remains unfiled as of 2026-11-24; UBS said the delay relates to the ongoing investigation and whether additional risk factors must be disclosed; no new developments on the SEC probe itself within the window."
     }
    ]
   },
@@ -4752,19 +4772,29 @@
      "date": "2026-11-21",
      "change": "TechSpot 约 11-21：台积电等 2027 年晶圆价预计 +10% 至 20% 以上，台湾 IC 设计公司已收到涨价通知、2027 年 Q1 生效；台积电被曝按客户财务状况设信用额度、超额部分须现金支付（未官宣）。",
      "text_en": "TechSpot around Nov 21: TSMC and peers expected to raise 2027 wafer prices by 10% to over 20%; Taiwan IC design houses have received hike notices effective Q1 2027; TSMC reportedly sets credit limits by customer financials with cash payment for excess (unannounced)."
+    },
+    {
+     "date": "2026-11-21",
+     "change": "TechSpot 11-21 称台积电等 2027 年晶圆价预计 +10% 至 20% 以上，台湾 IC 设计公司已收到涨价通知、2027 年 Q1 生效；台积电被曝按客户财务状况设信用额度。",
+     "text_en": "TechSpot reported 2026-11-21 that TSMC and peers plan 2027 wafer price hikes of 10% to over 20%, effective 2027 Q1, with Taiwan IC designers already notified; TSMC reportedly sets credit limits based on customer financials."
     }
    ]
   },
   {
    "id": "evt-siemens-fy27-price-list",
-   "status": "已通知",
-   "title": "西门子 FY27 工控及配电产品列表价调整 12-01 生效（经销商转发、未见官方稿）",
-   "title_en": "Siemens FY27 industrial-control and power-distribution list-price adjustment effective Dec 1 (dealer repost, no official release seen)",
+   "status": "已生效",
+   "title": "西门子工控及配电产品列表价调整 11-01 生效（12-01 口径已订正）",
+   "title_en": "Siemens industrial-control and power-distribution list price adjustment effective 2026-11-01 (2026-12-01 date corrected)",
    "timeline": [
     {
      "date": "2026-10-23",
      "change": "西门子经销商 10-23 转发电气产品事业部工控及配电产品 FY27 列表价调整通知：新价目表 2026-12-01 生效，生效前下单最晚提货 2026-12-31，逾期未提货订单取消；未见西门子官方新闻稿。",
      "text_en": "A Siemens distributor reposted on Oct 23 an FY27 list-price adjustment notice for industrial-control and power-distribution products: new price list effective Dec 1, 2026; orders placed before then must be picked up by Dec 31, 2026 or are cancelled; no official Siemens release seen."
+    },
+    {
+     "date": "2026-11-24",
+     "change": "核查订正：经确认生效日为 11-01（SIMATIC PLC +5–20%、S7-1500 CPU 约 +15%、HMI +7–50%、SINAMICS 驱动约 +9%、SIMOTICS 电机 +6%），此前 12-01 口径无来源、予以订正；生效前下单最晚提货 2026-12-31。",
+     "text_en": "Verification correction: the effective date is confirmed as 2026-11-01 (SIMATIC PLC +5-20%, S7-1500 CPU about +15%, HMI +7-50%, SINAMICS drives about +9%, SIMOTICS motors +6%); the earlier 2026-12-01 date had no source and is corrected; orders placed before effectiveness must be picked up by 2026-12-31."
     }
    ]
   },
