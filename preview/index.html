@@ -1445,7 +1445,7 @@ function paintSpark(){
   const rows=[];
   let rngA="",rngB="";
   if(SERIES)defs.forEach(d=>{
-    const pts=(SERIES[d.k]||[]).filter(p=>p&&isFinite(+p.value));
+    const pts=(SERIES[d.k]||[]).filter(p=>p&&isFinite(+p.value)&&(!CURDATE||p.date<=CURDATE));
     if(pts.length<2)return;
     const first=pts[0],last=pts[pts.length-1];
     if(!rngA||first.date<rngA)rngA=first.date;
