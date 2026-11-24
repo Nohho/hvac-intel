@@ -365,7 +365,7 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
 .cw-rbtns{display:flex;gap:6px;margin:10px 0 2px}
 .cw-rbtn{flex:none;font-size:12.5px;color:var(--navy);border:1px solid var(--line);background:#fff;border-radius:14px;padding:4px 12px;cursor:pointer;font-family:inherit}
 .cw-rbtn.on{background:var(--blue);color:#fff;font-weight:700;border-color:var(--blue)}
-#cwc1,#cwc2{position:relative}
+#cwc1,#cwc2{position:relative;cursor:crosshair}
 .cw-tip{position:absolute;z-index:5;pointer-events:none;background:var(--navy);color:#fff;border-radius:8px;padding:6px 9px;font-size:12.5px;line-height:1.5;white-space:nowrap;box-shadow:0 2px 8px rgba(11,42,74,.25);display:none}
 .cw-tip b{font-size:13.5px}
 .cw-tip .pos{color:var(--up-lt)}
@@ -534,7 +534,7 @@ zh:{
  sp_title:"关键指标走势",sp_sub:"日度数据 · {a} – {b}",
  cw_cnt:"专题 · 数据截至 {d} · 状态每周复核",cw_guide:"铜看「波动管理」，冷媒看「政策锁量」。本节收拢两类关键原料的价格走势、机构预测、情景研判与政策节点；日内动态仍见第五节供应商动态，风险提示见第六节预警与建议。",
  cw_status_t:"专题状态 · 四项研判",cw_status_src:"状态灯为研判结论（红=高位/收紧，黄=高波动/拉锯，绿=格局未变），每周复核、事件驱动临时更新；依据见本节各模块。",
- cw_cu_t:"铜价走势 · 近一年日度",cw_shfe:"沪铜主力连续 · 日收盘（元/吨，含税）",cw_lme:"LME 3M 铜（美元/吨，不含税）",cw_range:"近一年高 {hi} / 低 {lo}",cw_5d:"近 5 交易日",
+ cw_cu_t:"铜价走势 · {r}日度",cw_shfe:"沪铜主力连续 · 日收盘（元/吨，含税）",cw_lme:"LME 3M 铜（美元/吨，不含税）",cw_range:"近一年高 {hi} / 低 {lo}",cw_5d:"近 5 交易日",
  cw_fc_t:"机构预测跟踪 · LME 铜均价（美元/吨，不含税）",cw_h_org:"机构",cw_h_view:"核心观点",cw_h_upd:"更新",
  cw_sc_t:"情景研判 · 2027 年上半年 LME 铜（美元/吨，不含税）",cw_cur:"预判基准",
  cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨，含税）",cw_rf_spot:"华东现货 · 早报每日核实",cw_unit_t:"元/吨（含税）",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
@@ -635,7 +635,7 @@ en:{
  sp_title:"Key indicator trends",sp_sub:"Daily data · {a} – {b}",
  cw_cnt:"Topic · data as of {d} · status reviewed weekly",cw_guide:"Copper is about managing volatility; refrigerants are about policy-locked supply. This section gathers prices, institutional forecasts, scenarios and policy dates for the two key inputs; intraday moves remain in Section 5 and risk alerts in Section 6.",
  cw_status_t:"Topic status · four assessments",cw_status_src:"Lights are assessments (red = highs/tightening, amber = volatility/standoff, green = pattern unchanged), reviewed weekly and updated on events; evidence in the modules below.",
- cw_cu_t:"Copper prices · daily, past year",cw_shfe:"SHFE copper, continuous · daily close (CNY/t, VAT incl.)",cw_lme:"LME copper 3M (USD/t, ex-tax)",cw_range:"1Y high {hi} / low {lo}",cw_5d:"5 sessions",
+ cw_cu_t:"Copper prices · {r} daily",cw_shfe:"SHFE copper, continuous · daily close (CNY/t, VAT incl.)",cw_lme:"LME copper 3M (USD/t, ex-tax)",cw_range:"1Y high {hi} / low {lo}",cw_5d:"5 sessions",
  cw_fc_t:"Institutional forecasts · LME copper average (USD/t, ex-tax)",cw_h_org:"Institution",cw_h_view:"Core view",cw_h_upd:"Updated",
  cw_sc_t:"Scenarios · LME copper, H1 2027 (USD/t, ex-tax)",cw_cur:"Base case",
  cw_rf_t:"Refrigerant contract prices by grade (CNY/t, VAT incl.)",cw_rf_spot:"East China spot · verified daily in the briefing",cw_unit_t:"CNY/t (VAT incl.)",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
@@ -1517,7 +1517,7 @@ function paintCw(){
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_status_t")}</h3><div class="cw-grid">`
     +d.status.map(c=>`<div class="cw-cell"><div class="sit-lab"><span class="cw-dot ${esc(c.light)}"></span>${esc(c.title)}</div><div class="sit-big">${esc(c.big)}</div><div class="sit-sub">${esc(c.sub)}</div></div>`).join("")
     +`</div><div class="src">${t("cw_status_src")}</div></div>`;
-  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_cu_t")}</h3>`
+  h+=`<div class="card cw-card"><h3 id="cwcut">${ICO.chart}${fmt(t("cw_cu_t"),{r:t("cw_r_"+CW_RANGE.toLowerCase())})}</h3>`
     +`<div class="cw-rbtns" role="group"><button class="cw-rbtn${CW_RANGE==="1M"?" on":""}" type="button" data-r="1M">${t("cw_r_1m")}</button><button class="cw-rbtn${CW_RANGE==="3M"?" on":""}" type="button" data-r="3M">${t("cw_r_3m")}</button><button class="cw-rbtn${CW_RANGE==="1Y"?" on":""}" type="button" data-r="1Y">${t("cw_r_1y")}</button></div>`
     +(hasCharts?`<div class="cw-chartlab"><span class="cl">${t("cw_shfe")}</span><span class="cv" id="cwsl1">${cwStatLine(shfe,CW_RANGE!=="1Y")}</span></div>`
     +`<div id="cwc1" tabindex="0" role="img" aria-label="${esc(t("cw_shfe"))}"></div>`
@@ -1615,6 +1615,7 @@ function cwOnPoint(e){
 }
 function paintCwCharts(){
   const c=cwCutSeries();
+  const ct=document.getElementById("cwcut");if(ct)ct.innerHTML=ICO.chart+fmt(t("cw_cu_t"),{r:t("cw_r_"+CW_RANGE.toLowerCase())});
   const s1=document.getElementById("cwsl1");if(s1)s1.innerHTML=c.shfe.length>=5?cwStatLine(c.shfe,CW_RANGE!=="1Y"):"";
   const s2=document.getElementById("cwsl2");if(s2)s2.innerHTML=c.lme1y.length>=5?cwStatLine(c.lme1y,CW_RANGE!=="1Y"):"";
   const c1=document.getElementById("cwc1");if(c1){c1.innerHTML=c.shfe.length>=5?cwChart(c.shfe,"#1e86d6",c1.clientWidth,1,"c1",t("cw_u_cny")):"";cwTipEl(c1);}
