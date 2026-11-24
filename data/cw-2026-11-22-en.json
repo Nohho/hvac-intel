@@ -1,0 +1,289 @@
+{
+  "updated": "2026-11-22",
+  "status": [
+    {
+      "light": "y",
+      "title": "Copper · Near term",
+      "big": "High-volatility standoff",
+      "sub": "Futures fell about 12% in a week (SHFE main contract: 105,150 on Nov 13 to 92,400 CNY/t on Nov 20), while the spot premium stays at a record 6,580 CNY/t — a severe futures–spot divergence. Updated 2026-11-22"
+    },
+    {
+      "light": "y",
+      "title": "Copper · 2027",
+      "big": "Wide range at high levels",
+      "sub": "Institutional 2027 average forecasts span 13,000–15,400 USD/t, centred above the current LME price; refined output is in small surplus while the mine side stays tight — not a trending decline. Monthly review · 2026-11-20"
+    },
+    {
+      "light": "g",
+      "title": "Refrigerants · Policy",
+      "big": "2027 supply rigidity unchanged",
+      "sub": "China's 2027 HFC quota total matches 2026 (production quota 1.853bn tCO2e); the first cut lands in 2029, so sellers keep pricing power. Updated 2026-10-15 (quota plan)"
+    },
+    {
+      "light": "r",
+      "title": "Refrigerants · Prices",
+      "big": "Contract prices at record highs",
+      "sub": "2026 contract prices rose quarter by quarter — Q3 R32 about 66,600 CNY/t and R134a about 68,400 CNY/t; 2027 is likely flat to slightly higher. Updated 2026-11-20"
+    }
+  ],
+  "copper": {
+    "spot_rows": [
+      {
+        "d": "Spot",
+        "head": "SHFE spot premium 6,580 CNY/t · Yangshan premium $360/t",
+        "body": "SHFE inventory 27,640 t (2026-11-19)."
+      },
+      {
+        "d": "Basis",
+        "head": "SMM 1# copper spot 104,900 CNY/t (Nov 19)",
+        "body": "A basis of about +10,000 CNY/t over futures, the widest in a year — the source of the futures-down / spot-tight divergence. (per the research report)"
+      }
+    ],
+    "src": "Sources: SHFE daily closes via Sina Futures public feed (continuous main contract); LME on the Westmetall 3M basis. Spot premium and basis are point-in-time figures, not daily series; each is dated.",
+    "links": [
+      {
+        "label": "Sina Futures · SHFE copper",
+        "url": "https://finance.sina.com.cn/futures/quotes/CU0.shtml"
+      },
+      {
+        "label": "Westmetall · LME copper table",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash&year=2026"
+      }
+    ]
+  },
+  "forecasts": {
+    "rows": [
+      {
+        "org": "Goldman Sachs",
+        "y2026": "YE 14,700",
+        "y2027": "15,400",
+        "y2027_sub": "Downside case ~14,500",
+        "view": "Mine supply disappoints; risks skewed down (AI positioning, fading tariff expectations)",
+        "upd": "Compiled 2026-11"
+      },
+      {
+        "org": "J.P. Morgan",
+        "y2026": "13,885",
+        "y2027": "13,800",
+        "y2027_sub": "Q4'27 13,600",
+        "view": "Easing from highs but a tight balance holds",
+        "upd": "Compiled 2026-11"
+      },
+      {
+        "org": "World Bank",
+        "y2026": "13,200",
+        "y2027": "13,000",
+        "y2027_sub": "2028: 12,500",
+        "view": "Gentle decline",
+        "upd": "2026-10-28"
+      },
+      {
+        "org": "Cochilco (Chile)",
+        "y2026": "~13,625",
+        "y2027": "~13,117",
+        "y2027_sub": "",
+        "view": "Forecast raised; supply stays tight",
+        "upd": "Q3 2026 report"
+      },
+      {
+        "org": "ICSG",
+        "y2026": "—",
+        "y2027": "—",
+        "y2027_sub": "",
+        "view": "Small refined surplus, not a shortage (balance: ~+104 kt in 2026, ~+368 kt in 2027; not a price forecast)",
+        "upd": "2026-10-14"
+      },
+      {
+        "org": "IEA / S&P Global",
+        "y2026": "—",
+        "y2027": "—",
+        "y2027_sub": "",
+        "view": "Long-term mine gap: primary supply shortfall of ~25% by 2035; demand +50% by 2040 vs today",
+        "upd": "Long-term outlook"
+      }
+    ],
+    "src": "Sources: World Bank Commodity Markets Outlook (Oct 2026), Cochilco Q3 report, ICSG (2026-10-14); bank forecasts as reported by public media, not the original reports. Updated monthly; every revision leaves a dated line (date · old → new · source).",
+    "links": [
+      {
+        "label": "World Bank October outlook (via Mining.com)",
+        "url": "https://www.mining.com/world-bank-lifts-copper-price-outlook-by-18/"
+      },
+      {
+        "label": "ICSG October forecast (Engineering News)",
+        "url": "https://www.engineeringnews.co.za/article/icsg-sees-global-refined-copper-surplus-widening-in-2027-2026-10-15"
+      },
+      {
+        "label": "Cochilco forecast (via Mining.com)",
+        "url": "https://www.mining.com/chile-copper-outlook-worsens-as-price-forecast-rises/"
+      },
+      {
+        "label": "Goldman / JPMorgan roundup (via Reuters)",
+        "url": "https://qmines.com.au/is-copper-a-good-investment/copper-price-forecast/"
+      }
+    ]
+  },
+  "scenarios": {
+    "items": [
+      {
+        "name": "Downside",
+        "prob": "Likelihood: medium-low",
+        "range": "12,000–13,000",
+        "trig": "Triggers: tariff postponed, US stocks flow back, risk-asset deleveraging",
+        "cur": false
+      },
+      {
+        "name": "Base case",
+        "prob": "Most likely",
+        "range": "13,000–14,500",
+        "trig": "Triggers: inventory mismatch heals slowly, mine side stays tight, wide range",
+        "cur": true
+      },
+      {
+        "name": "Upside",
+        "prob": "Likelihood: medium",
+        "range": "14,500–15,500+",
+        "trig": "Triggers: smelter cuts, US tariff lands, macro easing",
+        "cur": false
+      }
+    ],
+    "now_head": "Where we are now (2026-11-20)",
+    "now_body": "LME 3M $12,237/t (Nov 20), already in the downside band; SHFE main contract 92,400 CNY/t, spot premium 6,580 CNY/t. Scenario bands are H1-2027 projections, not price targets; reviewed monthly against actuals.",
+    "src": "Source: in-house synthesis of the public institutional forecasts above (research report, 2026-11-20); not trading advice."
+  },
+  "refrigerant": {
+    "grades": [
+      {
+        "name": "R32",
+        "q": [
+          61200,
+          62200,
+          66600
+        ],
+        "approx": true,
+        "chg": "+5,400"
+      },
+      {
+        "name": "R134a",
+        "q": [
+          58000,
+          62000,
+          68400
+        ],
+        "approx": true,
+        "chg": "+10,400"
+      },
+      {
+        "name": "R410A",
+        "q": [
+          55100,
+          56700,
+          62500
+        ],
+        "approx": true,
+        "chg": "+7,400"
+      },
+      {
+        "name": "R125",
+        "q": [
+          51000,
+          56000,
+          59000
+        ],
+        "approx": true,
+        "chg": "+8,000"
+      },
+      {
+        "name": "R22",
+        "q": [
+          23500,
+          24800,
+          26000
+        ],
+        "approx": true,
+        "chg": "+2,500"
+      }
+    ],
+    "rows": [
+      {
+        "d": "Q4 ref.",
+        "head": "R32 65,600 CNY/t · R410A 60,500 CNY/t",
+        "body": "Q4 contract reference prices. (Daily-briefing basis, Longzhong / Mysteel)"
+      },
+      {
+        "d": "Latest spot",
+        "head": "R32 East China 63,500–64,500 CNY/t · R410A 57,000–59,500 CNY/t",
+        "body": "East China spot, verified 2026-11-20. (Longzhong / Mysteel)"
+      },
+      {
+        "d": "Outlook",
+        "head": "Q1 2027 contracts flat to slightly higher (~0–3%)",
+        "body": "A further peak-season rise in Q2–Q3 is likely (Q3 2026 rose 7–10% in one quarter). R32 is up about 3.5x from ~17,000 CNY/t at the start of 2024."
+      }
+    ],
+    "src": "Sources: contract prices are tax-inclusive major-maker contract averages from public market compilations (research report, 2026-11-20); dealer spot usually runs 2,000–4,000 CNY/t higher. Verify against Sci99 / Baiinfo or supplier quotes before decisions; price sources are paid databases with no public links."
+  },
+  "policy": {
+    "rows": [
+      {
+        "region": "China",
+        "law": "Kigali Amendment + annual HFC quotas",
+        "state": "Quota total matches 2026 (production 1.853bn tCO2e; domestic-use 0.895bn)",
+        "next": "First cut in 2029"
+      },
+      {
+        "region": "United States",
+        "law": "AIM Act + equipment transition rules (new equipment GWP<700)",
+        "state": "Production/consumption at 60% of baseline; new R410A equipment already switched to R454B / R32",
+        "next": "Down to 30% of baseline in 2029"
+      },
+      {
+        "region": "EU",
+        "law": "F-gas Regulation 2024/573",
+        "state": "Quotas continue to step down",
+        "next": "Per the regulation's schedule"
+      },
+      {
+        "region": "India",
+        "law": "Anti-dumping on Chinese R32",
+        "state": "Sep 2026 final ruling proposes 5 more years of duties",
+        "next": "Reshapes export flows"
+      }
+    ],
+    "nodes": [
+      {
+        "d": "2027-01-01",
+        "head": "Does the US 15% refined-copper tariff land?",
+        "body": "The Commerce Department has proposed it; not yet approved. If postponed, the ~1.6 Mt the US stockpiled could flow back and pressure prices."
+      },
+      {
+        "d": "Each Oct",
+        "head": "China's annual HFC quota plan window",
+        "body": "The 2027 plan was published on 2026-10-15: total unchanged vs 2026; the only volume change is +150 t of HFC-236fa for semiconductor use."
+      },
+      {
+        "d": "2029",
+        "head": "China and the US tighten in step",
+        "body": "China's first quota cut meets the US step-down to 30% of baseline; quota front-running is possible into 2029 and structural high prices persist."
+      }
+    ],
+    "src": "Sources: MEE 2027 HFC quota plan (2026-10-15), US EPA AIM Act notices, EU F-gas regulation (compiled in the research report, 2026-11-20). These dates also feed Section 6 anchors and the calendar subscription.",
+    "links": [
+      {
+        "label": "MEE · 2027 HFC quota plan (PDF, Chinese)",
+        "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk05/202610/W020261019356998263126.pdf"
+      },
+      {
+        "label": "40 CFR Part 84 · AIM phasedown schedule",
+        "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title40-vol21/xml/CFR-2025-title40-vol21-part84.xml"
+      },
+      {
+        "label": "EUR-Lex · Regulation (EU) 2024/573",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj"
+      },
+      {
+        "label": "India DGTR · R-32 anti-dumping final findings (PDF)",
+        "url": "https://files.indusdesk.com/indusdesk/dgtr/dgtr-recommends-five-more-years-of-anti-dumping-duty-on-hfc-r-32-from-276550.pdf"
+      }
+    ]
+  }
+}
