@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-24",
   "status": [
     {
       "light": "y",
       "title": "Copper · Near term",
       "big": "High-volatility standoff",
-      "sub": "Futures fell about 12% in a week (SHFE main contract: 105,150 on Nov 13 to 92,400 CNY/t on Nov 20), while the spot premium stays at a record 4,600 CNY/t — a severe futures–spot divergence. Updated 2026-11-20"
+      "sub": "Futures fell about 11% in a week (SHFE main contract: 104,090 on Nov 16 to 92,350 CNY/t on Nov 23), while the spot premium stays at a record 3,350 CNY/t — a severe futures–spot divergence. Updated 2026-11-24"
     },
     {
       "light": "y",
@@ -30,8 +30,8 @@
     "spot_rows": [
       {
         "d": "Spot",
-        "head": "SHFE spot premium 4,600 CNY/t · Yangshan premium 360 USD/t",
-        "body": "Both still at historic highs; SHFE warehouse stocks are 27,642 t, the lowest since Dec 2023. (Around Nov 18, verified in the daily briefing)"
+        "head": "SHFE spot premium 3,350 CNY/t · Yangshan premium $450/t",
+        "body": "SHFE inventory 30,846 t (2026-11-23)."
       },
       {
         "d": "Basis",
@@ -146,8 +146,8 @@
         "cur": false
       }
     ],
-    "now_head": "Where we are now (2026-11-20)",
-    "now_body": "LME 3M at 12,555 USD/t (Nov 19) has fallen into the downside range, and SHFE dropped in step — yet the spot premium has not loosened: the price sits in the downside range while the structure still shows the base case's divergence pattern. Ranges are an H1 2027 outlook, not spot targets; reviewed monthly against actual prices.",
+    "now_head": "Where we are now (2026-11-23)",
+    "now_body": "LME 3M $12,170/t (Nov 23), already in the downside band; SHFE main contract 92,350 CNY/t, spot premium 3,350 CNY/t. Scenario bands are H1-2027 projections, not price targets; reviewed monthly against actuals.",
     "src": "Source: in-house synthesis of the public institutional forecasts above (research report, 2026-11-20); not trading advice."
   },
   "refrigerant": {
@@ -212,7 +212,7 @@
       {
         "d": "Latest spot",
         "head": "R32 East China 63,500–64,500 CNY/t · R410A 57,000–59,500 CNY/t",
-        "body": "Flat through the Nov 9–13 week. (Briefing, 2026-11-20)"
+        "body": "East China spot, verified 2026-11-20. (Longzhong / Mysteel)"
       },
       {
         "d": "Outlook",
