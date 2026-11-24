@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2c4a66">
+<title>HVAC 供应链情报</title>
+<meta name="description" content="HVAC / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 算力虹吸、跨行业传导、供应商动态、预警与建议。每天 08:30 更新。">
+<link rel="canonical" href="https://nohho.github.io/hvac-intel/">
+<link rel="alternate" type="application/rss+xml" title="HVAC 供应链情报" href="feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HVAC 供应链情报">
+<meta property="og:url" content="https://nohho.github.io/hvac-intel/">
+<meta property="og:title" content="HVAC 供应链情报">
+<meta property="og:description" content="暖通空调 / 液冷 CDU 供应链每日情报：行业动态、头条事件、AI 虹吸、跨行业传导、供应商动态、预警与建议">
+<meta property="og:image" content="https://nohho.github.io/hvac-intel/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HVAC 供应链情报">
+<meta name="twitter:description" content="HVAC / 液冷 CDU 供应链每日情报，面向采购经理与管理层">
+<meta name="twitter:image" content="https://nohho.github.io/hvac-intel/og-cover.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a58a6'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
+<style>
+:root{--blue:#1e86d6;--navy:#2c4a66;--bg:#f2f5f9;--card:#fff;--ink:#1c2733;--mut:#64748b;--line:#e3eaf3;--tint:#e9f2fb;--up-lt:#ffb3a7;--dn-lt:#8fd6a8;--amber:#b3851f}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7;text-wrap:pretty}
+header.top{background:linear-gradient(120deg,#3aa7f5 0%,#1e86d6 55%,#1773b4 100%);color:#fff;padding:20px 16px 14px}
+header.top h1{font-size:20px;letter-spacing:.5px}
+.live{display:inline-block;font-size:12px;background:#1faa53;color:#fff;border-radius:10px;padding:2px 9px;margin-left:8px;vertical-align:middle;font-weight:700}
+header.top .sub{font-size:12.5px;color:#c4d9ef;margin-top:6px}
+.headline{margin-top:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:9px 12px;font-size:14px;line-height:1.6}
+.headline b{color:#ffe9a8}
+.hl-more{display:block;font-size:12px;color:#c4d9ef;margin-top:3px}
+.dpills{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:2px}
+.dpill{flex:none;font-size:12.5px;color:#dce9f8;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px}
+.dpill.on{background:#fff;color:var(--navy);font-weight:700;border-color:#fff}
+.hdlinks{display:flex;gap:14px;margin-top:9px;font-size:12px;flex-wrap:wrap}
+.hdlinks button,.hdlinks a{background:none;border:none;color:#c4d9ef;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0;font-family:inherit}
+.hdlinks button:hover,.hdlinks a:hover{color:#fff}
+/* 预警色条：仅有高紧迫预警时显示 */
+.alertbar{display:none;margin:0;padding:10px 14px;background:#e0654f;color:#fff;font-size:14px;font-weight:700;text-align:center}
+.alertbar.show{display:block}
+.alertbar a{color:#fff}
+/* 时效提示条：看的是最新一期且该期早于读者本地今天时显示（信息提示、非告警，故用琥珀档不用预警红） */
+.freshbar{display:none;margin:0;padding:9px 14px;background:#fef6e0;color:#b3851f;font-size:14px;font-weight:600;text-align:center;border-bottom:1px solid #f0e2b6}
+.freshbar.show{display:block}
+/* 六段导航 */
+nav.secnav{display:flex;gap:7px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:19;overflow-x:auto;box-shadow:0 1px 6px rgba(11,42,74,.06)}
+nav.secnav a{flex:none;font-size:13px;color:var(--blue);border:1px solid var(--blue);border-radius:15px;padding:6px 12px;text-decoration:none;font-weight:600;background:#fff}
+nav.secnav a.on{background:var(--blue);color:#fff}
+.railhead{display:none}
+/* 桌面端：左侧竖向导航 rail + 滚动高亮（白色轻量风） */
+@media(min-width:1024px){
+  body{padding-left:228px;background:#f2f4f8}
+  nav.secnav{position:fixed;left:0;top:0;bottom:0;width:228px;flex-direction:column;align-items:stretch;gap:2px;padding:28px 14px;overflow-y:auto;overflow-x:hidden;background:#ffffff;border-bottom:none;border-right:1px solid #e4e9f1;box-shadow:none;z-index:30}
+  .railhead{display:block;color:#9aa9bd;font-size:12px;font-weight:700;letter-spacing:3px;padding:0 14px 14px}
+  nav.secnav a{position:relative;border:none;background:transparent;color:#46586e;border-radius:10px;padding:10px 14px 10px 16px;font-size:13.5px;font-weight:500;margin-bottom:2px;display:flex;align-items:center;gap:10px}
+  nav.secnav a .rn{font-size:12px;font-weight:800;color:#9aa9bd;background:#f0f3f7;border-radius:6px;min-width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+  nav.secnav a:not(.on):hover{background:#f3f6fa;color:#1c2b4a}
+  nav.secnav a:not(.on):hover .rn{background:#e2e9f2;color:#5b6b82}
+  nav.secnav a.on{background:#e9f1fd;color:#1e86d6;font-weight:700}
+  nav.secnav a.on .rn{background:#1e86d6;color:#fff}
+  nav.secnav a.on::before{content:"";position:absolute;left:2px;top:10px;bottom:10px;width:3px;border-radius:2px;background:#1e86d6}
+  section.blk{scroll-margin-top:14px}
+  main{max-width:800px}
+  header.top{border-bottom-left-radius:0}
+  /* 左侧搜索框（桌面端） */
+  .railsearch{display:block;padding:0 6px 14px}
+  .railsearch input{width:100%;box-sizing:border-box;border:1px solid #dfe5ee;border-radius:10px;padding:9px 12px 9px 32px;font-size:13px;color:#1c2b4a;background:#f7f9fc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2393a3b8' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='21' y1='21' x2='16.5' y2='16.5'/%3E%3C/svg%3E") no-repeat 10px center/15px 15px;outline:none}
+  .railsearch input:focus{border-color:#1e86d6;background-color:#fff;box-shadow:0 0 0 3px rgba(30,134,214,.12)}
+  .rs-meta{font-size:12px;color:#93a3b8;padding:6px 4px 0;min-height:16px}
+  mark.rhl{background:#fff3b0;border-radius:3px;padding:0 1px}
+  mark.rhl.cur{background:#ffb703;box-shadow:0 0 0 2px #ffb703}
+}
+@media(max-width:1023px){nav.secnav .rn{display:none}.railsearch{display:none}}
+/* 期号 / 阅读统计条 / 一手徽标 */
+.issuepill{display:inline-block;font-size:12px;font-weight:700;color:#ffe9a8;border:1px solid rgba(255,233,168,.55);border-radius:12px;padding:2px 10px;margin-left:8px;vertical-align:2px}
+.issuestrip{display:flex;gap:20px;align-items:baseline;justify-content:center;flex-wrap:wrap;padding:13px 8px 11px;color:var(--mut);font-size:13px;border-bottom:1px solid var(--line);margin:2px 0 4px}
+/* 近期风险品类榜（位于"我的供应链"节底部） */
+.riskrank{margin-top:4px}
+.riskrank h3{font-size:14.5px;color:var(--navy);margin-bottom:8px}
+.riskrank h3 .rrsub{font-weight:400;color:var(--mut);font-size:12px;margin-left:6px}
+.rrrow{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:12.5px}
+.rrname{flex:none;width:132px;color:var(--ink);line-height:1.35}
+.rrbar{flex:1;height:8px;background:#edf1f6;border-radius:4px;overflow:hidden}
+.rrbar i{display:block;height:100%;background:#e0654f;border-radius:4px}
+.rrscore{flex:none;width:64px;text-align:right;color:var(--mut);font-size:12px}
+.issuestrip b{font-size:20px;color:var(--navy);margin-right:3px;font-weight:800}
+.fh{display:inline-block;font-size:12px;font-weight:700;color:#0a6b3a;background:#e6f4ec;border:1px solid #bfe3cd;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
+.fr{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-right:5px;vertical-align:1px}
+.catbdg{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.ssbdg1{display:inline-block;font-size:12px;font-weight:700;color:#d4695c;background:#fdeceb;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.ssbdg2{display:inline-block;font-size:12px;font-weight:700;color:#5b6b7d;background:#eef2f7;border:1px solid #dfe5ee;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:1px}
+.suphit{font-size:14px;color:#3c546e}
+.suphit b{color:var(--blue)}
+.sdate{white-space:nowrap}
+/* 小屏：统计条收紧，导航保持顶部横滑 */
+@media(max-width:480px){
+  .issuestrip{gap:12px;font-size:12px;padding:10px 4px 8px}
+  .issuestrip b{font-size:17px}
+  .issuepill{margin-left:6px;font-size:12px}
+  nav.secnav{top:0}
+}
+main{padding:4px 12px 24px;max-width:780px;margin:0 auto}
+section.blk{scroll-margin-top:60px}
+/* 段标题 */
+.secttl{display:flex;align-items:baseline;gap:8px;margin:22px 2px 4px}
+.secttl .no{font-size:13px;font-weight:800;color:#fff;background:var(--blue);border-radius:8px;padding:2px 9px}
+.secttl h2{font-size:18px;color:var(--navy);letter-spacing:.5px}
+.secttl .cnt{font-size:12px;color:var(--mut);font-weight:600}
+/* 一句话导读 */
+.guide{font-size:14px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:8px 0 12px;line-height:1.65}
+.guide b{color:var(--navy)}
+.card{background:var(--card);border-radius:14px;padding:14px;margin-bottom:11px;box-shadow:0 1px 5px rgba(11,42,74,.07);border:1px solid #eef2f7}
+.card h3{font-size:16px;color:var(--navy);margin:7px 0 4px;line-height:1.5}
+/* 一句话动态列表 */
+.inews{list-style:none}
+.inews li{display:flex;gap:10px;padding:10px 2px;border-bottom:1px solid #f0f4f8;font-size:14px;align-items:flex-start}
+.inews li>div>b{font-size:16px;line-height:1.5}
+.inews li:last-child{border-bottom:none}
+.inews .n{flex:none;width:22px;height:22px;border-radius:50%;background:var(--tint);color:var(--blue);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.vtag{font-size:12px;background:#eef4fa;color:#5ea3dd;padding:2px 7px;border-radius:8px;font-weight:700;margin-right:6px;white-space:nowrap}
+/* 头条事件卡 */
+.heatrow{display:flex;align-items:center;gap:10px}
+.hscore{font-size:30px;font-weight:800;min-width:50px;line-height:1}
+.hbar{flex:1;height:9px;background:#edf1f6;border-radius:5px;overflow:hidden}
+.hfill{height:100%;border-radius:5px}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:9px 0 2px}
+.tag{font-size:12px;background:var(--tint);color:var(--blue);padding:3px 9px;border-radius:11px;font-weight:600}
+.tag-burst{font-size:12px;background:#e0654f;color:#fff;padding:3px 9px;border-radius:11px;font-weight:800}
+.tag-bom{font-size:12px;background:#6a1b9a;color:#fff;padding:3px 9px;border-radius:11px;font-weight:800}
+.edate{font-size:12px;color:var(--mut);margin-left:auto}
+.reason{font-size:14px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin:10px 0}
+.nums{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}
+.num{font-size:12.5px;background:#fff7ec;color:#a3540f;border:1px solid #f0d9ac;padding:4px 9px;border-radius:9px;font-weight:700}
+.sum{font-size:14px;color:#33475c}
+.src{font-size:12px;color:var(--mut);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px}
+.src a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+.sev{font-size:12px;font-weight:700;border-radius:9px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.sev-high{background:#fdeceb;color:#d4695c}
+.sev-mid{background:#fef6e0;color:#b3851f}
+.sev-low{background:#e8f5e9;color:#4a9457}
+.bases{margin-top:8px;font-size:12px;color:var(--mut)}
+.bchip{display:inline-block;background:#eaf1fa;color:var(--blue);border-radius:8px;padding:1px 8px;margin:1px 3px 1px 0;font-size:12px;font-weight:600}
+/* skeleton 占位 */
+.skel-sec{background:#fff;border-radius:14px;padding:16px 14px;margin:14px 0;border:1px solid #eef2f7}
+.skel{height:13px;border-radius:7px;margin:9px 0;background:#e9eff6;animation:sk 1.2s ease-in-out infinite}
+.skel.ttl{height:17px;width:42%}
+@keyframes sk{0%,100%{opacity:1}50%{opacity:.45}}
+/* 错误条 */
+.errbar{background:#fdeceb;border:1px solid #f3c1b8;color:#a3271c;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:14px}
+.errbar a{color:#a3271c;font-weight:700}
+/* 归档折叠 */
+.arch{margin-top:2px}
+.arch summary{font-size:12.5px;color:#dce9f8;cursor:pointer;list-style:none;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:14px;padding:5px 12px;display:inline-block}
+.arch .mrow{margin-top:8px}
+.arch .mlab{font-size:12px;color:#9db8d6;margin:6px 0 4px}
+@media print{
+  nav.secnav,.alertbar,.freshbar,.dpills,.frow,.tabs,.searchbox,.arch,footer.site,#headline{display:none}
+  body{background:#fff;font-size:12px}
+  .card,.act,.skel-sec{box-shadow:none}
+  header.top{background:#2c4a66}
+}
+.rel{margin-top:9px;font-size:12.5px;color:#4b6076}
+.chip{font-size:12.5px;border:1px solid var(--blue);color:var(--blue);background:#fff;border-radius:13px;padding:4px 11px;margin:3px 5px 3px 0;font-weight:600}
+/* 筛选 chips */
+.frow{display:flex;gap:7px;margin:2px 2px 10px;flex-wrap:wrap}
+.fchip{font-size:12.5px;border:1px solid var(--line);background:#fff;color:var(--mut);border-radius:14px;padding:5px 12px;font-weight:600}
+.fchip.on{border-color:var(--blue);color:var(--blue);background:var(--tint)}
+/* 虹吸物料 */
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mgrid .card{margin-bottom:0}
+.siphrow{display:flex;gap:16px;align-items:flex-start}
+.siph-rail{flex:none;width:158px}
+.siph-rail h4{font-size:14.5px;color:var(--navy);margin:6px 0 0;line-height:1.4}
+.siphrow p{flex:1;font-size:14px;color:#3c546e;line-height:1.65;margin:0}
+@media(max-width:699px){.siphrow{flex-direction:column;gap:6px}.siph-rail{width:auto;display:flex;align-items:center;gap:8px}.siph-rail h4{margin:0}}
+.mgrid h4{font-size:14.5px;color:var(--navy);margin:6px 0 4px}
+.mgrid p{font-size:14px;color:#3c546e}
+.pill{font-size:12px;padding:2px 9px;border-radius:10px;font-weight:700;white-space:nowrap}
+.p-red{background:#fdeceb;color:#e0654f}.p-org{background:#fff6e5;color:#b3851f}.p-gry{background:#eef2f7;color:#5b6b7d}.p-blu{background:var(--tint);color:var(--blue)}
+/* 传导链 */
+.chain{display:flex;align-items:stretch;gap:6px;font-size:14px}
+.chain .nd{background:#f7fafd;border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.chain .nd:first-child{flex:0 0 29%;display:flex;align-items:center}
+.chain .nd:last-child{flex:1}
+.chain .nd b{color:var(--navy)}
+.chain .arw{align-self:center;color:var(--blue);font-weight:800;flex:none}
+/* 供应商状态行 */
+.srow{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid #f0f4f8;font-size:14px}
+.srow:last-child{border-bottom:none}
+.srow .cat{font-weight:700;color:var(--navy)}
+.srow .dt{font-size:12px;color:var(--mut);margin-left:auto;text-align:right;max-width:55%}
+/* 点名排查 */
+.checkchips{display:flex;flex-wrap:wrap;gap:7px}
+.cchip{font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:5px 10px}
+/* 子品类 chips（第⑤段） */
+.subchips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.subchip{font-size:12px;background:#f2f6fb;color:#5ea3dd;border:1px solid #dbe7f3;border-radius:9px;padding:2px 8px}
+.supp{border-bottom:1px solid #f0f4f8;padding:9px 0}
+.supp:last-child{border-bottom:none}
+/* 基地 tabs（第⑦段） */
+.tabs{display:flex;gap:7px;margin:4px 2px 10px;overflow-x:auto}
+.tab{flex:none;font-size:13px;border:1px solid var(--line);background:#fff;color:var(--mut);border-radius:14px;padding:6px 13px;font-weight:700}
+.tab.on{border-color:var(--blue);color:#fff;background:var(--blue)}
+.tab small{font-weight:400;opacity:.85}
+.searchbox{width:100%;font-size:13.5px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:0 0 8px;background:#fff;color:var(--ink)}
+.subitem{display:flex;align-items:center;gap:8px;padding:7px 2px;border-bottom:1px solid #f4f7fb;font-size:14px}
+.subitem:last-child{border-bottom:none}
+.subitem .nm{flex:1;color:var(--navy)}
+.subitem .ct{font-size:12px;color:var(--mut);white-space:nowrap}
+/* 预警行动卡 */
+.act{border:1px solid var(--line);border-top:3px solid #e0654f;background:#fff;border-radius:12px;padding:13px;margin-bottom:11px;box-shadow:0 1px 4px rgba(11,42,74,.07)}
+.act.mid{border-top-color:#eda445}
+.act.low{border-top-color:#1e86d6}
+/* 今日情景指引卡（数据驱动：按当日预警归类渲染，不涉及系统集成） */
+.pb{margin-top:10px;background:#f4f8fd;border:1px dashed #bcd6ef;border-radius:10px;padding:8px 11px;font-size:14px;color:#3c546e}
+.pb>b{color:#1e86d6}
+.pb ol{margin:5px 0 2px 18px;padding:0}
+.pb li{margin:2px 0;line-height:1.65}
+.pb .pbn{font-size:12px;color:#8a99ab;margin-top:4px}
+.pb .sit{margin-top:9px}
+.pb .sit-h{font-weight:700;color:var(--navy);font-size:13.5px;margin:2px 0 1px}
+.pb .sit-h .n{font-weight:400;color:#8a99ab;font-size:12px;margin-left:4px}
+.pb .pbws{margin-top:5px;border-top:1px solid #dbe7f4;padding-top:2px}
+.pbw{display:flex;align-items:center;gap:7px;width:100%;background:none;border:none;padding:5px 2px;font-size:13px;color:#3c546e;cursor:pointer;font-family:inherit;text-align:left}
+.pbw:hover{background:#eaf3fc}
+.pbw .tt{flex:1;line-height:1.45;text-wrap:pretty}
+.pbw .udot{flex:none}
+.pbmore{font-size:12.5px;border:1px solid var(--line);background:#fff;color:var(--blue);border-radius:12px;padding:4px 12px;font-weight:600;cursor:pointer;font-family:inherit;margin-top:4px}
+.act h4{font-size:15px;color:var(--navy);line-height:1.5}
+.act .do{background:#f0f7ff;border-radius:8px;padding:9px 11px;margin-top:9px;font-size:14px}
+.act .do b{color:var(--blue)}
+.act .meta{font-size:12px;color:var(--mut);margin-top:7px}
+/* 时间锚点 */
+.anchors{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 6px}
+.anchor{flex:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12.5px}
+.anchor b{color:#a3540f}
+/* 方法 */
+.rubric{background:#fff;border-radius:14px;padding:14px;margin-bottom:12px;border:1px solid #eef2f7;font-size:14px}
+.rubric h4{color:var(--navy);margin-bottom:8px;font-size:15px}
+footer.site{font-size:12px;color:var(--mut);text-align:center;padding:18px 16px 34px;line-height:1.9}
+.loading,.errmsg{text-align:center;color:var(--mut);padding:40px 16px;font-size:14px}
+.bar{margin:8px 0;font-size:12.5px}
+.bar .bl{display:flex;justify-content:space-between;margin-bottom:3px}
+.bar .bl b{color:var(--navy)}
+.bar .bt{height:8px;background:#edf1f6;border-radius:4px;overflow:hidden}
+.bar .bf{height:100%;background:var(--blue);border-radius:4px}
+details.sec{background:#fff;border-radius:12px;margin-bottom:10px;border:1px solid #eef2f7}
+details.sec summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:700;color:var(--navy);display:flex;justify-content:space-between;align-items:center}
+details.sec summary::-webkit-details-marker{display:none}
+details.sec .body{padding:0 14px 12px}
+.secsub{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:1px;margin:14px 2px 8px}
+@media(min-width:700px){.mgrid{grid-template-columns:repeat(4,1fr)}}
+
+/* 线性图标（内联 SVG）/ 严重度圆点 / 正文 pretty */
+.ic{width:15px;height:15px;flex:none;vertical-align:-2.5px;margin-right:5px}
+.hdlinks .ic{width:13px;height:13px;margin-right:4px;vertical-align:-2px}
+nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
+.guide .ic{color:var(--blue)}
+.tag-burst .ic{width:11px;height:11px;margin-right:3px;vertical-align:-1px}
+.fchip .ic{width:12px;height:12px;margin-right:3px;vertical-align:-1.5px}
+.chip .ic{width:12px;height:12px;margin-right:3px;vertical-align:-1.5px}
+.cchip .ic{width:13px;height:13px;vertical-align:-2px}
+.cic .ic{margin-right:4px}
+.cic.hot{color:#e0654f}.cic.ok{color:#1faa53}.cic.bk{color:#64748b}
+.subchip .ic{width:11px;height:11px;margin-right:3px;vertical-align:-1.5px}
+.anchor .ic{width:13px;height:13px;margin-right:4px;vertical-align:-2px;color:#a3540f}
+.secsub .ic{width:14px;height:14px;color:var(--blue);vertical-align:-2px}
+.act .meta .ic{width:12px;height:12px;margin-right:3px;vertical-align:-1.5px}
+.pb>b .ic{width:14px;height:14px;color:var(--blue);vertical-align:-2px;margin-right:4px}
+.riskrank h3 .ic{color:var(--navy)}
+.errbar .ic{width:14px;height:14px}
+.alertbar .ic{width:16px;height:16px;vertical-align:-3px;margin-right:6px}
+#calsub .ic{width:16px;height:16px;vertical-align:-3px}
+.sev::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.sev-high::before{background:#e0654f}
+.sev-mid::before{background:#eda445}
+.sev-low::before{background:#1faa53}
+.udot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.udot.uh{background:#e0654f}.udot.um{background:#eda445}.udot.ul{background:#1e86d6}
+.guide,.reason,.sum,.mgrid p,.rubric,.act .do,.inews li,.chain .nd,.pb li,.headline,.srow{text-wrap:pretty}
+/* 二期：事件时间线 / 预警倒计时徽章 / 关键指标走势 */
+.evst{font-size:12px;font-weight:700;border-radius:9px;padding:2px 8px;white-space:nowrap}
+.evst::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;background:currentColor}
+.evst-eff{background:#fdeceb;color:#d4695c}
+.evst-not{background:#fef6e0;color:#b3851f}
+.evst-rum{background:#eef2f7;color:#5b6b7d}
+.evst-done{background:#e8f5e9;color:#4a9457}
+.evst-dead{background:#eef2f7;color:#5b6b7d}
+.evhead{display:flex;align-items:flex-start;gap:8px}
+.evhead h3{flex:1;margin-top:0}
+.evt{list-style:none;position:relative;margin:8px 0 0;padding-left:22px}
+.evt::before{content:"";position:absolute;left:5px;top:10px;bottom:10px;width:2px;border-radius:1px;background:var(--line)}
+.evt li{position:relative;padding:4px 0;text-wrap:pretty}
+.evt li::before{content:"";position:absolute;left:-20px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.evt li.evbtn::before{display:none}
+.evt .ed{font-size:12px;color:var(--mut);font-weight:700;margin-right:8px;white-space:nowrap}
+.evt .ec{font-size:14px;color:#33475c}
+.evmorebtn{font-size:12.5px;border:1px solid var(--line);background:#fff;color:var(--blue);border-radius:12px;padding:4px 12px;font-weight:600;cursor:pointer;font-family:inherit}
+.cd{font-size:12px;font-weight:700;border-radius:9px;padding:1px 7px;margin-left:6px;white-space:nowrap}
+.cd-f{background:#fdeceb;color:#d4695c}
+.cd-t{background:#fef6e0;color:#b3851f}
+.cd-p{background:#eef2f7;color:#8a99ab}
+.sparkrow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid #f0f4f8}
+.sparkrow:last-child{border-bottom:none}
+.sparkname{flex:none;width:84px;font-size:13px;font-weight:700;color:var(--navy)}
+.sparkwrap{flex:1;min-width:0;line-height:0}
+.sparklv{flex:none;text-align:right;font-size:12px;color:var(--mut)}
+.sparklv b{display:block;font-size:14px;color:var(--ink)}
+/* 六期草稿：管理态势卡 / 预警影响面行 */
+.sitcard{margin-top:10px}
+.sitcard h3{font-size:15px;margin-top:0}
+.sitcard h3 .ic{color:var(--navy)}
+.sit-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;margin-top:10px}
+@media(min-width:700px){.sit-grid{grid-template-columns:repeat(5,1fr)}}
+.sit-cell{background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.sit-lab{font-size:12px;color:var(--mut);font-weight:700}
+.sit-big{font-size:21px;font-weight:800;color:var(--navy);line-height:1.35;margin-top:1px}
+.sit-big small{font-size:12px;font-weight:600;color:var(--mut);margin-left:3px}
+.sit-sub{font-size:12px;color:var(--mut);margin-top:2px;line-height:1.55}
+.sit-trend.up{color:#d4695c;font-weight:700}
+.sit-trend.down{color:#4a9457;font-weight:700}
+.sit-node{font-size:12.5px;color:#33475c;line-height:1.65}
+.warn-scope{font-size:12px;color:var(--mut);margin-top:6px;line-height:1.55}
+.warn-scope:empty{display:none;margin:0}
+/* 九、铜·冷媒专题 */
+.cw-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;margin-top:10px}
+@media(min-width:700px){.cw-grid{grid-template-columns:repeat(4,1fr)}}
+.cw-grid3{display:grid;grid-template-columns:1fr;gap:12px 14px;margin-top:10px}
+@media(min-width:700px){.cw-grid3{grid-template-columns:repeat(3,1fr)}}
+.cw-cell{background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.cw-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.cw-dot.r{background:#d4695c}.cw-dot.y{background:#b3851f}.cw-dot.g{background:#4a9457}
+.cw-card h3{font-size:15px;margin:0 0 4px;color:var(--navy)}
+.cw-twrap{overflow-x:auto}
+.cw-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px;min-width:560px}
+.cw-table th{background:var(--tint);color:var(--navy);text-align:left;padding:7px 9px;font-size:12.5px;white-space:nowrap}
+.cw-table td{padding:7px 9px;border-bottom:1px solid #f0f4f8;vertical-align:top}
+.cw-table.fc{table-layout:fixed}
+.cw-table.gr,.cw-table.pl{table-layout:fixed}
+.cw-table td.u{white-space:nowrap;font-size:13px;color:var(--mut)}
+.cw-table td .oen{color:var(--mut);font-size:12px}
+.cw-table td.n,.cw-table th.n{text-align:left;white-space:nowrap}
+.cw-table tr:last-child td{border-bottom:none}
+.cw-table th:first-child{position:sticky;left:0}
+.cw-table td:first-child{position:sticky;left:0;background:var(--card)}
+.cw-chartlab{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 10px;margin:12px 0 2px}
+.cw-chartlab .cl{font-size:13.5px;font-weight:700;color:var(--navy)}
+.cw-chartlab .cv{font-size:12.5px;color:var(--mut)}
+.cw-chartlab .cv b{color:var(--ink);font-size:14px}
+.cw-spotrow{display:flex;gap:8px;padding:7px 0;border-bottom:1px solid #f0f4f8;font-size:14px;line-height:1.6}
+.cw-spotrow:last-child{border-bottom:none}
+.cw-spotrow .sd{flex:none;color:var(--mut);font-size:12.5px;width:86px}
+.cw-noderow{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #f0f4f8;font-size:14px;line-height:1.6}
+.cw-noderow:last-child{border-bottom:none}
+.cw-noderow .nd{flex:none;width:92px;font-weight:700;color:var(--navy);font-size:12.5px;padding-top:1px}
+.cw-scenow{margin-top:10px;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px;line-height:1.65}
+.cw-cur{font-size:12px;font-weight:700;color:#fff;background:var(--blue);border-radius:9px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.cw-archrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 2px}
+.cw-archbadge{font-size:12.5px;font-weight:700;color:var(--navy);background:var(--tint);border:1px solid var(--line);border-radius:9px;padding:3px 9px}
+.cw-archmsg{font-size:12.5px;color:var(--amber);font-weight:700}
+.cw-datein{font-size:13px;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:#fff;font-family:inherit}
+.cw-rbtns{display:flex;gap:6px;margin:10px 0 2px}
+.cw-rbtn{flex:none;font-size:12.5px;color:var(--navy);border:1px solid var(--line);background:#fff;border-radius:14px;padding:4px 12px;cursor:pointer;font-family:inherit}
+.cw-rbtn.on{background:var(--blue);color:#fff;font-weight:700;border-color:var(--blue)}
+#cwc1,#cwc2{position:relative}
+.cw-tip{position:absolute;z-index:5;pointer-events:none;background:var(--navy);color:#fff;border-radius:8px;padding:6px 9px;font-size:12.5px;line-height:1.5;white-space:nowrap;box-shadow:0 2px 8px rgba(11,42,74,.25);display:none}
+.cw-tip b{font-size:13.5px}
+.cw-tip .pos{color:var(--up-lt)}
+.cw-tip .neg{color:var(--dn-lt)}
+.cw-clonewrap{position:fixed;left:0;z-index:18;overflow:hidden;pointer-events:none;display:none;background:var(--card);box-shadow:0 2px 6px rgba(11,42,74,.08)}
+.cw-clonewrap .cw-table{margin-top:0}
+.infobar{font-size:13px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:10px 0;line-height:1.6}
+.railsearch.msearch{display:none}
+@media(max-width:1023px){.railsearch.msearch{display:block;margin-top:12px}}
+/* ---- 现代化（2026-11-20 · modern-web-guidance 对照） ---- */
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+#s5,#s7,#s8{content-visibility:auto;contain-intrinsic-size:auto 900px}
+#calsub{border:none;background:#fff;color:#222;max-width:min(430px,calc(100vw - 40px));width:100%;border-radius:12px;padding:20px;font-size:14px;line-height:1.7}
+#calsub::backdrop{background:rgba(0,0,0,.55)}
+dialog:modal{overscroll-behavior:contain}
+dialog::backdrop{overflow:hidden;overscroll-behavior:contain}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.22s;animation-timing-function:cubic-bezier(.25,1,.5,1)}
+#calsub[open]{animation:calsub-in .22s cubic-bezier(.25,1,.5,1)}
+#calsub[open]::backdrop{animation:calsub-bg .22s ease-out}
+#calsub.closing{animation:calsub-out .15s ease-in forwards}
+@keyframes calsub-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes calsub-out{to{opacity:0;transform:translateY(6px) scale(.98)}}
+@keyframes calsub-bg{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1><span id="t_h1">HVAC 供应链情报</span><span class="live" id="t_live">每日更新</span><span class="issuepill" id="issuepill" style="display:none"></span></h1>
+  <div class="sub" id="t_sub">暖通空调 / 液冷 CDU · 每天 08:30（CST）更新</div>
+  <div class="headline" id="headline" style="display:none"></div>
+  <div class="dpills" id="dpills"></div>
+  <div class="hdlinks"><button id="copylink" onclick="copyIssueLink()"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>复制本期链接</button><a href="feed.xml" id="t_rss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><line x1="4" y1="20" x2="4.01" y2="20"/></svg>RSS 订阅</a><button onclick="showCalSub()" id="t_calsub"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>日历订阅</button><button id="langbtn" onclick="toggleLang()" title="Switch language / 切换语言">EN</button></div>
+  <div class="railsearch msearch"><input id="railq2" placeholder="搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta2"></div></div>
+</header>
+<div class="alertbar" id="alertbar"></div>
+<div class="freshbar" id="freshbar"></div>
+<div class="issuestrip" id="issuestrip" style="display:none"></div>
+<nav class="secnav" id="secnav">
+  <div class="railsearch"><input id="railq" placeholder="搜索本页内容…" autocomplete="off" spellcheck="false"><div class="rs-meta" id="rsmeta"></div></div>
+  <a href="#s1"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="14" height="16" rx="2"/><path d="M17 9h2.5A1.5 1.5 0 0 1 21 10.5V18a2 2 0 0 1-2 2"/><path d="M6.5 8h7M6.5 12h7M6.5 16h4"/></svg></span><span class="nl">行业动态</span></a><a href="#s2"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span><span class="nl">头条事件</span></a><a href="#s3"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4v6a3 3 0 0 0 6 0V4h4v6a7 7 0 0 1-14 0V4z"/><path d="M5 8h4"/><path d="M15 8h4"/></svg></span><span class="nl">AI虹吸</span></a><a href="#s4"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><span class="nl">跨行业传导</span></a><a href="#s5"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 9.4 7.55 4.24"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg></span><span class="nl">供应商动态</span></a><a href="#s9"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span><span class="nl">铜·冷媒专题</span></a><a href="#s6"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span class="nl">预警与建议</span></a><a href="#s7"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="21"/><circle cx="6" cy="7" r="2.2"/><circle cx="6" cy="16" r="2.2"/></svg></span><span class="nl">事件时间线</span></a><a href="#s8"><span class="rn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><span class="nl">我的供应链</span></a>
+</nav>
+<main id="main">
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:85%"></div></div>
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel"></div><div class="skel" style="width:70%"></div></div>
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:90%"></div></div>
+  <div class="skel-sec"><div class="skel ttl"></div><div class="skel"></div><div class="skel" style="width:75%"></div></div>
+</main>
+<footer class="site">
+  <b id="t_foot1">HVAC 供应链情报</b> · <span id="t_foot2">数据来自每日公开信息核实汇总，仅作供应链研究参考</span><br>
+  <span id="t_foot3">不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别</span><br><span id="footmeta"></span>
+</footer>
+<dialog id="calsub" closedby="any" aria-labelledby="c_title">
+    <div style="font-weight:700;font-size:16px;margin-bottom:6px" id="c_title"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>订阅时间锚点日历</div>
+    <div style="color:#666;font-size:13px;margin-bottom:10px" id="c_desc">每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。</div>
+    <input id="calurl" readonly autofocus value="https://nohho.github.io/hvac-intel/anchors.ics" onclick="this.select()" style="width:100%;box-sizing:border-box;padding:8px;border:1px solid #ddd;border-radius:8px;font-size:12px;color:#444;background:#f7f9fb">
+    <div style="display:flex;gap:10px;margin:12px 0">
+      <button onclick="copyCalUrl()" id="c_copy" style="flex:1;padding:10px;border:none;border-radius:8px;background:#0b5cab;color:#fff;font-size:14px;cursor:pointer">复制订阅链接</button>
+      <a href="webcal://nohho.github.io/hvac-intel/anchors.ics" id="c_open" style="flex:1;text-align:center;padding:10px;border-radius:8px;background:#e8f1fb;color:#0b5cab;font-size:14px;text-decoration:none">用日历 App 打开</a>
+    </div>
+    <div style="font-size:13px;color:#555" id="c_ios">
+      <b>iPhone</b>：在 Safari 里点「用日历 App 打开」最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br>
+      <b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接
+    </div>
+    <button onclick="hideCalSub()" id="c_close" style="margin-top:12px;width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;background:#fff;font-size:14px;cursor:pointer">关闭</button>
+</dialog>
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const _ic=p=>`<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+const ICO={
+ link:_ic('<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'),
+ rss:_ic('<path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><line x1="4" y1="20" x2="4.01" y2="20"/>'),
+ cal:_ic('<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>'),
+ clock:_ic('<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/>'),
+ warn:_ic('<path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>'),
+ file:_ic('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/>'),
+ check:_ic('<polyline points="4 12.5 9.5 18 20 6.5"/>'),
+ bolt:_ic('<path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z"/>'),
+ bulb:_ic('<path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.2 2.2h4.8c.1-.9.5-1.7 1.2-2.2A6 6 0 0 0 12 3z"/>'),
+ brief:_ic('<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>'),
+ chart:_ic('<line x1="5" y1="20" x2="5" y2="12"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="19" y1="20" x2="19" y2="9"/>'),
+ flame:_ic('<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>'),
+ undo:_ic('<polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/>'),
+ bldg:_ic('<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2m2 0h2M9 11h2m2 0h2M9 15h2m2 0h2"/>')
+};
+/* ---- 双语层：?lang=en / #...&lang=en 切换英文数据与界面 ---- */
+let LANG="zh";
+const I18N={
+zh:{
+ doc_title:"HVAC 供应链情报",h1:"HVAC 供应链情报",live:"每日更新",
+ sub:"暖通空调 / 液冷 CDU · 每天 08:30（CST）更新",
+ copylink:"复制本期链接",rss:"RSS 订阅",calsub:"日历订阅",langbtn:"EN",
+ nav:["行业动态","头条事件","AI虹吸","跨行业传导","供应商动态","铜·冷媒专题","预警与建议","事件时间线","我的供应链"],
+ railq_ph:"搜索本页内容…",
+ foot1:"HVAC 供应链情报",foot2:"数据来自每日公开信息核实汇总，仅作供应链研究参考",
+ foot3:"不涉及证券买卖建议 · 厂商口径数据已标注，请注意甄别",
+ cal_title:"订阅时间锚点日历",cal_desc:"每天早报发布后自动更新，订阅一次即可；每个事件提前一天 9:00 提醒。",
+ cal_copy:"复制订阅链接",cal_open:"用日历 App 打开",
+ cal_ios:"<b>iPhone</b>：在 Safari 里点「用日历 App 打开」最省事；或 设置 → 日历 → 添加日历 → 添加订阅日历 → 粘贴链接<br><b>Outlook</b>：添加日历 → 从 URL 订阅 → 粘贴链接",
+ cal_close:"关闭",cal_copied:"已复制，去日历 App 粘贴订阅",
+ digest:"今日导读：",digest_more:"余下要点见下方各段",
+ fresh_t:"今日早报尚未发布 · 当前为 {m} 月 {d} 日一期",
+ sev_high:"严重",sev_mid:"预警",sev_low:"关注",
+ tag_burst:"突发",tag_bom:"影响BOM",
+ reason:"推荐理由：",src_label:"来源：",primary:"一手",repost:"转载",rel_warn:"关联预警：",rel_ev:"关联事件：",
+ u_high:"高",u_mid:"中",u_low:"低",urgency_suffix:"紧迫",
+ act_do:"建议动作：",act_impact:"影响范围：",act_trigger:"触发条件：",
+ act_dl:"行动时间：{d}",act_bases:"涉及基地：",
+ playbook:"今日情景指引",
+ sec:["行业动态 / 技术与合作","头条事件","数据中心 / AI 虹吸效应","跨行业传导","供应商动态","供应链预警与建议","我的供应链","方法说明","铜 · 冷媒专题"],
+ u_oneliner:"条动态",u_relev:"个相关事件",u_events:"个",u_materials:"类物料",u_links:"条",u_warnings:"条",u_items:"条",u_subcats:"小类",
+ s1_guide:"今日 <b>{n}</b> 条{c}。",
+ s1_guide_c:"，其中 <b>{vc}</b> 条为厂商口径（已标注，请甄别）",
+ vendor_tag:"厂商口径",
+ s2_guide:"热度最高：<b>{title}</b>（{heat} 分）",s2_empty:"本段暂无事件。",
+ f_all:"全部",f_burst:"突发",f_bom:"影响BOM",f_empty:"该筛选下暂无事件",
+ s3_guide:"承压物料：<b>{m}</b>。",
+ s4_guide:"传导路径：<b>{m}</b>。",
+ s5_guide:"有实质动态 <b>{a}</b> 类：{b}；今日点名排查 <b>{c}</b> 家，<b>{d}</b> 家有实质动态。",
+ s5_none:"无",s5_check_t:"今日点名排查（{n} 家）",
+ chk_yes:"有实质动态",chk_no:"无实质动态",chk_other:"已收录",
+ s6_guide:"<b>{a}</b> 条高紧迫，首条：<b>{b}</b>{c}",s6_dl:"（{d}）",s6_none:"今日无高紧迫预警。",
+ anchors_title:"时间锚点",
+ s7_cnt:"清单快照聚合",
+ s7_guide:"EE 元器件品类（JCAC · PCBA 口径）· 基地供应商品类（JCAC / WXAC / GZAC / 亚太其他，183 子品类全量）· PCBA maker 分布。仅聚合口径，不含供应商名称。",
+ alert_t:"今日 <b>{a}</b> 条高紧迫预警{b} <a href=\"#s6\">查看预警与建议 →</a>",
+ alert_b:" · 最近行动日 {d}",
+ issue:"第 <b>{n}</b> 期",issue_plain:"第 {n} 期",
+ strip_ev:"<b>{n}</b> 件大事",strip_wn:"<b>{n}</b> 条预警",strip_fp:"<b>{n}</b> 个一手来源",
+ strip_min:"约 {n} 分钟读完",
+ older:"更早归档（{n}）",
+ boot_err:"情报数据加载失败，请稍后刷新重试。",
+ load_err_t:"的数据加载失败（",load_err_b:"）。当前显示的可能是旧日期内容。",retry:"点此重试",
+ copied:"已复制",copy_prompt:"复制本期链接：",
+ rail_match:"{n} 处匹配 · 回车跳转",rail_nomatch:"无匹配",
+ siphon_eased:"缓解",siphon_pressure:"承压",siphon_watch:"关注",
+ st_hiked:"涨价（已生效）",st_hike:"涨价",st_price:"价格更新",st_ok:"排查无异常",st_risk:"经营风险",st_lead:"交期",st_tight:"供应紧张",st_active:"有实质动态",st_ma:"并购",st_capex:"产能投资",
+ sb_title:"供应链画像",sb_snapshot:"快照",sb_u1:"家供应商",sb_u2:"个元器件",
+ sup_hit:"近 7 天情报命中供应链：<b>{x}</b> 条动态 · 涉及 <b>{m}</b> 个品类",sup_hit_none:"近 7 天无命中动态",cat_badge:"{d}天动态 {h} 条 · 风险 {s}",ss_single:"单一来源",ss_dual:"双来源",
+ sb_note:"仅品类 / maker 口径聚合，不含供应商名称",
+ sb_risk:"PCBA 风险",sb_total:"元器件总数",sb_high:"高风险",sb_eol:"EOL",sb_lt:"交期≥180天",
+ sb_ee:"EE 元器件品类",sb_ee_sub:"（JCAC · PCBA 口径）",
+ sb_base:"基地供应商品类",sb_base_sub:"（183 子品类全量）",
+ sb_maker:"PCBA Maker 分布 Top12（料号数）",
+ sb_loading:"正在加载供应链画像…",sb_err:"画像数据暂未发布",
+ base_err:"基地品类数据暂未发布",
+ base_note:"183 个子品类全量 · 家数为该基地此品类供应商数 · 仅品类口径，不含供应商名称",
+ base_nomatch:"无匹配子品类",base_search_ph:"搜索子品类，如 compressor / 阀 / 电容…",
+ u_suppliers:"家",
+ rr_title:"近{days}天风险品类榜",
+ rr_sub:"按涨价/缺料/交期动态加权 · 数据攒够30天后看趋势更有意义",
+ rr_score:"{s}分 · {h}次",
+ m_heat:"热度评分规则",
+ m_heat_b:"90~95 多源证实+整机传导落地；85~89 多线叠加、有行动窗口；75~84 单一实质事件；60~74 技术/合作/法规信号；&lt;60 不进热点流。「突发」tag 来自当日快讯，<span class=\"tag-bom\">影响BOM</span> 表示命中用户 PCBA maker 或 8 大 EE 品类。",
+ m_cov:"覆盖与更新",
+ m_cov_b:"每天 08:30（CST）基于公开信息核实汇总更新；数字注明来源日期，无法核实舍去。覆盖 HVAC 整机厂、液冷 CDU、压缩机/阀件/制冷剂/铜铝、VSD 电气件、跨行业通用电子料。仅作供应链研究参考，不涉及证券买卖建议。",
+ tl_title:"事件时间线",tl_cnt:"{n} 个事件",
+ tl_guide:"涨价、停产、交期等关键事件全程跟踪：共 <b>{n}</b> 个事件，<b>{a}</b> 个进行中，按最近进展排序。",
+ tl_expand:"展开全部 {n} 个节点",tl_loading:"正在加载事件时间线…",tl_pending:"事件数据待补",
+ evst_rumor:"传闻",evst_notified:"已通知",evst_effective:"已生效",evst_landed:"已落地",evst_expired:"已失效",
+ cd_future:"距生效 {n} 天",cd_today:"今日生效",cd_past:"已生效",
+ sp_title:"关键指标走势",sp_sub:"日度数据 · {a} – {b}",
+ cw_cnt:"专题 · 数据截至 {d} · 状态每周复核",cw_guide:"铜看「波动管理」，冷媒看「政策锁量」。本节收拢两类关键原料的价格走势、机构预测、情景研判与政策节点；日内动态仍见第五节供应商动态，风险提示见第六节预警与建议。",
+ cw_status_t:"专题状态 · 四项研判",cw_status_src:"状态灯为研判结论（红=高位/收紧，黄=高波动/拉锯，绿=格局未变），每周复核、事件驱动临时更新；依据见本节各模块。",
+ cw_cu_t:"铜价走势 · 近一年日度",cw_shfe:"沪铜主力连续 · 日收盘（元/吨，含税）",cw_lme:"LME 3M 铜（美元/吨，不含税）",cw_range:"近一年高 {hi} / 低 {lo}",cw_5d:"近 5 交易日",
+ cw_fc_t:"机构预测跟踪 · LME 铜均价（美元/吨，不含税）",cw_h_org:"机构",cw_h_view:"核心观点",cw_h_upd:"更新",
+ cw_sc_t:"情景研判 · 2027 年上半年 LME 铜（美元/吨，不含税）",cw_cur:"预判基准",
+ cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨，含税）",cw_rf_spot:"华东现货 · 早报每日核实",cw_unit_t:"元/吨（含税）",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
+ cw_po_t:"政策框架与关键节点",cw_h_region:"地区",cw_h_law:"法规",cw_h_state:"2027 年状态",cw_h_next:"下一节点",en_fb:"英文版每周一至五发布，当前显示 {d} 期英文版。",
+ cw_range_r:"区间高 {hi} / 低 {lo}",cw_r_1m:"近 1 月",cw_r_3m:"近 3 月",cw_r_1y:"近 1 年",cw_mt:"更多历史数据：Macrotrends 铜价历史（COMEX，美元/磅）",
+ cw_arch:"查看 {d} 存档",cw_arch_no:"该日期暂无存档（存档自 2026-11-24 起）",cw_arch_latest:"回最新",cw_arch_pick:"选择日期",
+ cw_u_cny:"元/吨",cw_u_usd:"美元/吨",
+ sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨（不含税）",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨（不含税）",sp_ag:"白银",sp_ag_u:"美元/盎司（不含税）",sp_fx:"美元/人民币",sp_fx_u:"元",
+ sit_title:"管理态势 · 近 7 天",
+ sit_warn:"近 7 天预警",sit_warn_unit:" 条 · 高紧迫 {h}",
+ sit_trend:"较前 7 天 {d} 条（{p}）· {w}",sit_up:"升温",sit_down:"降温",sit_flat:"持平",
+ sit_eff:"已生效涨价",sit_eff_unit:" 起",sit_eff_sub:"覆盖 {m} 个子品类",
+ sit_nodes:"近期生效节点",sit_in_days:"{n} 天后",sit_today:"今日",sit_nodes_none:"近期无到期节点",
+ sit_closed:"事件收尾",sit_closed_unit:" 件",sit_closed_sub:"已落地 {a} · 已失效 {b}",
+ sit_thin:"单薄来源 × 近期风险",sit_thin_unit:" 个品类",sit_thin_none:"近期无交叉",
+ warn_scope:"涉及子品类（{n}）：{list}",
+ sit_eol:"停产应对",sit_shortage:"供应中断应对",sit_price:"涨价应对",sit_lead:"交期应对",sit_opp:"机会窗口",
+ pb_more:"还有 {n} 条",
+ pb_eol:["先盯最后下单日，倒排一次性采购计划","按生命周期用量备足：装机量加年维修率测算","替代料认证与切换排期同步推进","多备部分预先谈好同行调剂渠道，防呆滞"],
+ pb_shortage:["按料号盘点库存加在途，算清可撑周数","现货渠道扫货补缺口，先定溢价上限再出手","替代料同步询样验证，别等断线才启动","向原厂和代理确认配给份额与交付批次，落到书面"],
+ pb_price:["生效日在即的，先下单锁价，别等通知落地","测算涨幅对 BOM 成本的影响，更新 Should-Cost","谈判抓手：年度锁价 / 涨价豁免 / 成本传导条款","查框架协议剩余量与价格有效期，考虑提前锁量"],
+ pb_lead:["新订单提前量前置：需求日减当前交期再减缓冲","在途订单逐单确认批次与优先级，别只看承诺交期","关键项目物料提前锁产能、锁仓位","评估第二货源与国产替代的导入窗口"],
+ pb_opp:["非紧急采购放缓，等价格落地再锁","借窗口谈年度框架、返点与账期","高位锁价的合同评估重谈或对冲","低价位物料可适度抬安全库存"]
+},
+en:{
+ doc_title:"HVAC Supply Chain Intelligence",h1:"HVAC Supply Chain Intelligence",live:"Daily",
+ sub:"HVAC / liquid-cooling CDU · updated daily at 08:30 (CST)",
+ copylink:"Copy issue link",rss:"RSS",calsub:"Calendar",langbtn:"中文",
+ nav:["Industry","Top Stories","AI Siphon","Cross-Industry","Suppliers","Copper & Refrigerant","Warnings","Timeline","My Supply Chain"],
+ railq_ph:"Search this page…",
+ foot1:"HVAC Supply Chain Intelligence",foot2:"Compiled from daily verified public sources; for supply-chain research only",
+ foot3:"No securities advice · vendor-claim data is labeled — verify independently",
+ cal_title:"Subscribe to the time-anchor calendar",cal_desc:"Auto-updates after each daily briefing; subscribe once. Each event reminds one day ahead at 9:00.",
+ cal_copy:"Copy subscription link",cal_open:"Open in calendar app",
+ cal_ios:"<b>iPhone</b>: tap “Open in calendar app” in Safari; or Settings → Calendar → Add Calendar → Add Subscription Calendar → paste the link<br><b>Outlook</b>: Add calendar → Subscribe from URL → paste the link",
+ cal_close:"Close",cal_copied:"Copied — paste it in your calendar app",
+ digest:"Today's briefing: ",digest_more:"More highlights in the sections below",
+ fresh_t:"Today's briefing isn't out yet — showing the {mon} {d} issue",
+ sev_high:"Critical",sev_mid:"Watch",sev_low:"Monitor",
+ tag_burst:"Breaking",tag_bom:"BOM Impact",
+ reason:"Why it matters: ",src_label:"Sources: ",primary:"Primary",repost:"Repost",rel_warn:"Related warnings: ",rel_ev:"Related events: ",
+ u_high:"High",u_mid:"Medium",u_low:"Low",urgency_suffix:" urgency",
+ act_do:"Recommended actions: ",act_impact:"Impact: ",act_trigger:"Trigger: ",
+ act_dl:"Action by: {d}",act_bases:"Bases affected: ",
+ playbook:"Today's Playbooks",
+ sec:["Industry / Technology & Partnerships","Top Stories","Data-Center / AI Siphon Effects","Cross-Industry Transmission","Supplier Dynamics","Supply-Chain Warnings & Recommendations","My Supply Chain","Methodology","Copper & Refrigerant"],
+ u_oneliner:"updates",u_relev:"related events",u_events:"events",u_materials:"material categories",u_links:"links",u_warnings:"warnings",u_items:"items",u_subcats:"subcategories",
+ s1_guide:"Today: <b>{n}</b> one-liners{c}.",
+ s1_guide_c:", including <b>{vc}</b> vendor-claim items (labeled — verify independently)",
+ vendor_tag:"Vendor claim",
+ s2_guide:"Hottest: <b>{title}</b> ({heat} pts)",s2_empty:"No events in this section.",
+ f_all:"All",f_burst:"Breaking",f_bom:"BOM Impact",f_empty:"No events under this filter",
+ s3_guide:"Materials under pressure: <b>{m}</b>.",
+ s4_guide:"Transmission paths: <b>{m}</b>.",
+ s5_guide:"<b>{a}</b> categories with material updates: {b}. <b>{c}</b> companies checked today, <b>{d}</b> with material updates.",
+ s5_none:"none",s5_check_t:"Company roll-call ({n} companies)",
+ chk_yes:"Material updates",chk_no:"No material updates",chk_other:"Covered earlier",
+ s6_guide:"<b>{a}</b> high-urgency warnings, top one: <b>{b}</b>{c}",s6_dl:" ({d})",s6_none:"No high-urgency warnings today.",
+ anchors_title:"Time anchors",
+ s7_cnt:"list snapshot",
+ s7_guide:"EE component categories (JCAC · PCBA) · site supplier categories (JCAC / WXAC / GZAC / rest of APAC — all 183 subcategories) · PCBA maker distribution. Aggregated only; no supplier names.",
+ alert_t:"<b>{a}</b> high-urgency warnings today{b} <a href=\"#s6\">View warnings →</a>",
+ alert_b:" · earliest action date {d}",
+ issue:"Issue <b>{n}</b>",issue_plain:"Issue {n}",
+ strip_ev:"<b>{n}</b> top stories",strip_wn:"<b>{n}</b> warnings",strip_fp:"<b>{n}</b> primary sources",
+ strip_min:"~{n} min read",
+ older:"Older issues ({n})",
+ boot_err:"Failed to load briefing data. Please refresh and retry.",
+ load_err_t:"Failed to load data for ",load_err_b:". What you see may be stale. ",retry:"Retry",
+ copied:"Copied",copy_prompt:"Copy this issue's link: ",
+ rail_match:"{n} matches · Enter to jump",rail_nomatch:"No matches",
+ siphon_eased:"Eased",siphon_pressure:"Under pressure",siphon_watch:"Watch",
+ st_hiked:"Price hike (effective)",st_hike:"Price hike",st_price:"Price update",st_ok:"No anomalies",st_risk:"Business risk",st_lead:"Lead time",st_tight:"Tight supply",st_active:"Material update",st_ma:"M&A",st_capex:"Capacity investment",
+ sb_title:"Supply-chain profile",sb_snapshot:"snapshot",sb_u1:"suppliers",sb_u2:"components",
+ sup_hit:"Intel hits on your supply chain (last 7d): <b>{x}</b> items · <b>{m}</b> categories",sup_hit_none:"No hits in the last 7 days",cat_badge:"{h} hits in {d}d · risk {s}",ss_single:"Single source",ss_dual:"Dual source",
+ sb_note:"Aggregated by category / maker only; no supplier names",
+ sb_risk:"PCBA risk",sb_total:"Total components",sb_high:"High risk",sb_eol:"EOL",sb_lt:"Lead time ≥180 days",
+ sb_ee:"EE component categories",sb_ee_sub:"(JCAC · PCBA)",
+ sb_base:"Site supplier categories",sb_base_sub:"(all 183 subcategories)",
+ sb_maker:"PCBA maker distribution — Top 12 (part counts)",
+ sb_loading:"Loading supply-chain profile…",sb_err:"Profile data not yet published",
+ base_err:"Site category data not yet published",
+ base_note:"All 183 subcategories · counts are supplier counts per site · categories only, no supplier names",
+ base_nomatch:"No matching subcategories",base_search_ph:"Search subcategories…",
+ u_suppliers:"suppliers",
+ rr_title:"{days}-day risk category ranking",
+ rr_sub:"Weighted by price-hike / shortage / lead-time signals · trends get meaningful after 30 days of data",
+ rr_score:"{s} pts · {h} hits",
+ m_heat:"Heat-score rubric",
+ m_heat_b:"90–95: multi-source confirmed + OEM-level transmission; 85–89: overlapping signals with an action window; 75–84: single material event; 60–74: technology / partnership / regulatory signals; &lt;60: not in the hotspot stream. The “Breaking” tag comes from same-day flashes; the <span class=\"tag-bom\">BOM Impact</span> tag means it hits the user's PCBA makers or one of the 8 EE categories.",
+ m_cov:"Coverage & updates",
+ m_cov_b:"Updated daily at 08:30 (CST) from verified public sources; figures carry source dates, unverifiable items are dropped. Covers HVAC OEMs, liquid-cooling CDU, compressors / valves / refrigerants / copper &amp; aluminum, VSD electrical parts, and cross-industry common electronic components. For supply-chain research only; no securities advice.",
+ tl_title:"Event Timeline",tl_cnt:"{n} events",
+ tl_guide:"Full-lifecycle tracking of key events — price hikes, EOLs, lead times: <b>{n}</b> events, <b>{a}</b> active, sorted by latest development.",
+ tl_expand:"Show all {n} updates",tl_loading:"Loading event timeline…",tl_pending:"Event data pending",
+ evst_rumor:"Rumor",evst_notified:"Announced",evst_effective:"In effect",evst_landed:"Implemented",evst_expired:"Expired",
+ cd_future:"Takes effect in {n} days",cd_today:"Takes effect today",cd_past:"In effect",
+ sp_title:"Key indicator trends",sp_sub:"Daily data · {a} – {b}",
+ cw_cnt:"Topic · data as of {d} · status reviewed weekly",cw_guide:"Copper is about managing volatility; refrigerants are about policy-locked supply. This section gathers prices, institutional forecasts, scenarios and policy dates for the two key inputs; intraday moves remain in Section 5 and risk alerts in Section 6.",
+ cw_status_t:"Topic status · four assessments",cw_status_src:"Lights are assessments (red = highs/tightening, amber = volatility/standoff, green = pattern unchanged), reviewed weekly and updated on events; evidence in the modules below.",
+ cw_cu_t:"Copper prices · daily, past year",cw_shfe:"SHFE copper, continuous · daily close (CNY/t, VAT incl.)",cw_lme:"LME copper 3M (USD/t, ex-tax)",cw_range:"1Y high {hi} / low {lo}",cw_5d:"5 sessions",
+ cw_fc_t:"Institutional forecasts · LME copper average (USD/t, ex-tax)",cw_h_org:"Institution",cw_h_view:"Core view",cw_h_upd:"Updated",
+ cw_sc_t:"Scenarios · LME copper, H1 2027 (USD/t, ex-tax)",cw_cur:"Base case",
+ cw_rf_t:"Refrigerant contract prices by grade (CNY/t, VAT incl.)",cw_rf_spot:"East China spot · verified daily in the briefing",cw_unit_t:"CNY/t (VAT incl.)",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
+ cw_po_t:"Policy framework & key dates",cw_h_region:"Region",cw_h_law:"Framework",cw_h_state:"Status in 2027",cw_h_next:"Next milestone",en_fb:"The English edition is published Monday to Friday. Showing the {d} edition.",
+ cw_range_r:"Range high {hi} / low {lo}",cw_r_1m:"Past 1M",cw_r_3m:"Past 3M",cw_r_1y:"Past 1Y",cw_mt:"More history: Macrotrends copper prices (COMEX, USD/lb)",
+ cw_arch:"Viewing archive {d}",cw_arch_no:"No archive for this date (archives start 2026-11-24)",cw_arch_latest:"Back to latest",cw_arch_pick:"Pick a date",
+ cw_u_cny:"CNY/t",cw_u_usd:"USD/t",
+ sp_lme:"LME Copper 3M",sp_lme_u:"USD/t (ex-tax)",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t (ex-tax)",sp_ag:"Silver",sp_ag_u:"USD/ozt (ex-tax)",sp_fx:"USD/CNY",sp_fx_u:"CNY",
+ sit_title:"Management Snapshot · Last 7 Days",
+ sit_warn:"Warnings — last 7 days",sit_warn_unit:" warnings · {h} high-urgency",
+ sit_trend:"vs prior 7 days: {d} ({p}) · {w}",sit_up:"Heating up",sit_down:"Cooling down",sit_flat:"Steady",
+ sit_eff:"Price hikes in effect",sit_eff_unit:" hikes",sit_eff_sub:"Covering {m} subcategories",
+ sit_nodes:"Upcoming effective dates",sit_in_days:"in {n} days",sit_today:"today",sit_nodes_none:"No upcoming deadlines",
+ sit_closed:"Events closed",sit_closed_unit:" closed",sit_closed_sub:"Implemented {a} · Expired {b}",
+ sit_thin:"Thin sourcing × live risk",sit_thin_unit:" categories",sit_thin_none:"No overlap recently",
+ warn_scope:"Subcategories ({n}): {list}",
+ sit_eol:"Discontinuation (EOL)",sit_shortage:"Supply Disruption",sit_price:"Price Hikes",sit_lead:"Lead-Time Pressure",sit_opp:"Opportunity Window",
+ pb_more:"{n} more",
+ pb_eol:["Work backwards from the last-time-buy date","Stock for lifecycle demand: installed base + annual repair rate","Run alternate qualification and switch-over schedule in parallel","Pre-arrange peer swap channels for any overstock"],
+ pb_shortage:["Count stock + in-transit by part number; compute weeks of cover","Sweep spot channels for the gap — set a premium cap first","Start alternate-part sampling and validation in parallel","Get allocation share and delivery batches confirmed in writing"],
+ pb_price:["Order and lock prices before the effective date","Quantify the BOM cost impact; update Should-Cost","Negotiate: annual price locks / hike exemptions / pass-through clauses","Check framework-agreement balance and price validity; consider locking volume early"],
+ pb_lead:["Pull orders forward: need date − lead time − buffer","Confirm batch and priority order by order","Lock capacity and slots for critical projects early","Open the window for second sources or domestic alternates"],
+ pb_opp:["Slow non-urgent buying; lock after prices settle","Negotiate annual frameworks, rebates and terms in the window","Review high-priced locked contracts for renegotiation","Selectively raise safety stock at low price points"]
+}};
+function t(k){const d=I18N[LANG];return (d&&d[k]!==undefined)?d[k]:I18N.zh[k];}
+function fmt(s,m){return String(s).replace(/\{(\w+)\}/g,(_,k)=>(m&&m[k]!==undefined)?m[k]:"");}
+function initLang(){const m=(location.hash||"").match(/lang=(en|zh)/);LANG=m?m[1]:"zh";}
+function applyLang(){
+  document.documentElement.lang=LANG==="en"?"en":"zh-CN";
+  document.title=t("doc_title");
+  const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  const setH=(id,v)=>{const e=document.getElementById(id);if(e)e.innerHTML=v;};
+  set("t_h1",t("h1"));set("t_live",t("live"));set("t_sub",t("sub"));
+  setH("copylink",ICO.link+t("copylink"));setH("t_rss",ICO.rss+t("rss"));setH("t_calsub",ICO.cal+t("calsub"));set("langbtn",t("langbtn"));
+  document.querySelectorAll("nav.secnav a .nl").forEach((s,i)=>{const nv=t("nav");if(nv[i])s.textContent=nv[i];});
+  const rq=document.getElementById("railq");if(rq)rq.placeholder=t("railq_ph");const rq2=document.getElementById("railq2");if(rq2)rq2.placeholder=t("railq_ph");
+  set("t_foot1",t("foot1"));set("t_foot2",t("foot2"));set("t_foot3",t("foot3"));
+  setH("c_title",ICO.cal+t("cal_title"));set("c_desc",t("cal_desc"));set("c_copy",t("cal_copy"));set("c_open",t("cal_open"));
+  const ci=document.getElementById("c_ios");if(ci)ci.innerHTML=t("cal_ios");
+  set("c_close",t("cal_close"));
+}
+function toggleLang(){
+  const nl=LANG==="en"?"zh":"en";
+  location.hash="#date="+(CURDATE||"")+(nl==="en"?"&lang=en":"");
+  location.reload();
+}
+const heatColor=h=>h>=90?"#e0654f":h>=80?"#eda445":h>=70?"#c79a2e":"#1e86d6";
+const mmdd=d=>String(d||"").slice(5);
+let WMAP={},EMAP={},CUR=null,FILTER="all";
+
+const TAG_EN={"涨价":"Price Hike","数据中心":"Data Center","存储":"Memory","原材料":"Raw Materials","功率器件":"Power Devices","技术路线":"Technology","被动元件":"Passive Components","产能投资":"Capacity Investment","并购":"M&A","液冷":"Liquid Cooling","MLCC":"MLCC","PCB":"PCB","跨行业传导":"Cross-Industry","覆铜板":"CCL","CCL":"CCL","战略合作":"Partnership","产能":"Capacity","铜":"Copper","交期":"Lead Time","预警":"Alert","环保合规":"Env. Compliance","制冷剂":"Refrigerant","新能源车":"EV","变压器":"Transformers","Tier B 轮查":"Tier B Scan","电网":"Power Grid","消费电子":"Consumer Electronics","智能家居":"Smart Home","整机传导":"System-Level Impact","供应商风险":"Supplier Risk","Vertiv":"Vertiv","CDU":"CDU","模拟IC":"Analog IC","连接器":"Connectors","供应链出海":"Overseas Expansion","成本传导":"Cost Pass-Through","产能紧张":"Tight Capacity","订单":"Orders","合规":"Compliance","VSD/逆变器":"VSD / Inverter","光伏":"Solar PV","停产":"Discontinuation","EOL":"EOL","需求":"Demand","缺货":"Shortage","MCU":"MCU","整机":"Systems","压缩机":"Compressors","电机":"Motors","北美":"North America","芯片":"Chips","关税":"Tariffs","空调":"Air Conditioners","关税政策":"Tariff Policy","稀土":"Rare Earths","财报":"Earnings","芯片与半导体":"Chips & Semiconductors","出口管制":"Export Controls","加息":"Rate Hike","宏观":"Macro","液冷与热管理":"Liquid Cooling & Thermal Management","PCBA/电子代工":"PCBA / Electronic Manufacturing Services","电机风机与传感控制":"Motors, Fans & Sensing Controls"};
+function tagName(s){return LANG==="en"?(TAG_EN[s]||TAXNAME_EN[s]||s):s;}
+function tags(tt){return (tt||[]).map(x=>x==="突发"?`<span class="tag-burst">${ICO.bolt}${esc(t("tag_burst"))}</span>`:x==="影响BOM"?`<span class="tag-bom">${esc(t("tag_bom"))}</span>`:`<span class="tag">${esc(tagName(x))}</span>`).join("");}
+
+function sevLabel(s){return {"高":["sev-high",t("sev_high")],"中":["sev-mid",t("sev_mid")],"低":["sev-low",t("sev_low")]}[s||"中"];}
+function evCard(e,compact){
+  const nums=(e.numbers||[]).map(n=>`<span class="num">${esc(n)}</span>`).join("");
+  const sv=sevLabel(e.severity||"中");
+  const srcs=(e.sources||[]).map(s=>{
+    const badge=s.first_party?`<span class="fh">${esc(t("primary"))}</span>`:`<span class="fr">${esc(t("repost"))}</span>`;
+    const body=s.url
+      ?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.outlet)}</a>`
+      :`${esc(s.outlet)}`;
+    const dt=s.date?`<span class="sdate"> · ${esc(mmdd(s.date))}</span>`:"";
+    return badge+body+dt;}).join("；");
+  const wc=(e.related_warnings||[]).filter(w=>WMAP[w])
+    .map(w=>`<button class="chip" onclick="goId('${w}')">${ICO.warn}${esc(WMAP[w].title.slice(0,13))}…</button>`).join("");
+  return `<article class="card" id="${e.id}">
+    <div class="heatrow"><div class="hscore" style="color:${heatColor(e.heat)}">${e.heat}</div>
+    <div class="hbar"><div class="hfill" style="width:${e.heat}%;background:${heatColor(e.heat)}"></div></div></div>
+    <div class="tagrow">${tags(e.tags)}<span class="sev ${sv[0]}">${sv[1]}</span><span class="edate">${esc(e.date)}</span></div>
+    <h3>${esc(e.title)}</h3>
+    ${compact?"":`<div class="reason">${t("reason")}${esc(e.heat_reason||"")}</div>`}
+    ${nums?`<div class="nums">${nums}</div>`:""}
+    <p class="sum">${esc(e.summary)}</p>
+    ${srcs?`<p class="src">${t("src_label")}${srcs}</p>`:""}
+    ${wc?`<div class="rel">${t("rel_warn")}${wc}</div>`:""}</article>`;
+}
+
+function affectedBases(w){
+  // 预警 → related_events → supplier_updates(event_id) → subcategories → 基地归属（确定性关联，无需 LLM）
+  // taxonomy 由 loadDay 预加载到 window._TAX（renderMain 之前），缺失时降级为空
+  const TX=window._TAX||{};
+  const ids=new Set(w.related_events||[]);
+  const subs=new Set();
+  (CUR.supplier_updates||[]).forEach(u=>{if(ids.has(u.event_id))(u.subcategories||[]).forEach(s=>subs.add(s));});
+  if(!subs.size)return [];
+  const ee=new Set(((TX.ee_subcategories)||[]).map(x=>x.name));
+  const out=[];
+  ["JCAC","WXAC","GZAC","亚太其他"].forEach(b=>{
+    const bset=new Set((((TX.bases||{})[b]||{}).subcategories||[]).map(x=>x.name));
+    for(const s of subs){if(bset.has(s)||(ee.has(s)&&b==="JCAC")){out.push(b);break;}}
+  });
+  return out;
+}
+/* 今日情景指引：预警按情景归类（纯函数，可单测）。
+   信号次序：标题定桶 → 关联事件 tags → action/trigger/impact 兜底；
+   桶优先级 EOL > 缺料 > 涨价 > 交期 > 机会，每条预警只进第一个命中的桶。
+   标题优先的原因：标题是预警的主语义，action 里常顺带提及其他情景的执行细节
+   （如 MLCC 涨价预警的 action 提到村田 EOL 料 LTB），全文本同权会误抢桶。 */
+const SIT_RULES=[
+ {id:"eol",kw:["停产","eol","最后下单","last time buy","last-time-buy","生命周期","ltb","退市","discontinu","end of life"]},
+ {id:"shortage",kw:["缺料","断供","短缺","配给","allocation","无货","缺货","shortage","stock-out","stockout","out of stock"]},
+ {id:"price",kw:["涨价","调价","提价","上调","锁价","涨","price hike","price-hike","price increase","price adjustment","repricing","hike","rise","lock price"]},
+ {id:"leadtime",kw:["交期","货期","延期","拉长","lead time","lead-time"]},
+ {id:"opportunity",kw:["降价","回落","缓解","降幅","price drop","price decline","easing","relief","pullback"]}
+];
+const SIT_TAGKW={eol:["停产","eol"],shortage:["短缺","缺料","断供"],price:["涨价"],leadtime:["交期"],opportunity:[]};
+function classifySituation(w,eventsById){
+  const title=String((w&&w.title)||"").toLowerCase();
+  const rest=(String((w&&w.action)||"")+" "+String((w&&w.trigger)||"")+" "+String((w&&w.impact)||"")).toLowerCase();
+  const has=(txt,kws)=>kws.some(k=>txt.indexOf(k)>=0);
+  const priceHit=txt=>has(txt,SIT_RULES[2].kw)
+    ||(txt.indexOf("生效")>=0&&/价|涨|调|函/.test(txt))
+    ||(txt.indexOf("lock")>=0&&txt.indexOf("price")>=0);
+  const hit=(r,txt)=>r.id==="price"?priceHit(txt):has(txt,r.kw);
+  for(const r of SIT_RULES)if(hit(r,title))return r.id;
+  const evs=((w&&w.related_events)||[]).map(id=>(eventsById||{})[id]).filter(Boolean);
+  for(const r of SIT_RULES){
+    const tk=SIT_TAGKW[r.id]||[];
+    if(tk.length&&evs.some(e=>(e.tags||[]).some(tg=>tk.some(k=>String(tg).toLowerCase().indexOf(k)>=0))))return r.id;
+    if(r.id==="opportunity"&&evs.some(e=>e.severity==="低"&&/缓解|回落|降价|easing|relief/.test(String(e.title||"").toLowerCase())))return "opportunity";
+  }
+  for(const r of SIT_RULES)if(hit(r,rest))return r.id;
+  return null;
+}
+const SIT_ORDER=["eol","shortage","price","leadtime","opportunity"];
+const SIT_NAME={eol:"sit_eol",shortage:"sit_shortage",price:"sit_price",leadtime:"sit_lead",opportunity:"sit_opp"};
+const SIT_LINES={eol:"pb_eol",shortage:"pb_shortage",price:"pb_price",leadtime:"pb_lead",opportunity:"pb_opp"};
+function pbToggle(btn){
+  const box=btn.closest(".sit");if(!box)return;
+  box.querySelectorAll(".pbhid").forEach(x=>{x.style.display="flex";});
+  btn.style.display="none";
+}
+function playbooksCard(ws){
+  const buckets={};
+  (ws||[]).forEach(w=>{const s=classifySituation(w,EMAP);if(s)(buckets[s]=buckets[s]||[]).push(w);});
+  const hit=SIT_ORDER.filter(k=>buckets[k]&&buckets[k].length);
+  if(!hit.length)return "";
+  const ent=(w,hid)=>`<button class="pbw${hid?" pbhid":""}"${hid?' style="display:none"':""} onclick="goId('${w.id}')"><span class="udot ${w.urgency==="高"?"uh":w.urgency==="中"?"um":"ul"}"></span><span class="tt">${esc(w.title)}</span>${cdBadge(w.deadline)}</button>`;
+  const sitHtml=k=>{
+    const list=buckets[k];
+    const lines=t(SIT_LINES[k])||[];
+    let rows=list.slice(0,4).map(w=>ent(w,false)).join("");
+    if(list.length>4)rows+=list.slice(4).map(w=>ent(w,true)).join("")
+      +`<button class="pbmore" onclick="pbToggle(this)">${fmt(t("pb_more"),{n:list.length-4})}</button>`;
+    return `<div class="sit"><div class="sit-h">${esc(t(SIT_NAME[k]))}<span class="n">${list.length} ${t("u_warnings")}</span></div><ol>${lines.map(i=>`<li>${esc(i)}</li>`).join("")}</ol><div class="pbws">${rows}</div></div>`;
+  };
+  return `<div class="pb"><b>${ICO.brief}${t("playbook")}</b>${hit.map(sitHtml).join("")}</div>`;
+}
+/* 预警倒计时：deadline 严格解析为 YYYY-MM-DD 且为真实日期才算，以当前所看期号日期为基准 */
+function cdBadge(dl){
+  const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(dl||""));
+  if(!m||!CURDATE)return "";
+  const t1=Date.UTC(+m[1],+m[2]-1,+m[3]);
+  const dt=new Date(t1);
+  if(dt.getUTCFullYear()!==+m[1]||dt.getUTCMonth()!==+m[2]-1||dt.getUTCDate()!==+m[3])return "";
+  const cm=/^(\d{4})-(\d{2})-(\d{2})$/.exec(CURDATE);
+  if(!cm)return "";
+  const days=Math.round((t1-Date.UTC(+cm[1],+cm[2]-1,+cm[3]))/86400000);
+  if(days>0){var ft=fmt(t("cd_future"),{n:days});if(days===1)ft=ft.replace("days","day");return `<span class="cd cd-f">${ft}</span>`;}
+  if(days===0)return `<span class="cd cd-t">${t("cd_today")}</span>`;
+  return `<span class="cd cd-p">${t("cd_past")}</span>`;
+}
+function warnCard(w){
+  const ec=(w.related_events||[]).filter(id=>EMAP[id])
+    .map(id=>`<button class="chip" onclick="goId('${id}')">${ICO.file}${esc(EMAP[id].title.slice(0,13))}…</button>`).join("");
+  const cls=w.urgency==="高"?"":w.urgency==="中"?" mid":" low";
+  const bases=affectedBases(w);
+  const ul=w.urgency==="高"?t("u_high"):w.urgency==="中"?t("u_mid"):t("u_low");
+  return `<article class="act${cls}" id="${w.id}">
+    <h4><span class="udot ${w.urgency==="高"?"uh":w.urgency==="中"?"um":"ul"}"></span>${esc(w.title)}
+    <span class="pill ${w.urgency==="高"?"p-red":w.urgency==="中"?"p-org":"p-blu"}">${esc(ul)}${t("urgency_suffix")}</span></h4>
+    <div class="do"><b>${t("act_do")}</b>${esc(w.action)}</div>
+    <div class="meta">${t("act_impact")}${esc(w.impact)}<br>${t("act_trigger")}${esc(w.trigger)}${w.deadline?`<br>${ICO.clock}${fmt(t("act_dl"),{d:esc(w.deadline)})}${cdBadge(w.deadline)}`:""}</div>
+    <div class="warn-scope" data-wid="${w.id}"></div>
+    ${bases.length?`<div class="bases">${t("act_bases")}${bases.map(b=>`<span class="bchip">${esc(b)}</span>`).join("")}</div>`:""}
+    ${ec?`<div class="rel">${t("rel_ev")}${ec}</div>`:""}</article>`;
+}
+
+function secttl(no,title,cnt){const NOM={"一":"1","二":"2","三":"3","四":"4","五":"5","六":"6","七":"7","八":"8","九":"9","专":"Topic","附":"App."};return `<div class="secttl"><span class="no">${LANG==="en"?(NOM[no]||no):no}</span><h2>${title}</h2><span class="cnt">${cnt}</span></div>`;}
+function guide(html){return `<div class="guide">${ICO.bulb}${html}</div>`;}
+const RMQ=window.matchMedia?matchMedia("(prefers-reduced-motion: reduce)"):null;
+function sb(){return RMQ&&RMQ.matches?"auto":"smooth";}
+function goId(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:sb(),block:"center"});}
+function setFilter(f){FILTER=f;renderMain(CUR);const y=$("#s2").offsetTop-70;window.scrollTo({top:y,behavior:sb()});}
+
+function renderIssuestrip(){
+  // 期号 / 件数 / 一手来源数 / 预计阅读时长（AIHOT 式）
+  const days=window._ISSUE_DAYS||[];
+  const no=days.indexOf(CURDATE)+1;
+  const evs=CUR.hotspot_events||[], warns=CUR.warnings||[];
+  let fh=0; evs.forEach(e=>(e.sources||[]).forEach(s=>{if(s.first_party)fh++;}));
+  const chars=JSON.stringify(CUR).length;
+  const mins=Math.max(1,Math.round(chars/900));
+  const el=$("#issuestrip");
+  el.style.display="flex";
+  el.innerHTML=
+    (no>0?`<span>${fmt(t("issue"),{n:no})}</span>`:"")+
+    `<span>${fmt(t("strip_ev"),{n:evs.length})}</span>`+
+    `<span>${fmt(t("strip_wn"),{n:warns.length})}</span>`+
+    (fh?`<span>${fmt(t("strip_fp"),{n:fh})}</span>`:"")+
+    `<span>${fmt(t("strip_min"),{n:mins})}</span>`;
+}
+let _SPY=null;
+/* 左侧 rail 页内搜索（桌面端） */
+function escRe(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");}
+let _MARKS=[],_MIDX=-1,_RQT=null;
+function clearMarks(){
+  document.querySelectorAll("main mark.rhl").forEach(m=>{
+    m.parentNode.replaceChild(document.createTextNode(m.textContent),m);
+  });
+  _MARKS=[];_MIDX=-1;
+  ["rsmeta","rsmeta2"].forEach(id=>{const meta=document.getElementById(id); if(meta)meta.textContent="";});
+}
+function railSearch(){
+  const inp=document.getElementById("railq"); if(!inp)return;
+  const q=inp.value.trim();
+  clearMarks();
+  if(!q)return;
+  const ql=q.toLowerCase(), re=new RegExp("("+escRe(q)+")","gi");
+  document.querySelectorAll("main section.blk").forEach(sec=>{
+    const walker=document.createTreeWalker(sec,NodeFilter.SHOW_TEXT);
+    const nodes=[]; let n;
+    while(n=walker.nextNode()){ if(n.nodeValue.toLowerCase().indexOf(ql)>=0)nodes.push(n); }
+    nodes.forEach(tn=>{
+      const frag=document.createDocumentFragment();
+      tn.nodeValue.split(re).forEach((p,i)=>{
+        if(i%2===1){const mk=document.createElement("mark");mk.className="rhl";mk.textContent=p;frag.appendChild(mk);}
+        else if(p)frag.appendChild(document.createTextNode(p));
+      });
+      tn.parentNode.replaceChild(frag,tn);
+    });
+  });
+  _MARKS=Array.prototype.slice.call(document.querySelectorAll("main mark.rhl"));
+  const mtxt=_MARKS.length?fmt(t("rail_match"),{n:_MARKS.length}):t("rail_nomatch");
+  ["rsmeta","rsmeta2"].forEach(id=>{const meta=document.getElementById(id); if(meta)meta.textContent=mtxt;});
+}
+function railJump(dir){
+  if(!_MARKS.length)return;
+  _MIDX=(_MIDX+dir+_MARKS.length)%_MARKS.length;
+  _MARKS.forEach((m,i)=>m.classList.toggle("cur",i===_MIDX));
+  _MARKS[_MIDX].scrollIntoView({behavior:sb(),block:"center"});
+}
+function initRailSearch(){
+  const inp=document.getElementById("railq"); if(!inp||inp._wired)return;
+  inp._wired=true;
+  const inp2=document.getElementById("railq2");
+  inp.addEventListener("input",()=>{if(inp2)inp2.value=inp.value;clearTimeout(_RQT);_RQT=setTimeout(railSearch,220);});
+  inp.addEventListener("keydown",e=>{
+    if(e.isComposing)return;
+    if(e.key==="Enter"){e.preventDefault();railJump(e.shiftKey?-1:1);}
+    else if(e.key==="Escape"){inp.value="";if(inp2)inp2.value="";clearMarks();inp.blur();}
+  });
+  if(inp2&&!inp2._wired){
+    inp2._wired=true;
+    inp2.addEventListener("input",()=>{inp.value=inp2.value;clearTimeout(_RQT);_RQT=setTimeout(railSearch,220);});
+    inp2.addEventListener("keydown",e=>{
+      if(e.isComposing)return;
+      if(e.key==="Enter"){e.preventDefault();railJump(e.shiftKey?-1:1);}
+      else if(e.key==="Escape"){inp2.value="";inp.value="";clearMarks();inp2.blur();}
+    });
+  }
+}
+function initSpy(){
+  if(!("IntersectionObserver" in window))return;
+  if(_SPY)_SPY.disconnect();
+  _SPY=new IntersectionObserver(es=>{
+    es.forEach(e=>{if(e.isIntersecting){
+      document.querySelectorAll("nav.secnav a").forEach(a=>
+        a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id));
+    }});
+  },{rootMargin:"-30% 0px -60% 0px"});
+  ["s1","s2","s3","s4","s5","s6","s7","s8","s9"].forEach(id=>{
+    const s=document.getElementById(id); if(s)_SPY.observe(s);
+  });
+}
+function supType(s){if(LANG!=="en")return s;if(s.includes("已生效"))return t("st_hiked");if(s.includes("涨价"))return t("st_hike");if(s.includes("价格"))return t("st_price");if(s.includes("交期"))return t("st_lead");if(s.includes("缺货")||s.includes("产能紧张"))return t("st_tight");if(s.includes("无异常"))return t("st_ok");if(s.includes("风险")||s.includes("贸易壁垒"))return t("st_risk");if(s.includes("实质动态")||s.includes("轮查结论"))return t("st_active");if(s.includes("并购"))return t("st_ma");if(s.includes("投产")||s.includes("产能投资"))return t("st_capex");return s;}
+/* ---- EN 渲染层译名字典（2026-10-22 四处漏译修复）：仅 EN 模式显示层查表，数据字段/键一律不动；查不到回退原名，ZH 模式零变化 ---- */
+const COMPANY_EN={"江森自控/约克":"Johnson Controls / York","江森自控":"Johnson Controls","开利":"Carrier","特灵":"Trane","大金":"Daikin","美的":"Midea","格力":"Gree","海尔":"Haier","日立/约克":"Hitachi / York","日立":"Hitachi","英维克":"Envicool","申菱环境":"Shenling","申菱":"Shenling","高澜股份":"Goaland","同飞股份":"Tongfei","浪潮信息":"Inspur","联想":"Lenovo","松下":"Panasonic","三星":"Samsung","三菱电机":"Mitsubishi Electric","LG":"LG","Vertiv":"Vertiv"};
+function coName(s){return LANG==="en"?(COMPANY_EN[s]||s):s;}
+const TAXNAME_EN={"HVAC 专有液冷与热管理":"HVAC Liquid Cooling & Thermal Management","PCBA & 电子代工":"PCBA & Electronics Manufacturing","低压电气与配电":"Low-Voltage Electrical & Distribution","机械结构与辅材":"Mechanical Structures & Auxiliaries","电机、风机与传感控制":"Motors, Fans & Sensing/Controls","芯片与半导体":"Chips & Semiconductors","被动元件与连接件":"Passives & Connectors","其他辅材与未分类":"Other Auxiliaries & Uncategorized","密封与制冷剂":"Sealing & Refrigerants","换热器与冷板":"Heat Exchangers & Cold Plates","水泵与过滤":"Pumps & Filtration","阀门与管件":"Valves & Fittings","PCBA板卡":"PCBA Boards","变压器与互感器":"Transformers & Instrument Transformers","断路器与接触器":"Circuit Breakers & Contactors","熔断器":"Fuses","继电器与电源":"Relays & Power Supplies","塑料件与包装":"Plastic Parts & Packaging","轴承与弹簧":"Bearings & Springs","钣金与结构件":"Sheet Metal & Structural Parts","铸锻件与机加工":"Castings, Forgings & Machining","传感器与仪表":"Sensors & Instruments","电机":"Motors","风机":"Fans","功率器件":"Power Devices","存储器":"Memory","时钟/晶振/FPGA":"Clock / crystal oscillators / FPGAs","模拟与电源 IC / MCU":"Analog & Power ICs / MCU","电容":"Capacitors","电阻与电感":"Resistors & inductors","连接器与线束":"Connectors & harnesses","其他辅料":"Other auxiliaries","183 供应商子品类 + 24 EE 元器件小类（JCAC·PCBA 口径）共同构成受控词表。PCBA 芯片/被动件类新闻用 EE 小类归类；结构件/大宗用 183 归类。":"The 183 supplier subcategories + 24 EE component subcategories (JCAC · PCBA scope) form the controlled vocabulary. PCBA chip/passive news uses EE subcategories; structural/bulk items use the 183.","IGBT/功率与工控":"IGBT / Power Devices / Industrial Controls","IGBT/功率器件":"IGBT / Power Devices","IGBT模块/电子电源/高低压变频器":"IGBT Modules / Power Supplies / VSDs","MCU/模拟与电源 IC":"MCUs / Analog & Power ICs","MCU/模拟与电源IC":"MCUs / Analog & Power ICs","MLCC":"MLCC","MLCC/电容":"MLCC / Capacitors","MLCC/被动元件":"MLCC / Passive Components","PCB/CCL":"PCB / CCL","PCB/PCBA":"PCB / PCBA","PCB/覆铜板":"PCB / CCL","PCBA代工":"PCBA Contract Manufacturing","PCB板":"PCB Boards","PLC/工控":"PLCs / Industrial Controls","VSD":"Variable Speed Drives","二极管":"Diodes","传感器":"Sensors","传感器/磁钢":"Sensors / Magnets","传感器/磁钢/PCB":"Sensors / Magnets / PCBs","传感器/继电器/连接器":"Sensors / Relays / Connectors","传感器/继电器（工控元器件调价）":"Sensors / Relays (Industrial Control Component Price Adjustments)","传感器（通用/流量/压力/温度）":"Sensors (General / Flow / Pressure / Temperature)","低压电气":"Low-Voltage Electrical","低压电气/变频器":"Low-Voltage Electrical / Variable Speed Drives","低压电气（断路器/接触器/继电器）":"Low-Voltage Electrical (Circuit Breakers / Contactors / Relays)","低压电气（断路器/接触器）":"Low-Voltage Electrical (Circuit Breakers / Contactors)","冷冻油/铜加工件":"Refrigeration Oil / Fabricated Copper Parts","冷却液":"Coolants","制冷剂":"Refrigerant","制冷剂/冷冻机油":"Refrigerant / Refrigeration Oil","制冷剂/冷冻油":"Refrigerant / Refrigeration Oil","制冷剂/制冷剂油":"Refrigerant / Refrigerant Oil","制冷剂油/铜加工件":"Refrigerant Oil / Fabricated Copper Parts","功率半导体":"Power Semiconductors","功率半导体/IGBT":"Power Semiconductors / IGBTs","包装":"Packaging","半导体封测":"Semiconductor Packaging & Testing","压缩机":"Compressors","压缩机/阀件":"Compressors / Valves","压缩机（其余4类）":"Compressors (Other Types)","压缩机（离心/往复/转子/涡旋/涡轮）":"Compressors (Centrifugal / Reciprocating / Rotary / Scroll / Turbo)","压缩机（离心/往复/转子/涡旋/螺杆）":"Compressors (Centrifugal / Reciprocating / Rotary / Scroll / Screw)","变压器":"Transformers","变频器":"Variable Speed Drives","变频器/VSD":"Variable Speed Drives","变频器/低压电气":"Variable Speed Drives / Low-Voltage Electrical","变频器/变压器":"Variable Speed Drives / Transformers","变频器/电源":"Variable Speed Drives / Power Supplies","变频器（高低压）/电源/断路器/接触器/继电器/变压器/互感器":"VSDs (MV/LV) / Power Supplies / Circuit Breakers / Contactors / Relays / Transformers / Instrument Transformers","启动器":"Starters","型钢/钣金":"Structural Steel / Sheet Metal","塑料/包装":"Plastics / Packaging","存储":"Memory","密封件":"Seals","工控元器件":"Industrial Control Components","换热":"Heat Exchange","换热/传感器":"Heat Exchange / Sensors","换热/油/驱动电源/PCB板":"Heat Exchange / Oil / Drive Power Supplies / PCBs","换热器":"Heat Exchangers","控制器件":"Controllers","整机调价":"Complete-Unit Price Adjustments","整机（北美）":"Complete Units (North America)","断路器/接触器":"Circuit Breakers / Contactors","时钟晶振/FPGA":"Clock / Crystal Oscillators / FPGAs","晶振/FPGA/连接器":"Crystal Oscillators / FPGAs / Connectors","模拟/电源IC":"Analog / Power ICs","模拟/电源IC/MCU":"Analog / Power ICs / MCUs","模拟与电源IC/MCU":"Analog & Power ICs / MCUs","橡胶制品":"Rubber Products","消防探测器":"Fire Detectors","液冷介质":"Liquid Cooling Coolants","温控器":"Thermostats","照明":"Lighting","电容/MLCC":"Capacitors / MLCC","电机/风机/水泵/轴承":"Motors / Fans / Pumps / Bearings","电机/风机/水泵/轴承/磁钢":"Motors / Fans / Pumps / Bearings / Magnets","电机/风机/水泵与散热器":"Motors / Fans / Pumps and Heat Sinks","电机风机水泵":"Motors / Fans / Pumps","电机风机水泵/轴承/磁钢":"Motors / Fans / Pumps / Bearings / Magnets","电机风机水泵/轴承/阀件/换热/传感器":"Motors / Fans / Pumps / Bearings / Valves / Heat Exchange / Sensors","电池":"Batteries","电缆":"Cables","电阻/电感":"Resistors / Inductors","磁钢":"Magnets","磁钢/稀土":"Magnets / Rare Earths","磁钢（稀土）":"Magnets (Rare Earth)","稀土":"Rare Earths","稀土/磁钢":"Rare Earths / Magnets","稀土/钕铁硼":"Rare Earths / NdFeB","稀土永磁":"Rare-Earth Permanent Magnets","结构件/大宗":"Structural Parts / Bulk Materials","继电器":"Relays","继电器/低压电气":"Relays / Low-Voltage Electrical","继电器/连接器":"Relays / Connectors","被动元件":"Passive Components","覆铜板":"Copper-Clad Laminate","覆铜板 CCL":"Copper-Clad Laminate","覆铜板/铜箔":"CCL / Copper Foil","覆铜板/铜箔/电子布":"CCL / Copper Foil / Glass Fabric","轴承":"Bearings","连接器":"Connectors","连接器/线束":"Connectors / Wire Harnesses","钢":"Steel","钢材":"Steel Products","铜":"Copper","铜/钢/铝":"Copper / Steel / Aluminum","铜/铝":"Copper / Aluminum","铜/铝/钢":"Copper / Aluminum / Steel","铜/铝/钢及铜加工件":"Copper / Aluminum / Steel and Fabricated Copper Parts","铜与银":"Copper & Silver","铜加工材":"Fabricated Copper Parts","铜及铜制品/铜管件":"Copper & Copper Products / Copper Fittings","铜管":"Copper Tubes","铝":"Aluminum","阀件":"Valves","阀件/换热":"Valves / Heat Exchange","阀件与换热器":"Valves & Heat Exchangers","阀件（控制/电磁/四通）/换热（微通道/管翅/壳管）":"Valves (Control / Solenoid / Four-Way) / Heat Exchange (Microchannel / Tube-Fin / Shell-and-Tube)","阀件（控制阀/电磁阀/四通阀）/换热（微通道/管翅/壳管）":"Valves (Control / Solenoid / Four-Way) / Heat Exchange (Microchannel / Tube-Fin / Shell-and-Tube)","EE-存储器":"Memory","EE 存储器":"Memory","EE-模拟与电源IC/MCU":"Analog & Power ICs / MCU","EE 模拟与电源IC/MCU":"Analog & Power ICs / MCU","EE 电容":"Capacitors","EE-电容":"Capacitors","EE 时钟/晶振/FPGA":"Clock / crystal oscillators / FPGAs","EE-时钟/晶振/FPGA":"Clock / crystal oscillators / FPGAs","EE 电阻与电感":"Resistors & inductors","EE-电阻与电感":"Resistors & inductors","EE 连接器与线束":"Connectors & harnesses","EE-连接器与线束":"Connectors & harnesses","EE PCBA板卡":"PCBA Boards","EE-PCBA板卡":"PCBA Boards","EE-PCBA板卡/封测":"PCBA Boards / Packaging & Testing","EE PCBA板卡/封测":"PCBA Boards / Packaging & Testing","EE-PCBA/封测":"PCBA Boards / Packaging & Testing","EE-电容/电阻电感/连接器与线束/时钟晶振FPGA":"Capacitors / Resistors & inductors / Connectors & harnesses / Clock / crystal oscillators / FPGAs","EE-电容/电阻电感/连接器线束/晶振FPGA":"Capacitors / Resistors & inductors / Connectors & harnesses / Clock / crystal oscillators / FPGAs"};
+function taxName(s){return LANG==="en"?(TAXNAME_EN[s]||s):s;}
+function chkLabel(s){return s==="有实质动态"?t("chk_yes"):s==="无实质动态"?t("chk_no"):t("chk_other");}
+/* 导读瘦身：headline 按 ；/; 切分；≥3 条取前 2 条以；连接、缺句号补。，并标记提示行；≤2 条（含单条长句）原文照渲 */
+function slimDigest(h){
+  const parts=String(h).split(/；|;/).map(s=>s.trim()).filter(Boolean);
+  if(parts.length>=3){
+    const en=(typeof LANG!=="undefined"&&LANG==="en");
+    let txt=parts.slice(0,2).join(en?"; ":"；");
+    if(!/[。.]$/.test(txt))txt+=(en?".":"。");
+    return {txt:txt,more:true};
+  }
+  return {txt:h,more:false};
+}
+function renderMain(d){
+  CUR=d;WMAP={};EMAP={};
+  d.warnings.forEach(w=>WMAP[w.id]=w);
+  d.hotspot_events.forEach(e=>EMAP[e.id]=e);
+  const bySec=s=>d.hotspot_events.filter(e=>e.section===s).sort((a,b)=>b.heat-a.heat);
+
+  /* ---- 预警色条 ---- */
+  const highs=d.warnings.filter(w=>w.urgency==="高");
+  const ab=$("#alertbar");
+  if(highs.length){
+    const dl=d.warnings.filter(w=>w.deadline).map(w=>w.deadline).sort()[0];
+    ab.classList.add("show");
+    ab.innerHTML=ICO.warn+fmt(t("alert_t"),{a:highs.length,b:dl?fmt(t("alert_b"),{d:mmdd(dl)}):""});
+  }else{ab.classList.remove("show");ab.replaceChildren();}
+
+  /* ---- 顶部导读（瘦身：≥3 条只渲前 2 条 + 提示行；≤2 条原文照渲） ---- */
+  const hl=$("#headline");
+  if(d.daily_report&&d.daily_report.headline){
+    const sd=slimDigest(d.daily_report.headline);
+    hl.style.display="block";
+    hl.innerHTML=`<b>${t("digest")}</b>${esc(sd.txt)}${sd.more?`<span class="hl-more">${t("digest_more")}</span>`:""}`;
+  }
+  else{hl.style.display="none";}
+
+  /* ---- 一、行业动态 ---- */
+  const iu=d.industry_updates||[];
+  const vc=iu.filter(i=>i.vendor_claim).length;
+  const iuList=iu.map((i,n)=>{
+    const vt=i.vendor_claim?`<span class="vtag">${esc(t("vendor_tag"))}</span>`:"";
+    const badge=i.source?(i.first_party?`<span class="fh">${esc(t("primary"))}</span>`:`<span class="fr">${esc(t("repost"))}</span>`):"";
+    const srcBody=i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.source)}</a>`:esc(i.source||"");
+    return `<li><span class="n">${n+1}</span><div>${vt}<b>${esc(i.title)}</b>${i.detail?`<p class="sum">${esc(i.detail)}</p>`:""}${i.source?`<p class="src">${t("src_label")}${badge}${srcBody}</p>`:""}</div></li>`;
+  }).join("");
+  const s1ev=bySec("行业动态");
+  const s1=secttl("一",t("sec")[0],iu.length+" "+t("u_oneliner")+(s1ev.length?` · ${s1ev.length} `+t("u_relev"):""))
+    +guide(fmt(t("s1_guide"),{n:iu.length,c:vc?fmt(t("s1_guide_c"),{vc:vc}):""}))
+    +`<div class="card"><ul class="inews">${iuList}</ul></div>`
+    +(s1ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s1ev.map(e=>evCard(e,true)).join(""):"");
+
+  /* ---- 二、头条事件 ---- */
+  let s2ev=d.hotspot_events.filter(e=>(e.section||"头条事件")==="头条事件"||(e.tags||[]).includes("突发")).sort((a,b)=>b.heat-a.heat); /* 筛选逻辑与门禁 check-shell-fields.py 的渲染一致性断言保持同步，改一处必须改另一处 */
+  const frows=`<div class="frow">
+      <button class="fchip${FILTER==="all"?" on":""}" onclick="setFilter('all')">${t("f_all")}</button>
+      <button class="fchip${FILTER==="burst"?" on":""}" onclick="setFilter('burst')">${ICO.bolt}${t("f_burst")}</button>
+      <button class="fchip${FILTER==="bom"?" on":""}" onclick="setFilter('bom')">${t("f_bom")}</button></div>`;
+  if(FILTER==="burst")s2ev=s2ev.filter(e=>(e.tags||[]).includes("突发"));
+  if(FILTER==="bom")s2ev=s2ev.filter(e=>(e.tags||[]).includes("影响BOM"));
+  const top2=s2ev[0];
+  const s2=secttl("二",t("sec")[1],s2ev.length+" "+t("u_events"))
+    +guide(top2?fmt(t("s2_guide"),{title:esc(top2.title),heat:top2.heat}):t("s2_empty"))
+    +frows
+    +(s2ev.length?s2ev.map(e=>evCard(e)).join(""):`<div class="card"><div class="errmsg">${t("f_empty")}</div></div>`);
+
+  /* ---- 三、AI 虹吸 ---- */
+  const sev=s=>/回落|缓解|\b(eas\w*|relief|reliev\w*|cool\w*)\b/i.test(s.change||s.detail||'')?`<span class="pill p-blu">${esc(t("siphon_eased"))}</span>`:/涨|紧张|延长|紧缺|吃紧|\b(doubl\w*|surg\w*|soar\w*|jump\w*|ris\w+|tight\w*|shortage|extend\w*|rais\w*|increas\w*|upward|price (hik\w*|round\w*|increas\w*))\b/i.test(s.change||s.detail||'')?`<span class="pill p-red">${esc(t("siphon_pressure"))}</span>`:`<span class="pill p-org">${esc(t("siphon_watch"))}</span>`;
+  const sip=(d.siphon_effects||[]).map(s=>`<div class="card siphrow"><div class="siph-rail">${sev(s)}<h4>${esc(s.material)}</h4></div><p>${esc(s.change||s.detail)}</p></div>`).join("");
+  const s3ev=bySec("数据中心/AI 虹吸效应");
+  const s3=secttl("三",t("sec")[2],(d.siphon_effects||[]).length+" "+t("u_materials"))
+    +guide(fmt(t("s3_guide"),{m:`<b>${(d.siphon_effects||[]).map(s=>esc(s.material)).join("、")}</b>`}))
+    +`<div class="siphrows">${sip}</div>`
+    +(s3ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s3ev.map(e=>evCard(e,true)).join(""):"");
+
+  /* ---- 四、跨行业传导 ---- */
+  const cro=(d.cross_industry||[]).map(c=>`<div class="card"><div class="chain"><div class="nd"><b>${esc(c.industry)}</b></div><div class="arw">→</div><div class="nd">${esc(c.chain||c.link||c.detail)}</div></div></div>`).join("");
+  const s4ev=bySec("跨行业传导");
+  const s4=secttl("四",t("sec")[3],(d.cross_industry||[]).length+" "+t("u_links"))
+    +guide(fmt(t("s4_guide"),{m:`<b>${(d.cross_industry||[]).map(c=>esc(c.industry)).join("、")}</b>`}))
+    +cro
+    +(s4ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s4ev.map(e=>evCard(e,true)).join(""):"");
+
+  /* ---- 五、供应商动态 ---- */
+  const tcol=s=>s==="涨价"?"p-red":s==="排查无异常"?"p-gry":s==="经营风险"?"p-org":"p-blu";
+  const subChips=s=>{const sc=(s.subcategories||[]).map(x=>`<span class="subchip">${esc(taxName(x))}</span>`).join("");
+    const co=s.company?`<span class="subchip" style="background:#fff6e5;color:#b3851f;border-color:#f0d9ac">${ICO.bldg}${esc(coName(s.company))}</span>`:"";
+    return (sc||co)?`<div class="subchips">${sc}${co}</div>`:"";};
+  const sup=(d.supplier_updates||[]).map(s=>`<div class="supp"><div class="srow" style="border-bottom:none;padding-bottom:0"><span class="pill ${tcol(s.type)}">${esc(supType(s.type))}</span><span class="cat">${esc(s.category)}</span><span class="dt">${esc(s.detail).slice(0,30)}</span></div>${subChips(s)}</div>`).join("");
+  const s5ev=bySec("供应商动态");
+  const chk=d.company_checklist||[];
+  const hot5=chk.filter(c=>c.status==="有实质动态");
+  const chkHtml=chk.map(c=>`<span class="cchip" title="${esc(c.note||chkLabel(c.status))}"><span class="cic ${c.status==="有实质动态"?"hot":c.status==="无实质动态"?"ok":"bk"}">${c.status==="有实质动态"?ICO.flame:c.status==="无实质动态"?ICO.check:ICO.undo}</span>${esc(coName(c.company))}</span>`).join("");
+  const dynCats=[...new Set((d.supplier_updates||[]).filter(s=>s.type!=="排查无异常").map(s=>s.category))];
+  const s5=secttl("五",t("sec")[4],(d.supplier_updates||[]).length+" "+t("u_items"))
+    +guide(fmt(t("s5_guide"),{a:dynCats.length,b:dynCats.map(esc).join("、")||t("s5_none"),c:chk.length,d:hot5.length}))
+    +`<div class="card">${sup}</div>`
+    +(s5ev.length?`<div class="secsub">${t("rel_ev")}</div>`+s5ev.map(e=>evCard(e,true)).join(""):"")
+    +`<div class="card"><h3 style="margin-top:0;font-size:14.5px">${fmt(t("s5_check_t"),{n:chk.length})}</h3><div class="checkchips">${chkHtml}</div></div>`;
+
+  /* ---- 六、预警与建议 ---- */
+  const warns=d.warnings.toSorted((a,b)=>({高:0,中:1,低:2}[a.urgency]-{高:0,中:1,低:2}[b.urgency]));
+  const anchors=(d.time_anchors||[]).map(x=>`<div class="anchor">${ICO.clock}<b>${mmdd(x.date)}</b> ${esc(x.event||x.label)}</div>`).join("");
+  const firstHigh=highs[0];
+  const s6=secttl("六",t("sec")[5],d.warnings.length+" "+t("u_warnings"))
+    +guide(firstHigh?fmt(t("s6_guide"),{a:highs.length,b:esc(firstHigh.title),c:firstHigh.deadline?fmt(t("s6_dl"),{d:esc(firstHigh.deadline)}):""}):t("s6_none"))
+    +(anchors?`<div class="secsub">${ICO.clock}${t("anchors_title")}</div><div class="anchors">${anchors}</div>`:"")
+    +playbooksCard(warns)
+    +warns.map(warnCard).join("");
+
+  /* ---- 八、我的供应链 ---- */
+  const s8=secttl("八",t("sec")[6],t("s7_cnt"))
+    +guide(t("s7_guide"))
+    +`<div id="supplybase"><div class="card"><div class="loading">${t("sb_loading")}</div></div></div>`;
+
+  $("#main").innerHTML=
+    `<div class="card sitcard" id="sitcard" style="display:none"><h3>${ICO.chart}${t("sit_title")}</h3><div class="sit-grid"><div class="sit-cell" id="sit-warn"></div><div class="sit-cell" id="sit-eff" style="display:none"></div><div class="sit-cell" id="sit-nodes"></div><div class="sit-cell" id="sit-closed" style="display:none"></div><div class="sit-cell" id="sit-thin" style="display:none"></div></div></div>`
+   +`<section class="blk" id="s1">${s1}</section>`
+   +`<section class="blk" id="s2">${s2}</section>`
+   +`<section class="blk" id="s3">${s3}</section>`
+   +`<section class="blk" id="s4">${s4}</section>`
+   +`<section class="blk" id="s5">${s5}</section>`
+   +`<div class="card" id="sparkband" style="display:none"></div>`
+   +`<section class="blk" id="s9"><div id="cwbox"></div></section>`
+   +`<section class="blk" id="s6">${s6}</section>`
+   +`<section class="blk" id="s7"><div id="timeline"></div><div class="riskrank card" id="riskrank" style="display:none"></div></section>`
+   +`<section class="blk" id="s8">${s8}</section>`
+   +`<section class="blk"><div class="secttl"><span class="no">${LANG==="en"?"App.":"附"}</span><h2>${t("sec")[7]}</h2></div>
+     <div class="rubric"><h4>${t("m_heat")}</h4>
+     <div style="font-size:14px">${t("m_heat_b")}</div></div>
+     <div class="rubric"><h4>${t("m_cov")}</h4>
+     <div style="font-size:14px">${t("m_cov_b")}</div></div></section>`;
+  $("#footmeta").textContent=`${d.meta.date} · ${LANG==="en"?"Daily briefing data":"每日早报数据"}`;
+  renderIssuestrip();
+  initSpy();
+  const rq=document.getElementById("railq");
+  if(rq&&rq.value.trim())railSearch();
+  loadSupply();
+  paintTimeline();
+  paintSpark();
+  paintCw();
+  paintSituation(CURDATE,d);
+}
+
+async function loadSupply(){
+  const box=$("#supplybase");if(!box)return;
+  try{
+    const r=await fetch("https://nohho.github.io/hvac-intel/data/supply-base.json");
+    if(!r.ok)throw 0;
+    const s=await r.json();
+    buildRRMap(await riskRankJson());
+    buildSSMap(await soleSourceJson());
+    let tax=null;
+    try{const tr=await fetch("https://nohho.github.io/hvac-intel/data/taxonomy.json");if(tr.ok)tax=await tr.json();}catch(e){}
+    const maxMk=Math.max.apply(null,s.pcba.top_makers.map(x=>x.count));
+    const mkBars=s.pcba.top_makers.map(x=>
+      `<div class="bar"><div class="bl"><span>${esc(x.name)}</span><b>${x.count}</b></div><div class="bt"><div class="bf" style="width:${Math.round(x.count/maxMk*100)}%;background:#5ea3dd"></div></div></div>`).join("");
+    const ee=s.ee_categories.map(c=>
+      `<details class="sec"><summary style="font-size:14px">${esc(taxName(c.name))}<span class="cnt">${c.sub_count} ${t("u_subcats")}</span></summary><div class="body"><div style="font-size:14px;color:#3c546e">${c.subs.map(n=>esc(taxName(n))+catBadge(n)+soleBadge(n)).join(" · ")}</div></div></details>`).join("");
+    const p=s.pcba;
+    /* 基地供应商品类 tabs */
+    let baseHtml=`<div class="card"><div class="errmsg">${t("base_err")}</div></div>`;
+    if(tax&&tax.bases){
+      const order=["JCAC","WXAC","GZAC","亚太其他"];
+      const tabs=order.map((b,i)=>`<button class="tab${i===0?" on":""}" data-b="${b}" onclick="setBase('${b}')">${b} <small>${tax.bases[b].supplier_count} ${t("u_suppliers")}</small></button>`).join("");
+      baseHtml=`<div class="tabs">${tabs}</div>
+        <input class="searchbox" id="basesearch" placeholder="${esc(t("base_search_ph"))}" oninput="filterBase(this.value)">
+        <div class="card" id="baselist" style="max-height:520px;overflow-y:auto"></div>
+        <div style="font-size:12px;color:#8a99ab;margin:2px 2px 0">${t("base_note")}</div>`;
+      window._TAX=tax;window._BASE=order[0];window._Q="";
+    }
+    box.innerHTML=
+     `<div class="card suphit" id="suphit" style="display:none"></div>
+      <div class="card"><h3 style="margin-top:0">${t("sb_title")} <span class="pill p-blu">${t("sb_snapshot")} ${esc(s.snapshot_date)}</span></h3>
+      <div style="font-size:14px;color:#3c546e">${s.supplier_base.supplier_count} ${t("sb_u1")} · ${esc(s.supplier_base.coverage)} · PCBA ${p.total} ${t("sb_u2")}</div>
+      <div style="margin-top:6px;font-size:12px;color:#8a99ab">${t("sb_note")}</div></div>
+      <div class="secsub">${t("sb_risk")}</div>
+      <div class="mgrid" style="grid-template-columns:1fr 1fr">
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#1e86d6">${p.total}</b><div style="font-size:12px;color:#64748b">${t("sb_total")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#e0654f">${p.risk.High}</b><div style="font-size:12px;color:#64748b">${t("sb_high")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.eol}</b><div style="font-size:12px;color:#64748b">${t("sb_eol")}</div></div>
+        <div class="card" style="text-align:center"><b style="font-size:20px;color:#eda445">${p.lead_time_days.ge_180}</b><div style="font-size:12px;color:#64748b">${t("sb_lt")}</div></div></div>
+      <div class="secsub">${t("sb_ee")} <span style="font-weight:400;color:#8a99ab">${t("sb_ee_sub")}</span></div>${ee}
+      <div class="secsub">${t("sb_base")} <span style="font-weight:400;color:#8a99ab">${t("sb_base_sub")}</span></div>${baseHtml}
+      <div class="secsub">${t("sb_maker")}</div><div class="card">${mkBars}</div>`;
+    if(window._TAX)renderBase();
+    paintSupplyHits(s);
+  }catch(e){box.innerHTML=`<div class="card"><div class="errmsg">${t("sb_err")}</div></div>`;}
+}
+
+/* 命中汇总行：近 7 期每日 JSON（与态势卡共用 SIT_CACHE）× supply-base 品类名集合 */
+async function paintSupplyHits(s){
+  const el0=document.getElementById("suphit");if(!el0||!CURDATE)return;
+  const date=CURDATE;
+  const set=new Set();
+  ((s.supplier_base||{}).top_sub_categories||[]).forEach(x=>set.add(x.name));
+  (s.ee_categories||[]).forEach(c=>{set.add(c.name);(c.subs||[]).forEach(n=>set.add(n));});
+  const days=(window._ISSUE_DAYS||[]).filter(d=>d<=date).slice(-7);
+  if(!days.length)return;
+  const load=async d=>{
+    if(SIT_CACHE[d])return SIT_CACHE[d];
+    try{const r=await fetch("https://nohho.github.io/hvac-intel/data/"+d+".json");if(!r.ok)return null;const j=await r.json();SIT_CACHE[d]=j;return j;}catch(e){return null;}
+  };
+  const rs=await Promise.all(days.map(load));
+  const el=document.getElementById("suphit");
+  if(!el||CURDATE!==date)return;
+  let ok=0,x=0;const cats=new Set();
+  rs.forEach(j=>{
+    if(!j)return;ok++;
+    ((j.supplier_updates||[]).concat(j.hotspot_events||[])).forEach(e=>{
+      const hit=(e.subcategories||[]).filter(n=>set.has(n));
+      if(hit.length){x++;hit.forEach(n=>cats.add(n));}
+    });
+  });
+  if(!ok)return;
+  el.innerHTML=x?fmt(t("sup_hit"),{x:x,m:cats.size}):t("sup_hit_none");
+  el.style.display="";
+}
+function setBase(b){window._BASE=b;window._Q="";const si=$("#basesearch");if(si)si.value="";
+  document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("on",x.dataset.b===b));renderBase();}
+function filterBase(q){window._Q=(q||"").toLowerCase();renderBase();}
+function renderBase(){
+  const tax=window._TAX,b=window._BASE,q=window._Q||"";
+  const box=$("#baselist");if(!box||!tax)return;
+  const list=tax.bases[b].subcategories.filter(x=>!q||x.name.toLowerCase().includes(q));
+  const max=Math.max.apply(null,tax.bases[b].subcategories.map(x=>x.count).concat([1]));
+  box.innerHTML=list.length?list.map(x=>
+    `<div class="subitem"><span class="nm">${esc(x.name)}</span>
+     <span class="bt" style="flex:none;width:90px;height:7px;background:#edf1f6;border-radius:4px;overflow:hidden"><span class="bf" style="display:block;height:100%;width:${Math.round(x.count/max*100)}%;background:var(--blue);border-radius:4px"></span></span>
+     <span class="ct">${x.count} ${t("u_suppliers")}</span>${catBadge(x.name)}${soleBadge(x.name)}</div>`).join("")
+    :`<div class="errmsg">${t("base_nomatch")}</div>`;
+}
+
+let CURDATE=null;
+function copyIssueLink(){
+  const u=location.origin+location.pathname+"#date="+(CURDATE||"")+(LANG==="en"?"&lang=en":"");
+  const done=()=>{const b=$("#copylink");if(!b)return;const h0=b.innerHTML;b.innerHTML=ICO.check+t("copied");setTimeout(()=>{b.innerHTML=h0;},1500);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done).catch(()=>prompt(t("copy_prompt"),u));}
+  else prompt(t("copy_prompt"),u);
+}
+const CALURL="https://nohho.github.io/hvac-intel/anchors.ics";
+function showCalSub(){const d=document.getElementById("calsub");if(d&&!d.open){if(d.showModal)d.showModal();else d.setAttribute("open","");}}
+function hideCalSub(){const d=document.getElementById("calsub");if(!d||!d.open||d.classList.contains("closing"))return;if(RMQ&&RMQ.matches){d.close();return;}d.classList.add("closing");setTimeout(()=>{d.classList.remove("closing");if(d.open)d.close();},150);}
+function copyCalUrl(){
+  const done=()=>{const b=document.getElementById("calurl");b.value=t("cal_copied");setTimeout(()=>{b.value=CALURL;},1600);};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(CALURL).then(done).catch(()=>{document.getElementById("calurl").select();});}
+  else document.getElementById("calurl").select();
+}
+/* ---- 时效提示条：仅当「正在看最新一期」且「该期日期早于读者本地今天」时显示；
+   归档浏览（看的不是最新一期）不显示；跨时区按读者本地日期算 ---- */
+const MON_EN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function localToday(){const n=new Date();const p=v=>String(v).padStart(2,"0");return n.getFullYear()+"-"+p(n.getMonth()+1)+"-"+p(n.getDate());}
+function paintFresh(){
+  const fb=$("#freshbar");if(!fb)return;
+  const L=window._LATEST;
+  if(L&&CURDATE===L&&L<localToday()){
+    const mo=+L.slice(5,7),da=+L.slice(8,10);
+    fb.textContent=fmt(t("fresh_t"),{m:mo,d:da,mon:MON_EN[mo-1]});
+    fb.classList.add("show");
+  }else{fb.classList.remove("show");fb.textContent="";}
+}
+async function loadDay(date){
+  CURDATE=date;
+  paintFresh();
+  document.querySelectorAll(".errbar").forEach(b=>b.remove());
+  let eff=date,enFb=false;
+  try{
+    let r=await fetch("https://nohho.github.io/hvac-intel/data/"+date+(LANG==="en"?"-en":"")+".json");
+    if(!r.ok&&LANG==="en"){
+      const prev=(window._ISSUE_DAYS||[]).filter(d=>d<date).slice(-3).reverse();
+      for(const cd of prev){
+        const rr=await fetch("https://nohho.github.io/hvac-intel/data/"+cd+"-en.json");
+        if(rr.ok){r=rr;eff=cd;enFb=true;CURDATE=cd;break;}
+      }
+    }
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    if(!window._TAX){
+      try{const tr=await fetch("https://nohho.github.io/hvac-intel/data/taxonomy.json");if(tr.ok)window._TAX=await tr.json();}catch(e){}
+    }
+    FILTER="all";
+    const data=await r.json();
+    const apply=()=>{try{renderMain(data);if(enFb){paintFresh();const m=$("#main");if(m)m.insertAdjacentHTML("afterbegin",`<div class="infobar">${fmt(t("en_fb"),{d:eff})}</div>`);}}catch(e){const m=$("#main");if(m)m.insertAdjacentHTML("afterbegin",`<div class="errbar">${ICO.warn}${esc(eff)}${t("load_err_t")}${esc(e.message)}${t("load_err_b")}<a href="javascript:loadDay(CURDATE)">${t("retry")}</a></div>`);}};
+    if(document.startViewTransition&&!(RMQ&&RMQ.matches))document.startViewTransition(apply);
+    else apply();
+    document.querySelectorAll(".dpill").forEach(p=>p.classList.toggle("on",p.dataset.d===eff));
+    const ip2=$("#issuepill");
+    const no2=(window._ISSUE_DAYS||[]).indexOf(eff)+1;
+    if(ip2&&no2>0){ip2.textContent=fmt(t("issue_plain"),{n:no2});}
+    try{history.replaceState(null,"","#date="+eff+(LANG==="en"?"&lang=en":""));}catch(e){}
+    window.scrollTo({top:0});
+  }catch(e){
+    const m=$("#main");
+    if(m)m.insertAdjacentHTML("afterbegin",
+      `<div class="errbar">${ICO.warn}${esc(date)}${t("load_err_t")}${esc(e.message)}${t("load_err_b")}<a href="javascript:loadDay(CURDATE)">${t("retry")}</a></div>`);
+  }
+}
+
+/* ---- 供应链轻联动：risk-rank.json 单次缓存（风险榜与品类徽章共用） ---- */
+let RRD=null,RRMAP=null,RRDAYS=30;
+function riskRankJson(){
+  if(!RRD)RRD=fetch("https://nohho.github.io/hvac-intel/data/risk-rank.json").then(r=>r.ok?r.json():null).catch(()=>null);
+  return RRD;
+}
+function buildRRMap(d){
+  if(!d||RRMAP)return;
+  RRMAP={};(d.items||[]).forEach(i=>{RRMAP[i.name]=i;});
+  RRDAYS=d.window_days||30;
+}
+function catBadge(name){
+  if(!RRMAP)return "";
+  const i=RRMAP[name];if(!i)return "";
+  return `<span class="catbdg">${fmt(t("cat_badge"),{d:RRDAYS,h:i.hits,s:i.score})}</span>`;
+}
+
+/* ---- 单一来源底册：data/sole-source.json 单次缓存（失败静默，全部相关 UI 不出现） ---- */
+let SSD=null,SSMAP=null;
+function soleSourceJson(){
+  if(!SSD)SSD=fetch("https://nohho.github.io/hvac-intel/data/sole-source.json").then(r=>r.ok?r.json():null).catch(()=>null);
+  return SSD;
+}
+function buildSSMap(d){
+  if(!d||SSMAP)return;
+  SSMAP={};(d.items||[]).forEach(i=>{SSMAP[i.name]=i.supplier_count;});
+}
+function soleBadge(name){
+  if(!SSMAP)return "";
+  const c=SSMAP[name];if(!c)return "";
+  return c===1?`<span class="ssbdg1">${t("ss_single")}</span>`:`<span class="ssbdg2">${t("ss_dual")}</span>`;
+}
+/* 态势卡第五格：单一/双来源品类 ∩ 近期风险榜；任一数据未就绪则保持隐藏 */
+async function sitThinCell(){
+  const el0=document.getElementById("sit-thin");if(!el0)return;
+  const ss=await soleSourceJson();if(!ss)return;
+  const rr=await riskRankJson();if(!rr)return;
+  const el=document.getElementById("sit-thin");if(!el)return;
+  const risk=new Set((rr.items||[]).map(i=>i.name));
+  const rscore={};(rr.items||[]).forEach(i=>{rscore[i.name]=i.score||0;});
+  const cross=(ss.items||[]).filter(i=>risk.has(i.name)).sort((a,b)=>(rscore[b.name]||0)-(rscore[a.name]||0)).map(i=>taxName(i.name)); /* 2026-11-06：按风险分降序取前 5，之前按底册顺序取前 5 会漏掉高分项 */
+  const sep=LANG==="en"?", ":"、";
+  let list=cross.slice(0,5).join(sep);
+  if(cross.length>5)list+=(LANG==="en"?", etc.":"等");
+  el.innerHTML=`<div class="sit-lab">${t("sit_thin")}</div><div class="sit-big">${cross.length}<small>${t("sit_thin_unit")}</small></div><div class="sit-sub">${cross.length?esc(list):t("sit_thin_none")}</div>`;
+  el.style.display="";
+}
+
+async function renderRiskRank(){
+  try{
+    const d=await riskRankJson();
+    if(!d)return;
+    const items=(d.items||[]).slice(0,10);
+    if(!items.length)return;
+    const max=Math.max(...items.map(i=>i.score),1);
+    const el=$("#riskrank");
+    el.innerHTML=`<h3>${ICO.chart}${fmt(t("rr_title"),{days:d.window_days||30})}<span class="rrsub">${t("rr_sub")}</span></h3>`+
+      items.map((i,ix)=>`<div class="rrrow" title="${esc(i.sample||"")}"><span class="rrname">${ix+1}. ${esc(taxName(i.name))}</span><span class="rrbar"><i style="width:${Math.round(i.score/max*100)}%"></i></span><span class="rrscore">${fmt(t("rr_score"),{s:i.score,h:i.hits})}</span></div>`).join("");
+    el.style.display="block";
+  }catch(e){}
+}
+
+/* ---- 七、事件时间线（data/events.json，全量快照，与期号无关，加载一次后缓存重绘） ---- */
+let EVDATA=null,EVFAIL=false;
+function evStatus(s){return {"传闻":["evst-rum",t("evst_rumor")],"已通知":["evst-not",t("evst_notified")],"已生效":["evst-eff",t("evst_effective")],"已落地":["evst-done",t("evst_landed")],"已失效":["evst-dead",t("evst_expired")]}[s]||["evst-rum",esc(s)];}
+function toggleEv(btn){
+  const card=btn.closest(".evcard");if(!card)return;
+  card.querySelectorAll(".evhid").forEach(x=>{x.style.display="";});
+  const li=btn.closest("li");if(li)li.style.display="none";
+}
+function paintTimeline(){
+  const box=document.getElementById("timeline");if(!box)return;
+  const head=cnt=>secttl("七",t("tl_title"),cnt);
+  if(!EVDATA){
+    box.innerHTML=head("")+(EVFAIL
+      ?`<div class="card"><div class="errmsg">${t("tl_pending")}</div></div>`
+      :`<div class="card"><div class="loading">${t("tl_loading")}</div></div>`);
+    return;
+  }
+  const rank=s=>(s==="已落地"||s==="已失效")?1:0;
+  const items=EVDATA.map(e=>{
+    const tl=(e.timeline||[]).toSorted((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
+    return {e,tl,latest:tl.length?String(tl[0].date||""):""};
+  }).sort((a,b)=>rank(a.e.status)-rank(b.e.status)||b.latest.localeCompare(a.latest));
+  const active=items.filter(x=>rank(x.e.status)===0).length;
+  const li=(n,hid)=>`<li${hid?' class="evhid" style="display:none"':""}><span class="ed">${esc(n.date)}</span><span class="ec">${esc(LANG==="en"?(n.text_en||n.change):n.change)}</span></li>`;
+  const cards=items.map(({e,tl})=>{
+    const st=evStatus(e.status);
+    let body="";
+    if(tl.length>4){
+      body=tl.slice(0,3).map(n=>li(n,false)).join("")
+        +`<li class="evbtn"><button class="evmorebtn" onclick="toggleEv(this)">${fmt(t("tl_expand"),{n:tl.length})}</button></li>`
+        +tl.slice(3,-1).map(n=>li(n,true)).join("")
+        +li(tl[tl.length-1],false);
+    }else{
+      body=tl.map(n=>li(n,false)).join("");
+    }
+    return `<article class="card evcard"><div class="evhead"><h3>${esc(LANG==="en"?(e.title_en||e.title):e.title)}</h3><span class="evst ${st[0]}">${st[1]}</span></div><ul class="evt">${body}</ul></article>`;
+  }).join("");
+  box.innerHTML=head(fmt(t("tl_cnt"),{n:items.length}))+guide(fmt(t("tl_guide"),{n:items.length,a:active}))+cards;
+}
+async function loadEvents(){
+  try{
+    const r=await fetch("https://nohho.github.io/hvac-intel/data/events.json");
+    if(!r.ok)throw 0;
+    const d=await r.json();
+    EVDATA=Array.isArray(d)?d:(d.events||[]);
+  }catch(e){EVFAIL=true;}
+  paintTimeline();
+  sitEventCells();
+  paintWarnScope();
+}
+
+/* ---- 六期草稿：管理态势卡（近 7 天预警懒加载统计 + 事件库聚合）/ 预警影响面 ----
+   数据来源：第 1 格懒加载 data/<date>.json（SIT_CACHE 跨切换复用）；第 2、4 格与影响面行复用 EVDATA（loadEvents 同一份，不重复 fetch） */
+let SIT_CACHE={},SIT_SEQ=0;
+function sitDayDiff(a,b){
+  const p=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(s||""));return m?Date.UTC(+m[1],+m[2]-1,+m[3]):null;};
+  const x=p(a),y=p(b);return (x==null||y==null)?null:Math.round((y-x)/86400000);
+}
+function sitEventCells(){
+  if(!EVDATA)return;
+  const eff=document.getElementById("sit-eff"),cls=document.getElementById("sit-closed");
+  if(eff){
+    const hits=EVDATA.filter(e=>e.status==="已生效"&&/涨价|调价|提价/.test(String(e.title||"")));
+    if(hits.length){
+      const subs=new Set();hits.forEach(e=>(e.subcategories||[]).forEach(s=>subs.add(s)));
+      eff.style.display="";
+      eff.innerHTML=`<div class="sit-lab">${t("sit_eff")}</div><div class="sit-big">${hits.length}<small>${t("sit_eff_unit")}</small></div><div class="sit-sub">${fmt(t("sit_eff_sub"),{m:subs.size})}</div>`;
+    }else eff.style.display="none";
+  }
+  if(cls){
+    const a=EVDATA.filter(e=>e.status==="已落地").length,b=EVDATA.filter(e=>e.status==="已失效").length;
+    cls.style.display="";
+    cls.innerHTML=`<div class="sit-lab">${t("sit_closed")}</div><div class="sit-big">${a+b}<small>${t("sit_closed_unit")}</small></div><div class="sit-sub">${fmt(t("sit_closed_sub"),{a:a,b:b})}</div>`;
+  }
+  sitThinCell();
+}
+function paintWarnScope(){
+  if(!EVDATA||!CUR)return;
+  const byId={};EVDATA.forEach(e=>byId[e.id]=e);
+  document.querySelectorAll(".warn-scope").forEach(el=>{
+    const w=WMAP[el.getAttribute("data-wid")];if(!w)return;
+    const subs=new Set();
+    (w.related_events||[]).forEach(id=>{const e=byId[id];if(e)(e.subcategories||[]).forEach(s=>subs.add(s));});
+    if(!subs.size){el.textContent="";return;}
+    const names=Array.from(subs).map(taxName),sep=LANG==="en"?", ":"、";
+    let list=names.slice(0,4).join(sep);
+    if(names.length>4)list+=(LANG==="en"?", etc.":"等");
+    el.textContent=fmt(t("warn_scope"),{n:names.length,list:list});
+  });
+}
+async function paintSituation(date,dayData){
+  const card=document.getElementById("sitcard");if(!card||!date||!dayData)return;
+  const seq=++SIT_SEQ;
+  const nodes=(dayData.warnings||[]).filter(w=>w.deadline&&String(w.deadline)>=date)
+    .sort((a,b)=>String(a.deadline)<String(b.deadline)?-1:1).slice(0,3);
+  const nbox=document.getElementById("sit-nodes");
+  if(nbox)nbox.innerHTML=`<div class="sit-lab">${t("sit_nodes")}</div><div style="margin-top:3px">`
+    +(nodes.length?nodes.map(w=>{const x=sitDayDiff(date,w.deadline);
+      const xs=x===0?t("sit_today"):fmt(t("sit_in_days"),{n:x});
+      const tt=String(w.title||"");const cut=tt.length>20?tt.slice(0,20)+"…":tt;
+      return `<div class="sit-node">${esc(w.deadline)} ${esc(cut)}（${xs}）</div>`;}).join("")
+    :`<div class="sit-node">${t("sit_nodes_none")}</div>`)+`</div>`;
+  sitEventCells();
+  paintWarnScope();
+  card.style.display="block";
+  const days=(window._ISSUE_DAYS||[]).filter(d=>d<=date);
+  const recent=days.slice(-7),prior=days.length>=8?days.slice(-14,-7):[];
+  SIT_CACHE[date]=dayData;
+  const load=async ds=>{
+    let tot=0,hi=0,ok=0;
+    const rs=await Promise.all(ds.map(async d=>{
+      if(SIT_CACHE[d])return SIT_CACHE[d];
+      try{const r=await fetch("https://nohho.github.io/hvac-intel/data/"+d+".json");if(!r.ok)return null;const j=await r.json();SIT_CACHE[d]=j;return j;}catch(e){return null;}
+    }));
+    rs.forEach(j=>{if(j){ok++;const ws=j.warnings||[];tot+=ws.length;hi+=ws.filter(w=>w.urgency==="高").length;}});
+    return {tot:tot,hi:hi,ok:ok};
+  };
+  const R=await load(recent);
+  if(seq!==SIT_SEQ||CURDATE!==date)return;
+  if(!R.ok){card.style.display="none";return;}
+  let trend="";
+  if(prior.length){
+    const P=await load(prior);
+    if(seq!==SIT_SEQ||CURDATE!==date)return;
+    if(P.ok&&P.tot>0){
+      const diff=R.tot-P.tot,pct=Math.round(diff/P.tot*100);
+      const cls=pct>=10?"up":pct<=-10?"down":"flat";
+      const arrow=cls==="up"?"↑":cls==="down"?"↓":"→";
+      const wtxt=cls==="up"?t("sit_up"):cls==="down"?t("sit_down"):t("sit_flat");
+      trend=`<div class="sit-sub sit-trend ${cls}">${arrow} ${fmt(t("sit_trend"),{d:(diff>0?"+":"")+diff,p:(pct>0?"+":"")+pct+"%",w:wtxt})}</div>`;
+    }
+  }
+  const cell=document.getElementById("sit-warn");
+  if(cell)cell.innerHTML=`<div class="sit-lab">${t("sit_warn")}</div><div class="sit-big">${R.tot}<small>${fmt(t("sit_warn_unit"),{h:R.hi})}</small></div>${trend}`;
+}
+
+/* ---- 关键指标走势（data/series.json；缺失或点数不足时静默隐藏） ---- */
+let SERIES=null;
+function sparkSVG(pts){
+  const w=260,h=30;
+  const vs=pts.map(p=>+p.value),mn=Math.min.apply(null,vs),mx=Math.max.apply(null,vs),rg=(mx-mn)||1;
+  const X=i=>Math.round(2+i*(w-4)/(pts.length-1)*100)/100;
+  const Y=v=>Math.round((3+(1-(v-mn)/rg)*(h-6))*100)/100;
+  const line=pts.map((p,i)=>X(i)+","+Y(+p.value)).join(" ");
+  const last=pts[pts.length-1];
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#1e86d6" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="${X(pts.length-1)}" cy="${Y(+last.value)}" r="2.6" fill="#1e86d6"/></svg>`;
+}
+function paintSpark(){
+  const box=document.getElementById("sparkband");if(!box)return;
+  const defs=[
+    {k:"copper_lme_usd_t",name:t("sp_lme"),unit:t("sp_lme_u")},
+    {k:"aluminium_lme_usd_t",name:t("sp_alu"),unit:t("sp_alu_u")},
+    {k:"silver_usd_oz",name:t("sp_ag"),unit:t("sp_ag_u")},
+    {k:"usdcny",name:t("sp_fx"),unit:t("sp_fx_u"),dec:4}
+  ];
+  const rows=[];
+  let rngA="",rngB="";
+  if(SERIES)defs.forEach(d=>{
+    const pts=(SERIES[d.k]||[]).filter(p=>p&&isFinite(+p.value));
+    if(pts.length<2)return;
+    const first=pts[0],last=pts[pts.length-1];
+    if(!rngA||first.date<rngA)rngA=first.date;
+    if(!rngB||last.date>rngB)rngB=last.date;
+    const pct=(last.value-first.value)/first.value*100;
+    const pcol=pct>0?"#d4695c":pct<0?"#4a9457":"var(--mut)";
+    rows.push(`<div class="sparkrow"><span class="sparkname">${esc(d.name)}</span><span class="sparkwrap">${sparkSVG(pts)}</span><span class="sparklv"><b>${d.dec?Number(last.value).toFixed(d.dec):Number(last.value).toLocaleString("en-US")} ${esc(d.unit)}</b>${esc(mmdd(last.date))} · <span style="color:${pcol};font-weight:700">${pct>=0?"+":""}${pct.toFixed(2)}%</span></span></div>`);
+  });
+  if(!rows.length){box.style.display="none";box.replaceChildren();return;}
+  box.innerHTML=`<h3 style="margin-top:0;font-size:14.5px">${ICO.chart}${t("sp_title")}<span class="rrsub" style="font-weight:400;color:var(--mut);font-size:12px;margin-left:6px">${fmt(t("sp_sub"),{a:mmdd(rngA),b:mmdd(rngB)})}</span></h3>`+rows.join("");
+  box.style.display="block";
+}
+async function loadSeries(){
+  try{
+    const r=await fetch("https://nohho.github.io/hvac-intel/data/series.json");
+    if(!r.ok)throw 0;
+    SERIES=await r.json();
+  }catch(e){SERIES=null;}
+  paintSpark();
+  paintCw();
+}
+
+/* ---- 九、铜·冷媒专题（data/commodity-watch[-en].json + series.json 近一年序列；数据缺失时静默不渲染） ---- */
+const MT_COPPER_URL="https://www.macrotrends.net/1476/copper-prices-historical-chart-data";
+let CW=null;
+let CW_RANGE="1Y",CW_ARCHIVE=null,CW_ARCH_MSG="";
+const CW_CH={};
+function cwChart(pts,color,W,hs,cid,unit){
+  const w=Math.max(300,Math.min(1200,Math.round(W||360))),h=Math.round(Math.max(170,Math.min(235,w*0.42))*(hs||1)),L=56,R=54,T=10,B=22;
+  const vs=pts.map(p=>+p.value),mn=Math.min.apply(null,vs),mx=Math.max.apply(null,vs);
+  const pad=(mx-mn)*0.06||1,lo=mn-pad,hi=mx+pad,iw=w-L-R,ih=h-T-B;
+  const X=i=>Math.round((L+i*iw/(pts.length-1))*10)/10;
+  const Y=v=>Math.round((T+(1-(v-lo)/(hi-lo))*ih)*10)/10;
+  const line=pts.map((p,i)=>X(i)+","+Y(+p.value)).join(" ");
+  let grid="";
+  [mn,(mn+mx)/2,mx].forEach(v=>{const y=Y(v);grid+=`<line x1="${L}" y1="${y}" x2="${w-R}" y2="${y}" stroke="#e3eaf3" stroke-width="1"/><text x="${L-6}" y="${y+4}" font-size="11" fill="#64748b" text-anchor="end">${Number(v).toLocaleString("en-US")}</text>`;});
+  const starts=[];for(let i=1;i<pts.length;i++){if(pts[i].date.slice(5,7)!==pts[i-1].date.slice(5,7))starts.push(i);}
+  let ticks=[0];
+  starts.filter((_,j)=>j%2===0).forEach(i=>{if(X(i)-X(ticks[ticks.length-1])>=46)ticks.push(i);});
+  const li=pts.length-1;
+  if(li>0){if(X(li)-X(ticks[ticks.length-1])<46&&ticks.length>1)ticks.pop();if(ticks[ticks.length-1]!==li)ticks.push(li);}
+  let xl="";
+  ticks.forEach(i=>{const anch=i===0?"start":(i===li?"end":"middle");xl+=`<text x="${X(i)}" y="${h-6}" font-size="11" fill="#64748b" text-anchor="${anch}">${pts[i].date.slice(2,4)}/${pts[i].date.slice(5,7)}</text>`;});
+  const last=pts[li];
+  if(cid)CW_CH[cid]={pts:pts,unit:unit||"",w:w,h:h,L:L,R:R,T:T,B:B,lo:lo,hi:hi,iw:iw,ih:ih};
+  const ov=cid?`<rect class="cw-hit" data-cwcid="${cid}" x="${L}" y="${T}" width="${iw}" height="${ih}" fill="transparent" pointer-events="all" style="touch-action:pan-y;cursor:crosshair"/><line id="cw-x-${cid}" x1="0" x2="0" y1="${T}" y2="${T+ih}" stroke="#2c4a66" stroke-width="1" stroke-dasharray="3 3" style="display:none;pointer-events:none"/><circle id="cw-d-${cid}" r="4" fill="${color}" stroke="#fff" stroke-width="1.5" style="display:none;pointer-events:none"/>`:"";
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" aria-hidden="true">${grid}${xl}<polyline points="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(li)}" cy="${Y(+last.value)}" r="3.4" fill="${color}"/><text x="${w-2}" y="${Y(+last.value)+4}" font-size="13" font-weight="700" fill="#2c4a66" text-anchor="end">${Number(last.value).toLocaleString("en-US")}</text>${ov}</svg>`;
+}
+function cwOrg(o){const t1=String(o).match(/^([\u4e00-\u9fff]+)\s+(.+)$/),t2=t1?null:String(o).match(/^(.+?)\s+([\u4e00-\u9fff].*)$/),m=t1||t2;if(!m)return `<b>${esc(o)}</b>`;return `<b>${esc(m[1])}</b><br><span class="oen">${esc(m[2])}</span>`;}
+function cwSpark3(vals){
+  const w=118,h=26,mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),rg=(mx-mn)||1;
+  const X=i=>Math.round((3+i*(w-6)/(vals.length-1))*10)/10;
+  const Y=v=>Math.round((3+(1-(v-mn)/rg)*(h-6))*10)/10;
+  const line=vals.map((v,i)=>X(i)+","+Y(v)).join(" ");
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#1e86d6" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><circle cx="${X(vals.length-1)}" cy="${Y(vals[vals.length-1])}" r="2.4" fill="#1e86d6"/></svg>`;
+}
+function cwLinks(m){
+  return (m.links||[]).map(l=>` · <a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+}
+function cwStatLine(pts,ranged){
+  const last=pts[pts.length-1];
+  const vs=pts.map(p=>+p.value),mx=Math.max.apply(null,vs),mn=Math.min.apply(null,vs);
+  const p5=pts[pts.length-6]||pts[0];
+  const pct=(last.value-p5.value)/p5.value*100;
+  const col=pct>0?"#d4695c":pct<0?"#4a9457":"var(--mut)";
+  return `<b>${Number(last.value).toLocaleString("en-US")}</b> · ${mmdd(last.date)} · ${fmt(t(ranged?"cw_range_r":"cw_range"),{hi:Number(mx).toLocaleString("en-US"),lo:Number(mn).toLocaleString("en-US")})} · ${t("cw_5d")} <span style="color:${col};font-weight:700">${pct>=0?"+":""}${pct.toFixed(1)}%</span>`;
+}
+function paintCw(){
+  const box=document.getElementById("cwbox");if(!box||!CW)return;
+  const cs=cwCutSeries();
+  const shfe=cs.shfe,lme1y=cs.lme1y,r32=cs.r32,r410a=cs.r410a;
+  const hasCharts=shfe.length>=5&&lme1y.length>=5;
+  const rfL=SERIES?SERIES["refrigerant_spot_latest"]||null:null;
+  const hasRf=r32.length>=2&&r410a.length>=2&&!!rfL;
+  const rfRange=n=>{const it=rfL?rfL.items.find(x=>x.name===n):null;return it?Number(it.low).toLocaleString("en-US")+"\u2013"+Number(it.high).toLocaleString("en-US")+" "+t("cw_unit_t"):"";};
+  const d=CW;
+  let h=secttl("专",t("sec")[8],fmt(t("cw_cnt"),{d:d.updated||""}))+guide(t("cw_guide"));
+  h+=`<div class="cw-archrow"><label for="cwdate">${t("cw_arch_pick")}</label><input type="date" id="cwdate" class="cw-datein" min="2026-11-24" max="${localToday()}" value="${CW_ARCHIVE||""}">${CW_ARCHIVE?`<span class="cw-archbadge">${fmt(t("cw_arch"),{d:CW_ARCHIVE})}</span><button class="cw-rbtn" id="cwback" type="button">${t("cw_arch_latest")}</button>`:""}${CW_ARCH_MSG?`<span class="cw-archmsg">${esc(CW_ARCH_MSG)}</span>`:""}</div>`;
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_status_t")}</h3><div class="cw-grid">`
+    +d.status.map(c=>`<div class="cw-cell"><div class="sit-lab"><span class="cw-dot ${esc(c.light)}"></span>${esc(c.title)}</div><div class="sit-big">${esc(c.big)}</div><div class="sit-sub">${esc(c.sub)}</div></div>`).join("")
+    +`</div><div class="src">${t("cw_status_src")}</div></div>`;
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_cu_t")}</h3>`
+    +`<div class="cw-rbtns" role="group"><button class="cw-rbtn${CW_RANGE==="1M"?" on":""}" type="button" data-r="1M">${t("cw_r_1m")}</button><button class="cw-rbtn${CW_RANGE==="3M"?" on":""}" type="button" data-r="3M">${t("cw_r_3m")}</button><button class="cw-rbtn${CW_RANGE==="1Y"?" on":""}" type="button" data-r="1Y">${t("cw_r_1y")}</button></div>`
+    +(hasCharts?`<div class="cw-chartlab"><span class="cl">${t("cw_shfe")}</span><span class="cv" id="cwsl1">${cwStatLine(shfe,CW_RANGE!=="1Y")}</span></div>`
+    +`<div id="cwc1" tabindex="0" role="img" aria-label="${esc(t("cw_shfe"))}"></div>`
+    +`<div class="cw-chartlab"><span class="cl">${t("cw_lme")}</span><span class="cv" id="cwsl2">${cwStatLine(lme1y,CW_RANGE!=="1Y")}</span></div>`
+    +`<div id="cwc2" tabindex="0" role="img" aria-label="${esc(t("cw_lme"))}"></div>`
+    :"")
+    +(d.copper.spot_rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
+    +`<div class="src">${esc(d.copper.src)}${cwLinks(d.copper)} · <a href="${MT_COPPER_URL}" target="_blank" rel="noopener">${t("cw_mt")}</a></div></div>`;
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_fc_t")}</h3><div class="cw-twrap"><table class="cw-table fc"><colgroup><col style="width:20%"><col style="width:12%"><col style="width:16%"><col style="width:36%"><col style="width:16%"></colgroup><thead><tr><th>${t("cw_h_org")}</th><th class="n">2026</th><th class="n">2027</th><th>${t("cw_h_view")}</th><th>${t("cw_h_upd")}</th></tr></thead><tbody>`
+    +d.forecasts.rows.map(r=>`<tr><td>${cwOrg(r.org)}</td><td class="n">${esc(r.y2026)}</td><td class="n">${esc(r.y2027)}${r.y2027_sub?`<br><span style="color:var(--mut);font-size:12px;white-space:normal">${esc(r.y2027_sub)}</span>`:""}</td><td>${esc(r.view)}</td><td class="u">${esc(r.upd)}</td></tr>`).join("")
+    +`</tbody></table></div><div class="src">${esc(d.forecasts.src)}${cwLinks(d.forecasts)}</div></div>`;
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_sc_t")}</h3><div class="cw-grid3">`
+    +d.scenarios.items.map(it=>`<div class="cw-cell"><div class="sit-lab">${esc(it.name)} · ${esc(it.prob)}${it.cur?`<span class="cw-cur">${t("cw_cur")}</span>`:""}</div><div class="sit-big">${esc(it.range)}</div><div class="sit-sub">${esc(it.trig)}</div></div>`).join("")
+    +`</div><div class="cw-scenow"><b>${esc(d.scenarios.now_head)}：</b>${esc(d.scenarios.now_body)}</div><div class="src">${esc(d.scenarios.src)}</div></div>`;
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_rf_t")}</h3><div class="cw-twrap"><table class="cw-table gr"><colgroup><col style="width:15%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col><col style="width:13%"></colgroup><thead><tr><th>${t("cw_h_grade")}</th><th class="n">2026 Q1</th><th class="n">Q2</th><th class="n">Q3</th><th>${t("cw_h_trend")}</th><th class="n">${t("cw_h_ytd")}</th></tr></thead><tbody>`
+    +d.refrigerant.grades.map(g=>`<tr><td><b>${esc(g.name)}</b></td><td class="n">${Number(g.q[0]).toLocaleString("en-US")}</td><td class="n">${Number(g.q[1]).toLocaleString("en-US")}</td><td class="n"><b>${g.approx?t("cw_approx"):""}${Number(g.q[2]).toLocaleString("en-US")}</b></td><td>${cwSpark3(g.q)}</td><td class="n" style="color:#d4695c;font-weight:700">${esc(g.chg)}</td></tr>`).join("")
+    +`</tbody></table></div>`
+    +(hasRf?`<div class="cw-chartlab"><span class="cl">${t("cw_rf_spot")}</span><span class="cv">${esc((rfL.date||"").slice(5))}${rfL.outlet?" · "+esc(rfL.outlet):""}</span></div>`
+    +`<div class="cw-chartlab"><span class="cl">R32</span><span class="cv">${rfRange("R32")}</span></div><div id="cwc3"></div>`
+    +`<div class="cw-chartlab"><span class="cl">R410A</span><span class="cv">${rfRange("R410A")}</span></div><div id="cwc4"></div>`:"")
+    +(d.refrigerant.rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
+    +`<div class="src">${esc(d.refrigerant.src)}</div></div>`;
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_po_t")}</h3><div class="cw-twrap"><table class="cw-table pl"><colgroup><col style="width:12%"><col style="width:32%"><col style="width:34%"><col style="width:22%"></colgroup><thead><tr><th>${t("cw_h_region")}</th><th>${t("cw_h_law")}</th><th>${t("cw_h_state")}</th><th>${t("cw_h_next")}</th></tr></thead><tbody>`
+    +d.policy.rows.map(r=>`<tr><td><b>${esc(r.region)}</b></td><td>${esc(r.law)}</td><td>${esc(r.state)}</td><td>${esc(r.next)}</td></tr>`).join("")
+    +`</tbody></table></div>`
+    +(d.policy.nodes||[]).map(n=>`<div class="cw-noderow"><span class="nd">${esc(n.d)}</span><span><b>${esc(n.head)}</b>${esc(n.body)}</span></div>`).join("")
+    +`<div class="src">${esc(d.policy.src)}${cwLinks(d.policy)}</div></div>`;
+  box.innerHTML=h;
+  const c1=document.getElementById("cwc1");if(c1)c1.innerHTML=cwChart(shfe,"#1e86d6",c1.clientWidth,1,"c1",t("cw_u_cny"));
+  const c2=document.getElementById("cwc2");if(c2)c2.innerHTML=cwChart(lme1y,"#2c4a66",c2.clientWidth,1,"c2",t("cw_u_usd"));
+  const c3=document.getElementById("cwc3");if(c3)c3.innerHTML=cwChart(r32,"#1e86d6",c3.clientWidth,0.6);
+  const c4=document.getElementById("cwc4");if(c4)c4.innerHTML=cwChart(r410a,"#b3851f",c4.clientWidth,0.6);
+  const c1t=document.getElementById("cwc1");if(c1t)cwTipEl(c1t);
+  const c2t=document.getElementById("cwc2");if(c2t)cwTipEl(c2t);
+  cwSyncHeads();
+  cwInitUI();
+}
+/* ---- s9 交互：区间切换 / 悬浮提示 / 存档查看 / 表头吸顶 ---- */
+function addDays(ds,n){const d=new Date(ds+"T00:00:00");d.setDate(d.getDate()+n);const p=v=>String(v).padStart(2,"0");return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate());}
+function cwCutSeries(applyRange){
+  if(applyRange===undefined)applyRange=true;
+  const f=k=>(SERIES?(SERIES[k]||[]):[]).filter(p=>p&&isFinite(+p.value));
+  const s={shfe:f("copper_shfe_cny_t"),lme1y:f("copper_lme_1y_usd_t"),r32:f("refrigerant_r32_cny_t"),r410a:f("refrigerant_r410a_cny_t")};
+  if(CW_ARCHIVE){for(const k in s)s[k]=s[k].filter(p=>p.date<=CW_ARCHIVE);}
+  if(applyRange&&CW_RANGE!=="1Y"){
+    let mx="";
+    s.shfe.concat(s.lme1y).forEach(p=>{if(p.date>mx)mx=p.date;});
+    if(mx){const cut=addDays(mx,CW_RANGE==="1M"?-30:-90);for(const k in s)s[k]=s[k].filter(p=>p.date>=cut);}
+  }
+  return s;
+}
+function cwTipEl(box){
+  if(!box||box.querySelector(".cw-tip"))return;
+  const d=document.createElement("div");
+  d.className="cw-tip";
+  box.appendChild(d);
+}
+function cwHideTip(){
+  document.querySelectorAll("#cwbox .cw-tip").forEach(e=>{e.style.display="none";});
+  document.querySelectorAll('[id^="cw-x-"],[id^="cw-d-"]').forEach(e=>{e.style.display="none";});
+}
+function cwShowTip(cid,i){
+  const g=CW_CH[cid];if(!g||!g.pts.length)return;
+  const ii=Math.max(0,Math.min(g.pts.length-1,i));
+  const p=g.pts[ii];
+  const X=g.L+ii*g.iw/(g.pts.length-1);
+  const Y=g.T+(1-(+p.value-g.lo)/(g.hi-g.lo))*g.ih;
+  const line=document.getElementById("cw-x-"+cid),dot=document.getElementById("cw-d-"+cid);
+  if(line){line.setAttribute("x1",X);line.setAttribute("x2",X);line.style.display="";}
+  if(dot){dot.setAttribute("cx",X);dot.setAttribute("cy",Y);dot.style.display="";}
+  const svg=line?line.closest("svg"):null;if(!svg)return;
+  const box=svg.parentElement,tip=box?box.querySelector(".cw-tip"):null;if(!tip)return;
+  let chg="";
+  if(ii>0){const pc=(+p.value-+g.pts[ii-1].value)/+g.pts[ii-1].value*100;chg=` · <span class="${pc>=0?"pos":"neg"}">${pc>=0?"+":""}${pc.toFixed(2)}%</span>`;}
+  tip.innerHTML=`<b>${Number(p.value).toLocaleString("en-US")} ${esc(g.unit)}</b><br>${esc(p.date)}${chg}`;
+  const r=svg.getBoundingClientRect();
+  tip.style.display="block";
+  const px=X/g.w*r.width,py=Y/g.h*r.height,tw=tip.offsetWidth,th=tip.offsetHeight;
+  let left=px+10;if(left+tw>box.clientWidth-4)left=px-tw-10;if(left<4)left=4;
+  let top=py-th-8;if(top<4)top=py+10;
+  tip.style.left=left+"px";tip.style.top=top+"px";
+}
+function cwOnPoint(e){
+  const hit=e.target&&e.target.closest?e.target.closest("[data-cwcid]"):null;
+  if(!hit)return false;
+  const cid=hit.getAttribute("data-cwcid"),g=CW_CH[cid];
+  if(!g||!g.pts.length)return false;
+  const svg=hit.closest("svg");if(!svg)return false;
+  const r=svg.getBoundingClientRect();
+  const vx=(e.clientX-r.left)*(g.w/r.width);
+  let i=Math.round((vx-g.L)/g.iw*(g.pts.length-1));
+  i=Math.max(0,Math.min(g.pts.length-1,i));
+  cwShowTip(cid,i);
+  return true;
+}
+function paintCwCharts(){
+  const c=cwCutSeries();
+  const s1=document.getElementById("cwsl1");if(s1)s1.innerHTML=c.shfe.length>=5?cwStatLine(c.shfe,CW_RANGE!=="1Y"):"";
+  const s2=document.getElementById("cwsl2");if(s2)s2.innerHTML=c.lme1y.length>=5?cwStatLine(c.lme1y,CW_RANGE!=="1Y"):"";
+  const c1=document.getElementById("cwc1");if(c1){c1.innerHTML=c.shfe.length>=5?cwChart(c.shfe,"#1e86d6",c1.clientWidth,1,"c1",t("cw_u_cny")):"";cwTipEl(c1);}
+  const c2=document.getElementById("cwc2");if(c2){c2.innerHTML=c.lme1y.length>=5?cwChart(c.lme1y,"#2c4a66",c2.clientWidth,1,"c2",t("cw_u_usd")):"";cwTipEl(c2);}
+  const c3=document.getElementById("cwc3");if(c3)c3.innerHTML=c.r32.length>=2?cwChart(c.r32,"#1e86d6",c3.clientWidth,0.6):"";
+  const c4=document.getElementById("cwc4");if(c4)c4.innerHTML=c.r410a.length>=2?cwChart(c.r410a,"#b3851f",c4.clientWidth,0.6):"";
+  document.querySelectorAll(".cw-rbtn[data-r]").forEach(b=>b.classList.toggle("on",b.dataset.r===CW_RANGE));
+  cwSyncHeads();
+}
+async function cwGoArchive(dt){
+  if(!dt){CW_ARCHIVE=null;CW_ARCH_MSG="";loadCw();return;}
+  CW_ARCHIVE=dt;CW_ARCH_MSG="";
+  loadCw();
+}
+let _cwClone=null;
+function cwCloneEl(){
+  if(_cwClone)return _cwClone;
+  const w=document.createElement("div");
+  w.id="cwclone";w.className="cw-clonewrap";w.setAttribute("aria-hidden","true");
+  w.innerHTML='<table class="cw-table"><thead></thead></table>';
+  document.body.appendChild(w);
+  return _cwClone=w;
+}
+function cwSyncHeads(){
+  const nav=document.querySelector("nav.secnav");
+  const navH=(nav&&getComputedStyle(nav).position==="sticky")?nav.offsetHeight:0;
+  const tables=Array.from(document.querySelectorAll("#cwbox .cw-table")).filter(tb=>tb.querySelector("thead"));
+  let act=null;
+  for(const tb of tables){
+    const thead=tb.querySelector("thead");if(!thead)continue;
+    const r=tb.getBoundingClientRect(),hr=thead.getBoundingClientRect();
+    if(hr.top<navH+1&&r.bottom>navH+48){act={tb:tb,thead:thead,wrap:tb.closest(".cw-twrap")};break;}
+  }
+  const cw=cwCloneEl();
+  if(!act){cw.style.display="none";return;}
+  const tbl=cw.querySelector("table");
+  if(cw._for!==act.tb){
+    const cg=act.tb.querySelector("colgroup");
+    tbl.innerHTML=(cg?cg.outerHTML:"")+act.thead.outerHTML;
+    tbl.className=act.tb.className;
+    tbl.style.width=act.tb.offsetWidth+"px";
+    const srcThs=act.thead.querySelectorAll("th"),dstThs=tbl.querySelectorAll("thead th");
+    srcThs.forEach((th,i)=>{if(dstThs[i])dstThs[i].style.width=th.offsetWidth+"px";});
+    cw._for=act.tb;
+  }
+  const wr=act.wrap?act.wrap.getBoundingClientRect():act.tb.getBoundingClientRect();
+  cw.style.display="block";
+  cw.style.top=navH+"px";
+  cw.style.left=wr.left+"px";
+  cw.style.width=wr.width+"px";
+  tbl.style.transform="translateX("+(-(act.wrap?act.wrap.scrollLeft:0))+"px)";
+}
+function cwInitUI(){
+  if(window._CWUI)return;window._CWUI=1;
+  const box=document;
+  box.addEventListener("pointermove",e=>{cwOnPoint(e);});
+  box.addEventListener("pointerdown",e=>{cwOnPoint(e);});
+  box.addEventListener("pointerout",e=>{
+    if(e.pointerType!=="mouse")return;
+    const svg=e.target&&e.target.closest?e.target.closest("svg"):null;
+    if(!svg)return;
+    const rt=e.relatedTarget;
+    if(rt&&svg.contains(rt))return;
+    cwHideTip();
+  });
+  box.addEventListener("click",e=>{
+    const rb=e.target&&e.target.closest?e.target.closest(".cw-rbtn"):null;
+    if(!rb)return;
+    if(rb.dataset.r){CW_RANGE=rb.dataset.r;cwHideTip();paintCwCharts();}
+    else if(rb.id==="cwback"){CW_ARCHIVE=null;CW_ARCH_MSG="";cwHideTip();loadCw();}
+  });
+  box.addEventListener("change",e=>{if(e.target&&e.target.id==="cwdate")cwGoArchive(e.target.value);});
+  box.addEventListener("keydown",e=>{
+    const c=e.target&&e.target.closest?e.target.closest("#cwc1,#cwc2"):null;
+    if(!c)return;
+    const cid=c.id==="cwc1"?"c1":"c2",g=CW_CH[cid];
+    if(!g||!g.pts.length)return;
+    let i=(g._i===undefined)?g.pts.length-1:g._i;
+    if(e.key==="ArrowLeft")i=Math.max(0,i-1);
+    else if(e.key==="ArrowRight")i=Math.min(g.pts.length-1,i+1);
+    else if(e.key==="Home")i=0;
+    else if(e.key==="End")i=g.pts.length-1;
+    else return;
+    e.preventDefault();
+    g._i=i;cwShowTip(cid,i);
+  });
+  document.addEventListener("pointerdown",e=>{
+    if(!e.target||!e.target.closest||!e.target.closest(".cw-hit"))cwHideTip();
+  },true);
+  window.addEventListener("scroll",()=>{cwSyncHeads();},{passive:true});
+  window.addEventListener("resize",()=>{if(_cwClone)_cwClone._for=null;cwSyncHeads();});
+  document.addEventListener("scroll",()=>{cwSyncHeads();},true);
+}
+let _cwReq=0;
+async function loadCw(){
+  const arc=CW_ARCHIVE;
+  const my=++_cwReq;
+  const url=arc?(LANG==="en"?`https://nohho.github.io/hvac-intel/data/cw-${arc}-en.json`:`https://nohho.github.io/hvac-intel/data/cw-${arc}.json`):(LANG==="en"?"https://nohho.github.io/hvac-intel/data/commodity-watch-en.json":"https://nohho.github.io/hvac-intel/data/commodity-watch.json");
+  try{
+    const r=await fetch(url);
+    if(!r.ok)throw 0;
+    const j=await r.json();
+    if(my!==_cwReq)return;
+    CW=j;
+  }catch(e){
+    if(my!==_cwReq)return;
+    if(arc){CW_ARCHIVE=null;CW_ARCH_MSG=t("cw_arch_no");return loadCw();}
+    CW=null;
+  }
+  paintCw();
+}
+
+async function boot(){
+  initLang();
+  applyLang();
+  try{
+    const idx=await (await fetch("https://nohho.github.io/hvac-intel/data/index.json")).json();
+    const days=idx.days||[];
+    const recent=days.slice(-14).reverse();
+    const older=days.slice(0,-14).reverse();
+    const pill=dt=>`<button class="dpill" data-d="${esc(dt)}" onclick="loadDay('${esc(dt)}')">${esc(dt.slice(5))}</button>`;
+    let html=recent.map(pill).join("");
+    if(older.length){
+      const byM={};
+      older.forEach(dt=>{const m=dt.slice(0,7);(byM[m]=byM[m]||[]).push(dt);});
+      html+=`<details class="arch"><summary>${fmt(t("older"),{n:older.length})}</summary>`+
+        Object.keys(byM).sort().reverse().map(m=>
+          `<div class="mrow"><div class="mlab">${m}</div><div class="dpills" style="margin-top:0">${byM[m].map(pill).join("")}</div></div>`).join("")+
+        `</details>`;
+    }
+    $("#dpills").innerHTML=html;
+    const ip=$("#issuepill");
+    const no=days.indexOf(idx.latest||days[days.length-1])+1;
+    if(no>0){ip.textContent=fmt(t("issue_plain"),{n:no});ip.style.display="inline-block";}
+    window._ISSUE_DAYS=days;
+    window._LATEST=idx.latest||days[days.length-1];
+    initRailSearch();
+    const cd=document.getElementById("calsub");
+    if(cd)cd.addEventListener("click",e=>{const r=cd.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)hideCalSub();});
+    if(cd)cd.addEventListener("cancel",e=>{e.preventDefault();hideCalSub();});
+    const hm=(location.hash||"").match(/date=(\d{4}-\d{2}-\d{2})/);
+    const start=(hm&&days.indexOf(hm[1])>=0)?hm[1]:(idx.latest||days[days.length-1]);
+    window.addEventListener("hashchange",()=>{
+      const h=location.hash||"";
+      const m2=h.match(/date=(\d{4}-\d{2}-\d{2})/);
+      const lm=h.match(/lang=(en|zh)/);
+      if(!m2&&!lm){
+        // 纯页内锚点（如左侧导航 #s1-#s8）：只滚动，不切语言/日期；回写规范 hash 保住当前期与语言
+        if(CURDATE){try{history.replaceState(null,"","#date="+CURDATE+(LANG==="en"?"&lang=en":""));}catch(e){}}
+        return;
+      }
+      const nl=lm?lm[1]:"zh";
+      const nd=(m2&&days.indexOf(m2[1])>=0)?m2[1]:CURDATE;
+      if(nl!==LANG){initLang();applyLang();if(nd)loadDay(nd);loadCw();}
+      else if(m2&&m2[1]!==CURDATE&&days.indexOf(m2[1])>=0)loadDay(m2[1]);
+    });
+    await loadDay(start);
+    renderRiskRank();
+    loadEvents();
+    loadSeries();
+    loadCw();
+    cwInitUI();
+  }catch(e){$("#main").innerHTML=`<div class="errmsg">${t("boot_err")}</div>`;}
+}
+boot();
+</script>
+</body>
+</html>
