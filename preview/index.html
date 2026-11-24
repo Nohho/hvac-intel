@@ -1762,7 +1762,7 @@ async function boot(){
     if(cd)cd.addEventListener("click",e=>{const r=cd.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)hideCalSub();});
     if(cd)cd.addEventListener("cancel",e=>{e.preventDefault();hideCalSub();});
     const bt=document.getElementById("backtop");
-    const syncBt=()=>{if(bt)bt.classList.toggle("show",window.scrollY>500);};
+    const syncBt=()=>{if(bt)bt.classList.toggle("show",window.scrollY>0);};
     if(bt)bt.addEventListener("click",()=>{window.scrollTo({top:0,behavior:sb()});});
     window.addEventListener("scroll",syncBt,{passive:true});
     syncBt();
