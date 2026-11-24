@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="https://nohho.github.io/hvac-intel/og-cover.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a58a6'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
 <style>
-:root{--blue:#1e86d6;--navy:#2c4a66;--bg:#f2f5f9;--card:#fff;--ink:#1c2733;--mut:#64748b;--line:#e3eaf3;--tint:#e9f2fb}
+:root{--blue:#1e86d6;--navy:#2c4a66;--bg:#f2f5f9;--card:#fff;--ink:#1c2733;--mut:#64748b;--line:#e3eaf3;--tint:#e9f2fb;--up-lt:#ffb3a7;--dn-lt:#8fd6a8;--amber:#b3851f}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.7;text-wrap:pretty}
 header.top{background:linear-gradient(120deg,#3aa7f5 0%,#1e86d6 55%,#1773b4 100%);color:#fff;padding:20px 16px 14px}
@@ -358,6 +358,20 @@ nav.secnav a .rn .ic{width:14px;height:14px;margin:0;vertical-align:middle}
 .cw-noderow .nd{flex:none;width:92px;font-weight:700;color:var(--navy);font-size:12.5px;padding-top:1px}
 .cw-scenow{margin-top:10px;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:14px;line-height:1.65}
 .cw-cur{font-size:12px;font-weight:700;color:#fff;background:var(--blue);border-radius:9px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.cw-archrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 2px}
+.cw-archbadge{font-size:12.5px;font-weight:700;color:var(--navy);background:var(--tint);border:1px solid var(--line);border-radius:9px;padding:3px 9px}
+.cw-archmsg{font-size:12.5px;color:var(--amber);font-weight:700}
+.cw-datein{font-size:13px;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:#fff;font-family:inherit}
+.cw-rbtns{display:flex;gap:6px;margin:10px 0 2px}
+.cw-rbtn{flex:none;font-size:12.5px;color:var(--navy);border:1px solid var(--line);background:#fff;border-radius:14px;padding:4px 12px;cursor:pointer;font-family:inherit}
+.cw-rbtn.on{background:var(--blue);color:#fff;font-weight:700;border-color:var(--blue)}
+#cwc1,#cwc2{position:relative}
+.cw-tip{position:absolute;z-index:5;pointer-events:none;background:var(--navy);color:#fff;border-radius:8px;padding:6px 9px;font-size:12.5px;line-height:1.5;white-space:nowrap;box-shadow:0 2px 8px rgba(11,42,74,.25);display:none}
+.cw-tip b{font-size:13.5px}
+.cw-tip .pos{color:var(--up-lt)}
+.cw-tip .neg{color:var(--dn-lt)}
+.cw-clonewrap{position:fixed;left:0;z-index:18;overflow:hidden;pointer-events:none;display:none;background:var(--card);box-shadow:0 2px 6px rgba(11,42,74,.08)}
+.cw-clonewrap .cw-table{margin-top:0}
 .infobar{font-size:13px;color:#2c4a68;background:var(--tint);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:10px 0;line-height:1.6}
 .railsearch.msearch{display:none}
 @media(max-width:1023px){.railsearch.msearch{display:block;margin-top:12px}}
@@ -518,13 +532,17 @@ zh:{
  evst_rumor:"传闻",evst_notified:"已通知",evst_effective:"已生效",evst_landed:"已落地",evst_expired:"已失效",
  cd_future:"距生效 {n} 天",cd_today:"今日生效",cd_past:"已生效",
  sp_title:"关键指标走势",sp_sub:"日度数据 · {a} – {b}",
- cw_cnt:"专题 · 数据截至 {d} · 状态月度复核",cw_guide:"铜看「波动管理」，冷媒看「政策锁量」。本节收拢两类关键原料的价格走势、机构预测、情景研判与政策节点；日内动态仍见第五节供应商动态，风险提示见第六节预警与建议。",
- cw_status_t:"专题状态 · 四项研判",cw_status_src:"状态灯为研判结论（红=高位/收紧，黄=高波动/拉锯，绿=格局未变），月度复核、事件驱动临时更新；依据见本节各模块。",
+ cw_cnt:"专题 · 数据截至 {d} · 状态每周复核",cw_guide:"铜看「波动管理」，冷媒看「政策锁量」。本节收拢两类关键原料的价格走势、机构预测、情景研判与政策节点；日内动态仍见第五节供应商动态，风险提示见第六节预警与建议。",
+ cw_status_t:"专题状态 · 四项研判",cw_status_src:"状态灯为研判结论（红=高位/收紧，黄=高波动/拉锯，绿=格局未变），每周复核、事件驱动临时更新；依据见本节各模块。",
  cw_cu_t:"铜价走势 · 近一年日度",cw_shfe:"沪铜主力连续 · 日收盘（元/吨，含税）",cw_lme:"LME 3M 铜（美元/吨，不含税）",cw_range:"近一年高 {hi} / 低 {lo}",cw_5d:"近 5 交易日",
  cw_fc_t:"机构预测跟踪 · LME 铜均价（美元/吨，不含税）",cw_h_org:"机构",cw_h_view:"核心观点",cw_h_upd:"更新",
  cw_sc_t:"情景研判 · 2027 年上半年 LME 铜（美元/吨，不含税）",cw_cur:"预判基准",
  cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨，含税）",cw_rf_spot:"华东现货 · 早报每日核实",cw_unit_t:"元/吨（含税）",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
  cw_po_t:"政策框架与关键节点",cw_h_region:"地区",cw_h_law:"法规",cw_h_state:"2027 年状态",cw_h_next:"下一节点",en_fb:"英文版每周一至五发布，当前显示 {d} 期英文版。",
+ cw_range_r:"区间高 {hi} / 低 {lo}",cw_r_1m:"近 1 月",cw_r_3m:"近 3 月",cw_r_1y:"近 1 年",
+ cw_hist_t:"历史数据 · 日收盘",cw_hist_d:"日期",cw_hist_shfe:"沪铜 (元/吨)",cw_hist_lme:"LME 3M (美元/吨)",cw_hist_all:"显示全部近一年",cw_hist_30:"仅看近 30 日",
+ cw_arch:"查看 {d} 存档",cw_arch_no:"该日期暂无存档（存档自 2026-11-24 起）",cw_arch_latest:"回最新",cw_arch_pick:"选择日期",
+ cw_u_cny:"元/吨",cw_u_usd:"美元/吨",
  sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨（不含税）",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨（不含税）",sp_ag:"白银",sp_ag_u:"美元/盎司（不含税）",sp_fx:"美元/人民币",sp_fx_u:"元",
  sit_title:"管理态势 · 近 7 天",
  sit_warn:"近 7 天预警",sit_warn_unit:" 条 · 高紧迫 {h}",
@@ -616,13 +634,17 @@ en:{
  evst_rumor:"Rumor",evst_notified:"Announced",evst_effective:"In effect",evst_landed:"Implemented",evst_expired:"Expired",
  cd_future:"Takes effect in {n} days",cd_today:"Takes effect today",cd_past:"In effect",
  sp_title:"Key indicator trends",sp_sub:"Daily data · {a} – {b}",
- cw_cnt:"Topic · data as of {d} · status reviewed monthly",cw_guide:"Copper is about managing volatility; refrigerants are about policy-locked supply. This section gathers prices, institutional forecasts, scenarios and policy dates for the two key inputs; intraday moves remain in Section 5 and risk alerts in Section 6.",
- cw_status_t:"Topic status · four assessments",cw_status_src:"Lights are assessments (red = highs/tightening, amber = volatility/standoff, green = pattern unchanged), reviewed monthly and updated on events; evidence in the modules below.",
+ cw_cnt:"Topic · data as of {d} · status reviewed weekly",cw_guide:"Copper is about managing volatility; refrigerants are about policy-locked supply. This section gathers prices, institutional forecasts, scenarios and policy dates for the two key inputs; intraday moves remain in Section 5 and risk alerts in Section 6.",
+ cw_status_t:"Topic status · four assessments",cw_status_src:"Lights are assessments (red = highs/tightening, amber = volatility/standoff, green = pattern unchanged), reviewed weekly and updated on events; evidence in the modules below.",
  cw_cu_t:"Copper prices · daily, past year",cw_shfe:"SHFE copper, continuous · daily close (CNY/t, VAT incl.)",cw_lme:"LME copper 3M (USD/t, ex-tax)",cw_range:"1Y high {hi} / low {lo}",cw_5d:"5 sessions",
  cw_fc_t:"Institutional forecasts · LME copper average (USD/t, ex-tax)",cw_h_org:"Institution",cw_h_view:"Core view",cw_h_upd:"Updated",
  cw_sc_t:"Scenarios · LME copper, H1 2027 (USD/t, ex-tax)",cw_cur:"Base case",
  cw_rf_t:"Refrigerant contract prices by grade (CNY/t, VAT incl.)",cw_rf_spot:"East China spot · verified daily in the briefing",cw_unit_t:"CNY/t (VAT incl.)",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
  cw_po_t:"Policy framework & key dates",cw_h_region:"Region",cw_h_law:"Framework",cw_h_state:"Status in 2027",cw_h_next:"Next milestone",en_fb:"The English edition is published Monday to Friday. Showing the {d} edition.",
+ cw_range_r:"Range high {hi} / low {lo}",cw_r_1m:"Past 1M",cw_r_3m:"Past 3M",cw_r_1y:"Past 1Y",
+ cw_hist_t:"Historical data · daily close",cw_hist_d:"Date",cw_hist_shfe:"SHFE (CNY/t)",cw_hist_lme:"LME 3M (USD/t)",cw_hist_all:"Show full past year",cw_hist_30:"Show last 30 days",
+ cw_arch:"Viewing archive {d}",cw_arch_no:"No archive for this date (archives start 2026-11-24)",cw_arch_latest:"Back to latest",cw_arch_pick:"Pick a date",
+ cw_u_cny:"CNY/t",cw_u_usd:"USD/t",
  sp_lme:"LME Copper 3M",sp_lme_u:"USD/t (ex-tax)",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t (ex-tax)",sp_ag:"Silver",sp_ag_u:"USD/ozt (ex-tax)",sp_fx:"USD/CNY",sp_fx_u:"CNY",
  sit_title:"Management Snapshot · Last 7 Days",
  sit_warn:"Warnings — last 7 days",sit_warn_unit:" warnings · {h} high-urgency",
@@ -1440,7 +1462,9 @@ async function loadSeries(){
 
 /* ---- 九、铜·冷媒专题（data/commodity-watch[-en].json + series.json 近一年序列；数据缺失时静默不渲染） ---- */
 let CW=null;
-function cwChart(pts,color,W,hs){
+let CW_RANGE="1Y",CW_ARCHIVE=null,CW_ARCH_MSG="",CW_HIST_ALL=false;
+const CW_CH={};
+function cwChart(pts,color,W,hs,cid,unit){
   const w=Math.max(300,Math.min(1200,Math.round(W||360))),h=Math.round(Math.max(170,Math.min(235,w*0.42))*(hs||1)),L=56,R=54,T=10,B=22;
   const vs=pts.map(p=>+p.value),mn=Math.min.apply(null,vs),mx=Math.max.apply(null,vs);
   const pad=(mx-mn)*0.06||1,lo=mn-pad,hi=mx+pad,iw=w-L-R,ih=h-T-B;
@@ -1457,7 +1481,9 @@ function cwChart(pts,color,W,hs){
   let xl="";
   ticks.forEach(i=>{const anch=i===0?"start":(i===li?"end":"middle");xl+=`<text x="${X(i)}" y="${h-6}" font-size="11" fill="#64748b" text-anchor="${anch}">${pts[i].date.slice(2,4)}/${pts[i].date.slice(5,7)}</text>`;});
   const last=pts[li];
-  return `<svg viewBox="0 0 ${w} ${h}" width="100%" aria-hidden="true">${grid}${xl}<polyline points="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(li)}" cy="${Y(+last.value)}" r="3.4" fill="${color}"/><text x="${w-2}" y="${Y(+last.value)+4}" font-size="13" font-weight="700" fill="#2c4a66" text-anchor="end">${Number(last.value).toLocaleString("en-US")}</text></svg>`;
+  if(cid)CW_CH[cid]={pts:pts,unit:unit||"",w:w,h:h,L:L,R:R,T:T,B:B,lo:lo,hi:hi,iw:iw,ih:ih};
+  const ov=cid?`<rect class="cw-hit" data-cwcid="${cid}" x="${L}" y="${T}" width="${iw}" height="${ih}" fill="transparent" pointer-events="all" style="touch-action:pan-y;cursor:crosshair"/><line id="cw-x-${cid}" x1="0" x2="0" y1="${T}" y2="${T+ih}" stroke="#2c4a66" stroke-width="1" stroke-dasharray="3 3" style="display:none;pointer-events:none"/><circle id="cw-d-${cid}" r="4" fill="${color}" stroke="#fff" stroke-width="1.5" style="display:none;pointer-events:none"/>`:"";
+  return `<svg viewBox="0 0 ${w} ${h}" width="100%" aria-hidden="true">${grid}${xl}<polyline points="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(li)}" cy="${Y(+last.value)}" r="3.4" fill="${color}"/><text x="${w-2}" y="${Y(+last.value)+4}" font-size="13" font-weight="700" fill="#2c4a66" text-anchor="end">${Number(last.value).toLocaleString("en-US")}</text>${ov}</svg>`;
 }
 function cwOrg(o){const t1=String(o).match(/^([\u4e00-\u9fff]+)\s+(.+)$/),t2=t1?null:String(o).match(/^(.+?)\s+([\u4e00-\u9fff].*)$/),m=t1||t2;if(!m)return `<b>${esc(o)}</b>`;return `<b>${esc(m[1])}</b><br><span class="oen">${esc(m[2])}</span>`;}
 function cwSpark3(vals){
@@ -1470,67 +1496,252 @@ function cwSpark3(vals){
 function cwLinks(m){
   return (m.links||[]).map(l=>` · <a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
 }
-function cwStatLine(pts){
+function cwStatLine(pts,ranged){
   const last=pts[pts.length-1];
   const vs=pts.map(p=>+p.value),mx=Math.max.apply(null,vs),mn=Math.min.apply(null,vs);
   const p5=pts[pts.length-6]||pts[0];
   const pct=(last.value-p5.value)/p5.value*100;
   const col=pct>0?"#d4695c":pct<0?"#4a9457":"var(--mut)";
-  return `<b>${Number(last.value).toLocaleString("en-US")}</b> · ${mmdd(last.date)} · ${fmt(t("cw_range"),{hi:Number(mx).toLocaleString("en-US"),lo:Number(mn).toLocaleString("en-US")})} · ${t("cw_5d")} <span style="color:${col};font-weight:700">${pct>=0?"+":""}${pct.toFixed(1)}%</span>`;
+  return `<b>${Number(last.value).toLocaleString("en-US")}</b> · ${mmdd(last.date)} · ${fmt(t(ranged?"cw_range_r":"cw_range"),{hi:Number(mx).toLocaleString("en-US"),lo:Number(mn).toLocaleString("en-US")})} · ${t("cw_5d")} <span style="color:${col};font-weight:700">${pct>=0?"+":""}${pct.toFixed(1)}%</span>`;
 }
 function paintCw(){
   const box=document.getElementById("cwbox");if(!box||!CW)return;
-  const shfe=SERIES?(SERIES["copper_shfe_cny_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
-  const lme1y=SERIES?(SERIES["copper_lme_1y_usd_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
+  const cs=cwCutSeries();
+  const shfe=cs.shfe,lme1y=cs.lme1y,r32=cs.r32,r410a=cs.r410a;
   const hasCharts=shfe.length>=5&&lme1y.length>=5;
-  const r32=SERIES?(SERIES["refrigerant_r32_cny_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
-  const r410a=SERIES?(SERIES["refrigerant_r410a_cny_t"]||[]).filter(p=>p&&isFinite(+p.value)):[];
   const rfL=SERIES?SERIES["refrigerant_spot_latest"]||null:null;
   const hasRf=r32.length>=2&&r410a.length>=2&&!!rfL;
   const rfRange=n=>{const it=rfL?rfL.items.find(x=>x.name===n):null;return it?Number(it.low).toLocaleString("en-US")+"\u2013"+Number(it.high).toLocaleString("en-US")+" "+t("cw_unit_t"):"";};
   const d=CW;
   let h=secttl("专",t("sec")[8],fmt(t("cw_cnt"),{d:d.updated||""}))+guide(t("cw_guide"));
+  h+=`<div class="cw-archrow"><label for="cwdate">${t("cw_arch_pick")}</label><input type="date" id="cwdate" class="cw-datein" min="2026-11-24" max="${localToday()}" value="${CW_ARCHIVE||""}">${CW_ARCHIVE?`<span class="cw-archbadge">${fmt(t("cw_arch"),{d:CW_ARCHIVE})}</span><button class="cw-rbtn" id="cwback" type="button">${t("cw_arch_latest")}</button>`:""}${CW_ARCH_MSG?`<span class="cw-archmsg">${esc(CW_ARCH_MSG)}</span>`:""}</div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_status_t")}</h3><div class="cw-grid">`
     +d.status.map(c=>`<div class="cw-cell"><div class="sit-lab"><span class="cw-dot ${esc(c.light)}"></span>${esc(c.title)}</div><div class="sit-big">${esc(c.big)}</div><div class="sit-sub">${esc(c.sub)}</div></div>`).join("")
     +`</div><div class="src">${t("cw_status_src")}</div></div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_cu_t")}</h3>`
-    +(hasCharts?`<div class="cw-chartlab"><span class="cl">${t("cw_shfe")}</span><span class="cv">${cwStatLine(shfe)}</span></div>`
-    +`<div id="cwc1"></div>`
-    +`<div class="cw-chartlab"><span class="cl">${t("cw_lme")}</span><span class="cv">${cwStatLine(lme1y)}</span></div>`
-    +`<div id="cwc2"></div>`:"")
+    +`<div class="cw-rbtns" role="group"><button class="cw-rbtn${CW_RANGE==="1M"?" on":""}" type="button" data-r="1M">${t("cw_r_1m")}</button><button class="cw-rbtn${CW_RANGE==="3M"?" on":""}" type="button" data-r="3M">${t("cw_r_3m")}</button><button class="cw-rbtn${CW_RANGE==="1Y"?" on":""}" type="button" data-r="1Y">${t("cw_r_1y")}</button></div>`
+    +(hasCharts?`<div class="cw-chartlab"><span class="cl">${t("cw_shfe")}</span><span class="cv" id="cwsl1">${cwStatLine(shfe,CW_RANGE!=="1Y")}</span></div>`
+    +`<div id="cwc1" tabindex="0" role="img" aria-label="${esc(t("cw_shfe"))}"></div>`
+    +`<div class="cw-chartlab"><span class="cl">${t("cw_lme")}</span><span class="cv" id="cwsl2">${cwStatLine(lme1y,CW_RANGE!=="1Y")}</span></div>`
+    +`<div id="cwc2" tabindex="0" role="img" aria-label="${esc(t("cw_lme"))}"></div>`
+    +`<div id="cwhist"></div>`:"")
     +(d.copper.spot_rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
     +`<div class="src">${esc(d.copper.src)}${cwLinks(d.copper)}</div></div>`;
-  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_fc_t")}</h3><div class="cw-twrap"><table class="cw-table fc"><colgroup><col style="width:20%"><col style="width:12%"><col style="width:16%"><col style="width:36%"><col style="width:16%"></colgroup><tr><th>${t("cw_h_org")}</th><th class="n">2026</th><th class="n">2027</th><th>${t("cw_h_view")}</th><th>${t("cw_h_upd")}</th></tr>`
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_fc_t")}</h3><div class="cw-twrap"><table class="cw-table fc"><colgroup><col style="width:20%"><col style="width:12%"><col style="width:16%"><col style="width:36%"><col style="width:16%"></colgroup><thead><tr><th>${t("cw_h_org")}</th><th class="n">2026</th><th class="n">2027</th><th>${t("cw_h_view")}</th><th>${t("cw_h_upd")}</th></tr></thead><tbody>`
     +d.forecasts.rows.map(r=>`<tr><td>${cwOrg(r.org)}</td><td class="n">${esc(r.y2026)}</td><td class="n">${esc(r.y2027)}${r.y2027_sub?`<br><span style="color:var(--mut);font-size:12px;white-space:normal">${esc(r.y2027_sub)}</span>`:""}</td><td>${esc(r.view)}</td><td class="u">${esc(r.upd)}</td></tr>`).join("")
-    +`</table></div><div class="src">${esc(d.forecasts.src)}${cwLinks(d.forecasts)}</div></div>`;
+    +`</tbody></table></div><div class="src">${esc(d.forecasts.src)}${cwLinks(d.forecasts)}</div></div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_sc_t")}</h3><div class="cw-grid3">`
     +d.scenarios.items.map(it=>`<div class="cw-cell"><div class="sit-lab">${esc(it.name)} · ${esc(it.prob)}${it.cur?`<span class="cw-cur">${t("cw_cur")}</span>`:""}</div><div class="sit-big">${esc(it.range)}</div><div class="sit-sub">${esc(it.trig)}</div></div>`).join("")
     +`</div><div class="cw-scenow"><b>${esc(d.scenarios.now_head)}：</b>${esc(d.scenarios.now_body)}</div><div class="src">${esc(d.scenarios.src)}</div></div>`;
-  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_rf_t")}</h3><div class="cw-twrap"><table class="cw-table gr"><colgroup><col style="width:15%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col><col style="width:13%"></colgroup><tr><th>${t("cw_h_grade")}</th><th class="n">2026 Q1</th><th class="n">Q2</th><th class="n">Q3</th><th>${t("cw_h_trend")}</th><th class="n">${t("cw_h_ytd")}</th></tr>`
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_rf_t")}</h3><div class="cw-twrap"><table class="cw-table gr"><colgroup><col style="width:15%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col><col style="width:13%"></colgroup><thead><tr><th>${t("cw_h_grade")}</th><th class="n">2026 Q1</th><th class="n">Q2</th><th class="n">Q3</th><th>${t("cw_h_trend")}</th><th class="n">${t("cw_h_ytd")}</th></tr></thead><tbody>`
     +d.refrigerant.grades.map(g=>`<tr><td><b>${esc(g.name)}</b></td><td class="n">${Number(g.q[0]).toLocaleString("en-US")}</td><td class="n">${Number(g.q[1]).toLocaleString("en-US")}</td><td class="n"><b>${g.approx?t("cw_approx"):""}${Number(g.q[2]).toLocaleString("en-US")}</b></td><td>${cwSpark3(g.q)}</td><td class="n" style="color:#d4695c;font-weight:700">${esc(g.chg)}</td></tr>`).join("")
-    +`</table></div>`
+    +`</tbody></table></div>`
     +(hasRf?`<div class="cw-chartlab"><span class="cl">${t("cw_rf_spot")}</span><span class="cv">${esc((rfL.date||"").slice(5))}${rfL.outlet?" · "+esc(rfL.outlet):""}</span></div>`
     +`<div class="cw-chartlab"><span class="cl">R32</span><span class="cv">${rfRange("R32")}</span></div><div id="cwc3"></div>`
     +`<div class="cw-chartlab"><span class="cl">R410A</span><span class="cv">${rfRange("R410A")}</span></div><div id="cwc4"></div>`:"")
     +(d.refrigerant.rows||[]).map(r=>`<div class="cw-spotrow"><span class="sd">${esc(r.d)}</span><span><b>${esc(r.head)}</b>${esc(r.body)}</span></div>`).join("")
     +`<div class="src">${esc(d.refrigerant.src)}</div></div>`;
-  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_po_t")}</h3><div class="cw-twrap"><table class="cw-table pl"><colgroup><col style="width:12%"><col style="width:32%"><col style="width:34%"><col style="width:22%"></colgroup><tr><th>${t("cw_h_region")}</th><th>${t("cw_h_law")}</th><th>${t("cw_h_state")}</th><th>${t("cw_h_next")}</th></tr>`
+  h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_po_t")}</h3><div class="cw-twrap"><table class="cw-table pl"><colgroup><col style="width:12%"><col style="width:32%"><col style="width:34%"><col style="width:22%"></colgroup><thead><tr><th>${t("cw_h_region")}</th><th>${t("cw_h_law")}</th><th>${t("cw_h_state")}</th><th>${t("cw_h_next")}</th></tr></thead><tbody>`
     +d.policy.rows.map(r=>`<tr><td><b>${esc(r.region)}</b></td><td>${esc(r.law)}</td><td>${esc(r.state)}</td><td>${esc(r.next)}</td></tr>`).join("")
-    +`</table></div>`
+    +`</tbody></table></div>`
     +(d.policy.nodes||[]).map(n=>`<div class="cw-noderow"><span class="nd">${esc(n.d)}</span><span><b>${esc(n.head)}</b>${esc(n.body)}</span></div>`).join("")
     +`<div class="src">${esc(d.policy.src)}${cwLinks(d.policy)}</div></div>`;
   box.innerHTML=h;
-  const c1=document.getElementById("cwc1");if(c1)c1.innerHTML=cwChart(shfe,"#1e86d6",c1.clientWidth);
-  const c2=document.getElementById("cwc2");if(c2)c2.innerHTML=cwChart(lme1y,"#2c4a66",c2.clientWidth);
+  const c1=document.getElementById("cwc1");if(c1)c1.innerHTML=cwChart(shfe,"#1e86d6",c1.clientWidth,1,"c1",t("cw_u_cny"));
+  const c2=document.getElementById("cwc2");if(c2)c2.innerHTML=cwChart(lme1y,"#2c4a66",c2.clientWidth,1,"c2",t("cw_u_usd"));
   const c3=document.getElementById("cwc3");if(c3)c3.innerHTML=cwChart(r32,"#1e86d6",c3.clientWidth,0.6);
   const c4=document.getElementById("cwc4");if(c4)c4.innerHTML=cwChart(r410a,"#b3851f",c4.clientWidth,0.6);
+  const c1t=document.getElementById("cwc1");if(c1t)cwTipEl(c1t);
+  const c2t=document.getElementById("cwc2");if(c2t)cwTipEl(c2t);
+  paintCwHist();
+  cwSyncHeads();
 }
+/* ---- s9 交互：区间切换 / 悬浮提示 / 历史数据表 / 存档查看 / 表头吸顶 ---- */
+function addDays(ds,n){const d=new Date(ds+"T00:00:00");d.setDate(d.getDate()+n);const p=v=>String(v).padStart(2,"0");return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate());}
+function cwCutSeries(applyRange){
+  if(applyRange===undefined)applyRange=true;
+  const f=k=>(SERIES?(SERIES[k]||[]):[]).filter(p=>p&&isFinite(+p.value));
+  const s={shfe:f("copper_shfe_cny_t"),lme1y:f("copper_lme_1y_usd_t"),r32:f("refrigerant_r32_cny_t"),r410a:f("refrigerant_r410a_cny_t")};
+  if(CW_ARCHIVE){for(const k in s)s[k]=s[k].filter(p=>p.date<=CW_ARCHIVE);}
+  if(applyRange&&CW_RANGE!=="1Y"){
+    let mx="";
+    s.shfe.concat(s.lme1y).forEach(p=>{if(p.date>mx)mx=p.date;});
+    if(mx){const cut=addDays(mx,CW_RANGE==="1M"?-30:-90);for(const k in s)s[k]=s[k].filter(p=>p.date>=cut);}
+  }
+  return s;
+}
+function cwTipEl(box){
+  if(!box||box.querySelector(".cw-tip"))return;
+  const d=document.createElement("div");
+  d.className="cw-tip";
+  box.appendChild(d);
+}
+function cwHideTip(){
+  document.querySelectorAll("#cwbox .cw-tip").forEach(e=>{e.style.display="none";});
+  document.querySelectorAll('[id^="cw-x-"],[id^="cw-d-"]').forEach(e=>{e.style.display="none";});
+}
+function cwShowTip(cid,i){
+  const g=CW_CH[cid];if(!g||!g.pts.length)return;
+  const ii=Math.max(0,Math.min(g.pts.length-1,i));
+  const p=g.pts[ii];
+  const X=g.L+ii*g.iw/(g.pts.length-1);
+  const Y=g.T+(1-(+p.value-g.lo)/(g.hi-g.lo))*g.ih;
+  const line=document.getElementById("cw-x-"+cid),dot=document.getElementById("cw-d-"+cid);
+  if(line){line.setAttribute("x1",X);line.setAttribute("x2",X);line.style.display="";}
+  if(dot){dot.setAttribute("cx",X);dot.setAttribute("cy",Y);dot.style.display="";}
+  const svg=line?line.closest("svg"):null;if(!svg)return;
+  const box=svg.parentElement,tip=box?box.querySelector(".cw-tip"):null;if(!tip)return;
+  let chg="";
+  if(ii>0){const pc=(+p.value-+g.pts[ii-1].value)/+g.pts[ii-1].value*100;chg=` · <span class="${pc>=0?"pos":"neg"}">${pc>=0?"+":""}${pc.toFixed(2)}%</span>`;}
+  tip.innerHTML=`<b>${Number(p.value).toLocaleString("en-US")} ${esc(g.unit)}</b><br>${esc(p.date)}${chg}`;
+  const r=svg.getBoundingClientRect();
+  tip.style.display="block";
+  const px=X/g.w*r.width,py=Y/g.h*r.height,tw=tip.offsetWidth,th=tip.offsetHeight;
+  let left=px+10;if(left+tw>box.clientWidth-4)left=px-tw-10;if(left<4)left=4;
+  let top=py-th-8;if(top<4)top=py+10;
+  tip.style.left=left+"px";tip.style.top=top+"px";
+}
+function cwOnPoint(e){
+  const hit=e.target&&e.target.closest?e.target.closest("[data-cwcid]"):null;
+  if(!hit)return false;
+  const cid=hit.getAttribute("data-cwcid"),g=CW_CH[cid];
+  if(!g||!g.pts.length)return false;
+  const svg=hit.closest("svg");if(!svg)return false;
+  const r=svg.getBoundingClientRect();
+  const vx=(e.clientX-r.left)*(g.w/r.width);
+  let i=Math.round((vx-g.L)/g.iw*(g.pts.length-1));
+  i=Math.max(0,Math.min(g.pts.length-1,i));
+  cwShowTip(cid,i);
+  return true;
+}
+function paintCwCharts(){
+  const c=cwCutSeries();
+  const s1=document.getElementById("cwsl1");if(s1)s1.innerHTML=c.shfe.length>=5?cwStatLine(c.shfe,CW_RANGE!=="1Y"):"";
+  const s2=document.getElementById("cwsl2");if(s2)s2.innerHTML=c.lme1y.length>=5?cwStatLine(c.lme1y,CW_RANGE!=="1Y"):"";
+  const c1=document.getElementById("cwc1");if(c1){c1.innerHTML=c.shfe.length>=5?cwChart(c.shfe,"#1e86d6",c1.clientWidth,1,"c1",t("cw_u_cny")):"";cwTipEl(c1);}
+  const c2=document.getElementById("cwc2");if(c2){c2.innerHTML=c.lme1y.length>=5?cwChart(c.lme1y,"#2c4a66",c2.clientWidth,1,"c2",t("cw_u_usd")):"";cwTipEl(c2);}
+  const c3=document.getElementById("cwc3");if(c3)c3.innerHTML=c.r32.length>=2?cwChart(c.r32,"#1e86d6",c3.clientWidth,0.6):"";
+  const c4=document.getElementById("cwc4");if(c4)c4.innerHTML=c.r410a.length>=2?cwChart(c.r410a,"#b3851f",c4.clientWidth,0.6):"";
+  document.querySelectorAll(".cw-rbtn[data-r]").forEach(b=>b.classList.toggle("on",b.dataset.r===CW_RANGE));
+  paintCwHist();
+  cwSyncHeads();
+}
+function paintCwHist(){
+  const el=document.getElementById("cwhist");if(!el)return;
+  const c=cwCutSeries(false);
+  const m={};
+  c.shfe.forEach(p=>{(m[p.date]=m[p.date]||{}).sh=p.value;});
+  c.lme1y.forEach(p=>{(m[p.date]=m[p.date]||{}).lm=p.value;});
+  const dates=Object.keys(m).sort().reverse();
+  const rows=CW_HIST_ALL?dates:dates.slice(0,30);
+  const fv=v=>(v===undefined||v===null)?"—":Number(v).toLocaleString("en-US");
+  el.innerHTML=`<div class="cw-chartlab"><span class="cl">${t("cw_hist_t")}</span><span class="cv">${dates.length?dates[0].slice(5)+" – "+dates[dates.length-1].slice(5):""}</span></div>`
+    +`<div class="cw-twrap"><table class="cw-table hist"><colgroup><col style="width:26%"><col style="width:37%"><col style="width:37%"></colgroup><thead><tr><th>${t("cw_hist_d")}</th><th class="n">${t("cw_hist_shfe")}</th><th class="n">${t("cw_hist_lme")}</th></tr></thead><tbody>`
+    +rows.map(d=>`<tr><td>${esc(d)}</td><td class="n">${fv(m[d].sh)}</td><td class="n">${fv(m[d].lm)}</td></tr>`).join("")
+    +`</tbody></table></div>`
+    +(dates.length>30?`<div style="margin-top:8px"><button class="cw-rbtn" id="cwhistbtn" type="button">${t(CW_HIST_ALL?"cw_hist_30":"cw_hist_all")}</button></div>`:"");
+  cwSyncHeads();
+}
+async function cwGoArchive(dt){
+  if(!dt){CW_ARCHIVE=null;CW_ARCH_MSG="";loadCw();return;}
+  CW_ARCHIVE=dt;CW_ARCH_MSG="";
+  loadCw();
+}
+let _cwClone=null;
+function cwCloneEl(){
+  if(_cwClone)return _cwClone;
+  const w=document.createElement("div");
+  w.id="cwclone";w.className="cw-clonewrap";w.setAttribute("aria-hidden","true");
+  w.innerHTML='<table class="cw-table"><thead></thead></table>';
+  document.body.appendChild(w);
+  return _cwClone=w;
+}
+function cwSyncHeads(){
+  const nav=document.querySelector("nav.secnav");
+  const navH=(nav&&getComputedStyle(nav).position==="sticky")?nav.offsetHeight:0;
+  const tables=Array.from(document.querySelectorAll("#cwbox .cw-table")).filter(tb=>tb.querySelector("thead"));
+  let act=null;
+  for(const tb of tables){
+    const thead=tb.querySelector("thead");if(!thead)continue;
+    const r=tb.getBoundingClientRect(),hr=thead.getBoundingClientRect();
+    if(hr.top<navH+1&&r.bottom>navH+48){act={tb:tb,thead:thead,wrap:tb.closest(".cw-twrap")};break;}
+  }
+  const cw=cwCloneEl();
+  if(!act){cw.style.display="none";return;}
+  const tbl=cw.querySelector("table");
+  if(cw._for!==act.tb){
+    const cg=act.tb.querySelector("colgroup");
+    tbl.innerHTML=(cg?cg.outerHTML:"")+act.thead.outerHTML;
+    tbl.className=act.tb.className;
+    tbl.style.width=act.tb.offsetWidth+"px";
+    const srcThs=act.thead.querySelectorAll("th"),dstThs=tbl.querySelectorAll("thead th");
+    srcThs.forEach((th,i)=>{if(dstThs[i])dstThs[i].style.width=th.offsetWidth+"px";});
+    cw._for=act.tb;
+  }
+  const wr=act.wrap?act.wrap.getBoundingClientRect():act.tb.getBoundingClientRect();
+  cw.style.display="block";
+  cw.style.top=navH+"px";
+  cw.style.left=wr.left+"px";
+  cw.style.width=wr.width+"px";
+  tbl.style.transform="translateX("+(-(act.wrap?act.wrap.scrollLeft:0))+"px)";
+}
+function cwInitUI(){
+  const box=document.getElementById("cwbox");if(!box||window._CWUI)return;window._CWUI=1;
+  box.addEventListener("pointermove",e=>{cwOnPoint(e);});
+  box.addEventListener("pointerdown",e=>{cwOnPoint(e);});
+  box.addEventListener("pointerout",e=>{
+    if(e.pointerType!=="mouse")return;
+    const svg=e.target&&e.target.closest?e.target.closest("svg"):null;
+    if(!svg)return;
+    const rt=e.relatedTarget;
+    if(rt&&svg.contains(rt))return;
+    cwHideTip();
+  });
+  box.addEventListener("click",e=>{
+    const rb=e.target&&e.target.closest?e.target.closest(".cw-rbtn"):null;
+    if(!rb)return;
+    if(rb.dataset.r){CW_RANGE=rb.dataset.r;cwHideTip();paintCwCharts();}
+    else if(rb.id==="cwhistbtn"){CW_HIST_ALL=!CW_HIST_ALL;paintCwHist();}
+    else if(rb.id==="cwback"){CW_ARCHIVE=null;CW_ARCH_MSG="";cwHideTip();loadCw();}
+  });
+  box.addEventListener("change",e=>{if(e.target&&e.target.id==="cwdate")cwGoArchive(e.target.value);});
+  box.addEventListener("keydown",e=>{
+    const c=e.target&&e.target.closest?e.target.closest("#cwc1,#cwc2"):null;
+    if(!c)return;
+    const cid=c.id==="cwc1"?"c1":"c2",g=CW_CH[cid];
+    if(!g||!g.pts.length)return;
+    let i=(g._i===undefined)?g.pts.length-1:g._i;
+    if(e.key==="ArrowLeft")i=Math.max(0,i-1);
+    else if(e.key==="ArrowRight")i=Math.min(g.pts.length-1,i+1);
+    else if(e.key==="Home")i=0;
+    else if(e.key==="End")i=g.pts.length-1;
+    else return;
+    e.preventDefault();
+    g._i=i;cwShowTip(cid,i);
+  });
+  document.addEventListener("pointerdown",e=>{
+    if(!e.target||!e.target.closest||!e.target.closest(".cw-hit"))cwHideTip();
+  },true);
+  window.addEventListener("scroll",()=>{cwSyncHeads();},{passive:true});
+  window.addEventListener("resize",()=>{if(_cwClone)_cwClone._for=null;cwSyncHeads();});
+  document.addEventListener("scroll",()=>{cwSyncHeads();},true);
+}
+let _cwReq=0;
 async function loadCw(){
+  const arc=CW_ARCHIVE;
+  const my=++_cwReq;
+  const url=arc?(LANG==="en"?`data/cw-${arc}-en.json`:`data/cw-${arc}.json`):(LANG==="en"?"data/commodity-watch-en.json":"data/commodity-watch.json");
   try{
-    const r=await fetch(LANG==="en"?"data/commodity-watch-en.json":"data/commodity-watch.json");
+    const r=await fetch(url);
     if(!r.ok)throw 0;
-    CW=await r.json();
-  }catch(e){CW=null;}
+    const j=await r.json();
+    if(my!==_cwReq)return;
+    CW=j;
+  }catch(e){
+    if(my!==_cwReq)return;
+    if(arc){CW_ARCHIVE=null;CW_ARCH_MSG=t("cw_arch_no");return loadCw();}
+    CW=null;
+  }
   paintCw();
 }
 
@@ -1583,6 +1794,7 @@ async function boot(){
     loadEvents();
     loadSeries();
     loadCw();
+    cwInitUI();
   }catch(e){$("#main").innerHTML=`<div class="errmsg">${t("boot_err")}</div>`;}
 }
 boot();
