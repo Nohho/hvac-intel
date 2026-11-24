@@ -540,7 +540,7 @@ zh:{
  cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨，含税）",cw_rf_spot:"华东现货 · 早报每日核实",cw_unit_t:"元/吨（含税）",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
  cw_po_t:"政策框架与关键节点",cw_h_region:"地区",cw_h_law:"法规",cw_h_state:"2027 年状态",cw_h_next:"下一节点",en_fb:"英文版每周一至五发布，当前显示 {d} 期英文版。",
  cw_range_r:"区间高 {hi} / 低 {lo}",cw_r_1m:"近 1 月",cw_r_3m:"近 3 月",cw_r_1y:"近 1 年",cw_mt:"更多历史数据：Macrotrends 铜价历史（COMEX，美元/磅）",
- cw_arch_no:"该日期暂无存档（存档自 2026-11-24 起）",
+ cw_arch_no:"该日期暂无存档（存档自 2026-11-10 起）",
  cw_u_cny:"元/吨",cw_u_usd:"美元/吨",
  sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨（不含税）",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨（不含税）",sp_ag:"白银",sp_ag_u:"美元/盎司（不含税）",sp_fx:"美元/人民币",sp_fx_u:"元",
  sit_title:"管理态势 · 近 7 天",
@@ -641,7 +641,7 @@ en:{
  cw_rf_t:"Refrigerant contract prices by grade (CNY/t, VAT incl.)",cw_rf_spot:"East China spot · verified daily in the briefing",cw_unit_t:"CNY/t (VAT incl.)",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
  cw_po_t:"Policy framework & key dates",cw_h_region:"Region",cw_h_law:"Framework",cw_h_state:"Status in 2027",cw_h_next:"Next milestone",en_fb:"The English edition is published Monday to Friday. Showing the {d} edition.",
  cw_range_r:"Range high {hi} / low {lo}",cw_r_1m:"Past 1M",cw_r_3m:"Past 3M",cw_r_1y:"Past 1Y",cw_mt:"More history: Macrotrends copper prices (COMEX, USD/lb)",
- cw_arch_no:"No archive for this date (archives start 2026-11-24)",
+ cw_arch_no:"No archive for this date (archives start 2026-11-10)",
  cw_u_cny:"CNY/t",cw_u_usd:"USD/t",
  sp_lme:"LME Copper 3M",sp_lme_u:"USD/t (ex-tax)",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t (ex-tax)",sp_ag:"Silver",sp_ag_u:"USD/ozt (ex-tax)",sp_fx:"USD/CNY",sp_fx_u:"CNY",
  sit_title:"Management Snapshot · Last 7 Days",
@@ -1464,7 +1464,7 @@ async function loadSeries(){
 const MT_COPPER_URL="https://www.macrotrends.net/1476/copper-prices-historical-chart-data";
 let CW=null;
 let CW_RANGE="1Y",CW_ARCHIVE=null,CW_ARCH_MSG="";
-const CW_ARCH_START="2026-11-24";
+const CW_ARCH_START="2026-11-10";
 function cwArchDate(){return (CURDATE&&CURDATE>=CW_ARCH_START)?CURDATE:null;}
 const CW_CH={};
 function cwChart(pts,color,W,hs,cid,unit){
