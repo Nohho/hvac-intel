@@ -540,7 +540,7 @@ zh:{
  cw_rf_t:"冷媒长协价走势 · 分牌号（元/吨，含税）",cw_rf_spot:"华东现货 · 早报每日核实",cw_unit_t:"元/吨（含税）",cw_h_grade:"品种",cw_h_trend:"走势",cw_h_ytd:"年初至 Q3",cw_approx:"约 ",
  cw_po_t:"政策框架与关键节点",cw_h_region:"地区",cw_h_law:"法规",cw_h_state:"2027 年状态",cw_h_next:"下一节点",en_fb:"英文版每周一至五发布，当前显示 {d} 期英文版。",
  cw_range_r:"区间高 {hi} / 低 {lo}",cw_r_1m:"近 1 月",cw_r_3m:"近 3 月",cw_r_1y:"近 1 年",cw_mt:"更多历史数据：Macrotrends 铜价历史（COMEX，美元/磅）",
- cw_arch:"查看 {d} 存档",cw_arch_no:"该日期暂无存档（存档自 2026-11-24 起）",cw_arch_latest:"回最新",cw_arch_pick:"选择日期",
+ cw_arch_no:"该日期暂无存档（存档自 2026-11-10 起）",
  cw_u_cny:"元/吨",cw_u_usd:"美元/吨",
  sp_lme:"LME 3月期铜",sp_lme_u:"美元/吨（不含税）",sp_alu:"LME 3月期铝",sp_alu_u:"美元/吨（不含税）",sp_ag:"白银",sp_ag_u:"美元/盎司（不含税）",sp_fx:"美元/人民币",sp_fx_u:"元",
  sit_title:"管理态势 · 近 7 天",
@@ -641,7 +641,7 @@ en:{
  cw_rf_t:"Refrigerant contract prices by grade (CNY/t, VAT incl.)",cw_rf_spot:"East China spot · verified daily in the briefing",cw_unit_t:"CNY/t (VAT incl.)",cw_h_grade:"Grade",cw_h_trend:"Trend",cw_h_ytd:"YTD to Q3",cw_approx:"~",
  cw_po_t:"Policy framework & key dates",cw_h_region:"Region",cw_h_law:"Framework",cw_h_state:"Status in 2027",cw_h_next:"Next milestone",en_fb:"The English edition is published Monday to Friday. Showing the {d} edition.",
  cw_range_r:"Range high {hi} / low {lo}",cw_r_1m:"Past 1M",cw_r_3m:"Past 3M",cw_r_1y:"Past 1Y",cw_mt:"More history: Macrotrends copper prices (COMEX, USD/lb)",
- cw_arch:"Viewing archive {d}",cw_arch_no:"No archive for this date (archives start 2026-11-24)",cw_arch_latest:"Back to latest",cw_arch_pick:"Pick a date",
+ cw_arch_no:"No archive for this date (archives start 2026-11-10)",
  cw_u_cny:"CNY/t",cw_u_usd:"USD/t",
  sp_lme:"LME Copper 3M",sp_lme_u:"USD/t (ex-tax)",sp_alu:"LME Aluminium 3M",sp_alu_u:"USD/t (ex-tax)",sp_ag:"Silver",sp_ag_u:"USD/ozt (ex-tax)",sp_fx:"USD/CNY",sp_fx_u:"CNY",
  sit_title:"Management Snapshot · Last 7 Days",
@@ -1181,6 +1181,7 @@ function paintFresh(){
 }
 async function loadDay(date){
   CURDATE=date;
+  CW=null;CW_ARCHIVE=null;CW_ARCH_MSG="";
   paintFresh();
   document.querySelectorAll(".errbar").forEach(b=>b.remove());
   let eff=date,enFb=false;
@@ -1208,6 +1209,7 @@ async function loadDay(date){
     if(ip2&&no2>0){ip2.textContent=fmt(t("issue_plain"),{n:no2});}
     try{history.replaceState(null,"","#date="+eff+(LANG==="en"?"&lang=en":""));}catch(e){}
     window.scrollTo({top:0});
+    loadCw();
   }catch(e){
     const m=$("#main");
     if(m)m.insertAdjacentHTML("afterbegin",
@@ -1462,6 +1464,8 @@ async function loadSeries(){
 const MT_COPPER_URL="https://www.macrotrends.net/1476/copper-prices-historical-chart-data";
 let CW=null;
 let CW_RANGE="1Y",CW_ARCHIVE=null,CW_ARCH_MSG="";
+const CW_ARCH_START="2026-11-10";
+function cwArchDate(){return (CURDATE&&CURDATE>=CW_ARCH_START)?CURDATE:null;}
 const CW_CH={};
 function cwChart(pts,color,W,hs,cid,unit){
   const w=Math.max(300,Math.min(1200,Math.round(W||360))),h=Math.round(Math.max(170,Math.min(235,w*0.42))*(hs||1)),L=56,R=54,T=10,B=22;
@@ -1513,7 +1517,7 @@ function paintCw(){
   const rfRange=n=>{const it=rfL?rfL.items.find(x=>x.name===n):null;return it?Number(it.low).toLocaleString("en-US")+"\u2013"+Number(it.high).toLocaleString("en-US")+" "+t("cw_unit_t"):"";};
   const d=CW;
   let h=secttl("专",t("sec")[8],fmt(t("cw_cnt"),{d:d.updated||""}))+guide(t("cw_guide"));
-  h+=`<div class="cw-archrow"><label for="cwdate">${t("cw_arch_pick")}</label><input type="date" id="cwdate" class="cw-datein" min="2026-11-24" max="${localToday()}" value="${CW_ARCHIVE||""}">${CW_ARCHIVE?`<span class="cw-archbadge">${fmt(t("cw_arch"),{d:CW_ARCHIVE})}</span><button class="cw-rbtn" id="cwback" type="button">${t("cw_arch_latest")}</button>`:""}${CW_ARCH_MSG?`<span class="cw-archmsg">${esc(CW_ARCH_MSG)}</span>`:""}</div>`;
+  if(CW_ARCH_MSG)h+=`<div class="cw-archmsg">${esc(CW_ARCH_MSG)}</div>`;
   h+=`<div class="card cw-card"><h3>${ICO.chart}${t("cw_status_t")}</h3><div class="cw-grid">`
     +d.status.map(c=>`<div class="cw-cell"><div class="sit-lab"><span class="cw-dot ${esc(c.light)}"></span>${esc(c.title)}</div><div class="sit-big">${esc(c.big)}</div><div class="sit-sub">${esc(c.sub)}</div></div>`).join("")
     +`</div><div class="src">${t("cw_status_src")}</div></div>`;
@@ -1561,7 +1565,7 @@ function cwCutSeries(applyRange){
   if(applyRange===undefined)applyRange=true;
   const f=k=>(SERIES?(SERIES[k]||[]):[]).filter(p=>p&&isFinite(+p.value));
   const s={shfe:f("copper_shfe_cny_t"),lme1y:f("copper_lme_1y_usd_t"),r32:f("refrigerant_r32_cny_t"),r410a:f("refrigerant_r410a_cny_t")};
-  if(CW_ARCHIVE){for(const k in s)s[k]=s[k].filter(p=>p.date<=CW_ARCHIVE);}
+  const arcD=cwArchDate();if(arcD&&CW_ARCHIVE){for(const k in s)s[k]=s[k].filter(p=>p.date<=arcD);}
   if(applyRange&&CW_RANGE!=="1Y"){
     let mx="";
     s.shfe.concat(s.lme1y).forEach(p=>{if(p.date>mx)mx=p.date;});
@@ -1625,11 +1629,6 @@ function paintCwCharts(){
   document.querySelectorAll(".cw-rbtn[data-r]").forEach(b=>b.classList.toggle("on",b.dataset.r===CW_RANGE));
   cwSyncHeads();
 }
-async function cwGoArchive(dt){
-  if(!dt){CW_ARCHIVE=null;CW_ARCH_MSG="";loadCw();return;}
-  CW_ARCHIVE=dt;CW_ARCH_MSG="";
-  loadCw();
-}
 let _cwClone=null;
 function cwCloneEl(){
   if(_cwClone)return _cwClone;
@@ -1685,9 +1684,7 @@ function cwInitUI(){
     const rb=e.target&&e.target.closest?e.target.closest(".cw-rbtn"):null;
     if(!rb)return;
     if(rb.dataset.r){CW_RANGE=rb.dataset.r;cwHideTip();paintCwCharts();}
-    else if(rb.id==="cwback"){CW_ARCHIVE=null;CW_ARCH_MSG="";cwHideTip();loadCw();}
   });
-  box.addEventListener("change",e=>{if(e.target&&e.target.id==="cwdate")cwGoArchive(e.target.value);});
   box.addEventListener("keydown",e=>{
     const c=e.target&&e.target.closest?e.target.closest("#cwc1,#cwc2"):null;
     if(!c)return;
@@ -1710,8 +1707,8 @@ function cwInitUI(){
   document.addEventListener("scroll",()=>{cwSyncHeads();},true);
 }
 let _cwReq=0;
-async function loadCw(){
-  const arc=CW_ARCHIVE;
+async function loadCw(forceLatest){
+  const arc=forceLatest?null:cwArchDate();
   const my=++_cwReq;
   const url=arc?(LANG==="en"?`data/cw-${arc}-en.json`:`data/cw-${arc}.json`):(LANG==="en"?"data/commodity-watch-en.json":"data/commodity-watch.json");
   try{
@@ -1719,10 +1716,10 @@ async function loadCw(){
     if(!r.ok)throw 0;
     const j=await r.json();
     if(my!==_cwReq)return;
-    CW=j;
+    CW=j;CW_ARCHIVE=arc;CW_ARCH_MSG=(arc||!CURDATE)?"":t("cw_arch_no");
   }catch(e){
     if(my!==_cwReq)return;
-    if(arc){CW_ARCHIVE=null;CW_ARCH_MSG=t("cw_arch_no");return loadCw();}
+    if(arc){CW_ARCH_MSG=t("cw_arch_no");return loadCw(true);}
     CW=null;
   }
   paintCw();
