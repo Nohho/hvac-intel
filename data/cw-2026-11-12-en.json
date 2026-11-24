@@ -35,8 +35,8 @@
       },
       {
         "d": "Basis",
-        "head": "SMM 1# copper spot 104,900 CNY/t (Nov 19)",
-        "body": "A basis of about +10,000 CNY/t over futures, the widest in a year — the source of the futures-down / spot-tight divergence. (per the research report)"
+        "head": "SMM #1 refined copper spot about 110,165 CNY/t (Oct 30)",
+        "body": "A basis of about +5,215 CNY/t over futures, the widest in a year — the source of the futures-down / spot-tight divergence. (per the research report)"
       }
     ],
     "src": "Sources: SHFE daily closes via Sina Futures public feed (continuous main contract); LME on the Westmetall 3M basis. Spot premium and basis are point-in-time figures, not daily series; each is dated.",
@@ -211,8 +211,8 @@
       },
       {
         "d": "Latest spot",
-        "head": "R32 East China 63,500–64,500 CNY/t · R410A 57,000–59,500 CNY/t",
-        "body": "East China spot, verified 2026-11-20. (Longzhong / Mysteel)"
+        "head": "R32 / R410A East China spot: no verified price before this date",
+        "body": "No verified East China spot price before this date."
       },
       {
         "d": "Outlook",
