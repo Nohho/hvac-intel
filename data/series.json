@@ -177,6 +177,11 @@
       "date": "2026-11-20",
       "value": 12237,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-23",
+      "value": 12170,
+      "src": "westmetall"
     }
   ],
   "aluminium_lme_usd_t": [
@@ -353,6 +358,11 @@
     {
       "date": "2026-11-20",
       "value": 2831.5,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-23",
+      "value": 2834,
       "src": "westmetall"
     }
   ],
@@ -3177,6 +3187,11 @@
       "date": "2026-11-20",
       "value": 12237,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-23",
+      "value": 12170,
+      "src": "westmetall"
     }
   ],
   "refrigerant_r32_cny_t": [
@@ -3236,13 +3251,6 @@
       "value": 58250,
       "low": 57000,
       "high": 59500,
-      "src": "brief"
-    },
-    {
-      "date": "2026-11-19",
-      "value": 55500,
-      "low": 55000,
-      "high": 56000,
       "src": "brief"
     },
     {
