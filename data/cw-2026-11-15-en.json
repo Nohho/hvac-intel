@@ -5,7 +5,7 @@
       "light": "y",
       "title": "Copper · Near term",
       "big": "High-volatility standoff",
-      "sub": "Futures fell about 1% in a week (SHFE main contract: 104,260 on Nov 6 to 105,150 CNY/t on Nov 13), while the spot premium stays at a record 200–250 CNY/t — a severe futures–spot divergence. Updated 2026-11-15"
+      "sub": "Futures rose about 1% in a week (SHFE main contract: 104,260 on Nov 6 to 105,150 CNY/t on Nov 13), while the spot premium stays at a record 200–250 CNY/t — a severe futures–spot divergence. Updated 2026-11-15"
     },
     {
       "light": "y",
@@ -35,8 +35,8 @@
       },
       {
         "d": "Basis",
-        "head": "SMM 1# copper spot 104,900 CNY/t (Nov 19)",
-        "body": "A basis of about +10,000 CNY/t over futures, the widest in a year — the source of the futures-down / spot-tight divergence. (per the research report)"
+        "head": "SMM #1 refined copper spot 108,060–108,600 CNY/t (Nov 13)",
+        "body": "A basis of about +2,910–+3,450 CNY/t over futures, the widest in a year — the source of the futures-down / spot-tight divergence. (per the research report)"
       }
     ],
     "src": "Sources: SHFE daily closes via Sina Futures public feed (continuous main contract); LME on the Westmetall 3M basis. Spot premium and basis are point-in-time figures, not daily series; each is dated.",
