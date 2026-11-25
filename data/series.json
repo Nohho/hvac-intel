@@ -44,8 +44,8 @@
     },
     {
       "date": "2026-10-15",
-      "value": 14362,
-      "src": "westmetall"
+      "value": 14309,
+      "src": "brief"
     },
     {
       "date": "2026-10-16",
@@ -91,7 +91,7 @@
     {
       "date": "2026-10-28",
       "value": 14484,
-      "src": "westmetall"
+      "src": "brief"
     },
     {
       "date": "2026-10-29",
@@ -101,7 +101,8 @@
     {
       "date": "2026-10-30",
       "value": 14250,
-      "src": "westmetall"
+      "src": "westmetall",
+      "brief_value": 14140
     },
     {
       "date": "2026-11-02",
@@ -110,8 +111,8 @@
     },
     {
       "date": "2026-11-03",
-      "value": 14001,
-      "src": "westmetall"
+      "value": 14036,
+      "src": "brief"
     },
     {
       "date": "2026-11-04",
@@ -120,8 +121,8 @@
     },
     {
       "date": "2026-11-05",
-      "value": 14030,
-      "src": "westmetall"
+      "value": 14005.5,
+      "src": "brief"
     },
     {
       "date": "2026-11-06",
@@ -182,6 +183,11 @@
       "date": "2026-11-23",
       "value": 12170,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-24",
+      "value": 12054,
+      "src": "brief"
     }
   ],
   "aluminium_lme_usd_t": [
@@ -364,6 +370,11 @@
       "date": "2026-11-23",
       "value": 2834,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-24",
+      "value": 2789,
+      "src": "westmetall"
     }
   ],
   "usdcny": [
@@ -535,6 +546,11 @@
     {
       "date": "2026-11-24",
       "value": 6.7111,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-11-25",
+      "value": 6.7088,
       "src": "chinamoney"
     }
   ],
@@ -726,11 +742,6 @@
     }
   ],
   "copper_shfe_cny_t": [
-    {
-      "date": "2025-11-24",
-      "value": 86080,
-      "src": "sina"
-    },
     {
       "date": "2025-11-25",
       "value": 86600,
@@ -1943,11 +1954,6 @@
     }
   ],
   "copper_lme_1y_usd_t": [
-    {
-      "date": "2025-11-24",
-      "value": 10780,
-      "src": "westmetall"
-    },
     {
       "date": "2025-11-25",
       "value": 10858,
@@ -3206,6 +3212,11 @@
     {
       "date": "2026-11-23",
       "value": 12170,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-24",
+      "value": 12055,
       "src": "westmetall"
     }
   ],
