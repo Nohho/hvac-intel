@@ -56,6 +56,11 @@
      "date": "2026-11-05",
      "change": "中信建投11-03研报确认功率半导体涨价潮（英飞凌/TI/安森美/ST集体涨价）；安森美10-10涨5%-15%后持续传导；普通MOSFET交期8-12周→约30周、车规IGBT/SiC 40-50周；英飞凌判断吃紧持续2-3年。",
      "text_en": "CSC Financial Nov 3 note confirms the power-semiconductor price wave (Infineon/TI/onsemi/ST all raised); onsemi Oct 10 +5%-15% still passing through; standard MOSFET lead times 8-12 weeks → ~30 weeks, automotive IGBT/SiC many part numbers 40-50 weeks; Infineon sees tightness lasting 2-3 years."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "PCIM分析称安森美部分产品交期由年初26周以上拉长至10月逾50周，主要客户MOSFET及分立元件到货仅约下单量七成；安森美取消捷克约19亿欧元扩产计划",
+     "text_en": "PCIM analysis: onsemi lead times for some products stretched from over 26 weeks early in the year to over 50 weeks by October, with key customers receiving only about 70% of ordered MOSFETs and discretes; onsemi cancelled its ~EUR 1.9B Czech expansion plan"
     }
    ],
    "title": "安森美第二轮涨价",
@@ -562,6 +567,11 @@
      "date": "2026-11-25",
      "change": "沪铜主力收 87,950 元/吨（-6.34%）；LME 三个月铜报 11,790.50 美元/吨，盘中最低 11,760 美元/吨（3 月 23 日以来最低）；SMM 上海现货升水 11-24 均值 2,000 元/吨（-1,350）；上期所铜库存 11-20 当周 30,846 吨（+3,204 吨）。",
      "text_en": "SHFE copper closed at RMB 87,950/t (-6.34%); LME 3-month copper quoted at $11,790.50/t, intraday low $11,760/t (lowest since Mar 23); SMM Shanghai spot premium averaged RMB 2,000/t on Nov 24 (-1,350); SHFE copper stocks 30,846 t in the week of Nov 20 (+3,204 t)."
+    },
+    {
+     "date": "2026-11-26",
+     "change": "沪铜主力日盘收89,300元/吨（-0.51%）；LME铜11-25盘中跌至11,596美元/吨（11个月新低）后11-26反弹、盘中最高12,089美元/吨；SMM现货升水11-26均值2,300元/吨（-200）；全国铜社会库存回升至6万吨以上（周环比+9,100吨）",
+     "text_en": "SHFE copper day session closed Nov 26 at RMB 89,300/t (-0.51%); LME copper fell intraday Nov 25 to $11,596/t (11-month low) then rebounded Nov 26 to an intraday high of $12,089/t; SMM spot premium averaged RMB 2,300/t on Nov 26 (-200); national social copper inventory back above 60,000 t (+9,100 t week on week)"
     }
    ],
    "title": "铜价历史高位",
@@ -823,6 +833,11 @@
      "date": "2026-11-25",
      "change": "TrendForce 下调 NAND Q4 合约价涨幅至 +8%–13%（原 +15%–20%），预计 2027Q1 转跌 0–5%、Q2 全品类转跌；现货主流 DDR4 跌 1.61%，品牌 DDR5 持稳；HBM 三大厂 2027 供应基本售罄。",
      "text_en": "TrendForce cut its NAND Q4 contract-price forecast to +8%-13% (from +15%-20%), sees a 0-5% decline in 2027 Q1 and a broad downturn from Q2; spot mainstream DDR4 fell 1.61% while branded DDR5 held steady; HBM supply from the big three is largely sold out for 2027."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "TrendForce下修明年DRAM合约价涨幅；现货DDR4跌、DDR5微涨；美光/SK海力士/闪迪盘前跌5–6%；戴尔上季AI订单602亿美元、在手订单1,323亿美元，HBM挤压PC与汽车内存供应预计持续到2027年",
+     "text_en": "TrendForce cut next-year DRAM contract price increase expectations; spot DDR4 fell while DDR5 edged up; Micron/SK Hynix/SanDisk fell 5-6% pre-market; Dell booked $60.2B in AI orders last quarter with a $132.3B backlog, and HBM crowding-out of PC and auto memory is expected to last into 2027"
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1426,6 +1441,11 @@
      "date": "2026-11-02",
      "change": "第一财经转述11-02：美的Q3单季营收1073.2亿（-4.12%）、扣非净利-15.7%（汇兑损失）；本月已进入英伟达供应链；加码数据中心液冷",
      "text_en": "Nov 2: Midea Q3 revenue 107.32B yuan (-4.12%), core net profit -15.7% (FX losses); entered NVIDIA supply chain this month; doubling down on data-center liquid cooling"
+    },
+    {
+     "date": "2026-11-24",
+     "change": "佛山媒体报道美的为英伟达Vera Rubin平台热管理合作伙伴；顺德液冷智造基地投资超10亿元，预计2027年8月投产",
+     "text_en": "Foshan media reported Midea as a thermal management partner for Nvidia's Vera Rubin platform; the Shunde liquid-cooling manufacturing base, an investment of over RMB 1B, is expected to start production in August 2027"
     }
    ],
    "title": "美的加入英伟达 MGX AI Factory 生态",
@@ -3215,6 +3235,11 @@
      "date": "2026-11-03",
      "change": "10亿元建顺德液冷智造基地（12条产线）；海尔投超10亿元在泰国罗勇布局数据中心生产基地",
      "text_en": "RMB 1B Shunde liquid-cooling manufacturing base (12 production lines); Haier to invest over RMB 1B in a data-center manufacturing base in Rayong, Thailand"
+    },
+    {
+     "date": "2026-11-24",
+     "change": "顺德液冷智造基地预计2027年8月投产，覆盖水冷机组、CDU、干冷器（佛山媒体报道）",
+     "text_en": "The Shunde liquid-cooling manufacturing base is expected to start production in August 2027, covering water-cooled chillers, CDUs and dry coolers (Foshan media)"
     }
    ]
   },
@@ -4980,6 +5005,11 @@
      "date": "2026-11-25",
      "change": "美的在 Data Center World Middle East 2026 推出 AirBoost 变频风冷螺杆冷水机（R1234ze(E)，GWP<1）与 2.6MW 超大容量 CDU；同期 R290 空调全球累计销量超 1000 万台。",
      "text_en": "At Data Center World Middle East 2026, Midea launched the AirBoost inverter air-cooled screw chiller (R1234ze(E), GWP<1) and a 2.6MW CDU; cumulative global sales of its R290 air conditioners passed 10 million units."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "美的楼宇科技CDU获CRAA产品性能认证（1.5倍承压、换热量不低于标称98%等9项指标）；首部冷板式液冷运维白皮书同日发布",
+     "text_en": "Midea Building Technologies CDU received CRAA product performance certification (1.5x pressure rating, heat exchange no less than 98% of nominal, among 9 metrics); the first cold-plate liquid-cooling O&M white paper was released the same day"
     }
    ],
    "title": "美的发布 AirBoost 冷水机与 2.6MW CDU（DCW Middle East）",
@@ -5005,6 +5035,57 @@
    ],
    "title": "三星 Q4 Galaxy A 减产约 20%（元器件成本上涨）",
    "title_en": "Samsung cuts Q4 Galaxy A output ~20% on component costs"
+  },
+  {
+   "id": "evt-zte-15mw-cdu",
+   "title": "中兴发布1.5MW液冷CDU+800V HVDC",
+   "title_en": "ZTE launches 1.5MW liquid-cooling CDU + 800V HVDC",
+   "status": "已通知",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-24",
+     "change": "中兴发布1.5MW液冷CDU（单机1.5MW、可扩至2.4MW）+800V HVDC，温控±0.5°C、压控±0.05 bar，与800V组合PUE稳定在1.15以内；南京滨江改造案例最高60kW/柜、PUE 1.15",
+     "text_en": "ZTE launched a 1.5MW liquid-cooling CDU (1.5MW per unit, expandable to 2.4MW) plus 800V HVDC, with temperature control of ±0.5°C and pressure control of ±0.05 bar; combined with 800V, PUE stays within 1.15; the Nanjing Binjiang retrofit case reaches 60kW per cabinet at PUE 1.15"
+    }
+   ]
+  },
+  {
+   "id": "evt-eu-hybrid-quota-2026",
+   "title": "欧盟混动汽车临时配额（12-01生效）",
+   "title_en": "EU temporary safeguard quota on hybrid cars (effective Dec 1)",
+   "status": "已通知",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-24",
+     "change": "欧盟公布临时保障措施，对进口新型混动乘用车设配额200天至2027-06-18；中国配额191,780辆，年化约35万辆，仅覆盖2026年中国插混对欧出口预计近80万辆的约四成",
+     "text_en": "The EU announced temporary safeguard measures capping imports of new hybrid passenger cars for 200 days until Jun 18, 2027; China's quota is 191,780 vehicles, about 350,000 annualized, covering only about 40% of China's expected ~800,000 PHEV exports to Europe in 2026"
+    }
+   ]
+  },
+  {
+   "id": "evt-nvidia-congress-hearings",
+   "title": "英伟达国会听证（12-01闭门/12-03公开作证）",
+   "title_en": "Nvidia congressional hearings (Dec 1 closed-door / Dec 3 public testimony)",
+   "status": "已通知",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [],
+   "timeline": [
+    {
+     "date": "2026-11-25",
+     "change": "三委员会主席确认黄仁勋12-01闭门面谈、12-03参议院公开作证按原计划进行，复职不改变安排；10-Q仍未提交（法定截止约12-04）",
+     "text_en": "The three committee chairs confirmed Jensen Huang's Dec 1 closed-door interview and Dec 3 public Senate testimony will proceed as planned despite his reinstatement; the 10-Q remains unfiled (statutory deadline around Dec 4)"
+    }
+   ]
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -5016,5 +5097,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-26"
+ "updated": "2026-11-27"
 }
