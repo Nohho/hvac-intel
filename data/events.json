@@ -557,6 +557,11 @@
      "date": "2026-11-23",
      "change": "沪铜主力收 92,420 元/吨（-1.01%）；SMM 上海 1# 电解铜现货升水均价 3,350 元/吨，较 11-20 大跌 2,450 元/吨；洋山铜溢价回落至 450 美元/吨；上期所铜库存 30,846 吨（+11.59%）；LME 铜 12,168 美元/吨（+0.1%）。",
      "text_en": "SHFE copper closed at 92,420 yuan/ton (-1.01%); SMM Shanghai #1 spot premium averaged 3,350 yuan/ton, down 2,450 from Nov 20; Yangshan premium eased to $450/ton; SHFE inventory 30,846 tons (+11.59%); LME copper $12,168/ton (+0.1%)."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "沪铜主力收 87,950 元/吨（-6.34%）；LME 三个月铜报 11,790.50 美元/吨，盘中最低 11,760 美元/吨（3 月 23 日以来最低）；SMM 上海现货升水 11-24 均值 2,000 元/吨（-1,350）；上期所铜库存 11-20 当周 30,846 吨（+3,204 吨）。",
+     "text_en": "SHFE copper closed at RMB 87,950/t (-6.34%); LME 3-month copper quoted at $11,790.50/t, intraday low $11,760/t (lowest since Mar 23); SMM Shanghai spot premium averaged RMB 2,000/t on Nov 24 (-1,350); SHFE copper stocks 30,846 t in the week of Nov 20 (+3,204 t)."
     }
    ],
    "title": "铜价历史高位",
@@ -813,6 +818,11 @@
      "date": "2026-11-19",
      "change": "TrendForce 11-19 大幅下调 NAND 预测：Q4 合约价涨幅由 +15%–20% 砍至 +8%–13%，1Q27 为 0%–-5%、2Q27 起转跌；通用 DRAM Q4 +10%–15% 不变；现货 512Gb NAND 晶圆 14.30 美元、季度 -32%。",
      "text_en": "TrendForce Nov 19 sharply cut its NAND forecast: Q4 contract-price gains cut from +15%-20% to +8%-13%, 1Q27 at 0% to -5% and falling from 2Q27; conventional DRAM Q4 +10%-15% unchanged; spot 512Gb NAND wafers $14.30, down 32% on the quarter."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "TrendForce 下调 NAND Q4 合约价涨幅至 +8%–13%（原 +15%–20%），预计 2027Q1 转跌 0–5%、Q2 全品类转跌；现货主流 DDR4 跌 1.61%，品牌 DDR5 持稳；HBM 三大厂 2027 供应基本售罄。",
+     "text_en": "TrendForce cut its NAND Q4 contract-price forecast to +8%-13% (from +15%-20%), sees a 0-5% decline in 2027 Q1 and a broad downturn from Q2; spot mainstream DDR4 fell 1.61% while branded DDR5 held steady; HBM supply from the big three is largely sold out for 2027."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1107,6 +1117,11 @@
      "date": "2026-11-20",
      "change": "生益 11 月提价落地（M6 +15%、粘结片 +25%）；建滔第八轮（薄布板料与 PP +15%）；松下部分一般多层板用 CCL 自 2027-01 起调涨 200%（转述函件）。",
      "text_en": "Shengyi's November increases took effect (M6 +15%, prepreg +25%); Kingboard's eighth round (+15% on thin cloth and PP); Panasonic notified a 200% increase on some general multilayer CCL from Jan 2027 (reported letter)."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "电子薄布 2116/1080/1078 持续紧张，1080 布低点以来涨约 300%，CCL 采购周期 8–32 周；松下湖口厂仍无复产消息；松下一般多层板 CCL 拟自 2027-01 起 +200%（券商转述）。",
+     "text_en": "Thin glass cloth 2116/1080/1078 remains tight, with 1080 cloth up about 300% from its low and CCL procurement cycles at 8-32 weeks; no restart news from Panasonic's Hukou plant; Panasonic reportedly plans +200% on general multilayer CCL from Jan 2027 shipments (broker-sourced)."
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1298,6 +1313,11 @@
      "date": "2026-11-21",
      "change": "氧化镨钕 11-21/22 报 727,500 元/吨（+2,000 元/吨），分离企业报价约 72.3 万元/吨、现货稀缺；氧化镝 157–158 万元/吨上行。",
      "text_en": "Praseodymium-neodymium oxide quoted 727,500 yuan/t on Nov 21/22 (+2,000 yuan/t); separation plants quoted about 723,000 yuan/t with scarce spot supply; dysprosium oxide rose to 1.57–1.58M yuan/t."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "氧化镨钕 731,500 元/吨（-1,000），氧化钕 741,500 元/吨（-1,000），氧化镝包头稀交所 159.17 万元/吨（+1.15 万）。",
+     "text_en": "PrNd oxide RMB 731,500/t (-1,000), neodymium oxide RMB 741,500/t (-1,000), dysprosium oxide RMB 1.5917M/t at the Baotou exchange (+RMB 11,500)."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -3058,6 +3078,11 @@
      "date": "2026-11-22",
      "change": "复核订正：隆众 11-19 转载口径 R410A 55,000–56,000 元/吨未获佐证，暂不采信；R32 华东 63,500–64,500 元/吨持平，R410A 以 11-13 已核实区间 57,000–59,500 元/吨为准，11-13–19 周评横盘。",
      "text_en": "Correction on review: the Longzhong Nov 19 reprint quoting R410A at RMB 55,000-56,000/t could not be corroborated and is not adopted; R32 East China stays RMB 63,500-64,500/t, R410A stands at the verified Nov 13 range of RMB 57,000-59,500/t, with the Nov 13-19 weekly review confirming a flat market."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "R32 单点报价 65,500 元/吨（浙江大厂）；R32/R134a 主流现货约 6.5 万元/吨、处十年高位；R410A 当日区间未核实到；R22 2027-01-01 起禁产新机。",
+     "text_en": "R32 quoted at a single point of RMB 65,500/t (a major Zhejiang plant); mainstream R32/R134a spot around RMB 65,000/t, a decade high; no R410A range verified for the day; new R22 multi-split units banned from production from Jan 1, 2027."
     }
    ]
   },
@@ -3849,6 +3874,11 @@
      "date": "2026-11-20",
      "change": "LME 铝约 2,847 美元/吨（-0.78%），现货对三个月升水创纪录 323.50 美元/吨；LME 库存 224,425 吨，上期所铝库存 128,673 吨，SMM 三地铝锭库存 299,000 吨（去库 46,500 吨）。",
      "text_en": "LME aluminium about $2,847/t (-0.78%), cash-to-3M premium hit a record $323.50/t; LME stocks 224,425 t, SHFE stocks 128,673 t, SMM three-region ingot stocks 299,000 t (down 46,500 t)."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "LME 11-24 收紧 tom-next 借贷规则（阈值 50% 降至 30%）；现货升水由 11-23 纪录 405 美元/吨回落至 11-25 约 105.75 美元/吨；LME 铝收 2,799.50 美元/吨（+0.72%），沪铝 20,600 元/吨（-4.45%）。",
+     "text_en": "LME tightened tom-next lending rules on Nov 24 (threshold cut from 50% to 30% of deliverable stocks); the cash premium fell from a record $405/t on Nov 23 to about $105.75/t on Nov 25; LME aluminum closed at $2,799.50/t (+0.72%), SHFE aluminum at RMB 20,600/t (-4.45%)."
     }
    ],
    "title": "铝现货升水创 36 年纪录、LME 库存 1990 年以来最低",
@@ -4011,6 +4041,11 @@
      "date": "2026-11-24",
      "change": "NVDA 11-24 收 155.38 美元（-5.86%），单日回吐约 2400 亿美元市值；舒默 11-24 公开指控黄仁勋违反美国出口管制法；10-Q 仍未提交（法定截止约 12-04）；12-01/12-03 听证如期推进。",
      "text_en": "NVDA closed at $155.38 on 2026-11-24 (-5.86%), giving back about $240 billion in market value in a day; Schumer publicly accused Jensen Huang of violating US export control law on 2026-11-24; the 10-Q remains unfiled (statutory deadline around 2026-12-04); hearings on 2026-12-01/12-03 proceed as scheduled."
+    },
+    {
+     "date": "2026-11-25",
+     "change": "NVDA 收 149.30 美元（-3.91%），11-23 复职大涨后连跌两日；10-Q 仍未提交（法定截止约 12-04）；12-01 众议院闭门面谈、12-03 参议院公开听证如期推进。",
+     "text_en": "NVDA closed at $149.30 (-3.91%), falling for a second straight day after the Nov 23 rebound on Huang's reinstatement; the 10-Q remains unfiled (statutory deadline around Dec 4); the Dec 1 closed House interview and Dec 3 public Senate hearing proceed as scheduled."
     }
    ],
    "title": "黄仁勋辞任英伟达 CEO、Kress 任临时 CEO",
@@ -4267,6 +4302,11 @@
      "date": "2026-11-16",
      "change": "保温/隔音材料 12 月–1 月密集涨价：Insulfoam 12-01 +5%、Rockwool 01-01 +6%、Owens Corning 01-04 建筑保温 +6% / 机械与管道保温 +8%（一条管线 +12%）、Johns Manville 01-11 +5%–12%、Knauf 01-22 +6%–10%、Manson 02-01 +6%–10%、AGM Industries 12-01 +7.5%–10%。",
      "text_en": "Insulation materials face clustered price hikes from December to February: Insulfoam +5% from Dec 1, Rockwool +6% from Jan 1, Owens Corning +6% for building insulation and +8% for mechanical and pipe insulation from Jan 4 (one line +12%), Johns Manville +5%-12% from Jan 11, Knauf +6%-10% from Jan 22, Manson +6%-10% from Feb 1, AGM Industries +7.5%-10% from Dec 1."
+    },
+    {
+     "date": "2026-11-24",
+     "change": "PriceLetter 统计 10 家保温厂 12-01–01-22 集中涨价 5%–15%；Carlisle 聚异氰脲酸酯 +7% 自 2027-01-01 生效。",
+     "text_en": "PriceLetter counted 10 insulation makers raising prices 5%-15% between Dec 1 and Jan 22; Carlisle polyiso +7% effective Jan 1, 2027."
     }
    ],
    "title": "保温/隔音材料 12 月–1 月密集涨价 5%–12%",
@@ -4741,6 +4781,11 @@
      "date": "2026-11-22",
      "change": "Formosa 美国 Point Comfort 工厂 10-28 火灾后 10-29 对部分聚乙烯牌号宣布不可抗力（本期排查发现）；北美 PE 厂商 11 月提价意向 5–7 美分/磅。",
      "text_en": "Formosa declared force majeure on some polyethylene grades after the Oct 28 fire at its Point Comfort, US plant (found in this issue's checks); North American PE producers intend November hikes of 5-7 US cents/lb."
+    },
+    {
+     "date": "2026-11-04",
+     "change": "PE 树脂 11 月再涨：印度两大生产商 11-01 起上调膜级料价，中国 PE 膜 4 个月内最高涨 46%。",
+     "text_en": "PE resin rose again in November: India's two largest producers raised film-grade prices from Nov 1, and Chinese PE film prices rose up to 46% in four months."
     }
    ]
   },
@@ -4829,6 +4874,137 @@
      "text_en": "Daikin launched the R32 retrofit solution Mini VRV 5 RXYSA-B (4/5/6 HP), reusing existing R-410A piping and wiring, claiming 22% less install time, 55% lower capex and 16% lower energy use."
     }
    ]
+  },
+  {
+   "id": "evt-eu-dual-use-update-2026",
+   "seeded": false,
+   "status": "已生效",
+   "status_note": "",
+   "subcategories": [
+    "功率器件"
+   ],
+   "tags": [
+    "出口管制"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-20",
+     "change": "欧盟委员会授权条例 (EU) 2026/2288 于 11-20 生效：新增半导体制造设备、数据中心芯片（总处理性能 ≥1,600）、高压功率半导体等管制，同时放宽部分工业阈值（电池能量密度 350→500 Wh/kg）。",
+     "text_en": "EU Commission Delegated Regulation (EU) 2026/2288 took effect Nov 20: new controls on semiconductor manufacturing equipment, datacenter chips (total processing performance >=1,600) and high-voltage power semiconductors, while easing some industrial thresholds (battery energy density 350 to 500 Wh/kg)."
+    }
+   ],
+   "title": "欧盟双重用途清单更新（(EU) 2026/2288，11-20 生效）",
+   "title_en": "EU dual-use list update ((EU) 2026/2288, effective Nov 20)"
+  },
+  {
+   "id": "evt-fiber-optic-shortage-2026",
+   "seeded": false,
+   "status": "已生效",
+   "status_note": "",
+   "subcategories": [
+    "Cables"
+   ],
+   "tags": [
+    "短缺"
+   ],
+   "timeline": [
+    {
+     "date": "2026-10-19",
+     "change": "TrendForce 10-19：2026 年全球光纤缺口 1.8 亿纤芯公里，现货价为 2025 年 2.8–5 倍，短缺预计持续至 2028 年；标准单模交期超 20 周。",
+     "text_en": "TrendForce, Oct 19: the 2026 global fiber shortage reaches 180M fiber-km, spot prices run 2.8-5x 2025 levels, the shortage is expected to last to 2028; standard single-mode lead times exceed 20 weeks."
+    },
+    {
+     "date": "2026-11-10",
+     "change": "GTfiber 11-10 更新转载佐证紧张未缓解：库存从 2024 年 4 个月降至 1 个月，部分头部供应商订单已排到 2027 年 Q1。",
+     "text_en": "A Nov 10 GTfiber update confirms the tightness persists: inventories down from 4 months in 2024 to 1 month, with some leading suppliers booked into Q1 2027."
+    }
+   ],
+   "title": "全球光纤短缺持续至 2028 年",
+   "title_en": "Global fiber-optic shortage runs to 2028"
+  },
+  {
+   "id": "evt-us-oct-pce-gdp-2026",
+   "seeded": false,
+   "status": "已落地",
+   "status_note": "",
+   "subcategories": [
+    "宏观"
+   ],
+   "tags": [
+    "宏观"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-25",
+     "change": "10 月核心 PCE 同比 +3.3%（共识 3.2%），整体 +3.8%；Q3 GDP 二次修正 +4.3%（初值 3.4%）；CME 口径 12 月加息 25bp 概率 97.8%。",
+     "text_en": "October core PCE +3.3% y/y (consensus 3.2%), headline +3.8%; Q3 GDP second estimate +4.3% (advance 3.4%); CME-implied probability of a December 25bp hike 97.8%."
+    }
+   ],
+   "title": "美国 10 月 PCE 超预期、Q3 GDP 上修至 +4.3%",
+   "title_en": "US October PCE beats expectations; Q3 GDP revised up to +4.3%"
+  },
+  {
+   "id": "evt-abb-lv-price-hike-2027",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "低压电气"
+   ],
+   "tags": [
+    "涨价"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-25",
+     "change": "瑞士批发商清单 11 月更新：ABB 将于 2027-02-01 平均涨价 3.2%–5.5%；中国区是否同步未核实到。",
+     "text_en": "A November update to a Swiss wholesaler price list: ABB to raise prices by an average 3.2%-5.5% from Feb 1, 2027; whether China follows is unverified."
+    }
+   ],
+   "title": "ABB 低压电气拟于 2027-02-01 涨价 3.2%–5.5%（瑞士市场）",
+   "title_en": "ABB low-voltage prices to rise 3.2%-5.5% from Feb 1, 2027 (Swiss market)"
+  },
+  {
+   "id": "evt-midea-airboost-cdu-2026",
+   "seeded": false,
+   "status": "已通知",
+   "status_note": "",
+   "subcategories": [
+    "液冷与热管理"
+   ],
+   "tags": [
+    "新品"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-25",
+     "change": "美的在 Data Center World Middle East 2026 推出 AirBoost 变频风冷螺杆冷水机（R1234ze(E)，GWP<1）与 2.6MW 超大容量 CDU；同期 R290 空调全球累计销量超 1000 万台。",
+     "text_en": "At Data Center World Middle East 2026, Midea launched the AirBoost inverter air-cooled screw chiller (R1234ze(E), GWP<1) and a 2.6MW CDU; cumulative global sales of its R290 air conditioners passed 10 million units."
+    }
+   ],
+   "title": "美的发布 AirBoost 冷水机与 2.6MW CDU（DCW Middle East）",
+   "title_en": "Midea launches AirBoost chiller and 2.6MW CDU at DCW Middle East"
+  },
+  {
+   "id": "evt-samsung-galaxy-a-cut-2026",
+   "seeded": false,
+   "status": "传闻",
+   "status_note": "",
+   "subcategories": [
+    "芯片与半导体"
+   ],
+   "tags": [
+    "减产"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-24",
+     "change": "TrendForce 引 ETNews：三星因 AP 与存储等元器件成本上涨，2027 年停更 Galaxy Watch、Q4 Galaxy A 产量削减约 20%。",
+     "text_en": "TrendForce citing ETNews: Samsung will skip the 2027 Galaxy Watch refresh and cut Q4 Galaxy A output by about 20% as AP and memory component costs rise."
+    }
+   ],
+   "title": "三星 Q4 Galaxy A 减产约 20%（元器件成本上涨）",
+   "title_en": "Samsung cuts Q4 Galaxy A output ~20% on component costs"
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -4840,5 +5016,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-24"
+ "updated": "2026-11-26"
 }
