@@ -29,7 +29,8 @@
     {
       "date": "2026-10-12",
       "value": 14657.5,
-      "src": "westmetall"
+      "src": "westmetall",
+      "brief_value": 14791.96
     },
     {
       "date": "2026-10-13",
@@ -177,7 +178,8 @@
     {
       "date": "2026-11-20",
       "value": 12237,
-      "src": "westmetall"
+      "src": "westmetall",
+      "brief_value": 12022.45
     },
     {
       "date": "2026-11-23",
@@ -561,6 +563,11 @@
     {
       "date": "2026-11-25",
       "value": 6.7088,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-11-26",
+      "value": 6.7096,
       "src": "chinamoney"
     }
   ],
@@ -1966,6 +1973,11 @@
       "date": "2026-11-25",
       "value": 87950,
       "src": "sina"
+    },
+    {
+      "date": "2026-11-26",
+      "value": 89300,
+      "src": "sina"
     }
   ],
   "copper_lme_1y_usd_t": [
@@ -3270,6 +3282,13 @@
       "low": 63500,
       "high": 64500,
       "src": "brief"
+    },
+    {
+      "date": "2026-11-25",
+      "value": 65000,
+      "low": 64500,
+      "high": 65500,
+      "src": "brief"
     }
   ],
   "refrigerant_r410a_cny_t": [
@@ -3300,22 +3319,24 @@
       "low": 57000,
       "high": 59500,
       "src": "brief"
+    },
+    {
+      "date": "2026-11-23",
+      "value": 59000,
+      "low": 59000,
+      "high": 59000,
+      "src": "brief"
     }
   ],
   "refrigerant_spot_latest": {
-    "date": "2026-11-20",
+    "date": "2026-11-25",
     "region": "华东",
-    "outlet": "隆众 / Mysteel",
+    "outlet": "氟务在线",
     "items": [
       {
         "name": "R32",
-        "low": 63500,
-        "high": 64500
-      },
-      {
-        "name": "R410A",
-        "low": 57000,
-        "high": 59500
+        "low": 64500,
+        "high": 65500
       }
     ]
   }
