@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "status": [
     {
       "light": "y",
       "title": "Copper · Near term",
       "big": "High-volatility standoff",
-      "sub": "Futures fell about 6% in a week (SHFE main contract: 94,720 on Nov 19 to 89,300 CNY/t on Nov 26), while the spot premium is 2,300 CNY/t, down sharply from the record 7,250 CNY/t on Nov 19 — the futures–spot divergence is narrowing. Updated 2026-11-27"
+      "sub": "Futures fell about 1% in a week (SHFE main contract: 92,400 on Nov 20 to 93,660 CNY/t on Nov 27), while the spot premium is 2,500 CNY/t, down sharply from the record 7,250 CNY/t on Nov 19 — the futures–spot divergence is narrowing. Updated 2026-11-28"
     },
     {
       "light": "y",
@@ -30,7 +30,7 @@
     "spot_rows": [
       {
         "d": "Spot",
-        "head": "SHFE spot premium 2,300 CNY/t",
+        "head": "SHFE spot premium 2,500 CNY/t",
         "body": "SHFE inventory 30,846 t (2026-11-25)."
       },
       {
@@ -154,8 +154,8 @@
         "cur": false
       }
     ],
-    "now_head": "Where we are now (2026-11-25)",
-    "now_body": "LME 3M $11,758/t (Nov 25), below the downside band's floor; SHFE main contract 89,300 CNY/t, spot premium 2,300 CNY/t. Scenario bands are H1-2027 projections, not price targets; reviewed weekly against actuals.",
+    "now_head": "Where we are now (2026-11-26)",
+    "now_body": "LME 3M $11,960/t (Nov 26), below the downside band's floor; SHFE main contract 93,660 CNY/t, spot premium 2,500 CNY/t. Scenario bands are H1-2027 projections, not price targets; reviewed weekly against actuals.",
     "src": "Source: in-house synthesis of the public institutional forecasts above; weekly review · 2026-11-27. Not trading advice."
   },
   "refrigerant": {
