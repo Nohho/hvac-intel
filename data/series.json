@@ -195,6 +195,11 @@
       "date": "2026-11-25",
       "value": 11790.5,
       "src": "brief"
+    },
+    {
+      "date": "2026-11-26",
+      "value": 11960,
+      "src": "westmetall"
     }
   ],
   "aluminium_lme_usd_t": [
@@ -387,6 +392,11 @@
       "date": "2026-11-25",
       "value": 2760,
       "src": "westmetall"
+    },
+    {
+      "date": "2026-11-26",
+      "value": 2820.5,
+      "src": "westmetall"
     }
   ],
   "usdcny": [
@@ -568,6 +578,11 @@
     {
       "date": "2026-11-26",
       "value": 6.7096,
+      "src": "chinamoney"
+    },
+    {
+      "date": "2026-11-27",
+      "value": 6.7075,
       "src": "chinamoney"
     }
   ],
@@ -761,14 +776,19 @@
       "date": "2026-11-25",
       "value": 38.77,
       "src": "conv"
+    },
+    {
+      "date": "2026-11-26",
+      "value": 40.9,
+      "src": "conv"
+    },
+    {
+      "date": "2026-11-27",
+      "value": 43.34,
+      "src": "conv"
     }
   ],
   "copper_shfe_cny_t": [
-    {
-      "date": "2025-11-26",
-      "value": 86590,
-      "src": "sina"
-    },
     {
       "date": "2025-11-27",
       "value": 86990,
@@ -1978,14 +1998,14 @@
       "date": "2026-11-26",
       "value": 89300,
       "src": "sina"
+    },
+    {
+      "date": "2026-11-27",
+      "value": 93660,
+      "src": "sina"
     }
   ],
   "copper_lme_1y_usd_t": [
-    {
-      "date": "2025-11-26",
-      "value": 10965,
-      "src": "westmetall"
-    },
     {
       "date": "2025-11-27",
       "value": 10925,
@@ -3244,6 +3264,11 @@
     {
       "date": "2026-11-25",
       "value": 11758,
+      "src": "westmetall"
+    },
+    {
+      "date": "2026-11-26",
+      "value": 11960,
       "src": "westmetall"
     }
   ],
