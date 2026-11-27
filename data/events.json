@@ -572,6 +572,11 @@
      "date": "2026-11-26",
      "change": "沪铜主力日盘收89,300元/吨（-0.51%）；LME铜11-25盘中跌至11,596美元/吨（11个月新低）后11-26反弹、盘中最高12,089美元/吨；SMM现货升水11-26均值2,300元/吨（-200）；全国铜社会库存回升至6万吨以上（周环比+9,100吨）",
      "text_en": "SHFE copper day session closed Nov 26 at RMB 89,300/t (-0.51%); LME copper fell intraday Nov 25 to $11,596/t (11-month low) then rebounded Nov 26 to an intraday high of $12,089/t; SMM spot premium averaged RMB 2,300/t on Nov 26 (-200); national social copper inventory back above 60,000 t (+9,100 t week on week)"
+    },
+    {
+     "date": "2026-11-27",
+     "change": "LME 铜盘中一度 +6.45% 至约 12,595 美元/吨（1 月以来最大单日涨幅），沪铜主力收 93,660 元/吨（+5.51%）；LME 11-26 收盘 11,872 美元/吨（+1.91%）；美国精炼铜关税 15% 建议仍未批准。",
+     "text_en": "LME copper jumped as much as +6.45% intraday to about $12,595/t (largest single-day gain since January); SHFE copper closed at 93,660 yuan/t (+5.51%); LME closed at $11,872/t on 11-26 (+1.91%); the proposed 15% US refined-copper tariff remains unapproved."
     }
    ],
    "title": "铜价历史高位",
@@ -838,6 +843,11 @@
      "date": "2026-11-25",
      "change": "TrendForce下修明年DRAM合约价涨幅；现货DDR4跌、DDR5微涨；美光/SK海力士/闪迪盘前跌5–6%；戴尔上季AI订单602亿美元、在手订单1,323亿美元，HBM挤压PC与汽车内存供应预计持续到2027年",
      "text_en": "TrendForce cut next-year DRAM contract price increase expectations; spot DDR4 fell while DDR5 edged up; Micron/SK Hynix/SanDisk fell 5-6% pre-market; Dell booked $60.2B in AI orders last quarter with a $132.3B backlog, and HBM crowding-out of PC and auto memory is expected to last into 2027"
+    },
+    {
+     "date": "2026-11-27",
+     "change": "现货 DDR5 16Gb 跌 0.71%、DDR4 16Gb 跌 1.13%；TrendForce 预计 NAND 合约价 2027Q1 环比 -0~5%、Q2 起全线下跌；美光 11-27 +7.60%。",
+     "text_en": "Spot DDR5 16Gb -0.71%, DDR4 16Gb -1.13%; TrendForce expects NAND contract prices -0~5% QoQ in 2027Q1 and falling across the board from Q2; Micron +7.60% on 11-27."
     }
    ],
    "title": "DRAM/HBM 结构性短缺延续至 2028",
@@ -1137,6 +1147,11 @@
      "date": "2026-11-25",
      "change": "电子薄布 2116/1080/1078 持续紧张，1080 布低点以来涨约 300%，CCL 采购周期 8–32 周；松下湖口厂仍无复产消息；松下一般多层板 CCL 拟自 2027-01 起 +200%（券商转述）。",
      "text_en": "Thin glass cloth 2116/1080/1078 remains tight, with 1080 cloth up about 300% from its low and CCL procurement cycles at 8-32 weeks; no restart news from Panasonic's Hukou plant; Panasonic reportedly plans +200% on general multilayer CCL from Jan 2027 shipments (broker-sourced)."
+    },
+    {
+     "date": "2026-11-23",
+     "change": "玻纤薄布 11 月再涨：1080 薄布 20.8 元/米（环比 +13~14%）、年初至今 +316%，2116 薄布 20.2 元/米（环比 +13~14%）、年初至今 +312%；花旗研判 2027 年供应仍紧。",
+     "text_en": "Glass-fiber cloth rose again in November: 1080 cloth at 20.8 yuan/m (+13~14% MoM, +316% YTD), 2116 cloth at 20.2 yuan/m (+13~14% MoM, +312% YTD); Citi expects supply to stay tight in 2027."
     }
    ],
    "title": "PCB/CCL 新一轮涨价潮（10-5 起）",
@@ -1178,6 +1193,11 @@
      "date": "2026-11-21",
      "change": "LG 11-19 宣布组织架构调整：在 Eco Solution 事业部下新设 Applied Business 专责 AI 数据中心冷却，并新设弗吉尼亚冷水机组生产子公司；目标明年冷水机组年销售额 1 万亿韩元。",
      "text_en": "LG announced an organisational reshuffle on Nov 19: a new Applied Business unit under the Eco Solution division dedicated to AI data-centre cooling, plus a new Virginia chiller production subsidiary; it targets chiller sales of KRW 1 trillion next year."
+    },
+    {
+     "date": "2026-11-26",
+     "change": "LG 披露 AI 数据中心制冷方案累计接单突破 3 兆韩元（Q3 达 3 兆韩元，主因上月与北美 Air Control Concepts 签 5GW 长期供冷合同）；ES 事业本部 1–9 月设备投资 1927 亿韩元（同比 +168.4%）。",
+     "text_en": "LG disclosed cumulative AI data-center cooling orders above KRW 3 trillion (KRW 3 trillion in Q3, driven by the 5GW long-term cooling contract with North America's Air Control Concepts signed last month); ES division capex Jan-Sep at KRW 192.7 billion (+168.4% YoY)."
     }
    ],
    "title": "LG 北美冷水机大单+自建工厂",
@@ -1333,6 +1353,11 @@
      "date": "2026-11-25",
      "change": "氧化镨钕 731,500 元/吨（-1,000），氧化钕 741,500 元/吨（-1,000），氧化镝包头稀交所 159.17 万元/吨（+1.15 万）。",
      "text_en": "PrNd oxide RMB 731,500/t (-1,000), neodymium oxide RMB 741,500/t (-1,000), dysprosium oxide RMB 1.5917M/t at the Baotou exchange (+RMB 11,500)."
+    },
+    {
+     "date": "2026-11-27",
+     "change": "氧化钕 741,500 元/吨（Mysteel，与 11-25 持平）；SMM 日评称镨钕暂稳、镝铽同步回落；氧化镝 147–149 万元/吨回落。",
+     "text_en": "Neodymium oxide at 741,500 yuan/t (Mysteel, flat vs 11-25); SMM daily review: PrNd stable, dysprosium and terbium falling; dysprosium oxide down to 1.47-1.49 million yuan/t."
     }
    ],
    "title": "稀土精矿 Q4 调价（高位企稳）",
@@ -3955,6 +3980,11 @@
      "date": "2026-11-21",
      "change": "截至 11-21 仍无收购新进展；Modexus 11-18 投资者日提 FY2029 目标与 5 亿美元回购、未提及三星；Jana Partners 施压要求提升利润率或考虑出售。",
      "text_en": "No new developments as of Nov 21; Modexus' Nov 18 investor day set FY2029 targets and a $500M buyback without mentioning Samsung; Jana Partners is pressing for higher margins or a sale."
+    },
+    {
+     "date": "2026-11-26",
+     "change": "韩媒称三星拟收购美国 Modin Manufacturing（据悉正在推进，未获官方确认），此前已完成 15 亿欧元收购 FlaktGroup；计划向光州工厂投资 2400 亿韩元建 HVAC 产线。",
+     "text_en": "Korean media reported Samsung plans to acquire US-based Modin Manufacturing (reportedly in progress, unconfirmed by officials), after completing the EUR 1.5 billion FlaktGroup acquisition; Samsung plans a KRW 240 billion HVAC line investment at its Gwangju plant."
     }
    ],
    "title": "三星洽购美国数据中心制冷商 Modine（彭博爆料，在谈未证实）",
@@ -4392,7 +4422,7 @@
   {
    "id": "evt-ga-ge-sb-pause-expiry-1127",
    "seeded": false,
-   "status": "已通知",
+   "status": "已生效",
    "status_note": "",
    "subcategories": [
     "功率器件"
@@ -4440,6 +4470,11 @@
      "date": "2026-11-24",
      "change": "商务部 2026 年第 59 号公告（11-24 发布）：暂停期延至 2027-01-27（2026-11-28 至 2027-01-27 继续暂停实施）；对美军事用户/军事用途禁令继续有效，全球许可要求从未暂停。",
      "text_en": "MOFCOM Announcement 2026 No. 59 (published 2026-11-24): suspension extended to 2027-01-27 (suspension continues 2026-11-28 to 2027-01-27); the ban on US military end-users/uses remains in force, and global licensing requirements were never suspended."
+    },
+    {
+     "date": "2026-11-28",
+     "change": "暂停期自今日 11-28 起生效、延至 2027-01-27；对美军事用户/军事用途禁令继续有效，暂停不等于放行。",
+     "text_en": "The suspension takes effect today, Nov 28, extended to 2027-01-27; the ban on US military end-users and military end-uses remains in force - a suspension is not a lifting."
     }
    ],
    "title": "镓/锗/锑对美出口禁令暂停延至 2027-01-27（商务部 2026 年第 59 号公告）",
@@ -4793,6 +4828,11 @@
      "date": "2026-11-24",
      "change": "10-Q 截至 11-24 仍未提交；UBS 称延迟与正在进行的调查及是否需补充风险因素有关；SEC 调查本身窗口内无新进展。",
      "text_en": "The 10-Q remains unfiled as of 2026-11-24; UBS said the delay relates to the ongoing investigation and whether additional risk factors must be disclosed; no new developments on the SEC probe itself within the window."
+    },
+    {
+     "date": "2026-11-27",
+     "change": "截至 11-25 报道，英伟达仍未提交截至 10 月 25 日季度的 10-Q；法定截止约 12-04；NVDA 11-27 收 150.49 美元（+0.80%）。",
+     "text_en": "As of reports on 11-25, Nvidia had still not filed its 10-Q for the quarter ended Oct 25; statutory deadline about Dec 4; NVDA closed at $150.49 on 11-27 (+0.80%)."
     }
    ]
   },
@@ -5084,8 +5124,57 @@
      "date": "2026-11-25",
      "change": "三委员会主席确认黄仁勋12-01闭门面谈、12-03参议院公开作证按原计划进行，复职不改变安排；10-Q仍未提交（法定截止约12-04）",
      "text_en": "The three committee chairs confirmed Jensen Huang's Dec 1 closed-door interview and Dec 3 public Senate testimony will proceed as planned despite his reinstatement; the 10-Q remains unfiled (statutory deadline around Dec 4)"
+    },
+    {
+     "date": "2026-11-27",
+     "change": "日程确认：12-01–02 黄仁勋与总法律顾问 Tim Teter 接受众议院三委员会闭门笔录访谈，12-03 10:00 ET 参议院银行委员会公开作证（唯一证人）；商务部长 Lutnick 被要求 12-10 出席同一委员会。",
+     "text_en": "Schedule confirmed: Dec 1-2 closed-door transcribed interviews with Huang and General Counsel Tim Teter before three House committees; Dec 3, 10:00 ET public testimony before the Senate Banking Committee (sole witness); Commerce Secretary Lutnick asked to appear before the same committee on Dec 10."
     }
    ]
+  },
+  {
+   "id": "evt-nucor-hrc-nov-2026",
+   "seeded": false,
+   "status": "已生效",
+   "status_note": "",
+   "subcategories": [
+    "Plate - Steel",
+    "Hot Roll Steel, Coil & Sheet"
+   ],
+   "tags": [
+    "涨价",
+    "原材料"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-23",
+     "change": "Nucor 热卷 11-23 再 +20 美元至 1,330 美元/短吨、连续第 18 周上调；板材 12 月订单须 11-27 前提交；美国热卷价格创四年高位、AI 数据中心建设推高需求（彭博 11-25）。",
+     "text_en": "Nucor raised hot-rolled coil by $20 to $1,330/short ton on 11-23, an 18th straight weekly increase; December plate orders due by 11-27; US hot-rolled coil prices at a four-year high, with AI data-center construction lifting demand (Bloomberg 11-25)."
+    }
+   ],
+   "title": "Nucor 热卷连续第 18 周上调、板材 12 月订单 11-27 截止",
+   "title_en": "Nucor hot-rolled coil up for an 18th straight week; December plate orders due 11-27"
+  },
+  {
+   "id": "evt-eu-heatpump-fgas-exemption-2027",
+   "seeded": false,
+   "status": "已生效",
+   "status_note": "",
+   "subcategories": [
+    "Refrigerant"
+   ],
+   "tags": [
+    "法规"
+   ],
+   "timeline": [
+    {
+     "date": "2026-11-25",
+     "change": "欧盟公布实施条例 (EU) 2026/2486：20–50kW 室内盐水-水/水-水热泵与 12kW 以下双风管空气-水热泵 2027 年可继续使用 GWP 不低于 150 的含氟制冷剂，豁免一年。",
+     "text_en": "The EU published Implementing Regulation (EU) 2026/2486: indoor brine-water/water-water heat pumps of 20-50kW and dual-duct air-water heat pumps below 12kW may continue using fluorinated refrigerants with GWP of 150 or above in 2027, a one-year exemption."
+    }
+   ],
+   "title": "欧盟热泵含氟制冷剂豁免一年（(EU) 2026/2486）",
+   "title_en": "EU grants one-year F-gas exemption for heat pumps (Regulation (EU) 2026/2486)"
   }
  ],
  "note": "事件实体库：去重与状态跟踪。不回填历史，timeline 自 2026-10-08 起记录。seed 事件仅含当前真实状态，不编历史时间线。",
@@ -5097,5 +5186,5 @@
   "已落地",
   "已失效"
  ],
- "updated": "2026-11-27"
+ "updated": "2026-11-28"
 }
